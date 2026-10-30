@@ -15,9 +15,10 @@
 <header class="top">
   <div class="brand">
     <h1>分ける <span>Wakeru</span></h1>
-    <div class="city"><label for="city">City</label>
-      <select id="city"></select>
-    </div>
+    <button type="button" class="where" id="where" aria-label="Change location">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <span id="whereText">Set your area</span><small>Change</small>
+    </button>
   </div>
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -102,6 +103,25 @@
 </section>
 
 <footer id="footSrc"></footer>
+</div>
+
+<!-- ONBOARDING -->
+<div class="onboard" id="onboard" role="dialog" aria-modal="true" aria-labelledby="obTitle" hidden>
+  <div class="ob-map">
+    <svg id="obMap" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Japan"><g id="obPrefs"></g><g id="obMunis"></g><g id="obPin"></g></svg>
+    <p class="ob-credit">出典：国土数値情報（行政区域データ）（国土交通省）を加工して作成</p>
+  </div>
+  <div class="ob-panel">
+    <div class="ob-head">
+      <button type="button" class="ob-icon" id="obBack" aria-label="Back" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="ob-steps" id="obSteps" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <button type="button" class="ob-icon" id="obClose" aria-label="Close" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <h2 id="obTitle"></h2>
+    <p class="lede" id="obLede"></p>
+    <p class="ob-msg" id="obMsg" role="status" hidden></p>
+    <div id="obBody"></div>
+  </div>
 </div>
 </body>
 </html>

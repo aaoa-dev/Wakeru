@@ -2,6 +2,7 @@
    that maps types to bins and lists every town/chome area with its collection pattern, plus the official Japanese sorting list
    (<id>.dict.json). Collection-day rules live in schedule.js, shared with the importer's cross-check. */
 import { dayState, binsOn } from "./schedule.js";
+import { runOnboarding } from "./onboarding.js";
 
 const BIN_COLOR = {burn:"--c-burn",non:"--c-non",res:"--c-res",pla:"--c-pla",haz:"--c-haz",big:"--c-big",no:"--c-no"};
 const DEFAULT_CITY = "chiyoda", DICT_LIMIT = 40;
@@ -13,7 +14,7 @@ const norm = s => kataToHira((s||"").toLowerCase().normalize("NFKC"));
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 const shortDate = d => `${d.getMonth()+1}/${d.getDate()}`;
 const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
-let DATA, RS, DICT, AREA, ITEMS = [];
+let DATA, RS, DICT, AREA, ITEMS = [], LOADING = 0;
 
 async function getJSON(path){
   const res = await fetch(path);
@@ -35,9 +36,9 @@ function showError(err){
   $("#homeWeek").innerHTML = `<div class="empty">Couldn't load the trash data (${esc(err.message)}). Reload the page to try again.</div>`;
 }
 
-const binOf = bin => RS.bins[bin] || {en:bin,label:"",kind:"no"};
+const binOf = (bin, rs = RS) => rs.bins[bin] || {en:bin,label:"",kind:"no"};
 const chipHTML = (kind, en, label) => `<span class="chip" style="--cc:var(${BIN_COLOR[kind]||"--c-no"})"><i></i>${esc(en)} <small>${esc(label)}</small></span>`;
-const chip = bin => { const b = binOf(bin); return chipHTML(b.kind, b.en, b.label) };
+const chip = (bin, rs = RS) => { const b = binOf(bin, rs); return chipHTML(b.kind, b.en, b.label) };
 /* turn an item's material types into this city's bins; null when the city's guide doesn't cover one of its types */
 function resolve(it){
   const outs = [];
@@ -61,7 +62,7 @@ function itemHTML(it){
 function dictItemHTML([name, cat, note]){
   const c = DICT.categories[cat];
   return `<article class="item"><div class="item-name"><b lang="ja">${esc(name)}</b></div>
-    <div class="outcomes"><div class="outcome">${c.bins.map(chip).join("")}<span class="when" lang="ja">${esc(c.label)}</span></div></div>
+    <div class="outcomes"><div class="outcome">${c.bins.map(b => chip(b)).join("")}<span class="when" lang="ja">${esc(c.label)}</span></div></div>
     ${note?`<p class="how" lang="ja">${esc(note)}</p>`:""}</article>`;
 }
 function showResults(list, title, dictHits = []){
@@ -115,11 +116,11 @@ function renderPlasticTest(){
 
 /* ---------- schedule ---------- */
 /* [[bin, "by 8:00"]] for a day, or a dayState string ("off", "unconfirmed", "unpublished") */
-function pickupsOn(d, pattern){
-  const state = dayState(RS.calendar, d);
+function pickupsOn(d, pattern, rs = RS){
+  const state = dayState(rs.calendar, d);
   if(state) return state;
-  const by = RS.calendar.putOutBy;
-  return binsOn(RS.calendar, pattern, d).map(bin => [bin, by ? "by " + (by[bin] || "8:00") : ""]);
+  const by = rs.calendar.putOutBy;
+  return binsOn(rs.calendar, pattern, d).map(bin => [bin, by ? "by " + (by[bin] || "8:00") : ""]);
 }
 function ruleText(r){
   if(Array.isArray(r)) return r.map(d=>DOW[d]).join(" & ");
@@ -132,13 +133,23 @@ function ruleText(r){
   }
   return r.weeks.map(n=>ORD[n]).join(" & ") + " " + DOW[r.day];
 }
-const patternText = p => Object.entries(p).filter(([,r]) => r).map(([bin,r]) => `${binOf(bin).en} ${ruleText(r)}`).join(" · ");
+const patternText = (p, rs = RS) => Object.entries(p).filter(([,r]) => r).map(([bin,r]) => `${binOf(bin, rs).en} ${ruleText(r)}`).join(" · ");
 const none = text => `<span class="none">${text}</span>`;
 const SHORT = {off:"No collection", unconfirmed:"Not confirmed yet", unpublished:"Not published yet"};
 const LONG = {off:"No collection (Sunday or New Year break)", unconfirmed:"Not confirmed yet: watch for the city's New Year notice", unpublished:"The city hasn't published this date yet"};
-const dayRow = r => `<div class="day"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
-  <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>chip(c)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
+const dayRow = (r, rs = RS) => `<div class="day"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
+  <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>chip(c, rs)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
 const areaName = a => a.en === "All" ? a.townEn : `${a.townEn} ${a.en}`;
+/* the next days for an area, as {d, ps, label} rows */
+function nextDays(rs, area, count){
+  const now = new Date(); now.setHours(0,0,0,0);
+  return [...Array(count)].map((_, i) => { const d = new Date(now); d.setDate(now.getDate()+i);
+    return {d, ps:pickupsOn(d, rs.calendar.patterns[area.pattern], rs), label:i===0?"Today":i===1?"Tomorrow":DOW[d.getDay()]} });
+}
+/* onboarding's last step: where the user is and what's coming up */
+const describe = (rs, area) => `<div class="place">${esc(areaName(area))}<small lang="ja">${esc(area.town + (area.jp === "全域" ? "" : area.jp))} · ${esc(rs.jp)}</small></div>
+  <div class="week">${nextDays(rs, area, 3).map(r => dayRow(r, rs)).join("")}</div>
+  <p class="fine">${esc(patternText(rs.calendar.patterns[area.pattern], rs))}</p>`;
 
 const areasOf = town => RS.areas.filter(a => a.town === town);
 function fillTowns(){
@@ -159,10 +170,11 @@ function restoreArea(){
 function renderDays(){
   AREA = areasOf($("#town").value)[+$("#addr").value || 0];
   store.set("wakeru-area-"+RS.id, `${AREA.town}|${AREA.en}`);
+  $("#whereText").textContent = `${areaName(AREA)}, ${RS.en}`;
   const pat = RS.calendar.patterns[AREA.pattern];
   const now = new Date(); now.setHours(0,0,0,0);
   const at = i => { const d = new Date(now); d.setDate(now.getDate()+i); return d };
-  const rows = [...Array(7)].map((_,i)=>{ const d = at(i); return {d, ps:pickupsOn(d,pat), label:i===0?"Today":i===1?"Tomorrow":DOW[d.getDay()]} });
+  const rows = nextDays(RS, AREA, 7);
   const list = r => Array.isArray(r.ps) && r.ps.length ? `<div class="pickups">${r.ps.map(([c,by])=>`<div class="pickup">${chip(c)}<span class="by">${esc(by)}</span></div>`).join("")}</div>`
     : none(LONG[r.ps] ?? "Nothing collected");
   const [t, tm] = rows;
@@ -170,10 +182,10 @@ function renderDays(){
   $("#today").innerHTML = `<div class="date">Today<small>${shortDate(t.d)} (${DOWJ[t.d.getDay()]})</small></div>${list(t)}
     <div class="date" style="font-size:16px;margin-top:4px">Tomorrow<small>${shortDate(tm.d)} (${DOWJ[tm.d.getDay()]})</small></div>${list(tm)}
     <p class="fine">${esc(patternText(pat))}</p>`;
-  $("#week").innerHTML = rows.map(dayRow).join("");
+  $("#week").innerHTML = rows.map(r => dayRow(r)).join("");
   let nextNon = null;
   for(let i=0;i<40 && !nextNon;i++){ const ps = pickupsOn(at(i),pat); if(ps === "unpublished") break; if(Array.isArray(ps) && ps.some(([b])=>binOf(b).kind==="non")) nextNon = at(i) }
-  $("#homeWeek").innerHTML = `<div class="today"><h2 style="margin:0">${esc(areaName(AREA))} · next 3 days</h2><div class="week">${rows.slice(0,3).map(dayRow).join("")}</div>
+  $("#homeWeek").innerHTML = `<div class="today"><h2 style="margin:0">${esc(areaName(AREA))} · next 3 days</h2><div class="week">${rows.slice(0,3).map(r => dayRow(r)).join("")}</div>
     ${nextNon?`<p class="fine">Next non-burnable day: <b>${shortDate(nextNon)} (${DOWJ[nextNon.getDay()]})</b>. ${esc(patternText(pat))}</p>`:""}</div>`;
 }
 
@@ -188,12 +200,14 @@ function footerHTML(){
   if(Object.values(RS.sorting).some(r => r.auto)) parts.push("English guide entries are auto-matched from that list.");
   parts.push(`Rules change, and the city has the final word: ${links.join(" · ")}.`);
   parts.push(RS.contacts.map(c=>`${esc(c.en)}: <span style="user-select:all">${esc(c.tel)}</span>`).join(" · "));
+  parts.push(`Map: 出典：国土数値情報（行政区域データ）（国土交通省）を加工して作成. "Locate me" sends your position only to the ${link("https://maps.gsi.go.jp/development/api.html", "GSI reverse geocoder")}.`);
   return parts.filter(Boolean).join(" ");
 }
 async function setCity(id){
   const entry = DATA.cities.find(w=>w.id===id) || DATA.cities[0];
+  const token = ++LOADING;
   const [rs, dict] = await loadCity(entry);
-  if($("#city").value !== entry.id) return; // the user picked another city while this one was loading
+  if(token !== LOADING) return; // another city was picked while this one was loading
   RS = rs; DICT = dict;
   store.set("wakeru-city", RS.id);
   ITEMS = DATA.items.map(resolve).filter(Boolean);
@@ -207,24 +221,27 @@ async function setCity(id){
   $("#footSrc").innerHTML = footerHTML();
   renderDays(); search($("#q").value);
 }
-function cityOptions(){
-  const groups = new Map();
-  for(const c of DATA.cities) groups.set(c.prefEn, [...(groups.get(c.prefEn) ?? []), c]);
-  return [...groups].map(([pref, list]) => `<optgroup label="${esc(pref)}">${list.map(c => `<option value="${c.id}">${esc(c.en)} ${esc(c.jp)}</option>`).join("")}</optgroup>`).join("");
+/* the onboarding saves city + area; without a saved city it opens on first visit, and "Change" reopens it */
+async function chooseLocation(){
+  const current = RS && AREA ? {id:RS.id, town:AREA.town} : null;
+  const picked = await runOnboarding({cities:DATA.cities, loadCity, describe, current});
+  if(!picked) return RS ? undefined : setCity(DEFAULT_CITY);
+  store.set("wakeru-city", picked.id);
+  store.set("wakeru-area-"+picked.id, `${picked.town}|${picked.en}`);
+  await setCity(picked.id);
 }
 async function init(){
   const [items, glossary, index] = await Promise.all([
     getJSON("data/shared/items.json"), getJSON("data/shared/glossary.json"), getJSON("data/municipalities.json")
   ]);
   DATA = {items, glossary, cities:index.municipalities};
-  $("#city").innerHTML = cityOptions();
-  const saved = store.get("wakeru-city") ?? store.get("wakeru-ward"), ids = DATA.cities.map(c=>c.id);
-  const start = ids.includes(saved) ? saved : ids.includes(DEFAULT_CITY) ? DEFAULT_CITY : ids[0];
-  $("#city").value = start; await setCity(start);
+  const saved = store.get("wakeru-city") ?? store.get("wakeru-ward");
+  if(DATA.cities.some(c => c.id === saved)) await setCity(saved);
+  else await chooseLocation();
 }
 
 /* ---------- events ---------- */
-$("#city").addEventListener("change", e => setCity(e.target.value).catch(showError));
+$("#where").addEventListener("click", () => chooseLocation().catch(showError));
 $("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.target.value) });
 $("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; showResults([it], it.en); window.scrollTo({top:0}) });
 $("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const c = b.dataset.c;
