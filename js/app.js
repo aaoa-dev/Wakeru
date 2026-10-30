@@ -152,25 +152,13 @@ const describe = (rs, area) => `<div class="place">${esc(areaName(area))}<small 
   <div class="week">${nextDays(rs, area, 3).map(r => dayRow(r, rs)).join("")}</div>
   <p class="fine">${esc(patternText(rs.calendar.patterns[area.pattern], rs))}</p>`;
 
-const areasOf = town => RS.areas.filter(a => a.town === town);
-function fillTowns(){
-  const towns = [...new Map(RS.areas.map(a => [a.town, a])).values()].sort((a,b) => a.townEn.localeCompare(b.townEn));
-  $("#town").innerHTML = towns.map(a => `<option value="${esc(a.town)}">${esc(a.townEn)} · ${esc(a.town)}</option>`).join("");
-}
-function fillAreas(town){
-  const list = areasOf(town);
-  $("#addrField").hidden = list.length < 2;
-  $("#addr").innerHTML = list.map((a,i) => `<option value="${i}">${esc(a.en)} · ${esc(a.jp)}</option>`).join("");
-}
+/* the area picked in the onboarding ("town|en"); the city's first area if it's missing or no longer exists */
 function restoreArea(){
   const [town, en] = (store.get("wakeru-area-"+RS.id) || "").split("|");
-  const t = RS.areas.some(a => a.town === town) ? town : $("#town").options[0].value;
-  $("#town").value = t; fillAreas(t);
-  $("#addr").value = String(Math.max(areasOf(t).findIndex(a => a.en === en), 0));
+  const list = RS.areas.filter(a => a.town === town);
+  AREA = list.find(a => a.en === en) ?? list[0] ?? RS.areas[0];
 }
 function renderDays(){
-  AREA = areasOf($("#town").value)[+$("#addr").value || 0];
-  store.set("wakeru-area-"+RS.id, `${AREA.town}|${AREA.en}`);
   $("#whereText").textContent = `${areaName(AREA)}, ${RS.en}`;
   const pat = RS.calendar.patterns[AREA.pattern];
   const now = new Date(); now.setHours(0,0,0,0);
@@ -215,7 +203,7 @@ async function setCity(id){
   $("#quick").innerHTML = ITEMS.map((i,n)=>i.quick?`<button type="button" data-i="${n}">${i.en.replace(/ \(.*\)/,"")}</button>`:"").join("");
   $("#cats").innerHTML = Object.keys(RS.bins).map(c=>`<button type="button" data-c="${c}">${esc(RS.bins[c].en)} · ${esc(RS.bins[c].label)}</button>`).join("");
   renderPlasticTest();
-  fillTowns(); restoreArea();
+  restoreArea();
   const validTo = RS.calendar.validTo ? ` Dates are published through ${RS.calendar.validTo}.` : "";
   $("#schedNote").textContent = `${RS.calendar.note || ""}${validTo} Your collection point's sign has the final word.`;
   $("#terms").innerHTML = DATA.glossary.map(t=>`<div class="term"><div class="jp">${t.jp}<small>${t.reading}</small></div>${chipHTML(t.bin, t.en, "")}<p>${t.meaning}</p><div class="aka">Elsewhere: <b>${t.elsewhere}</b></div></div>`).join("");
@@ -247,8 +235,6 @@ $("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.tar
 $("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; showResults([it], it.en); window.scrollTo({top:0}) });
 $("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const c = b.dataset.c;
   showResults(ITEMS.filter(i=>i.outs.some(o=>o.bin===c)), `Things that can go in ${RS.bins[c].en} (${RS.bins[c].label})`); window.scrollTo({top:0}) });
-$("#town").addEventListener("change", e => { fillAreas(e.target.value); $("#addr").value = "0"; renderDays() });
-$("#addr").addEventListener("change", renderDays);
 function switchView(v){
   document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected", b.dataset.v===v));
   ["sort","days","words"].forEach(x=>$("#v-"+x).hidden = x!==v);
