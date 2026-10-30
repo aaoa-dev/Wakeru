@@ -1,0 +1,8786 @@
+{
+  "id": "kawasaki",
+  "code": "14130",
+  "pref": "14",
+  "jp": "川崎市",
+  "en": "Kawasaki",
+  "verified": "2026-07-17",
+  "sources": [
+    "https://www.city.kawasaki.jp/kurashi/category/261-0-0-0-0-0-0-0-0-0.html",
+    "https://www.city.kawasaki.jp/300/page/0000012570.html",
+    "https://www.city.kawasaki.jp/templates/faq/300/0000125241.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "普通ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "beverage_can": {
+      "label": "飲料缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "使用済み乾電池",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "paper": {
+      "label": "ミックスペーパー",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "metal": {
+      "label": "小物金属",
+      "en": "Metal",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「木の枝」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「古着」 under 「資源集団回収」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「写真」 under 「ミックスペーパー」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「ミックスペーパー」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「資源集団回収」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「書籍」 under 「資源集団回収」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源集団回収」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源集団回収」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「アルミ缶(飲料用・食品用)」 under 「空き缶・ペットボトル」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "metal",
+      "note": "Auto-matched: the official list puts 「かさ」 under 「小物金属」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "metal",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「小物金属」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「プラスチック資源」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレイ(生鮮食料品<惣菜・肉・魚など>の受け皿)」 under 「プラスチック資源」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池(マンガン、アルカリ、リチウム一次電池)」 under 「使用済み乾電池」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "metal",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「小物金属」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ライター(使い捨てガスライター)」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「普通ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「その他」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「パソコン」 under 「その他」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「その他」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [],
+      "dates": []
+    },
+    "note": "Schedule converted by japan-gomi-data from 川崎市's official sources and checked against the official calendar.",
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "patterns": {
+      "asao-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "asao-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "asao-3": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "asao-4": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "asao-5": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "asao-6": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "asao-7": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "asao-8": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "kawasaki-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-3": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-4": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-5": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-6": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-7": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "kawasaki-8": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "kawasaki-9": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-10": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-11": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-12": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-13": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-14": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "kawasaki-15": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-3": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-4": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-5": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-6": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "miyamae-7": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-3": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "nakahara-4": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "nakahara-5": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-6": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-7": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-8": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-9": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-10": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-11": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-12": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-13": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "nakahara-14": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "saiwai-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "saiwai-3": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-4": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-5": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-6": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-7": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-8": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-9": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-10": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-11": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-12": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-13": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-14": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-15": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-16": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-17": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "saiwai-18": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "takatsu-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "takatsu-2": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "takatsu-3": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "takatsu-4": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "takatsu-5": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "takatsu-6": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01"
+          ]
+        }
+      },
+      "takatsu-7": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "takatsu-8": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-1": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-2": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-3": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-4": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-5": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-6": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-7": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-8": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-01",
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-9": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      },
+      "tama-10": {
+        "burnable": {
+          "days": [
+            3,
+            6
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "beverage_can": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "pet_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "glass_bottle": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        },
+        "metal": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2027-01-02"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "麻生区王禅寺",
+      "townEn": "Asao-ku, Ozenji",
+      "kana": "アサオクオウゼンジ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-3"
+    },
+    {
+      "town": "麻生区王禅寺西",
+      "townEn": "Asao-ku, Ozenjinishi",
+      "kana": "アサオクオウゼンジニシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-4"
+    },
+    {
+      "town": "麻生区王禅寺東",
+      "townEn": "Asao-ku, Ozenjihigashi",
+      "kana": "アサオクオウゼンジヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-3"
+    },
+    {
+      "town": "麻生区岡上",
+      "townEn": "Asao-ku, Okagami",
+      "kana": "アサオクオカガミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-3"
+    },
+    {
+      "town": "麻生区片平",
+      "townEn": "Asao-ku, Katahira",
+      "kana": "アサオクカタヒラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区金程",
+      "townEn": "Asao-ku, Kanahodo",
+      "kana": "アサオクカナホド",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-2"
+    },
+    {
+      "town": "麻生区上麻生",
+      "townEn": "Asao-ku, Kamiasao",
+      "kana": "アサオクカミアサオ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-4"
+    },
+    {
+      "town": "麻生区栗木",
+      "townEn": "Asao-ku, Kurigi",
+      "kana": "アサオククリギ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区栗木台",
+      "townEn": "Asao-ku, Kurigidai",
+      "kana": "アサオククリギダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区栗平",
+      "townEn": "Asao-ku, Kurihira",
+      "kana": "アサオククリヒラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区黒川",
+      "townEn": "Asao-ku, Kurokawa",
+      "kana": "アサオククロカワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区五力田",
+      "townEn": "Asao-ku, Gorikida",
+      "kana": "アサオクゴリキダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区下麻生",
+      "townEn": "Asao-ku, Shimoasao",
+      "kana": "アサオクシモアサオ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-4"
+    },
+    {
+      "town": "麻生区白鳥",
+      "townEn": "Asao-ku, Shiratori",
+      "kana": "アサオクシラトリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区高石",
+      "townEn": "Asao-ku, Takaishi",
+      "kana": "アサオクタカイシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-1"
+    },
+    {
+      "town": "麻生区多摩美",
+      "townEn": "Asao-ku, Tamami",
+      "kana": "アサオクタマミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-2"
+    },
+    {
+      "town": "麻生区千代ヶ丘",
+      "townEn": "Asao-ku, Chiyogaoka",
+      "kana": "アサオクチヨガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-2"
+    },
+    {
+      "town": "麻生区虹ヶ丘",
+      "townEn": "Asao-ku, Nijigaoka",
+      "kana": "アサオクニジガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-3"
+    },
+    {
+      "town": "麻生区白山",
+      "townEn": "Asao-ku, Hakusan",
+      "kana": "アサオクハクサン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-8"
+    },
+    {
+      "town": "麻生区早野",
+      "townEn": "Asao-ku, Hayano",
+      "kana": "アサオクハヤノ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-3"
+    },
+    {
+      "town": "麻生区はるひ野",
+      "townEn": "Asao-ku, Haruhino",
+      "kana": "アサオクハルヒノ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区東百合丘",
+      "townEn": "Asao-ku, Higashiyurigaoka",
+      "kana": "アサオクヒガシユリガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-5"
+    },
+    {
+      "town": "麻生区古沢",
+      "townEn": "Asao-ku, Furusawa",
+      "kana": "アサオクフルサワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-6"
+    },
+    {
+      "town": "麻生区細山",
+      "townEn": "Asao-ku, Hosoyama",
+      "kana": "アサオクホソヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-2"
+    },
+    {
+      "town": "麻生区万福寺",
+      "townEn": "Asao-ku, Mampukuji",
+      "kana": "アサオクマンプクジ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-6"
+    },
+    {
+      "town": "麻生区南黒川",
+      "townEn": "Asao-ku, Minamikurokawa",
+      "kana": "アサオクミナミクロカワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-7"
+    },
+    {
+      "town": "麻生区向原",
+      "townEn": "Asao-ku, Mukaibara",
+      "kana": "アサオクムカイバラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-2"
+    },
+    {
+      "town": "麻生区百合丘",
+      "townEn": "Asao-ku, Yurigaoka",
+      "kana": "アサオクユリガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "asao-5"
+    },
+    {
+      "town": "川崎区浅田",
+      "townEn": "Kawasaki-ku, Asada",
+      "kana": "カワサキクアサダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-1"
+    },
+    {
+      "town": "川崎区浅野町",
+      "townEn": "Kawasaki-ku, Asanocho",
+      "kana": "カワサキクアサノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区旭町",
+      "townEn": "Kawasaki-ku, Asahicho",
+      "kana": "カワサキクアサヒチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区池上新町",
+      "townEn": "Kawasaki-ku, Ikegamishincho",
+      "kana": "カワサキクイケガミシンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-10"
+    },
+    {
+      "town": "川崎区池上町",
+      "townEn": "Kawasaki-ku, Ikegamicho",
+      "kana": "カワサキクイケガミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-10"
+    },
+    {
+      "town": "川崎区池田",
+      "townEn": "Kawasaki-ku, Ikeda",
+      "kana": "カワサキクイケダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-5"
+    },
+    {
+      "town": "川崎区砂子",
+      "townEn": "Kawasaki-ku, Isago",
+      "kana": "カワサキクイサゴ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区伊勢町",
+      "townEn": "Kawasaki-ku, Isecho",
+      "kana": "カワサキクイセチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区浮島町",
+      "townEn": "Kawasaki-ku, Ukishimacho",
+      "kana": "カワサキクウキシマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区江川",
+      "townEn": "Kawasaki-ku, Egawa",
+      "kana": "カワサキクエガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区駅前本町",
+      "townEn": "Kawasaki-ku, Ekimaehoncho",
+      "kana": "カワサキクエキマエホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区榎町",
+      "townEn": "Kawasaki-ku, Enokicho",
+      "kana": "カワサキクエノキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区追分町",
+      "townEn": "Kawasaki-ku, Oiwakecho",
+      "kana": "カワサキクオイワケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区扇町",
+      "townEn": "Kawasaki-ku, Ogimachi",
+      "kana": "カワサキクオウギマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区大川町",
+      "townEn": "Kawasaki-ku, Okawacho",
+      "kana": "カワサキクオオカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-1"
+    },
+    {
+      "town": "川崎区扇島",
+      "townEn": "Kawasaki-ku, Ogishima",
+      "kana": "カワサキクオオギシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区大島",
+      "townEn": "Kawasaki-ku, Oshima",
+      "kana": "カワサキクオオシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区大島上町",
+      "townEn": "Kawasaki-ku, Oshimakamicho",
+      "kana": "カワサキクオオシマカミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-8"
+    },
+    {
+      "town": "川崎区小川町",
+      "townEn": "Kawasaki-ku, Ogawacho",
+      "kana": "カワサキクオガワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区小田",
+      "townEn": "Kawasaki-ku, Oda",
+      "kana": "カワサキクオダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-1"
+    },
+    {
+      "town": "川崎区小田栄",
+      "townEn": "Kawasaki-ku, Odasakae",
+      "kana": "カワサキクオダサカエ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区貝塚",
+      "townEn": "Kawasaki-ku, Kaizuka",
+      "kana": "カワサキクカイヅカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-8"
+    },
+    {
+      "town": "川崎区川中島",
+      "townEn": "Kawasaki-ku, Kawanakajima",
+      "kana": "カワサキクカワナカジマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-14"
+    },
+    {
+      "town": "川崎区観音",
+      "townEn": "Kawasaki-ku, Kannon",
+      "kana": "カワサキクカンノン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-15"
+    },
+    {
+      "town": "川崎区京町",
+      "townEn": "Kawasaki-ku, Kyomachi",
+      "kana": "カワサキクキョウマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-2"
+    },
+    {
+      "town": "川崎区鋼管通",
+      "townEn": "Kawasaki-ku, Kokandori",
+      "kana": "カワサキクコウカンドオリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区小島町",
+      "townEn": "Kawasaki-ku, Kojimacho",
+      "kana": "カワサキクコジマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区境町",
+      "townEn": "Kawasaki-ku, Sakaicho",
+      "kana": "カワサキクサカイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区桜本",
+      "townEn": "Kawasaki-ku, Sakuramoto",
+      "kana": "カワサキクサクラモト",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-10"
+    },
+    {
+      "town": "川崎区塩浜",
+      "townEn": "Kawasaki-ku, Shiohama",
+      "kana": "カワサキクシオハマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区下並木",
+      "townEn": "Kawasaki-ku, Shimonamiki",
+      "kana": "カワサキクシモナミキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-5"
+    },
+    {
+      "town": "川崎区昭和",
+      "townEn": "Kawasaki-ku, Showa",
+      "kana": "カワサキクショウワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区白石町",
+      "townEn": "Kawasaki-ku, Shiraishicho",
+      "kana": "カワサキクシライシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-1"
+    },
+    {
+      "town": "川崎区新川通",
+      "townEn": "Kawasaki-ku, Shinkawadori",
+      "kana": "カワサキクシンカワドオリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区鈴木町",
+      "townEn": "Kawasaki-ku, Suzukicho",
+      "kana": "カワサキクスズキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区大師駅前",
+      "townEn": "Kawasaki-ku, Daishi Ekimae",
+      "kana": "カワサキクダイシエキマエ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区大師河原",
+      "townEn": "Kawasaki-ku, Daishi Gawara",
+      "kana": "カワサキクダイシガワラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区大師公園",
+      "townEn": "Kawasaki-ku, Daishi Koen",
+      "kana": "カワサキクダイシコウエン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-14"
+    },
+    {
+      "town": "川崎区大師本町",
+      "townEn": "Kawasaki-ku, Daishi Honcho",
+      "kana": "カワサキクダイシホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区大師町",
+      "townEn": "Kawasaki-ku, Daishimachi",
+      "kana": "カワサキクダイシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区台町",
+      "townEn": "Kawasaki-ku, Daimachi",
+      "kana": "カワサキクダイマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区田島町",
+      "townEn": "Kawasaki-ku, Tajimacho",
+      "kana": "カワサキクタジマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区田辺新田",
+      "townEn": "Kawasaki-ku, Tanabeshinden",
+      "kana": "カワサキクタナベシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-1"
+    },
+    {
+      "town": "川崎区田町",
+      "townEn": "Kawasaki-ku, Tamachi",
+      "kana": "カワサキクタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区千鳥町",
+      "townEn": "Kawasaki-ku, Chidoricho",
+      "kana": "カワサキクチドリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区堤根",
+      "townEn": "Kawasaki-ku, Tsutsumine",
+      "kana": "カワサキクツツミネ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-5"
+    },
+    {
+      "town": "川崎区出来野",
+      "townEn": "Kawasaki-ku, Dekino",
+      "kana": "カワサキクデキノ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区殿町",
+      "townEn": "Kawasaki-ku, Tonomachi",
+      "kana": "カワサキクトノマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区中島",
+      "townEn": "Kawasaki-ku, Nakajima",
+      "kana": "カワサキクナカジマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区中瀬",
+      "townEn": "Kawasaki-ku, Nakaze",
+      "kana": "カワサキクナカゼ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区日進町",
+      "townEn": "Kawasaki-ku, Nisshincho",
+      "kana": "カワサキクニッシンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区浜町",
+      "townEn": "Kawasaki-ku, Hamacho",
+      "kana": "カワサキクハマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区東扇島",
+      "townEn": "Kawasaki-ku, Higashiogishima",
+      "kana": "カワサキクヒガシオオギシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区東田町",
+      "townEn": "Kawasaki-ku, Higashidacho",
+      "kana": "カワサキクヒガシダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区東門前",
+      "townEn": "Kawasaki-ku, Higashimonzen",
+      "kana": "カワサキクヒガシモンゼン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-11"
+    },
+    {
+      "town": "川崎区日ノ出",
+      "townEn": "Kawasaki-ku, Hinode",
+      "kana": "カワサキクヒノデ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区藤崎",
+      "townEn": "Kawasaki-ku, Fujisaki",
+      "kana": "カワサキクフジサキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区富士見",
+      "townEn": "Kawasaki-ku, Fujimi",
+      "kana": "カワサキクフジミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区堀之内町",
+      "townEn": "Kawasaki-ku, Horinochicho",
+      "kana": "カワサキクホリノウチチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区本町",
+      "townEn": "Kawasaki-ku, Honcho",
+      "kana": "カワサキクホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区水江町",
+      "townEn": "Kawasaki-ku, Mizuecho",
+      "kana": "カワサキクミズエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区港町",
+      "townEn": "Kawasaki-ku, Minatocho",
+      "kana": "カワサキクミナトチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-13"
+    },
+    {
+      "town": "川崎区南町",
+      "townEn": "Kawasaki-ku, Minamimachi",
+      "kana": "カワサキクミナミマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区南渡田町",
+      "townEn": "Kawasaki-ku, Minamiwataridacho",
+      "kana": "カワサキクミナミワタリダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-7"
+    },
+    {
+      "town": "川崎区宮前町",
+      "townEn": "Kawasaki-ku, Miyamaecho",
+      "kana": "カワサキクミヤマエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-9"
+    },
+    {
+      "town": "川崎区宮本町",
+      "townEn": "Kawasaki-ku, Miyamotocho",
+      "kana": "カワサキクミヤモトチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-4"
+    },
+    {
+      "town": "川崎区元木",
+      "townEn": "Kawasaki-ku, Motogi",
+      "kana": "カワサキクモトギ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-6"
+    },
+    {
+      "town": "川崎区夜光",
+      "townEn": "Kawasaki-ku, Yako",
+      "kana": "カワサキクヤコウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-12"
+    },
+    {
+      "town": "川崎区四谷上町",
+      "townEn": "Kawasaki-ku, Yotsuya Kamicho",
+      "kana": "カワサキクヨツヤカミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-15"
+    },
+    {
+      "town": "川崎区四谷下町",
+      "townEn": "Kawasaki-ku, Yotsuya Shimocho",
+      "kana": "カワサキクヨツヤシモチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-15"
+    },
+    {
+      "town": "川崎区渡田",
+      "townEn": "Kawasaki-ku, Watarida",
+      "kana": "カワサキクワタリダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-8"
+    },
+    {
+      "town": "川崎区渡田山王町",
+      "townEn": "Kawasaki-ku, Watarida Sannocho",
+      "kana": "カワサキクワタリダサンノウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-2"
+    },
+    {
+      "town": "川崎区渡田新町",
+      "townEn": "Kawasaki-ku, Watarida Shincho",
+      "kana": "カワサキクワタリダシンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-2"
+    },
+    {
+      "town": "川崎区渡田東町",
+      "townEn": "Kawasaki-ku, Watarida Higashicho",
+      "kana": "カワサキクワタリダヒガシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-8"
+    },
+    {
+      "town": "川崎区渡田向町",
+      "townEn": "Kawasaki-ku, Watarida Mukaicho",
+      "kana": "カワサキクワタリダムカイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "kawasaki-3"
+    },
+    {
+      "town": "幸区遠藤町",
+      "townEn": "Saiwai-ku, Endomachi",
+      "kana": "サイワイクエンドウマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-5"
+    },
+    {
+      "town": "幸区大宮町",
+      "townEn": "Saiwai-ku, Omiyacho",
+      "kana": "サイワイクオオミヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-2"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-15"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区小倉",
+      "townEn": "Saiwai-ku, Ogura",
+      "kana": "サイワイクオグラ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区鹿島田",
+      "townEn": "Saiwai-ku, Kashimada",
+      "kana": "サイワイクカシマダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-7"
+    },
+    {
+      "town": "幸区河原町",
+      "townEn": "Saiwai-ku, Kawaramachi",
+      "kana": "サイワイクカワラマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-5"
+    },
+    {
+      "town": "幸区河原町",
+      "townEn": "Saiwai-ku, Kawaramachi",
+      "kana": "サイワイクカワラマチ",
+      "chome": null,
+      "detail": "団地1～3号棟",
+      "en": "団地1～3号棟",
+      "jp": "団地1~3号棟",
+      "pattern": "saiwai-5"
+    },
+    {
+      "town": "幸区河原町",
+      "townEn": "Saiwai-ku, Kawaramachi",
+      "kana": "サイワイクカワラマチ",
+      "chome": null,
+      "detail": "団地4～9号棟",
+      "en": "団地4～9号棟",
+      "jp": "団地4~9号棟",
+      "pattern": "saiwai-9"
+    },
+    {
+      "town": "幸区河原町",
+      "townEn": "Saiwai-ku, Kawaramachi",
+      "kana": "サイワイクカワラマチ",
+      "chome": null,
+      "detail": "団地12～15号棟",
+      "en": "団地12～15号棟",
+      "jp": "団地12~15号棟",
+      "pattern": "saiwai-16"
+    },
+    {
+      "town": "幸区北加瀬",
+      "townEn": "Saiwai-ku, Kitakase",
+      "kana": "サイワイクキタカセ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-18"
+    },
+    {
+      "town": "幸区小向町",
+      "townEn": "Saiwai-ku, Komukaicho",
+      "kana": "サイワイクコムカイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-10"
+    },
+    {
+      "town": "幸区小向仲野町",
+      "townEn": "Saiwai-ku, Komukainakanocho",
+      "kana": "サイワイクコムカイナカノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-10"
+    },
+    {
+      "town": "幸区小向西町",
+      "townEn": "Saiwai-ku, Komukainishimachi",
+      "kana": "サイワイクコムカイニシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-10"
+    },
+    {
+      "town": "幸区紺屋町",
+      "townEn": "Saiwai-ku, Konyamachi",
+      "kana": "サイワイクコンヤマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-4"
+    },
+    {
+      "town": "幸区幸町",
+      "townEn": "Saiwai-ku, Saiwaicho",
+      "kana": "サイワイクサイワイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-2"
+    },
+    {
+      "town": "幸区下平間",
+      "townEn": "Saiwai-ku, Shimohirama",
+      "kana": "サイワイクシモヒラマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-8"
+    },
+    {
+      "town": "幸区新小倉",
+      "townEn": "Saiwai-ku, Shinogura",
+      "kana": "サイワイクシンオグラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-14"
+    },
+    {
+      "town": "幸区新川崎",
+      "townEn": "Saiwai-ku, Shinkawasaki",
+      "kana": "サイワイクシンカワサキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-13"
+    },
+    {
+      "town": "幸区新塚越",
+      "townEn": "Saiwai-ku, Shintsukagoshi",
+      "kana": "サイワイクシンツカゴシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-6"
+    },
+    {
+      "town": "幸区神明町",
+      "townEn": "Saiwai-ku, Shimmeicho",
+      "kana": "サイワイクシンメイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-4"
+    },
+    {
+      "town": "幸区塚越",
+      "townEn": "Saiwai-ku, Tsukagoshi",
+      "kana": "サイワイクツカゴシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-8"
+    },
+    {
+      "town": "幸区戸手",
+      "townEn": "Saiwai-ku, Tote",
+      "kana": "サイワイクトテ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-3"
+    },
+    {
+      "town": "幸区戸手本町",
+      "townEn": "Saiwai-ku, Totehommachi",
+      "kana": "サイワイクトテホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-6"
+    },
+    {
+      "town": "幸区中幸町",
+      "townEn": "Saiwai-ku, Nakasaiwaicho",
+      "kana": "サイワイクナカサイワイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-2"
+    },
+    {
+      "town": "幸区東小倉",
+      "townEn": "Saiwai-ku, Higashiogura",
+      "kana": "サイワイクヒガシオグラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-15"
+    },
+    {
+      "town": "幸区東古市場",
+      "townEn": "Saiwai-ku, Higashifuruichiba",
+      "kana": "サイワイクヒガシフルイチバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-11"
+    },
+    {
+      "town": "幸区古市場",
+      "townEn": "Saiwai-ku, Furuichiba",
+      "kana": "サイワイクフルイチバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-11"
+    },
+    {
+      "town": "幸区古市場",
+      "townEn": "Saiwai-ku, Furuichiba",
+      "kana": "サイワイクフルイチバ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "saiwai-11"
+    },
+    {
+      "town": "幸区古市場",
+      "townEn": "Saiwai-ku, Furuichiba",
+      "kana": "サイワイクフルイチバ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "saiwai-11"
+    },
+    {
+      "town": "幸区古川町",
+      "townEn": "Saiwai-ku, Furukawamachi",
+      "kana": "サイワイクフルカワマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-12"
+    },
+    {
+      "town": "幸区堀川町",
+      "townEn": "Saiwai-ku, Horikawacho",
+      "kana": "サイワイクホリカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-2"
+    },
+    {
+      "town": "幸区南加瀬",
+      "townEn": "Saiwai-ku, Minamikase",
+      "kana": "サイワイクミナミカセ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-17"
+    },
+    {
+      "town": "幸区南幸町",
+      "townEn": "Saiwai-ku, Minamisaiwaicho",
+      "kana": "サイワイクミナミサイワイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-1"
+    },
+    {
+      "town": "幸区都町",
+      "townEn": "Saiwai-ku, Miyakocho",
+      "kana": "サイワイクミヤコチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-1"
+    },
+    {
+      "town": "幸区矢上",
+      "townEn": "Saiwai-ku, Yagami",
+      "kana": "サイワイクヤガミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-18"
+    },
+    {
+      "town": "幸区柳町",
+      "townEn": "Saiwai-ku, Yanagicho",
+      "kana": "サイワイクヤナギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "saiwai-1"
+    },
+    {
+      "town": "高津区明津",
+      "townEn": "Takatsu-ku, Akutsu",
+      "kana": "タカツクアクツ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区宇奈根",
+      "townEn": "Takatsu-ku, Unane",
+      "kana": "タカツクウナネ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-5"
+    },
+    {
+      "town": "高津区梶ヶ谷",
+      "townEn": "Takatsu-ku, Kajigaya",
+      "kana": "タカツクカジガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-4"
+    },
+    {
+      "town": "高津区蟹ヶ谷",
+      "townEn": "Takatsu-ku, Kanigaya",
+      "kana": "タカツクカニガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区上作延",
+      "townEn": "Takatsu-ku, Kamisakunobe",
+      "kana": "タカツクカミサクノベ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-5"
+    },
+    {
+      "town": "高津区北野川",
+      "townEn": "Takatsu-ku, Kitanogawa",
+      "kana": "タカツクキタノガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-1"
+    },
+    {
+      "town": "高津区北見方",
+      "townEn": "Takatsu-ku, Kitamigata",
+      "kana": "タカツクキタミガタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-3"
+    },
+    {
+      "town": "高津区久地",
+      "townEn": "Takatsu-ku, Kuji",
+      "kana": "タカツククジ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-5"
+    },
+    {
+      "town": "高津区坂戸",
+      "townEn": "Takatsu-ku, Sakado",
+      "kana": "タカツクサカド",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-2"
+    },
+    {
+      "town": "高津区子母口",
+      "townEn": "Takatsu-ku, Shibokuchi",
+      "kana": "タカツクシボクチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区子母口富士見台",
+      "townEn": "Takatsu-ku, Shibokuchifujimidai",
+      "kana": "タカツクシボクチフジミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区下作延",
+      "townEn": "Takatsu-ku, Shimosakunobe",
+      "kana": "タカツクシモサクノベ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-5"
+    },
+    {
+      "town": "高津区下野毛",
+      "townEn": "Takatsu-ku, Shimonoge",
+      "kana": "タカツクシモノゲ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-3"
+    },
+    {
+      "town": "高津区新作",
+      "townEn": "Takatsu-ku, Shinsaku",
+      "kana": "タカツクシンサク",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区末長",
+      "townEn": "Takatsu-ku, Suenaga",
+      "kana": "タカツクスエナガ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-2"
+    },
+    {
+      "town": "高津区諏訪",
+      "townEn": "Takatsu-ku, Suwa",
+      "kana": "タカツクスワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-3"
+    },
+    {
+      "town": "高津区瀬田",
+      "townEn": "Takatsu-ku, Seta",
+      "kana": "タカツクセタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-3"
+    },
+    {
+      "town": "高津区千年",
+      "townEn": "Takatsu-ku, Chitose",
+      "kana": "タカツクチトセ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区千年新町",
+      "townEn": "Takatsu-ku, Chitoseshincho",
+      "kana": "タカツクチトセシンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-8"
+    },
+    {
+      "town": "高津区東野川",
+      "townEn": "Takatsu-ku, Higashinogawa",
+      "kana": "タカツクヒガシノガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-1"
+    },
+    {
+      "town": "高津区久末",
+      "townEn": "Takatsu-ku, Hisasue",
+      "kana": "タカツクヒサスエ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-7"
+    },
+    {
+      "town": "高津区久本",
+      "townEn": "Takatsu-ku, Hisamoto",
+      "kana": "タカツクヒサモト",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-2"
+    },
+    {
+      "town": "高津区二子",
+      "townEn": "Takatsu-ku, Futago",
+      "kana": "タカツクフタゴ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-3"
+    },
+    {
+      "town": "高津区溝口",
+      "townEn": "Takatsu-ku, Mizonokuchi",
+      "kana": "タカツクミゾノクチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-6"
+    },
+    {
+      "town": "高津区向ヶ丘",
+      "townEn": "Takatsu-ku, Mukaigaoka",
+      "kana": "タカツクムカイガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "takatsu-5"
+    },
+    {
+      "town": "多摩区生田",
+      "townEn": "Tama-ku, Ikuta",
+      "kana": "タマクイクタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-2"
+    },
+    {
+      "town": "多摩区和泉",
+      "townEn": "Tama-ku, Izumi",
+      "kana": "タマクイズミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-9"
+    },
+    {
+      "town": "多摩区栗谷",
+      "townEn": "Tama-ku, Kuriya",
+      "kana": "タマククリヤ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-3"
+    },
+    {
+      "town": "多摩区宿河原",
+      "townEn": "Tama-ku, Shukugawara",
+      "kana": "タマクシュクガワラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-10"
+    },
+    {
+      "town": "多摩区菅",
+      "townEn": "Tama-ku, Suge",
+      "kana": "タマクスゲ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅稲田堤",
+      "townEn": "Tama-ku, Sugeinadazutsumi",
+      "kana": "タマクスゲイナダヅツミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅北浦",
+      "townEn": "Tama-ku, Sugekitaura",
+      "kana": "タマクスゲキタウラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅城下",
+      "townEn": "Tama-ku, Sugeshiroshita",
+      "kana": "タマクスゲシロシタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅仙谷",
+      "townEn": "Tama-ku, Sugesengoku",
+      "kana": "タマクスゲセンゴク",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅野戸呂",
+      "townEn": "Tama-ku, Sugenotoro",
+      "kana": "タマクスゲノトロ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区菅馬場",
+      "townEn": "Tama-ku, Sugebamba",
+      "kana": "タマクスゲバンバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-4"
+    },
+    {
+      "town": "多摩区堰",
+      "townEn": "Tama-ku, Seki",
+      "kana": "タマクセキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-10"
+    },
+    {
+      "town": "多摩区寺尾台",
+      "townEn": "Tama-ku, Teraodai",
+      "kana": "タマクテラオダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-2"
+    },
+    {
+      "town": "多摩区長尾",
+      "townEn": "Tama-ku, Nagao",
+      "kana": "タマクナガオ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-8"
+    },
+    {
+      "town": "多摩区長沢",
+      "townEn": "Tama-ku, Nagasawa",
+      "kana": "タマクナガサワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-1"
+    },
+    {
+      "town": "多摩区中野島",
+      "townEn": "Tama-ku, Nakanoshima",
+      "kana": "タマクナカノシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-7"
+    },
+    {
+      "town": "多摩区西生田",
+      "townEn": "Tama-ku, Nishiikuta",
+      "kana": "タマクニシイクタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-1"
+    },
+    {
+      "town": "多摩区登戸",
+      "townEn": "Tama-ku, Noborito",
+      "kana": "タマクノボリト",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-9"
+    },
+    {
+      "town": "多摩区登戸新町",
+      "townEn": "Tama-ku, Noboritoshimmachi",
+      "kana": "タマクノボリトシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-10"
+    },
+    {
+      "town": "多摩区東生田",
+      "townEn": "Tama-ku, Higashiikuta",
+      "kana": "タマクヒガシイクタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-5"
+    },
+    {
+      "town": "多摩区東三田",
+      "townEn": "Tama-ku, Higashimita",
+      "kana": "タマクヒガシミタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-6"
+    },
+    {
+      "town": "多摩区布田",
+      "townEn": "Tama-ku, Fuda",
+      "kana": "タマクフダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-7"
+    },
+    {
+      "town": "多摩区枡形",
+      "townEn": "Tama-ku, Masugata",
+      "kana": "タマクマスガタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-5"
+    },
+    {
+      "town": "多摩区三田",
+      "townEn": "Tama-ku, Mita",
+      "kana": "タマクミタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-6"
+    },
+    {
+      "town": "多摩区南生田",
+      "townEn": "Tama-ku, Minamiikuta",
+      "kana": "タマクミナミイクタ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "tama-1"
+    },
+    {
+      "town": "中原区井田",
+      "townEn": "Nakahara-ku, Ida",
+      "kana": "ナカハラクイダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-10"
+    },
+    {
+      "town": "中原区井田三舞町",
+      "townEn": "Nakahara-ku, Ida-sanmaicho",
+      "kana": "ナカハラクイダサンマイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-10"
+    },
+    {
+      "town": "中原区井田杉山町",
+      "townEn": "Nakahara-ku, Ida-sugiyamacho",
+      "kana": "ナカハラクイダスギヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-10"
+    },
+    {
+      "town": "中原区井田中ノ町",
+      "townEn": "Nakahara-ku, Ida-nakanocho",
+      "kana": "ナカハラクイダナカノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-10"
+    },
+    {
+      "town": "中原区市ノ坪",
+      "townEn": "Nakahara-ku, Ichinotsubo",
+      "kana": "ナカハラクイチノツボ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-13"
+    },
+    {
+      "town": "中原区今井上町",
+      "townEn": "Nakahara-ku, Imai-kamicho",
+      "kana": "ナカハラクイマイカミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-13"
+    },
+    {
+      "town": "中原区今井仲町",
+      "townEn": "Nakahara-ku, Imai-nakamachi",
+      "kana": "ナカハラクイマイナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-13"
+    },
+    {
+      "town": "中原区今井西町",
+      "townEn": "Nakahara-ku, Imai-nishimachi",
+      "kana": "ナカハラクイマイニシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-13"
+    },
+    {
+      "town": "中原区今井南町",
+      "townEn": "Nakahara-ku, Imai-minamicho",
+      "kana": "ナカハラクイマイミナミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-13"
+    },
+    {
+      "town": "中原区大倉町",
+      "townEn": "Nakahara-ku, Okuracho",
+      "kana": "ナカハラクオオクラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-12"
+    },
+    {
+      "town": "中原区上小田中",
+      "townEn": "Nakahara-ku, Kamikodanaka",
+      "kana": "ナカハラクカミコダナカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-3"
+    },
+    {
+      "town": "中原区上新城",
+      "townEn": "Nakahara-ku, Kamishinjo",
+      "kana": "ナカハラクカミシンジョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-2"
+    },
+    {
+      "town": "中原区上平間",
+      "townEn": "Nakahara-ku, Kamihirama",
+      "kana": "ナカハラクカミヒラマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-5"
+    },
+    {
+      "town": "中原区上丸子",
+      "townEn": "Nakahara-ku, Kamimaruko",
+      "kana": "ナカハラクカミマルコ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-6"
+    },
+    {
+      "town": "中原区上丸子山王町",
+      "townEn": "Nakahara-ku, Kamimaruko Sannocho",
+      "kana": "ナカハラクカミマルコサンノウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-6"
+    },
+    {
+      "town": "中原区上丸子天神町",
+      "townEn": "Nakahara-ku, Kamimaruko Tenjincho",
+      "kana": "ナカハラクカミマルコテンジンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-9"
+    },
+    {
+      "town": "中原区上丸子八幡町",
+      "townEn": "Nakahara-ku, Kamimaruko Hachimancho",
+      "kana": "ナカハラクカミマルコハチマンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-7"
+    },
+    {
+      "town": "中原区苅宿",
+      "townEn": "Nakahara-ku, Kariyado",
+      "kana": "ナカハラクカリヤド",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-12"
+    },
+    {
+      "town": "中原区北谷町",
+      "townEn": "Nakahara-ku, Kitayacho",
+      "kana": "ナカハラクキタヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-5"
+    },
+    {
+      "town": "中原区木月",
+      "townEn": "Nakahara-ku, Kizuki",
+      "kana": "ナカハラクキヅキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-11"
+    },
+    {
+      "town": "中原区木月",
+      "townEn": "Nakahara-ku, Kizuki",
+      "kana": "ナカハラクキヅキ",
+      "chome": null,
+      "detail": "祇園町",
+      "en": "祇園町",
+      "jp": "祇園町",
+      "pattern": "nakahara-11"
+    },
+    {
+      "town": "中原区木月伊勢町",
+      "townEn": "Nakahara-ku, Kizuki-isecho",
+      "kana": "ナカハラクキヅキイセチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-14"
+    },
+    {
+      "town": "中原区木月大町",
+      "townEn": "Nakahara-ku, Kizuki-omachi",
+      "kana": "ナカハラクキヅキオオマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-11"
+    },
+    {
+      "town": "中原区木月住吉町",
+      "townEn": "Nakahara-ku, Kizuki-sumiyoshicho",
+      "kana": "ナカハラクキヅキスミヨシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-12"
+    },
+    {
+      "town": "中原区小杉御殿町",
+      "townEn": "Nakahara-ku, Kosugi Gotencho",
+      "kana": "ナカハラクコスギゴテンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-8"
+    },
+    {
+      "town": "中原区小杉陣屋町",
+      "townEn": "Nakahara-ku, Kosugi Jinyacho",
+      "kana": "ナカハラクコスギジンヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-8"
+    },
+    {
+      "town": "中原区小杉町",
+      "townEn": "Nakahara-ku, Kosugimachi",
+      "kana": "ナカハラクコスギマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-8"
+    },
+    {
+      "town": "中原区下小田中",
+      "townEn": "Nakahara-ku, Shimokodanaka",
+      "kana": "ナカハラクシモコダナカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-1"
+    },
+    {
+      "town": "中原区下新城",
+      "townEn": "Nakahara-ku, Shimoshinjo",
+      "kana": "ナカハラクシモシンジョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-2"
+    },
+    {
+      "town": "中原区下沼部",
+      "townEn": "Nakahara-ku, Shimonumabe",
+      "kana": "ナカハラクシモヌマベ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-6"
+    },
+    {
+      "town": "中原区新城",
+      "townEn": "Nakahara-ku, Shinjo",
+      "kana": "ナカハラクシンジョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-2"
+    },
+    {
+      "town": "中原区新城中町",
+      "townEn": "Nakahara-ku, Shinjonakacho",
+      "kana": "ナカハラクシンジョウナカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-2"
+    },
+    {
+      "town": "中原区新丸子東",
+      "townEn": "Nakahara-ku, Shimmarukohigashi",
+      "kana": "ナカハラクシンマルコヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-9"
+    },
+    {
+      "town": "中原区新丸子町",
+      "townEn": "Nakahara-ku, Shimmarukomachi",
+      "kana": "ナカハラクシンマルコマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-9"
+    },
+    {
+      "town": "中原区田尻町",
+      "townEn": "Nakahara-ku, Tajiricho",
+      "kana": "ナカハラクタジリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-5"
+    },
+    {
+      "town": "中原区等々力",
+      "townEn": "Nakahara-ku, Todoroki",
+      "kana": "ナカハラクトドロキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-8"
+    },
+    {
+      "town": "中原区中丸子",
+      "townEn": "Nakahara-ku, Nakamaruko",
+      "kana": "ナカハラクナカマルコ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-6"
+    },
+    {
+      "town": "中原区西加瀬",
+      "townEn": "Nakahara-ku, Nishi-kase",
+      "kana": "ナカハラクニシカセ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-12"
+    },
+    {
+      "town": "中原区丸子通",
+      "townEn": "Nakahara-ku, Marukodori",
+      "kana": "ナカハラクマルコドオリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-9"
+    },
+    {
+      "town": "中原区宮内",
+      "townEn": "Nakahara-ku, Miyauchi",
+      "kana": "ナカハラクミヤウチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "nakahara-4"
+    },
+    {
+      "town": "宮前区有馬",
+      "townEn": "Miyamae-ku, Arima",
+      "kana": "ミヤマエクアリマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-4"
+    },
+    {
+      "town": "宮前区犬蔵",
+      "townEn": "Miyamae-ku, Inukura",
+      "kana": "ミヤマエクイヌクラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区梶ヶ谷",
+      "townEn": "Miyamae-ku, Kajigaya",
+      "kana": "ミヤマエクカジガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-4"
+    },
+    {
+      "town": "宮前区けやき平",
+      "townEn": "Miyamae-ku, Keyakidaira",
+      "kana": "ミヤマエクケヤキダイラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区五所塚",
+      "townEn": "Miyamae-ku, Goshozuka",
+      "kana": "ミヤマエクゴショヅカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区小台",
+      "townEn": "Miyamae-ku, Kodai",
+      "kana": "ミヤマエクコダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-2"
+    },
+    {
+      "town": "宮前区鷺沼",
+      "townEn": "Miyamae-ku, Saginuma",
+      "kana": "ミヤマエクサギヌマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-2"
+    },
+    {
+      "town": "宮前区潮見台",
+      "townEn": "Miyamae-ku, Shiomidai",
+      "kana": "ミヤマエクシオミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区神木",
+      "townEn": "Miyamae-ku, Shiboku",
+      "kana": "ミヤマエクシボク",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-1"
+    },
+    {
+      "town": "宮前区神木本町",
+      "townEn": "Miyamae-ku, Shibokuhoncho",
+      "kana": "ミヤマエクシボクホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区白幡台",
+      "townEn": "Miyamae-ku, Shirahatadai",
+      "kana": "ミヤマエクシラハタダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区菅生",
+      "townEn": "Miyamae-ku, Sugao",
+      "kana": "ミヤマエクスガオ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区菅生",
+      "townEn": "Miyamae-ku, Sugao",
+      "kana": "ミヤマエクスガオ",
+      "chome": null,
+      "detail": "ヶ丘",
+      "en": "ヶ丘",
+      "jp": "ヶ丘",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区平",
+      "townEn": "Miyamae-ku, Taira",
+      "kana": "ミヤマエクタイラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区土橋",
+      "townEn": "Miyamae-ku, Tsuchihashi",
+      "kana": "ミヤマエクツチハシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-2"
+    },
+    {
+      "town": "宮前区南平台",
+      "townEn": "Miyamae-ku, Nampeidai",
+      "kana": "ミヤマエクナンペイダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-6"
+    },
+    {
+      "town": "宮前区西野川",
+      "townEn": "Miyamae-ku, Nishinogawa",
+      "kana": "ミヤマエクニシノガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-5"
+    },
+    {
+      "town": "宮前区野川",
+      "townEn": "Miyamae-ku, No",
+      "kana": "ミヤマエクノ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-5"
+    },
+    {
+      "town": "宮前区野川台",
+      "townEn": "Miyamae-ku, Nogawadai",
+      "kana": "ミヤマエクノガワダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-5"
+    },
+    {
+      "town": "宮前区野川本町",
+      "townEn": "Miyamae-ku, Nogawahoncho",
+      "kana": "ミヤマエクノガワホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-5"
+    },
+    {
+      "town": "宮前区初山",
+      "townEn": "Miyamae-ku, Hatsuyama",
+      "kana": "ミヤマエクハツヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区東有馬",
+      "townEn": "Miyamae-ku, Higashiarima",
+      "kana": "ミヤマエクヒガシアリマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-4"
+    },
+    {
+      "town": "宮前区馬絹",
+      "townEn": "Miyamae-ku, Maginu",
+      "kana": "ミヤマエクマギヌ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-4"
+    },
+    {
+      "town": "宮前区水沢",
+      "townEn": "Miyamae-ku, Mizusawa",
+      "kana": "ミヤマエクミズサワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-7"
+    },
+    {
+      "town": "宮前区南野川",
+      "townEn": "Miyamae-ku, Minaminogawa",
+      "kana": "ミヤマエクミナミノガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-5"
+    },
+    {
+      "town": "宮前区宮崎",
+      "townEn": "Miyamae-ku, Miyazaki",
+      "kana": "ミヤマエクミヤザキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-3"
+    },
+    {
+      "town": "宮前区宮前平",
+      "townEn": "Miyamae-ku, Miyamaedaira",
+      "kana": "ミヤマエクミヤマエダイラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "miyamae-3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "japan-gomi-data",
+      "url": "https://github.com/tecolicom/japan-gomi-data",
+      "license": "CC BY 4.0",
+      "commit": "747337a",
+      "path": "municipalities/kanagawa/kawasaki"
+    }
+  },
+  "updated": "2026-10-30"
+}

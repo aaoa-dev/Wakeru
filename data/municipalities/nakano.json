@@ -1,5 +1,7 @@
 {
   "id": "nakano",
+  "code": "13114",
+  "pref": "13",
   "jp": "中野区",
   "en": "Nakano",
   "verified": "2026-10-30",
@@ -77,7 +79,9 @@
   "plasticTest": {
     "maxCm": 30,
     "products": true,
-    "summary": "Clean plastic packaging and items made only of plastic, 30 cm or smaller, go to Plastic together. Plastic that won't rinse clean, or that has other materials attached, goes to Burnable, or to Ceramics, glass & metal if it is mostly metal or battery-powered."
+    "summary": "Clean plastic packaging and items made only of plastic, 30 cm or smaller, go to Plastic together. Plastic that won't rinse clean, or that has other materials attached, goes to Burnable, or to Ceramics, glass & metal if it is mostly metal or battery-powered.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {

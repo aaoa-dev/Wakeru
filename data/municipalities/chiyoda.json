@@ -1,5 +1,7 @@
 {
   "id": "chiyoda",
+  "code": "13101",
+  "pref": "13",
   "jp": "千代田区",
   "en": "Chiyoda",
   "verified": "2026-10-30",
@@ -64,7 +66,9 @@
   "plasticTest": {
     "maxCm": 30,
     "products": true,
-    "summary": "Clean, empty, 100% plastic and under 30 cm goes to Plastic, packaging and plastic products together. Anything dirty or mixed goes to Burnable."
+    "summary": "Clean, empty, 100% plastic and under 30 cm goes to Plastic, packaging and plastic products together. Anything dirty or mixed goes to Burnable.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {

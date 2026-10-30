@@ -8,14 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="css/styles.css">
-<script src="js/app.js" defer></script>
+<script type="module" src="js/app.js"></script>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <div class="brand">
     <h1>分ける <span>Wakeru</span></h1>
-    <div class="city"><label for="city">Ward</label>
+    <div class="city"><label for="city">City</label>
       <select id="city"></select>
     </div>
   </div>
@@ -37,7 +37,7 @@
     <div class="list" id="results"></div>
   </div>
   <div id="dictWrap" hidden>
-    <h2 id="dictTitle">From the ward's official list</h2>
+    <h2 id="dictTitle">From the city's official list</h2>
     <p class="fine" id="dictNote"></p>
     <div class="list" id="dict"></div>
   </div>

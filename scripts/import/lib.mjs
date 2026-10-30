@@ -99,18 +99,22 @@ export function parseRule(cell){
     if(!weeks.length || days.length !== 1) throw new Error(`can't read nth-weekday rule "${cell}"`);
     return {day:days[0], weeks};
   }
-  const range = s.match(/([日月火水木金土])[～\-ー]([日月火水木金土])/);
+  const range = s.match(/([日月火水木金土])[~〜\-ー]([日月火水木金土])/);
   if(range){ const a = DAYS.indexOf(range[1]), b = DAYS.indexOf(range[2]); return Array.from({length:b-a+1}, (_, i) => a + i) }
   return [...new Set(days)].sort((a, b) => a - b);
 }
 
 /* ---------- official town list (Digital Agency Address Base Registry, CC BY 4.0) ---------- */
-const ABR_URL = "https://data.address-br.digital.go.jp/mt_town/pref/mt_town_pref13.csv.zip";
-let ABR;
-export async function townRegistry(wardJp){
-  ABR ??= csvObjects(decode(unzipFirst(await download("shared", ABR_URL)))).filter(r => !r.ablt_date);
+const ABR = {};
+/* active town rows of one prefecture ("13" = Tokyo) */
+export async function abrRows(pref){
+  const url = `https://data.address-br.digital.go.jp/mt_town/pref/mt_town_pref${pref}.csv.zip`;
+  return ABR[pref] ??= csvObjects(decode(unzipFirst(await download("shared", url)))).filter(r => !r.ablt_date);
+}
+/* official towns of a municipality (or of one ward of a designated city): Map town → {jp, kana, en, chome:[]} */
+export async function townRegistry(cityJp, {pref = "13", ward = ""} = {}){
   const towns = new Map();
-  for(const r of ABR.filter(r => r.city === wardJp)){
+  for(const r of (await abrRows(pref)).filter(r => r.city === cityJp && (!ward || r.ward === ward))){
     const t = towns.get(r.oaza_cho) ?? {jp:r.oaza_cho, kana:r.oaza_cho_kana, en:townEn(r), chome:[]};
     if(r.chome_number) t.chome.push(+r.chome_number);
     towns.set(r.oaza_cho, t);

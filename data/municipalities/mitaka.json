@@ -1,0 +1,2015 @@
+{
+  "id": "mitaka",
+  "code": "13204",
+  "pref": "13",
+  "jp": "三鷹市",
+  "en": "Mitaka",
+  "verified": "2026-08-15",
+  "sources": [
+    "https://www.city.mitaka.lg.jp/c_categories/index01004001001.html",
+    "https://www.city.mitaka.lg.jp/c_service/095/095682.html",
+    "https://www.city.mitaka.lg.jp/c_service/095/attached/attach_95682_6.pdf"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "飲料缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "cloth": {
+      "label": "古布",
+      "en": "Clothes & fabric",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「木の枝」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「書籍」 under 「古紙」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「紙パック（内側が白色のもの）」 under 「古紙」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「CD(コンパクトディスク）」 under 「プラスチック類」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレイ」 under 「プラスチック類」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池(マンガン、アルカリ、リチウム一次電池)」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「タンス」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「テレビ」 under 「収集不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [],
+      "dates": []
+    },
+    "note": "Schedule converted by japan-gomi-data from 三鷹市's official sources and checked against the official calendar.",
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "patterns": {
+      "095664": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095666": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095667": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095671": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-15",
+            "2027-01-29"
+          ]
+        },
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-08",
+            "2027-01-22"
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-08",
+            "2027-01-22"
+          ]
+        },
+        "cloth": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095674": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095677": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            5
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095680": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095682": {
+        "burnable": {
+          "days": [
+            1,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-08",
+            "2027-01-22"
+          ]
+        },
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-15",
+            "2027-01-29"
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ],
+          "add": [
+            "2027-01-15",
+            "2027-01-29"
+          ]
+        },
+        "cloth": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            2
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            3
+          ],
+          "except": [
+            "2026-12-29",
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095685": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      },
+      "095687": {
+        "burnable": {
+          "days": [
+            2,
+            5
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "plastic": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "cloth": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "paper": {
+          "days": [
+            1
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        },
+        "hazardous": {
+          "days": [
+            4
+          ],
+          "except": [
+            "2026-12-30",
+            "2026-12-31",
+            "2027-01-01"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "井口",
+      "townEn": "Iguchi",
+      "kana": "イグチ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "井口",
+      "townEn": "Iguchi",
+      "kana": "イグチ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "井口",
+      "townEn": "Iguchi",
+      "kana": "イグチ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "井口",
+      "townEn": "Iguchi",
+      "kana": "イグチ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "井口",
+      "townEn": "Iguchi",
+      "kana": "イグチ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "井の頭",
+      "townEn": "Inokashira",
+      "kana": "イノカシラ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095680"
+    },
+    {
+      "town": "井の頭",
+      "townEn": "Inokashira",
+      "kana": "イノカシラ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095680"
+    },
+    {
+      "town": "井の頭",
+      "townEn": "Inokashira",
+      "kana": "イノカシラ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095680"
+    },
+    {
+      "town": "井の頭",
+      "townEn": "Inokashira",
+      "kana": "イノカシラ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095680"
+    },
+    {
+      "town": "井の頭",
+      "townEn": "Inokashira",
+      "kana": "イノカシラ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095680"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Osawa",
+      "kana": "オオサワ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095667"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095667"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095667"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095667"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095667"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "095674"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        7
+      ],
+      "detail": null,
+      "en": "7 chome",
+      "jp": "7丁目",
+      "pattern": "095674"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        8
+      ],
+      "detail": null,
+      "en": "8 chome",
+      "jp": "8丁目",
+      "pattern": "095674"
+    },
+    {
+      "town": "上連雀",
+      "townEn": "Kamirenjaku",
+      "kana": "カミレンジャク",
+      "chome": [
+        9
+      ],
+      "detail": null,
+      "en": "9 chome",
+      "jp": "9丁目",
+      "pattern": "095674"
+    },
+    {
+      "town": "北野",
+      "townEn": "Kitano",
+      "kana": "キタノ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "北野",
+      "townEn": "Kitano",
+      "kana": "キタノ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "北野",
+      "townEn": "Kitano",
+      "kana": "キタノ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "北野",
+      "townEn": "Kitano",
+      "kana": "キタノ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095671"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095671"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095671"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095671"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        7
+      ],
+      "detail": null,
+      "en": "7 chome",
+      "jp": "7丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        8
+      ],
+      "detail": null,
+      "en": "8 chome",
+      "jp": "8丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "下連雀",
+      "townEn": "Shimorenjaku",
+      "kana": "シモレンジャク",
+      "chome": [
+        9
+      ],
+      "detail": null,
+      "en": "9 chome",
+      "jp": "9丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095685"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "095677"
+    },
+    {
+      "town": "深大寺",
+      "townEn": "Jindaiji",
+      "kana": "ジンダイジ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "深大寺",
+      "townEn": "Jindaiji",
+      "kana": "ジンダイジ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "深大寺",
+      "townEn": "Jindaiji",
+      "kana": "ジンダイジ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "中原",
+      "townEn": "Nakahara",
+      "kana": "ナカハラ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "中原",
+      "townEn": "Nakahara",
+      "kana": "ナカハラ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "中原",
+      "townEn": "Nakahara",
+      "kana": "ナカハラ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "中原",
+      "townEn": "Nakahara",
+      "kana": "ナカハラ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095687"
+    },
+    {
+      "town": "野崎",
+      "townEn": "Nozaki",
+      "kana": "ノザキ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095674"
+    },
+    {
+      "town": "野崎",
+      "townEn": "Nozaki",
+      "kana": "ノザキ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "野崎",
+      "townEn": "Nozaki",
+      "kana": "ノザキ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095664"
+    },
+    {
+      "town": "野崎",
+      "townEn": "Nozaki",
+      "kana": "ノザキ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095666"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "095682"
+    },
+    {
+      "town": "牟礼",
+      "townEn": "Mure",
+      "kana": "ムレ",
+      "chome": [
+        7
+      ],
+      "detail": null,
+      "en": "7 chome",
+      "jp": "7丁目",
+      "pattern": "095682"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "japan-gomi-data",
+      "url": "https://github.com/tecolicom/japan-gomi-data",
+      "license": "CC BY 4.0",
+      "commit": "747337a",
+      "path": "municipalities/tokyo/mitaka"
+    }
+  },
+  "updated": "2026-10-30"
+}

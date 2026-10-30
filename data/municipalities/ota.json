@@ -1,5 +1,7 @@
 {
   "id": "ota",
+  "code": "13111",
+  "pref": "13",
   "jp": "大田区",
   "en": "Ota",
   "verified": "2026-10-30",
@@ -83,7 +85,9 @@
   "plasticTest": {
     "maxCm": 30,
     "products": true,
-    "summary": "Clean plastic made only of plastic (no screws or rubber) and under 30 cm goes to Plastic, packaging and products together, including foam trays and PET caps and labels. Dirty plastic goes to Burnable, and plastic with lots of metal or batteries goes to Non-burnable."
+    "summary": "Clean plastic made only of plastic (no screws or rubber) and under 30 cm goes to Plastic, packaging and products together, including foam trays and PET caps and labels. Dirty plastic goes to Burnable, and plastic with lots of metal or batteries goes to Non-burnable.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {

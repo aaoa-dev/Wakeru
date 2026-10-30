@@ -1,5 +1,7 @@
 {
   "id": "koto",
+  "code": "13108",
+  "pref": "13",
   "jp": "江東区",
   "en": "Koto",
   "verified": "2026-10-30",
@@ -76,7 +78,9 @@
   "plasticTest": {
     "maxCm": 30,
     "products": true,
-    "summary": "Clean plastic packaging and items made 100% of plastic up to about 30 cm go to Plastic together; foam trays and styrofoam go to Recyclables instead, and anything dirty or mixed goes to Burnable."
+    "summary": "Clean plastic packaging and items made 100% of plastic up to about 30 cm go to Plastic together; foam trays and styrofoam go to Recyclables instead, and anything dirty or mixed goes to Burnable.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {

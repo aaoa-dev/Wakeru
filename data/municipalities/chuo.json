@@ -1,5 +1,7 @@
 {
   "id": "chuo",
+  "code": "13102",
+  "pref": "13",
   "jp": "中央区",
   "en": "Chuo",
   "verified": "2026-10-30",
@@ -81,7 +83,9 @@
   "plasticTest": {
     "maxCm": null,
     "products": false,
-    "summary": "Only clean plastic packaging with the プラマーク goes to Plastic. Plastic products without the mark (hangers, CDs, toys, cutlery, wrap) and any dirty packaging go to Burnable, and plastic items over 30 cm are oversized."
+    "summary": "Only clean plastic packaging with the プラマーク goes to Plastic. Plastic products without the mark (hangers, CDs, toys, cutlery, wrap) and any dirty packaging go to Burnable, and plastic items over 30 cm are oversized.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {
@@ -260,6 +264,10 @@
       "2": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [
@@ -275,6 +283,10 @@
       "3": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [
@@ -290,6 +302,10 @@
       "4": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [
@@ -305,6 +321,10 @@
       "5": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [
@@ -320,6 +340,10 @@
       "6": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [
@@ -395,6 +419,10 @@
       "11": {
         "burn": [
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
         "non": [

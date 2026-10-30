@@ -1,0 +1,762 @@
+{
+  "id": "asaka",
+  "code": "11227",
+  "pref": "11",
+  "jp": "朝霞市",
+  "en": "Asaka",
+  "verified": "2026-08-01",
+  "sources": [
+    "https://www.city.asaka.lg.jp/soshiki/15/dust-katei.html",
+    "https://www.city.asaka.lg.jp/soshiki/15/dust-syuusyuu.html",
+    "https://www.city.asaka.lg.jp/soshiki/15/dust-syuusyuu.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "cloth": {
+      "label": "古布",
+      "en": "Clothes & fabric",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「燃やすゴミ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「プラスチック資源」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレイ（食品用）」 under 「プラ資源」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ゴミ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ソファ」 under 「粗大ゴミ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「家電リサイクル法対象品目」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「消火器（スプレー式）」 under 「有害ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [],
+      "dates": []
+    },
+    "note": "Schedule converted by japan-gomi-data from 朝霞市's official sources and checked against the official calendar.",
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "unknown": [
+      {
+        "from": "2026-12-30",
+        "to": "2027-01-03"
+      }
+    ],
+    "patterns": {
+      "1": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          4
+        ],
+        "hazardous": [
+          4
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "paper": [
+          2
+        ],
+        "cloth": [
+          2
+        ],
+        "plastic": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "hazardous": [
+          1
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          4
+        ],
+        "cloth": [
+          4
+        ],
+        "plastic": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "beverage_can": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ],
+        "paper": [
+          1
+        ],
+        "cloth": [
+          1
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "hazardous": [
+          5
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "cloth": [
+          3
+        ],
+        "plastic": [
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "cloth": [
+          3
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ],
+        "hazardous": [
+          2
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "beverage_can": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "paper": [
+          5
+        ],
+        "cloth": [
+          5
+        ],
+        "plastic": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "自衛隊",
+      "townEn": "自衛隊",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "朝志ケ丘",
+      "townEn": "Asashigaoka",
+      "kana": "アサシガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "岡",
+      "townEn": "Oka",
+      "kana": "オカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "上内間木",
+      "townEn": "Kamiuchimagi",
+      "kana": "カミウチマギ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "北原",
+      "townEn": "Kitahara",
+      "kana": "キタハラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaichiyo",
+      "kana": "サイワイチヨウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1~2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaichiyo",
+      "kana": "サイワイチヨウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaechiyo",
+      "kana": "サカエチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "下内間木",
+      "townEn": "Shimochimagi",
+      "kana": "シモウチマギ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "泉水",
+      "townEn": "Senzui",
+      "kana": "センズイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "台",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "田島",
+      "townEn": "Tajima",
+      "kana": "タジマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "仲町",
+      "townEn": "Nakachiyo",
+      "kana": "ナカチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "西原",
+      "townEn": "Nishihara",
+      "kana": "ニシハラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "西弁財",
+      "townEn": "Nishibenzai",
+      "kana": "ニシベンザイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "根岸",
+      "townEn": "Negishi",
+      "kana": "ネギシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "根岸台",
+      "townEn": "Negishidai",
+      "kana": "ネギシダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "浜崎",
+      "townEn": "Hamasaki",
+      "kana": "ハマサキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "浜崎",
+      "townEn": "Hamasaki",
+      "kana": "ハマサキ",
+      "chome": null,
+      "detail": "県道和光志木線北側",
+      "en": "県道和光志木線北側",
+      "jp": "(県道和光志木線北側)",
+      "pattern": "2"
+    },
+    {
+      "town": "浜崎",
+      "townEn": "Hamasaki",
+      "kana": "ハマサキ",
+      "chome": null,
+      "detail": "東武東上線南側",
+      "en": "東武東上線南側",
+      "jp": "(東武東上線南側)",
+      "pattern": "6"
+    },
+    {
+      "town": "東弁財",
+      "townEn": "Higashibenzai",
+      "kana": "ヒガシベンザイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        2
+      ],
+      "detail": "1～6番・7番の一部(黒目川右岸)・8～21番",
+      "en": "2 chome, 1～6番・7番の一部(黒目川右岸)・8～21番",
+      "jp": "2丁目(1~6番・7番の一部(黒目川右岸)・8~21番)",
+      "pattern": "4"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        2
+      ],
+      "detail": "7番、黒目川左岸",
+      "en": "2 chome, 7番、黒目川左岸",
+      "jp": "2丁目(7番、黒目川左岸)",
+      "pattern": "6"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        4
+      ],
+      "detail": "1～11番",
+      "en": "4 chome, banchi 1–11",
+      "jp": "4丁目(1~11番)",
+      "pattern": "4"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        4
+      ],
+      "detail": "12～22番",
+      "en": "4 chome, banchi 12–22",
+      "jp": "4丁目(12~22番)",
+      "pattern": "6"
+    },
+    {
+      "town": "膝折町",
+      "townEn": "Hizaorichiyo",
+      "kana": "ヒザオリチヨウ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honchiyo",
+      "kana": "ホンチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": null,
+      "detail": "東上線北側",
+      "en": "東上線北側",
+      "jp": "(東上線北側)",
+      "pattern": "3"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": null,
+      "detail": "東上線南側・黒目川右岸",
+      "en": "東上線南側・黒目川右岸",
+      "jp": "(東上線南側・黒目川右岸)",
+      "pattern": "4"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": null,
+      "detail": "東上線南側・黒目川左岸",
+      "en": "東上線南側・黒目川左岸",
+      "jp": "(東上線南側・黒目川左岸)",
+      "pattern": "6"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "1~4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": [
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "5–6 chome",
+      "jp": "5~6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "溝沼",
+      "townEn": "Mizonuma",
+      "kana": "ミゾヌマ",
+      "chome": [
+        7
+      ],
+      "detail": null,
+      "en": "7 chome",
+      "jp": "7丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "三原",
+      "townEn": "Mihara",
+      "kana": "ミハラ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "宮戸",
+      "townEn": "Miyado",
+      "kana": "ミヤド",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "japan-gomi-data",
+      "url": "https://github.com/tecolicom/japan-gomi-data",
+      "license": "CC BY 4.0",
+      "commit": "747337a",
+      "path": "municipalities/saitama/asaka"
+    }
+  },
+  "updated": "2026-10-30"
+}

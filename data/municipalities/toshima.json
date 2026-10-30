@@ -1,0 +1,1947 @@
+{
+  "id": "toshima",
+  "code": "13116",
+  "pref": "13",
+  "jp": "豊島区",
+  "en": "Toshima",
+  "verified": "2026-10-23",
+  "sources": [
+    "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2303021832.html",
+    "https://www.city.toshima.lg.jp/documents/27707/20260716110355.pdf",
+    "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2211020850.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "金属・陶器・ガラスごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper_cloth": {
+      "label": "段ボール・紙布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "かん",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "noCollection": {
+      "weekdays": [],
+      "dates": []
+    },
+    "note": "Schedule converted by japan-gomi-data from 豊島区's official sources and checked against the official calendar.",
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "unknown": [
+      {
+        "from": "2026-12-29",
+        "to": "2027-01-04"
+      }
+    ],
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper_cloth": [
+          3
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper_cloth": [
+          3
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper_cloth": [
+          5
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "4": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper_cloth": [
+          5
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          6
+        ],
+        "beverage_can": [
+          6
+        ],
+        "pet_bottle": [
+          6
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper_cloth": [
+          4
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          6
+        ],
+        "beverage_can": [
+          6
+        ],
+        "pet_bottle": [
+          6
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper_cloth": [
+          4
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "9": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "paper_cloth": [
+          6
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "beverage_can": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ]
+      },
+      "10": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper_cloth": [
+          2
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "beverage_can": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ]
+      },
+      "11": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper_cloth": [
+          2
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "beverage_can": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ]
+      },
+      "12": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "paper_cloth": [
+          6
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "beverage_can": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ]
+      },
+      "13": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper_cloth": [
+          2
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "14": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper_cloth": [
+          5
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "15": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper_cloth": [
+          5
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "16": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper_cloth": [
+          5
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "17": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper_cloth": [
+          2
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "18": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "19": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "20": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "21": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper_cloth": [
+          1
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "22": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper_cloth": [
+          2
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "beverage_can": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "14番5号・8号、15番2号～3号、16番、17番、19番要町通り沿い以外、20番～38番、39番～40番トキワ通り沿い以外、42番、44番～45番トキワ通り沿い以外、46番、47番～78番",
+      "en": "2 chome, 14番5号・8号、15番2号～3号、16番、17番、19番要町通り沿い以外、20番～38番、39番～40番トキワ通り沿い以外、42番、44番～45番トキワ通り沿い以外、46番、47番～78番",
+      "jp": "2丁目14番5号・8号、15番2号~3号、16番、17番、19番(要町通り沿い以外)、20番~38番、39番~40番(トキワ通り沿い以外)、42番、44番~45番(トキワ通り沿い以外)、46番、47番~78番",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "39番～41番、43番～45番すべてトキワ通り沿い",
+      "en": "2 chome, 39番～41番、43番～45番すべてトキワ通り沿い",
+      "jp": "2丁目39番~41番、43番~45番(すべてトキワ通り沿い)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "1番～13番、14番5号、8号以外、15番1号、6号18番、19番要町通り沿い",
+      "en": "2 chome, 1番～13番、14番5号、8号以外、15番1号、6号18番、19番要町通り沿い",
+      "jp": "2丁目1番~13番、14番(5号、8号以外)、15番1号、6号18番、19番(要町通り沿い)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "13"
+    },
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "池袋",
+      "townEn": "Ikebukuro",
+      "kana": "イケブクロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋本町",
+      "townEn": "Ikebukurohoncho",
+      "kana": "イケブクロホンチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋本町",
+      "townEn": "Ikebukurohoncho",
+      "kana": "イケブクロホンチョウ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋本町",
+      "townEn": "Ikebukurohoncho",
+      "kana": "イケブクロホンチョウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "池袋本町",
+      "townEn": "Ikebukurohoncho",
+      "kana": "イケブクロホンチョウ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "1番～8番",
+      "en": "1 chome, banchi 1～8",
+      "jp": "1丁目1番~8番",
+      "pattern": "3"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "9番～49番",
+      "en": "1 chome, banchi 9～49",
+      "jp": "1丁目9番~49番",
+      "pattern": "4"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "1番～14番",
+      "en": "2 chome, banchi 1～14",
+      "jp": "2丁目1番~14番",
+      "pattern": "3"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "15番～36番",
+      "en": "2 chome, banchi 15～36",
+      "jp": "2丁目15番~36番",
+      "pattern": "4"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        3
+      ],
+      "detail": "1番～30番",
+      "en": "3 chome, banchi 1～30",
+      "jp": "3丁目1番~30番",
+      "pattern": "3"
+    },
+    {
+      "town": "要町",
+      "townEn": "Kanamecho",
+      "kana": "カナメチョウ",
+      "chome": [
+        3
+      ],
+      "detail": "31番～59番",
+      "en": "3 chome, banchi 31～59",
+      "jp": "3丁目31番~59番",
+      "pattern": "4"
+    },
+    {
+      "town": "上池袋",
+      "townEn": "Kamiikebukuro",
+      "kana": "カミイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "上池袋",
+      "townEn": "Kamiikebukuro",
+      "kana": "カミイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "上池袋",
+      "townEn": "Kamiikebukuro",
+      "kana": "カミイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "上池袋",
+      "townEn": "Kamiikebukuro",
+      "kana": "カミイケブクロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "北大塚",
+      "townEn": "Kitaotsuka",
+      "kana": "キタオオツカ",
+      "chome": [
+        1
+      ],
+      "detail": "1～10番、15番16号～21号、34番14～20号",
+      "en": "1 chome, banchi 1–10, 1516 gō～21 gō, 3414–20 gō",
+      "jp": "1丁目1~10番、15番(16号~21号)、34番(14~20号)",
+      "pattern": "6"
+    },
+    {
+      "town": "北大塚",
+      "townEn": "Kitaotsuka",
+      "kana": "キタオオツカ",
+      "chome": [
+        1
+      ],
+      "detail": "11～14番、15番1号～15号、16番～33番、34番1～13号",
+      "en": "1 chome, banchi 11–14, 151 gō～15 gō, 16～33, 341–13 gō",
+      "jp": "1丁目11~14番、15番(1号~15号)、16番~33番、34番(1~13号)",
+      "pattern": "7"
+    },
+    {
+      "town": "北大塚",
+      "townEn": "Kitaotsuka",
+      "kana": "キタオオツカ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "北大塚",
+      "townEn": "Kitaotsuka",
+      "kana": "キタオオツカ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "駒込",
+      "townEn": "Komagome",
+      "kana": "コマゴメ",
+      "chome": [
+        7
+      ],
+      "detail": null,
+      "en": "7 chome",
+      "jp": "7丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "巣鴨",
+      "townEn": "Sugamo",
+      "kana": "スガモ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "巣鴨",
+      "townEn": "Sugamo",
+      "kana": "スガモ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "巣鴨",
+      "townEn": "Sugamo",
+      "kana": "スガモ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "巣鴨",
+      "townEn": "Sugamo",
+      "kana": "スガモ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "巣鴨",
+      "townEn": "Sugamo",
+      "kana": "スガモ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "千川",
+      "townEn": "Senkawa",
+      "kana": "センカワ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "千川",
+      "townEn": "Senkawa",
+      "kana": "センカワ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "雑司が谷",
+      "townEn": "Zoshigaya",
+      "kana": "ゾウシガヤ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "雑司が谷",
+      "townEn": "Zoshigaya",
+      "kana": "ゾウシガヤ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "雑司が谷",
+      "townEn": "Zoshigaya",
+      "kana": "ゾウシガヤ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "高田",
+      "townEn": "Takada",
+      "kana": "タカダ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "高田",
+      "townEn": "Takada",
+      "kana": "タカダ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "高田",
+      "townEn": "Takada",
+      "kana": "タカダ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "高松",
+      "townEn": "Takamatsu",
+      "kana": "タカマツ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "高松",
+      "townEn": "Takamatsu",
+      "kana": "タカマツ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "高松",
+      "townEn": "Takamatsu",
+      "kana": "タカマツ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "千早",
+      "townEn": "Chihaya",
+      "kana": "チハヤ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "千早",
+      "townEn": "Chihaya",
+      "kana": "チハヤ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "千早",
+      "townEn": "Chihaya",
+      "kana": "チハヤ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "千早",
+      "townEn": "Chihaya",
+      "kana": "チハヤ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "長崎",
+      "townEn": "Nagasaki",
+      "kana": "ナガサキ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "1番～17番",
+      "en": "1 chome, banchi 1～17",
+      "jp": "1丁目1番~17番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "14"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "18番～20番、26番～30番、43番、44番",
+      "en": "1 chome, banchi 18～20, 26～30, 43, 44",
+      "jp": "1丁目18番~20番、26番~30番、43番、44番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "15"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "21番～25番、31番～42番",
+      "en": "1 chome, banchi 21～25, 31～42",
+      "jp": "1丁目21番~25番、31番~42番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "16"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": "1番～19番、21番13号、33番～36番",
+      "en": "3 chome, banchi 1～19, 2113 gō, 33～36",
+      "jp": "3丁目1番~19番、21番13号、33番~36番",
+      "pattern": "2"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": "20番～32番21番13号以外",
+      "en": "3 chome, 20番～32番21番13号以外",
+      "jp": "3丁目20番~32番(21番13号以外)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "17"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        5
+      ],
+      "detail": "2番、3番、4番要町通り沿い以外、5番、8番要町通り沿い以外、9番～28番",
+      "en": "5 chome, 2番、3番、4番要町通り沿い以外、5番、8番要町通り沿い以外、9番～28番",
+      "jp": "5丁目2番、3番、4番(要町通り沿い以外)、5番、8番(要町通り沿い以外)、9番~28番",
+      "pattern": "2"
+    },
+    {
+      "town": "西池袋",
+      "townEn": "Nishiikebukuro",
+      "kana": "ニシイケブクロ",
+      "chome": [
+        5
+      ],
+      "detail": "1番、4番要町通り沿い、8番要町通り沿い",
+      "en": "5 chome, 1番、4番要町通り沿い、8番要町通り沿い",
+      "jp": "5丁目1番、4番(要町通り沿い)、8番(要町通り沿い)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "17"
+    },
+    {
+      "town": "西巣鴨",
+      "townEn": "Nishisugamo",
+      "kana": "ニシスガモ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "西巣鴨",
+      "townEn": "Nishisugamo",
+      "kana": "ニシスガモ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "西巣鴨",
+      "townEn": "Nishisugamo",
+      "kana": "ニシスガモ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "西巣鴨",
+      "townEn": "Nishisugamo",
+      "kana": "ニシスガモ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "1番～7番",
+      "en": "1 chome, banchi 1～7",
+      "jp": "1丁目1番~7番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "18"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "8番～11番、14番～21番、29番～33番",
+      "en": "1 chome, banchi 8～11, 14～21, 29～33",
+      "jp": "1丁目8番~11番、14番~21番、29番~33番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "19"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "12番、13番、22番～28番",
+      "en": "1 chome, banchi 12, 13, 22～28",
+      "jp": "1丁目12番、13番、22番~28番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "20"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "34番～50番",
+      "en": "1 chome, banchi 34～50",
+      "jp": "1丁目34番~50番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "21"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "1番～48番、49番6号付近、53番9号",
+      "en": "2 chome, 1番～48番、49番6号付近、53番9号",
+      "jp": "2丁目1番~48番、49番6号付近、53番9号",
+      "pattern": "12"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "49番～63番49番6号付近、53番9号は除く",
+      "en": "2 chome, 49番～63番49番6号付近、53番9号は除く",
+      "jp": "2丁目49番~63番(49番6号付近、53番9号は除く)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "12"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": "2番～15番",
+      "en": "3 chome, banchi 2～15",
+      "jp": "3丁目2番~15番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "9"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": "1番、16番～23番",
+      "en": "3 chome, banchi 1, 16～23",
+      "jp": "3丁目1番、16番~23番",
+      "pattern": "12"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "東池袋",
+      "townEn": "Higashiikebukuro",
+      "kana": "ヒガシイケブクロ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "1番～16番",
+      "en": "1 chome, banchi 1～16",
+      "jp": "1丁目1番~16番",
+      "pattern": "2"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        1
+      ],
+      "detail": "17番～29番",
+      "en": "1 chome, banchi 17～29",
+      "jp": "1丁目17番~29番",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "22"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "1番～21番、24番1号シアターグリーン通り沿い、28番～49番",
+      "en": "2 chome, 1番～21番、24番1号シアターグリーン通り沿い、28番～49番",
+      "jp": "2丁目1番~21番、24番1号(シアターグリーン通り沿い)、28番~49番",
+      "pattern": "12"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        2
+      ],
+      "detail": "22番～27番、24番1号シアターグリーン通り沿いは除く",
+      "en": "2 chome, 22番～27番、24番1号シアターグリーン通り沿いは除く",
+      "jp": "2丁目22番~27番、24番1号(シアターグリーン通り沿いは除く)",
+      "note": "池袋駅周辺繁華街地域",
+      "pattern": "22"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "南池袋",
+      "townEn": "Minamiikebukuro",
+      "kana": "ミナミイケブクロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "南大塚",
+      "townEn": "Minamiotsuka",
+      "kana": "ミナミオオツカ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "南大塚",
+      "townEn": "Minamiotsuka",
+      "kana": "ミナミオオツカ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "南大塚",
+      "townEn": "Minamiotsuka",
+      "kana": "ミナミオオツカ",
+      "chome": [
+        3
+      ],
+      "detail": "1番～24番",
+      "en": "3 chome, banchi 1～24",
+      "jp": "3丁目1番~24番",
+      "pattern": "6"
+    },
+    {
+      "town": "南大塚",
+      "townEn": "Minamiotsuka",
+      "kana": "ミナミオオツカ",
+      "chome": [
+        3
+      ],
+      "detail": "38番～55番",
+      "en": "3 chome, banchi 38～55",
+      "jp": "3丁目38番~55番",
+      "pattern": "6"
+    },
+    {
+      "town": "南大塚",
+      "townEn": "Minamiotsuka",
+      "kana": "ミナミオオツカ",
+      "chome": [
+        3
+      ],
+      "detail": "25番～37番",
+      "en": "3 chome, banchi 25～37",
+      "jp": "3丁目25番~37番",
+      "pattern": "12"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "南長崎",
+      "townEn": "Minaminagasaki",
+      "kana": "ミナミナガサキ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "6丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "目白",
+      "townEn": "Mejiro",
+      "kana": "メジロ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "目白",
+      "townEn": "Mejiro",
+      "kana": "メジロ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "目白",
+      "townEn": "Mejiro",
+      "kana": "メジロ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "目白",
+      "townEn": "Mejiro",
+      "kana": "メジロ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "目白",
+      "townEn": "Mejiro",
+      "kana": "メジロ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "10"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "japan-gomi-data",
+      "url": "https://github.com/tecolicom/japan-gomi-data",
+      "license": "CC BY 4.0",
+      "commit": "747337a",
+      "path": "municipalities/tokyo/toshima"
+    }
+  },
+  "updated": "2026-10-30"
+}

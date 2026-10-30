@@ -1,0 +1,177 @@
+{
+  "id": "higashichichibu-vill",
+  "code": "11369",
+  "pref": "11",
+  "jp": "東秩父村",
+  "en": "Higashichichibu",
+  "verified": "2026-08-20",
+  "sources": [
+    "https://www.vill.higashichichibu.saitama.jp/soshiki/05/gominodashikata.html",
+    "https://www.vill.higashichichibu.saitama.jp/soshiki/05/gominodashikata.html",
+    "https://www.vill.higashichichibu.saitama.jp/soshiki/05/gominodashikata.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "ガラス類",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "glass_bottle": {
+      "label": "びん類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "アルミ缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "cloth": {
+      "label": "衣類",
+      "en": "Clothes & fabric",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "metal": {
+      "label": "金属類",
+      "en": "Metal",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "noCollection": {
+      "weekdays": [],
+      "dates": []
+    },
+    "note": "Schedule converted by japan-gomi-data from 東秩父村's official sources and checked against the official calendar.",
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ],
+        "metal": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ],
+          "add": [
+            "2026-05-06",
+            "2026-06-03",
+            "2026-07-01",
+            "2026-08-05",
+            "2026-09-02",
+            "2026-10-07"
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "cloth": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "東秩父村",
+      "townEn": "東秩父村",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "japan-gomi-data",
+      "url": "https://github.com/tecolicom/japan-gomi-data",
+      "license": "CC BY 4.0",
+      "commit": "747337a",
+      "path": "municipalities/saitama/higashichichibu-vill"
+    }
+  },
+  "updated": "2026-10-30"
+}

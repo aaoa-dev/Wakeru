@@ -1,5 +1,7 @@
 {
   "id": "bunkyo",
+  "code": "13105",
+  "pref": "13",
   "jp": "文京区",
   "en": "Bunkyo",
   "verified": "2026-10-30",
@@ -76,7 +78,9 @@
   "plasticTest": {
     "maxCm": 30,
     "products": true,
-    "summary": "Clean plastic packaging (プラマーク) and products made entirely of plastic and under 30 cm go to Plastic, on its own weekly day. Plastic that stays dirty after a light rinse goes to Burnable, and plastic joined with other materials goes to Burnable or Non-burnable depending on the main material."
+    "summary": "Clean plastic packaging (プラマーク) and products made entirely of plastic and under 30 cm go to Plastic, on its own weekly day. Plastic that stays dirty after a light rinse goes to Burnable, and plastic joined with other materials goes to Burnable or Non-burnable depending on the main material.",
+    "bin": "pla",
+    "otherwise": "burn"
   },
   "sorting": {
     "food": {
