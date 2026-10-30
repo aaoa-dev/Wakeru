@@ -1,0 +1,418 @@
+{
+  "_readme": "Each location picks a ward ruleset (data/wards/<ruleset>.json) and lists its address areas with a calendar pattern from that ward.",
+  "version": "2026-10-29",
+  "locations": [
+    {
+      "id": "iwamotocho",
+      "en": "Iwamotocho",
+      "jp": "岩本町",
+      "parent": "Chiyoda",
+      "ruleset": "chiyoda",
+      "areas": [
+        {
+          "en": "Iwamotocho 1-3",
+          "jp": "岩本町一〜三丁目",
+          "pattern": "E"
+        }
+      ]
+    },
+    {
+      "id": "chiyoda",
+      "en": "Chiyoda (all areas)",
+      "jp": "千代田区",
+      "ruleset": "chiyoda",
+      "areas": [
+        {
+          "en": "Iidabashi 1 & 4-chome",
+          "jp": "飯田橋一丁目・四丁目",
+          "pattern": "B"
+        },
+        {
+          "en": "Iidabashi 2 & 3-chome",
+          "jp": "飯田橋二丁目・三丁目",
+          "pattern": "A"
+        },
+        {
+          "en": "Ichibancho 1-5, 7, 9, 11, 23-31 (odd)",
+          "jp": "一番町1・2・3・4・5・7・9・11・23・25・27・29・31番地",
+          "pattern": "C"
+        },
+        {
+          "en": "Ichibancho 6, 8, 10, 12-22",
+          "jp": "一番町6・8・10・12〜22番地",
+          "pattern": "D"
+        },
+        {
+          "en": "Iwamotocho 1-3",
+          "jp": "岩本町一〜三丁目",
+          "pattern": "E"
+        },
+        {
+          "en": "Uchikanda 1-3 (except 3-13, 18-22)",
+          "jp": "内神田一〜三丁目（三丁目13・18〜22番を除く）",
+          "pattern": "F"
+        },
+        {
+          "en": "Uchikanda 3-13, 18-22",
+          "jp": "内神田三丁目13・18〜22番",
+          "pattern": "G"
+        },
+        {
+          "en": "Uchisaiwaicho 1 & 2",
+          "jp": "内幸町一丁目・二丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Otemachi 1 & 2",
+          "jp": "大手町一丁目・二丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Kajicho 1 & 2",
+          "jp": "鍛冶町一丁目・二丁目",
+          "pattern": "G"
+        },
+        {
+          "en": "Kasumigaseki 3",
+          "jp": "霞が関三丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Kanda Aioicho",
+          "jp": "神田相生町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Awajicho 1 & 2",
+          "jp": "神田淡路町一丁目・二丁目",
+          "pattern": "J"
+        },
+        {
+          "en": "Kanda Izumicho",
+          "jp": "神田和泉町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Iwamotocho 1, 15",
+          "jp": "神田岩本町1・15番地",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Iwamotocho 2, 4",
+          "jp": "神田岩本町2・4番地",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Ogawamachi 1-3 (odd numbers)",
+          "jp": "神田小川町一〜三丁目の奇数番地",
+          "pattern": "F"
+        },
+        {
+          "en": "Kanda Ogawamachi 1 (even numbers)",
+          "jp": "神田小川町一丁目の偶数番地",
+          "pattern": "J"
+        },
+        {
+          "en": "Kanda Ogawamachi 2 & 3 (even numbers)",
+          "jp": "神田小川町二丁目・三丁目の偶数番地",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Kajicho 3",
+          "jp": "神田鍛冶町三丁目",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Kitanorimonocho",
+          "jp": "神田北乗物町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Konyacho",
+          "jp": "神田紺屋町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Sakumacho 1-4",
+          "jp": "神田佐久間町一〜四丁目",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Sakumagashi",
+          "jp": "神田佐久間河岸",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Sarugakucho 1 & 2",
+          "jp": "神田猿楽町一丁目・二丁目",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Jimbocho 1-3 (odd numbers)",
+          "jp": "神田神保町一〜三丁目の奇数番地",
+          "pattern": "F"
+        },
+        {
+          "en": "Kanda Jimbocho 1 & 2 (even numbers)",
+          "jp": "神田神保町一丁目・二丁目の偶数番地",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Jimbocho 3 (even numbers)",
+          "jp": "神田神保町三丁目の偶数番地",
+          "pattern": "A"
+        },
+        {
+          "en": "Kanda Sudacho 1 (1, 3, 5, 9-25 odd)",
+          "jp": "神田須田町一丁目1・3・5・9〜25番地（奇数）",
+          "pattern": "J"
+        },
+        {
+          "en": "Kanda Sudacho 1-7",
+          "jp": "神田須田町一丁目7番地",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Sudacho 1 (even numbers)",
+          "jp": "神田須田町一丁目の偶数番地",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Sudacho 2 (odd numbers)",
+          "jp": "神田須田町二丁目の奇数番地",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Sudacho 2 (even numbers)",
+          "jp": "神田須田町二丁目の偶数番地",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Surugadai 1 & 2",
+          "jp": "神田駿河台一丁目・二丁目",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Surugadai 3 & 4 (odd numbers)",
+          "jp": "神田駿河台三丁目・四丁目の奇数番地",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Surugadai 3 & 4 (even numbers)",
+          "jp": "神田駿河台三丁目・四丁目の偶数番地",
+          "pattern": "J"
+        },
+        {
+          "en": "Kanda Tacho 2",
+          "jp": "神田多町二丁目",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Tsukasamachi 2 (odd numbers)",
+          "jp": "神田司町二丁目の奇数番地",
+          "pattern": "F"
+        },
+        {
+          "en": "Kanda Tsukasamachi 2 (even numbers)",
+          "jp": "神田司町二丁目の偶数番地",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Tomiyamacho",
+          "jp": "神田富山町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Nishikicho 1-3",
+          "jp": "神田錦町一〜三丁目",
+          "pattern": "F"
+        },
+        {
+          "en": "Kanda Nishifukudacho",
+          "jp": "神田西福田町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Neribeicho",
+          "jp": "神田練塀町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Hanaokacho",
+          "jp": "神田花岡町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Higashikonyacho",
+          "jp": "神田東紺屋町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Higashimatsushitacho",
+          "jp": "神田東松下町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Hirakawacho",
+          "jp": "神田平河町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Matsunagacho",
+          "jp": "神田松永町",
+          "pattern": "I"
+        },
+        {
+          "en": "Kanda Mikuracho",
+          "jp": "神田美倉町",
+          "pattern": "G"
+        },
+        {
+          "en": "Kanda Misakicho 1",
+          "jp": "神田三崎町一丁目",
+          "pattern": "K"
+        },
+        {
+          "en": "Kanda Misakicho 2 & 3",
+          "jp": "神田三崎町二丁目・三丁目",
+          "pattern": "A"
+        },
+        {
+          "en": "Kanda Mitoshirocho",
+          "jp": "神田美土代町",
+          "pattern": "F"
+        },
+        {
+          "en": "Kioicho",
+          "jp": "紀尾井町",
+          "pattern": "H"
+        },
+        {
+          "en": "Kitanomaru Koen",
+          "jp": "北の丸公園",
+          "pattern": "C"
+        },
+        {
+          "en": "Kudankita 1 (1-11)",
+          "jp": "九段北一丁目1〜11番",
+          "pattern": "A"
+        },
+        {
+          "en": "Kudankita 1 (12-15), 2-4",
+          "jp": "九段北一丁目12〜15番、二〜四丁目",
+          "pattern": "B"
+        },
+        {
+          "en": "Kudanminami 1-4",
+          "jp": "九段南一〜四丁目",
+          "pattern": "C"
+        },
+        {
+          "en": "Kojimachi 1-6 (odd numbers)",
+          "jp": "麹町一〜六丁目の奇数番地",
+          "pattern": "H"
+        },
+        {
+          "en": "Kojimachi 1-6 (even numbers)",
+          "jp": "麹町一〜六丁目の偶数番地",
+          "pattern": "L"
+        },
+        {
+          "en": "Gobancho",
+          "jp": "五番町",
+          "pattern": "D"
+        },
+        {
+          "en": "Sanbancho 1, 2, 3, 5, 6, 8, 10, 26, 28, 30",
+          "jp": "三番町1・2・3・5・6・8・10・26・28・30番地",
+          "pattern": "C"
+        },
+        {
+          "en": "Sanbancho 7, 9, 12-24 (even)",
+          "jp": "三番町7・9・12〜24番地",
+          "pattern": "D"
+        },
+        {
+          "en": "Sotokanda 1 (1-11), 2, 3, 6",
+          "jp": "外神田一丁目1〜11番、二・三・六丁目",
+          "pattern": "J"
+        },
+        {
+          "en": "Sotokanda 1 (12-18), 4, 5",
+          "jp": "外神田一丁目12〜18番、四・五丁目",
+          "pattern": "I"
+        },
+        {
+          "en": "Nagatacho 1 & 2",
+          "jp": "永田町一丁目・二丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Nishikanda 1 & 2",
+          "jp": "西神田一丁目・二丁目",
+          "pattern": "K"
+        },
+        {
+          "en": "Nishikanda 3",
+          "jp": "西神田三丁目",
+          "pattern": "A"
+        },
+        {
+          "en": "Nibancho",
+          "jp": "二番町",
+          "pattern": "L"
+        },
+        {
+          "en": "Hayabusacho",
+          "jp": "隼町",
+          "pattern": "H"
+        },
+        {
+          "en": "Higashikanda 1-3",
+          "jp": "東神田一〜三丁目",
+          "pattern": "E"
+        },
+        {
+          "en": "Hitotsubashi 1 & 2",
+          "jp": "一ツ橋一丁目・二丁目",
+          "pattern": "F"
+        },
+        {
+          "en": "Hibiya Koen",
+          "jp": "日比谷公園",
+          "pattern": "H"
+        },
+        {
+          "en": "Hirakawacho 1 & 2",
+          "jp": "平河町一丁目・二丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Fujimi 1 & 2",
+          "jp": "富士見一丁目・二丁目",
+          "pattern": "B"
+        },
+        {
+          "en": "Marunouchi 1-3",
+          "jp": "丸の内一〜三丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Yurakucho 1 & 2",
+          "jp": "有楽町一丁目・二丁目",
+          "pattern": "H"
+        },
+        {
+          "en": "Yonbancho",
+          "jp": "四番町",
+          "pattern": "D"
+        },
+        {
+          "en": "Rokubancho",
+          "jp": "六番町",
+          "pattern": "L"
+        }
+      ]
+    }
+  ]
+}

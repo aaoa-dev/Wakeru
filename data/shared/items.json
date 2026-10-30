@@ -1,0 +1,882 @@
+[
+  {
+    "en": "Sandwich wrapper (konbini)",
+    "jp": "サンドイッチの包装",
+    "keywords": "sandwich triangle film pack",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Crumbs and mayo wiped off"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Mayo or filling stuck to it"
+      }
+    ],
+    "how": "Peel off the paper sticker if it comes off easily. A smear you can wipe away is fine."
+  },
+  {
+    "en": "Onigiri wrapper",
+    "jp": "おにぎりの包装フィルム",
+    "keywords": "rice ball film",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rice picked off"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Rice stuck all over"
+      }
+    ],
+    "how": "The film pulls apart in 3 strips. All of it is plastic."
+  },
+  {
+    "en": "Bento box (disposable)",
+    "jp": "弁当容器（使い捨て）",
+    "keywords": "bento lunch box takeout container",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed clean"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Oil or sauce that won't rinse off"
+      }
+    ],
+    "how": "Lid and base both count. Scrape food out first. Wooden or paper bento boxes go with wood or dirty paper."
+  },
+  {
+    "en": "Curry rice tray",
+    "jp": "カレーライスの容器",
+    "keywords": "curry tray takeout karee",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed until the stain is gone"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Yellow curry stain stays"
+      }
+    ],
+    "how": "Curry oil stains rarely wash out of white plastic. If it stays orange after a rinse, treat it as dirty."
+  },
+  {
+    "en": "Teishoku / takeout set container",
+    "jp": "定食・テイクアウト容器",
+    "keywords": "teishoku set meal donburi don bowl plastic",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed clean"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Greasy or stained"
+      }
+    ],
+    "how": "Same rule as bento. Soup cups and sauce cups go the same way."
+  },
+  {
+    "en": "Aluminum takeout tray",
+    "jp": "アルミ容器",
+    "keywords": "aluminium foil tray gratin",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ],
+    "how": "Metal, not plastic. Wipe it out first."
+  },
+  {
+    "en": "Soy sauce fish / sauce packets",
+    "jp": "醤油・ソースの小袋",
+    "keywords": "sauce sachet packet tare",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Squeezed empty"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Still has sauce inside"
+      }
+    ]
+  },
+  {
+    "en": "Disposable chopsticks",
+    "jp": "割り箸",
+    "keywords": "waribashi chopsticks wooden",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "wood"
+      }
+    ],
+    "how": "The paper sleeve goes the same way."
+  },
+  {
+    "en": "Plastic spoon / fork",
+    "jp": "プラスチックのスプーン・フォーク",
+    "keywords": "cutlery spoon fork",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-product",
+        "when": "Rinsed"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Dirty"
+      }
+    ]
+  },
+  {
+    "en": "Paper coffee cup",
+    "jp": "紙コップ",
+    "keywords": "coffee cup paper starbucks hot drink",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ],
+    "how": "Coated paper isn't recyclable. The plastic lid is plastic packaging."
+  },
+  {
+    "en": "Plastic iced-drink cup",
+    "jp": "プラカップ",
+    "keywords": "iced coffee cup clear smoothie",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed"
+      }
+    ],
+    "how": "Lid and straw too."
+  },
+  {
+    "en": "Cup noodles (foam or plastic cup)",
+    "jp": "カップ麺の容器（発泡・プラ）",
+    "keywords": "cup ramen noodle styrofoam",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Oily soup residue"
+      }
+    ],
+    "how": "The paper and foil lid goes with dirty paper."
+  },
+  {
+    "en": "Cup noodles (paper cup)",
+    "jp": "カップ麺の容器（紙）",
+    "keywords": "cup ramen noodle paper",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ]
+  },
+  {
+    "en": "Konbini plastic bag",
+    "jp": "レジ袋",
+    "keywords": "shopping bag plastic bag supermarket",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack"
+      }
+    ]
+  },
+  {
+    "en": "Fried-chicken / hot-snack paper bag",
+    "jp": "ホットスナックの紙袋",
+    "keywords": "karaage famichiki hot snack oil paper",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ],
+    "how": "Oil-stained paper is never recyclable."
+  },
+  {
+    "en": "Pizza box",
+    "jp": "ピザの箱",
+    "keywords": "pizza box cardboard oil",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "paper-dirty",
+        "when": "Oil-stained parts"
+      },
+      {
+        "type": "cardboard",
+        "when": "Clean parts torn off"
+      }
+    ]
+  },
+  {
+    "en": "Egg carton (plastic)",
+    "jp": "卵のパック（プラ）",
+    "keywords": "egg pack",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed"
+      }
+    ]
+  },
+  {
+    "en": "Egg carton (paper)",
+    "jp": "卵のパック（紙）",
+    "keywords": "egg pack paper pulp",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ]
+  },
+  {
+    "en": "Foam food tray",
+    "jp": "食品トレー",
+    "keywords": "styrofoam meat fish tray supermarket",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "foam-tray",
+        "when": "Rinsed"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Can't get it clean"
+      }
+    ],
+    "how": "Supermarkets often have tray drop boxes by the entrance."
+  },
+  {
+    "en": "Tofu / natto pack",
+    "jp": "豆腐・納豆のパック",
+    "keywords": "tofu natto",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Natto too sticky to clean"
+      }
+    ]
+  },
+  {
+    "en": "Snack / chip bag",
+    "jp": "お菓子の袋",
+    "keywords": "chips crisps snack bag candy",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Crumbs shaken out"
+      }
+    ],
+    "how": "Silver-lined bags still count as plastic packaging."
+  },
+  {
+    "en": "Bread bag",
+    "jp": "パンの袋",
+    "keywords": "bread bag",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack"
+      }
+    ],
+    "how": "A metal twist tie goes with metal."
+  },
+  {
+    "en": "Plastic wrap (film)",
+    "jp": "ラップフィルム",
+    "keywords": "saran cling wrap",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Clean"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Dirty"
+      }
+    ]
+  },
+  {
+    "en": "Wrap box with cutter",
+    "jp": "ラップの箱（刃付き）",
+    "keywords": "saran wrap box",
+    "outcomes": [
+      {
+        "type": "paper-dirty",
+        "when": "Box with blade attached"
+      }
+    ],
+    "how": "Mixed material. Some areas ask you to remove the metal blade first."
+  },
+  {
+    "en": "PET bottle",
+    "jp": "ペットボトル",
+    "keywords": "pet bottle water bottle plastic bottle drink",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "pet"
+      }
+    ],
+    "how": "Take off the cap and label (plastic packaging). Rinse and crush."
+  },
+  {
+    "en": "PET bottle cap & label",
+    "jp": "ペットボトルのキャップ・ラベル",
+    "keywords": "cap label",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "plastic-pack"
+      }
+    ]
+  },
+  {
+    "en": "Drink / food can",
+    "jp": "缶",
+    "keywords": "can beer soda aluminium steel tin can",
+    "quick": true,
+    "outcomes": [
+      {
+        "type": "can"
+      }
+    ],
+    "how": "Empty and rinse."
+  },
+  {
+    "en": "Glass drink / food bottle",
+    "jp": "びん",
+    "keywords": "bottle glass jar wine sake",
+    "outcomes": [
+      {
+        "type": "bottle"
+      }
+    ],
+    "how": "Rinse and remove the cap. Metal caps go with metal."
+  },
+  {
+    "en": "Cosmetic / medicine glass bottle",
+    "jp": "化粧品・薬のびん",
+    "keywords": "perfume cosmetic bottle",
+    "outcomes": [
+      {
+        "type": "glass-other"
+      }
+    ],
+    "how": "Empty and wash."
+  },
+  {
+    "en": "Broken glass / dishes",
+    "jp": "割れたガラス・陶器",
+    "keywords": "broken glass plate mug ceramic",
+    "outcomes": [
+      {
+        "type": "glass-other"
+      }
+    ],
+    "how": "Wrap in thick paper, bag separately, and write キケン."
+  },
+  {
+    "en": "Milk carton",
+    "jp": "紙パック",
+    "keywords": "milk carton juice carton",
+    "outcomes": [
+      {
+        "type": "carton",
+        "when": "White inside"
+      },
+      {
+        "type": "paper-dirty",
+        "when": "Silver inside"
+      }
+    ],
+    "how": "Rinse, cut open, dry, and bundle."
+  },
+  {
+    "en": "Cardboard",
+    "jp": "段ボール",
+    "keywords": "amazon box cardboard",
+    "outcomes": [
+      {
+        "type": "cardboard"
+      }
+    ],
+    "how": "Fold flat and tie with string. Waxy, glossy cardboard isn't recyclable."
+  },
+  {
+    "en": "Newspaper & flyers",
+    "jp": "新聞・チラシ",
+    "keywords": "newspaper flyer",
+    "outcomes": [
+      {
+        "type": "newspaper"
+      }
+    ],
+    "how": "Tie with string."
+  },
+  {
+    "en": "Magazines & pamphlets",
+    "jp": "雑誌",
+    "keywords": "magazine book catalog",
+    "outcomes": [
+      {
+        "type": "magazine"
+      }
+    ]
+  },
+  {
+    "en": "Snack box / tissue box / wrapping paper",
+    "jp": "お菓子の箱・ティッシュ箱・包装紙",
+    "keywords": "paper box cereal tissue envelope other paper zatsugami",
+    "outcomes": [
+      {
+        "type": "paper-misc"
+      }
+    ],
+    "how": "Remove plastic windows."
+  },
+  {
+    "en": "Receipts",
+    "jp": "レシート",
+    "keywords": "receipt",
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ],
+    "how": "Thermal paper can't be recycled."
+  },
+  {
+    "en": "Detergent / incense box",
+    "jp": "洗剤・線香の箱",
+    "keywords": "smelly box soap box",
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ],
+    "how": "Paper with a smell isn't recyclable."
+  },
+  {
+    "en": "Used tissues",
+    "jp": "ティッシュ",
+    "keywords": "tissue napkin kleenex",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ]
+  },
+  {
+    "en": "Food scraps",
+    "jp": "生ごみ",
+    "keywords": "food waste leftovers kitchen scraps",
+    "outcomes": [
+      {
+        "type": "food"
+      }
+    ],
+    "how": "Drain the water well."
+  },
+  {
+    "en": "Cooking oil",
+    "jp": "食用油",
+    "keywords": "oil frying",
+    "outcomes": [
+      {
+        "type": "oil"
+      }
+    ],
+    "how": "Solidify it or soak it into paper."
+  },
+  {
+    "en": "Shampoo / detergent bottle",
+    "jp": "シャンプー・洗剤のボトル",
+    "keywords": "bottle conditioner soap",
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Rinsed"
+      },
+      {
+        "type": "plastic-mixed",
+        "when": "Pump-type top"
+      }
+    ]
+  },
+  {
+    "en": "Toothpaste / mayo tube",
+    "jp": "歯みがき粉・マヨネーズのチューブ",
+    "keywords": "tube ketchup",
+    "outcomes": [
+      {
+        "type": "plastic-dirty"
+      }
+    ],
+    "how": "You can't get them clean."
+  },
+  {
+    "en": "Aluminum foil",
+    "jp": "アルミホイル",
+    "keywords": "foil",
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ]
+  },
+  {
+    "en": "Kitchen sponge",
+    "jp": "スポンジ",
+    "keywords": "sponge",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ]
+  },
+  {
+    "en": "Disposable diapers",
+    "jp": "紙おむつ",
+    "keywords": "diaper nappy",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ],
+    "how": "Remove waste first."
+  },
+  {
+    "en": "Face masks",
+    "jp": "マスク",
+    "keywords": "mask",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ]
+  },
+  {
+    "en": "Batteries (AA, AAA etc.)",
+    "jp": "乾電池",
+    "keywords": "battery batteries",
+    "outcomes": [
+      {
+        "type": "battery"
+      }
+    ]
+  },
+  {
+    "en": "Mobile battery / rechargeable",
+    "jp": "モバイルバッテリー・充電池",
+    "keywords": "power bank lithium ion",
+    "outcomes": [
+      {
+        "type": "battery-li"
+      }
+    ],
+    "how": "Fire risk. Never put it in with regular trash. Electronics stores also take them."
+  },
+  {
+    "en": "Spray can / gas canister",
+    "jp": "スプレー缶・カセットボンベ",
+    "keywords": "aerosol spray cassette gas",
+    "outcomes": [
+      {
+        "type": "spray"
+      }
+    ],
+    "how": "Use it up completely."
+  },
+  {
+    "en": "Lighter",
+    "jp": "ライター",
+    "keywords": "lighter",
+    "outcomes": [
+      {
+        "type": "lighter"
+      }
+    ],
+    "how": "Use up the gas."
+  },
+  {
+    "en": "Fluorescent tube",
+    "jp": "蛍光管",
+    "keywords": "fluorescent light tube",
+    "outcomes": [
+      {
+        "type": "fluorescent"
+      }
+    ],
+    "how": "Put it in its box or wrap in newspaper."
+  },
+  {
+    "en": "LED bulb",
+    "jp": "LED電球",
+    "keywords": "light bulb led",
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ]
+  },
+  {
+    "en": "Knives / razors / scissors",
+    "jp": "刃物・カミソリ",
+    "keywords": "knife razor blade scissors",
+    "outcomes": [
+      {
+        "type": "blade"
+      }
+    ],
+    "how": "Wrap in thick paper and write キケン."
+  },
+  {
+    "en": "Umbrella",
+    "jp": "傘",
+    "keywords": "umbrella",
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ]
+  },
+  {
+    "en": "Hand warmer (kairo)",
+    "jp": "使い捨てカイロ",
+    "keywords": "kairo hot pack",
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ]
+  },
+  {
+    "en": "Small appliances (dryer, phone)",
+    "jp": "小型家電",
+    "keywords": "hair dryer phone iron cable cord electronics",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ],
+    "how": "Remove batteries first."
+  },
+  {
+    "en": "Pots & pans",
+    "jp": "なべ・フライパン",
+    "keywords": "pot pan kettle",
+    "outcomes": [
+      {
+        "type": "metal",
+        "when": "Under 30 cm"
+      },
+      {
+        "type": "oversized",
+        "when": "30 cm or larger"
+      }
+    ]
+  },
+  {
+    "en": "Plastic hanger",
+    "jp": "プラスチックハンガー",
+    "keywords": "hanger",
+    "outcomes": [
+      {
+        "type": "plastic-product",
+        "when": "100% plastic, hook too"
+      },
+      {
+        "type": "plastic-mixed",
+        "when": "Has a metal hook"
+      }
+    ]
+  },
+  {
+    "en": "CDs / DVDs & cases",
+    "jp": "CD・DVD",
+    "keywords": "cd dvd disc",
+    "outcomes": [
+      {
+        "type": "plastic-product"
+      }
+    ]
+  },
+  {
+    "en": "Styrofoam packing",
+    "jp": "発泡スチロール",
+    "keywords": "styrofoam packing foam box",
+    "outcomes": [
+      {
+        "type": "plastic-pack"
+      }
+    ]
+  },
+  {
+    "en": "Bubble wrap",
+    "jp": "プチプチ",
+    "keywords": "bubble wrap",
+    "outcomes": [
+      {
+        "type": "plastic-pack"
+      }
+    ]
+  },
+  {
+    "en": "Clear file folder",
+    "jp": "クリアファイル",
+    "keywords": "file folder",
+    "outcomes": [
+      {
+        "type": "plastic-product"
+      }
+    ]
+  },
+  {
+    "en": "Video tape / PP strapping",
+    "jp": "ビデオテープ・PPバンド",
+    "keywords": "vhs cassette tape strap band",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "They jam plastic sorting machines."
+  },
+  {
+    "en": "Plastic toys",
+    "jp": "プラスチックのおもちゃ",
+    "keywords": "toy",
+    "outcomes": [
+      {
+        "type": "plastic-product",
+        "when": "100% plastic, no batteries"
+      },
+      {
+        "type": "plastic-mixed",
+        "when": "Mixed materials"
+      }
+    ]
+  },
+  {
+    "en": "Clothes & fabric",
+    "jp": "衣類・古布",
+    "keywords": "clothes shirt fabric textile",
+    "outcomes": [
+      {
+        "type": "textile"
+      }
+    ]
+  },
+  {
+    "en": "Shoes",
+    "jp": "靴",
+    "keywords": "shoes sneakers boots",
+    "outcomes": [
+      {
+        "type": "leather-rubber"
+      }
+    ]
+  },
+  {
+    "en": "Bags (fabric, leather)",
+    "jp": "かばん",
+    "keywords": "bag backpack",
+    "outcomes": [
+      {
+        "type": "leather-rubber",
+        "when": "Under 30 cm"
+      },
+      {
+        "type": "oversized",
+        "when": "30 cm or larger"
+      }
+    ]
+  },
+  {
+    "en": "Photos",
+    "jp": "写真",
+    "keywords": "photo",
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ]
+  },
+  {
+    "en": "Furniture, bedding, bikes",
+    "jp": "家具・布団・自転車",
+    "keywords": "sofa bed desk chair futon bicycle",
+    "outcomes": [
+      {
+        "type": "oversized"
+      }
+    ]
+  },
+  {
+    "en": "TV, fridge, washer, air con",
+    "jp": "テレビ・冷蔵庫・洗濯機・エアコン",
+    "keywords": "tv refrigerator washing machine aircon",
+    "outcomes": [
+      {
+        "type": "appliance-law"
+      }
+    ],
+    "how": "Recycling law items. Ask the store you bought from, or the 家電リサイクル受付センター."
+  },
+  {
+    "en": "Computer / laptop",
+    "jp": "パソコン",
+    "keywords": "pc laptop monitor",
+    "outcomes": [
+      {
+        "type": "pc"
+      }
+    ],
+    "how": "Return to the maker or use ReNet Japan. Wipe your data first."
+  },
+  {
+    "en": "Fire extinguisher, paint, solvents",
+    "jp": "消火器・塗料・石油類",
+    "keywords": "extinguisher paint kerosene thinner tire",
+    "outcomes": [
+      {
+        "type": "not-collected"
+      }
+    ],
+    "how": "Ask where you bought it."
+  }
+]

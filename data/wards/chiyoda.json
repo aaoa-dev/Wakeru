@@ -1,0 +1,502 @@
+{
+  "id": "chiyoda",
+  "jp": "千代田区",
+  "en": "Chiyoda",
+  "updated": "2026-10-29",
+  "sources": [
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
+    "https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+  ],
+  "contacts": [
+    {
+      "en": "Chiyoda Cleaning Office",
+      "tel": "03-3251-0566"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-6743-0603"
+    }
+  ],
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "haz": {
+      "label": "蛍光管等",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean, empty, 100% plastic and under 30 cm goes to Plastic, packaging and plastic products together. Anything dirty or mixed goes to Burnable."
+  },
+  "sorting": {
+    "food": "burn",
+    "hygiene": "burn",
+    "wood": "burn",
+    "textile": {
+      "bin": "burn",
+      "note": "Washed clothes can also go to a ward stockyard."
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can (they go to non-burnable)."
+    },
+    "paper-dirty": "burn",
+    "paper-misc": {
+      "bin": "res",
+      "note": "As その他の紙類: in a separate paper bag or tied bag on recycling day."
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Flyers go with the newspaper."
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string."
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie. No packing tape bundles."
+    },
+    "carton": {
+      "bin": "res",
+      "note": "500 ml or larger only. Smaller cartons go to burnable."
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off, rinse, crush, into the green net."
+    },
+    "can": {
+      "bin": "res",
+      "note": "Into the blue box. Snack cans count too."
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Into the yellow box. Metal caps go to non-burnable."
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Broken glass and ceramics: wrap in thick paper, separate bag, write キケン."
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas count even if over 30 cm. Pots over 30 cm (without handle) are oversized."
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in thick paper, separate bag, write キケン."
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Clear or semi-clear bag, out by 8:30."
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and under 30 cm."
+    },
+    "plastic-dirty": "burn",
+    "plastic-mixed": "burn",
+    "foam-tray": {
+      "bin": "pla",
+      "note": "With the rest of the plastic."
+    },
+    "battery": {
+      "bin": "haz",
+      "note": "Bag separately and write キケン. Never with regular non-burnable."
+    },
+    "battery-li": {
+      "bin": "haz",
+      "note": "Bag separately and write キケン."
+    },
+    "spray": {
+      "bin": "haz",
+      "note": "Don't punch holes. Separate bag marked キケン."
+    },
+    "lighter": {
+      "bin": "haz",
+      "note": "Separate bag marked キケン."
+    },
+    "fluorescent": "haz",
+    "appliance-small": {
+      "bin": "non",
+      "note": "Or the ward's small-appliance drop boxes."
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Solidified or soaked into paper. Or bring it in a bottle to a ward stockyard."
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Center (03-6743-0603), buy a sticker at a konbini, out by 8:30 on the day."
+    },
+    "appliance-law": "no",
+    "pc": "no",
+    "not-collected": "no"
+  },
+  "calendar": {
+    "_days": "0=Sun ... 6=Sat. weeks = which occurrence of that weekday in the month (1st-4th; 5th has no pickup).",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:30 / 9:30 / 12:30 (see your sign)",
+      "res": "8:30",
+      "pla": "8:30",
+      "non": "10:00",
+      "haz": "12:30"
+    },
+    "note": "Collections run every day except Sundays and Dec 31 – Jan 3, including national holidays. Burnable put-out time is 8:30, 9:30 or 12:30 depending on your collection point, so check the sign at yours. Don't put anything out the night before.",
+    "patterns": {
+      "A": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          6
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 1
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 1
+        }
+      },
+      "B": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          6
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 1
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 1
+        }
+      },
+      "C": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          4
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 5
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 5
+        }
+      },
+      "D": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          4
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 5
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 5
+        }
+      },
+      "E": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 6
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 6
+        }
+      },
+      "F": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          5
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 3
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 3
+        }
+      },
+      "G": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          5
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 3
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 3
+        }
+      },
+      "H": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          1
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 2
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 2
+        }
+      },
+      "I": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 6
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 6
+        }
+      },
+      "J": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          3
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 4
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 4
+        }
+      },
+      "K": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          3
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 4
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 4
+        }
+      },
+      "L": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          1
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 2
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 2
+        }
+      }
+    }
+  }
+}

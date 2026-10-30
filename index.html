@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wakeru Gomi Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand">
+    <h1>分ける <span>Wakeru</span></h1>
+    <div class="city"><label for="city">Location</label>
+      <select id="city"></select>
+    </div>
+  </div>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="What are you throwing away? (bento, 電池, PET…)" autocomplete="off" aria-label="Search items">
+  </div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-sort" aria-selected="true" data-v="sort">Sort it</button>
+    <button role="tab" id="tab-days" aria-selected="false" data-v="days">Pickup days</button>
+    <button role="tab" id="tab-words" aria-selected="false" data-v="words">What words mean</button>
+  </nav>
+</header>
+
+<!-- SORT -->
+<section class="view" id="v-sort">
+  <div id="resultsWrap" hidden>
+    <h2 id="resTitle">Results</h2>
+    <div class="list" id="results"></div>
+  </div>
+
+  <div id="homeWeek"></div>
+  <div id="home">
+    <div class="test card">
+      <h2>The plastic test</h2>
+      <p class="lede">Most takeout and konbini packaging comes down to three questions. <span id="plasticSummary"></span></p>
+      <ol>
+        <li><div><b>Is it 100% plastic?</b><span class="no">No metal, paper or rubber parts attached. Pump tops and wrap boxes with a cutter fail this.</span></div></li>
+        <li><div><b>Is it empty and clean?</b><span class="no">Give it a quick rinse or wipe. Curry stains, oil or stuck rice that won't come off fail this.</span></div></li>
+        <li><div><b>Is it under 30 cm?</b><span class="no">Bigger than that is oversized garbage (粗大ごみ).</span></div></li>
+      </ol>
+      <div class="verdict" id="verdict"></div>
+    </div>
+  </div>
+
+  <div id="quickWrap">
+    <h2>Konbini, takeout & kitchen</h2>
+    <div class="quick" id="quick"></div>
+  </div>
+
+  <div id="catWrap">
+    <h2>Browse by bin</h2>
+    <div class="quick" id="cats"></div>
+  </div>
+</section>
+
+<!-- DAYS -->
+<section class="view" id="v-days" hidden>
+  <div class="field" id="addrField">
+    <label for="addr">Your address (町名)</label>
+    <select id="addr"></select>
+  </div>
+  <div class="today" id="today"></div>
+  <div>
+    <h2>Next 7 days</h2>
+    <div class="week" id="week"></div>
+  </div>
+  <p class="fine" id="schedNote"></p>
+</section>
+
+<!-- WORDS -->
+<section class="view" id="v-words" hidden>
+  <p class="lede">The same bin goes by different names from city to city. Here is what each word actually means, and what other places call it.</p>
+  <div class="terms" id="terms"></div>
+  <div>
+    <h2>Reading the calendar</h2>
+    <div class="mini">
+      <div><b>月 火 水</b>Mon · Tue · Wed</div>
+      <div><b>木 金 土</b>Thu · Fri · Sat</div>
+      <div><b>第1・3 月</b>1st & 3rd Monday of the month</div>
+      <div><b>キケン</b>"Danger": write it on bags of blades, glass, batteries</div>
+      <div><b>集積所</b>Your building's collection point</div>
+      <div><b>プラマーク</b>The プラ arrow symbol on plastic packaging</div>
+    </div>
+  </div>
+</section>
+
+<footer id="footSrc"></footer>
+</div>
+</body>
+</html>
