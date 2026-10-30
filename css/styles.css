@@ -162,3 +162,22 @@ h2{font-size:13px;font-weight:700;color:var(--fg);margin:0 0 8px}
 .mini b{display:block;font-size:16px;color:var(--fg)}
 a{color:var(--fg)}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:8px}
+.desk-title{display:none}
+
+/* desktop: one screen, no tabs. Pickup days stays put on the left, Sort it then the glossary scroll on the right */
+@media (min-width:1280px){
+  .wrap{--head:80px;max-width:1200px;display:grid;grid-template-columns:380px minmax(0,1fr);column-gap:36px;align-items:start}
+  header.top{grid-column:1/-1;height:var(--head);padding-block:0;display:grid;grid-template-columns:380px minmax(0,1fr) auto;column-gap:36px;align-items:center}
+  .brand{display:contents}
+  .brand h1{font-size:20px}
+  .search{margin:0;grid-column:2}
+  .where{grid-column:3;grid-row:1;font-size:14px;padding:8px 14px 8px 10px}
+  nav.tabs{display:none}
+  .view[hidden]{display:flex!important}
+  #v-days{grid-column:1;grid-row:2/span 3;position:sticky;top:var(--head);max-height:calc(100vh - var(--head));overflow-y:auto;scrollbar-width:thin;padding-bottom:24px}
+  #v-sort,#v-words,footer{grid-column:2}
+  #homeWeek{display:none}
+  .desk-title{display:block;font-size:18px;margin:0}
+  #v-words{border-top:1px solid var(--line);margin-top:24px;padding-top:24px}
+  .terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
