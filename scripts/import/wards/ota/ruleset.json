@@ -1,0 +1,294 @@
+{
+  "id": "ota",
+  "jp": "大田区",
+  "en": "Ota",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.files/08shigenntogominowakekatadashikata.pdf",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/plastics_recycle.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/syuusyuu.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogata.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/supureikan_kasai.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/disposable-cigarette-lighter.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/suigin.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/haishoku.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogatakadenn.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/konuno.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/syuusyuuru_tohennkou.html",
+    "https://www.opendata.metro.tokyo.lg.jp/ootaku/131113_shigengomiyoubi.xlsx",
+    "https://www.opendata.metro.tokyo.lg.jp/ota/131113_funensyuusyuubi.xls"
+  ],
+  "contacts": [
+    {
+      "en": "Waste Reduction Section (ごみ減量推進課)",
+      "tel": "03-5744-1628"
+    },
+    {
+      "en": "Omori Cleaning Office",
+      "tel": "03-3774-3811"
+    },
+    {
+      "en": "Kamata Cleaning Office (Chofu area)",
+      "tel": "03-6459-8201"
+    },
+    {
+      "en": "Kamata Cleaning Office (Kamata area)",
+      "tel": "03-6451-9535"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "0570-037-530"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.opendata.metro.tokyo.lg.jp/ootaku/131113_shigengomiyoubi.xlsx",
+    "official": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.files/08shigenntogominowakekatadashikata.pdf",
+    "officialUpdated": "令和8年度版 pamphlet, pages 17-18 (PDF modified 2026-04-21; server Last-Modified 2026-04-22). The collection-day page https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html (更新日：2026年3月30日) links an older 2-page extract gomishigen.files/shuushuuyoubi.pdf (PDF dated 2025-01-23) with the same rows, and per-office FY2026 calendars on https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+    "granularity": "87 rows (88 in the FY2026 PDF) across 54 towns (町). 33 towns are '全域' (whole town = one row, e.g. 石川町, 羽田, 平和島). Others split by chome (e.g. 鵜の木 1丁目 / 2丁目・3丁目; 中央 1 / 2 / 3・7・8 / 4・5・6丁目). 17 rows go down to banchi ranges (e.g. 池上 5丁目〔1～22番・25番・26番〕 vs 5丁目〔23番・24番・27番・28番〕; 千鳥 2丁目〔27番・36番・38～41番〕). Some go to gō (号) within a banchi (e.g. 大森本町 2丁目〔25番（10～19号）・27番（5～7号）・28～30番〕; 大森南 1丁目〔12番（1号・2号・18号・20～26号）…〕; 東矢口 1丁目〔9番（1～7号・19～21号）・10番（8～13号）〕; 大森西 7丁目〔7番（1～5号・20～28号）・8番・9番〕). One town can span two cleaning offices (e.g. 池上, 大森南, 東矢口, 千鳥, 大森西). No odd/even rules. The ward says the sign at the collection point decides: 「収集日は、集積所の看板で必ず確認してください（お住まいの住所と集積所の所在地が異なる場合があります）」 (PDF p.18).",
+    "ruleKinds": "Plastic: 1 weekday a week. Recyclables: 1 weekday a week. Burnable: 2 fixed weekdays a week (月・木, 火・金 or 水・土). Non-burnable: nth weekday, either the 1st and 3rd (第1第3 / '1・3') or the 2nd and 4th ('2・4') occurrence of one weekday in the month; the 5th occurrence (29th–31st) never has pickup (「29日から31日は「5回目」となりますので不燃ごみの収集はありません」 funen.html). The ward publishes these as fixed date lists per group (12 groups = 6 weekdays × {1・3, 2・4}), see nonBurnableGroups. They equal the nth-weekday rule exactly except 2027-01-01 (Fri, 1・3金) and 2027-01-02 (Sat, 1・3土), shown as 'ー' (no collection, no make-up date). No 隔週 rules.",
+    "columns": "xlsx columns: 町丁目名 (kana index, town, area) | プラ = pla | 資源 = res (7 items, plus spray cans/cassette gas canisters in a separate bag) | 可燃ごみ = burn | 不燃ごみ = non ('第1第3\\n火曜' style) | 管轄の清掃事務所 (大森 / 蒲田 / 調布; 調布 = 蒲田清掃事務所（調布地区）)."
+  },
+  "bins": {
+    "burn": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集できないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic made only of plastic (no screws or rubber) and under 30 cm goes to Plastic, packaging and products together, including foam trays and PET caps and labels. Dirty plastic goes to Burnable, and plastic with lots of metal or batteries goes to Non-burnable."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "res": "8:00",
+      "pla": "8:00",
+      "big": "8:00"
+    },
+    "note": "Put everything out by 8:00 on the morning of collection, never the night before. Collection runs Monday to Saturday, national holidays included; only New Year is different (FY2026: no non-burnable pickup on Jan 1–2).",
+    "holidays": "Yes. 「年末年始を除き、祝日でも収集（回収）は曜日どおりに行っています。」 (https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html). The FY2026 non-burnable table includes holidays such as 5月4日, 5月5日, 11月3日, 11月23日 and 2月11日."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain off water first.",
+      "evidence": "「生ごみは、水分を切って出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers and close the bag.",
+      "evidence": "「再生できない紙類、紙おむつ／紙おむつの汚物は取り除いてください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Branches: under 50 cm long and 10 cm thick, tied in bundles (max 3 bundles at a time).",
+      "evidence": "「少量の枝葉など…枝は、長さ50cm以内、幹の太さ10cm以下に切断し、ひもで束ねてください。4束以上を1度に排出したい場合は、「臨時ごみ」として「有料」となります。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Clean, wearable clothes can go to the ward's monthly used-clothing collection instead.",
+      "evidence": "「皮革、ゴム製品、衣類 かばん、靴、ベルト、ジャンパー、コート、衣類」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html / 「拠点回収では、区内の会場で月に一度、再利用できる古着を回収しています。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/konuno.html"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「汚れたプラスチック、ビニール類、皮革、ゴム類は可燃ごみです。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Receipts, photos, paper cups, smelly or coated paper.",
+      "evidence": "「感熱紙（ファックス紙、レシートなど）…汚れや匂いの付いた紙…防水加工紙（紙コップ、紙皿、紙製の食品容器）」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Goes with magazines as 雑がみ, tied with string.",
+      "evidence": "「雑がみとして、投込みチラシ、パンフレット、コピー紙、包装紙、紙袋、紙箱などを回収しています。…排出時は、ひもでしばってください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Fold, tie with string. Inserted flyers go with it.",
+      "evidence": "「新聞は4つ折り（A4サイズ）にして、折込チラシと一緒に出してください。排出時は、ひもでしばって出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string. No clips or tape.",
+      "evidence": "「本やノートなども回収します。クリップやファイルなどの金属類、セロハンテープ、プラスチック類、布類は混ぜないでください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Remove tape and labels, fold flat, tie. No packing tape.",
+      "evidence": "「粘着テープやシール、宅配便の伝票は、はがしてください。折りたたんでひもで束ねて出してください。ガムテープは使用しないでください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Rinse, cut open, dry and tie. Silver-lined cartons go to burnable.",
+      "evidence": "「洗って、開いて、乾かしてください。…内側が銀色の紙パックは、「可燃ごみ」として出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Caps and labels off (they go to plastic), rinse, crush, in a see-through bag.",
+      "evidence": "「キャップとラベルははずし、すすぎ、つぶして、中身の見える袋に入れて出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, in a see-through bag. Snack and nori tins too.",
+      "evidence": "「飲み物の缶は、水ですすいでください。…菓子や海苔の缶も合わせて回収しています。排出時は、中身の見える袋に入れて出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Cap off and rinse, in a see-through bag. Plastic caps to plastic, metal caps to non-burnable.",
+      "evidence": "「キャップを取って、軽く水ですすいでください。排出時は、中身の見える袋に入れて出してください。プラスチックのキャップは「プラスチックの日」、金属のキャップは「不燃ごみの日」に出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shigen.html"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass in thick paper and write 危険.",
+      "evidence": "「油などで汚れた缶、化粧品のびん、ガラス製品や陶磁器…割れたガラスは、厚紙などに包んで「危険」と表示してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas and frying pans count. About 30 cm or larger is oversized.",
+      "evidence": "「小型の家電、電気コード、金属類、傘、フライパンなど」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in a sturdy container or thick paper and write 危険.",
+      "evidence": "「刃物など鋭利なものは、丈夫な容器や厚紙などに包んで「危険」と表示してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Empty and rinse, in a lidded container or see-through bag.",
+      "evidence": "「次の3つすべてに該当するものが回収対象です。（1）汚れていない（2）プラスチックのみでできている（3）30cm未満のもの」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/plastics_recycle.html"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic (no screws or rubber) and under 30 cm.",
+      "evidence": "「ねじやゴムなど他の素材が一切ついていない、プラスチックだけでできたもの」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/plastics_recycle.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「汚れているプラスチック 水ですすいでも汚れの落ちないプラスチック」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "plastic-mixed": {
+      "bin": "non",
+      "note": "Plastic with metal parts or batteries goes to non-burnable; check the ward app for other mixes.",
+      "evidence": "「金属部分が多いもの・電池式のもの 不燃ごみ…6ページへ」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.files/08shigenntogominowakekatadashikata.pdf (p.2)"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "Plastic day, not recyclables day.",
+      "evidence": "「発泡スチロールと食品トレイは、資源の日ではなく、プラスチックの日に出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/plastics_recycle.html"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Dry cells and coin cells (CR/BR) go to non-burnable. Button cells go to shop collection boxes.",
+      "evidence": "「乾電池 不燃ごみとして出してください。…※コイン電池（CR・BR型）は不燃ごみとして出してください。[pamphlet text layer garbled; wording reconstructed]」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.files/08shigenntogominowakekatadashikata.pdf (p.7) / 「ボタン型電池：販売店等の回収ボックスにお入れください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/suigin.html"
+    },
+    "battery-li": {
+      "bin": "no",
+      "note": "Not ward trash. Use a JBRC partner shop, or the ward's 20 rechargeable-battery boxes; tape the terminals.",
+      "evidence": "「小型充電式電池（リチウムイオン電池等）を可燃ごみ、資源、プラスチックに混ぜて排出しないでください！…メーカー、JBRC等で回収が不可であった・小型充電式電池単体・モバイルバッテリーは小型充電式電池回収ボックスにお入れください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogata.html"
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Use up, don't puncture. Separate see-through bag on recyclables day, apart from food cans.",
+      "evidence": "「スプレー缶・カセットボンベの出し方 使い切って、中身の見える別袋に入れ、「資源」の回収日（週1回）に出してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/supureikan_kasai.html"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up, separate see-through bag on non-burnable day.",
+      "evidence": "「必ず使い切り、中身の見える別袋に入れて「不燃ごみ」の日にお出しください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/disposable-cigarette-lighter.html"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "In the original box, or wrap in thick paper and write 危険. Mercury thermometers: wrap, or take to the cleaning office.",
+      "evidence": "「蛍光灯：ケースに入れ、不燃ごみにお出しください。…水銀体温計：厚紙等に包んで袋に入れて不燃ごみにお出しいただくか、管轄の清掃事務所へお持込みください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/suigin.html"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Under about 30 cm. Phones and cameras can go in the ward's small-appliance boxes (42 sites).",
+      "evidence": "「一辺の長さがおおむね30cm未満の家電製品は、不燃ごみです。携帯電話やデジタルカメラなど小型家電10品目は、区施設でボックス回収しています。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Solidify or soak into paper or cloth. Never liquid. Or recycle at ward offices (Wednesdays 11:00–15:00) or partner stores.",
+      "evidence": "「不用になった新聞紙や布きれなどに染み込ませる。凝固剤などを利用して固める。注意：液状のまま容器やビニール袋に入れて出さないでください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Center (0570-037-530), buy a sticker at a supermarket or konbini, out by 8:00 on the day.",
+      "evidence": "「粗大ごみとは、家庭から出る一辺の長さがおおむね30cm以上の家具、寝具、電気製品などの大型ごみをいいます。粗大ごみを処分する場合は、事前の申し込みが必要です。（有料）」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Recycling law: ask the shop, or the Home Appliance Recycling Center (0570-087-200).",
+      "evidence": "「区では回収を行っておりませんので、以下の方法で処分してください。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Return to the maker (PC3R) or use ReNet's free pickup box.",
+      "evidence": "「パソコンは、資源有効利用促進法によりメーカー等にリサイクルが義務付けられています。そのため、区では、回収することができません。」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the shop or a specialist.",
+      "evidence": "「石油類（ガソリン・軽油・灯油・シンナー・エンジンオイル・塗料など）…タイヤ、オートバイ、自動車」 https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/syuusyuu.html / extinguishers: https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html"
+    }
+  },
+  "dictionary": null,
+  "openQuestions": [
+    "Year-end/New Year for burnable, plastic and recyclables isn't published. The schedule page only says 「年末年始の収集日は変更する場合があります。区報、町会回覧、ホームページなどでお知らせします。」. Confirmed no-collection days are only 2027-01-01 and 2027-01-02 (non-burnable table). Whether 12-31 and 01-03 are off for other streams is unconfirmed; 01-03 is a Sunday in FY2026 anyway.",
+    "No sorting CSV/XLSX exists. The Tokyo catalog has none, and the ward's sorting dictionary (https://www.gomisaku.jp/0056/) and app are search-only. sortingList is null.",
+    "Chopsticks and wooden items aren't listed explicitly; only 少量の枝葉 is confirmed as burnable. 'wood' = burn is inferred from that.",
+    "plastic-mixed: Ota only says plastic with other materials attached is not plastic, and heavy-metal or battery-powered items go to non-burnable (pamphlet p.2). The bin for plastic+paper or plastic+fabric mixes isn't stated; I used non following the pamphlet arrow. Verify in the ward app.",
+    "大森北 5丁目: the FY2026 PDF lists 番 1–8, 12, 13, 15, 16 and 9–11, 14 (same days). Any other 番 in 5丁目 isn't listed.",
+    "From October 2026 the ward revised some collection routes; only collection times change, not days (「10月から収集ルートを一部変更します。集積所によっては、収集時間が大幅に変更になる場合があります」 topics/syuusyuuru_tohennkou.html). The 8:00 put-out rule stays.",
+    "The XLSX sheet is labelled R07 (FY2025). It matches FY2026 today, but re-check it when the FY2027 pamphlet comes out."
+  ]
+}

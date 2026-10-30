@@ -1,0 +1,305 @@
+{
+  "id": "nakano",
+  "jp": "中野区",
+  "en": "Nakano",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/dashikatakihon.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/leaflet.files/nakano_gomi_Pamphlet_2026.pdf",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakanoku.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/ichiran.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/moyasugomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/denchi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kandenchi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/leaflet.files/nakanoGomi_2026_en.pdf",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakano.files/R8-18.pdf",
+    "https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_5000769.csv",
+    "https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_550239.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Nakano Cleaning Office (burnable, non-burnable, plastic, collection points)",
+      "tel": "03-3387-5353"
+    },
+    {
+      "en": "Zero Waste Promotion Division, Recycling Section (bottles/cans/PET points, paper and clothes community collection)",
+      "tel": "03-3228-5555"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-5715-2255"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakanoku.html",
+    "official": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakanoku.html",
+    "officialUpdated": "2024-11-14 (printed 更新日：2024年11月14日; the 19 per-area pages that repeat the same table are dated 2026-04-01, with 中央 2026-05-01 and 若宮 2026-06-10)",
+    "granularity": "Ward streams: 42 rows by 町名 + 丁目 group, e.g. 新井「一・二・四・五丁目」 vs 「三丁目」, 江原町「全域」, 中野「二・三・五丁目（毎日収集地域は除く）」. Paper and clothes (集団回収): banchi ranges per 丁目, often with partial banchi, e.g. 中野一丁目「9～25、28～31、33～49、51～53、54(一部）、56(一部)、57～63」 火曜日 中野一丁目町会; 上鷺宮二丁目「4番(上鷺宮二丁目アパート内)」; 白鷺三丁目「全域(2を除く)」. These rows are on each area page: https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/{arai,egota,ehara,kamisaginomiya,kamitakada,saginomiya,shirasagi,cyuo,nakano,numabukuro,nogata,higashinakano,honcyo,matsugaoka,maruyama,minamidai,yamato,yayoi,wakamiya}.html (3rd table, columns 地域|番|回収曜日|回収団体名).",
+    "ruleKinds": "Burnable: two fixed weekdays (月・木, 火・金 or 水・土). Plastic and bottles/cans/PET: one weekday each. Non-burnable: nth weekday, either 第1・第3 or 第2・第4 (「第5」にあたる曜日の収集はありません). Paper/clothes group collection: mostly one weekday, but some rows use nth weekdays: 「第1・3の木曜日」, 「第2・4水曜日」, 「第1・3土曜日」, a Sunday row 「第3日曜日」 (中野四丁目14～20, 囲町町会青年部やぶさみ会), and a split row 「第1月曜日（古紙）、月曜日（びん缶）」 (白鷺一丁目14(一部)). One row moves clothes to a different day: 中野六丁目 昭二町会 「（古着・古布は第2・4土曜日 特定集積所にて回収）」. No 隔週 rules and no fixed dates.",
+    "columns": "nakanoku.html columns: 資源プラスチック = pla, びん・缶・ペットボトル = res, 燃やすごみ = burn, 陶器・ガラス・金属ごみ = non. Area pages use the order 燃やすごみ | 陶器・ガラス・金属ごみ | 資源プラスチック | びん・缶・ペットボトル, then a separate 古紙・古布 table = paper. CSV columns 資源プラスチック, びん・ペットボトル, 燃やすごみ, 陶器・ガラス・金属ごみ map the same way (no paper)."
+  },
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "陶器・ガラス・金属ごみ",
+      "en": "Ceramics, glass & metal",
+      "kind": "non"
+    },
+    "pla": {
+      "label": "資源プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "びん・缶・ペットボトル",
+      "en": "Bottles, cans & PET",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・古着・古布（集団回収）",
+      "en": "Paper & clothes (community collection)",
+      "kind": "res"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging and items made only of plastic, 30 cm or smaller, go to Plastic together. Plastic that won't rinse clean, or that has other materials attached, goes to Burnable, or to Ceramics, glass & metal if it is mostly metal or battery-powered."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "pla": "8:00",
+      "res": "8:00",
+      "paper": "8:00",
+      "big": "8:00"
+    },
+    "note": "Everything goes out by 8:00 on collection day, national holidays included. There is no collection Dec 31 – Jan 3. Bottles, cans and PET go to a separate bottle/can/PET point where the crates and net are set out the afternoon before. Paper and clothes go to your neighbourhood group's collection point (usually marked with an orange flag). Clothes aren't collected on rainy days.",
+    "holidays": "Yes, national holidays are collected. Pamphlet 2026 p.2: 「祝日も通常どおり収集をおこないます。」 Each bin page: 「※祝日も収集します。年末年始(12月31日～1月3日)は収集しません。」 Area pages: 「回収曜日（年末年始を除き、祝日も回収します）」. Group paper collection: 「※祝日も回収します。年末年始の回収日については、区ホームページ等でご確認ください。」 Sunday has no ward collection, but one group collects paper on 第3日曜日. Put-out time: Area pages 回収場所・時間 table: 排出時間 朝8時まで for all four ward streams and for 古紙・古布. 粗大ごみ: 「指定された収集日・収集場所に朝8時までに出す」 (sodaigomi/jizenmoshikomi.html). Year-end: calendar PDF R8-18.pdf 「※年末年始は休業期間や臨時収集により実施日が変更になる場合があります。最新情報は12月頃に区ホームページ等に掲載します」."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain the water well.",
+      "evidence": "生ごみ,燃やすごみ,「水をよく切って出してください。」 https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_5000769.csv"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Empty waste from diapers into the toilet first. Plastic-only sponges can go to Plastic.",
+      "evidence": "紙おむつ,燃やすごみ,「汚物は取り除いてください。」; ティッシュペーパー,燃やすごみ; スポンジ,資源プラスチック,「プラスチック以外の素材が含まれる物は燃やすごみへ。」 (opendata_5000769.csv) / Pamphlet p.3 燃やすごみ: 「紙おむつ 汚物はトイレに流してください」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/leaflet.files/nakano_gomi_Pamphlet_2026.pdf"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 50 cm or less. Five or more 45 L bags at once is a paid pickup: call the Cleaning Office first.",
+      "evidence": "枝（木）,燃やすごみ,「50cm以下に切って出してください。一度に45リットルのごみ袋で5袋以上出す場合は有料（臨時ごみ）になります。」; 割り箸,燃やすごみ (opendata_5000769.csv)"
+    },
+    "textile": {
+      "bin": "paper",
+      "note": "Clean, washed clothes go to community collection in a clear bag, never on rainy days. Dirty or torn fabric goes to burnable.",
+      "evidence": "衣類,古着・古布（集団回収）,「多くの地域で集団回収をしています。集団回収に出せない場合や汚れている場合は燃やすごみへ。」 (opendata_5000769.csv) / 「雨の日（当日降水が予報されている日を含む）には回収しません」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Over 30 cm on any side is oversized.",
+      "evidence": "燃やすごみの種類「ゴム・皮革製品 ホース、長ぐつ、かばん、くつなど。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/moyasugomi.html"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Includes receipts, photos, pizza boxes, soap wrappers and paper egg cartons.",
+      "evidence": "「汚れやにおいのついた紙（ピザの箱、洗剤・せっけんの箱など）」「加工された紙（…写真、レシートなどの感熱紙…）」は回収できない紙類 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html / 卵パック（紙製）,燃やすごみ (opendata_5000769.csv)"
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "As 雑がみ: can go in a paper bag. Flatten boxes and remove any plastic window.",
+      "evidence": "「雑がみ（パンフレット、ティッシュの箱、ちらし、封筒、トイレットペーパーの芯、牛乳パック、お菓子の箱、包装紙、紙袋、はがき…）」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html / Pamphlet p.10 「雑がみは紙袋に入れてまとめても可」"
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Tie with string. Flyers go with the newspaper.",
+      "evidence": "新聞紙,古紙（集団回収）,「折込チラシも新聞と一緒にお出しください。」 (opendata_5000769.csv)"
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Tie with string.",
+      "evidence": "「雑誌（書籍含む）」; 「新聞紙・雑誌（雑がみ）・段ボールを種類ごとにまとめて、ビニールひも等でしばる。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html"
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Fold flat, remove packing tape, tie.",
+      "evidence": "「箱状のもの（雑がみ、段ボール）は、つぶしてたたんでから」「段ボールの粘着テープなど、紙以外のものは取り外して」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html"
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Rinse, cut open, dry, tie. 500 ml cartons are OK. Foil-lined cartons go to burnable.",
+      "evidence": "紙パック,古紙（集団回収）,「中を水ですすいで切り開き、ひもで十字に束ねて出してください。500mlの紙パックも出せます。汚れている場合や、中にアルミの貼ってある場合は燃やすごみです。」 (opendata_5000769.csv)"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, crush, straight into the net. Coloured or dirty PET goes to burnable.",
+      "evidence": "「ペットボトルはラベルとキャップをはずし、できるだけつぶしてください。」「色付きのペットボトルや汚れのとれないペットボトルは、「燃やすごみ」にお出しください。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, into the blue crate. Pet-food cans count too. Non-food cans go to ceramics, glass & metal.",
+      "evidence": "「飲食用のアルミ・スチール缶(ペットフード缶含む)」「缶は青色のケース」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html / 空き缶（飲食用以外のもの）,陶器・ガラス・金属ごみ (opendata_5000769.csv)"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse, into the yellow crate. Metal caps go to ceramics, glass & metal; plastic caps go to Plastic.",
+      "evidence": "「飲食用のガラスびん(飲料・食品・お酒・調味料)」「びんは黄色のケース」「びんのふたは、金属製のものは「陶器・ガラス・金属ごみ」、プラスチック製のものは「プラスチック製容器包装」へ」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Includes medicine and cosmetic bottles. Wrap broken pieces in paper, bag them separately and label the contents.",
+      "evidence": "「医薬品・化粧品のびんは「陶器・ガラス・金属ごみ」」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html / 割れた陶器・ガラス類,陶器・ガラス・金属ごみ,「危険のないよう紙などで包み、他のごみとは別の袋に入れ、中身が何かわかるように表記して」 (opendata_5000769.csv)"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas count even if over 30 cm. Other items over 30 cm are oversized.",
+      "evidence": "「フライパン、なべ…やかん、金属製のハンガー、金属製のキャップ」「金属部分がはずせないもの 傘など。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html / 傘,陶器・ガラス・金属ごみ,「折りたたみ傘、30cm超の傘を含む」; アルミホイル,陶器・ガラス・金属ごみ (opendata_5000769.csv)"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap safely, bag separately and label the contents.",
+      "evidence": "「刃物類・割れ物 …危険のないように包み、中身がわかるよう表記してお出しください。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Empty and rinse. Price stickers can stay on. One clear or semi-clear bag, by 8:00.",
+      "evidence": "「(1)プラスチック製容器包装…ボトル類…容器類…袋類…キャップ・ラベル類…緩衝材…薬のシート」「シール（値段・材料表示など）をはがす必要はありません」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and 30 cm or smaller (since April 2024).",
+      "evidence": "「令和6年4月から、「プラスチック製容器包装」に「プラスチックだけでできた製品」を加え「資源プラスチック」として回収」「※一辺の長さが30cmを超えるものは「粗大ごみ」です。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "If a quick rinse makes it clean, it can go to Plastic.",
+      "evidence": "「（1）洗ってもきれいに汚れが落ちないプラスチック → 「燃やすごみ」へ ※水ですすいできれいになる場合は「資源プラスチック」に出せます」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Mostly metal or battery-powered goes to ceramics, glass & metal. Take it apart to plastic-only and it can go to Plastic.",
+      "evidence": "「(2)のうち、金属部分が多いもの・電池式のもの → 「陶器・ガラス・金属ごみ」へ」「上記以外のもの（プラスチックや紙などの部分が多いもの） → 「燃やすごみ」へ」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html / Pamphlet p.7: チューブ類, ボールペン, CD・DVD → 燃やすごみ"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "Rinse first. Goes with the rest of the plastic.",
+      "evidence": "「緩衝材（発泡スチロール、果物ネット、気泡状のシートなど）」「肉・魚・惣菜のトレイ」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html / 食品トレイ,資源プラスチック (opendata_5000769.csv)"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Best: the drop boxes at ward facilities. Otherwise put them out on ceramics, glass & metal day.",
+      "evidence": "「回収ボックスを利用できない場合は、上記の回収品目に限り、「陶器・ガラス・金属ごみ」の日にお出しください」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kandenchi.html"
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Since April 2026: separate bag labelled リチウムイオン電池, terminals taped. Swollen ones go to the Cleaning Office. Never with burnable or plastic.",
+      "evidence": "「令和8年4月から「陶器・ガラス・金属ごみ」の日にリチウムイオン電池などの小型充電式電池やモバイルバッテリーをごみ集積所で回収します。」「膨張または変形しているものは、ごみ集積所には出せません。清掃事務所にお持ちください。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/denchi.html"
+    },
+    "spray": {
+      "bin": "non",
+      "note": "Use it up, don't punch holes, separate bag labelled with the contents.",
+      "evidence": "「スプレー缶・カセットボンベ・ライター …他のごみとは別の袋に入れ、中身がわかるよう表記してお出しください。また、スプレー缶は穴を空けずに」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use it up, separate bag labelled with the contents.",
+      "evidence": "ライター,陶器・ガラス・金属ごみ,「できるだけ中身を使い切り、他のごみとは別の袋に入れ、中身が何か分かるように表記して」 (opendata_5000769.csv)"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Best: the fluorescent-tube boxes at ward facilities. Otherwise put them out on ceramics, glass & metal day in their case. Mercury thermometers: separate labelled bag.",
+      "evidence": "蛍光管,使用済蛍光管（拠点回収）,「回収ボックスを利用できない場合は、陶器・ガラス・金属ごみへ。」 (opendata_5000769.csv) / 「水銀使用の体温計・血圧計 …他のごみとは別袋に入れ、中身がわかるよう表記」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "30 cm or smaller. Phones and 8 other small devices: use the ward drop boxes. Over 30 cm is oversized.",
+      "evidence": "「小型の家電製品 ドライヤーやアイロンなど 一辺の長さが30センチ以下の家電製品が対象です。なお、一部の小型家電(指定9品目)は、区立施設の拠点で資源回収」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak it into cloth or paper, or use a solidifier. Some ward offices also take it bottled.",
+      "evidence": "「食用油 布や紙にしみこませるか、市販の凝固材で固めてからお出しください。なお、食用油は、区立施設の拠点で資源回収しています。」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/moyasugomi.html"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Over 30 cm on any side. Book with the Oversized Garbage Center (03-5715-2255, Mon–Sat 8:00–19:00, or online), buy A (200 yen) or B (300 yen) stickers, out by 8:00 on the day.",
+      "evidence": "「一辺の長さが30センチを超える家具や家電製品を「粗大ごみ(有料)」」「処理券A(200円)」と「処理券B(300円)」「指定された収集日・収集場所に朝8時までに出す」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Recycled by the maker under the appliance recycling law (TV, fridge, washer, dryer, air conditioner).",
+      "evidence": "「エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機 家電リサイクル法によるリサイクル品目」(区では収集できないもの) https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the Renet Japan courier pickup (free for one box with a PC) or the manufacturer.",
+      "evidence": "パソコン,パソコン,「区では収集できません。」 (opendata_5000769.csv) / 「回収品目にパソコン本体が含まれている場合、1箱分の回収料金が無料」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the shop, the manufacturer or a specialist. The ward page lists fire-extinguisher contractors.",
+      "evidence": "「ガスボンベ…自動車等のバッテリー…灯油、ガソリン…塗料（ラッカー、シンナー等）」; 「ピアノ、タイヤ、バイク…消火器」 https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html"
+    }
+  },
+  "dictionary": {
+    "url": "https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_5000769.csv",
+    "encoding": "UTF-8",
+    "columns": [
+      "ごみの品目",
+      "インデックス",
+      "種別",
+      "説明",
+      "GIS搭載用住所",
+      "経度",
+      "緯度",
+      "分類"
+    ],
+    "updated": "2026-07-15 (HTTP Last-Modified; catalog entry t131148d0000000139 modified 2025-12-12). UTF-8 with BOM, some cells contain newlines. 種別 values: 燃やすごみ, 陶器・ガラス・金属ごみ, 資源プラスチック, びん・缶・ペットボトル, 古紙（集団回収）, 古着・古布（集団回収）, 粗大ごみ, 区では収集しないもの, 家電リサイクル法対象品目, パソコン, and drop-box streams 乾電池/使用済小型家電/使用済蛍光管/食用油/インクカートリッジ（拠点回収）. CC BY."
+  },
+  "openQuestions": [
+    "毎日収集地域 (daily-collection zone) in 中野二・三・五丁目: the ward-wide table, the pamphlet and the R8-18 calendar exclude it, but no public page defines its boundary or its schedule. Probably the Nakano Station commercial area. Residents there need to check with the Cleaning Office (03-3387-5353).",
+    "Paper and clothes (集団回収) are run by neighbourhood associations, not the ward. Days are given by banchi range with many 「(一部)」 partial banchi, so an exact address can't always be matched. The importer needs to parse the 19 area pages (223 rows) and fall back to 'ask 03-3228-5555' for partial rows.",
+    "Year-end dates for 集団回収 are not fixed: 「年末年始の回収日については、区ホームページ等でご確認ください」. The ward streams' 12-31 to 01-03 break is confirmed, but the R8 calendar warns dates may change and that details are published around December.",
+    "白鷺一丁目14(一部) row reads 「第1月曜日（古紙）、月曜日（びん缶）」: the group seems to collect bottles/cans itself on Mondays, which conflicts with the ward's 水曜日 びん・缶・ペットボトル day for 白鷺一・二丁目. Unconfirmed.",
+    "No separate hazardous collection: batteries, spray cans, lighters, mercury items and fluorescent tubes all go to 陶器・ガラス・金属ごみ in a separate labelled bag (or to ward drop boxes), so no 'haz' bin is defined.",
+    "The bin-kan page (updated 2026-09-16) still uses the old name 「プラスチック製容器包装」 for where caps and labels go. The current stream is 資源プラスチック; treated as the same bin.",
+    "The sorting CSV sends plastic clothes-peg hangers (洗濯ばさみハンガー（プラスチック製）) and plastic ballpoint pens to 燃やすごみ, but plastic-only items like toothbrushes to 資源プラスチック. Per-item rules should come from the CSV rather than the general plastic test."
+  ]
+}

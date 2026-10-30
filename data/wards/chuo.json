@@ -1,0 +1,1068 @@
+{
+  "id": "chuo",
+  "jp": "中央区",
+  "en": "Chuo",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/panhuretto.html",
+    "https://www.city.chuo.lg.jp/documents/5392/1p-27p.pdf",
+    "https://www.city.chuo.lg.jp/documents/5392/28p-52p.pdf",
+    "https://www.city.chuo.lg.jp/documents/5392/english2024.pdf",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
+    "https://www.city.chuo.lg.jp/documents/984/gomitoshigen.csv",
+    "https://www.city.chuo.lg.jp/documents/984/gominobunbetu.csv",
+    "https://www.city.chuo.lg.jp/documents/5416/r8jisshikeikaku.pdf",
+    "https://www.city.chuo.lg.jp/documents/16726/12151-3.pdf",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kanengomi.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/hunengomi.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/puramakunowakekatadasikata.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/shigen/sigen.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/sodaigominodasikata.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/kyoten/kyoten.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/lithium.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+  ],
+  "contacts": [
+    {
+      "en": "Chuo Cleaning Office (中央清掃事務所 作業係)",
+      "tel": "03-3562-1521"
+    },
+    {
+      "en": "Chuo Cleaning Office, Cleaning Services (清掃事業係, drop-off collection)",
+      "tel": "03-3562-1523"
+    },
+    {
+      "en": "Oversized Garbage Reception Center (粗大ごみ受付センター, Mon–Sat 8:00–19:00)",
+      "tel": "03-6833-2525"
+    },
+    {
+      "en": "Home Appliance Recycling Center",
+      "tel": "0570-087200"
+    },
+    {
+      "en": "PC3R Promotion Association (computers)",
+      "tel": "03-5282-7685"
+    }
+  ],
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラマーク（プラスチック製容器包装）",
+      "en": "Plastic packaging",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": null,
+    "products": false,
+    "summary": "Only clean plastic packaging with the プラマーク goes to Plastic. Plastic products without the mark (hangers, CDs, toys, cutlery, wrap) and any dirty packaging go to Burnable, and plastic items over 30 cm are oversized."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain well first."
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Flush any waste from diapers down the toilet first."
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Small amounts under 50 cm. Larger amounts or longer pieces are oversized."
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Better: wash and take to a ward drop-off point (拠点回収: elementary schools every Saturday, or Recycle House Kazaguruma). Burnable only if you can't, or if badly soiled."
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts. If you can't, it goes to non-burnable."
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Includes receipts, photos, stickers, shredded paper, greasy pizza boxes and scented paper."
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑紙: put in a paper bag so it doesn't scatter. Remove plastic windows and film."
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string, or use the ward's newspaper bag. Flyers go with it."
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string. Books and clean notebooks count."
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie with string."
+    },
+    "carton": {
+      "bin": "burn",
+      "note": "Not collected curbside as a recyclable. Rinse, cut open and dry clean white-lined cartons of 500 ml or more and take them to a ward drop-off box (拠点回収). Dirty, silver-lined or small cartons go to burnable."
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, flatten, into a see-through bag. Dirty or oily ones go to burnable."
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse and put straight into the blue container. Badly soiled cans and 18 L cans go to non-burnable."
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse and put straight into the yellow container. Clear, clean cosmetic bottles count. Broken, dirty or milky-white glass goes to non-burnable."
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in newspaper and write 危険."
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas, foil, metal hangers and pocket warmers. Exception: metal pots, pans and kettles up to 30 cm across (handle not counted) go to Recyclables, and larger ones are oversized."
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap the blade in newspaper and write 危険."
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Only items with the プラマーク. Rinse or wipe clean, put in a see-through bag (not double-bagged), out by 8:00."
+    },
+    "plastic-product": {
+      "bin": "burn",
+      "note": "Chuo does not collect plastic products as plastic. Over 30 cm goes to oversized."
+    },
+    "plastic-dirty": "burn",
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Plastic tubes, tape and pumps are burnable. Metal tubes and metal-heavy items are non-burnable."
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "Clean food trays go with Plastic. Rinsed and dried foam food trays can also go to ward drop-off boxes."
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Better: ward drop-off points (public facilities, or schools on Saturdays). Otherwise non-burnable in a separate bag with the terminals taped."
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Tape the terminals. Use a ward drop-off point or JBRC store box first, otherwise non-burnable in its own bag. Swollen batteries go by hand to the Chuo Cleaning Office counter (2F). Devices with built-in batteries (power banks, phones) go to small-appliance drop-off."
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Use it up completely, don't punch holes, and put it in a semi-transparent bag on recyclables day."
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use it up and make sure it won't light."
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Better: unbroken tubes to Saturday school drop-off. Otherwise in the original case or newspaper, marked 危険, bagged separately. Mercury thermometers are drop-off only."
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Better: ward small-appliance boxes (slot 15 × 26 cm). Otherwise non-burnable up to 30 cm, oversized above that."
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Solidify it first. Unsolidified cooking oil can go to Saturday school drop-off."
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Over about 30 cm on one side. Book with the Oversized Garbage Reception Center (03-6833-2525 or online), buy A (200 yen) or B (300 yen) tickets at a konbini, and put it at your entrance by 8:00 on the day."
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Return to the store, or call the Home Appliance Recycling Center (0570-087200)."
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the manufacturer, PC3R (03-5282-7685) or Renet courier pickup. Small laptops and tablets that fit the 15 × 26 cm slot can go to ward small-appliance boxes. Wipe your data first."
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the maker or store. For extinguishers, contact the extinguisher recycling center (03-5829-6773)."
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03"
+      ],
+      "bins": {
+        "pla": [
+          "12-31"
+        ],
+        "res": [
+          "12-31"
+        ]
+      }
+    },
+    "putOutBy": {
+      "burn": "8:00 / 9:30 / 12:30 (depends on your collection point)",
+      "non": "8:00 / 9:30 / 12:30 (depends on your collection point)",
+      "pla": "8:00",
+      "res": "8:00",
+      "big": "8:00"
+    },
+    "note": "Collection runs Monday to Saturday, national holidays included. There's no collection on Sundays or Jan 1–3, and on Dec 31 only burnable and non-burnable are collected. Burnable and non-burnable must be out by 8:00, 9:30 or 12:30 depending on your collection point, so check its sign. Plastic, recyclables and booked oversized items must be out by 8:00 on the day.",
+    "patterns": {
+      "1": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": [
+          4
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          1
+        ]
+      },
+      "2": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          5
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          2
+        ]
+      },
+      "3": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          1
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          4
+        ]
+      },
+      "4": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          6
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          3
+        ]
+      },
+      "5": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          3
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          6
+        ]
+      },
+      "6": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          4
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          1
+        ]
+      },
+      "7": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": [
+          3
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          6
+        ]
+      },
+      "8": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": [
+          5
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          2
+        ]
+      },
+      "9": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": [
+          1
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          4
+        ]
+      },
+      "10": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": [
+          2
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          5
+        ]
+      },
+      "11": {
+        "burn": [
+          1,
+          6
+        ],
+        "non": [
+          2
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          5
+        ]
+      },
+      "12": {
+        "burn": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "non": [
+          1
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          4
+        ]
+      },
+      "13": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": [
+          6
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          3
+        ]
+      }
+    }
+  },
+  "updated": "2026-10-30",
+  "areas": [
+    {
+      "town": "明石町",
+      "townEn": "Akashicho",
+      "kana": "アカシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "入船",
+      "townEn": "Irifune",
+      "kana": "イリフネ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "勝どき",
+      "townEn": "Kachidoki",
+      "kana": "カチドキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "京橋",
+      "townEn": "Kyobashi",
+      "kana": "キョウバシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "2"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": [
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "3–4 chome",
+      "jp": "3～4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": [
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "5–6 chome",
+      "jp": "5～6丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": [
+        7,
+        8
+      ],
+      "detail": null,
+      "en": "7–8 chome",
+      "jp": "7～8丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "7"
+    },
+    {
+      "town": "新富",
+      "townEn": "Shintomi",
+      "kana": "シントミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "築地",
+      "townEn": "Tsukiji",
+      "kana": "ツキジ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "月島",
+      "townEn": "Tsukishima",
+      "kana": "ツキシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "13"
+    },
+    {
+      "town": "佃",
+      "townEn": "Tsukuda",
+      "kana": "ツクダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "豊海町",
+      "townEn": "Toyomicho",
+      "kana": "トヨミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋",
+      "townEn": "Nihombashi",
+      "kana": "ニホンバシ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1～3丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "日本橋大伝馬町",
+      "townEn": "Nihombashi Odemmacho",
+      "kana": "ニホンバシオオデンマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋蛎殻町",
+      "townEn": "Nihombashi Kakigaracho",
+      "kana": "ニホンバシカキガラチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋蛎殻町",
+      "townEn": "Nihombashi Kakigaracho",
+      "kana": "ニホンバシカキガラチョウ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "日本橋兜町",
+      "townEn": "Nihombashi Kabutocho",
+      "kana": "ニホンバシカブトチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "日本橋茅場町",
+      "townEn": "Nihombashi Kayabacho",
+      "kana": "ニホンバシカヤバチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "日本橋小網町",
+      "townEn": "Nihombashi Koamicho",
+      "kana": "ニホンバシコアミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋小伝馬町",
+      "townEn": "Nihombashi Kodemmacho",
+      "kana": "ニホンバシコデンマチョウ",
+      "chome": null,
+      "detail": "1～2番、7～21番",
+      "en": "Banchi 1–2, 7–21",
+      "jp": "1～2番、7～21番",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋小伝馬町",
+      "townEn": "Nihombashi Kodemmacho",
+      "kana": "ニホンバシコデンマチョウ",
+      "chome": null,
+      "detail": "3～6番",
+      "en": "Banchi 3–6",
+      "jp": "3～6番",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋小舟町",
+      "townEn": "Nihombashi Kobunacho",
+      "kana": "ニホンバシコブナチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋富沢町",
+      "townEn": "Nihombashi Tomizawacho",
+      "kana": "ニホンバシトミザワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋中洲",
+      "townEn": "Nihombashi Nakasu",
+      "kana": "ニホンバシナカス",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋人形町",
+      "townEn": "Nihombashi Ningyocho",
+      "kana": "ニホンバシニンギョウチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋人形町",
+      "townEn": "Nihombashi Ningyocho",
+      "kana": "ニホンバシニンギョウチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "1～14番",
+      "en": "2 chome, banchi 1–14",
+      "jp": "2丁目1～14番",
+      "pattern": "12"
+    },
+    {
+      "town": "日本橋人形町",
+      "townEn": "Nihombashi Ningyocho",
+      "kana": "ニホンバシニンギョウチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "15～37番",
+      "en": "2 chome, banchi 15–37",
+      "jp": "2丁目15～37番",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋人形町",
+      "townEn": "Nihombashi Ningyocho",
+      "kana": "ニホンバシニンギョウチョウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋馬喰町",
+      "townEn": "Nihombashi Bakurocho",
+      "kana": "ニホンバシバクロチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "7"
+    },
+    {
+      "town": "日本橋箱崎町",
+      "townEn": "Nihombashi Hakozakicho",
+      "kana": "ニホンバシハコザキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "日本橋浜町",
+      "townEn": "Nihombashi Hamacho",
+      "kana": "ニホンバシハマチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "日本橋浜町",
+      "townEn": "Nihombashi Hamacho",
+      "kana": "ニホンバシハマチョウ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "日本橋浜町",
+      "townEn": "Nihombashi Hamacho",
+      "kana": "ニホンバシハマチョウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋久松町",
+      "townEn": "Nihombashi Hisamatsucho",
+      "kana": "ニホンバシヒサマツチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "7"
+    },
+    {
+      "town": "日本橋堀留町",
+      "townEn": "Nihombashi Horidomecho",
+      "kana": "ニホンバシホリドメチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋本石町",
+      "townEn": "Nihombashi Hongokucho",
+      "kana": "ニホンバシホンゴクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "1～5番",
+      "en": "1 chome, banchi 1–5",
+      "jp": "1丁目1～5番",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "6～9番",
+      "en": "1 chome, banchi 6–9",
+      "jp": "1丁目6～9番",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "10番",
+      "en": "1 chome, banchi 10",
+      "jp": "1丁目10番",
+      "pattern": "9"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "1～5番",
+      "en": "2 chome, banchi 1–5",
+      "jp": "2丁目1～5番",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "6～8番",
+      "en": "2 chome, banchi 6–8",
+      "jp": "2丁目6～8番",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        3
+      ],
+      "detail": "1～5番",
+      "en": "3 chome, banchi 1–5",
+      "jp": "3丁目1～5番",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        3
+      ],
+      "detail": "6～11番",
+      "en": "3 chome, banchi 6–11",
+      "jp": "3丁目6～11番",
+      "pattern": "8"
+    },
+    {
+      "town": "日本橋本町",
+      "townEn": "Nihombashi Honcho",
+      "kana": "ニホンバシホンチョウ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋室町",
+      "townEn": "Nihombashi Muromachi",
+      "kana": "ニホンバシムロマチ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "日本橋横山町",
+      "townEn": "Nihombashi Yokoyamacho",
+      "kana": "ニホンバシヨコヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "7"
+    },
+    {
+      "town": "八丁堀",
+      "townEn": "Hatchobori",
+      "kana": "ハッチョウボリ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "八丁堀",
+      "townEn": "Hatchobori",
+      "kana": "ハッチョウボリ",
+      "chome": [
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "2–4 chome",
+      "jp": "2～4丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "浜離宮庭園",
+      "townEn": "Hamarikyuteien",
+      "kana": "ハマリキュウテイエン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "晴海",
+      "townEn": "Harumi",
+      "kana": "ハルミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "東日本橋",
+      "townEn": "Higashinihombashi",
+      "kana": "ヒガシニホンバシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "7"
+    },
+    {
+      "town": "湊",
+      "townEn": "Minato",
+      "kana": "ミナト",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "八重洲",
+      "townEn": "Yaesu",
+      "kana": "ヤエス",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "八重洲",
+      "townEn": "Yaesu",
+      "kana": "ヤエス",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "2"
+    }
+  ]
+}

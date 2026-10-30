@@ -2,10 +2,17 @@
   "id": "chiyoda",
   "jp": "千代田区",
   "en": "Chiyoda",
-  "updated": "2026-10-29",
+  "verified": "2026-10-30",
   "sources": [
     "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
-    "https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    "https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/shigen.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+    "https://www.city.chiyoda.lg.jp/documents/1952/hayami31_jp.pdf",
+    "https://www.city.chiyoda.lg.jp/documents/1952/r8calender-1.pdf (… through r8calender-12.pdf)"
   ],
   "contacts": [
     {
@@ -49,7 +56,7 @@
       "kind": "big"
     },
     "no": {
-      "label": "区では収集しない",
+      "label": "清掃事務所で収集できないもの",
       "en": "Not collected",
       "kind": "no"
     }
@@ -60,57 +67,66 @@
     "summary": "Clean, empty, 100% plastic and under 30 cm goes to Plastic, packaging and plastic products together. Anything dirty or mixed goes to Burnable."
   },
   "sorting": {
-    "food": "burn",
-    "hygiene": "burn",
-    "wood": "burn",
+    "food": {
+      "bin": "burn",
+      "note": "Drain off as much water as possible."
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers first."
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 50 cm or less, under 10 cm thick. Wrap skewers in paper."
+    },
     "textile": {
       "bin": "burn",
-      "note": "Washed clothes can also go to a ward stockyard."
+      "note": "Cut curtains and sheets to 50 cm or less. Washed clothes can also go uncut to a ward stockyard."
     },
     "leather-rubber": {
       "bin": "burn",
-      "note": "Remove metal parts if you can (they go to non-burnable)."
+      "note": "Remove metal parts if you can (they go to non-burnable). Cut rubber hoses to 50 cm."
     },
     "paper-dirty": "burn",
     "paper-misc": {
       "bin": "res",
-      "note": "As その他の紙類: in a separate paper bag or tied bag on recycling day."
+      "note": "As その他の紙類: in its own bag, top tied, on recycling day. Powdery shredded paper goes to burnable."
     },
     "newspaper": {
       "bin": "res",
-      "note": "Tie with string. Flyers go with the newspaper."
+      "note": "Tie with string, no tape. Flyers go with the newspaper."
     },
     "magazine": {
       "bin": "res",
-      "note": "Tie with string."
+      "note": "Tie with string. Pamphlets go with magazines."
     },
     "cardboard": {
       "bin": "res",
-      "note": "Fold flat and tie. No packing tape bundles."
+      "note": "Fold flat and tie with string, no tape. Glossy waterproofed cardboard goes to burnable."
     },
     "carton": {
       "bin": "res",
-      "note": "500 ml or larger only. Smaller cartons go to burnable."
+      "note": "500 ml or larger with a white inside only: rinse, cut open, dry, tie. Smaller or silver-lined cartons go to burnable."
     },
     "pet": {
       "bin": "res",
-      "note": "Cap and label off, rinse, crush, into the green net."
+      "note": "Cap and label off (they go to plastic), rinse, crush, into the net at the collection point."
     },
     "can": {
       "bin": "res",
-      "note": "Into the blue box. Snack cans count too."
+      "note": "Food and drink cans only, snack tins count. Empty, rinse, into the can box. Tabs and lids go to non-burnable."
     },
     "bottle": {
       "bin": "res",
-      "note": "Into the yellow box. Metal caps go to non-burnable."
+      "note": "Food and drink bottles only. Empty, rinse, into the bottle box. Metal caps go to non-burnable."
     },
     "glass-other": {
       "bin": "non",
-      "note": "Broken glass and ceramics: wrap in thick paper, separate bag, write キケン."
+      "note": "Broken glass and ceramics: wrap in thick paper, separate bag, write キケン. Wash out cosmetic bottles."
     },
     "metal": {
       "bin": "non",
-      "note": "Umbrellas count even if over 30 cm. Pots over 30 cm (without handle) are oversized."
+      "note": "Umbrellas and 18 L cans count even if over 30 cm. Pots whose body (without handle) is over 30 cm are oversized."
     },
     "blade": {
       "bin": "non",
@@ -118,38 +134,44 @@
     },
     "plastic-pack": {
       "bin": "pla",
-      "note": "Clear or semi-clear bag, out by 8:30."
+      "note": "Rinse off food, clear or semi-clear bag, out by 8:30."
     },
     "plastic-product": {
       "bin": "pla",
-      "note": "Only if 100% plastic and under 30 cm."
+      "note": "Only if 100% plastic and under 30 cm. Larger items like storage cases are oversized."
     },
     "plastic-dirty": "burn",
-    "plastic-mixed": "burn",
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Includes pump tops, tubes you can't empty, video tapes and PP bands (cut to 30 cm)."
+    },
     "foam-tray": {
       "bin": "pla",
-      "note": "With the rest of the plastic."
+      "note": "With the rest of the plastic. Rinse trays lightly."
     },
     "battery": {
       "bin": "haz",
-      "note": "Bag separately and write キケン. Never with regular non-burnable."
+      "note": "Bag separately and write キケン. Never with regular non-burnable or plastic."
     },
     "battery-li": {
       "bin": "haz",
-      "note": "Bag separately and write キケン."
+      "note": "Bag separately and write キケン. Call the cleaning office first if it is damaged or swollen."
     },
     "spray": {
       "bin": "haz",
-      "note": "Don't punch holes. Separate bag marked キケン."
+      "note": "Use up first. Don't punch holes. Separate bag marked キケン."
     },
     "lighter": {
       "bin": "haz",
-      "note": "Separate bag marked キケン."
+      "note": "Use up the gas. Separate bag marked キケン."
     },
-    "fluorescent": "haz",
+    "fluorescent": {
+      "bin": "haz",
+      "note": "In the original box or wrapped in newspaper. LED bulbs go to non-burnable."
+    },
     "appliance-small": {
       "bin": "non",
-      "note": "Or the ward's small-appliance drop boxes."
+      "note": "Take batteries out (they go to hazardous). Or use the ward's small-appliance drop boxes (slot 30×15 cm)."
     },
     "oil": {
       "bin": "burn",
@@ -157,14 +179,19 @@
     },
     "oversized": {
       "bin": "big",
-      "note": "Book with the Oversized Garbage Center (03-6743-0603), buy a sticker at a konbini, out by 8:30 on the day."
+      "note": "Book with the Oversized Garbage Center (03-6743-0603 or online), buy a Chiyoda sticker at a shop or konbini, out by 8:30 on the day."
     },
-    "appliance-law": "no",
-    "pc": "no",
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop you bought it from or the Home Appliance Recycling Center (0570-087200)."
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Through the maker, PC3R (03-5282-7685) or ReNet Japan."
+    },
     "not-collected": "no"
   },
   "calendar": {
-    "_days": "0=Sun ... 6=Sat. weeks = which occurrence of that weekday in the month (1st-4th; 5th has no pickup).",
     "noCollection": {
       "weekdays": [
         0
@@ -180,12 +207,13 @@
       "burn": "8:30 / 9:30 / 12:30 (see your sign)",
       "res": "8:30",
       "pla": "8:30",
-      "non": "10:00",
-      "haz": "12:30"
+      "non": "10:00 (some areas differ)",
+      "haz": "12:30 (some areas differ)",
+      "big": "8:30"
     },
-    "note": "Collections run every day except Sundays and Dec 31 – Jan 3, including national holidays. Burnable put-out time is 8:30, 9:30 or 12:30 depending on your collection point, so check the sign at yours. Don't put anything out the night before.",
+    "note": "Pickups run every day except Sundays and Dec 31 – Jan 3, holidays included. Burnable goes out by 8:30, 9:30 or 12:30 depending on your collection point (check its sign), recycling and plastic by 8:30, non-burnable by 10:00 and hazardous items by 12:30 (a few areas near Kanda Station, Yurakucho and Uchisaiwaicho differ); never put anything out the night before.",
     "patterns": {
-      "A": {
+      "1": {
         "burn": [
           2,
           5
@@ -211,7 +239,7 @@
           "day": 1
         }
       },
-      "B": {
+      "2": {
         "burn": [
           2,
           5
@@ -237,137 +265,33 @@
           "day": 1
         }
       },
-      "C": {
+      "3": {
         "burn": [
           3,
           6
         ],
         "pla": [
+          4
+        ],
+        "res": [
           1
         ],
-        "res": [
-          4
-        ],
         "non": {
           "weeks": [
             1,
             3
           ],
-          "day": 5
+          "day": 2
         },
         "haz": {
           "weeks": [
             1,
             3
           ],
-          "day": 5
+          "day": 2
         }
       },
-      "D": {
-        "burn": [
-          3,
-          6
-        ],
-        "pla": [
-          1
-        ],
-        "res": [
-          4
-        ],
-        "non": {
-          "weeks": [
-            2,
-            4
-          ],
-          "day": 5
-        },
-        "haz": {
-          "weeks": [
-            2,
-            4
-          ],
-          "day": 5
-        }
-      },
-      "E": {
-        "burn": [
-          1,
-          4
-        ],
-        "pla": [
-          5
-        ],
-        "res": [
-          2
-        ],
-        "non": {
-          "weeks": [
-            1,
-            3
-          ],
-          "day": 6
-        },
-        "haz": {
-          "weeks": [
-            1,
-            3
-          ],
-          "day": 6
-        }
-      },
-      "F": {
-        "burn": [
-          1,
-          4
-        ],
-        "pla": [
-          2
-        ],
-        "res": [
-          5
-        ],
-        "non": {
-          "weeks": [
-            2,
-            4
-          ],
-          "day": 3
-        },
-        "haz": {
-          "weeks": [
-            2,
-            4
-          ],
-          "day": 3
-        }
-      },
-      "G": {
-        "burn": [
-          1,
-          4
-        ],
-        "pla": [
-          2
-        ],
-        "res": [
-          5
-        ],
-        "non": {
-          "weeks": [
-            1,
-            3
-          ],
-          "day": 3
-        },
-        "haz": {
-          "weeks": [
-            1,
-            3
-          ],
-          "day": 3
-        }
-      },
-      "H": {
+      "4": {
         "burn": [
           3,
           6
@@ -393,33 +317,59 @@
           "day": 2
         }
       },
-      "I": {
+      "5": {
         "burn": [
           1,
           4
         ],
         "pla": [
-          5
+          2
         ],
         "res": [
+          5
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 3
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 3
+        }
+      },
+      "6": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
           2
+        ],
+        "res": [
+          5
         ],
         "non": {
           "weeks": [
             2,
             4
           ],
-          "day": 6
+          "day": 3
         },
         "haz": {
           "weeks": [
             2,
             4
           ],
-          "day": 6
+          "day": 3
         }
       },
-      "J": {
+      "7": {
         "burn": [
           2,
           5
@@ -445,7 +395,7 @@
           "day": 4
         }
       },
-      "K": {
+      "8": {
         "burn": [
           2,
           5
@@ -471,32 +421,1136 @@
           "day": 4
         }
       },
-      "L": {
+      "9": {
         "burn": [
           3,
           6
         ],
         "pla": [
-          4
+          1
         ],
         "res": [
-          1
+          4
         ],
         "non": {
           "weeks": [
             1,
             3
           ],
-          "day": 2
+          "day": 5
         },
         "haz": {
           "weeks": [
             1,
             3
           ],
-          "day": 2
+          "day": 5
+        }
+      },
+      "10": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          4
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 5
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 5
+        }
+      },
+      "11": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 6
+        },
+        "haz": {
+          "weeks": [
+            1,
+            3
+          ],
+          "day": 6
+        }
+      },
+      "12": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 6
+        },
+        "haz": {
+          "weeks": [
+            2,
+            4
+          ],
+          "day": 6
         }
       }
     }
-  }
+  },
+  "updated": "2026-10-30",
+  "areas": [
+    {
+      "town": "飯田橋",
+      "townEn": "Iidabashi",
+      "kana": "イイダバシ",
+      "chome": [
+        1,
+        4
+      ],
+      "detail": null,
+      "en": "1, 4 chome",
+      "jp": "一丁目・四丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "飯田橋",
+      "townEn": "Iidabashi",
+      "kana": "イイダバシ",
+      "chome": [
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "2–3 chome",
+      "jp": "二丁目・三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "一番町",
+      "townEn": "Ichibancho",
+      "kana": "イチバンチョウ",
+      "chome": null,
+      "detail": "1・2・3・4・5・7・9・11・23・25・27・29・31番地",
+      "en": "Banchi 1, 2, 3, 4, 5, 7, 9, 11, 23, 25, 27, 29, 31",
+      "jp": "1・2・3・4・5・7・9・11・23・25・27・29・31番地",
+      "pattern": "9"
+    },
+    {
+      "town": "一番町",
+      "townEn": "Ichibancho",
+      "kana": "イチバンチョウ",
+      "chome": null,
+      "detail": "6・8・10・12・13・14・15・16・17・18・19・20・21・22番地",
+      "en": "Banchi 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22",
+      "jp": "6・8・10・12・13・14・15・16・17・18・19・20・21・22番地",
+      "pattern": "10"
+    },
+    {
+      "town": "岩本町",
+      "townEn": "Iwamotocho",
+      "kana": "イワモトチョウ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "一丁目〜三丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "内神田",
+      "townEn": "Uchikanda",
+      "kana": "ウチカンダ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "内神田",
+      "townEn": "Uchikanda",
+      "kana": "ウチカンダ",
+      "chome": [
+        3
+      ],
+      "detail": "13・18・19・20・21・22番を除く",
+      "en": "3 chome, banchi 13, 18, 19, 20, 21, 22 excluded",
+      "jp": "3丁目13・18・19・20・21・22番を除く",
+      "pattern": "6"
+    },
+    {
+      "town": "内神田",
+      "townEn": "Uchikanda",
+      "kana": "ウチカンダ",
+      "chome": [
+        3
+      ],
+      "detail": "13・18・19・20・21・22番",
+      "en": "3 chome, banchi 13, 18, 19, 20, 21, 22",
+      "jp": "三丁目13・18・19・20・21・22番",
+      "pattern": "5"
+    },
+    {
+      "town": "内幸町",
+      "townEn": "Uchisaiwaicho",
+      "kana": "ウチサイワイチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "大手町",
+      "townEn": "Otemachi",
+      "kana": "オオテマチ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "鍛冶町",
+      "townEn": "Kajicho",
+      "kana": "カジチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "霞が関",
+      "townEn": "Kasumigaseki",
+      "kana": "カスミガセキ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "神田相生町",
+      "townEn": "Kanda Aioicho",
+      "kana": "カンダアイオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田淡路町",
+      "townEn": "Kanda Awajicho",
+      "kana": "カンダアワジチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "神田和泉町",
+      "townEn": "Kanda Izumicho",
+      "kana": "カンダイズミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田岩本町",
+      "townEn": "Kanda Iwamotocho",
+      "kana": "カンダイワモトチョウ",
+      "chome": null,
+      "detail": "1・15番地",
+      "en": "Banchi 1, 15",
+      "jp": "1・15番地",
+      "pattern": "12"
+    },
+    {
+      "town": "神田岩本町",
+      "townEn": "Kanda Iwamotocho",
+      "kana": "カンダイワモトチョウ",
+      "chome": null,
+      "detail": "2・4番地",
+      "en": "Banchi 2, 4",
+      "jp": "2・4番地",
+      "pattern": "5"
+    },
+    {
+      "town": "神田小川町",
+      "townEn": "Kanda Ogawamachi",
+      "kana": "カンダオガワマチ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": "奇数番地",
+      "en": "1–3 chome, odd banchi",
+      "jp": "一丁目〜三丁目の奇数番地",
+      "pattern": "6"
+    },
+    {
+      "town": "神田小川町",
+      "townEn": "Kanda Ogawamachi",
+      "kana": "カンダオガワマチ",
+      "chome": [
+        1
+      ],
+      "detail": "偶数番地",
+      "en": "1 chome, even banchi",
+      "jp": "一丁目の偶数番地",
+      "pattern": "7"
+    },
+    {
+      "town": "神田小川町",
+      "townEn": "Kanda Ogawamachi",
+      "kana": "カンダオガワマチ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田小川町",
+      "townEn": "Kanda Ogawamachi",
+      "kana": "カンダオガワマチ",
+      "chome": [
+        3
+      ],
+      "detail": "偶数番地",
+      "en": "3 chome, even banchi",
+      "jp": "3丁目偶数番地",
+      "pattern": "8"
+    },
+    {
+      "town": "神田鍛冶町",
+      "townEn": "Kanda Kajicho",
+      "kana": "カンダカジチョウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "神田北乗物町",
+      "townEn": "Kanda Kitanorimonocho",
+      "kana": "カンダキタノリモノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田紺屋町",
+      "townEn": "Kanda Konyacho",
+      "kana": "カンダコンヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田佐久間河岸",
+      "townEn": "Kanda Sakumagashi",
+      "kana": "カンダサクマガシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田佐久間町",
+      "townEn": "Kanda Sakumacho",
+      "kana": "カンダサクマチョウ",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "一丁目〜四丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "神田猿楽町",
+      "townEn": "Kanda Sarugakucho",
+      "kana": "カンダサルガクチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田神保町",
+      "townEn": "Kanda Jimbocho",
+      "kana": "カンダジンボウチョウ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": "奇数番地",
+      "en": "1–3 chome, odd banchi",
+      "jp": "一丁目〜三丁目の奇数番地",
+      "pattern": "6"
+    },
+    {
+      "town": "神田神保町",
+      "townEn": "Kanda Jimbocho",
+      "kana": "カンダジンボウチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田神保町",
+      "townEn": "Kanda Jimbocho",
+      "kana": "カンダジンボウチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "偶数番地",
+      "en": "2 chome, even banchi",
+      "jp": "2丁目偶数番地",
+      "pattern": "8"
+    },
+    {
+      "town": "神田神保町",
+      "townEn": "Kanda Jimbocho",
+      "kana": "カンダジンボウチョウ",
+      "chome": [
+        3
+      ],
+      "detail": "偶数番地",
+      "en": "3 chome, even banchi",
+      "jp": "三丁目の偶数番地",
+      "pattern": "1"
+    },
+    {
+      "town": "神田須田町",
+      "townEn": "Kanda Sudacho",
+      "kana": "カンダスダチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "1・3・5・9・11・13・15・17・19・21・23・25番地",
+      "en": "1 chome, banchi 1, 3, 5, 9, 11, 13, 15, 17, 19, 21, 23, 25",
+      "jp": "一丁目1・3・5・9・11・13・15・17・19・21・23・25番地",
+      "pattern": "7"
+    },
+    {
+      "town": "神田須田町",
+      "townEn": "Kanda Sudacho",
+      "kana": "カンダスダチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "7番地",
+      "en": "1 chome, banchi 7",
+      "jp": "一丁目7番地",
+      "pattern": "12"
+    },
+    {
+      "town": "神田須田町",
+      "townEn": "Kanda Sudacho",
+      "kana": "カンダスダチョウ",
+      "chome": [
+        1
+      ],
+      "detail": "偶数番地",
+      "en": "1 chome, even banchi",
+      "jp": "一丁目の偶数番地",
+      "pattern": "5"
+    },
+    {
+      "town": "神田須田町",
+      "townEn": "Kanda Sudacho",
+      "kana": "カンダスダチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "奇数番地",
+      "en": "2 chome, odd banchi",
+      "jp": "二丁目の奇数番地",
+      "pattern": "12"
+    },
+    {
+      "town": "神田須田町",
+      "townEn": "Kanda Sudacho",
+      "kana": "カンダスダチョウ",
+      "chome": [
+        2
+      ],
+      "detail": "偶数番地",
+      "en": "2 chome, even banchi",
+      "jp": "二丁目の偶数番地",
+      "pattern": "5"
+    },
+    {
+      "town": "神田駿河台",
+      "townEn": "Kanda Surugadai",
+      "kana": "カンダスルガダイ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田駿河台",
+      "townEn": "Kanda Surugadai",
+      "kana": "カンダスルガダイ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田駿河台",
+      "townEn": "Kanda Surugadai",
+      "kana": "カンダスルガダイ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "3丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "神田駿河台",
+      "townEn": "Kanda Surugadai",
+      "kana": "カンダスルガダイ",
+      "chome": [
+        4
+      ],
+      "detail": "奇数番地",
+      "en": "4 chome, odd banchi",
+      "jp": "4丁目奇数番地",
+      "pattern": "8"
+    },
+    {
+      "town": "神田駿河台",
+      "townEn": "Kanda Surugadai",
+      "kana": "カンダスルガダイ",
+      "chome": [
+        4
+      ],
+      "detail": "偶数番地",
+      "en": "4 chome, even banchi",
+      "jp": "4丁目偶数番地",
+      "pattern": "7"
+    },
+    {
+      "town": "神田多町",
+      "townEn": "Kanda Tacho",
+      "kana": "カンダタチョウ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "神田司町",
+      "townEn": "Kanda Tsukasamachi",
+      "kana": "カンダツカサマチ",
+      "chome": [
+        2
+      ],
+      "detail": "奇数番地",
+      "en": "2 chome, odd banchi",
+      "jp": "二丁目の奇数番地",
+      "pattern": "6"
+    },
+    {
+      "town": "神田司町",
+      "townEn": "Kanda Tsukasamachi",
+      "kana": "カンダツカサマチ",
+      "chome": [
+        2
+      ],
+      "detail": "偶数番地",
+      "en": "2 chome, even banchi",
+      "jp": "二丁目の偶数番地",
+      "pattern": "5"
+    },
+    {
+      "town": "神田富山町",
+      "townEn": "Kanda Tomiyamacho",
+      "kana": "カンダトミヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田錦町",
+      "townEn": "Kanda Nishikicho",
+      "kana": "カンダニシキチョウ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "一丁目〜三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "神田西福田町",
+      "townEn": "Kanda Nishifukudacho",
+      "kana": "カンダニシフクダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田練塀町",
+      "townEn": "Kanda Neribeicho",
+      "kana": "カンダネリベイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田花岡町",
+      "townEn": "Kanda Hanaokacho",
+      "kana": "カンダハナオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田東紺屋町",
+      "townEn": "Kanda Higashikonyacho",
+      "kana": "カンダヒガシコンヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田東松下町",
+      "townEn": "Kanda Higashimatsushitacho",
+      "kana": "カンダヒガシマツシタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田平河町",
+      "townEn": "Kanda Hirakawacho",
+      "kana": "カンダヒラカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田松永町",
+      "townEn": "Kanda Matsunagacho",
+      "kana": "カンダマツナガチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "神田美倉町",
+      "townEn": "Kanda Mikuracho",
+      "kana": "カンダミクラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "神田三崎町",
+      "townEn": "Kanda Misakicho",
+      "kana": "カンダミサキチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "神田三崎町",
+      "townEn": "Kanda Misakicho",
+      "kana": "カンダミサキチョウ",
+      "chome": [
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "2–3 chome",
+      "jp": "二丁目・三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "神田美土代町",
+      "townEn": "Kanda Mitoshirocho",
+      "kana": "カンダミトシロチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "紀尾井町",
+      "townEn": "Kioicho",
+      "kana": "キオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "4"
+    },
+    {
+      "town": "北の丸公園",
+      "townEn": "Kitanomarukoen",
+      "kana": "キタノマルコウエン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "九段北",
+      "townEn": "Kudankita",
+      "kana": "クダンキタ",
+      "chome": [
+        1
+      ],
+      "detail": "1～11番",
+      "en": "1 chome, banchi 1–11",
+      "jp": "一丁目1〜11番",
+      "pattern": "1"
+    },
+    {
+      "town": "九段北",
+      "townEn": "Kudankita",
+      "kana": "クダンキタ",
+      "chome": [
+        1
+      ],
+      "detail": "12～15番",
+      "en": "1 chome, banchi 12–15",
+      "jp": "1丁目12～15番",
+      "pattern": "2"
+    },
+    {
+      "town": "九段北",
+      "townEn": "Kudankita",
+      "kana": "クダンキタ",
+      "chome": [
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "2–4 chome",
+      "jp": "2・3・4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "九段南",
+      "townEn": "Kudanminami",
+      "kana": "クダンミナミ",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "一丁目〜四丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "麹町",
+      "townEn": "Kojimachi",
+      "kana": "コウジマチ",
+      "chome": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail": "奇数番地",
+      "en": "1–6 chome, odd banchi",
+      "jp": "一丁目〜六丁目の奇数番地",
+      "pattern": "4"
+    },
+    {
+      "town": "麹町",
+      "townEn": "Kojimachi",
+      "kana": "コウジマチ",
+      "chome": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail": "偶数番地",
+      "en": "1–6 chome, even banchi",
+      "jp": "一丁目〜六丁目の偶数番地",
+      "pattern": "3"
+    },
+    {
+      "town": "五番町",
+      "townEn": "Gobancho",
+      "kana": "ゴバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "三番町",
+      "townEn": "Sambancho",
+      "kana": "サンバンチョウ",
+      "chome": null,
+      "detail": "1・2・3・5・6・8・10・26・28・30番地",
+      "en": "Banchi 1, 2, 3, 5, 6, 8, 10, 26, 28, 30",
+      "jp": "1・2・3・5・6・8・10・26・28・30番地",
+      "pattern": "9"
+    },
+    {
+      "town": "三番町",
+      "townEn": "Sambancho",
+      "kana": "サンバンチョウ",
+      "chome": null,
+      "detail": "7・9・12・14・16・18・20・22・24番地",
+      "en": "Banchi 7, 9, 12, 14, 16, 18, 20, 22, 24",
+      "jp": "7・9・12・14・16・18・20・22・24番地",
+      "pattern": "10"
+    },
+    {
+      "town": "外神田",
+      "townEn": "Sotokanda",
+      "kana": "ソトカンダ",
+      "chome": [
+        1
+      ],
+      "detail": "1～11番",
+      "en": "1 chome, banchi 1–11",
+      "jp": "1丁目1～11番",
+      "pattern": "7"
+    },
+    {
+      "town": "外神田",
+      "townEn": "Sotokanda",
+      "kana": "ソトカンダ",
+      "chome": [
+        1
+      ],
+      "detail": "12～18番",
+      "en": "1 chome, banchi 12–18",
+      "jp": "1丁目12～18番",
+      "pattern": "12"
+    },
+    {
+      "town": "外神田",
+      "townEn": "Sotokanda",
+      "kana": "ソトカンダ",
+      "chome": [
+        2,
+        3,
+        6
+      ],
+      "detail": null,
+      "en": "2, 3, 6 chome",
+      "jp": "2・3・6丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "外神田",
+      "townEn": "Sotokanda",
+      "kana": "ソトカンダ",
+      "chome": [
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "4–5 chome",
+      "jp": "4・5丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "永田町",
+      "townEn": "Nagatacho",
+      "kana": "ナガタチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "西神田",
+      "townEn": "Nishikanda",
+      "kana": "ニシカンダ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "西神田",
+      "townEn": "Nishikanda",
+      "kana": "ニシカンダ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "二番町",
+      "townEn": "Nibancho",
+      "kana": "ニバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "隼町",
+      "townEn": "Hayabusacho",
+      "kana": "ハヤブサチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "4"
+    },
+    {
+      "town": "東神田",
+      "townEn": "Higashikanda",
+      "kana": "ヒガシカンダ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "一丁目~三丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "一ツ橋",
+      "townEn": "Hitotsubashi",
+      "kana": "ヒトツバシ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "日比谷公園",
+      "townEn": "Hibiyakoen",
+      "kana": "ヒビヤコウエン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "4"
+    },
+    {
+      "town": "平河町",
+      "townEn": "Hirakawacho",
+      "kana": "ヒラカワチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "富士見",
+      "townEn": "Fujimi",
+      "kana": "フジミ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "丸の内",
+      "townEn": "Marunouchi",
+      "kana": "マルノウチ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "一丁目~三丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "有楽町",
+      "townEn": "Yurakucho",
+      "kana": "ユウラクチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一丁目・二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "四番町",
+      "townEn": "Yombancho",
+      "kana": "ヨンバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "10"
+    },
+    {
+      "town": "六番町",
+      "townEn": "Rokubancho",
+      "kana": "ロクバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    }
+  ]
 }

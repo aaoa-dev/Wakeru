@@ -1,0 +1,13 @@
+{
+  "name": "wakeru",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "node scripts/import/index.mjs",
+    "validate": "node scripts/validate.mjs",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

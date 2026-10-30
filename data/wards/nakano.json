@@ -1,0 +1,1245 @@
+{
+  "id": "nakano",
+  "jp": "中野区",
+  "en": "Nakano",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/dashikatakihon.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/leaflet.files/nakano_gomi_Pamphlet_2026.pdf",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakanoku.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/ichiran.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/moyasugomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/toki-garasu.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/plastic.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/bin-kan.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/koshi-furugi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/denchi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kandenchi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/leaflet.files/nakanoGomi_2026_en.pdf",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/nakano.files/R8-18.pdf",
+    "https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_5000769.csv",
+    "https://www2.wagmap.jp/nakanodatamap/nakanodatamap/opendatafile/map_1/CSV/opendata_550239.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Nakano Cleaning Office (burnable, non-burnable, plastic, collection points)",
+      "tel": "03-3387-5353"
+    },
+    {
+      "en": "Zero Waste Promotion Division, Recycling Section (bottles/cans/PET points, paper and clothes community collection)",
+      "tel": "03-3228-5555"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-5715-2255"
+    }
+  ],
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "陶器・ガラス・金属ごみ",
+      "en": "Ceramics, glass & metal",
+      "kind": "non"
+    },
+    "pla": {
+      "label": "資源プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "びん・缶・ペットボトル",
+      "en": "Bottles, cans & PET",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・古着・古布（集団回収）",
+      "en": "Paper & clothes (community collection)",
+      "kind": "res"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging and items made only of plastic, 30 cm or smaller, go to Plastic together. Plastic that won't rinse clean, or that has other materials attached, goes to Burnable, or to Ceramics, glass & metal if it is mostly metal or battery-powered."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain the water well."
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Empty waste from diapers into the toilet first. Plastic-only sponges can go to Plastic."
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 50 cm or less. Five or more 45 L bags at once is a paid pickup: call the Cleaning Office first."
+    },
+    "textile": {
+      "bin": "paper",
+      "note": "Clean, washed clothes go to community collection in a clear bag, never on rainy days. Dirty or torn fabric goes to burnable."
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Over 30 cm on any side is oversized."
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Includes receipts, photos, pizza boxes, soap wrappers and paper egg cartons."
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "As 雑がみ: can go in a paper bag. Flatten boxes and remove any plastic window."
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Tie with string. Flyers go with the newspaper."
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Tie with string."
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Fold flat, remove packing tape, tie."
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Rinse, cut open, dry, tie. 500 ml cartons are OK. Foil-lined cartons go to burnable."
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, crush, straight into the net. Coloured or dirty PET goes to burnable."
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, into the blue crate. Pet-food cans count too. Non-food cans go to ceramics, glass & metal."
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse, into the yellow crate. Metal caps go to ceramics, glass & metal; plastic caps go to Plastic."
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Includes medicine and cosmetic bottles. Wrap broken pieces in paper, bag them separately and label the contents."
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas count even if over 30 cm. Other items over 30 cm are oversized."
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap safely, bag separately and label the contents."
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Empty and rinse. Price stickers can stay on. One clear or semi-clear bag, by 8:00."
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and 30 cm or smaller (since April 2024)."
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "If a quick rinse makes it clean, it can go to Plastic."
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Mostly metal or battery-powered goes to ceramics, glass & metal. Take it apart to plastic-only and it can go to Plastic."
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "Rinse first. Goes with the rest of the plastic."
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Best: the drop boxes at ward facilities. Otherwise put them out on ceramics, glass & metal day."
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Since April 2026: separate bag labelled リチウムイオン電池, terminals taped. Swollen ones go to the Cleaning Office. Never with burnable or plastic."
+    },
+    "spray": {
+      "bin": "non",
+      "note": "Use it up, don't punch holes, separate bag labelled with the contents."
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use it up, separate bag labelled with the contents."
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Best: the fluorescent-tube boxes at ward facilities. Otherwise put them out on ceramics, glass & metal day in their case. Mercury thermometers: separate labelled bag."
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "30 cm or smaller. Phones and 8 other small devices: use the ward drop boxes. Over 30 cm is oversized."
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak it into cloth or paper, or use a solidifier. Some ward offices also take it bottled."
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Over 30 cm on any side. Book with the Oversized Garbage Center (03-5715-2255, Mon–Sat 8:00–19:00, or online), buy A (200 yen) or B (300 yen) stickers, out by 8:00 on the day."
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Recycled by the maker under the appliance recycling law (TV, fridge, washer, dryer, air conditioner)."
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the Renet Japan courier pickup (free for one box with a PC) or the manufacturer."
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the shop, the manufacturer or a specialist. The ward page lists fire-extinguisher contractors."
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "pla": "8:00",
+      "res": "8:00",
+      "paper": "8:00",
+      "big": "8:00"
+    },
+    "note": "Everything goes out by 8:00 on collection day, national holidays included. There is no collection Dec 31 – Jan 3. Bottles, cans and PET go to a separate bottle/can/PET point where the crates and net are set out the afternoon before. Paper and clothes go to your neighbourhood group's collection point (usually marked with an orange flag). Clothes aren't collected on rainy days.",
+    "patterns": {
+      "1": {
+        "pla": [
+          4
+        ],
+        "res": [
+          5
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "pla": [
+          4
+        ],
+        "res": [
+          5
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "pla": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "4": {
+        "pla": [
+          2
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "5": {
+        "pla": [
+          1
+        ],
+        "res": [
+          3
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "6": {
+        "pla": [
+          6
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "7": {
+        "pla": [
+          4
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "8": {
+        "pla": [
+          1
+        ],
+        "res": [
+          3
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "9": {
+        "pla": [
+          2
+        ],
+        "res": [
+          3
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "10": {
+        "pla": [
+          6
+        ],
+        "res": [
+          4
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "11": {
+        "pla": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "12": {
+        "pla": [
+          3
+        ],
+        "res": [
+          4
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "13": {
+        "pla": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "14": {
+        "pla": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "15": {
+        "pla": [
+          6
+        ],
+        "res": [
+          4
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "16": {
+        "pla": [
+          2
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "17": {
+        "pla": [
+          4
+        ],
+        "res": [
+          2
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "18": {
+        "pla": [
+          6
+        ],
+        "res": [
+          4
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "19": {
+        "pla": [
+          2
+        ],
+        "res": [
+          4
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "20": {
+        "pla": [
+          3
+        ],
+        "res": [
+          6
+        ],
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "21": {
+        "pla": [
+          5
+        ],
+        "res": [
+          6
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "22": {
+        "pla": [
+          4
+        ],
+        "res": [
+          3
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "23": {
+        "pla": [
+          1
+        ],
+        "res": [
+          3
+        ],
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "24": {
+        "pla": [
+          5
+        ],
+        "res": [
+          6
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "25": {
+        "pla": [
+          2
+        ],
+        "res": [
+          6
+        ],
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "updated": "2026-10-30",
+  "areas": [
+    {
+      "town": "新井",
+      "townEn": "Arai",
+      "kana": "アライ",
+      "chome": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "1, 2, 4, 5 chome",
+      "jp": "一・二・四・五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "新井",
+      "townEn": "Arai",
+      "kana": "アライ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "江古田",
+      "townEn": "Egota",
+      "kana": "エゴタ",
+      "chome": [
+        1,
+        3
+      ],
+      "detail": null,
+      "en": "1, 3 chome",
+      "jp": "一・三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "江古田",
+      "townEn": "Egota",
+      "kana": "エゴタ",
+      "chome": [
+        2,
+        4
+      ],
+      "detail": null,
+      "en": "2, 4 chome",
+      "jp": "二・四丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "江原町",
+      "townEn": "Eharacho",
+      "kana": "エハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "上鷺宮",
+      "townEn": "Kamisaginomiya",
+      "kana": "カミサギノミヤ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "上高田",
+      "townEn": "Kamitakada",
+      "kana": "カミタカダ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "上高田",
+      "townEn": "Kamitakada",
+      "kana": "カミタカダ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "上高田",
+      "townEn": "Kamitakada",
+      "kana": "カミタカダ",
+      "chome": [
+        3,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "3–5 chome",
+      "jp": "三・四・五丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "鷺宮",
+      "townEn": "Saginomiya",
+      "kana": "サギノミヤ",
+      "chome": [
+        1,
+        3
+      ],
+      "detail": null,
+      "en": "1, 3 chome",
+      "jp": "一・三丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "鷺宮",
+      "townEn": "Saginomiya",
+      "kana": "サギノミヤ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "鷺宮",
+      "townEn": "Saginomiya",
+      "kana": "サギノミヤ",
+      "chome": [
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "4–6 chome",
+      "jp": "四・五・六丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "白鷺",
+      "townEn": "Shirasagi",
+      "kana": "シラサギ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一・二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "白鷺",
+      "townEn": "Shirasagi",
+      "kana": "シラサギ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一・二丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": [
+        3,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "3–5 chome",
+      "jp": "三・四・五丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "中野",
+      "townEn": "Nakano",
+      "kana": "ナカノ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "中野",
+      "townEn": "Nakano",
+      "kana": "ナカノ",
+      "chome": [
+        2,
+        3,
+        5
+      ],
+      "detail": null,
+      "en": "2, 3, 5 chome",
+      "jp": "二・三・五丁目（毎日収集地域は除く）",
+      "pattern": "13",
+      "note": "Excludes the daily-collection zone around Nakano Station; check the sign at your collection point."
+    },
+    {
+      "town": "中野",
+      "townEn": "Nakano",
+      "kana": "ナカノ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "四丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "中野",
+      "townEn": "Nakano",
+      "kana": "ナカノ",
+      "chome": [
+        6
+      ],
+      "detail": null,
+      "en": "6 chome",
+      "jp": "六丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "沼袋",
+      "townEn": "Numabukuro",
+      "kana": "ヌマブクロ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "16"
+    },
+    {
+      "town": "野方",
+      "townEn": "Nogata",
+      "kana": "ノガタ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "野方",
+      "townEn": "Nogata",
+      "kana": "ノガタ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "17"
+    },
+    {
+      "town": "野方",
+      "townEn": "Nogata",
+      "kana": "ノガタ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "四丁目",
+      "pattern": "16"
+    },
+    {
+      "town": "野方",
+      "townEn": "Nogata",
+      "kana": "ノガタ",
+      "chome": [
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "5–6 chome",
+      "jp": "五・六丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "東中野",
+      "townEn": "Higashinakano",
+      "kana": "ヒガシナカノ",
+      "chome": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "1, 2, 4, 5 chome",
+      "jp": "一・二・四・五丁目",
+      "pattern": "18"
+    },
+    {
+      "town": "東中野",
+      "townEn": "Higashinakano",
+      "kana": "ヒガシナカノ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一・二丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": [
+        3
+      ],
+      "detail": null,
+      "en": "3 chome",
+      "jp": "三丁目",
+      "pattern": "19"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": [
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "4–6 chome",
+      "jp": "四・五・六丁目",
+      "pattern": "20"
+    },
+    {
+      "town": "松が丘",
+      "townEn": "Matsugaoka",
+      "kana": "マツガオカ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "松が丘",
+      "townEn": "Matsugaoka",
+      "kana": "マツガオカ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "16"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "南台",
+      "townEn": "Minamidai",
+      "kana": "ミナミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "21"
+    },
+    {
+      "town": "大和町",
+      "townEn": "Yamatocho",
+      "kana": "ヤマトチョウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "一・二丁目",
+      "pattern": "22"
+    },
+    {
+      "town": "大和町",
+      "townEn": "Yamatocho",
+      "kana": "ヤマトチョウ",
+      "chome": [
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "3–4 chome",
+      "jp": "三・四丁目",
+      "pattern": "23"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "24"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "二丁目",
+      "pattern": "25"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "3–6 chome",
+      "jp": "三・四・五・六丁目",
+      "pattern": "21"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Wakamiya",
+      "kana": "ワカミヤ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "一丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Wakamiya",
+      "kana": "ワカミヤ",
+      "chome": [
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "2–3 chome",
+      "jp": "二・三丁目",
+      "pattern": "8"
+    }
+  ]
+}

@@ -1,0 +1,1415 @@
+{
+  "id": "koto",
+  "jp": "江東区",
+  "en": "Koto",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/documents/8ura.pdf",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/plastic.html",
+    "https://www.city.koto.lg.jp/381104/gomi/kate/plastics.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sigen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7350.html",
+    "https://www.city.koto.lg.jp/388010/syaryoukasai.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kasaijikobousi.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7351.html",
+    "https://www.city.koto.lg.jp/381104/kogatakadentakuhai.html",
+    "https://www.city.koto.lg.jp/381104/kurashi/gomi/haiki/53188.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/shitumon.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kaishu/nenmatunenshi2019.html",
+    "https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Koto Cleaning Office",
+      "tel": "03-3644-6216"
+    },
+    {
+      "en": "Oversized Garbage Reception Center",
+      "tel": "03-6431-9997"
+    },
+    {
+      "en": "Cleaning & Recycling Section",
+      "tel": "03-3647-9181"
+    },
+    {
+      "en": "Home Appliance Recycling Center",
+      "tel": "0570-087200"
+    }
+  ],
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging and items made 100% of plastic up to about 30 cm go to Plastic together; foam trays and styrofoam go to Recyclables instead, and anything dirty or mixed goes to Burnable."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain well. Eggshells too."
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers first."
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to about 30 cm and tie in bundles. Larger wood is oversized."
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can. Used clothes are also taken at ward drop-off points."
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can. About 30 cm or larger is oversized."
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Thermal receipts, photos, waxed or oily paper, paper cups, window envelopes."
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑がみ: tie with string or put in a paper bag on recycling day."
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Flyers go with the newspaper."
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string."
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie with string."
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Rinse, open flat, tie or put in a paper bag with the paper. Foil-lined cartons go to burnable."
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to plastic), rinse, crush, into the green container."
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse and lightly crush, into the blue container. Oily cans (tuna, pet food, cooking oil) go to non-burnable."
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse, into the yellow container. Metal caps go to non-burnable. Oily or broken bottles go to non-burnable."
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in thick paper and write キケン."
+    },
+    "metal": {
+      "bin": "non",
+      "note": "About 30 cm or larger (e.g. big pots) is oversized."
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in paper and write キケン."
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Rinse or wipe, in a see-through bag (no bag inside a bag) or lidded bin. Out by 8:00."
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and within about 30 cm."
+    },
+    "plastic-dirty": "burn",
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Mixed-material items like marker pens and silicone go to burnable; lighters and razors go to non-burnable."
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Koto collects foam trays and styrofoam on recycling day (grey lidded container), not with plastic, even if they carry the plastic mark. Dirty ones go to burnable."
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Non-burnable day, in its own clear bag (batteries, fluorescent tubes and mercury items together), separate from other non-burnable."
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Non-burnable day in the battery bag. Tape the terminals. Swollen batteries: bag alone and write 膨張電池. Can also be taken to the Cleaning Office or a JBRC box."
+    },
+    "spray": {
+      "bin": "non",
+      "note": "Use up, don't punch holes. Put spray cans, gas canisters and lighters together in their own bag on non-burnable day."
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up. Same bag as spray cans on non-burnable day."
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Unbroken: in the original paper case or thick paper, in the battery/mercury bag. Broken: regular non-burnable, marked キケン."
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Remove batteries. Items with a built-in rechargeable battery go in the battery bag. Under 15×25 cm can go in ward drop boxes. About 30 cm or larger is oversized."
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak into paper or cloth, or solidify it."
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Reception Center (03-6431-9997 or online), buy a sticker, out by 8:00 on the day."
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop, or the Home Appliance Recycling Center (0570-087200)."
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Maker take-back or ReNet Japan (0570-085-800)."
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Use a specialist or the maker's take-back."
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "res": "8:00",
+      "pla": "8:00",
+      "non": "8:00",
+      "big": "8:00"
+    },
+    "note": "Put everything out by 8:00 on collection day, including national holidays; there is no pickup on Sundays or Dec 31 – Jan 3. In stormy weather keep it at home until the next collection day.",
+    "validTo": "2027-03-31",
+    "patterns": {
+      "1": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          6
+        ],
+        "non": {
+          "dates": [
+            "2026-04-06",
+            "2026-04-20",
+            "2026-05-04",
+            "2026-05-18",
+            "2026-06-01",
+            "2026-06-15",
+            "2026-06-29",
+            "2026-07-13",
+            "2026-07-27",
+            "2026-08-10",
+            "2026-08-24",
+            "2026-09-07",
+            "2026-09-21",
+            "2026-10-05",
+            "2026-10-19",
+            "2026-11-02",
+            "2026-11-16",
+            "2026-11-30",
+            "2026-12-14",
+            "2026-12-28",
+            "2027-01-11",
+            "2027-01-25",
+            "2027-02-08",
+            "2027-02-22",
+            "2027-03-08",
+            "2027-03-22"
+          ]
+        }
+      },
+      "2": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          1
+        ],
+        "non": {
+          "dates": [
+            "2026-04-07",
+            "2026-04-21",
+            "2026-05-05",
+            "2026-05-19",
+            "2026-06-02",
+            "2026-06-16",
+            "2026-06-30",
+            "2026-07-14",
+            "2026-07-28",
+            "2026-08-11",
+            "2026-08-25",
+            "2026-09-08",
+            "2026-09-22",
+            "2026-10-06",
+            "2026-10-20",
+            "2026-11-03",
+            "2026-11-17",
+            "2026-12-01",
+            "2026-12-15",
+            "2026-12-29",
+            "2027-01-12",
+            "2027-01-26",
+            "2027-02-09",
+            "2027-02-23",
+            "2027-03-09",
+            "2027-03-23"
+          ]
+        }
+      },
+      "3": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "dates": [
+            "2026-04-08",
+            "2026-04-22",
+            "2026-05-06",
+            "2026-05-20",
+            "2026-06-03",
+            "2026-06-17",
+            "2026-07-01",
+            "2026-07-15",
+            "2026-07-29",
+            "2026-08-12",
+            "2026-08-26",
+            "2026-09-09",
+            "2026-09-23",
+            "2026-10-07",
+            "2026-10-21",
+            "2026-11-04",
+            "2026-11-18",
+            "2026-12-02",
+            "2026-12-16",
+            "2026-12-30",
+            "2027-01-13",
+            "2027-01-27",
+            "2027-02-10",
+            "2027-02-24",
+            "2027-03-10",
+            "2027-03-24"
+          ]
+        }
+      },
+      "4": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          3
+        ],
+        "non": {
+          "dates": [
+            "2026-04-09",
+            "2026-04-23",
+            "2026-05-07",
+            "2026-05-21",
+            "2026-06-04",
+            "2026-06-18",
+            "2026-07-02",
+            "2026-07-16",
+            "2026-07-30",
+            "2026-08-13",
+            "2026-08-27",
+            "2026-09-10",
+            "2026-09-24",
+            "2026-10-08",
+            "2026-10-22",
+            "2026-11-05",
+            "2026-11-19",
+            "2026-12-03",
+            "2026-12-17",
+            "2026-12-24",
+            "2027-01-07",
+            "2027-01-14",
+            "2027-01-28",
+            "2027-02-11",
+            "2027-02-25",
+            "2027-03-11",
+            "2027-03-25"
+          ]
+        }
+      },
+      "5": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          4
+        ],
+        "non": {
+          "dates": [
+            "2026-04-10",
+            "2026-04-24",
+            "2026-05-08",
+            "2026-05-22",
+            "2026-06-05",
+            "2026-06-19",
+            "2026-07-03",
+            "2026-07-17",
+            "2026-07-31",
+            "2026-08-14",
+            "2026-08-28",
+            "2026-09-11",
+            "2026-09-25",
+            "2026-10-09",
+            "2026-10-23",
+            "2026-11-06",
+            "2026-11-20",
+            "2026-12-04",
+            "2026-12-18",
+            "2026-12-25",
+            "2027-01-08",
+            "2027-01-15",
+            "2027-01-29",
+            "2027-02-12",
+            "2027-02-26",
+            "2027-03-12",
+            "2027-03-26"
+          ]
+        }
+      },
+      "6": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "non": {
+          "dates": [
+            "2026-04-11",
+            "2026-04-25",
+            "2026-05-09",
+            "2026-05-23",
+            "2026-06-06",
+            "2026-06-20",
+            "2026-07-04",
+            "2026-07-18",
+            "2026-08-01",
+            "2026-08-15",
+            "2026-08-29",
+            "2026-09-12",
+            "2026-09-26",
+            "2026-10-10",
+            "2026-10-24",
+            "2026-11-07",
+            "2026-11-21",
+            "2026-12-05",
+            "2026-12-19",
+            "2026-12-26",
+            "2027-01-09",
+            "2027-01-16",
+            "2027-01-30",
+            "2027-02-13",
+            "2027-02-27",
+            "2027-03-13",
+            "2027-03-27"
+          ]
+        }
+      },
+      "7": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          4
+        ],
+        "res": [
+          6
+        ],
+        "non": {
+          "dates": [
+            "2026-04-13",
+            "2026-04-27",
+            "2026-05-11",
+            "2026-05-25",
+            "2026-06-08",
+            "2026-06-22",
+            "2026-07-06",
+            "2026-07-20",
+            "2026-08-03",
+            "2026-08-17",
+            "2026-08-31",
+            "2026-09-14",
+            "2026-09-28",
+            "2026-10-12",
+            "2026-10-26",
+            "2026-11-09",
+            "2026-11-23",
+            "2026-12-07",
+            "2026-12-21",
+            "2027-01-04",
+            "2027-01-18",
+            "2027-02-01",
+            "2027-02-15",
+            "2027-03-01",
+            "2027-03-15",
+            "2027-03-29"
+          ]
+        }
+      },
+      "8": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          5
+        ],
+        "res": [
+          1
+        ],
+        "non": {
+          "dates": [
+            "2026-04-14",
+            "2026-04-28",
+            "2026-05-12",
+            "2026-05-26",
+            "2026-06-09",
+            "2026-06-23",
+            "2026-07-07",
+            "2026-07-21",
+            "2026-08-04",
+            "2026-08-18",
+            "2026-09-01",
+            "2026-09-15",
+            "2026-09-29",
+            "2026-10-13",
+            "2026-10-27",
+            "2026-11-10",
+            "2026-11-24",
+            "2026-12-08",
+            "2026-12-22",
+            "2027-01-05",
+            "2027-01-19",
+            "2027-02-02",
+            "2027-02-16",
+            "2027-03-02",
+            "2027-03-16",
+            "2027-03-30"
+          ]
+        }
+      },
+      "9": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          6
+        ],
+        "res": [
+          2
+        ],
+        "non": {
+          "dates": [
+            "2026-04-01",
+            "2026-04-15",
+            "2026-04-29",
+            "2026-05-13",
+            "2026-05-27",
+            "2026-06-10",
+            "2026-06-24",
+            "2026-07-08",
+            "2026-07-22",
+            "2026-08-05",
+            "2026-08-19",
+            "2026-09-02",
+            "2026-09-16",
+            "2026-09-30",
+            "2026-10-14",
+            "2026-10-28",
+            "2026-11-11",
+            "2026-11-25",
+            "2026-12-09",
+            "2026-12-23",
+            "2027-01-06",
+            "2027-01-20",
+            "2027-02-03",
+            "2027-02-17",
+            "2027-03-03",
+            "2027-03-17",
+            "2027-03-31"
+          ]
+        }
+      },
+      "10": {
+        "burn": [
+          2,
+          5
+        ],
+        "pla": [
+          1
+        ],
+        "res": [
+          3
+        ],
+        "non": {
+          "dates": [
+            "2026-04-02",
+            "2026-04-16",
+            "2026-04-30",
+            "2026-05-14",
+            "2026-05-28",
+            "2026-06-11",
+            "2026-06-25",
+            "2026-07-09",
+            "2026-07-23",
+            "2026-08-06",
+            "2026-08-20",
+            "2026-09-03",
+            "2026-09-17",
+            "2026-10-01",
+            "2026-10-15",
+            "2026-10-29",
+            "2026-11-12",
+            "2026-11-26",
+            "2026-12-10",
+            "2026-12-24",
+            "2027-01-07",
+            "2027-01-21",
+            "2027-02-04",
+            "2027-02-18",
+            "2027-03-04",
+            "2027-03-18"
+          ]
+        }
+      },
+      "11": {
+        "burn": [
+          3,
+          6
+        ],
+        "pla": [
+          2
+        ],
+        "res": [
+          4
+        ],
+        "non": {
+          "dates": [
+            "2026-04-03",
+            "2026-04-17",
+            "2026-05-01",
+            "2026-05-15",
+            "2026-05-29",
+            "2026-06-12",
+            "2026-06-26",
+            "2026-07-10",
+            "2026-07-24",
+            "2026-08-07",
+            "2026-08-21",
+            "2026-09-04",
+            "2026-09-18",
+            "2026-10-02",
+            "2026-10-16",
+            "2026-10-30",
+            "2026-11-13",
+            "2026-11-27",
+            "2026-12-11",
+            "2026-12-25",
+            "2027-01-08",
+            "2027-01-22",
+            "2027-02-05",
+            "2027-02-19",
+            "2027-03-05",
+            "2027-03-19"
+          ]
+        }
+      },
+      "12": {
+        "burn": [
+          1,
+          4
+        ],
+        "pla": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "non": {
+          "dates": [
+            "2026-04-04",
+            "2026-04-18",
+            "2026-05-02",
+            "2026-05-16",
+            "2026-05-30",
+            "2026-06-13",
+            "2026-06-27",
+            "2026-07-11",
+            "2026-07-25",
+            "2026-08-08",
+            "2026-08-22",
+            "2026-09-05",
+            "2026-09-19",
+            "2026-10-03",
+            "2026-10-17",
+            "2026-10-31",
+            "2026-11-14",
+            "2026-11-28",
+            "2026-12-12",
+            "2026-12-26",
+            "2027-01-09",
+            "2027-01-23",
+            "2027-02-06",
+            "2027-02-20",
+            "2027-03-06",
+            "2027-03-20"
+          ]
+        }
+      }
+    }
+  },
+  "updated": "2026-10-30",
+  "areas": [
+    {
+      "town": "青海",
+      "townEn": "Aomi",
+      "kana": "アオミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "有明",
+      "townEn": "Ariake",
+      "kana": "アリアケ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "石島",
+      "townEn": "Ishijima",
+      "kana": "イシジマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "海の森",
+      "townEn": "Uminomori",
+      "kana": "ウミノモリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "海辺",
+      "townEn": "Umibe",
+      "kana": "ウミベ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "永代",
+      "townEn": "Eitai",
+      "kana": "エイタイ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "枝川",
+      "townEn": "Edagawa",
+      "kana": "エダガワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "越中島",
+      "townEn": "Etchujima",
+      "kana": "エッチュウジマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "扇橋",
+      "townEn": "Ogibashi",
+      "kana": "オウギバシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "大島",
+      "townEn": "Ojima",
+      "kana": "オオジマ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "大島",
+      "townEn": "Ojima",
+      "kana": "オオジマ",
+      "chome": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail": null,
+      "en": "3–7 chome",
+      "jp": "3・4・5・6・7丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "大島",
+      "townEn": "Ojima",
+      "kana": "オオジマ",
+      "chome": [
+        8,
+        9
+      ],
+      "detail": null,
+      "en": "8–9 chome",
+      "jp": "8・9丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "亀戸",
+      "townEn": "Kameido",
+      "kana": "カメイド",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1・2・3丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "亀戸",
+      "townEn": "Kameido",
+      "kana": "カメイド",
+      "chome": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "detail": null,
+      "en": "4–9 chome",
+      "jp": "4・5・6・7・8・9丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "北砂",
+      "townEn": "Kitasuna",
+      "kana": "キタスナ",
+      "chome": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "1–5 chome",
+      "jp": "1・2・3・4・5丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "北砂",
+      "townEn": "Kitasuna",
+      "kana": "キタスナ",
+      "chome": [
+        6,
+        7
+      ],
+      "detail": null,
+      "en": "6–7 chome",
+      "jp": "6・7丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "木場",
+      "townEn": "Kiba",
+      "kana": "キバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "清澄",
+      "townEn": "Kiyosumi",
+      "kana": "キヨスミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "佐賀",
+      "townEn": "Saga",
+      "kana": "サガ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "猿江",
+      "townEn": "Sarue",
+      "kana": "サルエ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "塩浜",
+      "townEn": "Shiohama",
+      "kana": "シオハマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "潮見",
+      "townEn": "Shiomi",
+      "kana": "シオミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "東雲",
+      "townEn": "Shinonome",
+      "kana": "シノノメ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "6"
+    },
+    {
+      "town": "白河",
+      "townEn": "Shirakawa",
+      "kana": "シラカワ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1・2・3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "白河",
+      "townEn": "Shirakawa",
+      "kana": "シラカワ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "新大橋",
+      "townEn": "Shinohashi",
+      "kana": "シンオオハシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "新木場",
+      "townEn": "Shinkiba",
+      "kana": "シンキバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "新砂",
+      "townEn": "Shinsuna",
+      "kana": "シンスナ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "1"
+    },
+    {
+      "town": "住吉",
+      "townEn": "Sumiyoshi",
+      "kana": "スミヨシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "千石",
+      "townEn": "Sengoku",
+      "kana": "センゴク",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "千田",
+      "townEn": "Senda",
+      "kana": "センダ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "11"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takabashi",
+      "kana": "タカバシ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "辰巳",
+      "townEn": "Tatsumi",
+      "kana": "タツミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "東陽",
+      "townEn": "Toyo",
+      "kana": "トウヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "常盤",
+      "townEn": "Tokiwa",
+      "kana": "トキワ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "5"
+    },
+    {
+      "town": "富岡",
+      "townEn": "Tomioka",
+      "kana": "トミオカ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "豊洲",
+      "townEn": "Toyosu",
+      "kana": "トヨス",
+      "chome": [
+        1,
+        3
+      ],
+      "detail": null,
+      "en": "1, 3 chome",
+      "jp": "1・3丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "豊洲",
+      "townEn": "Toyosu",
+      "kana": "トヨス",
+      "chome": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "2, 4, 5, 6 chome",
+      "jp": "2・4・5・6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "東砂",
+      "townEn": "Higashisuna",
+      "kana": "ヒガシスナ",
+      "chome": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "1–5 chome",
+      "jp": "1・2・3・4・5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "東砂",
+      "townEn": "Higashisuna",
+      "kana": "ヒガシスナ",
+      "chome": [
+        6,
+        7,
+        8
+      ],
+      "detail": null,
+      "en": "6–8 chome",
+      "jp": "6・7・8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "平野",
+      "townEn": "Hirano",
+      "kana": "ヒラノ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1・2・3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "平野",
+      "townEn": "Hirano",
+      "kana": "ヒラノ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "深川",
+      "townEn": "Fukagawa",
+      "kana": "フカガワ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "深川",
+      "townEn": "Fukagawa",
+      "kana": "フカガワ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "福住",
+      "townEn": "Fukuzumi",
+      "kana": "フクズミ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "冬木",
+      "townEn": "Fuyuki",
+      "kana": "フユキ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "9"
+    },
+    {
+      "town": "古石場",
+      "townEn": "Furuishiba",
+      "kana": "フルイシバ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "牡丹",
+      "townEn": "Botan",
+      "kana": "ボタン",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "南砂",
+      "townEn": "Minamisuna",
+      "kana": "ミナミスナ",
+      "chome": [
+        1,
+        5
+      ],
+      "detail": null,
+      "en": "1, 5 chome",
+      "jp": "1・5丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "南砂",
+      "townEn": "Minamisuna",
+      "kana": "ミナミスナ",
+      "chome": [
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "detail": null,
+      "en": "2, 3, 4, 6, 7 chome",
+      "jp": "2・3・4・6・7丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "三好",
+      "townEn": "Miyoshi",
+      "kana": "ミヨシ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1・2・3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "三好",
+      "townEn": "Miyoshi",
+      "kana": "ミヨシ",
+      "chome": [
+        4
+      ],
+      "detail": null,
+      "en": "4 chome",
+      "jp": "4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "毛利",
+      "townEn": "Mori",
+      "kana": "モウリ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "8"
+    },
+    {
+      "town": "森下",
+      "townEn": "Morishita",
+      "kana": "モリシタ",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "1・2・3・4丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "森下",
+      "townEn": "Morishita",
+      "kana": "モリシタ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "門前仲町",
+      "townEn": "Monzennakacho",
+      "kana": "モンゼンナカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "3"
+    },
+    {
+      "town": "夢の島",
+      "townEn": "Yumenoshima",
+      "kana": "ユメノシマ",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    },
+    {
+      "town": "若洲",
+      "townEn": "Wakasu",
+      "kana": "ワカス",
+      "chome": null,
+      "detail": null,
+      "en": "All",
+      "jp": "全域",
+      "pattern": "12"
+    }
+  ]
+}

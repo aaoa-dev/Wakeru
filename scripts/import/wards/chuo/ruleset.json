@@ -1,0 +1,326 @@
+{
+  "id": "chuo",
+  "jp": "中央区",
+  "en": "Chuo",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/panhuretto.html",
+    "https://www.city.chuo.lg.jp/documents/5392/1p-27p.pdf",
+    "https://www.city.chuo.lg.jp/documents/5392/28p-52p.pdf",
+    "https://www.city.chuo.lg.jp/documents/5392/english2024.pdf",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
+    "https://www.city.chuo.lg.jp/documents/984/gomitoshigen.csv",
+    "https://www.city.chuo.lg.jp/documents/984/gominobunbetu.csv",
+    "https://www.city.chuo.lg.jp/documents/5416/r8jisshikeikaku.pdf",
+    "https://www.city.chuo.lg.jp/documents/16726/12151-3.pdf",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kanengomi.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/hunengomi.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/puramakunowakekatadasikata.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/shigen/sigen.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/sodaigominodasikata.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/kyoten/kyoten.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/lithium.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+  ],
+  "contacts": [
+    {
+      "en": "Chuo Cleaning Office (中央清掃事務所 作業係)",
+      "tel": "03-3562-1521"
+    },
+    {
+      "en": "Chuo Cleaning Office, Cleaning Services (清掃事業係, drop-off collection)",
+      "tel": "03-3562-1523"
+    },
+    {
+      "en": "Oversized Garbage Reception Center (粗大ごみ受付センター, Mon–Sat 8:00–19:00)",
+      "tel": "03-6833-2525"
+    },
+    {
+      "en": "Home Appliance Recycling Center",
+      "tel": "0570-087200"
+    },
+    {
+      "en": "PC3R Promotion Association (computers)",
+      "tel": "03-5282-7685"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.chuo.lg.jp/documents/984/gomitoshigen.csv",
+    "official": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
+    "officialUpdated": "2023-01-18 (掲載日：2023年1月18日)",
+    "granularity": "56 rows in 3 regions (京橋 15, 日本橋 36, 月島 5). Mostly whole town (丁目='全域', e.g. 明石町, 勝どき, 晴海) or chome ranges (銀座 1～2丁目 / 3～4丁目 / 5～6丁目 / 7～8丁目, 八丁堀 1丁目 / 2～4丁目). 11 rows split by banchi (番) ranges: 日本橋小伝馬町 '1～2番、7～21番' vs '3～6番' (no chome; 小伝馬町 has none), 日本橋人形町 '2丁目1～14番' vs '2丁目15～37番', 日本橋本町 '1丁目1～5番', '1丁目6～9番', '1丁目10番', '2丁目1～5番', '2丁目6～8番', '3丁目1～5番', '3丁目6～11番'. 浜離宮庭園 has an empty 丁目 cell (whole area). Town names in the CSV omit the 日本橋 prefix (e.g. '大伝馬町' = 日本橋大伝馬町; the 町名 '日本橋' row with 丁目 '1～3丁目' is 日本橋1～3丁目 itself). The ward warns some large apartment complexes have their own days: '一部大規模集合住宅については、上記の収集曜日一覧と異なる場合があります' (R8 実施計画).",
+    "ruleKinds": "Weekly weekdays only. No nth-weekday (第n) rules and no every-other-week rules anywhere. Burnable is twice a week ('水曜日・土曜日', '月曜日・木曜日', '火曜日・金曜日'), or six days 'Mon–Sat' written as '月曜日～土曜日' (京橋, 銀座1～8丁目, 八重洲1・2丁目, 日本橋1～3丁目), or five days for 人形町2丁目1～14番, written as a cell with an embedded newline: '月曜日・火曜日・水曜日\\n金曜日・土曜日' (Mon, Tue, Wed, Fri, Sat; no Thu). Non-burnable, プラマーク, 資源 and 粗大ごみ are one weekday each. In the commercial areas (京橋, 銀座, 八重洲, 日本橋1～3丁目, 人形町2丁目1～14番) プラマーク and 資源 fall on the same day. Parser must split on '・' and '～' and strip the newline.",
+    "columns": "燃やすごみ = burn, 燃やさないごみ = non, プラマーク = pla (container/packaging plastic only), 資源 = res (newspaper, magazines/雑紙, cardboard, bottles, cans, PET bottles, metal pots/pans/kettles, spray cans and cassette gas canisters, all on the same day), 粗大ごみ = big (the weekday on which booked oversized garbage is picked up in that area; the exact date is assigned when you book with the 粗大ごみ受付センター, and items go at your entrance, not the collection point). 地域 and 音 are just the region and the kana index letter."
+  },
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラマーク（プラスチック製容器包装）",
+      "en": "Plastic packaging",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": null,
+    "products": false,
+    "summary": "Only clean plastic packaging with the プラマーク goes to Plastic. Plastic products without the mark (hangers, CDs, toys, cutlery, wrap) and any dirty packaging go to Burnable, and plastic items over 30 cm are oversized."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03"
+      ],
+      "bins": {
+        "pla": [
+          "12-31"
+        ],
+        "res": [
+          "12-31"
+        ]
+      }
+    },
+    "putOutBy": {
+      "burn": "8:00 / 9:30 / 12:30 (depends on your collection point)",
+      "non": "8:00 / 9:30 / 12:30 (depends on your collection point)",
+      "pla": "8:00",
+      "res": "8:00",
+      "big": "8:00"
+    },
+    "note": "Collection runs Monday to Saturday, national holidays included. There's no collection on Sundays or Jan 1–3, and on Dec 31 only burnable and non-burnable are collected. Burnable and non-burnable must be out by 8:00, 9:30 or 12:30 depending on your collection point, so check its sign. Plastic, recyclables and booked oversized items must be out by 8:00 on the day.",
+    "holidays": "Collected. '年末年始を除き祝祭日も各地域の収集曜日どおり収集しています。' (https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html). Sundays: 'Collection date: No collection on Sundays.' (English pamphlet). Year-end: '12月31日（火）は「燃やすごみ」「燃やさないごみ」についてのみ、曜日どおりの収集を行います。「プラスチック製容器包装」および「資源」の収集は行いません。' and resumption '令和7年1月4日（土）から' (2024-25 notice, https://www.city.chuo.lg.jp/documents/16726/12151-3.pdf). So 12-31 is a no-collection day for pla and res only; Jan 1-3 have no collection at all. Oversized pickups stop after 12-30 and restart 01-04 in that notice."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain well first.",
+      "evidence": "生ごみ | 燃やす | できるだけ水気を切ってからお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/nagyou/na.html"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Flush any waste from diapers down the toilet first.",
+      "evidence": "紙おむつ | 燃やすごみ | 汚物はトイレに流してから出す。 (gominobunbetu.csv); マスク | 燃やす; スポンジ | 燃やす; ティッシュペーパー | 燃やす https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/magyou/ma.html"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Small amounts under 50 cm. Larger amounts or longer pieces are oversized.",
+      "evidence": "木の枝 | 燃やす | 少量で一辺の長さが50cm以下のものは「燃やすごみ」/ 粗大 | 多量の場合や50cmを超えるものは「粗大ごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ki.html"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Better: wash and take to a ward drop-off point (拠点回収: elementary schools every Saturday, or Recycle House Kazaguruma). Burnable only if you can't, or if badly soiled.",
+      "evidence": "衣類 | 拠点回収 | 「拠点回収」です。公共施設および毎週土曜日に小学校等で回収しています。/ 燃やす | 拠点回収に持ち込めない場合や、汚れのひどいものは「燃やすごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/agyou/i.html"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts. If you can't, it goes to non-burnable.",
+      "evidence": "革のかばん | 燃やすごみ | 金属は取り除いてください。金属を取り除けない場合は、燃やさないごみ (gominobunbetu.csv); 靴 | 燃やす; ゴム手袋 | 燃やす https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ku.html"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Includes receipts, photos, stickers, shredded paper, greasy pizza boxes and scented paper.",
+      "evidence": "感熱紙、感圧紙、カーボン紙、ビニールコート紙、窓付封筒、写真、紙コップ、ちり紙、ろう引き段ボールなどは燃やすごみの日に出してください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/shigen/sigen.html"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑紙: put in a paper bag so it doesn't scatter. Remove plastic windows and film.",
+      "evidence": "雑紙 | 資源 | 包装紙・はがき・封筒・厚紙・紙袋・菓子箱などで、「資源」です。紙袋に入れて散らからないようにしてお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/sa.html"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string, or use the ward's newspaper bag. Flyers go with it.",
+      "evidence": "新聞（折込チラシを含む）| 資源 | ひもでしばって出すか回収袋に入れて出してください。 (gominobunbetu.csv); 新聞紙 | 資源 | ひもでしばってお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/si.html"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string. Books and clean notebooks count.",
+      "evidence": "雑誌（本やノートを含む）| 資源 | ひもでしばる (gominobunbetu.csv); 雑誌 | 資源 | ひもでしばってお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/sa.html"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie with string.",
+      "evidence": "段ボール | 資源 | 折りたたんで、ひもでしばる (gominobunbetu.csv); ダンボール | 資源 | ひもでしばってお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/tagyou/ta.html"
+    },
+    "carton": {
+      "bin": "burn",
+      "note": "Not collected curbside as a recyclable. Rinse, cut open and dry clean white-lined cartons of 500 ml or more and take them to a ward drop-off box (拠点回収). Dirty, silver-lined or small cartons go to burnable.",
+      "evidence": "飲料用紙パック | 燃やす | 汚れているもの、内側が銀色のものは「燃やすごみ」/ 拠点回収 | 汚れていないもの、内側が白色のものは「拠点回収」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ka.html ; 開いていないもの、汚れているもの、500ミリリットル未満のものは、回収できません。→燃やすごみへ https://www.city.chuo.lg.jp/a0039/kurashi/gomi/kyoten/kyoten.html"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, flatten, into a see-through bag. Dirty or oily ones go to burnable.",
+      "evidence": "ペットボトル | 資源 | 中をすすいで、キャップとラベルをはがしてお出しください。/ 燃やす | 汚れが落ちないまたは、油の付いたものは「燃やすごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/he.html ; はずしたキャップとラベルは、プラマークの日に出してください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/shigen/sigen.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse and put straight into the blue container. Badly soiled cans and 18 L cans go to non-burnable.",
+      "evidence": "缶 | 資源 | 青色コンテナ（缶用）へ入れてください。油の缶・汚れのひどい缶・一斗缶などは燃やさないごみ (gominobunbetu.csv)"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse and put straight into the yellow container. Clear, clean cosmetic bottles count. Broken, dirty or milky-white glass goes to non-burnable.",
+      "evidence": "びん | 資源 | 黄色コンテナ（びん用）へへ入れてください。割れたびん・汚れのひどいびん・乳白色のガラス・鏡・窓ガラスなどは燃やさないごみ (gominobunbetu.csv); 化粧品のびん | 資源 | 透明かつ汚れていないものは「資源」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ke.html"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in newspaper and write 危険.",
+      "evidence": "ガラス・陶器の器や皿など | 燃やさないごみ | 割れてしまったガラス・陶磁器類は、新聞紙などに包んで「危険」と表示して出してください。 (gominobunbetu.csv)"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas, foil, metal hangers and pocket warmers. Exception: metal pots, pans and kettles up to 30 cm across (handle not counted) go to Recyclables, and larger ones are oversized.",
+      "evidence": "傘 / 使い捨てカイロ / アルミホイル | 燃やさないごみ (gominobunbetu.csv); 金属製のなべ・やかん・フライパン（直径が30cm以下のもの。柄の長さは含みません。）| 資源 | 直径がおおむね30cmを超えるものは粗大ごみ (gominobunbetu.csv); ハンガー | 燃やさない | 金属製のものは「燃やさないごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/ha.html"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap the blade in newspaper and write 危険.",
+      "evidence": "包丁 | 燃やさない | 刃を新聞紙等に包んで「危険」と表示をしてください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/ho.html"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Only items with the プラマーク. Rinse or wipe clean, put in a see-through bag (not double-bagged), out by 8:00.",
+      "evidence": "汚れているものは軽く水ですすぎ古紙などで拭くなどして汚れを落としてください。そして、収集日当日の午前8時までに中身の見える袋にまとめて集積所に出してください。袋に入れる際には、ごみ袋を二重にして出さないでください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/puramakunowakekatadasikata.html"
+    },
+    "plastic-product": {
+      "bin": "burn",
+      "note": "Chuo does not collect plastic products as plastic. Over 30 cm goes to oversized.",
+      "evidence": "以下の写真のような「汚れているもの」や「プラマークの付いていないプラスチック製品」は、燃やすごみの日に出してください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/puramakunowakekatadasikata.html ; プラスチックケース等 | 燃やす | 一辺の長さが30cm以下のものは「燃やすごみ」です。/ 粗大 | 一辺の長さが30cmを超えるものは「粗大ごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/hu.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "汚れているプラスチック製容器包装 (listed under 燃やすごみ) https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kanengomi.html ; レジ袋 | 燃やす | プラマークがないものまたは、汚れているものは「燃やすごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/ragyou/re.html"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Plastic tubes, tape and pumps are burnable. Metal tubes and metal-heavy items are non-burnable.",
+      "evidence": "歯みがき粉のチューブ | 燃やす | プラスチック製のものは「燃やすごみ」です。/ 燃やさない | 金属製のものは「燃やさないごみ」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/ha.html ; ガムテープ | 燃やす https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ka.html ; マヨネーズの容器 | 燃やす https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/magyou/ma.html"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "Clean food trays go with Plastic. Rinsed and dried foam food trays can also go to ward drop-off boxes.",
+      "evidence": "トレイ類（弁当や惣菜などを入れているプラスチック容器）| プラマーク | 油汚れや内容物が付いておらず、きれいな状態のもの | 食品用発泡スチロールトレイは拠点回収でも回収しています。 (gominobunbetu.csv); 発泡スチロール | プラスチック製容器包装 | プラマークがあり、汚れていないものは「プラスチック製容器包装」です。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/ha.html"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Better: ward drop-off points (public facilities, or schools on Saturdays). Otherwise non-burnable in a separate bag with the terminals taped.",
+      "evidence": "アルカリ乾電池 | 拠点回収 | 「拠点回収」です。/ 燃やさない | 拠点回収に持ち込めない場合は「燃やさないごみ」です。他の燃やさないごみとは別の袋に入れ、分けて出してください。電極に透明のテープを貼ってください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/agyou/a.html"
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Tape the terminals. Use a ward drop-off point or JBRC store box first, otherwise non-burnable in its own bag. Swollen batteries go by hand to the Chuo Cleaning Office counter (2F). Devices with built-in batteries (power banks, phones) go to small-appliance drop-off.",
+      "evidence": "充電式電池 | 燃やさない | 拠点回収に持ち込めない場合、充電式電池（ニカド電池、ニッケル水素電池、リチウムイオン電池）は、回収協力店の回収ボックスまたは「燃やさないごみ」へお出しください。…他の燃やさないごみとは別の袋に入れ、分けて出してください。電極に透明のテープを貼ってください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/si.html ; 膨張・変形しているリチウムイオン電池…中央清掃事務所の２階窓口まで直接お持ちください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/lithium.html"
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Use it up completely, don't punch holes, and put it in a semi-transparent bag on recyclables day.",
+      "evidence": "スプレー缶 | 資源 | 中身が残っているものは回収できませんので、使い切ってからお出しください。危険ですので穴は開けないでください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/su.html ; スプレー缶とカセットコンロ用ガスボンベは、必ず中身を使い切ってから、半透明の袋に入れて出してください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/shigen/sigen.html"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use it up and make sure it won't light.",
+      "evidence": "ライター | 燃やさない | 必ず中身を使い切り、着火しないことを確認してお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/ragyou/ra.html"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Better: unbroken tubes to Saturday school drop-off. Otherwise in the original case or newspaper, marked 危険, bagged separately. Mercury thermometers are drop-off only.",
+      "evidence": "蛍光管（丸管・直管・電球型蛍光灯）| 拠点回収 | 割れていない丸管・直管・電球型蛍光灯は「拠点回収」です。/ 燃やさない | 拠点回収に持ち込めない場合や、割れているものは「燃やさないごみ」です。交換した際のケースに入れるか新聞紙などに包んで「危険」と表示し、他の燃やさないごみとは分けてお出しください。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/kagyou/ke.html"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Better: ward small-appliance boxes (slot 15 × 26 cm). Otherwise non-burnable up to 30 cm, oversized above that.",
+      "evidence": "小型家電製品 | 燃やさないごみ | 回収箱の投入口（15cm×26cm）に入る大きさのものは拠点回収。一辺の長さがおおむね30cmを超えるものは粗大ごみ。 (gominobunbetu.csv)"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Solidify it first. Unsolidified cooking oil can go to Saturday school drop-off.",
+      "evidence": "てんぷら油 | 燃やす | 凝固剤で固めたものは「燃やすごみ」です。/ 拠点回収 | 固めていない油は「拠点回収」です。毎週土曜日に区内全小学校および銀座中学校・日本橋中学校にて回収しています。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/tagyou/te.html"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Over about 30 cm on one side. Book with the Oversized Garbage Reception Center (03-6833-2525 or online), buy A (200 yen) or B (300 yen) tickets at a konbini, and put it at your entrance by 8:00 on the day.",
+      "evidence": "家庭から出る家具や電化製品などの大きなごみは、粗大ごみとなります。（一辺の長さが最長30センチメートルを超えるもの）…有料粗大ごみ処理券を貼って、収集日の午前8時までに玄関先や敷地の入口など、収集しやすい場所にお出し下さい。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/sodaigominodasikata.html"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Return to the store, or call the Home Appliance Recycling Center (0570-087200).",
+      "evidence": "テレビ | 家電リサイクル | 家電リサイクル法によりリサイクルされるので、粗大ごみでは出せません。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/tagyou/te.html ; 冷蔵庫 / 洗濯機 / エアコン | 家電リサイクル"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the manufacturer, PC3R (03-5282-7685) or Renet courier pickup. Small laptops and tablets that fit the 15 × 26 cm slot can go to ward small-appliance boxes. Wipe your data first.",
+      "evidence": "パソコン | 拠点回収 | 縦15cm×横26cm以内のものは「拠点回収」です。/ メーカー等への申し込み | 拠点回収に持ち込めない場合は、各メーカーの受付窓口または、国認定の小型家電回収業者（宅配便回収）にお申込みください。…粗大ごみでは出せません。 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/hagyou/ha.html"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the maker or store. For extinguishers, contact the extinguisher recycling center (03-5829-6773).",
+      "evidence": "ガスボンベ、石油類（ガソリン、軽油、灯油、ベンジン、シンナー、塗料など）、工業薬品…バッテリー、タイヤ、ピアノ、金庫など…清掃事務所では、収集できません。メーカーか購入店にご相談ください。 https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html ; 消火器 | 収集不可 https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/si.html"
+    }
+  },
+  "dictionary": {
+    "url": "https://www.city.chuo.lg.jp/documents/984/gominobunbetu.csv",
+    "encoding": "CP932",
+    "columns": [
+      "全国地方公共団体コード",
+      "ID",
+      "地方公共団体名",
+      "ゴミの品目",
+      "分別区分",
+      "注意点",
+      "料金種別",
+      "料金",
+      "料金備考",
+      "備考"
+    ],
+    "updated": "2026-09-30 (HTTP Last-Modified; catalog 'modified' says 2025-12-12)",
+    "overrides": [
+      {
+        "name": "コイン型リチウム電池（型式記号:CR､BR)",
+        "category": "燃やさないごみ",
+        "note": "コイン型リチウム電池（型番CR、BR）は「燃やさないごみ」です。他の燃やさないごみと別の袋に入れ、分けて出してください。（区ホームページ 50音別分別一覧・燃やさないごみのページ）",
+        "source": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/si.html"
+      }
+    ]
+  },
+  "openQuestions": [
+    "Year-end rules come from the 2024-25 notice (documents/16726/12151-3.pdf). The 2026-27 notice isn't published yet. Re-check in December that Dec 31 is still burnable/non-burnable only and that collection still resumes Jan 4.",
+    "Put-out times for burnable and non-burnable (by 8:00, 9:30 or 12:30 depending on the collection point) come only from the English pamphlet text (english2024.pdf, published March 2024). The Japanese pamphlet revised January 2026 is image-only (no extractable text), so I could not confirm it still says the same.",
+    "The 粗大ごみ column is read as the weekday on which booked oversized items are picked up in that area. The ward never defines it in words, but this matches the English pamphlet column 'Large sized wastes' and the booking flow (収集予定日 assigned by the 受付センター). Worth one call to confirm.",
+    "Some large apartment complexes have their own collection days that differ from this table ('一部大規模集合住宅については、上記の収集曜日一覧と異なる場合があります'). The ward doesn't list which buildings. The app should tell residents to check their building's collection point sign.",
+    "gominobunbetu.csv conflicts with the current 50-sound web list on coin lithium batteries. The CSV says 'コイン型リチウム電池（型式記号:CR､BR) | 資源 | 拠点回収', but the web list (電池, July 2026) and the 燃やさないごみ page say 'コイン型リチウム電池（型番CR、BR）は「燃やさないごみ」です' / 'コイン型リチウム電池は、他の燃やさないごみと別の袋に入れ、分けて出してください。' Treat the web pages as authoritative.",
+    "gominobunbetu.csv has no PET-bottle row and no 雑紙 row as such. The 50-sound web pages (ichiran/*, 掲載日 2026-07-21/22, about 1,490 rows) are more complete and more current than the CSV (382 rows, 309 of them oversized-fee items). They are HTML only, so consider scraping them instead of the CSV.",
+    "Changes since 2026-04-01: the schedule CSV (Last-Modified 2022-10-12) and the official schedule page (掲載日 2023-01-18) are unchanged, and the FY2026 実施計画 table matches them. Sorting-related pages were republished after April (50-sound list July 2026, 粗大ごみ page 2026-10-09, 拠点回収 page 2026-10-23, gominobunbetu.csv 2026-09-30). There is no earlier Chuo snapshot in gomiyoubi data/raw or data/normalized, so I could not diff their contents.",
+    "Chuo collects only container/packaging plastic (プラマーク). The FY2026 実施計画 lists 'プラスチック製容器包装' as the only plastic resource stream, and the プラマーク page says plastic products without the mark go to burnable. No plan to add product-plastic collection was found."
+  ]
+}

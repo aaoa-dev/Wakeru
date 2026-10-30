@@ -15,7 +15,7 @@
 <header class="top">
   <div class="brand">
     <h1>分ける <span>Wakeru</span></h1>
-    <div class="city"><label for="city">Location</label>
+    <div class="city"><label for="city">Ward</label>
       <select id="city"></select>
     </div>
   </div>
@@ -36,17 +36,18 @@
     <h2 id="resTitle">Results</h2>
     <div class="list" id="results"></div>
   </div>
+  <div id="dictWrap" hidden>
+    <h2 id="dictTitle">From the ward's official list</h2>
+    <p class="fine" id="dictNote"></p>
+    <div class="list" id="dict"></div>
+  </div>
 
   <div id="homeWeek"></div>
   <div id="home">
     <div class="test card">
       <h2>The plastic test</h2>
-      <p class="lede">Most takeout and konbini packaging comes down to three questions. <span id="plasticSummary"></span></p>
-      <ol>
-        <li><div><b>Is it 100% plastic?</b><span class="no">No metal, paper or rubber parts attached. Pump tops and wrap boxes with a cutter fail this.</span></div></li>
-        <li><div><b>Is it empty and clean?</b><span class="no">Give it a quick rinse or wipe. Curry stains, oil or stuck rice that won't come off fail this.</span></div></li>
-        <li><div><b>Is it under 30 cm?</b><span class="no">Bigger than that is oversized garbage (粗大ごみ).</span></div></li>
-      </ol>
+      <p class="lede">Most takeout and konbini packaging comes down to a few questions. <span id="plasticSummary"></span></p>
+      <ol id="plasticSteps"></ol>
       <div class="verdict" id="verdict"></div>
     </div>
   </div>
@@ -64,10 +65,15 @@
 
 <!-- DAYS -->
 <section class="view" id="v-days" hidden>
+  <div class="field">
+    <label for="town">Your town (町名)</label>
+    <select id="town"></select>
+  </div>
   <div class="field" id="addrField">
-    <label for="addr">Your address (町名)</label>
+    <label for="addr">Chome / banchi (丁目・番地)</label>
     <select id="addr"></select>
   </div>
+  <p class="fine" id="areaNote" hidden></p>
   <div class="today" id="today"></div>
   <div>
     <h2>Next 7 days</h2>
@@ -86,6 +92,8 @@
       <div><b>月 火 水</b>Mon · Tue · Wed</div>
       <div><b>木 金 土</b>Thu · Fri · Sat</div>
       <div><b>第1・3 月</b>1st & 3rd Monday of the month</div>
+      <div><b>隔週</b>Every other week</div>
+      <div><b>丁目 · 番地</b>Chome (block group) · banchi (block number) in an address</div>
       <div><b>キケン</b>"Danger": write it on bags of blades, glass, batteries</div>
       <div><b>集積所</b>Your building's collection point</div>
       <div><b>プラマーク</b>The プラ arrow symbol on plastic packaging</div>

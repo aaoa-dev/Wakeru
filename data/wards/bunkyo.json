@@ -1,0 +1,953 @@
+{
+  "id": "bunkyo",
+  "jp": "文京区",
+  "en": "Bunkyo",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.bunkyo.lg.jp/b039/p000928.html",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_hozonban_1.pdf",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_kanniban.pdf",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_english.pdf",
+    "https://www.city.bunkyo.lg.jp/b039/p000925.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000926/index.html",
+    "https://www.city.bunkyo.lg.jp/documents/953/youbiitiran.pdf",
+    "https://www.city.bunkyo.lg.jp/b039/p000927.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000929.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000794/index.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000780.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000942.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000949.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000936.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000937.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000938.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000945/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000943/index.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000784.html",
+    "https://www.city.bunkyo.lg.jp/documents/6059/syusyubi.csv",
+    "https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Bunkyo Cleaning Office (sorting and collection questions)",
+      "tel": "03-3813-6661"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-5296-7000"
+    },
+    {
+      "en": "Recycling and Cleaning Section (plastic, drop-off collection)",
+      "tel": "03-5803-1184"
+    }
+  ],
+  "bins": {
+    "burn": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック（資源）",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging (プラマーク) and products made entirely of plastic and under 30 cm go to Plastic, on its own weekly day. Plastic that stays dirty after a light rinse goes to Burnable, and plastic joined with other materials goes to Burnable or Non-burnable depending on the main material."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain off the water first."
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers."
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 30 cm or less and bag them. 5 or more bags count as a paid special pickup."
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Reusable clothes are better taken to a ward drop-off box. Dirty items: cut small and put in Burnable."
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Usable shoes and bags can go to a ward drop-off box instead."
+    },
+    "paper-dirty": "burn",
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑がみ: tuck inside a magazine or tie with string. Open boxes flat and peel off film."
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Flyers can go with the newspaper."
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string."
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Tie with string, about 10 sheets at a time at most."
+    },
+    "carton": {
+      "bin": "burn",
+      "note": "Not picked up with recyclables. Cartons of 500 ml or more are best washed, cut open and taken to a ward drop-off box. Silver-lined cartons always go to Burnable."
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, crush, into the green container or net."
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, into the blue container. Snack and seaweed tins count too. Oily cans go to Non-burnable."
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Lid off, rinse, into the yellow container. Metal lids go to Non-burnable, plastic lids to Plastic."
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in newspaper and write キケン. Water-based cosmetic bottles and drink/tablet medicine bottles are recyclable (yellow container)."
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Items about 30 cm or larger (pots measured without the handle) are Oversized. Umbrellas: up to 9 at a time in Non-burnable, tied together."
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in newspaper and write キケン."
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Lightly rinse. Put directly into one clear or semi-clear bag (don't double-bag), out by 8:00."
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if made entirely of plastic and under 30 cm on every side."
+    },
+    "plastic-dirty": "burn",
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "If it's mostly metal, Non-burnable. Plastic tubes (toothpaste etc.) can go to Plastic if rinsed clean."
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "With the rest of the plastic. The old store/drop-off tray collection has ended."
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Separate clear or semi-clear bag next to the Non-burnable bag, or a ward drop-off box. Button cells go to store collection boxes."
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Since Oct 2026: tape over the terminals, put in a separate clear bag marked 充電式電池, out on Non-burnable day. Never in Plastic or Burnable. Take swollen or damaged ones to a ward counter."
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Use up, don't punch holes, take off cap and nozzle (Plastic), put in a clear bag and place in the blue can container. If not empty: separate bag marked キケン on Non-burnable day."
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up. Separate see-through bag marked キケン, or hand it to the collection crew if it isn't empty."
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Ward drop-off box preferred. Otherwise in the original box or wrapped in paper, kept apart from the Non-burnable bag. Write キケン if broken. Mercury thermometers: separate see-through bag, or the Recycling Section counter."
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Remove batteries first. If the battery can't be removed, take it to a ward counter. 30 cm or larger is Oversized."
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak into old paper or cloth, or solidify. The ward also collects it at events."
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Center (03-5296-7000, Mon–Sat 8:00–19:00, or online), buy A (200 yen) / B (300 yen) stickers at a shop marked 有料粗大ごみ処理券取扱所, out by 8:00 at the agreed spot."
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop you bought it from, or the Home Appliance Recycling Center."
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the maker's take-back or ReNet Japan's courier pickup (free when a PC is in the box)."
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Use a specialist disposal company or ask the shop. Small amounts of paint can be soaked up or solidified and put in Burnable."
+    }
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "res": "8:00",
+      "pla": "8:00",
+      "big": "8:00"
+    },
+    "note": "Put everything out by 8:00 on the morning of collection. Collection runs on national holidays too, but not on Sundays or from Dec 31 to Jan 3. Don't put garbage out the night before or after the truck has been.",
+    "patterns": {
+      "1": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          3
+        ],
+        "pla": [
+          6
+        ]
+      },
+      "2": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          6
+        ],
+        "pla": [
+          3
+        ]
+      },
+      "3": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          5
+        ],
+        "pla": [
+          2
+        ]
+      },
+      "4": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          2
+        ],
+        "pla": [
+          5
+        ]
+      },
+      "5": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          4
+        ],
+        "pla": [
+          1
+        ]
+      },
+      "6": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          5
+        ],
+        "pla": [
+          2
+        ]
+      },
+      "7": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          2
+        ],
+        "pla": [
+          5
+        ]
+      },
+      "8": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "pla": [
+          1
+        ]
+      },
+      "9": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          6
+        ],
+        "pla": [
+          3
+        ]
+      },
+      "10": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          6
+        ],
+        "pla": [
+          3
+        ]
+      },
+      "11": {
+        "burn": [
+          2,
+          5
+        ],
+        "non": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "pla": [
+          6
+        ]
+      },
+      "12": {
+        "burn": [
+          1,
+          4
+        ],
+        "non": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          2
+        ],
+        "pla": [
+          5
+        ]
+      },
+      "13": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          1
+        ],
+        "pla": [
+          4
+        ]
+      },
+      "14": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ],
+        "pla": [
+          4
+        ]
+      },
+      "15": {
+        "burn": [
+          3,
+          6
+        ],
+        "non": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ],
+        "pla": [
+          4
+        ]
+      }
+    }
+  },
+  "updated": "2026-10-30",
+  "areas": [
+    {
+      "town": "大塚",
+      "townEn": "Otsuka",
+      "kana": "オオツカ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "大塚",
+      "townEn": "Otsuka",
+      "kana": "オオツカ",
+      "chome": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "3–6 chome",
+      "jp": "3～6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "音羽",
+      "townEn": "Otowa",
+      "kana": "オトワ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "春日",
+      "townEn": "Kasuga",
+      "kana": "カスガ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "春日",
+      "townEn": "Kasuga",
+      "kana": "カスガ",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        1
+      ],
+      "detail": "1～16番",
+      "en": "1 chome, banchi 1–16",
+      "jp": "1丁目1～16番",
+      "pattern": "4"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        1
+      ],
+      "detail": "17～28番",
+      "en": "1 chome, banchi 17–28",
+      "jp": "1丁目17～28番",
+      "pattern": "5"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "2–3 chome",
+      "jp": "2・3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        4
+      ],
+      "detail": "1～14番",
+      "en": "4 chome, banchi 1–14",
+      "jp": "4丁目1～14番",
+      "pattern": "3"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        4
+      ],
+      "detail": "15～22番",
+      "en": "4 chome, banchi 15–22",
+      "jp": "4丁目15～22番",
+      "pattern": "6"
+    },
+    {
+      "town": "小石川",
+      "townEn": "Koishikawa",
+      "kana": "コイシカワ",
+      "chome": [
+        5
+      ],
+      "detail": null,
+      "en": "5 chome",
+      "jp": "5丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "後楽",
+      "townEn": "Koraku",
+      "kana": "コウラク",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "後楽",
+      "townEn": "Koraku",
+      "kana": "コウラク",
+      "chome": [
+        2
+      ],
+      "detail": null,
+      "en": "2 chome",
+      "jp": "2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "小日向",
+      "townEn": "Kohinata",
+      "kana": "コヒナタ",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "1～4丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "水道",
+      "townEn": "Suido",
+      "kana": "スイドウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "関口",
+      "townEn": "Sekiguchi",
+      "kana": "セキグチ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1～3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "千石",
+      "townEn": "Sengoku",
+      "kana": "センゴク",
+      "chome": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "1–4 chome",
+      "jp": "1～4丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "千駄木",
+      "townEn": "Sendagi",
+      "kana": "センダギ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "千駄木",
+      "townEn": "Sendagi",
+      "kana": "センダギ",
+      "chome": [
+        3,
+        4,
+        5
+      ],
+      "detail": null,
+      "en": "3–5 chome",
+      "jp": "3～5丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "西片",
+      "townEn": "Nishikata",
+      "kana": "ニシカタ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "根津",
+      "townEn": "Nezu",
+      "kana": "ネヅ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "12"
+    },
+    {
+      "town": "白山",
+      "townEn": "Hakusan",
+      "kana": "ハクサン",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "白山",
+      "townEn": "Hakusan",
+      "kana": "ハクサン",
+      "chome": [
+        2,
+        5
+      ],
+      "detail": null,
+      "en": "2, 5 chome",
+      "jp": "2・5丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "白山",
+      "townEn": "Hakusan",
+      "kana": "ハクサン",
+      "chome": [
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "3–4 chome",
+      "jp": "3・4丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "本郷",
+      "townEn": "Hongo",
+      "kana": "ホンゴウ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "本郷",
+      "townEn": "Hongo",
+      "kana": "ホンゴウ",
+      "chome": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "detail": null,
+      "en": "3–7 chome",
+      "jp": "3～7丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "本駒込",
+      "townEn": "Honkomagome",
+      "kana": "ホンコマゴメ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "本駒込",
+      "townEn": "Honkomagome",
+      "kana": "ホンコマゴメ",
+      "chome": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "detail": null,
+      "en": "3–6 chome",
+      "jp": "3～6丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "向丘",
+      "townEn": "Mukogaoka",
+      "kana": "ムコウガオカ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "目白台",
+      "townEn": "Mejirodai",
+      "kana": "メジロダイ",
+      "chome": [
+        1,
+        2,
+        3
+      ],
+      "detail": null,
+      "en": "1–3 chome",
+      "jp": "1～3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "弥生",
+      "townEn": "Yayoi",
+      "kana": "ヤヨイ",
+      "chome": [
+        1,
+        2
+      ],
+      "detail": null,
+      "en": "1–2 chome",
+      "jp": "1・2丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "湯島",
+      "townEn": "Yushima",
+      "kana": "ユシマ",
+      "chome": [
+        1
+      ],
+      "detail": null,
+      "en": "1 chome",
+      "jp": "1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "湯島",
+      "townEn": "Yushima",
+      "kana": "ユシマ",
+      "chome": [
+        2,
+        3,
+        4
+      ],
+      "detail": null,
+      "en": "2–4 chome",
+      "jp": "2～4丁目",
+      "pattern": "11"
+    }
+  ]
+}

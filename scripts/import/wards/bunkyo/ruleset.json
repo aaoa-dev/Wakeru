@@ -1,0 +1,321 @@
+{
+  "id": "bunkyo",
+  "jp": "文京区",
+  "en": "Bunkyo",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.bunkyo.lg.jp/b039/p000928.html",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_hozonban_1.pdf",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_kanniban.pdf",
+    "https://www.city.bunkyo.lg.jp/documents/955/gomitoshigennowakekatadashikata_english.pdf",
+    "https://www.city.bunkyo.lg.jp/b039/p000925.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000926/index.html",
+    "https://www.city.bunkyo.lg.jp/documents/953/youbiitiran.pdf",
+    "https://www.city.bunkyo.lg.jp/b039/p000927.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000929.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000794/index.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000780.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000942.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000949.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000936.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000937.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000938.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000945/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000943/index.html",
+    "https://www.city.bunkyo.lg.jp/b038/p000784.html",
+    "https://www.city.bunkyo.lg.jp/documents/6059/syusyubi.csv",
+    "https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Bunkyo Cleaning Office (sorting and collection questions)",
+      "tel": "03-3813-6661"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-5296-7000"
+    },
+    {
+      "en": "Recycling and Cleaning Section (plastic, drop-off collection)",
+      "tel": "03-5803-1184"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.bunkyo.lg.jp/documents/6059/syusyubi.csv",
+    "official": "https://www.city.bunkyo.lg.jp/b039/p000926/index.html",
+    "officialUpdated": "2025-04-01 (page footer: 更新日：2025年4月1日)",
+    "granularity": "Mostly chome groups within a town (e.g. 小石川 2・3丁目, 千石 1～4丁目, 本郷 3～7丁目, 白山 2・5丁目). Two chome are split by banchi ranges: 小石川1丁目 1～16番 / 17～28番, and 小石川4丁目 1～14番 / 15～22番. 33 areas total, across 20 towns.",
+    "ruleKinds": "Burnable: two fixed weekdays every week (e.g. 火曜日・金曜日). Recyclables and plastic: one fixed weekday every week each, on different days. Non-burnable: nth weekday, either 第1・第3 or 第2・第4 of a single weekday (e.g. 第1・第3木曜日). There is no pickup on a 5th weekday (youbiitiran.pdf: '第5番目の曜日の収集はありません'). No every-other-week rules and no fixed dates.",
+    "columns": "可燃ごみ（週2回） = burn; 不燃ごみ（月2回） = non; 資源（新聞、雑誌、雑がみ、段ボール、びん、缶、ペットボトル）（週1回） = res; 資源（プラスチック）（週1回） = pla. The PDF's 粗大 column = big (oversized pickup weekdays for booked items; not in the CSV or HTML)."
+  },
+  "bins": {
+    "burn": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック（資源）",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging (プラマーク) and products made entirely of plastic and under 30 cm go to Plastic, on its own weekly day. Plastic that stays dirty after a light rinse goes to Burnable, and plastic joined with other materials goes to Burnable or Non-burnable depending on the main material."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "res": "8:00",
+      "pla": "8:00",
+      "big": "8:00"
+    },
+    "note": "Put everything out by 8:00 on the morning of collection. Collection runs on national holidays too, but not on Sundays or from Dec 31 to Jan 3. Don't put garbage out the night before or after the truck has been.",
+    "putOutEvidence": "「必ず収集日の朝8時までに集積所にお出しください。」 https://www.city.bunkyo.lg.jp/b039/p000926/index.html ; 「令和2年4月1日（水曜日）より、一部の集積所において可燃ごみ・不燃ごみの収集時間が変わりますので、必ず収集日の朝8時までに集積所にお出しください。」 https://www.city.bunkyo.lg.jp/b038/p000784.html ; 簡易版: 「可燃ごみ、不燃ごみ、プラスチック（資源）、資源、粗大ごみは、収集・回収日の朝8時までにごみ集積所（粗大ごみは申込み時に決めた場所）へお出しください。」 ; plastic page: 「夜間や回収後に出すのはおやめください。」",
+    "holidays": "National holidays are collected as normal. There is no written statement; this comes from the official 2026 area calendars (https://www.city.bunkyo.lg.jp/b039/p000927.html, e.g. documents/954/kouraku1kasuga1hongou12yusima1_1.pdf and kasuga2koisikawa234114_1.pdf). In those calendars the holidays 4/29 昭和の日, 5/5–5/6, 8/11 山の日, 9/22–9/23, 10/12 スポーツの日, 11/3 文化の日, 11/23 勤労感謝の日, 1/11 成人の日 and 2/23 天皇誕生日 are shaded as normal pickup days. 12/29 and 12/30 are shaded, 12/31, 1/1 and 1/2 are blank even where they fall on a scheduled day, and 1/4 is shaded. The ward also warns: '年末年始は収集日を変更する場合があります。区報・ホームページ等でお知らせしますのでご確認ください。'"
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain off the water first.",
+      "evidence": "「生ごみ、台所ごみ｜可燃ごみ｜必ず水気をきってから出してください。」 https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers.",
+      "evidence": "「紙おむつ｜可燃ごみ｜汚物はトイレに流してください。」「マスク｜可燃ごみ」「ティッシュペーパー｜可燃ごみ」「スポンジ｜可燃ごみ」 https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 30 cm or less and bag them. 5 or more bags count as a paid special pickup.",
+      "evidence": "「木くず、木の枝｜可燃ごみ｜30cm以下に切り、袋に入れて出してください。」 bunbetuhinmoku.csv ; 「落ち葉・剪定枝｜可燃ごみ｜5袋以上は臨時ごみとして有料になります。」 https://www.city.bunkyo.lg.jp/b039/p000929.html"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Reusable clothes are better taken to a ward drop-off box. Dirty items: cut small and put in Burnable.",
+      "evidence": "「衣類｜可燃ごみ｜できるだけ区施設等の回収拠点の回収ボックスに出してください。汚れたものは、できるだけ、小さく裁断して可燃ごみへ。」 https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Usable shoes and bags can go to a ward drop-off box instead.",
+      "evidence": "「皮（皮革製品）｜可燃ごみ」「靴｜可燃ごみ｜できるだけ区施設等の回収拠点の回収ボックスにお出しください。汚れたものは可燃ごみへ。」「ゴムホース｜可燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「以下の紙はリサイクルできません。可燃ごみに出してください。写真／感熱紙／カーボン紙／汚れや匂いの付いた紙／圧着はがき／紙コップ・紙皿／ティッシュペーパー」 https://www.city.bunkyo.lg.jp/b038/p000938.html"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑がみ: tuck inside a magazine or tie with string. Open boxes flat and peel off film.",
+      "evidence": "「包装紙／紙箱／封筒／コピー用紙／パンフレット／紙袋…できるだけ雑誌にはさむなど、ひもでしばって出してください。フィルムなど紙以外の部分ははがし、空き箱は開いてください。」 https://www.city.bunkyo.lg.jp/b038/p000938.html"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Flyers can go with the newspaper.",
+      "evidence": "「新聞紙・折込チラシ｜資源｜ひもでしばってお出しください。」 bunbetuhinmoku.csv"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string.",
+      "evidence": "「雑誌・本｜資源｜ひもでしばってお出しください。」 bunbetuhinmoku.csv"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Tie with string, about 10 sheets at a time at most.",
+      "evidence": "「段ボール｜資源｜ひもでしばってお出しください。（1回の目安として10枚程度まで）」 bunbetuhinmoku.csv"
+    },
+    "carton": {
+      "bin": "burn",
+      "note": "Not picked up with recyclables. Cartons of 500 ml or more are best washed, cut open and taken to a ward drop-off box. Silver-lined cartons always go to Burnable.",
+      "evidence": "「紙パック（内側が白い紙のもの）｜可燃ごみ｜500ml以上の容器。できるだけ区施設等の回収拠点の回収ボックスに出してください（洗って切り開いてください）。」 bunbetuhinmoku.csv ; p000925 table: 紙パック 集積所回収 blank, 拠点回収 〇 https://www.city.bunkyo.lg.jp/b039/p000925.html"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, crush, into the green container or net.",
+      "evidence": "「ペットボトル本体…ラベル・キャップを外し、中を軽くすすぎ、つぶしてください。ペットボトルキャップ、ラベル…プラスチックとしてプラスチックの日にお出しください。」「資源の日に集積所の緑色のコンテナまたはネット袋に出してください。」 https://www.city.bunkyo.lg.jp/b038/p000937.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, into the blue container. Snack and seaweed tins count too. Oily cans go to Non-burnable.",
+      "evidence": "「缶（飲食料用のアルミ缶・スチール缶）｜資源｜水で軽くすすいで青いコンテナに出してください。海苔の缶、お菓子の缶、茶筒缶も…」「缶（油が入っていたもの）｜不燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Lid off, rinse, into the yellow container. Metal lids go to Non-burnable, plastic lids to Plastic.",
+      "evidence": "「びん｜ふたを外して水で軽くすすぎ、黄色のコンテナに入れてください。飲料用のびん、化粧品のびん、薬のびんなど」 https://www.city.bunkyo.lg.jp/b039/p000936.html ; 「びんのふた 金属製｜不燃ごみ」「びんのふた プラスチック製｜プラスチック（資源）」 bunbetuhinmoku.csv"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in newspaper and write キケン. Water-based cosmetic bottles and drink/tablet medicine bottles are recyclable (yellow container).",
+      "evidence": "「食器類（ガラス・陶器）｜不燃ごみ｜新聞紙等に包み「キケン」と表示してお出しください。」「化粧品のびん 中身が油性のもの｜不燃ごみ」「化粧品のびん 中身が水性のもの｜資源」「割れたびん・ガラス｜不燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Items about 30 cm or larger (pots measured without the handle) are Oversized. Umbrellas: up to 9 at a time in Non-burnable, tied together.",
+      "evidence": "「アルミホイル｜不燃ごみ」「鍋・フライパン等｜不燃ごみ、粗大ごみ｜おおむね一辺30㎝以上のものは粗大ごみへ。」「傘｜不燃ごみ、粗大ごみ｜束ねてください。10本未満は不燃ごみでお出しください。」「ハンガー 針金｜不燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in newspaper and write キケン.",
+      "evidence": "「包丁｜不燃ごみ｜新聞紙等に包み「キケン」と表示して出してください。」「カミソリの刃・カッターの刃｜不燃ごみ」 bunbetuhinmoku.csv ; 「鋭利なもの（ガラス・針・刃物など）｜不燃ごみ｜新聞紙等に包んで、「キケン」と書いて出してください。」 https://www.city.bunkyo.lg.jp/b039/p000942.html"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Lightly rinse. Put directly into one clear or semi-clear bag (don't double-bag), out by 8:00.",
+      "evidence": "「プラスチック製容器包装（プラマークが付いているもの）…中身が識別できるように、透明または半透明のビニール袋に入れて、回収日の朝8時までに集積所に出してください。」「袋は二重にしないでください。」 https://www.city.bunkyo.lg.jp/b038/p000794/index.html"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if made entirely of plastic and under 30 cm on every side.",
+      "evidence": "「プラスチック製品（一辺の長さが30cm未満で、全てプラスチックでできているもの）（例）ハンガー・バケツ、じょうろ、スプーン・フォーク・ストロー、ケース類、洗面器、クリーニングの包み、虫かご、歯ブラシ、計量カップ」 https://www.city.bunkyo.lg.jp/b038/p000794/index.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「軽くすすいでも汚れが付着しているもの ⇒可燃ごみへ」 https://www.city.bunkyo.lg.jp/b038/p000794/index.html ; 「汚れたプラスチック製容器包装｜可燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "If it's mostly metal, Non-burnable. Plastic tubes (toothpaste etc.) can go to Plastic if rinsed clean.",
+      "evidence": "「プラスチック以外の素材が付いているもの ⇒可燃ごみ 又は 不燃ごみへ」 https://www.city.bunkyo.lg.jp/b038/p000794/index.html ; 「プラスチック以外の素材が含まれる場合は、その割合の多い素材により可燃ごみ又は不燃ごみへ。」「歯磨き粉チューブ プラスチック製｜プラスチック（資源）」「シャワーヘッド プラスチック製｜可燃ごみ」 bunbetuhinmoku.csv"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "With the rest of the plastic. The old store/drop-off tray collection has ended.",
+      "evidence": "「食品トレイ（プラスチック製）｜プラスチック（資源）｜軽くすすいでも汚れが付着しているものは可燃ごみへ」「発泡スチロール｜プラスチック（資源）」 bunbetuhinmoku.csv ; 「「プラスチック製ボトル」・「発泡スチロール食品トレイ」…プラスチック（資源）の日にまとめて集積所に出してください。」 p000794"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Separate clear or semi-clear bag next to the Non-burnable bag, or a ward drop-off box. Button cells go to store collection boxes.",
+      "evidence": "「乾電池｜不燃ごみの袋とは分けて、中身が分かる袋(透明もしくは半透明の袋)に入れて、朝8時までにお出しください。」 https://www.city.bunkyo.lg.jp/b039/p000949.html ; 「ボタン電池｜不可｜販売店の回収ボックスへ。」 bunbetuhinmoku.csv"
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Since Oct 2026: tape over the terminals, put in a separate clear bag marked 充電式電池, out on Non-burnable day. Never in Plastic or Burnable. Take swollen or damaged ones to a ward counter.",
+      "evidence": "「令和8年10月1日から、小型充電式電池は「不燃ごみの日」に！…2.他の不燃ごみと分けて、中身の見える袋に入れて「充電式電池」と表示してください。3.不燃ごみの収集日の朝8時までに集積所に出してください。」「膨張・破損したものは、集積所に出さないでください！」 https://www.city.bunkyo.lg.jp/b038/p000780.html (updated 2026-10-21)"
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Use up, don't punch holes, take off cap and nozzle (Plastic), put in a clear bag and place in the blue can container. If not empty: separate bag marked キケン on Non-burnable day.",
+      "evidence": "「スプレー缶・カセットボンベ｜資源｜必ず中身を使い切ってから、キャップやボタン（ノズル）は外して、透明または半透明のビニール袋に入れて、「資源の回収日」に、飲食料用の缶と同じ青いコンテナに出してください。…穴はあけずに出してください。」「どうしても使い切れず、中身が入っているスプレー缶…「不燃ごみの回収日」に中身の見えるビニール袋に入れ、「キケン」と書いて出してください。」 https://www.city.bunkyo.lg.jp/b039/p000942.html"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up. Separate see-through bag marked キケン, or hand it to the collection crew if it isn't empty.",
+      "evidence": "「ライター｜不燃ごみ｜必ず中身を使いきってから出してください。やむを得ず使いきれなかった場合は、できるだけ収集職員に直接手渡してください。…他の不燃ごみと分けて、中身の見えるビニール袋に入れ、「キケン」と書いて出してください。」 https://www.city.bunkyo.lg.jp/b039/p000942.html"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Ward drop-off box preferred. Otherwise in the original box or wrapped in paper, kept apart from the Non-burnable bag. Write キケン if broken. Mercury thermometers: separate see-through bag, or the Recycling Section counter.",
+      "evidence": "「蛍光管｜不燃ごみの袋とは分けて、購入時の箱に入れる又は紙に包んで、朝8時までにお出しください。…〈割れているもの〉箱に入れるか、紙に包み「キケン」と表示してください。」 https://www.city.bunkyo.lg.jp/b039/p000949.html ; 「水銀血圧計・水銀体温計…リサイクル清掃課窓口までお持ちください。それが難しい場合は、不燃ごみの日に他の不燃と分けて…」 p000942"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Remove batteries first. If the battery can't be removed, take it to a ward counter. 30 cm or larger is Oversized.",
+      "evidence": "「上記の方法によることが難しい場合、一辺30cm以上のものは粗大ごみとして、その他のものは不燃ごみとして出してください。」 https://www.city.bunkyo.lg.jp/b038/p000945/index.html ; 「ドライヤー（家庭使用）｜不燃ごみ、粗大ごみ｜…30cm未満なら電池を取り外して不燃ごみへ。内蔵型で取り外せない場合は区の窓口回収等へお持ちください。」 bunbetuhinmoku.csv"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak into old paper or cloth, or solidify. The ward also collects it at events.",
+      "evidence": "「油（食用）｜可燃ごみ｜古紙や古布に染み込ませるか、凝固剤で固めてお出しください。区のイベントでも回収します。」 bunbetuhinmoku.csv"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Center (03-5296-7000, Mon–Sat 8:00–19:00, or online), buy A (200 yen) / B (300 yen) stickers at a shop marked 有料粗大ごみ処理券取扱所, out by 8:00 at the agreed spot.",
+      "evidence": "「粗大ごみは、有料及び申込み制です。直接「粗大ごみ受付センター」へお申し込みください。」「03-5296-7000｜月曜～土曜｜8時00分～19時00分｜お休み 12月28日～1月4日」「有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類」 https://www.city.bunkyo.lg.jp/b039/p000932/index.html"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop you bought it from, or the Home Appliance Recycling Center.",
+      "evidence": "「テレビ｜不可｜販売店または家電リサイクル受付センターへ。」「冷蔵庫・冷凍庫｜不可」「衣類乾燥機｜不可」 bunbetuhinmoku.csv ; 粗大ごみとして収集できないもの「家電4品目」 p000932"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Use the maker's take-back or ReNet Japan's courier pickup (free when a PC is in the box).",
+      "evidence": "「パソコン｜不可｜メーカーにお問い合わせいただくか、不明の物（自作機を含む）についてはパソコン3R推進協会（03-5282-7685）へ。」 bunbetuhinmoku.csv ; https://www.city.bunkyo.lg.jp/b039/p000935.html"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Use a specialist disposal company or ask the shop. Small amounts of paint can be soaked up or solidified and put in Burnable.",
+      "evidence": "「バッテリー・金庫・消火器・自動車・オートバイ・タイヤ・ピアノ等の特殊なごみについては、行政での処理ができませんので、専門の業者に処理を依頼してください。」 https://www.city.bunkyo.lg.jp/b039/p000943/index.html ; 「塗料｜不可｜専門業者へ回収を依頼してください。少量の場合は、古紙や古布などに染み込ませるか、固化剤で固めて可燃ごみにも出せます。」 bunbetuhinmoku.csv"
+    }
+  },
+  "dictionary": {
+    "url": "https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.csv",
+    "encoding": "CP932",
+    "columns": [
+      "50音",
+      "品名",
+      "種別",
+      "料金",
+      "説明"
+    ],
+    "updated": "2026-03-23 (HTTP Last-Modified and XLSX modified date; catalog entry t131059d0110060002 modified 2025-12-12). XLSX copy: https://www.city.bunkyo.lg.jp/documents/6059/bunbetuhinmoku.xlsx",
+    "overrides": [
+      {
+        "name": "電池　充電式電池",
+        "category": "不燃ごみ",
+        "note": "令和8年10月1日から、小型充電式電池は「不燃ごみの日」に出せます。端子をテープで絶縁し、他の不燃ごみと分けて中身の見える袋に入れ「充電式電池」と表示して、不燃ごみの収集日の朝8時までに出してください。膨張・破損したものは集積所に出さないでください。（https://www.city.bunkyo.lg.jp/b038/p000780.html）",
+        "source": "https://www.city.bunkyo.lg.jp/b038/p000780.html"
+      },
+      {
+        "name": "電池　リチウムイオン電池",
+        "category": "不燃ごみ",
+        "note": "令和8年10月1日から、小型充電式電池は「不燃ごみの日」に出せます。端子をテープで絶縁し、他の不燃ごみと分けて中身の見える袋に入れ「充電式電池」と表示して、不燃ごみの収集日の朝8時までに出してください。膨張・破損したものは集積所に出さないでください。（https://www.city.bunkyo.lg.jp/b038/p000780.html）",
+        "source": "https://www.city.bunkyo.lg.jp/b038/p000780.html"
+      },
+      {
+        "name": "モバイルバッテリー",
+        "category": "不燃ごみ",
+        "note": "令和8年10月1日から、小型充電式電池は「不燃ごみの日」に出せます。端子をテープで絶縁し、他の不燃ごみと分けて中身の見える袋に入れ「充電式電池」と表示して、不燃ごみの収集日の朝8時までに出してください。膨張・破損したものは集積所に出さないでください。（https://www.city.bunkyo.lg.jp/b038/p000780.html）",
+        "source": "https://www.city.bunkyo.lg.jp/b038/p000780.html"
+      }
+    ]
+  },
+  "openQuestions": [
+    "No written rule on national holidays. 'Collected on holidays' and 'no pickup Dec 31 – Jan 3' are read from the shading of the FY2026 area calendar PDFs (two area calendars checked). The ward says year-end/new-year days may change and announces them each year in the ward newsletter and on its website.",
+    "Open-data sorting CSV (2026-03) still lists rechargeable batteries and power banks as 不可. The official page (updated 2026-10-21) says they go out on non-burnable day from 2026-10-01. I used the official page.",
+    "Spray can caps and nozzles: p000942 and p000794 (2026) say プラスチック（資源）, but the older びん・缶 page p000936 (updated 2023-01-12) says 可燃ごみ. I used the newer pages.",
+    "Drink cartons: the sorting list page p000929 labels white-lined cartons 資源（拠点回収）, and the CSV labels them 可燃ごみ with drop-off preferred. They are never picked up with curbside recyclables. I mapped them to burn with a drop-off note.",
+    "The oversized pickup weekdays per area appear only in the PDF youbiitiran.pdf (粗大 column), not in the HTML or CSV. They were not extracted, because pickup is booked through the center anyway.",
+    "The CSV has no update date of its own. The HTML schedule page says 更新日 2025年4月1日 and the CSV's Last-Modified is 2026-03-23; both match the FY2026 (令和8年度) calendars.",
+    "The English pamphlet (gomitoshigennowakekatadashikata_english.pdf) is the 令和7年4月 edition and predates the October 2026 rechargeable-battery change."
+  ]
+}

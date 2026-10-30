@@ -1,0 +1,305 @@
+{
+  "id": "taito",
+  "jp": "台東区",
+  "en": "Taito",
+  "status": "pending",
+  "verified": null,
+  "pendingReason": "Holiday collection and year-end dates are not confirmed by an official source yet.",
+  "sources": [
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/02.pdf",
+    "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/R8gomidasikarennda-.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/shushubi/shushubi_zentai.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/plastic/purabunbetukaisyuu.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasugomi.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasanaigomi.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html",
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+    "https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/sigensitumon.html",
+    "https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/syuusyuuhuka.html",
+    "https://www.city.taito.lg.jp/kusei/online/opendata/koutu/gomibunbetuitiran.html"
+  ],
+  "contacts": [
+    {
+      "en": "Taito Cleaning Office (burnable, non-burnable, oversized)",
+      "tel": "03-3876-5771"
+    },
+    {
+      "en": "Cleaning & Recycling Section, recyclables and plastic",
+      "tel": "03-5246-1291"
+    },
+    {
+      "en": "Cleaning & Recycling Section, waste rules",
+      "tel": "03-5246-1018"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-6747-5111"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/shushubi/shushubi_zentai.html",
+    "official": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/shushubi/shushubi_zentai.html",
+    "officialUpdated": "2010-10-22",
+    "granularity": "Chome level only, no banchi or odd/even splits. 39 rows covering 108 chome; whole towns (秋葉原, 上野公園) or chome groups (浅草1・2丁目 vs 浅草3から7丁目, 寿1・2丁目 vs 寿3・4丁目, 下谷1丁目 vs 下谷2・3丁目, 東上野1から3丁目 vs 4から6丁目, 西浅草1・2丁目 vs 3丁目). The FY2026 calendar groups these rows into 12 calendar patterns (整理番号 1–12), e.g. 浅草1・2丁目/雷門/寿3・4丁目/駒形/花川戸 = 1; 秋葉原/上野/上野桜木/東上野4から6丁目 = 11.",
+    "ruleKinds": "資源 (and プラスチック): one weekday per week. 燃やすごみ: two fixed weekdays per week (月・木, 火・金 or 水・土). 燃やさないごみ: nth weekday of the month, either 1st & 3rd or 2nd & 4th occurrence (「その月の1回目・3回目の土曜日」 = 第1・第3土); no collection on the 5th occurrence. No 隔週 rules.",
+    "columns": "資源 → res AND pla (same weekday); 燃やすごみ → burn; 燃やさないごみ → non (also small rechargeable batteries since 2026-07, in a separate bag)."
+  },
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集できないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging with the プラ mark and items made entirely of plastic up to 30 cm go to Plastic on your recycling day, in front of your building (not at the recycling point). Plastic you can't clean or that has non-plastic parts goes to Burnable, and anything over 30 cm is Oversized."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": []
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "non": "8:00",
+      "res": "8:00",
+      "pla": "8:00"
+    },
+    "note": "Put everything out by 8:00 am on collection day; the ward asks you not to put it out the night before or at dawn. Burnable, non-burnable and plastic are collected in front of each building, while recyclables go to the shared collection point with colored containers.",
+    "holidays": "Not stated. The FY2026 calendar only says 「※年末年始は収集日を変更する場合があります。12月の広報たいとうや台東区ホームページなどでご確認ください。」 (https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/R8gomidasikarennda-.html, 2026_01R.pdf). No official statement found on whether national holidays are collected."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain well and hide from crows.",
+      "evidence": "台所のごみ｜燃やすごみ｜生ごみ・卵の殻・貝殻・魚の骨・残飯など。生ごみはよく水切りをしてください。 (20250709_gomibunbetu.csv; https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasugomi.html)"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Flush waste from diapers first.",
+      "evidence": "おむつ｜燃やすごみ｜排泄物はトイレに流してから捨ててください。紙くず｜燃やすごみ｜ちり紙・たばこの吸殻・紙おむつなど。「※マスクやティッシュは資源としては出せません。⇒燃やすごみ」 (CSV; https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html)"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Branches under 50 cm, tied in bundles under 30 cm across.",
+      "evidence": "木くず・木の枝｜燃やすごみ｜長さ50cm以下、一本の直径10cm以内のもの。直径30cmを超えない大きさにひもで束ねてください。 (CSV)"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Clean clothes can go to a ward drop-off point instead.",
+      "evidence": "衣類｜資源・拠点について｜※汚れがひどいものは燃やすごみへ ※拠点回収で出すのが難しい場合は、燃やすごみヘ。 moyasugomi.html: 「衣類｜化繊の衣類も可」 (CSV; https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasugomi.html)"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Over 30 cm is oversized.",
+      "evidence": "靴｜燃やすごみ｜運動靴、サンダル、スニーカー、長靴等。かばん｜燃やすごみ｜布製・皮製・ビニール製のもの。いちばん長い部分が30cmを超えるものは、粗大ごみへ。ゴム｜燃やすごみ (CSV)"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「汚れた紙、臭いの付いた紙、カーボン紙、シュレッダー屑、金箔を押した紙、油のついた紙などもリサイクルできません。」写真｜燃やすごみ｜資源回収では出せません。 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html; CSV)"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑がみ: flatten, put in a paper bag beside the containers. Small scraps go in an envelope.",
+      "evidence": "「雑がみ・・・「新聞」「雑誌」「段ボール」「紙パック」以外の資源になる紙類…散乱しないように紙袋などに入れてください。」包装紙｜資源・集積所｜紙袋に入れて出してください。 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html; CSV)"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Inserted flyers go with it.",
+      "evidence": "「新聞　新聞に折り込まれた広告・チラシは一緒に出してください。」「それぞれ種類ごとに分けてひもで縛って出してください。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html)"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string.",
+      "evidence": "雑誌｜資源・集積所について｜ひもでしばってください。 「雑誌類・・・雑誌・本・パンフレットなどの冊子類」 (CSV; shusekijokaishu.html)"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold and tie. Waxed or dirty cardboard goes to burnable.",
+      "evidence": "ダンボール｜資源・集積所｜ひもでほどけないように束ねて出してください。汚れたダンボールは、燃やすごみへ。…ロウ引き段ボール…燃やすごみとして出してください。 (CSV)"
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Rinse, cut open, dry, tie. Foil-lined cartons go to burnable.",
+      "evidence": "「紙パック　中を水でゆすぎ、切り開いて乾かし、ひもで束ねてから出してください。回収できないもの　酒類やジュースのパックなどで、内側がアルミコーティングされているもの…⇒燃やすごみ」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/shusekijokaishu.html)"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to Plastic), rinse, crush, into the green container or net.",
+      "evidence": "「ペットボトル　キャップとラベルを取り、中を軽くすすいでつぶしてから出してください。取ったキャップとラベルはプラスチックとして出してください。」「緑色の資源コンテナ（集合住宅の場合は緑色のネット）」 (shusekijokaishu.html; https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse, don't crush, into the blue container. Snack and tea cans count.",
+      "evidence": "「飲食用の缶は「資源」として回収できます。資源回収日に「缶・かん」と表記された青いコンテナに入れてください。」「水で軽くゆすいでつぶさずに青いコンテナに出してください。」 (https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/sigensitumon.html)"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Cap off and rinse, into the yellow container. Metal caps go to non-burnable.",
+      "evidence": "「びん　キャップを取り、中を軽くすすいで出してください。はずしたキャップは燃やさないごみとして出してください。」 pamphlet: 「黄色のコンテナに入れる」 (shusekijokaishu.html; gomitoshigen.files/07.pdf)"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Mark unbroken items ワレモノ; wrap broken ones and mark キケン.",
+      "evidence": "「ガラス製品・陶磁器類は割れていないものは「ワレモノ」、割れているものは「キケン」と表示してください。」食器類（ガラス・陶器・金属製）｜燃やさないごみ (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasanaigomi.html; CSV)"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas are non-burnable at any length. Pots over 30 cm (handle not counted) are oversized.",
+      "evidence": "傘｜燃やさないごみ｜処分頻度が高いため、粗大ごみにはなりません。鍋｜燃やさないごみ｜いちばん長い部分が30cmを超えるものは、粗大ごみへ。※柄は長さに含まない アルミホイル｜燃やさないごみ (CSV)"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in newspaper and write 刃物.",
+      "evidence": "包丁｜燃やさないごみ｜ケース・新聞紙等に包んで「刃物」と表記。はさみ｜燃やさないごみ｜新聞紙等に包んで「はさみ」「刃物」と表記。 (CSV)"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Clear or semi-clear bag, single-layer, out by 8:00 on your recycling day in front of your building.",
+      "evidence": "「プラマークのあるプラスチック製容器包装」「汚れの付いていないプラスチックは、透明または半透明のごみ袋やレジ袋に入れて出してください。」「袋は二重にしないでください。」「資源の曜日（当日朝8時まで）に出してください。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and 30 cm or less.",
+      "evidence": "「全てプラスチックでできた製品（長さ30センチメートルを超えないもの）」「一番長い部分が30センチメートルを超えるもの　⇒粗大ごみ」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「水ですすぐなどしても、においや汚れが落ちないもの　⇒燃やすごみ」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Labels and stickers are fine; other non-plastic parts make it burnable.",
+      "evidence": "「下記のものを除き、プラスチック以外の部分があるもの　⇒燃やすごみ（プラマークがついているもの／プラスチック以外の部分が、ラベルやシールのみのもの）」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "With the other plastic, not in a container. The grey tray container ended March 2025.",
+      "evidence": "「食品発泡トレイ・カップ用の資源コンテナ（灰色）からの回収は…令和7年3月末をもって回収を終了しました。令和7年4月以降、食品発泡トレイ・カップはプラスチックとして回収しています。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html)"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Best: ward battery drop-off boxes. Otherwise a separate bag on non-burnable day. Button cells are not collected (return to shops).",
+      "evidence": "「アルカリ、マンガン、オキシライド、リチウムの各電池は、資源の拠点に出すか、燃やさないごみの日に別袋で出してください。」「ボタン電池は、区では回収しておりません。」 (https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/sigensitumon.html)"
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Since July 2026: tape the terminals, separate bag marked 充電式電池, on non-burnable day. Never with burnable. Over 30 cm is not accepted.",
+      "evidence": "「令和8年7月から、リチウムイオン電池等の小型充電式電池を燃やさないごみの日（月2回）に回収します。…手順3　他の燃やさないごみとは別の袋に入れ、袋に「充電式電池」などと表記する。」回収できるもの: 小型充電式電池、モバイルバッテリー… (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html)"
+    },
+    "spray": {
+      "bin": "non",
+      "note": "Use up if possible, don't punch holes, separate bag marked スプレー缶.",
+      "evidence": "「使い捨てライター･スプレー缶･カセット式カセットボンベ等はなるべく最後まで中身を使い切ってから…『別の袋』に入れて「ライター」「スプレー缶」等と表示…※危険ですので穴は開けないでください。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasanaigomi.html)"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up, separate bag marked ライター.",
+      "evidence": "ライター｜燃やさないごみ｜使い捨てライターを含む。なるべく最後まで使い切ってください。別袋に入れて「ライター」と表記。 (CSV)"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Unbroken, in its box or a separate bag. Also accepted at ward drop-off points. Tubes over 120 cm: call the cleaning office. Mercury thermometers go to the ward office or cleaning office.",
+      "evidence": "「水銀を含むごみ｜体温計・血圧計・蛍光灯など｜蛍光灯は購入時の外箱に入れて出すこともできます。蛍光灯は割らずに出してください」「※120cmを超えるの蛍光灯はお出しできません。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasanaigomi.html)"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "30 cm or less. Phones, cameras and similar can go to the ward's small-appliance drop-off boxes; over 30 cm is oversized.",
+      "evidence": "「その他｜ライター・携帯用カイロ・傘・小型の電器製品など」 FAQ: 「いちばん長い部分が30センチメートル以下であれば「燃やさないごみ」で回収できます。」 (moyasanaigomi.html; https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/hunensitumon.html)"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak into paper or cloth, or solidify. Vegetable oil can also go to a ward drop-off point.",
+      "evidence": "「廃食油｜紙や布にしみ込ませるか、固めるなどしてください。廃食油はこちらでも回収しています。」 (https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/moyasugomi.html)"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Over 30 cm on the longest side. Book with the Oversized Garbage Center (03-6747-5111 or online) and buy a sticker. Cutting it up doesn't make it regular garbage.",
+      "evidence": "「いちばん長い部分が30センチを超えるごみは粗大ごみになります。細かく分解・裁断されても粗大ごみとなります。●粗大ごみ受付センターへお申込ください。」 (CSV; https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html)"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Home Appliance Recycling Law items: arrange via the recycling center or retailer.",
+      "evidence": "「テレビ…エアコン、冷蔵庫・冷凍庫、洗濯機、衣類乾燥機は…家電リサイクル法対象品目であるため、区では粗大ごみとして収集できません。」 (https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/syuusyuuhuka.html)"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Manufacturer take-back (PC3R) or the ward's partner courier service.",
+      "evidence": "「家庭用パソコンについてはパソコンメーカー等に自主回収及び再資源化が義務付けられています。そのため、区では粗大ごみとして収集できません。」 (https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/syuusyuuhuka.html)"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Ask the Taito Cleaning Office for a private disposal company.",
+      "evidence": "「有害性、危険性、引火性のあるもの（ガソリン、灯油、ペンキ塗料、シンナーなど）のほか、消火器、バッテリー類、タイヤ、土、石、石膏ボード、コンクリートブロック、オートバイ、自動車、ピアノ、耐火金庫、在宅医療用注射針などがあります。」 (https://www.city.taito.lg.jp/benri/qa/gomi/kateigomi/syuusyuuhuka.html)"
+    }
+  },
+  "dictionary": {
+    "url": "https://www.city.taito.lg.jp/kusei/online/opendata/koutu/gomibunbetuitiran.files/20250709_gomibunbetu.csv",
+    "encoding": "CP932",
+    "columns": [
+      "ごみ名",
+      "分別区分",
+      "備考",
+      "追加検索キーワード"
+    ],
+    "updated": "2025-07-09",
+    "overrides": [
+      {
+        "name": "モバイルバッテリー",
+        "category": "燃やさないごみについて",
+        "note": "令和8年7月から、小型充電式電池・モバイルバッテリーは燃やさないごみの日（月2回）に回収します。端子をテープで絶縁し、他の燃やさないごみとは別の袋に入れ、袋に「充電式電池」などと表記してください。（https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html）",
+        "source": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html"
+      },
+      {
+        "name": "小型充電式電池",
+        "category": "燃やさないごみについて",
+        "note": "令和8年7月から、小型充電式電池・モバイルバッテリーは燃やさないごみの日（月2回）に回収します。端子をテープで絶縁し、他の燃やさないごみとは別の袋に入れ、袋に「充電式電池」などと表記してください。（https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html）",
+        "source": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/mobylebattery.html"
+      }
+    ]
+  },
+  "openQuestions": [
+    "Holidays: no official statement found on whether national holidays (祝日) are collected. The FY2026 calendar PDFs are color-coded per day, but the text layer doesn't show whether holidays are marked as collection days. Someone should check the color of a holiday cell in https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/R8gomidasikarennda-.files/2026_01L.pdf (or the ward's December notice).",
+    "Year-end/New Year: the calendar only says 「年末年始は収集日を変更する場合があります」 and points to the December 広報たいとう. The exact no-collection dates (e.g. 12-31 to 01-03) for FY2026 aren't published yet, so calendar.noCollection.dates is left empty.",
+    "Rechargeable batteries: the sorting CSV (2025-07-09) still says モバイルバッテリー｜区では収集できないもの and 小型充電式電池｜販売店の回収ボックス, and the 2021 FAQ (syuusyuuhuka.html) says the ward doesn't collect mobile batteries. The newer page mobylebattery.html (updated 2026-06-10) says they are collected on non-burnable day from 令和8年7月. I used the newer rule, but the importer should override these CSV rows.",
+    "Plastic day is not a column in any schedule file. The importer must copy the 資源 weekday to pla for every area (official: 「回収曜日は資源と同じ曜日です」).",
+    "The official schedule HTML still shows 更新日 2010年10月22日. It agrees with the May 2025 pamphlet and the FY2026 calendar grouping, but no recently dated official per-area table with all four streams exists outside the PDFs.",
+    "No separate hazardous stream exists: batteries, sprays, lighters and fluorescent tubes all go to non-burnable in separate bags (plus drop-off points), so no haz bin is defined.",
+    "The cross-check file .cache/gomiyoubi/data/normalized/taito/taito_dataset.json was built from the same 2022 CSV and has no plastic stream, so it confirms only the CSV's 39 areas."
+  ]
+}

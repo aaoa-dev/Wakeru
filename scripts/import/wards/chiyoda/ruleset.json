@@ -1,0 +1,299 @@
+{
+  "id": "chiyoda",
+  "jp": "千代田区",
+  "en": "Chiyoda",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "townNames": {"丸の内": "Marunouchi", "九段南": "Kudanminami"},
+  "sources": [
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
+    "https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/shigen.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html",
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html",
+    "https://www.city.chiyoda.lg.jp/documents/1952/hayami31_jp.pdf",
+    "https://www.city.chiyoda.lg.jp/documents/1952/r8calender-1.pdf (… through r8calender-12.pdf)"
+  ],
+  "contacts": [
+    {
+      "en": "Chiyoda Cleaning Office",
+      "tel": "03-3251-0566"
+    },
+    {
+      "en": "Oversized Garbage Center",
+      "tel": "03-6743-0603"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
+    "official": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
+    "officialUpdated": "2026-03-30",
+    "granularity": "78 address rows mapped to 12 calendars. Mostly whole town or chome (e.g. 岩本町一丁目〜三丁目 → 11, 丸の内一丁目～三丁目 → 4), but some split by explicit banchi lists (一番町1・2・3・4・5・7・9・11・23・25・27・29・31番地 → 9 vs 一番町6・8・10・…・22番地 → 10; 三番町 likewise 9/10; 神田岩本町1・15番地 → 12 vs 2・4番地 → 5; 神田須田町一丁目7番地 → 12), by odd/even banchi (麹町一丁目〜六丁目の奇数番地 → 4 / 偶数番地 → 3; 神田小川町, 神田神保町, 神田須田町, 神田駿河台, 神田司町), by 番 ranges (九段北一丁目1〜11番 → 1 vs 12〜15番 → 2; 外神田一丁目1〜11番 → 7 vs 12〜18番 → 12) and by exclusion (内神田一丁目・二丁目・三丁目（13・18・19・20・21・22番を除く） → 6 vs 内神田三丁目13・18・19・20・21・22番 → 5).",
+    "ruleKinds": "Burnable twice weekly, plastic weekly, recyclables weekly; non-burnable and 蛍光管等 on the same nth weekday twice a month (第1・第3 or 第2・第4; 'その月の5回目の曜日は、不燃ごみの収集はありません'). Verified calendar No. → draft letter mapping (burn / pla / res / non+haz): 1=A (Tue·Fri / Wed / Sat / 1st·3rd Mon), 2=B (Tue·Fri / Wed / Sat / 2nd·4th Mon), 3=L (Wed·Sat / Thu / Mon / 1st·3rd Tue), 4=H (Wed·Sat / Thu / Mon / 2nd·4th Tue), 5=G (Mon·Thu / Tue / Fri / 1st·3rd Wed), 6=F (Mon·Thu / Tue / Fri / 2nd·4th Wed), 7=J (Tue·Fri / Sat / Wed / 1st·3rd Thu), 8=K (Tue·Fri / Sat / Wed / 2nd·4th Thu), 9=C (Wed·Sat / Mon / Thu / 1st·3rd Fri), 10=D (Wed·Sat / Mon / Thu / 2nd·4th Fri), 11=E (Mon·Thu / Fri / Tue / 1st·3rd Sat), 12=I (Mon·Thu / Fri / Tue / 2nd·4th Sat). All 12 match the draft.",
+    "columns": "Calendar PDFs mark each date with 可燃 (burn), プラ (pla), 資源 (res: びん・缶・ペットボトル・古紙・その他紙), 不燃 (non) and 蛍光管等 (haz, always the same date as 不燃). Pamphlet / 早見表 columns: 燃やす (burn), 燃やさない・蛍光管等 (non + haz), 資源 (res), プラ (pla)."
+  },
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "haz": {
+      "label": "蛍光管等",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "清掃事務所で収集できないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean, empty, 100% plastic and under 30 cm goes to Plastic, packaging and plastic products together. Anything dirty or mixed goes to Burnable."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:30 / 9:30 / 12:30 (see your sign)",
+      "res": "8:30",
+      "pla": "8:30",
+      "non": "10:00 (some areas differ)",
+      "haz": "12:30 (some areas differ)",
+      "big": "8:30"
+    },
+    "note": "Pickups run every day except Sundays and Dec 31 – Jan 3, holidays included. Burnable goes out by 8:30, 9:30 or 12:30 depending on your collection point (check its sign), recycling and plastic by 8:30, non-burnable by 10:00 and hazardous items by 12:30 (a few areas near Kanda Station, Yurakucho and Uchisaiwaicho differ); never put anything out the night before.",
+    "holidays": "Collected. Pamphlet Q&A: 「祝祭日も収集していますか? 収集しています。集積所看板に表記されている排出時間までに出してください。千代田清掃事務所のお休みは、日曜日と年末年始(12月31日～1月3日)です。」 Ward page: 「資源とごみの回収・収集は、日曜日と年末年始を除く毎日行っています」. FY2026 calendars mark 12/31 年末休み and 1/1・1/2 年始休み (1/3/2027 is a Sunday), and show pickups on holidays such as 10/12 (スポーツの日)."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain off as much water as possible.",
+      "evidence": "「生ごみ 燃やすごみ 水分を十分に切ってだしてください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers first.",
+      "evidence": "「紙おむつ（汚物は取り除く）」「生理用品」 under 燃やすごみの種類例 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html ; pamphlet table: スポンジ ● 燃やすごみ https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to 50 cm or less, under 10 cm thick. Wrap skewers in paper.",
+      "evidence": "「少量の枝葉（直径10センチメートル未満・長さ50センチメートル以下）」「竹串（注意）危険のないように新聞紙などで包んで出す」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Cut curtains and sheets to 50 cm or less. Washed clothes can also go uncut to a ward stockyard.",
+      "evidence": "「布類・繊維くず（衣類で家庭から出たものはストックヤードでも回収しています）（注意）カーテンやシーツなどの大きなものは50センチメートル以内に切ってください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can (they go to non-burnable). Cut rubber hoses to 50 cm.",
+      "evidence": "「皮革類・ゴム製品 ●金属部分があるものはできるだけ取り除いてください。（金属部分は「燃やさない」ごみへ）●ゴムホースは長さを50㎝以内に切って出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「次のものは「資源」にはなりません(燃やすごみになります) 汚れやにおいの付いた紙 … ラミネート紙 レシート 圧着はがき … 写真」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As その他の紙類: in its own bag, top tied, on recycling day. Powdery shredded paper goes to burnable.",
+      "evidence": "「その他の紙類 （1）他の資源とは別に袋に入れて上部をしっかり結んで出してください。…（3）粉状になった紙（シュレッダー）は「燃やすごみ」で出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string, no tape. Flyers go with the newspaper.",
+      "evidence": "「（1）ひもで束ねてください。粘着テープ（ガムテープ類等）は使わないでください。（2）折り込みチラシも、新聞紙と一緒に束ねて出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string. Pamphlets go with magazines.",
+      "evidence": "「（1）ひもで束ねてください。…（2）パンフレット類も「雑誌」として分類されますので、雑誌と一緒に束ねて出せます。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie with string, no tape. Glossy waterproofed cardboard goes to burnable.",
+      "evidence": "「（1）箱状のものはたたんでください。（2）複数枚あるときはひもで束ねてください。粘着テープ（ガムテープ類等）は使わないでください。…※防水加工等施した光沢のあるものは「燃やすごみ」で出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "carton": {
+      "bin": "res",
+      "note": "500 ml or larger with a white inside only: rinse, cut open, dry, tie. Smaller or silver-lined cartons go to burnable.",
+      "evidence": "「500mℓ以上の飲料水用パックで内側が白色のもの」; table: 「紙パック（飲料水用 容量500ml未満）● 燃やすごみ」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「中をよくすすぎ、切り開いて、乾かしたものをひもで縛って出してください。…内側が白色以外の物（内側が銀色の物）や汚れている物は燃やすごみに出してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/shigen.html"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to plastic), rinse, crush, into the net at the collection point.",
+      "evidence": "「ペットボトルのキャップやラベル…ははずしてください。※キャップとラベルは「プラスチック」へ…ペットボトルはつぶせるものはつぶしてネット（緑）へ。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「ペットボトル 資源 プラスチックの回収品に混ぜないでください」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Food and drink cans only, snack tins count. Empty, rinse, into the can box. Tabs and lids go to non-burnable.",
+      "evidence": "「（1）びん、かんは飲食用のものに限ります。※せんべいなどのお菓子のかんも含みます。…王冠、ふた、プルタブは「燃やさないごみ」へ … びん、かんは回収ボックス（びん：黄、かん：青）へ」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Food and drink bottles only. Empty, rinse, into the bottle box. Metal caps go to non-burnable.",
+      "evidence": "「（1）びん、かんは飲食用のものに限ります。…（3）…びんの王冠やふた…ははずしてください。※…王冠、ふた、プルタブは「燃やさないごみ」へ」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Broken glass and ceramics: wrap in thick paper, separate bag, write キケン. Wash out cosmetic bottles.",
+      "evidence": "「刃物類と割れた陶器類・ガラス類は「危険物」なので、新聞紙等を重ねた厚紙に包み、別袋に入れ「キケン」と表示して出してください。」「※化粧品等のびんは中身を洗ってから出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "Umbrellas and 18 L cans count even if over 30 cm. Pots whose body (without handle) is over 30 cm are oversized.",
+      "evidence": "「※傘、一斗缶は、長さまたは大きさが30㎝を超えていても「燃やさないごみ」です。※なべ、やかんなどの調理器具は柄の部分を除いた本体が30㎝を超えるものは「粗大ごみ」として出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in thick paper, separate bag, write キケン.",
+      "evidence": "「刃物 燃やさないごみ 紙に包み、刃物のみ袋に入れ「キケン」と表示してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Rinse off food, clear or semi-clear bag, out by 8:30.",
+      "evidence": "「透明または半透明の袋に直接入れて出してください。汚れのあるものは、軽くすすいで汚れを落としてください。」「収集日当日の朝8時30分までに出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and under 30 cm. Larger items like storage cases are oversized.",
+      "evidence": "「素材がプラスチックのみで中身がなく、内容物が付着していないものに限ります。」「30cm未満のバケツやお風呂用品」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「30センチメートル以上のプランターや衣装ケースは、粗大ごみに出してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "「汚れた容器・袋（リサイクルできないため）燃やすごみへ」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「汚れている（汚れの取れない）物は、燃やすごみに出してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Includes pump tops, tubes you can't empty, video tapes and PP bands (cut to 30 cm).",
+      "evidence": "「ポンプ式のものは、燃やすごみ」「ビデオテープ・カセットテープ・PPバンド（機械にからまり故障の原因になるため）↓燃やすごみへ」「中身を出し切れないプラスチックチューブは燃やすごみで出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「PPバンドは、30センチメートル以下に切って、燃やすごみに出してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html"
+    },
+    "foam-tray": {
+      "bin": "pla",
+      "note": "With the rest of the plastic. Rinse trays lightly.",
+      "evidence": "「発泡スチロール プラスチック」「トレー（商品の入っていたもの） プラスチック」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html ; 「食品用のトレイ類（色は問わず）」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/plastic.html"
+    },
+    "battery": {
+      "bin": "haz",
+      "note": "Bag separately and write キケン. Never with regular non-burnable or plastic.",
+      "evidence": "「（1）上記の品目ごとに袋等に入れ、それぞれに「キケン」と書いて出してください。（2）通常の燃やさないごみとは絶対に一緒の袋に入れないでください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「電池（乾電池・リチウム一次電池） 蛍光管等」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "battery-li": {
+      "bin": "haz",
+      "note": "Bag separately and write キケン. Call the cleaning office first if it is damaged or swollen.",
+      "evidence": "「小型充電式電池（ニカド・ニッケル水素・リチウムイオン電池）」 under 蛍光管等;「破損・露出・膨張したリチウムイオン電池は…出す前に必ず、下記の千代田清掃事務所までご連絡ください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html"
+    },
+    "spray": {
+      "bin": "haz",
+      "note": "Use up first. Don't punch holes. Separate bag marked キケン.",
+      "evidence": "「カセットボンベ 蛍光管等 穴は空けないで、カセットボンベのみ袋に入れ「キケン」と表示してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html ; 「できるだけ使い切って、穴を開けずに出す」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/keikokan.html"
+    },
+    "lighter": {
+      "bin": "haz",
+      "note": "Use up the gas. Separate bag marked キケン.",
+      "evidence": "「ライター 蛍光管等 ライターのみ袋に入れ「キケン」と表示してください。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html ; 「できるだけガスを使いきり空にして、「蛍光管等」として出してください。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "fluorescent": {
+      "bin": "haz",
+      "note": "In the original box or wrapped in newspaper. LED bulbs go to non-burnable.",
+      "evidence": "「●蛍光管は空き箱に入れるか、新聞紙等にくるんで出してください。…●LED電球・クリプトン球は「燃やさないごみ」として出してください。」「水銀体温計・水銀血圧計」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Take batteries out (they go to hazardous). Or use the ward's small-appliance drop boxes (slot 30×15 cm).",
+      "evidence": "「小型家電製品（ラジオ・電気シェーバー・ドライヤーなど。使用済小型家電の回収事業でも回収）」 under 燃やさないごみ https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html ; 「※電池式のものはできるだけ電池を抜いて出してください。」「※対象品はボックス投入口（30㎝×15㎝以下）に入る大きさのものです。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Solidified or soaked into paper. Or bring it in a bottle to a ward stockyard.",
+      "evidence": "「食用油 燃やすごみ（注釈）ストックヤード 固めるか紙に吸わせてください。ペットボトルに入れてストックヤードでも出せます。」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Center (03-6743-0603 or online), buy a Chiyoda sticker at a shop or konbini, out by 8:30 on the day.",
+      "evidence": "「家庭から出る家具、寝具、電気製品などで、一辺の長さがおおむね30cmを超えるごみ」「千代田区の「有料粗大ごみ処理券」を、区内の取扱店またはコンビニエンスストアで購入」「当日朝8時30分までに出してください。」「粗大ごみ受付センター ☎03-6743-0603」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop you bought it from or the Home Appliance Recycling Center (0570-087200).",
+      "evidence": "「以下の品目については家電リサイクル法により、リサイクルが義務づけられているため、区では収集できません。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf ; 「家電リサイクル受付センター（電話番号：0570-087200）」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Through the maker, PC3R (03-5282-7685) or ReNet Japan.",
+      "evidence": "「パソコンは資源有効利用促進法によりリサイクルが義務づけられているため、区では収集できません。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "",
+      "evidence": "「消火器 清掃事務所で収集できないもの」「塗料 … 清掃事務所で処理業者を紹介します」 https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/gomijiten.html ; 「石油類(ガソリン、灯油、軽油、シンナー)、塗料、ペンキ」「タイヤ ● 購入店に問い合わせるか、清掃事務所で業者を紹介します。」 https://www.city.chiyoda.lg.jp/documents/1952/r701pamphlet.pdf"
+    }
+  },
+  "dictionary": {
+    "url": "https://www.opendata.metro.tokyo.lg.jp/chiyoda/131016_28garbage_separation.csv",
+    "encoding": "UTF-8",
+    "columns": [
+      "全国地方公共団体コード",
+      "ID",
+      "地方公共団体名",
+      "ゴミの品目",
+      "分別区分",
+      "注意点",
+      "料金種別",
+      "料金",
+      "料金備考",
+      "備考"
+    ],
+    "updated": "2025-12-12"
+  },
+  "openQuestions": [
+    "Calendar No.→weekday mapping: all 12 match the draft (1=A, 2=B, 3=L, 4=H, 5=G, 6=F, 7=J, 8=K, 9=C, 10=D, 11=E, 12=I). No change needed.",
+    "Misprint in the official calendar No.10 PDF (r8calender-10.pdf, Oct 2026): the second-row Friday cell is printed '16' (it should be 9) and holds 不燃/蛍光管等, while the real 16 in the next row is empty. The position, and every other month, give the 2nd and 4th Friday (10/9 and 10/23), so the draft rule D (2nd/4th Fri) is right. Residents reading the PDF may think the date is 10/16; worth an in-app note or a call to the office (03-3251-0566) to confirm.",
+    "Iwamotocho: no official source gives 岩本町一丁目 a different schedule. The HTML table, the 早見表 PDF, the FY2025 pamphlet (「岩本町一丁目〜三丁目 月・木 第1・3土 火 金」) and the calendar 11 PDF itself (収集地域「岩本町一丁目・二丁目・三丁目、東神田一丁目・二丁目・三丁目」) all put chome 1–3 on calendar 11. Don't confuse it with the separate town 神田岩本町 (1・15番地 → 12, 2・4番地 → 5).",
+    "Burnable put-out time: the ward publishes only the three tiers (pamphlet: 「燃やすごみは地域により3段階（8：30、9：30、12：30）に分かれています」) and says to check the sign at the collection point or call the office (「集積所の住所により異なりますので、集積所の表示か、清掃事務所まで問い合わせてください」). No list of which areas use which time exists in any official source.",
+    "Correction to the draft's putOutBy: the 10:00 (non) and 12:30 (haz) times are not ward-wide. Pamphlet: 「収集日当日の朝10時（一部の地域除く※）…※一部の地域…神田駅周辺の一部及び有楽町・内幸町の一部」 and the same exception for 蛍光管等 12:30; the web page lists non and haz as 「集積所の住所により異なります」. The alternative time for those areas isn't published. I marked both '(some areas differ)'.",
+    "Draft putOutBy was missing 'big': the pamphlet says oversized goes out 「当日朝8時30分までに」. Added.",
+    "Box colors conflict between official sources: the FY2025 pamphlet says 「びん：黄、かん：青」 (as in the draft), but shigen.html says 「コンテナ（びんは青色・かんは黄色）」. I removed the colors from the can/bottle notes; restore them only after confirming.",
+    "Other draft note corrections (wording only, bins unchanged): paper-misc should be 'its own bag with the top tied' (the pamphlet doesn't say paper bag; shigen.html allows a paper bag for small amounts); carton adds rinse/cut open/dry, and silver-lined cartons go to burnable; can/bottle limited to food and drink containers; fluorescent adds that LED bulbs go to non-burnable; battery-li adds 'call first if damaged or swollen'; wood/textile/leather-rubber add the 50 cm cut rules.",
+    "Small appliances conflict: the ward's own 分別辞典 and open-data CSV list 電卓 as 燃やすごみ, and the CSV lists ドライヤー（家庭使用）, ラジオ and 掃除機 as 粗大ごみ (300 yen). But kanen.html lists 「小型家電製品（ラジオ・電気シェーバー・ドライヤーなど）」 under 燃やさないごみ, and the pamphlet marks 電卓 as 燃やさないごみ + 小型家電. I kept appliance-small = non (pamphlet and kanen.html); presumably the CSV oversized rows apply only to items around 30 cm or larger, but no source says so.",
+    "Blankets: the 分別辞典 and CSV say 毛布 = 粗大ごみ (or stockyard), while the pamphlet tells you to cut 「毛布、シーツ、カーテンなどの大きなものは50㎝以内に」 for burnable. This doesn't change the textile type (clothes), but item-level mappings for blankets or futons should use big.",
+    "No open-data schedule exists for Chiyoda, so openDataMatchesOfficial is null. The importer should read the HTML address table (78 rows → calendar No.) plus the verified No.→pattern mapping above."
+  ]
+}

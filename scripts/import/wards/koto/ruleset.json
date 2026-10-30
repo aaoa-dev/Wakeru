@@ -1,0 +1,303 @@
+{
+  "id": "koto",
+  "jp": "江東区",
+  "en": "Koto",
+  "status": "verified",
+  "verified": "2026-10-30",
+  "sources": [
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/documents/8ura.pdf",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/plastic.html",
+    "https://www.city.koto.lg.jp/381104/gomi/kate/plastics.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sigen.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7350.html",
+    "https://www.city.koto.lg.jp/388010/syaryoukasai.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kasaijikobousi.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7351.html",
+    "https://www.city.koto.lg.jp/381104/kogatakadentakuhai.html",
+    "https://www.city.koto.lg.jp/381104/kurashi/gomi/haiki/53188.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/shitumon.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kaishu/nenmatunenshi2019.html",
+    "https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Koto Cleaning Office",
+      "tel": "03-3644-6216"
+    },
+    {
+      "en": "Oversized Garbage Reception Center",
+      "tel": "03-6431-9997"
+    },
+    {
+      "en": "Cleaning & Recycling Section",
+      "tel": "03-3647-9181"
+    },
+    {
+      "en": "Home Appliance Recycling Center",
+      "tel": "0570-087200"
+    }
+  ],
+  "schedule": {
+    "source": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/documents/8en.pdf",
+    "official": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+    "officialUpdated": "2026-04-10",
+    "granularity": "12 numbered districts (地区). Membership is by whole town or chome range, no banchi splits. Examples: 亀戸1～3丁目=8, 亀戸4～9丁目=2; 大島1・2=8, 3～7=10, 8・9=4; 南砂1・5=7, 南砂2～4・6・7=1; 豊洲1・3=12, 豊洲2・4～6=6; 塩浜 (all)=12. 58 town/chome selectors in total (see areas). The page warns 「一部集合住宅・地域では、下記収集曜日と異なる場合があります。集積所の看板でご確認ください。」",
+    "ruleKinds": "Recyclables and plastic weekly on one weekday; burnable twice weekly; non-burnable every other week (隔週) on one weekday. The ward publishes the full FY2026 date list per district (8omote.pdf); every list is a strict 14-day cadence from the April anchor with dates falling on 12-31~01-03 dropped (only 4地区 2026-12-31 is affected). Year-end extra (臨時) non-burnable dates are published separately (nenmatunensigomi_calendar_1-6.pdf / 7-12.pdf) and are listed as extraDates. Districts with the same weekdays (1/7, 2/8, 3/9, 4/10, 5/11, 6/12) differ only by the non-burnable week.",
+    "columns": "資源 = res (paper, bottles, cans, PET, foam trays/styrofoam), プラスチック = pla, 燃やすごみ = burn, 燃やさないごみ = non (also batteries, fluorescent tubes, mercury items, spray cans and lighters in separate bags on the same day)."
+  },
+  "bins": {
+    "burn": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "pla": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "big": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "区では収集しない",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "maxCm": 30,
+    "products": true,
+    "summary": "Clean plastic packaging and items made 100% of plastic up to about 30 cm go to Plastic together; foam trays and styrofoam go to Recyclables instead, and anything dirty or mixed goes to Burnable."
+  },
+  "calendar": {
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "12-31",
+        "01-01",
+        "01-02",
+        "01-03"
+      ]
+    },
+    "putOutBy": {
+      "burn": "8:00",
+      "res": "8:00",
+      "pla": "8:00",
+      "non": "8:00",
+      "big": "8:00"
+    },
+    "note": "Put everything out by 8:00 on collection day, including national holidays; there is no pickup on Sundays or Dec 31 – Jan 3. In stormy weather keep it at home until the next collection day.",
+    "holidays": "Yes. 「祝日も収集しますか。年末年始を除き祝日も収集します。必ず朝8時までにお出しください。」 (https://www.city.koto.lg.jp/388010/kurashi/gomi/shitumon.html). The FY2026 calendar also marks holiday dates (red) as collection days, e.g. 1地区 5/4, 9/21, 1/11. Year-end: 「年末は12月30日（水曜日）まで、年始は1月4日（月曜日）から通常通り回収・収集を行います。」 (https://www.city.koto.lg.jp/388010/kurashi/gomi/kaishu/nenmatunenshi2019.html). On 2027-01-04 recyclable containers are set out by 7:00 and collection starts at 9:00."
+  },
+  "sorting": {
+    "food": {
+      "bin": "burn",
+      "note": "Drain well. Eggshells too.",
+      "evidence": "生ごみ（例）残飯類、食用油など 残飯等は水をよく切って出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html"
+    },
+    "hygiene": {
+      "bin": "burn",
+      "note": "Remove waste from diapers first.",
+      "evidence": "紙くず（例）紙おむつ、たばこの吸殻、生理用品など 紙おむつは汚物を取り除いてください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html ; CSV: ティッシュペーパー,燃やすごみ https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "wood": {
+      "bin": "burn",
+      "note": "Cut branches to about 30 cm and tie in bundles. Larger wood is oversized.",
+      "evidence": "木の枝葉（例）少量の植木の葉・枝、草花など 枝は長さ30cm程度に切って、ひもで束ねてください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html ; CSV: 割りばし,燃やすごみ https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "textile": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can. Used clothes are also taken at ward drop-off points.",
+      "evidence": "衣類（繊維くず）（例）素材を問わず はずせる金属は、はずして燃やさないごみに出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html ; CSV: 衣類,燃やすごみ,※古着回収（拠点回収）でも回収しています。 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "leather-rubber": {
+      "bin": "burn",
+      "note": "Remove metal parts if you can. About 30 cm or larger is oversized.",
+      "evidence": "革製品（例）かばん、靴など はずせる金属は、はずして燃やさないごみに出してください。おおむね一辺が30cm以上のものは粗大ごみになります。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html"
+    },
+    "paper-dirty": {
+      "bin": "burn",
+      "note": "Thermal receipts, photos, waxed or oily paper, paper cups, window envelopes.",
+      "evidence": "薬品が塗られた紙（感熱紙、感圧紙、カーボン紙、ビニールコート紙、ろう引き紙、油紙、写真など）汚物や油が付着した紙（ちり紙、紙コップなど）上記の品目は、燃やすごみへ出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "As 雑がみ: tie with string or put in a paper bag on recycling day.",
+      "evidence": "雑誌・雑がみ（雑誌、ノート、菓子箱、包装紙、封筒など。）：ひもでしばって出してください https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html ; CSV: 菓子箱（紙製）,資源（古紙）,折りたたんでひもでしばるか、紙袋に入れてください。 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Tie with string. Flyers go with the newspaper.",
+      "evidence": "新聞（折込チラシ含む）：ひもでしばって出してください https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Tie with string.",
+      "evidence": "雑誌・雑がみ（雑誌、ノート、菓子箱、包装紙、封筒など。）：ひもでしばって出してください https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Fold flat and tie with string.",
+      "evidence": "ダンボール：ひもでしばって出してください https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html ; CSV: 段ボール,資源（古紙）,必ずたたんでください。 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Rinse, open flat, tie or put in a paper bag with the paper. Foil-lined cartons go to burnable.",
+      "evidence": "CSV: 紙パック（牛乳パックなど）,資源（古紙）,折りたたんでひもでしばるか、紙袋に入れてください。 / 紙パック（牛乳パックなど・コーティングあり）,燃やすごみ,資源にはなりません。 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Cap and label off (they go to plastic), rinse, crush, into the green container.",
+      "evidence": "ペットボトル…フタ・栓やラベルのあるものは取り除いてください。…（びんは黄色、かんは青色、ペットボトルは緑色のコンテナ） https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "can": {
+      "bin": "res",
+      "note": "Rinse and lightly crush, into the blue container. Oily cans (tuna, pet food, cooking oil) go to non-burnable.",
+      "evidence": "かん(飲料用、食料品容器）油ものは除く…油物（サラダ油、ペットフード、ツナ缶など）…上記の品目は、燃やさないごみへ出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Rinse, into the yellow container. Metal caps go to non-burnable. Oily or broken bottles go to non-burnable.",
+      "evidence": "びん(飲料用、食料品容器、化粧品のびん）油物は除く…割れているもの 上記の品目は、燃やさないごみへ出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html ; 金属製のびんのふたは、燃やさないごみとして出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7350.html"
+    },
+    "glass-other": {
+      "bin": "non",
+      "note": "Wrap broken glass and ceramics in thick paper and write キケン.",
+      "evidence": "ガラス類・陶磁器類（例）茶碗、皿、コップ、油のびん、割れた蛍光灯・電球など ガラス片・割れた食器など危険なものは、厚手の紙などに包んで「キケン」と表示してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html"
+    },
+    "metal": {
+      "bin": "non",
+      "note": "About 30 cm or larger (e.g. big pots) is oversized.",
+      "evidence": "金属類（例）アルミ箔、刃物、油の缶、やかん等 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html ; CSV: 鍋,燃やさないごみ,おおむね一辺が30cm以上のものは粗大ごみとして出してください。 / 傘,燃やさないごみ https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "blade": {
+      "bin": "non",
+      "note": "Wrap in paper and write キケン.",
+      "evidence": "鋭利なものは紙などに包んで「キケン」と表示してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html ; CSV: 包丁,燃やさないごみ,紙などに包んで「キケン」の表示をお願いします。 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "plastic-pack": {
+      "bin": "pla",
+      "note": "Rinse or wipe, in a see-through bag (no bag inside a bag) or lidded bin. Out by 8:00.",
+      "evidence": "プラマークがついている物…中身の見える袋か、ふたつきごみ容器に入れて出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html ; 二重袋にしないでください！ https://www.city.koto.lg.jp/381104/gomi/kate/plastics.html"
+    },
+    "plastic-product": {
+      "bin": "pla",
+      "note": "Only if 100% plastic and within about 30 cm.",
+      "evidence": "容器包装プラスチック以外の100％プラスチック素材の製品で、おおむね30センチ角以内のものです。 https://www.city.koto.lg.jp/381104/gomi/kate/plastics.html"
+    },
+    "plastic-dirty": {
+      "bin": "burn",
+      "note": "",
+      "evidence": "汚れの落ちないプラスチック（例）マヨネーズのチューブ、焼肉のたれの容器など https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html"
+    },
+    "plastic-mixed": {
+      "bin": "burn",
+      "note": "Mixed-material items like marker pens and silicone go to burnable; lighters and razors go to non-burnable.",
+      "evidence": "プラスチック以外の素材を含むもの サインペン、マジック、シリコン容器などは燃やすごみに、ライター、カミソリなどは燃やさないごみに出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/plastic.html"
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Koto collects foam trays and styrofoam on recycling day (grey lidded container), not with plastic, even if they carry the plastic mark. Dirty ones go to burnable.",
+      "evidence": "プラマークが表示されている発泡トレイ・発泡スチロールにつきましては、「プラスチック」ではなく、「発泡トレイ・発泡スチロール」として資源回収の日にお出しください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7348.html"
+    },
+    "battery": {
+      "bin": "non",
+      "note": "Non-burnable day, in its own clear bag (batteries, fluorescent tubes and mercury items together), separate from other non-burnable.",
+      "evidence": "1.電池（充電式含む）・蛍光管・水銀製品等 … 上記の3種類に分けて、それぞれ透明な袋に入れて、集積所へお出しください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html"
+    },
+    "battery-li": {
+      "bin": "non",
+      "note": "Non-burnable day in the battery bag. Tape the terminals. Swollen batteries: bag alone and write 膨張電池. Can also be taken to the Cleaning Office or a JBRC box.",
+      "evidence": "充電式電池（リチウムイオン・ニカド・ニッケル水素）は両極をセロハンテープ等で覆う等、絶縁をしてください。…膨張した電池・モバイルバッテリーは単体で袋に入れ、「膨張電池」と表示して、燃やさないごみの日にお出しください。 https://www.city.koto.lg.jp/388010/syaryoukasai.html"
+    },
+    "spray": {
+      "bin": "non",
+      "note": "Use up, don't punch holes. Put spray cans, gas canisters and lighters together in their own bag on non-burnable day.",
+      "evidence": "必ず中身を確認し、できる限り使い切ってから「燃やさないごみ」の日に、スプレー缶・カセットボンベ・使い捨てライターをひとまとめにして出してください。危険なので、穴をあける必要はありません。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kasaijikobousi.html"
+    },
+    "lighter": {
+      "bin": "non",
+      "note": "Use up. Same bag as spray cans on non-burnable day.",
+      "evidence": "2.燃やさないごみ（発火性）スプレー缶類（例）スプレー缶、カセットボンベ、ライター 中身を使い切ってから穴をあけずに出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html"
+    },
+    "fluorescent": {
+      "bin": "non",
+      "note": "Unbroken: in the original paper case or thick paper, in the battery/mercury bag. Broken: regular non-burnable, marked キケン.",
+      "evidence": "蛍光灯・電球類（例）直管型、環型、電球型、白熱電球、LED電球 割れないように、購入した際の紙ケースに入れるか、厚手の紙に包んで出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html ; CSV: 蛍光管（割れたもの）,燃やさないごみ https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    },
+    "appliance-small": {
+      "bin": "non",
+      "note": "Remove batteries. Items with a built-in rechargeable battery go in the battery bag. Under 15×25 cm can go in ward drop boxes. About 30 cm or larger is oversized.",
+      "evidence": "小型家電（例）ドライヤー、アイロン、TVのリモコンなど ・小型家電の電池は取り外してください。充電式電池内蔵小型家電は、1.電池（充電式含む）・蛍光管・水銀製品等としてお出しください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/funen.html"
+    },
+    "oil": {
+      "bin": "burn",
+      "note": "Soak into paper or cloth, or solidify it.",
+      "evidence": "食用油は紙や布にしみ込ませるか、凝固剤で固めてください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/kanen.html"
+    },
+    "oversized": {
+      "bin": "big",
+      "note": "Book with the Oversized Garbage Reception Center (03-6431-9997 or online), buy a sticker, out by 8:00 on the day.",
+      "evidence": "一辺の長さが、おおむね30センチ以上の大きなごみは「粗大ごみ」となり、有料・申し込み制になります。…収集日の朝8時までに自宅前…に出してください。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html"
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Ask the shop, or the Home Appliance Recycling Center (0570-087200).",
+      "evidence": "清掃事務所では、家電リサイクル法対象品（エアコン・テレビ・冷蔵庫・冷凍庫・洗濯機・衣類乾燥機）の収集は行っていません。 https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/7351.html"
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Maker take-back or ReNet Japan (0570-085-800).",
+      "evidence": "区はパソコンの収集は行いません。 https://www.city.koto.lg.jp/381104/kogatakadentakuhai.html"
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Use a specialist or the maker's take-back.",
+      "evidence": "区では不用になった消火器の収集は行っておりません。 https://www.city.koto.lg.jp/381104/kurashi/gomi/haiki/53188.html ; CSV: ペンキ,収集不可,専門業者に依頼してください。 / タイヤ（自動車用）,収集不可 https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv"
+    }
+  },
+  "dictionary": {
+    "url": "https://www.opendata.metro.tokyo.lg.jp/koto/131083_028_garbage_separation.csv",
+    "encoding": "UTF-8",
+    "columns": [
+      "全国地方公共団体コード",
+      "ID",
+      "地方公共団体名",
+      "ゴミの品目",
+      "分別区分",
+      "注意点",
+      "料金種別",
+      "料金",
+      "料金備考",
+      "備考"
+    ],
+    "updated": "2026-02-06"
+  },
+  "openQuestions": [
+    "District membership for 塩浜 and 豊洲 conflicts on the official page: FY2026 district cards/PDFs (塩浜 all=12, 豊洲1・3=12, 豊洲2・4～6=6) vs the address.png lookup image (塩浜1=6, 塩浜2=12, 豊洲=6). I used the FY2026 cards (newer, repeated in 4 official FY2026 documents including the Oct 2026 year-end page). Confirm with the Cleaning Office (03-3644-6216) if possible; no official notice of the change was found.",
+    "Year-end extra (臨時) non-burnable dates were read from image-only PDFs (visual check, not text extraction): 2地区 12/29, 3地区 12/30, 4地区 12/24 & 1/7, 5地区 12/25 & 1/8, 6地区 12/26 & 1/9. 2地区 12/29 and 3地区 12/30 sit on the regular 14-day cadence but are missing from the annual calendar, so they are only listed as extras. It is not stated whether 4～6地区 still get their regular 1/14, 1/15, 1/16 dates (the annual calendar lists them).",
+    "Some apartment buildings and areas follow different days (「一部集合住宅・地域では、下記収集曜日と異なる場合があります」); these exceptions are not published.",
+    "The sorting CSV is UTF-8 with BOM (not CP932). A few CSV rows are inconsistent with the web pages (e.g. 酒容器（ペットボトル） says dirty ones go to 燃やさないごみ, others say 燃やすごみ).",
+    "No separate hazardous bin: batteries, fluorescent tubes, mercury items and spray cans go out on non-burnable day in separate clear bags, so they are mapped to non with a note."
+  ]
+}
