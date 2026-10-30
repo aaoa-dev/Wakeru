@@ -33,7 +33,8 @@ function loadCity(entry){
   }).catch(err => { delete CITIES[entry.id]; throw err });
 }
 function showError(err){
-  $("#homeWeek").innerHTML = `<div class="empty">Couldn't load the trash data (${esc(err.message)}). Reload the page to try again.</div>`;
+  const html = `<div class="empty">Couldn't load the trash data (${esc(err.message)}). Reload the page to try again.</div>`;
+  $("#today").innerHTML = html; $("#homeWeek").innerHTML = html;
 }
 
 const binOf = (bin, rs = RS) => rs.bins[bin] || {en:bin,label:"",kind:"no"};

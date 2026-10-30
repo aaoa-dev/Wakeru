@@ -25,14 +25,33 @@
     <input id="q" type="search" placeholder="What are you throwing away? (bento, 電池, PET…)" autocomplete="off" aria-label="Search items">
   </div>
   <nav class="tabs" role="tablist">
-    <button role="tab" id="tab-sort" aria-selected="true" data-v="sort">Sort it</button>
-    <button role="tab" id="tab-days" aria-selected="false" data-v="days">Pickup days</button>
+    <button role="tab" id="tab-days" aria-selected="true" data-v="days">Pickup days</button>
+    <button role="tab" id="tab-sort" aria-selected="false" data-v="sort">Sort it</button>
     <button role="tab" id="tab-words" aria-selected="false" data-v="words">What words mean</button>
   </nav>
 </header>
 
+<!-- DAYS -->
+<section class="view" id="v-days">
+  <div class="field">
+    <label for="town">Your town (町名)</label>
+    <select id="town"></select>
+  </div>
+  <div class="field" id="addrField">
+    <label for="addr">Chome / banchi (丁目・番地)</label>
+    <select id="addr"></select>
+  </div>
+  <p class="fine" id="areaNote" hidden></p>
+  <div class="today" id="today"></div>
+  <div>
+    <h2>Next 7 days</h2>
+    <div class="week" id="week"></div>
+  </div>
+  <p class="fine" id="schedNote"></p>
+</section>
+
 <!-- SORT -->
-<section class="view" id="v-sort">
+<section class="view" id="v-sort" hidden>
   <div id="resultsWrap" hidden>
     <h2 id="resTitle">Results</h2>
     <div class="list" id="results"></div>
@@ -62,25 +81,6 @@
     <h2>Browse by bin</h2>
     <div class="quick" id="cats"></div>
   </div>
-</section>
-
-<!-- DAYS -->
-<section class="view" id="v-days" hidden>
-  <div class="field">
-    <label for="town">Your town (町名)</label>
-    <select id="town"></select>
-  </div>
-  <div class="field" id="addrField">
-    <label for="addr">Chome / banchi (丁目・番地)</label>
-    <select id="addr"></select>
-  </div>
-  <p class="fine" id="areaNote" hidden></p>
-  <div class="today" id="today"></div>
-  <div>
-    <h2>Next 7 days</h2>
-    <div class="week" id="week"></div>
-  </div>
-  <p class="fine" id="schedNote"></p>
 </section>
 
 <!-- WORDS -->
