@@ -232,9 +232,17 @@ async function init(){
 /* ---------- events ---------- */
 $("#where").addEventListener("click", () => chooseLocation().catch(showError));
 $("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.target.value) });
-$("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; showResults([it], it.en); window.scrollTo({top:0}) });
+/* presets get a history entry so the browser/phone back gesture returns to the sort home instead of leaving the site */
+function openPreset(list, title){
+  showResults(list, title); window.scrollTo({top:0});
+  if(!history.state?.results) history.pushState({results:true}, "");
+}
+function closeResults(){ $("#q").value = ""; showHome(); window.scrollTo({top:0}) }
+$("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; openPreset([it], it.en) });
 $("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const c = b.dataset.c;
-  showResults(ITEMS.filter(i=>i.outs.some(o=>o.bin===c)), `Things that can go in ${RS.bins[c].en} (${RS.bins[c].label})`); window.scrollTo({top:0}) });
+  openPreset(ITEMS.filter(i=>i.outs.some(o=>o.bin===c)), `Things that can go in ${RS.bins[c].en} (${RS.bins[c].label})`) });
+$("#resBack").addEventListener("click", () => history.state?.results ? history.back() : closeResults());
+window.addEventListener("popstate", closeResults);
 function switchView(v){
   document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected", b.dataset.v===v));
   ["sort","days","words"].forEach(x=>$("#v-"+x).hidden = x!==v);
