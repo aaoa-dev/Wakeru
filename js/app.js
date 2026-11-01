@@ -26,7 +26,7 @@ const cityCache = entry => CITIES[entry.id] ??= {rs:null, dict:null, rsPromise:n
 async function loadCity(entry){
   const cache = cityCache(entry);
   if(!cache.rsPromise){
-    cache.rsPromise = getJSON(`data/municipalities/${entry.id}.json`)
+    cache.rsPromise = getJSON(`data/municipalities/${entry.path}/municipality.json`)
       .then(rs => cache.rs = rs)
       .catch(err => { cache.rsPromise = null; throw err });
   }
@@ -39,7 +39,7 @@ async function ensureDict(){
   if(!entry?.dictionary) return null;
   const cache = cityCache(entry);
   if(!cache.dictPromise){
-    cache.dictPromise = getJSON(`data/municipalities/${entry.id}.dict.json`)
+    cache.dictPromise = getJSON(`data/municipalities/${entry.path}/dictionary.json`)
       .then(dict => {
         dict.index = dict.items.map(([name,,,keywords]) => [norm(name), norm(keywords)]);
         return cache.dict = dict;

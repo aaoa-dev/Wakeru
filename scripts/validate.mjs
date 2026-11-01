@@ -34,8 +34,10 @@ function checkRule(rule, where){
 const index = read("data/municipalities.json");
 check(new Set(index.municipalities.map(m => m.id)).size === index.municipalities.length, "municipalities.json", "duplicate ids");
 check(new Set(index.municipalities.map(m => m.code)).size === index.municipalities.length, "municipalities.json", "duplicate municipality codes");
+check(new Set(index.municipalities.map(m => m.path)).size === index.municipalities.length, "municipalities.json", "duplicate municipality paths");
 for(const entry of index.municipalities){
-  const file = `data/municipalities/${entry.id}.json`;
+  const file = `data/municipalities/${entry.path}/municipality.json`;
+  check(/^\d{2}-[a-z0-9-]+\/\d{5}-[a-z0-9-]+$/.test(entry.path ?? ""), "municipalities.json", `${entry.id} has an invalid hierarchy path`);
   if(!fs.existsSync(path.join(ROOT, file))){ check(false, "municipalities.json", `${file} is missing`); continue }
   const m = read(file), bins = Object.keys(m.bins);
   check(m.id === entry.id && m.en === entry.en && m.jp === entry.jp && m.code === entry.code && m.pref === entry.pref, file, "id/code/pref/en/jp differ from municipalities.json");
@@ -71,7 +73,7 @@ for(const entry of index.municipalities){
     check(a.town && a.townEn && a.en && a.jp, `${file} area ${a.town} ${a.jp}`, "missing names");
     check(cal.patterns[a.pattern], `${file} area ${a.town} ${a.jp}`, `unknown pattern "${a.pattern}"`);
   }
-  const dictFile = `data/municipalities/${entry.id}.dict.json`;
+  const dictFile = `data/municipalities/${entry.path}/dictionary.json`;
   check(entry.dictionary === fs.existsSync(path.join(ROOT, dictFile)), "municipalities.json", `${entry.id} dictionary flag doesn't match ${dictFile}`);
   if(entry.dictionary){
     const d = read(dictFile);

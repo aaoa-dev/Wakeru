@@ -1,4 +1,4 @@
-/* Builds data/municipalities/<id>.json (+ .dict.json) and data/municipalities.json from
+/* Builds data/municipalities/<prefecture>/<municipality>/{municipality,dictionary}.json and data/municipalities.json from
    1. curated wards (scripts/import/wards/<id>: ruleset + importer reading the ward's official sources), and
    2. japan-gomi-data schedules for every other municipality its maintainers checked against official calendars,
    with sorting dictionaries from 粗大ごみナビ. A curated ward wins over japan-gomi-data for the same municipality code,
@@ -51,6 +51,25 @@ const PREF_EN = ["", "Hokkaido", "Aomori", "Iwate", "Miyagi", "Akita", "Yamagata
   "Chiba", "Tokyo", "Kanagawa", "Niigata", "Toyama", "Ishikawa", "Fukui", "Yamanashi", "Nagano", "Gifu", "Shizuoka", "Aichi", "Mie",
   "Shiga", "Kyoto", "Osaka", "Hyogo", "Nara", "Wakayama", "Tottori", "Shimane", "Okayama", "Hiroshima", "Yamaguchi", "Tokushima",
   "Kagawa", "Ehime", "Kochi", "Fukuoka", "Saga", "Nagasaki", "Kumamoto", "Oita", "Miyazaki", "Kagoshima", "Okinawa"];
+const slug = value => String(value ?? "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const catalogPath = m => `${String(m.pref).padStart(2, "0")}-${slug(PREF_EN[+m.pref])}/${m.code}-${slug(m.en)}`;
+const catalogFiles = m => {
+  const dir = path.join(OUT, catalogPath(m));
+  return {dir, municipality:path.join(dir, "municipality.json"), dictionary:path.join(dir, "dictionary.json")};
+};
+const currentIndexFile = path.join(ROOT, "data/municipalities.json");
+const currentById = new Map((fs.existsSync(currentIndexFile) ? readJSON(currentIndexFile).municipalities : []).map(m => [m.id, m]));
+const written = new Map();
+function filesForId(id){
+  if(written.has(id)) return written.get(id);
+  const entry = currentById.get(id);
+  if(entry?.path){
+    const dir = path.join(OUT, entry.path);
+    return {dir, municipality:path.join(dir, "municipality.json"), dictionary:path.join(dir, "dictionary.json")};
+  }
+  return {dir:OUT, municipality:path.join(OUT, `${id}.json`), dictionary:path.join(OUT, `${id}.dict.json`)};
+}
 
 /* strip research-only fields (evidence, open questions) before shipping */
 const RESEARCH_ONLY = key => key === "evidence" || key.endsWith("Evidence") || key === "holidays";
@@ -134,9 +153,10 @@ function crossCheck(cur, other){
 }
 
 const write = (m, dict) => {
-  writeJSON(path.join(OUT, `${m.id}.json`), m);
-  const dictFile = path.join(OUT, `${m.id}.dict.json`);
-  if(dict) writeJSON(dictFile, dict); else fs.rmSync(dictFile, {force:true});
+  const files = catalogFiles(m);
+  writeJSON(files.municipality, m);
+  if(dict) writeJSON(files.dictionary, dict); else fs.rmSync(files.dictionary, {force:true});
+  written.set(m.id, files);
 };
 
 let failed = false;
@@ -162,7 +182,7 @@ for(const entry of jgd.listMunicipalities(repo)){
   const {handle, meta} = entry, v = jgd.verification(meta);
   if(curatedByCode.has(meta.code)){
     if(!wanted(handle) && !wanted(curatedByCode.get(meta.code))) continue;
-    const id = curatedByCode.get(meta.code), file = path.join(OUT, `${id}.json`);
+    const id = curatedByCode.get(meta.code), file = filesForId(id).municipality;
     if(!fs.existsSync(file)){ hidden.push(`${handle} (${meta.name_ja}): curated ward "${id}" is pending${HOLD[handle] ? `; ${HOLD[handle]}` : ""}`); continue }
     console.log(`${id}: overlaps japan-gomi-data ${handle}`);
     try { crossCheck(readJSON(file), (await jgd.convert(entry, repo, today))) } catch(err) { console.log(`  cross-check failed: ${err.message}`) }
@@ -262,7 +282,7 @@ for(const entry of cityOpenData) await shipCommunity({...entry, source:entry.sou
 function prefsLit(){
   const out = new Set();
   for(const id of shown.keys()){
-    const file = path.join(OUT, `${id}.json`);
+    const file = filesForId(id).municipality;
     if(fs.existsSync(file)) out.add(readJSON(file).pref.padStart(2, "0"));
   }
   return out;
@@ -354,19 +374,39 @@ for(const entry of tokyoMetroEntries()){
   } catch(err) { failed = true; shown.delete(entry.id); console.error(`${entry.id}: FAILED: ${err.message}`) }
 }
 
-/* index of shipped municipalities; files of anything no longer shown are removed */
-for(const f of fs.readdirSync(OUT)){
-  const id = f.replace(/(\.dict)?\.json$/, "");
-  if(!shown.has(id)) fs.rmSync(path.join(OUT, f));
+/* Place every shipped municipality in the prefecture → municipality tree, then remove stale generated files. */
+const placed = [];
+for(const id of shown.keys()){
+  const from = filesForId(id);
+  if(!fs.existsSync(from.municipality)) continue;
+  const m = readJSON(from.municipality), to = catalogFiles(m);
+  fs.mkdirSync(to.dir, {recursive:true});
+  if(path.resolve(from.municipality) !== path.resolve(to.municipality)) fs.renameSync(from.municipality, to.municipality);
+  if(fs.existsSync(from.dictionary) && path.resolve(from.dictionary) !== path.resolve(to.dictionary)) fs.renameSync(from.dictionary, to.dictionary);
+  written.set(id, to);
+  placed.push({m, files:to});
 }
-const list = [...shown.keys()].filter(id => fs.existsSync(path.join(OUT, `${id}.json`))).map(id => readJSON(path.join(OUT, `${id}.json`)));
-list.sort((a, b) => a.pref.localeCompare(b.pref) || a.en.localeCompare(b.en));
-const municipalities = list.map(m => ({
+placed.sort((a, b) => a.m.pref.localeCompare(b.m.pref) || a.m.en.localeCompare(b.m.en));
+const municipalities = placed.map(({m, files}) => ({
   id:m.id, code:m.code, pref:m.pref, prefEn:PREF_EN[+m.pref], en:m.en, jp:m.jp, verified:m.verified,
-  dictionary:fs.existsSync(path.join(OUT, `${m.id}.dict.json`)), source:m.attribution?.schedule?.name ?? "curated",
+  path:catalogPath(m), dictionary:fs.existsSync(files.dictionary), source:m.attribution?.schedule?.name ?? "curated",
 }));
+const keep = new Set(placed.flatMap(({files}) => [files.municipality, ...(fs.existsSync(files.dictionary) ? [files.dictionary] : [])].map(path.resolve)));
+function generatedFiles(dir){
+  if(!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, {withFileTypes:true}).flatMap(entry => {
+    const file = path.join(dir, entry.name);
+    return entry.isDirectory() ? generatedFiles(file) : entry.name.endsWith(".json") ? [file] : [];
+  });
+}
+for(const file of generatedFiles(OUT)) if(!keep.has(path.resolve(file))) fs.rmSync(file);
+function pruneEmpty(dir){
+  for(const entry of fs.readdirSync(dir, {withFileTypes:true})) if(entry.isDirectory()) pruneEmpty(path.join(dir, entry.name));
+  if(dir !== OUT && !fs.readdirSync(dir).length) fs.rmdirSync(dir);
+}
+pruneEmpty(OUT);
 writeJSON(path.join(ROOT, "data/municipalities.json"), {
-  _readme:"Municipalities shown in the app. All files here are generated offline by npm run import (scripts/import); the browser only reads these static JSON files, never live importer APIs.",
+  _readme:"Municipalities shown in the app. Payloads follow prefecture/municipality/{municipality,dictionary}.json and are generated offline by npm run import; the browser never calls importer APIs.",
   version:today,
   municipalities,
 });
