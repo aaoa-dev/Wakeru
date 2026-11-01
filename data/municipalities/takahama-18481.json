@@ -1,0 +1,479 @@
+{
+  "id": "takahama-18481",
+  "code": "18481",
+  "pref": "18",
+  "jp": "高浜町",
+  "en": "Takahama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://takahama.5374.jp/data/area_days.csv",
+    "http://takahama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ（緑の袋）」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ（緑の袋）」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃ごみ（緑の袋）」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「可燃ごみ（緑の袋）」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ（緑の袋）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「新聞・古紙チラシ（水色の袋）」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「拠点回収（公民館）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペットボトル（ピンクの袋）」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ（黄色の袋）」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「不燃ごみ（黄色の袋）」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「リチウムイオン電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「不燃ごみ（黄色の袋）」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "屋敷町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "屋敷町",
+      "jp": "屋敷町",
+      "pattern": "2"
+    },
+    {
+      "town": "呉竹町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "呉竹町",
+      "jp": "呉竹町",
+      "pattern": "2"
+    },
+    {
+      "town": "向山町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向山町",
+      "jp": "向山町",
+      "pattern": "1"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "春日町",
+      "jp": "春日町",
+      "pattern": "1"
+    },
+    {
+      "town": "小池町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小池町",
+      "jp": "小池町",
+      "pattern": "2"
+    },
+    {
+      "town": "新田町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新田町",
+      "jp": "新田町",
+      "pattern": "2"
+    },
+    {
+      "town": "神明町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神明町",
+      "jp": "神明町",
+      "pattern": "2"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "清水町",
+      "jp": "清水町",
+      "pattern": "1"
+    },
+    {
+      "town": "沢渡町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "沢渡町",
+      "jp": "沢渡町",
+      "pattern": "2"
+    },
+    {
+      "town": "田戸町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田戸町",
+      "jp": "田戸町",
+      "pattern": "1"
+    },
+    {
+      "town": "湯山町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "湯山町",
+      "jp": "湯山町",
+      "pattern": "2"
+    },
+    {
+      "town": "二池町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二池町",
+      "jp": "二池町",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡町",
+      "jp": "八幡町",
+      "pattern": "2"
+    },
+    {
+      "town": "稗田町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "稗田町",
+      "jp": "稗田町",
+      "pattern": "1"
+    },
+    {
+      "town": "碧海町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "碧海町",
+      "jp": "碧海町",
+      "pattern": "1"
+    },
+    {
+      "town": "芳川町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芳川町",
+      "jp": "芳川町",
+      "pattern": "2"
+    },
+    {
+      "town": "豊田町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊田町",
+      "jp": "豊田町",
+      "pattern": "2"
+    },
+    {
+      "town": "本郷町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本郷町",
+      "jp": "本郷町",
+      "pattern": "1"
+    },
+    {
+      "town": "論地町",
+      "townEn": "Takahama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "論地町",
+      "jp": "論地町",
+      "pattern": "1"
+    },
+    {
+      "town": "青",
+      "townEn": "Ao",
+      "kana": "アオ",
+      "chome": null,
+      "detail": "青木町",
+      "en": "青木町",
+      "jp": "青木町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://takahama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

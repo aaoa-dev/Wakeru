@@ -1,0 +1,3949 @@
+{
+  "id": "maizuru-26202",
+  "code": "26202",
+  "pref": "26",
+  "jp": "舞鶴市",
+  "en": "Maizuru",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://maizuru.5374.jp/data/area_days.csv",
+    "http://maizuru.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "Gステージ",
+      "townEn": "Suteji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "Gステージ",
+      "jp": "Gステージ",
+      "pattern": "1"
+    },
+    {
+      "town": "アピスカワイ",
+      "townEn": "Apisukawai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "アピスカワイ",
+      "jp": "アピスカワイ",
+      "pattern": "1"
+    },
+    {
+      "town": "アマデウスⅦ",
+      "townEn": "Amadeusu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "アマデウスⅦ",
+      "jp": "アマデウスⅦ",
+      "pattern": "1"
+    },
+    {
+      "town": "ヴィラージュ滝ヶ浦",
+      "townEn": "Vuraju",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ヴィラージュ滝ヶ浦",
+      "jp": "ヴィラージュ滝ヶ浦",
+      "pattern": "1"
+    },
+    {
+      "town": "ヴィラナリー舞鶴",
+      "townEn": "Vuranari",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ヴィラナリー舞鶴",
+      "jp": "ヴィラナリー舞鶴",
+      "pattern": "1"
+    },
+    {
+      "town": "エクセレント伊佐津",
+      "townEn": "Ekuserento",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "エクセレント伊佐津",
+      "jp": "エクセレント伊佐津",
+      "pattern": "1"
+    },
+    {
+      "town": "エルドラード三本木",
+      "townEn": "Erudorado",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "エルドラード三本木",
+      "jp": "エルドラード三本木",
+      "pattern": "1"
+    },
+    {
+      "town": "クラウンマンション",
+      "townEn": "Kuraummanshon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "クラウンマンション",
+      "jp": "クラウンマンション",
+      "pattern": "1"
+    },
+    {
+      "town": "クレインズコート",
+      "townEn": "Kureinzukoto",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "クレインズコート",
+      "jp": "クレインズコート",
+      "pattern": "1"
+    },
+    {
+      "town": "クレインズタワー",
+      "townEn": "Kureinzutawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "クレインズタワー",
+      "jp": "クレインズタワー",
+      "pattern": "1"
+    },
+    {
+      "town": "サンケイ団地",
+      "townEn": "Sankei",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "サンケイ団地",
+      "jp": "サンケイ団地",
+      "pattern": "1"
+    },
+    {
+      "town": "つつじヶ丘",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つつじヶ丘",
+      "jp": "つつじヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "ビラデステ伊佐津",
+      "townEn": "Biradesute",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ビラデステ伊佐津",
+      "jp": "ビラデステ伊佐津",
+      "pattern": "1"
+    },
+    {
+      "town": "フラワータウン伊佐津",
+      "townEn": "Furawataun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "フラワータウン伊佐津",
+      "jp": "フラワータウン伊佐津",
+      "pattern": "1"
+    },
+    {
+      "town": "ポレスター西",
+      "townEn": "Poresuta",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ポレスター西",
+      "jp": "ポレスター西",
+      "pattern": "1"
+    },
+    {
+      "town": "ポレスター東",
+      "townEn": "Poresuta",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ポレスター東",
+      "jp": "ポレスター東",
+      "pattern": "1"
+    },
+    {
+      "town": "ポレスター東駅北",
+      "townEn": "Poresuta",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ポレスター東駅北",
+      "jp": "ポレスター東駅北",
+      "pattern": "1"
+    },
+    {
+      "town": "ミニヨン浮島",
+      "townEn": "Miniyon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ミニヨン浮島",
+      "jp": "ミニヨン浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "愛宕",
+      "jp": "愛宕",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕新",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "愛宕新",
+      "jp": "愛宕新",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕前",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "愛宕前",
+      "jp": "愛宕前",
+      "pattern": "1"
+    },
+    {
+      "town": "旭西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭西",
+      "jp": "旭西",
+      "pattern": "1"
+    },
+    {
+      "town": "旭東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭東",
+      "jp": "旭東",
+      "pattern": "1"
+    },
+    {
+      "town": "旭南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭南",
+      "jp": "旭南",
+      "pattern": "1"
+    },
+    {
+      "town": "安岡",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "安岡",
+      "jp": "安岡",
+      "pattern": "1"
+    },
+    {
+      "town": "安岡新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "安岡新町",
+      "jp": "安岡新町",
+      "pattern": "1"
+    },
+    {
+      "town": "伊佐津",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐津",
+      "jp": "伊佐津",
+      "pattern": "1"
+    },
+    {
+      "town": "伊佐津川荘苑",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐津川荘苑",
+      "jp": "伊佐津川荘苑",
+      "pattern": "1"
+    },
+    {
+      "town": "伊佐津団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐津団地",
+      "jp": "伊佐津団地",
+      "pattern": "1"
+    },
+    {
+      "town": "伊佐津団地西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐津団地西",
+      "jp": "伊佐津団地西",
+      "pattern": "1"
+    },
+    {
+      "town": "伊佐津北",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐津北",
+      "jp": "伊佐津北",
+      "pattern": "1"
+    },
+    {
+      "town": "医療センター宿舎",
+      "townEn": "Senta",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "医療センター宿舎",
+      "jp": "医療センター宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "井尻西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "井尻西",
+      "jp": "井尻西",
+      "pattern": "1"
+    },
+    {
+      "town": "井尻東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "井尻東",
+      "jp": "井尻東",
+      "pattern": "1"
+    },
+    {
+      "town": "引土新",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "引土新",
+      "jp": "引土新",
+      "pattern": "1"
+    },
+    {
+      "town": "宇谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宇谷",
+      "jp": "宇谷",
+      "pattern": "1"
+    },
+    {
+      "town": "栄",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "栄",
+      "jp": "栄",
+      "pattern": "1"
+    },
+    {
+      "town": "駅前",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前",
+      "jp": "駅前",
+      "pattern": "1"
+    },
+    {
+      "town": "駅東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅東",
+      "jp": "駅東",
+      "pattern": "1"
+    },
+    {
+      "town": "榎川下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "榎川下",
+      "jp": "榎川下",
+      "pattern": "1"
+    },
+    {
+      "town": "榎川上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "榎川上",
+      "jp": "榎川上",
+      "pattern": "1"
+    },
+    {
+      "town": "円満寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "円満寺",
+      "jp": "円満寺",
+      "pattern": "1"
+    },
+    {
+      "town": "奥母",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奥母",
+      "jp": "奥母",
+      "pattern": "1"
+    },
+    {
+      "town": "岡田由里",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岡田由里",
+      "jp": "岡田由里",
+      "pattern": "1"
+    },
+    {
+      "town": "下安久",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下安久",
+      "jp": "下安久",
+      "pattern": "1"
+    },
+    {
+      "town": "下見谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下見谷",
+      "jp": "下見谷",
+      "pattern": "1"
+    },
+    {
+      "town": "下漆原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下漆原",
+      "jp": "下漆原",
+      "pattern": "1"
+    },
+    {
+      "town": "下東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下東",
+      "jp": "下東",
+      "pattern": "1"
+    },
+    {
+      "town": "下福井",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下福井",
+      "jp": "下福井",
+      "pattern": "1"
+    },
+    {
+      "town": "加津良",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "加津良",
+      "jp": "加津良",
+      "pattern": "1"
+    },
+    {
+      "town": "河原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河原",
+      "jp": "河原",
+      "pattern": "1"
+    },
+    {
+      "town": "河辺原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河辺原",
+      "jp": "河辺原",
+      "pattern": "1"
+    },
+    {
+      "town": "河辺中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河辺中",
+      "jp": "河辺中",
+      "pattern": "1"
+    },
+    {
+      "town": "河辺由里",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河辺由里",
+      "jp": "河辺由里",
+      "pattern": "1"
+    },
+    {
+      "town": "花木",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花木",
+      "jp": "花木",
+      "pattern": "1"
+    },
+    {
+      "town": "芥子谷口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芥子谷口",
+      "jp": "芥子谷口",
+      "pattern": "1"
+    },
+    {
+      "town": "芥子谷団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芥子谷団地",
+      "jp": "芥子谷団地",
+      "pattern": "1"
+    },
+    {
+      "town": "蒲江",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蒲江",
+      "jp": "蒲江",
+      "pattern": "1"
+    },
+    {
+      "town": "観音寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "観音寺",
+      "jp": "観音寺",
+      "pattern": "1"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "丸山",
+      "jp": "丸山",
+      "pattern": "1"
+    },
+    {
+      "town": "丸山口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "丸山口",
+      "jp": "丸山口",
+      "pattern": "1"
+    },
+    {
+      "town": "丸田西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "丸田西",
+      "jp": "丸田西",
+      "pattern": "1"
+    },
+    {
+      "town": "丸田東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "丸田東",
+      "jp": "丸田東",
+      "pattern": "1"
+    },
+    {
+      "town": "岸谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岸谷",
+      "jp": "岸谷",
+      "pattern": "1"
+    },
+    {
+      "town": "喜多",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "喜多",
+      "jp": "喜多",
+      "pattern": "1"
+    },
+    {
+      "town": "亀岩",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀岩",
+      "jp": "亀岩",
+      "pattern": "1"
+    },
+    {
+      "town": "吉坂",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉坂",
+      "jp": "吉坂",
+      "pattern": "1"
+    },
+    {
+      "town": "吉田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉田",
+      "jp": "吉田",
+      "pattern": "1"
+    },
+    {
+      "town": "吉野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉野",
+      "jp": "吉野",
+      "pattern": "1"
+    },
+    {
+      "town": "橘",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橘",
+      "jp": "橘",
+      "pattern": "1"
+    },
+    {
+      "town": "久田美",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久田美",
+      "jp": "久田美",
+      "pattern": "1"
+    },
+    {
+      "town": "宮前",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮前",
+      "jp": "宮前",
+      "pattern": "1"
+    },
+    {
+      "town": "宮津口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮津口",
+      "jp": "宮津口",
+      "pattern": "1"
+    },
+    {
+      "town": "宮浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮浮島",
+      "jp": "宮浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "魚屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "魚屋",
+      "jp": "魚屋",
+      "pattern": "1"
+    },
+    {
+      "town": "魚屋住吉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "魚屋住吉",
+      "jp": "魚屋住吉",
+      "pattern": "1"
+    },
+    {
+      "town": "魚屋大森",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "魚屋大森",
+      "jp": "魚屋大森",
+      "pattern": "1"
+    },
+    {
+      "town": "京橋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京橋",
+      "jp": "京橋",
+      "pattern": "1"
+    },
+    {
+      "town": "京月",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京月",
+      "jp": "京月",
+      "pattern": "1"
+    },
+    {
+      "town": "京月東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京月東",
+      "jp": "京月東",
+      "pattern": "1"
+    },
+    {
+      "town": "京口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京口",
+      "jp": "京口",
+      "pattern": "1"
+    },
+    {
+      "town": "京田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京田",
+      "jp": "京田",
+      "pattern": "1"
+    },
+    {
+      "town": "京田団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京田団地",
+      "jp": "京田団地",
+      "pattern": "1"
+    },
+    {
+      "town": "金屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金屋",
+      "jp": "金屋",
+      "pattern": "1"
+    },
+    {
+      "town": "桑飼下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桑飼下",
+      "jp": "桑飼下",
+      "pattern": "1"
+    },
+    {
+      "town": "建青",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "建青",
+      "jp": "建青",
+      "pattern": "1"
+    },
+    {
+      "town": "建部",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "建部",
+      "jp": "建部",
+      "pattern": "1"
+    },
+    {
+      "town": "元川新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元川新町",
+      "jp": "元川新町",
+      "pattern": "1"
+    },
+    {
+      "town": "元川中町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元川中町",
+      "jp": "元川中町",
+      "pattern": "1"
+    },
+    {
+      "town": "元川東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元川東",
+      "jp": "元川東",
+      "pattern": "1"
+    },
+    {
+      "town": "元川本町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元川本町",
+      "jp": "元川本町",
+      "pattern": "1"
+    },
+    {
+      "town": "元浜",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元浜",
+      "jp": "元浜",
+      "pattern": "1"
+    },
+    {
+      "town": "元浜西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元浜西",
+      "jp": "元浜西",
+      "pattern": "1"
+    },
+    {
+      "town": "古川",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古川",
+      "jp": "古川",
+      "pattern": "1"
+    },
+    {
+      "town": "御幸",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "御幸",
+      "jp": "御幸",
+      "pattern": "1"
+    },
+    {
+      "town": "公文名",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "公文名",
+      "jp": "公文名",
+      "pattern": "1"
+    },
+    {
+      "town": "公明会",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "公明会",
+      "jp": "公明会",
+      "pattern": "1"
+    },
+    {
+      "town": "向ノ丁",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向ノ丁",
+      "jp": "向ノ丁",
+      "pattern": "1"
+    },
+    {
+      "town": "幸野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "幸野",
+      "jp": "幸野",
+      "pattern": "1"
+    },
+    {
+      "town": "港",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "港",
+      "jp": "港",
+      "pattern": "1"
+    },
+    {
+      "town": "溝尻",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "溝尻",
+      "jp": "溝尻",
+      "pattern": "1"
+    },
+    {
+      "town": "溝尻新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "溝尻新町",
+      "jp": "溝尻新町",
+      "pattern": "1"
+    },
+    {
+      "town": "溝尻田口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "溝尻田口",
+      "jp": "溝尻田口",
+      "pattern": "1"
+    },
+    {
+      "town": "荒田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "荒田",
+      "jp": "荒田",
+      "pattern": "1"
+    },
+    {
+      "town": "行永合同庁舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "行永合同庁舎",
+      "jp": "行永合同庁舎",
+      "pattern": "1"
+    },
+    {
+      "town": "高屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高屋",
+      "jp": "高屋",
+      "pattern": "1"
+    },
+    {
+      "town": "高迫団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高迫団地",
+      "jp": "高迫団地",
+      "pattern": "1"
+    },
+    {
+      "town": "高野由里",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高野由里",
+      "jp": "高野由里",
+      "pattern": "1"
+    },
+    {
+      "town": "今田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今田",
+      "jp": "今田",
+      "pattern": "1"
+    },
+    {
+      "town": "紺屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "紺屋",
+      "jp": "紺屋",
+      "pattern": "1"
+    },
+    {
+      "town": "佐波賀下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐波賀下",
+      "jp": "佐波賀下",
+      "pattern": "1"
+    },
+    {
+      "town": "佐波賀上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐波賀上",
+      "jp": "佐波賀上",
+      "pattern": "1"
+    },
+    {
+      "town": "祭掛",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "祭掛",
+      "jp": "祭掛",
+      "pattern": "1"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜木",
+      "jp": "桜木",
+      "pattern": "1"
+    },
+    {
+      "town": "笹部",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笹部",
+      "jp": "笹部",
+      "pattern": "1"
+    },
+    {
+      "town": "三の丸",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三の丸",
+      "jp": "三の丸",
+      "pattern": "1"
+    },
+    {
+      "town": "三安団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三安団地",
+      "jp": "三安団地",
+      "pattern": "1"
+    },
+    {
+      "town": "三笠",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三笠",
+      "jp": "三笠",
+      "pattern": "1"
+    },
+    {
+      "town": "三条上・下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三条上・下",
+      "jp": "三条上・下",
+      "pattern": "1"
+    },
+    {
+      "town": "三宅",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三宅",
+      "jp": "三宅",
+      "pattern": "1"
+    },
+    {
+      "town": "三日市",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三日市",
+      "jp": "三日市",
+      "pattern": "1"
+    },
+    {
+      "town": "三浜",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三浜",
+      "jp": "三浜",
+      "pattern": "1"
+    },
+    {
+      "town": "市場上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市場上",
+      "jp": "市場上",
+      "pattern": "1"
+    },
+    {
+      "town": "市場西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市場西",
+      "jp": "市場西",
+      "pattern": "1"
+    },
+    {
+      "town": "市場青葉台",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市場青葉台",
+      "jp": "市場青葉台",
+      "pattern": "1"
+    },
+    {
+      "town": "市場東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市場東",
+      "jp": "市場東",
+      "pattern": "1"
+    },
+    {
+      "town": "志高",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志高",
+      "jp": "志高",
+      "pattern": "1"
+    },
+    {
+      "town": "寺田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺田",
+      "jp": "寺田",
+      "pattern": "1"
+    },
+    {
+      "town": "寺内",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺内",
+      "jp": "寺内",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿原",
+      "jp": "鹿原",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿原西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿原西",
+      "jp": "鹿原西",
+      "pattern": "1"
+    },
+    {
+      "town": "七日市",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "七日市",
+      "jp": "七日市",
+      "pattern": "1"
+    },
+    {
+      "town": "室牛",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "室牛",
+      "jp": "室牛",
+      "pattern": "1"
+    },
+    {
+      "town": "若葉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若葉",
+      "jp": "若葉",
+      "pattern": "1"
+    },
+    {
+      "town": "寿",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寿",
+      "jp": "寿",
+      "pattern": "1"
+    },
+    {
+      "town": "十月会",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "十月会",
+      "jp": "十月会",
+      "pattern": "1"
+    },
+    {
+      "town": "十倉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "十倉",
+      "jp": "十倉",
+      "pattern": "1"
+    },
+    {
+      "town": "出雲",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "出雲",
+      "jp": "出雲",
+      "pattern": "1"
+    },
+    {
+      "town": "女布",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "女布",
+      "jp": "女布",
+      "pattern": "1"
+    },
+    {
+      "town": "女布新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "女布新町",
+      "jp": "女布新町",
+      "pattern": "1"
+    },
+    {
+      "town": "女布中新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "女布中新町",
+      "jp": "女布中新町",
+      "pattern": "1"
+    },
+    {
+      "town": "小橋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小橋",
+      "jp": "小橋",
+      "pattern": "1"
+    },
+    {
+      "town": "小原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小原",
+      "jp": "小原",
+      "pattern": "1"
+    },
+    {
+      "town": "小倉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小倉",
+      "jp": "小倉",
+      "pattern": "1"
+    },
+    {
+      "town": "小倉新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小倉新町",
+      "jp": "小倉新町",
+      "pattern": "1"
+    },
+    {
+      "town": "小倉西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小倉西",
+      "jp": "小倉西",
+      "pattern": "1"
+    },
+    {
+      "town": "小俣",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小俣",
+      "jp": "小俣",
+      "pattern": "1"
+    },
+    {
+      "town": "松ヶ崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松ヶ崎",
+      "jp": "松ヶ崎",
+      "pattern": "1"
+    },
+    {
+      "town": "松ヶ森",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松ヶ森",
+      "jp": "松ヶ森",
+      "pattern": "1"
+    },
+    {
+      "town": "松陰",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松陰",
+      "jp": "松陰",
+      "pattern": "1"
+    },
+    {
+      "town": "松尾",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松尾",
+      "jp": "松尾",
+      "pattern": "1"
+    },
+    {
+      "town": "菖蒲台",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "菖蒲台",
+      "jp": "菖蒲台",
+      "pattern": "1"
+    },
+    {
+      "town": "上安",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上安",
+      "jp": "上安",
+      "pattern": "1"
+    },
+    {
+      "town": "上安久",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上安久",
+      "jp": "上安久",
+      "pattern": "1"
+    },
+    {
+      "town": "上垣",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上垣",
+      "jp": "上垣",
+      "pattern": "1"
+    },
+    {
+      "town": "上九丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上九丁目",
+      "jp": "上九丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "上根",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上根",
+      "jp": "上根",
+      "pattern": "1"
+    },
+    {
+      "town": "上漆原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上漆原",
+      "jp": "上漆原",
+      "pattern": "1"
+    },
+    {
+      "town": "上若宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上若宮",
+      "jp": "上若宮",
+      "pattern": "1"
+    },
+    {
+      "town": "上村",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上村",
+      "jp": "上村",
+      "pattern": "1"
+    },
+    {
+      "town": "上東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上東",
+      "jp": "上東",
+      "pattern": "1"
+    },
+    {
+      "town": "上福井",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上福井",
+      "jp": "上福井",
+      "pattern": "1"
+    },
+    {
+      "town": "上明富",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上明富",
+      "jp": "上明富",
+      "pattern": "1"
+    },
+    {
+      "town": "城屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城屋",
+      "jp": "城屋",
+      "pattern": "1"
+    },
+    {
+      "town": "城東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城東",
+      "jp": "城東",
+      "pattern": "1"
+    },
+    {
+      "town": "城南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南",
+      "jp": "城南",
+      "pattern": "1"
+    },
+    {
+      "town": "常",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常",
+      "jp": "常",
+      "pattern": "1"
+    },
+    {
+      "town": "常口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常口",
+      "jp": "常口",
+      "pattern": "1"
+    },
+    {
+      "town": "常桜町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常桜町",
+      "jp": "常桜町",
+      "pattern": "1"
+    },
+    {
+      "town": "常府営",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常府営",
+      "jp": "常府営",
+      "pattern": "1"
+    },
+    {
+      "town": "職人",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "職人",
+      "jp": "職人",
+      "pattern": "1"
+    },
+    {
+      "town": "新",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新",
+      "jp": "新",
+      "pattern": "1"
+    },
+    {
+      "town": "新生",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新生",
+      "jp": "新生",
+      "pattern": "1"
+    },
+    {
+      "town": "森宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森宮",
+      "jp": "森宮",
+      "pattern": "1"
+    },
+    {
+      "town": "森駒ヶ谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森駒ヶ谷",
+      "jp": "森駒ヶ谷",
+      "pattern": "1"
+    },
+    {
+      "town": "森口",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森口",
+      "jp": "森口",
+      "pattern": "1"
+    },
+    {
+      "town": "森三本木",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森三本木",
+      "jp": "森三本木",
+      "pattern": "1"
+    },
+    {
+      "town": "森大和",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森大和",
+      "jp": "森大和",
+      "pattern": "1"
+    },
+    {
+      "town": "森日の出",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森日の出",
+      "jp": "森日の出",
+      "pattern": "1"
+    },
+    {
+      "town": "深田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "深田",
+      "jp": "深田",
+      "pattern": "1"
+    },
+    {
+      "town": "真倉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真倉",
+      "jp": "真倉",
+      "pattern": "1"
+    },
+    {
+      "town": "真壁",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真壁",
+      "jp": "真壁",
+      "pattern": "1"
+    },
+    {
+      "town": "真名井",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真名井",
+      "jp": "真名井",
+      "pattern": "1"
+    },
+    {
+      "town": "水間",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水間",
+      "jp": "水間",
+      "pattern": "1"
+    },
+    {
+      "town": "水間下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水間下",
+      "jp": "水間下",
+      "pattern": "1"
+    },
+    {
+      "town": "杉山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉山",
+      "jp": "杉山",
+      "pattern": "1"
+    },
+    {
+      "town": "瀬崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "瀬崎",
+      "jp": "瀬崎",
+      "pattern": "1"
+    },
+    {
+      "town": "成生",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成生",
+      "jp": "成生",
+      "pattern": "1"
+    },
+    {
+      "town": "星和",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "星和",
+      "jp": "星和",
+      "pattern": "1"
+    },
+    {
+      "town": "正巳",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "正巳",
+      "jp": "正巳",
+      "pattern": "1"
+    },
+    {
+      "town": "清道",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "清道",
+      "jp": "清道",
+      "pattern": "1"
+    },
+    {
+      "town": "西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西",
+      "jp": "西",
+      "pattern": "1"
+    },
+    {
+      "town": "西屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西屋",
+      "jp": "西屋",
+      "pattern": "1"
+    },
+    {
+      "town": "西吉原第一",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西吉原第一",
+      "jp": "西吉原第一",
+      "pattern": "1"
+    },
+    {
+      "town": "西吉原第三",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西吉原第三",
+      "jp": "西吉原第三",
+      "pattern": "1"
+    },
+    {
+      "town": "西吉原第二",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西吉原第二",
+      "jp": "西吉原第二",
+      "pattern": "1"
+    },
+    {
+      "town": "西元町１丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西元町１丁目",
+      "jp": "西元町１丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西元町２丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西元町２丁目",
+      "jp": "西元町２丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西若宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西若宮",
+      "jp": "西若宮",
+      "pattern": "1"
+    },
+    {
+      "town": "西昭和",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西昭和",
+      "jp": "西昭和",
+      "pattern": "1"
+    },
+    {
+      "town": "西神崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西神崎",
+      "jp": "西神崎",
+      "pattern": "1"
+    },
+    {
+      "town": "西浜南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西浜南",
+      "jp": "西浜南",
+      "pattern": "1"
+    },
+    {
+      "town": "西浜北",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西浜北",
+      "jp": "西浜北",
+      "pattern": "1"
+    },
+    {
+      "town": "西敷島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西敷島",
+      "jp": "西敷島",
+      "pattern": "1"
+    },
+    {
+      "town": "西浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西浮島",
+      "jp": "西浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "西舞鶴合同宿舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西舞鶴合同宿舎",
+      "jp": "西舞鶴合同宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "西方寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西方寺",
+      "jp": "西方寺",
+      "pattern": "1"
+    },
+    {
+      "town": "西門一丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西門一丁目",
+      "jp": "西門一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西門二丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西門二丁目",
+      "jp": "西門二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "青井",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "青井",
+      "jp": "青井",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "青葉",
+      "jp": "青葉",
+      "pattern": "1"
+    },
+    {
+      "town": "赤野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤野",
+      "jp": "赤野",
+      "pattern": "1"
+    },
+    {
+      "town": "折原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "折原",
+      "jp": "折原",
+      "pattern": "1"
+    },
+    {
+      "town": "千歳",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千歳",
+      "jp": "千歳",
+      "pattern": "1"
+    },
+    {
+      "town": "川西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川西",
+      "jp": "川西",
+      "pattern": "1"
+    },
+    {
+      "town": "泉源寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "泉源寺",
+      "jp": "泉源寺",
+      "pattern": "1"
+    },
+    {
+      "town": "泉源寺新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "泉源寺新町",
+      "jp": "泉源寺新町",
+      "pattern": "1"
+    },
+    {
+      "town": "双葉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "双葉",
+      "jp": "双葉",
+      "pattern": "1"
+    },
+    {
+      "town": "倉谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "倉谷",
+      "jp": "倉谷",
+      "pattern": "1"
+    },
+    {
+      "town": "倉谷西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "倉谷西",
+      "jp": "倉谷西",
+      "pattern": "1"
+    },
+    {
+      "town": "倉谷東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "倉谷東",
+      "jp": "倉谷東",
+      "pattern": "1"
+    },
+    {
+      "town": "相生",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "相生",
+      "jp": "相生",
+      "pattern": "1"
+    },
+    {
+      "town": "多祢寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "多祢寺",
+      "jp": "多祢寺",
+      "pattern": "1"
+    },
+    {
+      "town": "多門院",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "多門院",
+      "jp": "多門院",
+      "pattern": "1"
+    },
+    {
+      "town": "大宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大宮",
+      "jp": "大宮",
+      "pattern": "1"
+    },
+    {
+      "town": "大君",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大君",
+      "jp": "大君",
+      "pattern": "1"
+    },
+    {
+      "town": "大山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "1"
+    },
+    {
+      "town": "大森",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大森",
+      "jp": "大森",
+      "pattern": "1"
+    },
+    {
+      "town": "大森海岸",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大森海岸",
+      "jp": "大森海岸",
+      "pattern": "1"
+    },
+    {
+      "town": "大川",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大川",
+      "jp": "大川",
+      "pattern": "1"
+    },
+    {
+      "town": "大丹生",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大丹生",
+      "jp": "大丹生",
+      "pattern": "1"
+    },
+    {
+      "town": "大田野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大田野",
+      "jp": "大田野",
+      "pattern": "1"
+    },
+    {
+      "town": "大内",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大内",
+      "jp": "大内",
+      "pattern": "1"
+    },
+    {
+      "town": "大内南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大内南",
+      "jp": "大内南",
+      "pattern": "1"
+    },
+    {
+      "town": "大内野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大内野",
+      "jp": "大内野",
+      "pattern": "1"
+    },
+    {
+      "town": "大波下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大波下",
+      "jp": "大波下",
+      "pattern": "1"
+    },
+    {
+      "town": "大波上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大波上",
+      "jp": "大波上",
+      "pattern": "1"
+    },
+    {
+      "town": "大迫新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大迫新町",
+      "jp": "大迫新町",
+      "pattern": "1"
+    },
+    {
+      "town": "大迫団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大迫団地",
+      "jp": "大迫団地",
+      "pattern": "1"
+    },
+    {
+      "town": "大俣",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大俣",
+      "jp": "大俣",
+      "pattern": "1"
+    },
+    {
+      "town": "大門西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大門西",
+      "jp": "大門西",
+      "pattern": "1"
+    },
+    {
+      "town": "大野辺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野辺",
+      "jp": "大野辺",
+      "pattern": "1"
+    },
+    {
+      "town": "滝ヶ宇呂",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滝ヶ宇呂",
+      "jp": "滝ヶ宇呂",
+      "pattern": "1"
+    },
+    {
+      "town": "滝ヶ花",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滝ヶ花",
+      "jp": "滝ヶ花",
+      "pattern": "1"
+    },
+    {
+      "town": "丹波",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "丹波",
+      "jp": "丹波",
+      "pattern": "1"
+    },
+    {
+      "town": "地頭",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "地頭",
+      "jp": "地頭",
+      "pattern": "1"
+    },
+    {
+      "town": "池ノ内下",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "池ノ内下",
+      "jp": "池ノ内下",
+      "pattern": "1"
+    },
+    {
+      "town": "築地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "築地",
+      "jp": "築地",
+      "pattern": "1"
+    },
+    {
+      "town": "竹屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "竹屋",
+      "jp": "竹屋",
+      "pattern": "1"
+    },
+    {
+      "town": "竹道",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "竹道",
+      "jp": "竹道",
+      "pattern": "1"
+    },
+    {
+      "town": "中の脇",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中の脇",
+      "jp": "中の脇",
+      "pattern": "1"
+    },
+    {
+      "town": "中引土",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中引土",
+      "jp": "中引土",
+      "pattern": "1"
+    },
+    {
+      "town": "中山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中山",
+      "jp": "中山",
+      "pattern": "1"
+    },
+    {
+      "town": "中若宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中若宮",
+      "jp": "中若宮",
+      "pattern": "1"
+    },
+    {
+      "town": "中田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中田",
+      "jp": "中田",
+      "pattern": "1"
+    },
+    {
+      "town": "中田下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中田下",
+      "jp": "中田下",
+      "pattern": "1"
+    },
+    {
+      "town": "中浜一",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浜一",
+      "jp": "中浜一",
+      "pattern": "1"
+    },
+    {
+      "town": "中浜五",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浜五",
+      "jp": "中浜五",
+      "pattern": "1"
+    },
+    {
+      "town": "中浜三",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浜三",
+      "jp": "中浜三",
+      "pattern": "1"
+    },
+    {
+      "town": "中浜四",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浜四",
+      "jp": "中浜四",
+      "pattern": "1"
+    },
+    {
+      "town": "中浜二",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浜二",
+      "jp": "中浜二",
+      "pattern": "1"
+    },
+    {
+      "town": "中敷島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中敷島",
+      "jp": "中敷島",
+      "pattern": "1"
+    },
+    {
+      "town": "中浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中浮島",
+      "jp": "中浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "中舞鶴宿舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中舞鶴宿舎",
+      "jp": "中舞鶴宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "朝代",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝代",
+      "jp": "朝代",
+      "pattern": "1"
+    },
+    {
+      "town": "朝来新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝来新町",
+      "jp": "朝来新町",
+      "pattern": "1"
+    },
+    {
+      "town": "朝来西宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝来西宮",
+      "jp": "朝来西宮",
+      "pattern": "1"
+    },
+    {
+      "town": "朝来中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝来中",
+      "jp": "朝来中",
+      "pattern": "1"
+    },
+    {
+      "town": "朝来八田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝来八田",
+      "jp": "朝来八田",
+      "pattern": "1"
+    },
+    {
+      "town": "長谷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長谷",
+      "jp": "長谷",
+      "pattern": "1"
+    },
+    {
+      "town": "長浜",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長浜",
+      "jp": "長浜",
+      "pattern": "1"
+    },
+    {
+      "town": "天台",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "天台",
+      "jp": "天台",
+      "pattern": "1"
+    },
+    {
+      "town": "天台団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "天台団地",
+      "jp": "天台団地",
+      "pattern": "1"
+    },
+    {
+      "town": "田井",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田井",
+      "jp": "田井",
+      "pattern": "1"
+    },
+    {
+      "town": "田中西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田中西",
+      "jp": "田中西",
+      "pattern": "1"
+    },
+    {
+      "town": "田中中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田中中",
+      "jp": "田中中",
+      "pattern": "1"
+    },
+    {
+      "town": "田中東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田中東",
+      "jp": "田中東",
+      "pattern": "1"
+    },
+    {
+      "town": "登尾",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "登尾",
+      "jp": "登尾",
+      "pattern": "1"
+    },
+    {
+      "town": "島崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島崎",
+      "jp": "島崎",
+      "pattern": "1"
+    },
+    {
+      "town": "東引土",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東引土",
+      "jp": "東引土",
+      "pattern": "1"
+    },
+    {
+      "town": "東吉原第一",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東吉原第一",
+      "jp": "東吉原第一",
+      "pattern": "1"
+    },
+    {
+      "town": "東吉原第三",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東吉原第三",
+      "jp": "東吉原第三",
+      "pattern": "1"
+    },
+    {
+      "town": "東吉原第四",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東吉原第四",
+      "jp": "東吉原第四",
+      "pattern": "1"
+    },
+    {
+      "town": "東吉原第二",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東吉原第二",
+      "jp": "東吉原第二",
+      "pattern": "1"
+    },
+    {
+      "town": "東元町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東元町",
+      "jp": "東元町",
+      "pattern": "1"
+    },
+    {
+      "town": "東幸野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東幸野",
+      "jp": "東幸野",
+      "pattern": "1"
+    },
+    {
+      "town": "東若宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東若宮",
+      "jp": "東若宮",
+      "pattern": "1"
+    },
+    {
+      "town": "東昭和",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東昭和",
+      "jp": "東昭和",
+      "pattern": "1"
+    },
+    {
+      "town": "東神崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東神崎",
+      "jp": "東神崎",
+      "pattern": "1"
+    },
+    {
+      "town": "東田辺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東田辺",
+      "jp": "東田辺",
+      "pattern": "1"
+    },
+    {
+      "town": "東浜",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東浜",
+      "jp": "東浜",
+      "pattern": "1"
+    },
+    {
+      "town": "東浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東浮島",
+      "jp": "東浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "東門西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東門西",
+      "jp": "東門西",
+      "pattern": "1"
+    },
+    {
+      "town": "東門東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東門東",
+      "jp": "東門東",
+      "pattern": "1"
+    },
+    {
+      "town": "桃山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃山",
+      "jp": "桃山",
+      "pattern": "1"
+    },
+    {
+      "town": "堂奥",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堂奥",
+      "jp": "堂奥",
+      "pattern": "1"
+    },
+    {
+      "town": "道芝",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道芝",
+      "jp": "道芝",
+      "pattern": "1"
+    },
+    {
+      "town": "栃尾",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "栃尾",
+      "jp": "栃尾",
+      "pattern": "1"
+    },
+    {
+      "town": "南上安",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南上安",
+      "jp": "南上安",
+      "pattern": "1"
+    },
+    {
+      "town": "南田辺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南田辺",
+      "jp": "南田辺",
+      "pattern": "1"
+    },
+    {
+      "town": "南浜元町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南浜元町",
+      "jp": "南浜元町",
+      "pattern": "1"
+    },
+    {
+      "town": "南浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南浮島",
+      "jp": "南浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "二の丸",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二の丸",
+      "jp": "二の丸",
+      "pattern": "1"
+    },
+    {
+      "town": "匂崎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "匂崎",
+      "jp": "匂崎",
+      "pattern": "1"
+    },
+    {
+      "town": "日の出団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日の出団地",
+      "jp": "日の出団地",
+      "pattern": "1"
+    },
+    {
+      "town": "白屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白屋",
+      "jp": "白屋",
+      "pattern": "1"
+    },
+    {
+      "town": "白糸西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白糸西",
+      "jp": "白糸西",
+      "pattern": "1"
+    },
+    {
+      "town": "白糸大門",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白糸大門",
+      "jp": "白糸大門",
+      "pattern": "1"
+    },
+    {
+      "town": "白糸中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白糸中",
+      "jp": "白糸中",
+      "pattern": "1"
+    },
+    {
+      "town": "白糸東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白糸東",
+      "jp": "白糸東",
+      "pattern": "1"
+    },
+    {
+      "town": "白杉",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白杉",
+      "jp": "白杉",
+      "pattern": "1"
+    },
+    {
+      "town": "白滝",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白滝",
+      "jp": "白滝",
+      "pattern": "1"
+    },
+    {
+      "town": "白鳥団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白鳥団地",
+      "jp": "白鳥団地",
+      "pattern": "1"
+    },
+    {
+      "town": "八戸地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八戸地",
+      "jp": "八戸地",
+      "pattern": "1"
+    },
+    {
+      "town": "八田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八田",
+      "jp": "八田",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡",
+      "jp": "八幡",
+      "pattern": "1"
+    },
+    {
+      "town": "八反田南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八反田南",
+      "jp": "八反田南",
+      "pattern": "1"
+    },
+    {
+      "town": "八反田北",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八反田北",
+      "jp": "八反田北",
+      "pattern": "1"
+    },
+    {
+      "town": "浜",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "浜",
+      "jp": "浜",
+      "pattern": "1"
+    },
+    {
+      "town": "富室",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富室",
+      "jp": "富室",
+      "pattern": "1"
+    },
+    {
+      "town": "布敷",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "布敷",
+      "jp": "布敷",
+      "pattern": "1"
+    },
+    {
+      "town": "府営住宅市場団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "府営住宅市場団地",
+      "jp": "府営住宅市場団地",
+      "pattern": "1"
+    },
+    {
+      "town": "扶桑",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "扶桑",
+      "jp": "扶桑",
+      "pattern": "1"
+    },
+    {
+      "town": "敷島・東敷島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "敷島・東敷島",
+      "jp": "敷島・東敷島",
+      "pattern": "1"
+    },
+    {
+      "town": "敷野",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "敷野",
+      "jp": "敷野",
+      "pattern": "1"
+    },
+    {
+      "town": "舞引土",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "舞引土",
+      "jp": "舞引土",
+      "pattern": "1"
+    },
+    {
+      "town": "福来西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福来西",
+      "jp": "福来西",
+      "pattern": "1"
+    },
+    {
+      "town": "福来団地",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福来団地",
+      "jp": "福来団地",
+      "pattern": "1"
+    },
+    {
+      "town": "福来中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福来中",
+      "jp": "福来中",
+      "pattern": "1"
+    },
+    {
+      "town": "福来東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福来東",
+      "jp": "福来東",
+      "pattern": "1"
+    },
+    {
+      "town": "平",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平",
+      "jp": "平",
+      "pattern": "1"
+    },
+    {
+      "town": "平野屋",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平野屋",
+      "jp": "平野屋",
+      "pattern": "1"
+    },
+    {
+      "town": "別所",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "別所",
+      "jp": "別所",
+      "pattern": "1"
+    },
+    {
+      "town": "片山",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "片山",
+      "jp": "片山",
+      "pattern": "1"
+    },
+    {
+      "town": "片山新町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "片山新町",
+      "jp": "片山新町",
+      "pattern": "1"
+    },
+    {
+      "town": "片山南",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "片山南",
+      "jp": "片山南",
+      "pattern": "1"
+    },
+    {
+      "town": "北吸官舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北吸官舎",
+      "jp": "北吸官舎",
+      "pattern": "1"
+    },
+    {
+      "town": "北吸上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北吸上",
+      "jp": "北吸上",
+      "pattern": "1"
+    },
+    {
+      "town": "北吸中",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北吸中",
+      "jp": "北吸中",
+      "pattern": "1"
+    },
+    {
+      "town": "北吸東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北吸東",
+      "jp": "北吸東",
+      "pattern": "1"
+    },
+    {
+      "town": "北田辺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北田辺",
+      "jp": "北田辺",
+      "pattern": "1"
+    },
+    {
+      "town": "北浜中町",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北浜中町",
+      "jp": "北浜中町",
+      "pattern": "1"
+    },
+    {
+      "town": "北浮島",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北浮島",
+      "jp": "北浮島",
+      "pattern": "1"
+    },
+    {
+      "town": "堀",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀",
+      "jp": "堀",
+      "pattern": "1"
+    },
+    {
+      "town": "堀上",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀上",
+      "jp": "堀上",
+      "pattern": "1"
+    },
+    {
+      "town": "本",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本",
+      "jp": "本",
+      "pattern": "1"
+    },
+    {
+      "town": "本町３丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本町３丁目",
+      "jp": "本町３丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "本町４丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本町４丁目",
+      "jp": "本町４丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "本町５丁目",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本町５丁目",
+      "jp": "本町５丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "万願寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "万願寺",
+      "jp": "万願寺",
+      "pattern": "1"
+    },
+    {
+      "town": "明富下",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "明富下",
+      "jp": "明富下",
+      "pattern": "1"
+    },
+    {
+      "town": "木ノ下",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "木ノ下",
+      "jp": "木ノ下",
+      "pattern": "1"
+    },
+    {
+      "town": "野原",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野原",
+      "jp": "野原",
+      "pattern": "1"
+    },
+    {
+      "town": "野村寺",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野村寺",
+      "jp": "野村寺",
+      "pattern": "1"
+    },
+    {
+      "town": "矢之助西",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢之助西",
+      "jp": "矢之助西",
+      "pattern": "1"
+    },
+    {
+      "town": "矢之助東",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢之助東",
+      "jp": "矢之助東",
+      "pattern": "1"
+    },
+    {
+      "town": "油江",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "油江",
+      "jp": "油江",
+      "pattern": "1"
+    },
+    {
+      "town": "余部合同宿舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "余部合同宿舎",
+      "jp": "余部合同宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "余部宿舎",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "余部宿舎",
+      "jp": "余部宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "余部宿舎A7",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "余部宿舎A7",
+      "jp": "余部宿舎A7",
+      "pattern": "1"
+    },
+    {
+      "town": "与保呂",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "与保呂",
+      "jp": "与保呂",
+      "pattern": "1"
+    },
+    {
+      "town": "竜宮",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "竜宮",
+      "jp": "竜宮",
+      "pattern": "1"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑が丘",
+      "jp": "緑が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "和江",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和江",
+      "jp": "和江",
+      "pattern": "1"
+    },
+    {
+      "town": "和田",
+      "townEn": "Maizuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和田",
+      "jp": "和田",
+      "pattern": "1"
+    },
+    {
+      "town": "朝来西町",
+      "townEn": "Asekunishimachi",
+      "kana": "アセクニシマチ",
+      "chome": null,
+      "detail": "朝来西町府営",
+      "en": "朝来西町府営",
+      "jp": "朝来西町府営",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕中町",
+      "townEn": "Atago Nakamachi",
+      "kana": "アタゴナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "愛宕中町",
+      "jp": "愛宕中町",
+      "pattern": "1"
+    },
+    {
+      "town": "上安東町",
+      "townEn": "Ueyasuhigashimachi",
+      "kana": "ウエヤスヒガシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "上安東町",
+      "jp": "上安東町",
+      "pattern": "1"
+    },
+    {
+      "town": "京田新町",
+      "townEn": "Kyodashimmachi",
+      "kana": "キョウダシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "京田新町",
+      "jp": "京田新町",
+      "pattern": "1"
+    },
+    {
+      "town": "清美が丘",
+      "townEn": "Kiyomigaoka",
+      "kana": "キヨミガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "清美が丘",
+      "jp": "清美が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "昭和台",
+      "townEn": "Showadai",
+      "kana": "ショウワダイ",
+      "chome": null,
+      "detail": null,
+      "en": "昭和台",
+      "jp": "昭和台",
+      "pattern": "1"
+    },
+    {
+      "town": "白浜台",
+      "townEn": "Shirahamadai",
+      "kana": "シラハマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "白浜台",
+      "jp": "白浜台",
+      "pattern": "1"
+    },
+    {
+      "town": "高野台",
+      "townEn": "Takanodai",
+      "kana": "タカノダイ",
+      "chome": null,
+      "detail": null,
+      "en": "高野台",
+      "jp": "高野台",
+      "pattern": "1"
+    },
+    {
+      "town": "田園町",
+      "townEn": "Denencho",
+      "kana": "デンエンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "田園町",
+      "jp": "田園町",
+      "pattern": "1"
+    },
+    {
+      "town": "女布北町",
+      "townEn": "Nyo Kitamachi",
+      "kana": "ニョウキタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "女布北町",
+      "jp": "女布北町",
+      "pattern": "1"
+    },
+    {
+      "town": "丸山中町",
+      "townEn": "Maruyama Nakamachi",
+      "kana": "マルヤマナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "丸山中町",
+      "jp": "丸山中町",
+      "pattern": "1"
+    },
+    {
+      "town": "丸山西町",
+      "townEn": "Maruyama Nishimachi",
+      "kana": "マルヤマニシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "丸山西町",
+      "jp": "丸山西町",
+      "pattern": "1"
+    },
+    {
+      "town": "溝尻中町",
+      "townEn": "Mizoshirinakamachi",
+      "kana": "ミゾシリナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "溝尻中町",
+      "jp": "溝尻中町",
+      "pattern": "1"
+    },
+    {
+      "town": "溝尻中町",
+      "townEn": "Mizoshirinakamachi",
+      "kana": "ミゾシリナカマチ",
+      "chome": null,
+      "detail": "溝尻中町南",
+      "en": "溝尻中町南",
+      "jp": "溝尻中町南",
+      "pattern": "1"
+    },
+    {
+      "town": "行永桜通り",
+      "townEn": "Yukinagasakuradori",
+      "kana": "ユキナガサクラドオリ",
+      "chome": null,
+      "detail": null,
+      "en": "行永桜通り",
+      "jp": "行永桜通り",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://maizuru.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

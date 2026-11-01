@@ -1,0 +1,1614 @@
+{
+  "id": "toyama-city",
+  "code": "16201",
+  "pref": "16",
+  "jp": "富山市",
+  "en": "Toyama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://toyama.5374.jp/data/area_days.csv",
+    "http://toyama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 5,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 4,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "カーボン2区",
+      "townEn": "Kabon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "カーボン2区",
+      "jp": "カーボン2区",
+      "pattern": "3"
+    },
+    {
+      "town": "安野屋",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "安野屋",
+      "jp": "安野屋",
+      "pattern": "1"
+    },
+    {
+      "town": "卯花地区(角間・梅苑町)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "卯花地区(角間・梅苑町)",
+      "jp": "卯花地区(角間・梅苑町)",
+      "pattern": "3"
+    },
+    {
+      "town": "卯花地区(角間・梅苑町を除く)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "卯花地区(角間・梅苑町を除く)",
+      "jp": "卯花地区(角間・梅苑町を除く)",
+      "pattern": "4"
+    },
+    {
+      "town": "鵜坂",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鵜坂",
+      "jp": "鵜坂",
+      "pattern": "2"
+    },
+    {
+      "town": "荻浦",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "荻浦",
+      "jp": "荻浦",
+      "pattern": "1"
+    },
+    {
+      "town": "音川",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "音川",
+      "jp": "音川",
+      "pattern": "2"
+    },
+    {
+      "town": "下夕地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下夕地区",
+      "jp": "下夕地区",
+      "pattern": "5"
+    },
+    {
+      "town": "寒江",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寒江",
+      "jp": "寒江",
+      "pattern": "2"
+    },
+    {
+      "town": "岩瀬",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩瀬",
+      "jp": "岩瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "宮川",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮川",
+      "jp": "宮川",
+      "pattern": "1"
+    },
+    {
+      "town": "牛ヶ増",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛ヶ増",
+      "jp": "牛ヶ増",
+      "pattern": "3"
+    },
+    {
+      "town": "熊野",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "熊野",
+      "jp": "熊野",
+      "pattern": "1"
+    },
+    {
+      "town": "月岡",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "月岡",
+      "jp": "月岡",
+      "pattern": "1"
+    },
+    {
+      "town": "古里",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古里",
+      "jp": "古里",
+      "pattern": "2"
+    },
+    {
+      "town": "呉羽",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "呉羽",
+      "jp": "呉羽",
+      "pattern": "2"
+    },
+    {
+      "town": "光陽",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "光陽",
+      "jp": "光陽",
+      "pattern": "1"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "幸町",
+      "jp": "幸町",
+      "pattern": "3"
+    },
+    {
+      "town": "広田",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広田",
+      "jp": "広田",
+      "pattern": "2"
+    },
+    {
+      "town": "細入地域",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "細入地域",
+      "jp": "細入地域",
+      "pattern": "3"
+    },
+    {
+      "town": "桜谷",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜谷",
+      "jp": "桜谷",
+      "pattern": "1"
+    },
+    {
+      "town": "三郷",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三郷",
+      "jp": "三郷",
+      "pattern": "2"
+    },
+    {
+      "town": "山田地域",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田地域",
+      "jp": "山田地域",
+      "pattern": "3"
+    },
+    {
+      "town": "室牧地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "室牧地区",
+      "jp": "室牧地区",
+      "pattern": "3"
+    },
+    {
+      "town": "若草町",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若草町",
+      "jp": "若草町",
+      "pattern": "4"
+    },
+    {
+      "town": "上条",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上条",
+      "jp": "上条",
+      "pattern": "2"
+    },
+    {
+      "town": "新庄",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新庄",
+      "jp": "新庄",
+      "pattern": "6"
+    },
+    {
+      "town": "新庄北",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新庄北",
+      "jp": "新庄北",
+      "pattern": "6"
+    },
+    {
+      "town": "神保",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神保",
+      "jp": "神保",
+      "pattern": "2"
+    },
+    {
+      "town": "神明",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神明",
+      "jp": "神明",
+      "pattern": "1"
+    },
+    {
+      "town": "針原",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "針原",
+      "jp": "針原",
+      "pattern": "7"
+    },
+    {
+      "town": "仁歩地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仁歩地区",
+      "jp": "仁歩地区",
+      "pattern": "4"
+    },
+    {
+      "town": "水橋西部",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水橋西部",
+      "jp": "水橋西部",
+      "pattern": "2"
+    },
+    {
+      "town": "水橋中部",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水橋中部",
+      "jp": "水橋中部",
+      "pattern": "2"
+    },
+    {
+      "town": "水橋東部",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水橋東部",
+      "jp": "水橋東部",
+      "pattern": "2"
+    },
+    {
+      "town": "杉原地区(井田・上井田・上井田新)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉原地区(井田・上井田・上井田新)",
+      "jp": "杉原地区(井田・上井田・上井田新)",
+      "pattern": "3"
+    },
+    {
+      "town": "杉原地区(井田・上井田・上井田新を除く)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉原地区(井田・上井田・上井田新を除く)",
+      "jp": "杉原地区(井田・上井田・上井田新を除く)",
+      "pattern": "4"
+    },
+    {
+      "town": "船峅地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船峅地区",
+      "jp": "船峅地区",
+      "pattern": "3"
+    },
+    {
+      "town": "倉垣",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "倉垣",
+      "jp": "倉垣",
+      "pattern": "1"
+    },
+    {
+      "town": "速星",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "速星",
+      "jp": "速星",
+      "pattern": "1"
+    },
+    {
+      "town": "大久保新町",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大久保新町",
+      "jp": "大久保新町",
+      "pattern": "4"
+    },
+    {
+      "town": "大広田",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大広田",
+      "jp": "大広田",
+      "pattern": "1"
+    },
+    {
+      "town": "大山地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大山地区",
+      "jp": "大山地区",
+      "pattern": "3"
+    },
+    {
+      "town": "大庄地区(花崎・上大浦・中大浦・下大浦を除く)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大庄地区(花崎・上大浦・中大浦・下大浦を除く)",
+      "jp": "大庄地区(花崎・上大浦・中大浦・下大浦を除く)",
+      "pattern": "4"
+    },
+    {
+      "town": "大庄地区の一部(花崎・上大浦・中大浦・下大浦)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大庄地区の一部(花崎・上大浦・中大浦・下大浦)",
+      "jp": "大庄地区の一部(花崎・上大浦・中大浦・下大浦)",
+      "pattern": "3"
+    },
+    {
+      "town": "大長谷地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大長谷地区",
+      "jp": "大長谷地区",
+      "pattern": "3"
+    },
+    {
+      "town": "東部",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東部",
+      "jp": "東部",
+      "pattern": "2"
+    },
+    {
+      "town": "藤ノ木",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "藤ノ木",
+      "jp": "藤ノ木",
+      "pattern": "6"
+    },
+    {
+      "town": "南花園町",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南花園町",
+      "jp": "南花園町",
+      "pattern": "4"
+    },
+    {
+      "town": "萩浦",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萩浦",
+      "jp": "萩浦",
+      "pattern": "1"
+    },
+    {
+      "town": "八尾地区(上新町・諏訪町・西新町・東新町)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八尾地区(上新町・諏訪町・西新町・東新町)",
+      "jp": "八尾地区(上新町・諏訪町・西新町・東新町)",
+      "pattern": "4"
+    },
+    {
+      "town": "八尾地区(天満町・下新町・今町・東町・西町・鏡町・産業道路沿線)",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八尾地区(天満町・下新町・今町・東町・西町・鏡町・産業道路沿線)",
+      "jp": "八尾地区(天満町・下新町・今町・東町・西町・鏡町・産業道路沿線)",
+      "pattern": "3"
+    },
+    {
+      "town": "婦中熊野",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "婦中熊野",
+      "jp": "婦中熊野",
+      "pattern": "1"
+    },
+    {
+      "town": "福沢地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福沢地区",
+      "jp": "福沢地区",
+      "pattern": "4"
+    },
+    {
+      "town": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポ)",
+      "townEn": "Kopo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポ)",
+      "jp": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポ)",
+      "pattern": "4"
+    },
+    {
+      "town": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポを除く)",
+      "townEn": "Kopo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポを除く)",
+      "jp": "保内地区(福島・水谷望岳台・妙川寺市住・八尾コーポを除く)",
+      "pattern": "3"
+    },
+    {
+      "town": "野積地区",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野積地区",
+      "jp": "野積地区",
+      "pattern": "4"
+    },
+    {
+      "town": "老田",
+      "townEn": "Toyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老田",
+      "jp": "老田",
+      "pattern": "2"
+    },
+    {
+      "town": "朝日",
+      "townEn": "Asahi",
+      "kana": "アサヒ",
+      "chome": null,
+      "detail": null,
+      "en": "朝日",
+      "jp": "朝日",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕",
+      "townEn": "Atago",
+      "kana": "アタゴ",
+      "chome": null,
+      "detail": null,
+      "en": "愛宕",
+      "jp": "愛宕",
+      "pattern": "1"
+    },
+    {
+      "town": "池多",
+      "townEn": "Ikeda",
+      "kana": "イケダ",
+      "chome": null,
+      "detail": null,
+      "en": "池多",
+      "jp": "池多",
+      "pattern": "2"
+    },
+    {
+      "town": "稲代",
+      "townEn": "Inashiro",
+      "kana": "イナシロ",
+      "chome": null,
+      "detail": null,
+      "en": "稲代",
+      "jp": "稲代",
+      "pattern": "3"
+    },
+    {
+      "town": "岩木",
+      "townEn": "Iwaki",
+      "kana": "イワキ",
+      "chome": null,
+      "detail": null,
+      "en": "岩木",
+      "jp": "岩木",
+      "pattern": "4"
+    },
+    {
+      "town": "岩木新",
+      "townEn": "Iwakishin",
+      "kana": "イワキシン",
+      "chome": null,
+      "detail": null,
+      "en": "岩木新",
+      "jp": "岩木新",
+      "pattern": "4"
+    },
+    {
+      "town": "太田",
+      "townEn": "Ota",
+      "kana": "オオタ",
+      "chome": null,
+      "detail": null,
+      "en": "太田",
+      "jp": "太田",
+      "pattern": "1"
+    },
+    {
+      "town": "奥田",
+      "townEn": "Okuda",
+      "kana": "オクダ",
+      "chome": null,
+      "detail": null,
+      "en": "奥田",
+      "jp": "奥田",
+      "pattern": "2"
+    },
+    {
+      "town": "奥田",
+      "townEn": "Okuda",
+      "kana": "オクダ",
+      "chome": null,
+      "detail": "奥田北",
+      "en": "奥田北",
+      "jp": "奥田北",
+      "pattern": "2"
+    },
+    {
+      "town": "春日",
+      "townEn": "Kasuga",
+      "kana": "カスガ",
+      "chome": null,
+      "detail": "春日長走",
+      "en": "春日長走",
+      "jp": "春日長走",
+      "pattern": "3"
+    },
+    {
+      "town": "加納",
+      "townEn": "Kano",
+      "kana": "カノウ",
+      "chome": null,
+      "detail": null,
+      "en": "加納",
+      "jp": "加納",
+      "pattern": "4"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保1～４区",
+      "en": "上大久保1～４区",
+      "jp": "上大久保1～４区",
+      "pattern": "3"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保5～6区",
+      "en": "上大久保5～6区",
+      "jp": "上大久保5～6区",
+      "pattern": "4"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保栄町",
+      "en": "上大久保栄町",
+      "jp": "上大久保栄町",
+      "pattern": "3"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保泉町",
+      "en": "上大久保泉町",
+      "jp": "上大久保泉町",
+      "pattern": "4"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保東新町",
+      "en": "上大久保東新町",
+      "jp": "上大久保東新町",
+      "pattern": "3"
+    },
+    {
+      "town": "上大久保",
+      "townEn": "Kamiokubo",
+      "kana": "カミオオクボ",
+      "chome": null,
+      "detail": "上大久保北新町",
+      "en": "上大久保北新町",
+      "jp": "上大久保北新町",
+      "pattern": "3"
+    },
+    {
+      "town": "上滝",
+      "townEn": "Kamidaki",
+      "kana": "カミダキ",
+      "chome": null,
+      "detail": "上滝地区",
+      "en": "上滝地区",
+      "jp": "上滝地区",
+      "pattern": "3"
+    },
+    {
+      "town": "上二杉",
+      "townEn": "Kamifutasugi",
+      "kana": "カミフタスギ",
+      "chome": null,
+      "detail": null,
+      "en": "上二杉",
+      "jp": "上二杉",
+      "pattern": "4"
+    },
+    {
+      "town": "草島",
+      "townEn": "Kusajima",
+      "kana": "クサジマ",
+      "chome": null,
+      "detail": null,
+      "en": "草島",
+      "jp": "草島",
+      "pattern": "1"
+    },
+    {
+      "town": "黒瀬",
+      "townEn": "Kurose",
+      "kana": "クロセ",
+      "chome": null,
+      "detail": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀)",
+      "en": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀)",
+      "jp": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀)",
+      "pattern": "4"
+    },
+    {
+      "town": "黒瀬",
+      "townEn": "Kurose",
+      "kana": "クロセ",
+      "chome": null,
+      "detail": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀を除く)",
+      "en": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀を除く)",
+      "jp": "黒瀬谷地区(樫尾・岩屋・宮腰・外堀を除く)",
+      "pattern": "3"
+    },
+    {
+      "town": "合田",
+      "townEn": "Goda",
+      "kana": "ゴウダ",
+      "chome": null,
+      "detail": null,
+      "en": "合田",
+      "jp": "合田",
+      "pattern": "4"
+    },
+    {
+      "town": "小羽",
+      "townEn": "Koba",
+      "kana": "コバ",
+      "chome": null,
+      "detail": "小羽地区",
+      "en": "小羽地区",
+      "jp": "小羽地区",
+      "pattern": "5"
+    },
+    {
+      "town": "五番町",
+      "townEn": "Gobammachi",
+      "kana": "ゴバンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "五番町",
+      "jp": "五番町",
+      "pattern": "1"
+    },
+    {
+      "town": "五福",
+      "townEn": "Gofuku",
+      "kana": "ゴフク",
+      "chome": null,
+      "detail": null,
+      "en": "五福",
+      "jp": "五福",
+      "pattern": "1"
+    },
+    {
+      "town": "笹津",
+      "townEn": "Sasazu",
+      "kana": "ササヅ",
+      "chome": null,
+      "detail": null,
+      "en": "笹津",
+      "jp": "笹津",
+      "pattern": "3"
+    },
+    {
+      "town": "塩",
+      "townEn": "Shio",
+      "kana": "シオ",
+      "chome": null,
+      "detail": null,
+      "en": "塩",
+      "jp": "塩",
+      "pattern": "4"
+    },
+    {
+      "town": "下夕林",
+      "townEn": "Shitabayashi",
+      "kana": "シタバヤシ",
+      "chome": null,
+      "detail": null,
+      "en": "下夕林",
+      "jp": "下夕林",
+      "pattern": "3"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Shimizumachi",
+      "kana": "シミズマチ",
+      "chome": null,
+      "detail": null,
+      "en": "清水町",
+      "jp": "清水町",
+      "pattern": "1"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保1～3区",
+      "en": "下大久保1～3区",
+      "jp": "下大久保1～3区",
+      "pattern": "4"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保4～6区",
+      "en": "下大久保4～6区",
+      "jp": "下大久保4～6区",
+      "pattern": "4"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保若葉台",
+      "en": "下大久保若葉台",
+      "jp": "下大久保若葉台",
+      "pattern": "4"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保新町",
+      "en": "下大久保新町",
+      "jp": "下大久保新町",
+      "pattern": "4"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保東ケ丘",
+      "en": "下大久保東ケ丘",
+      "jp": "下大久保東ケ丘",
+      "pattern": "4"
+    },
+    {
+      "town": "下大久保",
+      "townEn": "Shimookubo",
+      "kana": "シモオオクボ",
+      "chome": null,
+      "detail": "下大久保緑町",
+      "en": "下大久保緑町",
+      "jp": "下大久保緑町",
+      "pattern": "4"
+    },
+    {
+      "town": "神通",
+      "townEn": "Jinzu",
+      "kana": "ジンヅウ",
+      "chome": null,
+      "detail": null,
+      "en": "神通",
+      "jp": "神通",
+      "pattern": "4"
+    },
+    {
+      "town": "新保",
+      "townEn": "Shimbo",
+      "kana": "シンボ",
+      "chome": null,
+      "detail": null,
+      "en": "新保",
+      "jp": "新保",
+      "pattern": "1"
+    },
+    {
+      "town": "新村",
+      "townEn": "Shimmura",
+      "kana": "シンムラ",
+      "chome": null,
+      "detail": null,
+      "en": "新村",
+      "jp": "新村",
+      "pattern": "4"
+    },
+    {
+      "town": "総曲輪",
+      "townEn": "Sogawa",
+      "kana": "ソウガワ",
+      "chome": null,
+      "detail": null,
+      "en": "総曲輪",
+      "jp": "総曲輪",
+      "pattern": "1"
+    },
+    {
+      "town": "高内",
+      "townEn": "Takauchi",
+      "kana": "タカウチ",
+      "chome": null,
+      "detail": "高内1区",
+      "en": "高内1区",
+      "jp": "高内1区",
+      "pattern": "3"
+    },
+    {
+      "town": "高内",
+      "townEn": "Takauchi",
+      "kana": "タカウチ",
+      "chome": null,
+      "detail": "高内2区",
+      "en": "高内2区",
+      "jp": "高内2区",
+      "pattern": "4"
+    },
+    {
+      "town": "豊田",
+      "townEn": "Toyota",
+      "kana": "トヨタ",
+      "chome": null,
+      "detail": null,
+      "en": "豊田",
+      "jp": "豊田",
+      "pattern": "2"
+    },
+    {
+      "town": "中大久保",
+      "townEn": "Nakaokubo",
+      "kana": "ナカオオクボ",
+      "chome": null,
+      "detail": null,
+      "en": "中大久保",
+      "jp": "中大久保",
+      "pattern": "4"
+    },
+    {
+      "town": "長岡",
+      "townEn": "Nagaoka",
+      "kana": "ナガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "長岡",
+      "jp": "長岡",
+      "pattern": "7"
+    },
+    {
+      "town": "長附",
+      "townEn": "Nagatsuki",
+      "kana": "ナガツキ",
+      "chome": null,
+      "detail": "長附全区",
+      "en": "長附全区",
+      "jp": "長附全区",
+      "pattern": "4"
+    },
+    {
+      "town": "西大沢",
+      "townEn": "Nishiosawa",
+      "kana": "ニシオオサワ",
+      "chome": null,
+      "detail": "西大沢全区",
+      "en": "西大沢全区",
+      "jp": "西大沢全区",
+      "pattern": "3"
+    },
+    {
+      "town": "西塩野",
+      "townEn": "Nishishiono",
+      "kana": "ニシシオノ",
+      "chome": null,
+      "detail": null,
+      "en": "西塩野",
+      "jp": "西塩野",
+      "pattern": "4"
+    },
+    {
+      "town": "西田地方",
+      "townEn": "Nishidenjigata",
+      "kana": "ニシデンヂガタ",
+      "chome": null,
+      "detail": null,
+      "en": "西田地方",
+      "jp": "西田地方",
+      "pattern": "1"
+    },
+    {
+      "town": "蜷川",
+      "townEn": "Ninagawa",
+      "kana": "ニナガワ",
+      "chome": null,
+      "detail": null,
+      "en": "蜷川",
+      "jp": "蜷川",
+      "pattern": "1"
+    },
+    {
+      "town": "八人町",
+      "townEn": "Hachinimmachi",
+      "kana": "ハチニンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "八人町",
+      "jp": "八人町",
+      "pattern": "1"
+    },
+    {
+      "town": "浜黒崎",
+      "townEn": "Hamakurosaki",
+      "kana": "ハマクロサキ",
+      "chome": null,
+      "detail": null,
+      "en": "浜黒崎",
+      "jp": "浜黒崎",
+      "pattern": "1"
+    },
+    {
+      "town": "東大久保",
+      "townEn": "Higashiokubo",
+      "kana": "ヒガシオオクボ",
+      "chome": null,
+      "detail": null,
+      "en": "東大久保",
+      "jp": "東大久保",
+      "pattern": "4"
+    },
+    {
+      "town": "古沢",
+      "townEn": "Furusawa",
+      "kana": "フルサワ",
+      "chome": null,
+      "detail": null,
+      "en": "古沢",
+      "jp": "古沢",
+      "pattern": "2"
+    },
+    {
+      "town": "星井町",
+      "townEn": "Hoshiicho",
+      "kana": "ホシイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "星井町",
+      "jp": "星井町",
+      "pattern": "1"
+    },
+    {
+      "town": "堀",
+      "townEn": "Hori",
+      "kana": "ホリ",
+      "chome": null,
+      "detail": "堀川",
+      "en": "堀川",
+      "jp": "堀川",
+      "pattern": "2"
+    },
+    {
+      "town": "堀",
+      "townEn": "Hori",
+      "kana": "ホリ",
+      "chome": null,
+      "detail": "堀川南",
+      "en": "堀川南",
+      "jp": "堀川南",
+      "pattern": "2"
+    },
+    {
+      "town": "八木山",
+      "townEn": "Yakiyama",
+      "kana": "ヤキヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "八木山",
+      "jp": "八木山",
+      "pattern": "3"
+    },
+    {
+      "town": "柳町",
+      "townEn": "Yanagimachi",
+      "kana": "ヤナギマチ",
+      "chome": null,
+      "detail": null,
+      "en": "柳町",
+      "jp": "柳町",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yahata",
+      "kana": "ヤハタ",
+      "chome": null,
+      "detail": null,
+      "en": "八幡",
+      "jp": "八幡",
+      "pattern": "1"
+    },
+    {
+      "town": "山室",
+      "townEn": "Yamamuro",
+      "kana": "ヤマムロ",
+      "chome": null,
+      "detail": null,
+      "en": "山室",
+      "jp": "山室",
+      "pattern": "2"
+    },
+    {
+      "town": "山室",
+      "townEn": "Yamamuro",
+      "kana": "ヤマムロ",
+      "chome": null,
+      "detail": "山室中部",
+      "en": "山室中部",
+      "jp": "山室中部",
+      "pattern": "2"
+    },
+    {
+      "town": "四方",
+      "townEn": "Yokata",
+      "kana": "ヨカタ",
+      "chome": null,
+      "detail": null,
+      "en": "四方",
+      "jp": "四方",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://toyama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

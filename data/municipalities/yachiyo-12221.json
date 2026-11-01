@@ -1,0 +1,763 @@
+{
+  "id": "yachiyo-12221",
+  "code": "12221",
+  "pref": "12",
+  "jp": "八千代市",
+  "en": "Yachiyo",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://yachiyo.5374.jp/data/area_days.csv",
+    "http://yachiyo.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "paper": [
+          1
+        ],
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          2
+        ],
+        "paper": [
+          6
+        ],
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          6
+        ],
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          5
+        ],
+        "paper": [
+          1
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "堀ノ内",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀ノ内",
+      "jp": "堀ノ内",
+      "pattern": "4"
+    },
+    {
+      "town": "神久保",
+      "townEn": "Imonokubo",
+      "kana": "イモノクボ",
+      "chome": null,
+      "detail": null,
+      "en": "神久保",
+      "jp": "神久保",
+      "pattern": "1"
+    },
+    {
+      "town": "大和田",
+      "townEn": "Owada",
+      "kana": "オオワダ",
+      "chome": null,
+      "detail": "大和田（成田街道南側）",
+      "en": "大和田（成田街道南側）",
+      "jp": "大和田（成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "大和田",
+      "townEn": "Owada",
+      "kana": "オオワダ",
+      "chome": null,
+      "detail": "大和田（成田街道北側から東葉高速線南側）",
+      "en": "大和田（成田街道北側から東葉高速線南側）",
+      "jp": "大和田（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（1～99番台の成田街道南側）",
+      "en": "大和田新田（1～99番台の成田街道南側）",
+      "jp": "大和田新田（1～99番台の成田街道南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（100・200番台の成田街道南側）",
+      "en": "大和田新田（100・200番台の成田街道南側）",
+      "jp": "大和田新田（100・200番台の成田街道南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "en": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "jp": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "en": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "jp": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（県道幕張八千代線より東側）",
+      "en": "大和田新田（県道幕張八千代線より東側）",
+      "jp": "大和田新田（県道幕張八千代線より東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "大和田新田",
+      "townEn": "Owadashinden",
+      "kana": "オオワダシンデン",
+      "chome": null,
+      "detail": "大和田新田（東葉高速線北側）",
+      "en": "大和田新田（東葉高速線北側）",
+      "jp": "大和田新田（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "尾崎",
+      "townEn": "Osaki",
+      "kana": "オサキ",
+      "chome": null,
+      "detail": null,
+      "en": "尾崎",
+      "jp": "尾崎",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田",
+      "townEn": "Katsuta",
+      "kana": "カツタ",
+      "chome": null,
+      "detail": null,
+      "en": "勝田",
+      "jp": "勝田",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田台",
+      "townEn": "Katsutadai",
+      "kana": "カツタダイ",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台",
+      "jp": "勝田台",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田台北",
+      "townEn": "Katsutadai Kita",
+      "kana": "カツタダイキタ",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台北",
+      "jp": "勝田台北",
+      "pattern": "4"
+    },
+    {
+      "town": "勝田台南",
+      "townEn": "Katsutadai Minami",
+      "kana": "カツタダイミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台南",
+      "jp": "勝田台南",
+      "pattern": "1"
+    },
+    {
+      "town": "神野",
+      "townEn": "Kano",
+      "kana": "カノ",
+      "chome": null,
+      "detail": null,
+      "en": "神野",
+      "jp": "神野",
+      "pattern": "4"
+    },
+    {
+      "town": "上高野",
+      "townEn": "Kamikoya",
+      "kana": "カミコウヤ",
+      "chome": null,
+      "detail": null,
+      "en": "上高野",
+      "jp": "上高野",
+      "pattern": "4"
+    },
+    {
+      "town": "萱田",
+      "townEn": "Kayada",
+      "kana": "カヤダ",
+      "chome": null,
+      "detail": "萱田（成田街道北側から東葉高速線南側）",
+      "en": "萱田（成田街道北側から東葉高速線南側）",
+      "jp": "萱田（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "萱田",
+      "townEn": "Kayada",
+      "kana": "カヤダ",
+      "chome": null,
+      "detail": "萱田（東葉高速線北側）",
+      "en": "萱田（東葉高速線北側）",
+      "jp": "萱田（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "萱田町",
+      "townEn": "Kayadamachi",
+      "kana": "カヤダマチ",
+      "chome": null,
+      "detail": "萱田町（成田街道南側）",
+      "en": "萱田町（成田街道南側）",
+      "jp": "萱田町（成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "萱田町",
+      "townEn": "Kayadamachi",
+      "kana": "カヤダマチ",
+      "chome": null,
+      "detail": "萱田町（成田街道北側から東葉高速線南側）",
+      "en": "萱田町（成田街道北側から東葉高速線南側）",
+      "jp": "萱田町（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "萱田町",
+      "townEn": "Kayadamachi",
+      "kana": "カヤダマチ",
+      "chome": null,
+      "detail": "萱田町（東葉高速線北側）",
+      "en": "萱田町（東葉高速線北側）",
+      "jp": "萱田町（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "桑納",
+      "townEn": "Kanno",
+      "kana": "カンノウ",
+      "chome": null,
+      "detail": null,
+      "en": "桑納",
+      "jp": "桑納",
+      "pattern": "1"
+    },
+    {
+      "town": "小池",
+      "townEn": "Koike",
+      "kana": "コイケ",
+      "chome": null,
+      "detail": null,
+      "en": "小池",
+      "jp": "小池",
+      "pattern": "1"
+    },
+    {
+      "town": "佐山",
+      "townEn": "Sayama",
+      "kana": "サヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "佐山",
+      "jp": "佐山",
+      "pattern": "1"
+    },
+    {
+      "town": "島田",
+      "townEn": "Shimada",
+      "kana": "シマダ",
+      "chome": null,
+      "detail": null,
+      "en": "島田",
+      "jp": "島田",
+      "pattern": "1"
+    },
+    {
+      "town": "島田台",
+      "townEn": "Shimadadai",
+      "kana": "シマダダイ",
+      "chome": null,
+      "detail": null,
+      "en": "島田台",
+      "jp": "島田台",
+      "pattern": "1"
+    },
+    {
+      "town": "下市場",
+      "townEn": "Shimoichiba",
+      "kana": "シモイチバ",
+      "chome": null,
+      "detail": null,
+      "en": "下市場",
+      "jp": "下市場",
+      "pattern": "4"
+    },
+    {
+      "town": "下高野",
+      "townEn": "Shimokoya",
+      "kana": "シモコウヤ",
+      "chome": null,
+      "detail": null,
+      "en": "下高野",
+      "jp": "下高野",
+      "pattern": "4"
+    },
+    {
+      "town": "桑橋",
+      "townEn": "Sonohashi",
+      "kana": "ソウノハシ",
+      "chome": null,
+      "detail": null,
+      "en": "桑橋",
+      "jp": "桑橋",
+      "pattern": "1"
+    },
+    {
+      "town": "大学町",
+      "townEn": "Daigakucho",
+      "kana": "ダイガクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "大学町",
+      "jp": "大学町",
+      "pattern": "1"
+    },
+    {
+      "town": "高津",
+      "townEn": "Takazu",
+      "kana": "タカヅ",
+      "chome": null,
+      "detail": "高津（県道幕張八千代線より西側）",
+      "en": "高津（県道幕張八千代線より西側）",
+      "jp": "高津（県道幕張八千代線より西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "高津",
+      "townEn": "Takazu",
+      "kana": "タカヅ",
+      "chome": null,
+      "detail": "高津（県道幕張八千代線より東側）",
+      "en": "高津（県道幕張八千代線より東側）",
+      "jp": "高津（県道幕張八千代線より東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "高津",
+      "townEn": "Takazu",
+      "kana": "タカヅ",
+      "chome": null,
+      "detail": "高津団地",
+      "en": "高津団地",
+      "jp": "高津団地",
+      "pattern": "2"
+    },
+    {
+      "town": "高津東",
+      "townEn": "Takazuhigashi",
+      "kana": "タカヅヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "高津東",
+      "jp": "高津東",
+      "pattern": "2"
+    },
+    {
+      "town": "平戸",
+      "townEn": "Hirato",
+      "kana": "ヒラド",
+      "chome": null,
+      "detail": null,
+      "en": "平戸",
+      "jp": "平戸",
+      "pattern": "1"
+    },
+    {
+      "town": "保品",
+      "townEn": "Hoshina",
+      "kana": "ホシナ",
+      "chome": null,
+      "detail": null,
+      "en": "保品",
+      "jp": "保品",
+      "pattern": "4"
+    },
+    {
+      "town": "真木野",
+      "townEn": "Makino",
+      "kana": "マキノ",
+      "chome": null,
+      "detail": null,
+      "en": "真木野",
+      "jp": "真木野",
+      "pattern": "1"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘1丁目",
+      "en": "緑が丘1丁目",
+      "jp": "緑が丘1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘2～4丁目",
+      "en": "緑が丘2～4丁目",
+      "jp": "緑が丘2～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘5丁目",
+      "en": "緑が丘5丁目",
+      "jp": "緑が丘5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "麦丸",
+      "townEn": "Mugimaru",
+      "kana": "ムギマル",
+      "chome": null,
+      "detail": null,
+      "en": "麦丸",
+      "jp": "麦丸",
+      "pattern": "1"
+    },
+    {
+      "town": "村上",
+      "townEn": "Murakami",
+      "kana": "ムラカミ",
+      "chome": null,
+      "detail": "村上（3200・3300・3500番台の成田街道南側）",
+      "en": "村上（3200・3300・3500番台の成田街道南側）",
+      "jp": "村上（3200・3300・3500番台の成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "村上",
+      "townEn": "Murakami",
+      "kana": "ムラカミ",
+      "chome": null,
+      "detail": "村上（新川の東側）",
+      "en": "村上（新川の東側）",
+      "jp": "村上（新川の東側）",
+      "pattern": "4"
+    },
+    {
+      "town": "村上",
+      "townEn": "Murakami",
+      "kana": "ムラカミ",
+      "chome": null,
+      "detail": "村上（成田街道北側で新川の西側）",
+      "en": "村上（成田街道北側で新川の西側）",
+      "jp": "村上（成田街道北側で新川の西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "村上",
+      "townEn": "Murakami",
+      "kana": "ムラカミ",
+      "chome": null,
+      "detail": "村上団地",
+      "en": "村上団地",
+      "jp": "村上団地",
+      "pattern": "4"
+    },
+    {
+      "town": "村上南",
+      "townEn": "Murakamiminami",
+      "kana": "ムラカミミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "村上南",
+      "jp": "村上南",
+      "pattern": "4"
+    },
+    {
+      "town": "八千代台北",
+      "townEn": "Yachiyodai Kita",
+      "kana": "ヤチヨダイキタ",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台北",
+      "jp": "八千代台北",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台西",
+      "townEn": "Yachiyodai Nishi",
+      "kana": "ヤチヨダイニシ",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台西",
+      "jp": "八千代台西",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台東",
+      "townEn": "Yachiyodai Higashi",
+      "kana": "ヤチヨダイヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台東",
+      "jp": "八千代台東",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台南",
+      "townEn": "Yachiyodai Minami",
+      "kana": "ヤチヨダイミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台南",
+      "jp": "八千代台南",
+      "pattern": "3"
+    },
+    {
+      "town": "ゆりのき台",
+      "townEn": "Yurinokidai",
+      "kana": "ユリノキダイ",
+      "chome": null,
+      "detail": "ゆりのき台1～2丁目",
+      "en": "ゆりのき台1～2丁目",
+      "jp": "ゆりのき台1～2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "ゆりのき台",
+      "townEn": "Yurinokidai",
+      "kana": "ユリノキダイ",
+      "chome": null,
+      "detail": "ゆりのき台3〜8丁目",
+      "en": "ゆりのき台3〜8丁目",
+      "jp": "ゆりのき台3〜8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "吉橋",
+      "townEn": "Yoshihashi",
+      "kana": "ヨシハシ",
+      "chome": null,
+      "detail": null,
+      "en": "吉橋",
+      "jp": "吉橋",
+      "pattern": "1"
+    },
+    {
+      "town": "米本",
+      "townEn": "Yonamoto",
+      "kana": "ヨナモト",
+      "chome": null,
+      "detail": null,
+      "en": "米本",
+      "jp": "米本",
+      "pattern": "4"
+    },
+    {
+      "town": "米本",
+      "townEn": "Yonamoto",
+      "kana": "ヨナモト",
+      "chome": null,
+      "detail": "米本団地",
+      "en": "米本団地",
+      "jp": "米本団地",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://yachiyo.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

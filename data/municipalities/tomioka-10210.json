@@ -1,0 +1,311 @@
+{
+  "id": "tomioka-10210",
+  "code": "10210",
+  "pref": "10",
+  "jp": "富岡市",
+  "en": "Tomioka",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tomioka.5374.jp/data/area_days.csv",
+    "http://tomioka.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸（箸）」 under 「可燃」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙パック（内側銀）」 under 「可燃」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「プラ容器包装」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「飲料缶」 under 「飲料缶」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「不燃」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「CD」 under 「可燃」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「その他」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 4,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "oversized": {
+          "day": 0,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A七日市西部・黒川",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A七日市西部・黒川",
+      "jp": "A七日市西部・黒川",
+      "pattern": "1"
+    },
+    {
+      "town": "B七日市東部・富岡西部",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B七日市東部・富岡西部",
+      "jp": "B七日市東部・富岡西部",
+      "pattern": "1"
+    },
+    {
+      "town": "C高瀬",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C高瀬",
+      "jp": "C高瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "D一ノ宮",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D一ノ宮",
+      "jp": "D一ノ宮",
+      "pattern": "1"
+    },
+    {
+      "town": "E富岡東部・曽木",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E富岡東部・曽木",
+      "jp": "E富岡東部・曽木",
+      "pattern": "1"
+    },
+    {
+      "town": "F田篠・君川・星田・額部",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F田篠・君川・星田・額部",
+      "jp": "F田篠・君川・星田・額部",
+      "pattern": "1"
+    },
+    {
+      "town": "G黒岩・吉田",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "G黒岩・吉田",
+      "jp": "G黒岩・吉田",
+      "pattern": "1"
+    },
+    {
+      "town": "H小野・丹生",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "H小野・丹生",
+      "jp": "H小野・丹生",
+      "pattern": "1"
+    },
+    {
+      "town": "I妙義",
+      "townEn": "Tomioka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "I妙義",
+      "jp": "I妙義",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tomioka.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

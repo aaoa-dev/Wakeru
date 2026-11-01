@@ -1,0 +1,1193 @@
+{
+  "id": "eiheiji",
+  "code": "18322",
+  "pref": "18",
+  "jp": "永平寺町",
+  "en": "Eiheiji",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/eiheizityousyusyubi.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Fukui Prefecture DX Promotion Division",
+      "tel": "0776-20-0270"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル類",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん・電池類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "ダンボール・紙製容器・紙パック",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "蛍光灯",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙回収」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「古紙回収」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「古紙回収」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレイ（発砲スチロール）」 under 「プラ容器包装」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「小型充電式電池回収BOX」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「天ぷら油」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「家電リサイクル」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from Fukui Prefecture's open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "殿村",
+      "townEn": "殿村",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "殿村",
+      "jp": "殿村",
+      "pattern": "1",
+      "note": "殿村,とのむら"
+    },
+    {
+      "town": "鳴鹿",
+      "townEn": "鳴鹿",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鳴鹿",
+      "jp": "鳴鹿",
+      "pattern": "2",
+      "note": "鳴鹿,なるか"
+    },
+    {
+      "town": "東諏訪間",
+      "townEn": "東諏訪間",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東諏訪間",
+      "jp": "東諏訪間",
+      "pattern": "2",
+      "note": "東諏訪間,ひがしすわま"
+    },
+    {
+      "town": "松岡松ヶ丘",
+      "townEn": "松岡松ヶ丘",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松ヶ丘",
+      "jp": "松岡松ヶ丘",
+      "pattern": "1",
+      "note": "松岡松ヶ丘,まつがおか,まつおかまつがおか"
+    },
+    {
+      "town": "松岡松ヶ原1丁目",
+      "townEn": "松岡松ヶ原1丁目",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松ヶ原1丁目",
+      "jp": "松岡松ヶ原1丁目",
+      "pattern": "1",
+      "note": "松岡松ヶ原1丁目,まつがはら1,まつおかまつがはら1"
+    },
+    {
+      "town": "松岡松ヶ原2丁目",
+      "townEn": "松岡松ヶ原2丁目",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松ヶ原2丁目",
+      "jp": "松岡松ヶ原2丁目",
+      "pattern": "1",
+      "note": "松岡松ヶ原2丁目,まつがはら2,まつおかまつがはら2"
+    },
+    {
+      "town": "松岡松ヶ原3丁目",
+      "townEn": "松岡松ヶ原3丁目",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松ヶ原3丁目",
+      "jp": "松岡松ヶ原3丁目",
+      "pattern": "1",
+      "note": "松岡松ヶ原3丁目,まつがはら3,まつおかまつがはら3"
+    },
+    {
+      "town": "松岡松ヶ原4丁目",
+      "townEn": "松岡松ヶ原4丁目",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松ヶ原4丁目",
+      "jp": "松岡松ヶ原4丁目",
+      "pattern": "1",
+      "note": "松岡松ヶ原4丁目,まつがはら4,まつおかまつがはら4"
+    },
+    {
+      "town": "松岡松原団地",
+      "townEn": "松岡松原団地",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岡松原団地",
+      "jp": "松岡松原団地",
+      "pattern": "1",
+      "note": "松岡松原団地,まつばらだんち,まつおかまつばらだんち"
+    },
+    {
+      "town": "浅見",
+      "townEn": "Azami",
+      "kana": "アザミ",
+      "chome": null,
+      "detail": null,
+      "en": "浅見",
+      "jp": "浅見",
+      "pattern": "1",
+      "note": "浅見,あざみ"
+    },
+    {
+      "town": "荒谷",
+      "townEn": "Aratani",
+      "kana": "アラタニ",
+      "chome": null,
+      "detail": null,
+      "en": "荒谷",
+      "jp": "荒谷",
+      "pattern": "2",
+      "note": "荒谷,あらたに"
+    },
+    {
+      "town": "飯島",
+      "townEn": "Iijima",
+      "kana": "イイジマ",
+      "chome": null,
+      "detail": null,
+      "en": "飯島",
+      "jp": "飯島",
+      "pattern": "1",
+      "note": "飯島,いいじま"
+    },
+    {
+      "town": "石上",
+      "townEn": "Ishigami",
+      "kana": "イシガミ",
+      "chome": null,
+      "detail": null,
+      "en": "石上",
+      "jp": "石上",
+      "pattern": "1",
+      "note": "石上,いしがみ"
+    },
+    {
+      "town": "市荒川",
+      "townEn": "Ichiarakawa",
+      "kana": "イチアラカワ",
+      "chome": null,
+      "detail": null,
+      "en": "市荒川",
+      "jp": "市荒川",
+      "pattern": "1",
+      "note": "市荒川,いちあらかわ"
+    },
+    {
+      "town": "市右エ門島",
+      "townEn": "Ichiuemonjima",
+      "kana": "イチウエモンジマ",
+      "chome": null,
+      "detail": null,
+      "en": "市右エ門島",
+      "jp": "市右エ門島",
+      "pattern": "1",
+      "note": "市右エ門島,いちうえもんじま"
+    },
+    {
+      "town": "市野々",
+      "townEn": "Ichinono",
+      "kana": "イチノノ",
+      "chome": null,
+      "detail": null,
+      "en": "市野々",
+      "jp": "市野々",
+      "pattern": "2",
+      "note": "市野々,いちのの"
+    },
+    {
+      "town": "岩野",
+      "townEn": "Iwano",
+      "kana": "イワノ",
+      "chome": null,
+      "detail": null,
+      "en": "岩野",
+      "jp": "岩野",
+      "pattern": "1",
+      "note": "岩野,いわの"
+    },
+    {
+      "town": "大月",
+      "townEn": "Otsuki",
+      "kana": "オオツキ",
+      "chome": null,
+      "detail": null,
+      "en": "大月",
+      "jp": "大月",
+      "pattern": "1",
+      "note": "大月,おおつき"
+    },
+    {
+      "town": "大野島",
+      "townEn": "Onojima",
+      "kana": "オオノジマ",
+      "chome": null,
+      "detail": null,
+      "en": "大野島",
+      "jp": "大野島",
+      "pattern": "1",
+      "note": "大野島,おおのじま"
+    },
+    {
+      "town": "上浄法寺",
+      "townEn": "Kamijohoji",
+      "kana": "カミジョウホウジ",
+      "chome": null,
+      "detail": null,
+      "en": "上浄法寺",
+      "jp": "上浄法寺",
+      "pattern": "1",
+      "note": "上浄法寺,かみじょうほうじ"
+    },
+    {
+      "town": "北島",
+      "townEn": "Kitajima",
+      "kana": "キタジマ",
+      "chome": null,
+      "detail": null,
+      "en": "北島",
+      "jp": "北島",
+      "pattern": "1",
+      "note": "北島,きたじま"
+    },
+    {
+      "town": "京善",
+      "townEn": "Kyozen",
+      "kana": "キョウゼン",
+      "chome": null,
+      "detail": null,
+      "en": "京善",
+      "jp": "京善",
+      "pattern": "2",
+      "note": "京善,きょうぜん"
+    },
+    {
+      "town": "栗住波",
+      "townEn": "Kurisunami",
+      "kana": "クリスナミ",
+      "chome": null,
+      "detail": null,
+      "en": "栗住波",
+      "jp": "栗住波",
+      "pattern": "1",
+      "note": "栗住波,くりすなみ"
+    },
+    {
+      "town": "けやき台",
+      "townEn": "Keyakidai",
+      "kana": "ケヤキダイ",
+      "chome": null,
+      "detail": null,
+      "en": "けやき台",
+      "jp": "けやき台",
+      "pattern": "2",
+      "note": "けやき台,けやきだい"
+    },
+    {
+      "town": "光明寺",
+      "townEn": "Komyoji",
+      "kana": "コウミョウジ",
+      "chome": null,
+      "detail": null,
+      "en": "光明寺",
+      "jp": "光明寺",
+      "pattern": "1",
+      "note": "光明寺,こうみょうじ"
+    },
+    {
+      "town": "山王",
+      "townEn": "Sanno",
+      "kana": "サンノウ",
+      "chome": null,
+      "detail": null,
+      "en": "山王",
+      "jp": "山王",
+      "pattern": "1",
+      "note": "山王,さんのう"
+    },
+    {
+      "town": "志比",
+      "townEn": "Shihi",
+      "kana": "シヒ",
+      "chome": null,
+      "detail": null,
+      "en": "志比",
+      "jp": "志比",
+      "pattern": "2",
+      "note": "志比,しひ"
+    },
+    {
+      "town": "清水",
+      "townEn": "Shimizu",
+      "kana": "シミズ",
+      "chome": null,
+      "detail": null,
+      "en": "清水",
+      "jp": "清水",
+      "pattern": "1",
+      "note": "清水,しみず"
+    },
+    {
+      "town": "下浄法寺",
+      "townEn": "Shimojohoji",
+      "kana": "シモジョウホウジ",
+      "chome": null,
+      "detail": null,
+      "en": "下浄法寺",
+      "jp": "下浄法寺",
+      "pattern": "1",
+      "note": "下浄法寺,しもじょうほうじ"
+    },
+    {
+      "town": "諏訪間",
+      "townEn": "Suwama",
+      "kana": "スワマ",
+      "chome": null,
+      "detail": null,
+      "en": "諏訪間",
+      "jp": "諏訪間",
+      "pattern": "2",
+      "note": "諏訪間,すわま"
+    },
+    {
+      "town": "せせらぎ",
+      "townEn": "Seseragi",
+      "kana": "セセラギ",
+      "chome": null,
+      "detail": null,
+      "en": "せせらぎ",
+      "jp": "せせらぎ",
+      "pattern": "1",
+      "note": "せせらぎ,せせらぎ"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": null,
+      "en": "高橋",
+      "jp": "高橋",
+      "pattern": "2",
+      "note": "高橋,たかはし"
+    },
+    {
+      "town": "竹原",
+      "townEn": "Takehara",
+      "kana": "タケハラ",
+      "chome": null,
+      "detail": null,
+      "en": "竹原",
+      "jp": "竹原",
+      "pattern": "1",
+      "note": "竹原,たけはら"
+    },
+    {
+      "town": "谷口",
+      "townEn": "Taniguchi",
+      "kana": "タニグチ",
+      "chome": null,
+      "detail": null,
+      "en": "谷口",
+      "jp": "谷口",
+      "pattern": "1",
+      "note": "谷口,たにぐち"
+    },
+    {
+      "town": "寺本",
+      "townEn": "Teramoto",
+      "kana": "テラモト",
+      "chome": null,
+      "detail": null,
+      "en": "寺本",
+      "jp": "寺本",
+      "pattern": "2",
+      "note": "寺本,てらもと"
+    },
+    {
+      "town": "栃原",
+      "townEn": "Tochihara",
+      "kana": "トチハラ",
+      "chome": null,
+      "detail": null,
+      "en": "栃原",
+      "jp": "栃原",
+      "pattern": "1",
+      "note": "栃原,とちわら"
+    },
+    {
+      "town": "轟",
+      "townEn": "Domeki",
+      "kana": "ドメキ",
+      "chome": null,
+      "detail": null,
+      "en": "轟",
+      "jp": "轟",
+      "pattern": "1",
+      "note": "轟,どめき"
+    },
+    {
+      "town": "中島",
+      "townEn": "Nakajima",
+      "kana": "ナカジマ",
+      "chome": null,
+      "detail": null,
+      "en": "中島",
+      "jp": "中島",
+      "pattern": "1",
+      "note": "中島,なかじま"
+    },
+    {
+      "town": "野中",
+      "townEn": "Nonaka",
+      "kana": "ノナカ",
+      "chome": null,
+      "detail": null,
+      "en": "野中",
+      "jp": "野中",
+      "pattern": "1",
+      "note": "野中,のなか"
+    },
+    {
+      "town": "花谷",
+      "townEn": "Hanadani",
+      "kana": "ハナダニ",
+      "chome": null,
+      "detail": null,
+      "en": "花谷",
+      "jp": "花谷",
+      "pattern": "1",
+      "note": "花谷,はなだに"
+    },
+    {
+      "town": "東古市",
+      "townEn": "Higashifuruichi",
+      "kana": "ヒガシフルイチ",
+      "chome": null,
+      "detail": null,
+      "en": "東古市",
+      "jp": "東古市",
+      "pattern": "2",
+      "note": "東古市,ひがしふるいち"
+    },
+    {
+      "town": "藤巻",
+      "townEn": "Fujimaki",
+      "kana": "フジマキ",
+      "chome": null,
+      "detail": null,
+      "en": "藤巻",
+      "jp": "藤巻",
+      "pattern": "1",
+      "note": "藤巻,ふじまき"
+    },
+    {
+      "town": "法寺岡",
+      "townEn": "Hojioka",
+      "kana": "ホウジオカ",
+      "chome": null,
+      "detail": null,
+      "en": "法寺岡",
+      "jp": "法寺岡",
+      "pattern": "2",
+      "note": "法寺岡,ほうじおか"
+    },
+    {
+      "town": "牧福島",
+      "townEn": "Makifukushima",
+      "kana": "マキフクシマ",
+      "chome": null,
+      "detail": null,
+      "en": "牧福島",
+      "jp": "牧福島",
+      "pattern": "1",
+      "note": "牧福島,まきふくしま"
+    },
+    {
+      "town": "松岡葵",
+      "townEn": "Matsuoka Aoi",
+      "kana": "マツオカアオイ",
+      "chome": null,
+      "detail": "松岡葵1丁目",
+      "en": "松岡葵1丁目",
+      "jp": "松岡葵1丁目",
+      "pattern": "1",
+      "note": "松岡葵1丁目,あおい1,まつおかあおい1"
+    },
+    {
+      "town": "松岡葵",
+      "townEn": "Matsuoka Aoi",
+      "kana": "マツオカアオイ",
+      "chome": null,
+      "detail": "松岡葵2丁目",
+      "en": "松岡葵2丁目",
+      "jp": "松岡葵2丁目",
+      "pattern": "1",
+      "note": "松岡葵2丁目,あおい2,まつおかあおい2"
+    },
+    {
+      "town": "松岡葵",
+      "townEn": "Matsuoka Aoi",
+      "kana": "マツオカアオイ",
+      "chome": null,
+      "detail": "松岡葵3丁目",
+      "en": "松岡葵3丁目",
+      "jp": "松岡葵3丁目",
+      "pattern": "1",
+      "note": "松岡葵3丁目,あおい3,まつおかあおい3"
+    },
+    {
+      "town": "松岡石舟",
+      "townEn": "Matsuoka Ishifune",
+      "kana": "マツオカイシブネ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡石舟",
+      "jp": "松岡石舟",
+      "pattern": "1",
+      "note": "松岡石舟,いしぶね,まつおかいしぶね"
+    },
+    {
+      "town": "松岡小畑",
+      "townEn": "Matsuoka Obata",
+      "kana": "マツオカオバタ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡小畑",
+      "jp": "松岡小畑",
+      "pattern": "1",
+      "note": "松岡小畑,おばた,まつおかおばた"
+    },
+    {
+      "town": "松岡学園",
+      "townEn": "Matsuoka Gakuen",
+      "kana": "マツオカガクエン",
+      "chome": null,
+      "detail": null,
+      "en": "松岡学園",
+      "jp": "松岡学園",
+      "pattern": "2",
+      "note": "松岡学園,がくえん,まつおかがくえん"
+    },
+    {
+      "town": "松岡春日",
+      "townEn": "Matsuoka Kasuga",
+      "kana": "マツオカカスガ",
+      "chome": null,
+      "detail": "松岡春日1丁目",
+      "en": "松岡春日1丁目",
+      "jp": "松岡春日1丁目",
+      "pattern": "2",
+      "note": "松岡春日1丁目,かすが1,まつおかかすが1"
+    },
+    {
+      "town": "松岡春日",
+      "townEn": "Matsuoka Kasuga",
+      "kana": "マツオカカスガ",
+      "chome": null,
+      "detail": "松岡春日2丁目",
+      "en": "松岡春日2丁目",
+      "jp": "松岡春日2丁目",
+      "pattern": "2",
+      "note": "松岡春日2丁目,かすが2,まつおかかすが2"
+    },
+    {
+      "town": "松岡春日",
+      "townEn": "Matsuoka Kasuga",
+      "kana": "マツオカカスガ",
+      "chome": null,
+      "detail": "松岡春日3丁目",
+      "en": "松岡春日3丁目",
+      "jp": "松岡春日3丁目",
+      "pattern": "2",
+      "note": "松岡春日3丁目,かすが3,まつおかかすが3"
+    },
+    {
+      "town": "松岡上合月",
+      "townEn": "Matsuoka Kamiaizuki",
+      "kana": "マツオカカミアイヅキ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡上合月",
+      "jp": "松岡上合月",
+      "pattern": "2",
+      "note": "松岡上合月,かみあいづき,まつおかかみあいづき"
+    },
+    {
+      "town": "松岡上吉野",
+      "townEn": "Matsuoka Kamiyoshino",
+      "kana": "マツオカカミヨシノ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡上吉野",
+      "jp": "松岡上吉野",
+      "pattern": "1",
+      "note": "松岡上吉野,かみよしの,まつおかかみよしの"
+    },
+    {
+      "town": "松岡観音",
+      "townEn": "Matsuoka Kannon",
+      "kana": "マツオカカンノン",
+      "chome": null,
+      "detail": null,
+      "en": "松岡観音",
+      "jp": "松岡観音",
+      "pattern": "1",
+      "note": "松岡観音,かんのん,まつおかかんのん"
+    },
+    {
+      "town": "松岡兼定島",
+      "townEn": "Matsuoka Kenjojima",
+      "kana": "マツオカケンジョウジマ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡兼定島",
+      "jp": "松岡兼定島",
+      "pattern": "2",
+      "note": "松岡兼定島,けんじょうじま,まつおかけんじょうじま"
+    },
+    {
+      "town": "松岡越坂",
+      "townEn": "Matsuoka Koisaka",
+      "kana": "マツオカコイサカ",
+      "chome": null,
+      "detail": "松岡越坂1丁目",
+      "en": "松岡越坂1丁目",
+      "jp": "松岡越坂1丁目",
+      "pattern": "1",
+      "note": "松岡越坂1丁目,こえさか1,まつおかこえさか1"
+    },
+    {
+      "town": "松岡越坂",
+      "townEn": "Matsuoka Koisaka",
+      "kana": "マツオカコイサカ",
+      "chome": null,
+      "detail": "松岡越坂2丁目",
+      "en": "松岡越坂2丁目",
+      "jp": "松岡越坂2丁目",
+      "pattern": "1",
+      "note": "松岡越坂2丁目,こえさか2,まつおかこえさか2"
+    },
+    {
+      "town": "松岡御公領",
+      "townEn": "Matsuoka Gokuryo",
+      "kana": "マツオカゴクリョウ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡御公領",
+      "jp": "松岡御公領",
+      "pattern": "2",
+      "note": "松岡御公領,ごくりょう,まつおかごくりょう"
+    },
+    {
+      "town": "松岡木ノ下",
+      "townEn": "Matsuoka Konoshita",
+      "kana": "マツオカコノシタ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡木ノ下",
+      "jp": "松岡木ノ下",
+      "pattern": "1",
+      "note": "松岡木ノ下,このした,まつおかこのした"
+    },
+    {
+      "town": "松岡志比堺",
+      "townEn": "Matsuoka Shihizakai",
+      "kana": "マツオカシイザカイ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡志比堺",
+      "jp": "松岡志比堺",
+      "pattern": "2",
+      "note": "松岡志比堺,しひざかい,まつおかしひざかい"
+    },
+    {
+      "town": "松岡芝原",
+      "townEn": "Matsuoka Shibahara",
+      "kana": "マツオカシバハラ",
+      "chome": null,
+      "detail": "松岡芝原1丁目",
+      "en": "松岡芝原1丁目",
+      "jp": "松岡芝原1丁目",
+      "pattern": "1",
+      "note": "松岡芝原1丁目,しばはら1,まつおかしばはら1"
+    },
+    {
+      "town": "松岡芝原",
+      "townEn": "Matsuoka Shibahara",
+      "kana": "マツオカシバハラ",
+      "chome": null,
+      "detail": "松岡芝原2丁目",
+      "en": "松岡芝原2丁目",
+      "jp": "松岡芝原2丁目",
+      "pattern": "1",
+      "note": "松岡芝原2丁目,しばはら2,まつおかしばはら2"
+    },
+    {
+      "town": "松岡芝原",
+      "townEn": "Matsuoka Shibahara",
+      "kana": "マツオカシバハラ",
+      "chome": null,
+      "detail": "松岡芝原3丁目",
+      "en": "松岡芝原3丁目",
+      "jp": "松岡芝原3丁目",
+      "pattern": "1",
+      "note": "松岡芝原3丁目,しばはら3,まつおかしばはら3"
+    },
+    {
+      "town": "松岡清水",
+      "townEn": "Matsuoka Shimizu",
+      "kana": "マツオカシミズ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡清水",
+      "jp": "松岡清水",
+      "pattern": "1",
+      "note": "松岡清水,しみず,まつおかしみず"
+    },
+    {
+      "town": "松岡下合月",
+      "townEn": "Matsuoka Shimoaizuki",
+      "kana": "マツオカシモアイヅキ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡下合月",
+      "jp": "松岡下合月",
+      "pattern": "2",
+      "note": "松岡下合月,しもあいづき,まつおかしもあいづき"
+    },
+    {
+      "town": "松岡神明",
+      "townEn": "Matsuoka Shimmei",
+      "kana": "マツオカシンメイ",
+      "chome": null,
+      "detail": "松岡神明1丁目",
+      "en": "松岡神明1丁目",
+      "jp": "松岡神明1丁目",
+      "pattern": "2",
+      "note": "松岡神明1丁目,しんめい1,まつおかしんめい1"
+    },
+    {
+      "town": "松岡神明",
+      "townEn": "Matsuoka Shimmei",
+      "kana": "マツオカシンメイ",
+      "chome": null,
+      "detail": "松岡神明2丁目",
+      "en": "松岡神明2丁目",
+      "jp": "松岡神明2丁目",
+      "pattern": "2",
+      "note": "松岡神明2丁目,しんめい2,まつおかしんめい2"
+    },
+    {
+      "town": "松岡神明",
+      "townEn": "Matsuoka Shimmei",
+      "kana": "マツオカシンメイ",
+      "chome": null,
+      "detail": "松岡神明3丁目",
+      "en": "松岡神明3丁目",
+      "jp": "松岡神明3丁目",
+      "pattern": "2",
+      "note": "松岡神明3丁目,しんめい3,まつおかしんめい3"
+    },
+    {
+      "town": "松岡末政",
+      "townEn": "Matsuoka Suemasa",
+      "kana": "マツオカスエマサ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡末政",
+      "jp": "松岡末政",
+      "pattern": "2",
+      "note": "松岡末政,すえまさ,まつおかすえまさ"
+    },
+    {
+      "town": "松岡西野中",
+      "townEn": "Matsuoka Nishinonaka",
+      "kana": "マツオカニシノナカ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡西野中",
+      "jp": "松岡西野中",
+      "pattern": "1",
+      "note": "松岡西野中,にしのなか,まつおかにしのなか"
+    },
+    {
+      "town": "松岡樋爪",
+      "townEn": "Matsuoka Hizume",
+      "kana": "マツオカヒヅメ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡樋爪",
+      "jp": "松岡樋爪",
+      "pattern": "2",
+      "note": "松岡樋爪,ひづめ,まつおかひづめ"
+    },
+    {
+      "town": "松岡平成",
+      "townEn": "Matsuoka Heisei",
+      "kana": "マツオカヘイセイ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡平成",
+      "jp": "松岡平成",
+      "pattern": "2",
+      "note": "松岡平成,へいせい,まつおかへいせい"
+    },
+    {
+      "town": "松岡宮重",
+      "townEn": "Matsuoka Miyashige",
+      "kana": "マツオカミヤシゲ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡宮重",
+      "jp": "松岡宮重",
+      "pattern": "1",
+      "note": "松岡宮重,みやしげ,まつおかみやしげ"
+    },
+    {
+      "town": "松岡薬師",
+      "townEn": "Matsuoka Yakushi",
+      "kana": "マツオカヤクシ",
+      "chome": null,
+      "detail": "松岡薬師1丁目",
+      "en": "松岡薬師1丁目",
+      "jp": "松岡薬師1丁目",
+      "pattern": "2",
+      "note": "松岡薬師1丁目,やくし1,まつおかやくし1"
+    },
+    {
+      "town": "松岡薬師",
+      "townEn": "Matsuoka Yakushi",
+      "kana": "マツオカヤクシ",
+      "chome": null,
+      "detail": "松岡薬師2丁目",
+      "en": "松岡薬師2丁目",
+      "jp": "松岡薬師2丁目",
+      "pattern": "2",
+      "note": "松岡薬師2丁目,やくし2,まつおかやくし2"
+    },
+    {
+      "town": "松岡薬師",
+      "townEn": "Matsuoka Yakushi",
+      "kana": "マツオカヤクシ",
+      "chome": null,
+      "detail": "松岡薬師3丁目",
+      "en": "松岡薬師3丁目",
+      "jp": "松岡薬師3丁目",
+      "pattern": "2",
+      "note": "松岡薬師3丁目,やくし3,まつおかやくし3"
+    },
+    {
+      "town": "松岡湯谷",
+      "townEn": "Matsuoka Yudani",
+      "kana": "マツオカユダニ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡湯谷",
+      "jp": "松岡湯谷",
+      "pattern": "1",
+      "note": "松岡湯谷,ゆだに,まつおかゆだに"
+    },
+    {
+      "town": "松岡吉野",
+      "townEn": "Matsuoka Yoshino",
+      "kana": "マツオカヨシノ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡吉野",
+      "jp": "松岡吉野",
+      "pattern": "1",
+      "note": "松岡吉野,よしの,まつおかよしの"
+    },
+    {
+      "town": "松岡吉野堺",
+      "townEn": "Matsuoka Yoshinozakai",
+      "kana": "マツオカヨシノザカイ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡吉野堺",
+      "jp": "松岡吉野堺",
+      "pattern": "1",
+      "note": "松岡吉野堺,よしのざかい,まつおかよしのざかい"
+    },
+    {
+      "town": "松岡領家",
+      "townEn": "Matsuoka Ryoke",
+      "kana": "マツオカリョウケ",
+      "chome": null,
+      "detail": null,
+      "en": "松岡領家",
+      "jp": "松岡領家",
+      "pattern": "2",
+      "note": "松岡領家,りょうけ,まつおかりょうけ"
+    },
+    {
+      "town": "松岡渡新田",
+      "townEn": "Matsuoka Watarishinden",
+      "kana": "マツオカワタリシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "松岡渡新田",
+      "jp": "松岡渡新田",
+      "pattern": "2",
+      "note": "松岡渡新田,わたりしんでん,まつおかわたりしんでん"
+    },
+    {
+      "town": "山",
+      "townEn": "Yama",
+      "kana": "ヤマ",
+      "chome": null,
+      "detail": "山鹿",
+      "en": "山鹿",
+      "jp": "山鹿",
+      "pattern": "2",
+      "note": "山鹿,さんか"
+    },
+    {
+      "town": "山",
+      "townEn": "Yama",
+      "kana": "ヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "山",
+      "jp": "山",
+      "pattern": "2",
+      "note": "山,やま"
+    },
+    {
+      "town": "吉波",
+      "townEn": "Yoshinami",
+      "kana": "ヨシナミ",
+      "chome": null,
+      "detail": null,
+      "en": "吉波",
+      "jp": "吉波",
+      "pattern": "1",
+      "note": "吉波,よしなみ"
+    },
+    {
+      "town": "吉峰",
+      "townEn": "Yoshimine",
+      "kana": "ヨシミネ",
+      "chome": null,
+      "detail": null,
+      "en": "吉峰",
+      "jp": "吉峰",
+      "pattern": "1",
+      "note": "吉峰,よしみね"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukui Prefecture garbage collection schedule open data",
+      "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+      "license": "Fukui Prefecture open data (attribution required)",
+      "commit": "pref-portal"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "updated": "2026-10-31"
+}

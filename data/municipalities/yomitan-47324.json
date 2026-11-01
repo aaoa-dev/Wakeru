@@ -1,0 +1,483 @@
+{
+  "id": "yomitan-47324",
+  "code": "47324",
+  "pref": "47",
+  "jp": "読谷村",
+  "en": "Yomitan",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://yomitan.5374.jp/data/area_days.csv",
+    "http://yomitan.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "hazardous": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "hazardous": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "hazardous": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "hazardous": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "伊良皆（県道６号線南側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊良皆（県道６号線南側）",
+      "jp": "伊良皆（県道６号線南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "伊良皆（県道６号線北側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊良皆（県道６号線北側）",
+      "jp": "伊良皆（県道６号線北側）",
+      "pattern": "4"
+    },
+    {
+      "town": "宇座",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宇座",
+      "jp": "宇座",
+      "pattern": "2"
+    },
+    {
+      "town": "喜名",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "喜名",
+      "jp": "喜名",
+      "pattern": "4"
+    },
+    {
+      "town": "儀間",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀間",
+      "jp": "儀間",
+      "pattern": "2"
+    },
+    {
+      "town": "古堅",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古堅",
+      "jp": "古堅",
+      "pattern": "1"
+    },
+    {
+      "town": "高志保（村道、読谷クリニック～たてまつ南側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高志保（村道、読谷クリニック～たてまつ南側）",
+      "jp": "高志保（村道、読谷クリニック～たてまつ南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "高志保（村道、波平東門付近～座喜味城址公園入口沿）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高志保（村道、波平東門付近～座喜味城址公園入口沿）",
+      "jp": "高志保（村道、波平東門付近～座喜味城址公園入口沿）",
+      "pattern": "2"
+    },
+    {
+      "town": "座喜味",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "座喜味",
+      "jp": "座喜味",
+      "pattern": "3"
+    },
+    {
+      "town": "座喜味（トーガー地域／横田屋地域）",
+      "townEn": "Toga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "座喜味（トーガー地域／横田屋地域）",
+      "jp": "座喜味（トーガー地域／横田屋地域）",
+      "pattern": "4"
+    },
+    {
+      "town": "座喜味（商工会周辺）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "座喜味（商工会周辺）",
+      "jp": "座喜味（商工会周辺）",
+      "pattern": "3"
+    },
+    {
+      "town": "上地",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上地",
+      "jp": "上地",
+      "pattern": "2"
+    },
+    {
+      "town": "瀬名波",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "瀬名波",
+      "jp": "瀬名波",
+      "pattern": "2"
+    },
+    {
+      "town": "楚辺",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "楚辺",
+      "jp": "楚辺",
+      "pattern": "3"
+    },
+    {
+      "town": "大木（県道６号線南側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大木（県道６号線南側）",
+      "jp": "大木（県道６号線南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "大木（県道６号線北側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大木（県道６号線北側）",
+      "jp": "大木（県道６号線北側）",
+      "pattern": "4"
+    },
+    {
+      "town": "大湾",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大湾",
+      "jp": "大湾",
+      "pattern": "1"
+    },
+    {
+      "town": "長浜",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長浜",
+      "jp": "長浜",
+      "pattern": "2"
+    },
+    {
+      "town": "長浜（村道、長浜ゼネラル石油～座喜味城址公園入口南側）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長浜（村道、長浜ゼネラル石油～座喜味城址公園入口南側）",
+      "jp": "長浜（村道、長浜ゼネラル石油～座喜味城址公園入口南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "渡具知",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渡具知",
+      "jp": "渡具知",
+      "pattern": "1"
+    },
+    {
+      "town": "渡慶次",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渡慶次",
+      "jp": "渡慶次",
+      "pattern": "2"
+    },
+    {
+      "town": "都屋",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "都屋",
+      "jp": "都屋",
+      "pattern": "3"
+    },
+    {
+      "town": "波平（村道、波平東門付近～座喜味城址公園入口沿）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "波平（村道、波平東門付近～座喜味城址公園入口沿）",
+      "jp": "波平（村道、波平東門付近～座喜味城址公園入口沿）",
+      "pattern": "2"
+    },
+    {
+      "town": "波平（大当地域）",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "波平（大当地域）",
+      "jp": "波平（大当地域）",
+      "pattern": "3"
+    },
+    {
+      "town": "比謝",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "比謝",
+      "jp": "比謝",
+      "pattern": "1"
+    },
+    {
+      "town": "比謝矼",
+      "townEn": "Yomitan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "比謝矼",
+      "jp": "比謝矼",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://yomitan.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,395 @@
+{
+  "id": "takamatsu",
+  "code": "37201",
+  "pref": "37",
+  "jp": "高松市",
+  "en": "Takamatsu",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://opendata.takamatsu-fact.com/garbage_collection_date/",
+    "https://opendata.takamatsu-fact.com/garbage_collection_date/data.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res_mixed": {
+      "label": "かん・びん・プラ",
+      "en": "Cans, bottles and plastic",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper and cloth",
+      "kind": "res"
+    },
+    "plastic": {
+      "label": "プラ容器",
+      "en": "Plastic containers",
+      "kind": "pla"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": []
+    },
+    "note": "Weekday rules from Takamatsu FACT open data. Confirm holidays on the city page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res_mixed": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res_mixed": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res_mixed": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res_mixed": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res_mixed": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res_mixed": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res_mixed": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res_mixed": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "高松第一（松島・築地・新塩屋町）花園・新番丁（四番丁）・塩江",
+      "townEn": "高松第一（松島・築地・新塩屋町）花園・新番丁（四番丁）・塩江",
+      "kana": "高松第一（松島・築地・新塩屋町）花園・新番丁（四番丁）・塩江",
+      "chome": null,
+      "detail": null,
+      "en": "高松第一（松島・築地・新塩屋町）花園・新番丁（四番丁）・塩江",
+      "jp": "高松第一（松島・築地・新塩屋町）花園・新番丁（四番丁）・塩江",
+      "pattern": "1"
+    },
+    {
+      "town": "新番丁（日新・二番丁）・亀阜・庵治・牟礼北部",
+      "townEn": "新番丁（日新・二番丁）・亀阜・庵治・牟礼北部",
+      "kana": "新番丁（日新・二番丁）・亀阜・庵治・牟礼北部",
+      "chome": null,
+      "detail": null,
+      "en": "新番丁（日新・二番丁）・亀阜・庵治・牟礼北部",
+      "jp": "新番丁（日新・二番丁）・亀阜・庵治・牟礼北部",
+      "pattern": "2"
+    },
+    {
+      "town": "栗林・太田・香川（浅野）",
+      "townEn": "栗林・太田・香川（浅野）",
+      "kana": "栗林・太田・香川（浅野）",
+      "chome": null,
+      "detail": null,
+      "en": "栗林・太田・香川（浅野）",
+      "jp": "栗林・太田・香川（浅野）",
+      "pattern": "3"
+    },
+    {
+      "town": "木太・林・多肥・国分寺南部",
+      "townEn": "木太・林・多肥・国分寺南部",
+      "kana": "木太・林・多肥・国分寺南部",
+      "chome": null,
+      "detail": null,
+      "en": "木太・林・多肥・国分寺南部",
+      "jp": "木太・林・多肥・国分寺南部",
+      "pattern": "4"
+    },
+    {
+      "town": "檀紙・弦打・香西・鬼無・下笠居・国分寺北部",
+      "townEn": "檀紙・弦打・香西・鬼無・下笠居・国分寺北部",
+      "kana": "檀紙・弦打・香西・鬼無・下笠居・国分寺北部",
+      "chome": null,
+      "detail": null,
+      "en": "檀紙・弦打・香西・鬼無・下笠居・国分寺北部",
+      "jp": "檀紙・弦打・香西・鬼無・下笠居・国分寺北部",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴尾・一宮・円座・川岡・香川（川東）",
+      "townEn": "鶴尾・一宮・円座・川岡・香川（川東）",
+      "kana": "鶴尾・一宮・円座・川岡・香川（川東）",
+      "chome": null,
+      "detail": null,
+      "en": "鶴尾・一宮・円座・川岡・香川（川東）",
+      "jp": "鶴尾・一宮・円座・川岡・香川（川東）",
+      "pattern": "6"
+    },
+    {
+      "town": "前田・三谷・川添・仏生山・川島・十河・西植田・東植田・香南・香川（大野）",
+      "townEn": "前田・三谷・川添・仏生山・川島・十河・西植田・東植田・香南・香川（大野）",
+      "kana": "前田・三谷・川添・仏生山・川島・十河・西植田・東植田・香南・香川（大野）",
+      "chome": null,
+      "detail": null,
+      "en": "前田・三谷・川添・仏生山・川島・十河・西植田・東植田・香南・香川（大野）",
+      "jp": "前田・三谷・川添・仏生山・川島・十河・西植田・東植田・香南・香川（大野）",
+      "pattern": "7"
+    },
+    {
+      "town": "屋島・古高松・牟礼南部",
+      "townEn": "屋島・古高松・牟礼南部",
+      "kana": "屋島・古高松・牟礼南部",
+      "chome": null,
+      "detail": null,
+      "en": "屋島・古高松・牟礼南部",
+      "jp": "屋島・古高松・牟礼南部",
+      "pattern": "8"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Takamatsu FACT garbage collection open data",
+      "url": "https://opendata.takamatsu-fact.com/garbage_collection_date/",
+      "license": "Takamatsu FACT open data"
+    }
+  },
+  "updated": "2026-10-31"
+}

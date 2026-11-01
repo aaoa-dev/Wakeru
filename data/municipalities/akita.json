@@ -1,0 +1,816 @@
+{
+  "id": "akita",
+  "code": "05201",
+  "pref": "05",
+  "jp": "秋田市",
+  "en": "Akita",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4763i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4763i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「古紙」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「古紙」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「古紙」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「紙パック（食品用）」 under 「古紙」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペットボトル」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶」 under 「指定ごみ袋「資源化物用」に入れ集積所へ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「フライパン」 under 「金属類」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「金属類」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「ガス・スプレー缶」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「金属類」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「タンス」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            5
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            5
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "駅前",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前",
+      "jp": "駅前",
+      "pattern": "1"
+    },
+    {
+      "town": "榎木",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "榎木",
+      "jp": "榎木",
+      "pattern": "2"
+    },
+    {
+      "town": "猿田町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "猿田町",
+      "jp": "猿田町",
+      "pattern": "1"
+    },
+    {
+      "town": "下朝丸",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下朝丸",
+      "jp": "下朝丸",
+      "pattern": "2"
+    },
+    {
+      "town": "下堀野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下堀野",
+      "jp": "下堀野",
+      "pattern": "2"
+    },
+    {
+      "town": "家根合",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "家根合",
+      "jp": "家根合",
+      "pattern": "2"
+    },
+    {
+      "town": "廻館",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "廻館",
+      "jp": "廻館",
+      "pattern": "2"
+    },
+    {
+      "town": "館",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "館",
+      "jp": "館",
+      "pattern": "1"
+    },
+    {
+      "town": "吉岡",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉岡",
+      "jp": "吉岡",
+      "pattern": "2"
+    },
+    {
+      "town": "久田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久田",
+      "jp": "久田",
+      "pattern": "2"
+    },
+    {
+      "town": "宮曽根",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮曽根",
+      "jp": "宮曽根",
+      "pattern": "2"
+    },
+    {
+      "town": "京島",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "京島",
+      "jp": "京島",
+      "pattern": "2"
+    },
+    {
+      "town": "興野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "興野",
+      "jp": "興野",
+      "pattern": "1"
+    },
+    {
+      "town": "近江新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "近江新田",
+      "jp": "近江新田",
+      "pattern": "2"
+    },
+    {
+      "town": "古関",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古関",
+      "jp": "古関",
+      "pattern": "2"
+    },
+    {
+      "town": "御殿町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "御殿町",
+      "jp": "御殿町",
+      "pattern": "1"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "幸町",
+      "jp": "幸町",
+      "pattern": "1"
+    },
+    {
+      "town": "高田麦",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高田麦",
+      "jp": "高田麦",
+      "pattern": "2"
+    },
+    {
+      "town": "小出新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小出新田",
+      "jp": "小出新田",
+      "pattern": "2"
+    },
+    {
+      "town": "松陽",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松陽",
+      "jp": "松陽",
+      "pattern": "1"
+    },
+    {
+      "town": "上朝丸",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上朝丸",
+      "jp": "上朝丸",
+      "pattern": "1"
+    },
+    {
+      "town": "上堀野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上堀野",
+      "jp": "上堀野",
+      "pattern": "2"
+    },
+    {
+      "town": "常万",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常万",
+      "jp": "常万",
+      "pattern": "2"
+    },
+    {
+      "town": "常万一本木西",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常万一本木西",
+      "jp": "常万一本木西",
+      "pattern": "1"
+    },
+    {
+      "town": "深川",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "深川",
+      "jp": "深川",
+      "pattern": "2"
+    },
+    {
+      "town": "杉浦",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉浦",
+      "jp": "杉浦",
+      "pattern": "2"
+    },
+    {
+      "town": "生三",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "生三",
+      "jp": "生三",
+      "pattern": "2"
+    },
+    {
+      "town": "西小野方",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西小野方",
+      "jp": "西小野方",
+      "pattern": "2"
+    },
+    {
+      "town": "西野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西野",
+      "jp": "西野",
+      "pattern": "2"
+    },
+    {
+      "town": "赤渕新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤渕新田",
+      "jp": "赤渕新田",
+      "pattern": "2"
+    },
+    {
+      "town": "跡",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "跡",
+      "jp": "跡",
+      "pattern": "2"
+    },
+    {
+      "town": "千河原",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千河原",
+      "jp": "千河原",
+      "pattern": "2"
+    },
+    {
+      "town": "大野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野",
+      "jp": "大野",
+      "pattern": "2"
+    },
+    {
+      "town": "沢新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "沢新田",
+      "jp": "沢新田",
+      "pattern": "2"
+    },
+    {
+      "town": "茶屋町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "茶屋町",
+      "jp": "茶屋町",
+      "pattern": "1"
+    },
+    {
+      "town": "中堀野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中堀野",
+      "jp": "中堀野",
+      "pattern": "2"
+    },
+    {
+      "town": "仲町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仲町",
+      "jp": "仲町",
+      "pattern": "1"
+    },
+    {
+      "town": "長畑",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長畑",
+      "jp": "長畑",
+      "pattern": "2"
+    },
+    {
+      "town": "堤新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堤新田",
+      "jp": "堤新田",
+      "pattern": "2"
+    },
+    {
+      "town": "提興屋",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "提興屋",
+      "jp": "提興屋",
+      "pattern": "2"
+    },
+    {
+      "town": "田谷",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田谷",
+      "jp": "田谷",
+      "pattern": "2"
+    },
+    {
+      "town": "島田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島田",
+      "jp": "島田",
+      "pattern": "2"
+    },
+    {
+      "town": "東一番町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東一番町",
+      "jp": "東一番町",
+      "pattern": "1"
+    },
+    {
+      "town": "南口",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南口",
+      "jp": "南口",
+      "pattern": "1"
+    },
+    {
+      "town": "南野",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南野",
+      "jp": "南野",
+      "pattern": "2"
+    },
+    {
+      "town": "廿六木",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "廿六木",
+      "jp": "廿六木",
+      "pattern": "1"
+    },
+    {
+      "town": "表町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "表町",
+      "jp": "表町",
+      "pattern": "1"
+    },
+    {
+      "town": "福原",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福原",
+      "jp": "福原",
+      "pattern": "2"
+    },
+    {
+      "town": "福島",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島",
+      "jp": "福島",
+      "pattern": "2"
+    },
+    {
+      "town": "払田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "払田",
+      "jp": "払田",
+      "pattern": "1"
+    },
+    {
+      "town": "平岡",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平岡",
+      "jp": "平岡",
+      "pattern": "2"
+    },
+    {
+      "town": "返吉",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "返吉",
+      "jp": "返吉",
+      "pattern": "2"
+    },
+    {
+      "town": "余目新田",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "余目新田",
+      "jp": "余目新田",
+      "pattern": "2"
+    },
+    {
+      "town": "落合",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "落合",
+      "jp": "落合",
+      "pattern": "2"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑町",
+      "jp": "緑町",
+      "pattern": "1"
+    },
+    {
+      "town": "連枝",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "連枝",
+      "jp": "連枝",
+      "pattern": "2"
+    },
+    {
+      "town": "和光町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和光町",
+      "jp": "和光町",
+      "pattern": "1"
+    },
+    {
+      "town": "梵天町",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "梵天町",
+      "jp": "梵天町",
+      "pattern": "1"
+    },
+    {
+      "town": "茗荷瀬",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "茗荷瀬",
+      "jp": "茗荷瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "槇島",
+      "townEn": "Akita",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "槇島",
+      "jp": "槇島",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4763i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

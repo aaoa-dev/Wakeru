@@ -1,0 +1,735 @@
+{
+  "id": "linkdata-4782-04203",
+  "code": "04203",
+  "pref": "04",
+  "jp": "塩竈市",
+  "en": "Shiogama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4782i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4782i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「資源」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「レシート（感熱紙）」 under 「可燃」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙（チラシ含む）」 under 「資源」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スチール缶（軽く洗う）」 under 「資源」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ハサミ（厚手の紙などに包む）」 under 「不燃」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「可燃」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「トレイ（紙）」 under 「可燃」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「不燃」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「天ぷら油」 under 「可燃」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「家電リサイクル法対象品（10 ページ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": [
+          0
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": [
+          0
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": {
+          "day": 1,
+          "weeks": [
+            1,
+            3,
+            5
+          ]
+        },
+        "hazardous": [
+          4
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3,
+            5
+          ]
+        },
+        "paper": [
+          0
+        ]
+      },
+      "4": {
+        "burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": [
+          0
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "hazardous": [
+          1
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          1
+        ],
+        "hazardous": [
+          1
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": [
+          1
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "8": {
+        "burnable": [
+          1,
+          4
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "paper": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "M78星雲",
+      "townEn": "Shiogama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "M78星雲",
+      "jp": "M78星雲",
+      "pattern": "2"
+    },
+    {
+      "town": "ポッケ村",
+      "townEn": "Pokke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ポッケ村",
+      "jp": "ポッケ村",
+      "pattern": "4"
+    },
+    {
+      "town": "月見ヶ丘西玉川町",
+      "townEn": "Shiogama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "月見ヶ丘西玉川町",
+      "jp": "月見ヶ丘西玉川町",
+      "pattern": "6"
+    },
+    {
+      "town": "向ヶ丘",
+      "townEn": "Shiogama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向ヶ丘",
+      "jp": "向ヶ丘",
+      "pattern": "6"
+    },
+    {
+      "town": "桜ヶ丘",
+      "townEn": "Shiogama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜ヶ丘",
+      "jp": "桜ヶ丘",
+      "pattern": "6"
+    },
+    {
+      "town": "片町",
+      "townEn": "Shiogama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "片町",
+      "jp": "片町",
+      "pattern": "1"
+    },
+    {
+      "town": "赤坂",
+      "townEn": "Akasaka",
+      "kana": "アカサカ",
+      "chome": null,
+      "detail": null,
+      "en": "赤坂",
+      "jp": "赤坂",
+      "pattern": "3"
+    },
+    {
+      "town": "赤坂",
+      "townEn": "Akasaka",
+      "kana": "アカサカ",
+      "chome": null,
+      "detail": null,
+      "en": "赤坂",
+      "jp": "赤坂",
+      "pattern": "5"
+    },
+    {
+      "town": "芦畔町",
+      "townEn": "Ashigurocho",
+      "kana": "アシグロチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "芦畔町",
+      "jp": "芦畔町",
+      "pattern": "8"
+    },
+    {
+      "town": "石堂",
+      "townEn": "Ishido",
+      "kana": "イシドウ",
+      "chome": null,
+      "detail": "石堂5～8番と（9番一部）《石堂第二町内会》",
+      "en": "石堂5～8番と（9番一部）《石堂第二町内会》",
+      "jp": "石堂5～8番と（9番一部）《石堂第二町内会》",
+      "pattern": "6"
+    },
+    {
+      "town": "泉沢町",
+      "townEn": "Izumisawacho",
+      "kana": "イズミサワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "泉沢町",
+      "jp": "泉沢町",
+      "pattern": "7"
+    },
+    {
+      "town": "大日向町",
+      "townEn": "Ohinatacho",
+      "kana": "オオヒナタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "大日向町",
+      "jp": "大日向町",
+      "pattern": "6"
+    },
+    {
+      "town": "牛生町",
+      "townEn": "Gyucho",
+      "kana": "ギュウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "牛生町",
+      "jp": "牛生町",
+      "pattern": "8"
+    },
+    {
+      "town": "権現堂",
+      "townEn": "Gongendo",
+      "kana": "ゴンゲンドウ",
+      "chome": null,
+      "detail": null,
+      "en": "権現堂",
+      "jp": "権現堂",
+      "pattern": "6"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaecho",
+      "kana": "サカエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "6"
+    },
+    {
+      "town": "白菊町",
+      "townEn": "Shiragikucho",
+      "kana": "シラギクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "白菊町",
+      "jp": "白菊町",
+      "pattern": "6"
+    },
+    {
+      "town": "新富町",
+      "townEn": "Shintomicho",
+      "kana": "シントミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "新富町",
+      "jp": "新富町",
+      "pattern": "8"
+    },
+    {
+      "town": "袖野田町",
+      "townEn": "Sodenodacho",
+      "kana": "ソデノダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "袖野田町",
+      "jp": "袖野田町",
+      "pattern": "6"
+    },
+    {
+      "town": "玉川",
+      "townEn": "Tamagawa",
+      "kana": "タマガワ",
+      "chome": null,
+      "detail": "玉川一～三丁目",
+      "en": "玉川一～三丁目",
+      "jp": "玉川一～三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "貞山通",
+      "townEn": "Teizandori",
+      "kana": "テイザンドオリ",
+      "chome": null,
+      "detail": "貞山通一丁目",
+      "en": "貞山通一丁目",
+      "jp": "貞山通一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "貞山通",
+      "townEn": "Teizandori",
+      "kana": "テイザンドオリ",
+      "chome": null,
+      "detail": "貞山通三丁目",
+      "en": "貞山通三丁目",
+      "jp": "貞山通三丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "貞山通",
+      "townEn": "Teizandori",
+      "kana": "テイザンドオリ",
+      "chome": null,
+      "detail": "貞山通二丁目",
+      "en": "貞山通二丁目",
+      "jp": "貞山通二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "中の島",
+      "townEn": "Nakanoshima",
+      "kana": "ナカノシマ",
+      "chome": null,
+      "detail": null,
+      "en": "中の島",
+      "jp": "中の島",
+      "pattern": "8"
+    },
+    {
+      "town": "錦町",
+      "townEn": "Nishikicho",
+      "kana": "ニシキチョウ",
+      "chome": null,
+      "detail": "錦町4・5番《錦花立町内会》",
+      "en": "錦町4・5番《錦花立町内会》",
+      "jp": "錦町4・5番《錦花立町内会》",
+      "pattern": "8"
+    },
+    {
+      "town": "野田",
+      "townEn": "Noda",
+      "kana": "ノダ",
+      "chome": null,
+      "detail": null,
+      "en": "野田",
+      "jp": "野田",
+      "pattern": "6"
+    },
+    {
+      "town": "花立町",
+      "townEn": "Hanadatecho",
+      "kana": "ハナダテチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "花立町",
+      "jp": "花立町",
+      "pattern": "8"
+    },
+    {
+      "town": "母子沢町",
+      "townEn": "Hahakozawacho",
+      "kana": "ハハコザワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "母子沢町",
+      "jp": "母子沢町",
+      "pattern": "6"
+    },
+    {
+      "town": "東玉川町",
+      "townEn": "Higashitamagawacho",
+      "kana": "ヒガシタマガワチョウ",
+      "chome": null,
+      "detail": "東玉川町3・4番《玉川地区町内会》",
+      "en": "東玉川町3・4番《玉川地区町内会》",
+      "jp": "東玉川町3・4番《玉川地区町内会》",
+      "pattern": "6"
+    },
+    {
+      "town": "東玉川町",
+      "townEn": "Higashitamagawacho",
+      "kana": "ヒガシタマガワチョウ",
+      "chome": null,
+      "detail": "東玉川町5番《駅前マンション》",
+      "en": "東玉川町5番《駅前マンション》",
+      "jp": "東玉川町5番《駅前マンション》",
+      "pattern": "6"
+    },
+    {
+      "town": "舟入",
+      "townEn": "Funairi",
+      "kana": "フナイリ",
+      "chome": null,
+      "detail": "舟入一丁目",
+      "en": "舟入一丁目",
+      "jp": "舟入一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "舟入",
+      "townEn": "Funairi",
+      "kana": "フナイリ",
+      "chome": null,
+      "detail": "舟入二丁目",
+      "en": "舟入二丁目",
+      "jp": "舟入二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "港町",
+      "townEn": "Minatomachi",
+      "kana": "ミナトマチ",
+      "chome": null,
+      "detail": "港町一丁目",
+      "en": "港町一丁目",
+      "jp": "港町一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "港町",
+      "townEn": "Minatomachi",
+      "kana": "ミナトマチ",
+      "chome": null,
+      "detail": "港町二丁目",
+      "en": "港町二丁目",
+      "jp": "港町二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "南錦町",
+      "townEn": "Minaminishikicho",
+      "kana": "ミナミニシキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "南錦町",
+      "jp": "南錦町",
+      "pattern": "6"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4782i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

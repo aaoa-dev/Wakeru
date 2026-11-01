@@ -1,0 +1,682 @@
+{
+  "id": "tama-13224",
+  "code": "13224",
+  "pref": "13",
+  "jp": "多摩市",
+  "en": "Tama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tama.5374.jp/data/area_days.csv",
+    "http://tama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「古布」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「雑誌・雑紙」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「雑誌・雑紙」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「アルミホイル」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「CD（ケースを含む）」 under 「プラスチック」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害性ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「有害性ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「有害性ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「小型家電・金属類」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "oversized": [
+          2
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            [
+              5
+            ]
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ]
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "oversized": [
+          5
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            [
+              2
+            ]
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ]
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "oversized": [
+          4
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            [
+              1
+            ]
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ]
+      },
+      "4": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "oversized": [
+          1
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            [
+              4
+            ]
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "愛宕",
+      "townEn": "Atago",
+      "kana": "アタゴ",
+      "chome": null,
+      "detail": "愛宕1・2丁目",
+      "en": "愛宕1・2丁目",
+      "jp": "愛宕1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "愛宕",
+      "townEn": "Atago",
+      "kana": "アタゴ",
+      "chome": null,
+      "detail": "愛宕3･4丁目",
+      "en": "愛宕3･4丁目",
+      "jp": "愛宕3･4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "一ノ宮",
+      "townEn": "Ichinomiya",
+      "kana": "イチノミヤ",
+      "chome": null,
+      "detail": null,
+      "en": "一ノ宮",
+      "jp": "一ノ宮",
+      "pattern": "1"
+    },
+    {
+      "town": "落合",
+      "townEn": "Ochiai",
+      "kana": "オチアイ",
+      "chome": null,
+      "detail": null,
+      "en": "落合",
+      "jp": "落合",
+      "pattern": "4"
+    },
+    {
+      "town": "落川",
+      "townEn": "Ochikawa",
+      "kana": "オチカワ",
+      "chome": null,
+      "detail": null,
+      "en": "落川",
+      "jp": "落川",
+      "pattern": "1"
+    },
+    {
+      "town": "貝取",
+      "townEn": "Kaidori",
+      "kana": "カイドリ",
+      "chome": null,
+      "detail": "貝取1～5丁目",
+      "en": "貝取1～5丁目",
+      "jp": "貝取1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "貝取",
+      "townEn": "Kaidori",
+      "kana": "カイドリ",
+      "chome": null,
+      "detail": "貝取1300～1700番台",
+      "en": "貝取1300～1700番台",
+      "jp": "貝取1300～1700番台",
+      "pattern": "2"
+    },
+    {
+      "town": "貝取",
+      "townEn": "Kaidori",
+      "kana": "カイドリ",
+      "chome": null,
+      "detail": "貝取1800番台",
+      "en": "貝取1800番台",
+      "jp": "貝取1800番台",
+      "pattern": "1"
+    },
+    {
+      "town": "唐木田",
+      "townEn": "Karakida",
+      "kana": "カラキダ",
+      "chome": null,
+      "detail": null,
+      "en": "唐木田",
+      "jp": "唐木田",
+      "pattern": "4"
+    },
+    {
+      "town": "乞田",
+      "townEn": "Kotta",
+      "kana": "コッタ",
+      "chome": null,
+      "detail": null,
+      "en": "乞田",
+      "jp": "乞田",
+      "pattern": "2"
+    },
+    {
+      "town": "桜ヶ丘",
+      "townEn": "Sakuragaoka",
+      "kana": "サクラガオカ",
+      "chome": null,
+      "detail": "桜ヶ丘1･2丁目",
+      "en": "桜ヶ丘1･2丁目",
+      "jp": "桜ヶ丘1･2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "桜ヶ丘",
+      "townEn": "Sakuragaoka",
+      "kana": "サクラガオカ",
+      "chome": null,
+      "detail": "桜ヶ丘3・4丁目",
+      "en": "桜ヶ丘3・4丁目",
+      "jp": "桜ヶ丘3・4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "山王下",
+      "townEn": "Sannoshita",
+      "kana": "サンノウシタ",
+      "chome": null,
+      "detail": null,
+      "en": "山王下",
+      "jp": "山王下",
+      "pattern": "4"
+    },
+    {
+      "town": "諏訪",
+      "townEn": "Suwa",
+      "kana": "スワ",
+      "chome": null,
+      "detail": null,
+      "en": "諏訪",
+      "jp": "諏訪",
+      "pattern": "3"
+    },
+    {
+      "town": "関戸",
+      "townEn": "Sekido",
+      "kana": "セキド",
+      "chome": null,
+      "detail": "関戸1～4丁目",
+      "en": "関戸1～4丁目",
+      "jp": "関戸1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "関戸",
+      "townEn": "Sekido",
+      "kana": "セキド",
+      "chome": null,
+      "detail": "関戸5･6丁目",
+      "en": "関戸5･6丁目",
+      "jp": "関戸5･6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴牧",
+      "townEn": "Tsurumaki",
+      "kana": "ツルマキ",
+      "chome": null,
+      "detail": null,
+      "en": "鶴牧",
+      "jp": "鶴牧",
+      "pattern": "4"
+    },
+    {
+      "town": "豊ヶ丘",
+      "townEn": "Toyogaoka",
+      "kana": "トヨガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "豊ヶ丘",
+      "jp": "豊ヶ丘",
+      "pattern": "4"
+    },
+    {
+      "town": "中沢",
+      "townEn": "Nakazawa",
+      "kana": "ナカザワ",
+      "chome": null,
+      "detail": null,
+      "en": "中沢",
+      "jp": "中沢",
+      "pattern": "4"
+    },
+    {
+      "town": "永山",
+      "townEn": "Nagayama",
+      "kana": "ナガヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "永山",
+      "jp": "永山",
+      "pattern": "3"
+    },
+    {
+      "town": "東寺方",
+      "townEn": "Higashiteragata",
+      "kana": "ヒガシテラガタ",
+      "chome": null,
+      "detail": null,
+      "en": "東寺方",
+      "jp": "東寺方",
+      "pattern": "1"
+    },
+    {
+      "town": "聖ヶ丘",
+      "townEn": "Hijirigaoka",
+      "kana": "ヒジリガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "聖ヶ丘",
+      "jp": "聖ヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "馬引沢",
+      "townEn": "Mahikizawa",
+      "kana": "マヒキザワ",
+      "chome": null,
+      "detail": null,
+      "en": "馬引沢",
+      "jp": "馬引沢",
+      "pattern": "2"
+    },
+    {
+      "town": "南野",
+      "townEn": "Minamino",
+      "kana": "ミナミノ",
+      "chome": null,
+      "detail": null,
+      "en": "南野",
+      "jp": "南野",
+      "pattern": "3"
+    },
+    {
+      "town": "百草",
+      "townEn": "Mogusa",
+      "kana": "モグサ",
+      "chome": null,
+      "detail": null,
+      "en": "百草",
+      "jp": "百草",
+      "pattern": "1"
+    },
+    {
+      "town": "連光寺",
+      "townEn": "Renkoji",
+      "kana": "レンコウジ",
+      "chome": null,
+      "detail": null,
+      "en": "連光寺",
+      "jp": "連光寺",
+      "pattern": "2"
+    },
+    {
+      "town": "和田",
+      "townEn": "Wada",
+      "kana": "ワダ",
+      "chome": null,
+      "detail": null,
+      "en": "和田",
+      "jp": "和田",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

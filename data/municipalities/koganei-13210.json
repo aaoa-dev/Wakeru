@@ -1,0 +1,500 @@
+{
+  "id": "koganei-13210",
+  "code": "13210",
+  "pref": "13",
+  "jp": "小金井市",
+  "en": "Koganei",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://koganei.5374.jp/data/area_days.csv",
+    "http://koganei.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          4
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          1
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": [
+          4
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": [
+          5
+        ]
+      },
+      "7": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          2
+        ]
+      },
+      "8": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          1
+        ]
+      },
+      "9": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "梶野町",
+      "townEn": "Kajinocho",
+      "kana": "カジノチョウ",
+      "chome": null,
+      "detail": "梶野町地区 / 関野町地区",
+      "en": "梶野町地区 / 関野町地区",
+      "jp": "梶野町地区 / 関野町地区",
+      "pattern": "4"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町(3・4丁目) / 本町(1・6丁目) / 貫井南町(3丁目)",
+      "en": "中町(3・4丁目) / 本町(1・6丁目) / 貫井南町(3丁目)",
+      "jp": "中町(3・4丁目) / 本町(1・6丁目) / 貫井南町(3丁目)",
+      "pattern": "8"
+    },
+    {
+      "town": "貫井北町",
+      "townEn": "Nukuikitamachi",
+      "kana": "ヌクイキタマチ",
+      "chome": null,
+      "detail": "貫井北町地区",
+      "en": "貫井北町地区",
+      "jp": "貫井北町地区",
+      "pattern": "1"
+    },
+    {
+      "town": "貫井南町",
+      "townEn": "Nukuiminamicho",
+      "kana": "ヌクイミナミチョウ",
+      "chome": null,
+      "detail": "貫井南町(1・2・4・5丁目) / 前原町(5丁目)",
+      "en": "貫井南町(1・2・4・5丁目) / 前原町(5丁目)",
+      "jp": "貫井南町(1・2・4・5丁目) / 前原町(5丁目)",
+      "pattern": "9"
+    },
+    {
+      "town": "東町",
+      "townEn": "Higashicho",
+      "kana": "ヒガシチョウ",
+      "chome": null,
+      "detail": "東町(1・5丁目) / 中町(1・2丁目)",
+      "en": "東町(1・5丁目) / 中町(1・2丁目)",
+      "jp": "東町(1・5丁目) / 中町(1・2丁目)",
+      "pattern": "6"
+    },
+    {
+      "town": "東町",
+      "townEn": "Higashicho",
+      "kana": "ヒガシチョウ",
+      "chome": null,
+      "detail": "東町(2・3・4丁目)",
+      "en": "東町(2・3・4丁目)",
+      "jp": "東町(2・3・4丁目)",
+      "pattern": "7"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町(3・4・5丁目)",
+      "en": "本町(3・4・5丁目)",
+      "jp": "本町(3・4・5丁目)",
+      "pattern": "2"
+    },
+    {
+      "town": "前原町",
+      "townEn": "Maeharacho",
+      "kana": "マエハラチョウ",
+      "chome": null,
+      "detail": "前原町(1・2・3・4丁目)",
+      "en": "前原町(1・2・3・4丁目)",
+      "jp": "前原町(1・2・3・4丁目)",
+      "pattern": "9"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": "緑町(1・2・3丁目) / 桜町地区",
+      "en": "緑町(1・2・3丁目) / 桜町地区",
+      "jp": "緑町(1・2・3丁目) / 桜町地区",
+      "pattern": "5"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": "緑町(4・5丁目) / 本町(2丁目)",
+      "en": "緑町(4・5丁目) / 本町(2丁目)",
+      "jp": "緑町(4・5丁目) / 本町(2丁目)",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://koganei.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,1904 @@
+{
+  "id": "tanabe-30206",
+  "code": "30206",
+  "pref": "30",
+  "jp": "田辺市",
+  "en": "Tanabe",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tanabe.5374.jp/data/area_days.csv",
+    "http://tanabe.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「本」 under 「可燃」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「可燃」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「可燃」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「プラ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶」 under 「資源」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空きびん」 under 「資源」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「資源」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「エアゾール缶」 under 「資源」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「資源」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「食用油（金属製）」 under 「資源」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "アタゴ",
+      "townEn": "Atago",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "アタゴ",
+      "jp": "アタゴ",
+      "pattern": "2"
+    },
+    {
+      "town": "井原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "井原",
+      "jp": "井原",
+      "pattern": "1"
+    },
+    {
+      "town": "芋",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芋",
+      "jp": "芋",
+      "pattern": "1"
+    },
+    {
+      "town": "駅前",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前",
+      "jp": "駅前",
+      "pattern": "2"
+    },
+    {
+      "town": "駅前新通",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前新通",
+      "jp": "駅前新通",
+      "pattern": "2"
+    },
+    {
+      "town": "下屋敷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下屋敷",
+      "jp": "下屋敷",
+      "pattern": "2"
+    },
+    {
+      "town": "海蔵寺",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "海蔵寺",
+      "jp": "海蔵寺",
+      "pattern": "2"
+    },
+    {
+      "town": "崖",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "崖",
+      "jp": "崖",
+      "pattern": "1"
+    },
+    {
+      "town": "境",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "境",
+      "jp": "境",
+      "pattern": "1"
+    },
+    {
+      "town": "橋谷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋谷",
+      "jp": "橋谷",
+      "pattern": "1"
+    },
+    {
+      "town": "三栖",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三栖",
+      "jp": "三栖",
+      "pattern": "2"
+    },
+    {
+      "town": "三川・富里",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三川・富里",
+      "jp": "三川・富里",
+      "pattern": "1"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若宮",
+      "jp": "若宮",
+      "pattern": "2"
+    },
+    {
+      "town": "上浜田",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上浜田",
+      "jp": "上浜田",
+      "pattern": "2"
+    },
+    {
+      "town": "新屋敷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新屋敷",
+      "jp": "新屋敷",
+      "pattern": "2"
+    },
+    {
+      "town": "跡の浦",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "跡の浦",
+      "jp": "跡の浦",
+      "pattern": "1"
+    },
+    {
+      "town": "千津ヶ谷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千津ヶ谷",
+      "jp": "千津ヶ谷",
+      "pattern": "1"
+    },
+    {
+      "town": "大坊",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大坊",
+      "jp": "大坊",
+      "pattern": "1"
+    },
+    {
+      "town": "団栗",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "団栗",
+      "jp": "団栗",
+      "pattern": "1"
+    },
+    {
+      "town": "中屋敷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中屋敷",
+      "jp": "中屋敷",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 温川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 温川",
+      "jp": "中辺路 温川",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 下芝",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 下芝",
+      "jp": "中辺路 下芝",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 近露",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 近露",
+      "jp": "中辺路 近露",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 熊野川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 熊野川",
+      "jp": "中辺路 熊野川",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 高原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 高原",
+      "jp": "中辺路 高原",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 小皆",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 小皆",
+      "jp": "中辺路 小皆",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 小松原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 小松原",
+      "jp": "中辺路 小松原",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 上芝下",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 上芝下",
+      "jp": "中辺路 上芝下",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 上芝上",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 上芝上",
+      "jp": "中辺路 上芝上",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 真砂",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 真砂",
+      "jp": "中辺路 真砂",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 水上",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 水上",
+      "jp": "中辺路 水上",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 西谷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 西谷",
+      "jp": "中辺路 西谷",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 石船",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 石船",
+      "jp": "中辺路 石船",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 川合",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 川合",
+      "jp": "中辺路 川合",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 大川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 大川",
+      "jp": "中辺路 大川",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 大内川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 大内川",
+      "jp": "中辺路 大内川",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 滝尻",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 滝尻",
+      "jp": "中辺路 滝尻",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 中芝",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 中芝",
+      "jp": "中辺路 中芝",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 内井川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 内井川",
+      "jp": "中辺路 内井川",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 福定",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 福定",
+      "jp": "中辺路 福定",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 峰",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 峰",
+      "jp": "中辺路 峰",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 北郡",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 北郡",
+      "jp": "中辺路 北郡",
+      "pattern": "1"
+    },
+    {
+      "town": "中辺路 野中",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 野中",
+      "jp": "中辺路 野中",
+      "pattern": "2"
+    },
+    {
+      "town": "中辺路 澤",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中辺路 澤",
+      "jp": "中辺路 澤",
+      "pattern": "2"
+    },
+    {
+      "town": "田川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田川",
+      "jp": "田川",
+      "pattern": "1"
+    },
+    {
+      "town": "田中",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田中",
+      "jp": "田中",
+      "pattern": "1"
+    },
+    {
+      "town": "田鶴",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田鶴",
+      "jp": "田鶴",
+      "pattern": "1"
+    },
+    {
+      "town": "内の浦",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内の浦",
+      "jp": "内の浦",
+      "pattern": "1"
+    },
+    {
+      "town": "弁慶町",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "弁慶町",
+      "jp": "弁慶町",
+      "pattern": "2"
+    },
+    {
+      "town": "芳養団地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芳養団地",
+      "jp": "芳養団地",
+      "pattern": "1"
+    },
+    {
+      "town": "北長",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北長",
+      "jp": "北長",
+      "pattern": "1"
+    },
+    {
+      "town": "北内の浦団地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北内の浦団地",
+      "jp": "北内の浦団地",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 一本松",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 一本松",
+      "jp": "本宮 一本松",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 下郷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 下郷",
+      "jp": "本宮 下郷",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 下向",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 下向",
+      "jp": "本宮 下向",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 下湯川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 下湯川",
+      "jp": "本宮 下湯川",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 皆瀬川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 皆瀬川",
+      "jp": "本宮 皆瀬川",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 皆地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 皆地",
+      "jp": "本宮 皆地",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 柿",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 柿",
+      "jp": "本宮 柿",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 菊水",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 菊水",
+      "jp": "本宮 菊水",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 久保野",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 久保野",
+      "jp": "本宮 久保野",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 曲川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 曲川",
+      "jp": "本宮 曲川",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 九鬼",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 九鬼",
+      "jp": "本宮 九鬼",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 高山",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 高山",
+      "jp": "本宮 高山",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 耳打",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 耳打",
+      "jp": "本宮 耳打",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 小々森",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 小々森",
+      "jp": "本宮 小々森",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 小原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 小原",
+      "jp": "本宮 小原",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 小森",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 小森",
+      "jp": "本宮 小森",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 小津荷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 小津荷",
+      "jp": "本宮 小津荷",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 小野",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 小野",
+      "jp": "本宮 小野",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 上郷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 上郷",
+      "jp": "本宮 上郷",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 上切原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 上切原",
+      "jp": "本宮 上切原",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 上大野",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 上大野",
+      "jp": "本宮 上大野",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 上地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 上地",
+      "jp": "本宮 上地",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 上町中村地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 上町中村地",
+      "jp": "本宮 上町中村地",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 切畑",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 切畑",
+      "jp": "本宮 切畑",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 川湯",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 川湯",
+      "jp": "本宮 川湯",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 大居",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 大居",
+      "jp": "本宮 大居",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 大瀬",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 大瀬",
+      "jp": "本宮 大瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 大津荷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 大津荷",
+      "jp": "本宮 大津荷",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 竹ノ本",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 竹ノ本",
+      "jp": "本宮 竹ノ本",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 中下番",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 中下番",
+      "jp": "本宮 中下番",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 田代",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 田代",
+      "jp": "本宮 田代",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 渡瀬",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 渡瀬",
+      "jp": "本宮 渡瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 土河屋",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 土河屋",
+      "jp": "本宮 土河屋",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 東和田",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 東和田",
+      "jp": "本宮 東和田",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 湯峯",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 湯峯",
+      "jp": "本宮 湯峯",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 萩",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 萩",
+      "jp": "本宮 萩",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 白瀬",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 白瀬",
+      "jp": "本宮 白瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 八木尾",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 八木尾",
+      "jp": "本宮 八木尾",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 発心門",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 発心門",
+      "jp": "本宮 発心門",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 桧葉",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 桧葉",
+      "jp": "本宮 桧葉",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 武住",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 武住",
+      "jp": "本宮 武住",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 福寿",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 福寿",
+      "jp": "本宮 福寿",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 平",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 平",
+      "jp": "本宮 平",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 本町岩田地",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 本町岩田地",
+      "jp": "本宮 本町岩田地",
+      "pattern": "1"
+    },
+    {
+      "town": "本宮 蓑尾谷",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 蓑尾谷",
+      "jp": "本宮 蓑尾谷",
+      "pattern": "2"
+    },
+    {
+      "town": "本宮 野竹",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本宮 野竹",
+      "jp": "本宮 野竹",
+      "pattern": "2"
+    },
+    {
+      "town": "末広",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "末広",
+      "jp": "末広",
+      "pattern": "2"
+    },
+    {
+      "town": "万呂",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "万呂",
+      "jp": "万呂",
+      "pattern": "2"
+    },
+    {
+      "town": "名喜里",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "名喜里",
+      "jp": "名喜里",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 安井",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 安井",
+      "jp": "龍神 安井",
+      "pattern": "2"
+    },
+    {
+      "town": "龍神 宮代",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 宮代",
+      "jp": "龍神 宮代",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 広井原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 広井原",
+      "jp": "龍神 広井原",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 甲斐ノ川",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 甲斐ノ川",
+      "jp": "龍神 甲斐ノ川",
+      "pattern": "2"
+    },
+    {
+      "town": "龍神 三ツ又",
+      "townEn": "Tsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 三ツ又",
+      "jp": "龍神 三ツ又",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 小家",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 小家",
+      "jp": "龍神 小家",
+      "pattern": "2"
+    },
+    {
+      "town": "龍神 小又川",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 小又川",
+      "jp": "龍神 小又川",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 西",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 西",
+      "jp": "龍神 西",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 丹生ノ川",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 丹生ノ川",
+      "jp": "龍神 丹生ノ川",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 殿原",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 殿原",
+      "jp": "龍神 殿原",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 東",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 東",
+      "jp": "龍神 東",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 湯ノ又",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 湯ノ又",
+      "jp": "龍神 湯ノ又",
+      "pattern": "1"
+    },
+    {
+      "town": "龍神 福井",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 福井",
+      "jp": "龍神 福井",
+      "pattern": "2"
+    },
+    {
+      "town": "龍神 柳瀬",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 柳瀬",
+      "jp": "龍神 柳瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "龍神 龍神",
+      "townEn": "Tanabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "龍神 龍神",
+      "jp": "龍神 龍神",
+      "pattern": "1"
+    },
+    {
+      "town": "秋津川",
+      "townEn": "Akizugawa",
+      "kana": "アキヅガワ",
+      "chome": null,
+      "detail": null,
+      "en": "秋津川",
+      "jp": "秋津川",
+      "pattern": "1"
+    },
+    {
+      "town": "秋津町",
+      "townEn": "Akizucho",
+      "kana": "アキヅチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "秋津町",
+      "jp": "秋津町",
+      "pattern": "2"
+    },
+    {
+      "town": "あけぼの",
+      "townEn": "Akebono",
+      "kana": "アケボノ",
+      "chome": null,
+      "detail": null,
+      "en": "あけぼの",
+      "jp": "あけぼの",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日ヶ丘",
+      "townEn": "Asahigaoka",
+      "kana": "アサヒガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "朝日ヶ丘",
+      "jp": "朝日ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "鮎川",
+      "townEn": "Ayukawa",
+      "kana": "アユカワ",
+      "chome": null,
+      "detail": null,
+      "en": "鮎川",
+      "jp": "鮎川",
+      "pattern": "2"
+    },
+    {
+      "town": "磯間",
+      "townEn": "Isoma",
+      "kana": "イソマ",
+      "chome": null,
+      "detail": null,
+      "en": "磯間",
+      "jp": "磯間",
+      "pattern": "2"
+    },
+    {
+      "town": "稲成町",
+      "townEn": "Inaricho",
+      "kana": "イナリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "稲成町",
+      "jp": "稲成町",
+      "pattern": "1"
+    },
+    {
+      "town": "今福町",
+      "townEn": "Imafukumachi",
+      "kana": "イマフクマチ",
+      "chome": null,
+      "detail": null,
+      "en": "今福町",
+      "jp": "今福町",
+      "pattern": "2"
+    },
+    {
+      "town": "上の山",
+      "townEn": "Uenoyama",
+      "kana": "ウエノヤマ",
+      "chome": null,
+      "detail": "上の山（出立、西郷、益穂）",
+      "en": "上の山（出立、西郷、益穂）",
+      "jp": "上の山（出立、西郷、益穂）",
+      "pattern": "1"
+    },
+    {
+      "town": "江川",
+      "townEn": "Egawa",
+      "kana": "エガワ",
+      "chome": null,
+      "detail": null,
+      "en": "江川",
+      "jp": "江川",
+      "pattern": "1"
+    },
+    {
+      "town": "扇ヶ浜",
+      "townEn": "Ogigahama",
+      "kana": "オウギガハマ",
+      "chome": null,
+      "detail": null,
+      "en": "扇ヶ浜",
+      "jp": "扇ヶ浜",
+      "pattern": "2"
+    },
+    {
+      "town": "学園",
+      "townEn": "Gakuen",
+      "kana": "ガクエン",
+      "chome": null,
+      "detail": null,
+      "en": "学園",
+      "jp": "学園",
+      "pattern": "2"
+    },
+    {
+      "town": "神島台",
+      "townEn": "Kashimadai",
+      "kana": "カシマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "神島台",
+      "jp": "神島台",
+      "pattern": "1"
+    },
+    {
+      "town": "片町",
+      "townEn": "Katamachi",
+      "kana": "カタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "片町",
+      "jp": "片町",
+      "pattern": "2"
+    },
+    {
+      "town": "上秋津",
+      "townEn": "Kamiakizu",
+      "kana": "カミアキヅ",
+      "chome": null,
+      "detail": null,
+      "en": "上秋津",
+      "jp": "上秋津",
+      "pattern": "2"
+    },
+    {
+      "town": "上芳養",
+      "townEn": "Kamihaya",
+      "kana": "カミハヤ",
+      "chome": null,
+      "detail": null,
+      "en": "上芳養",
+      "jp": "上芳養",
+      "pattern": "1"
+    },
+    {
+      "town": "上屋敷",
+      "townEn": "Kamiyashiki",
+      "kana": "カミヤシキ",
+      "chome": null,
+      "detail": null,
+      "en": "上屋敷",
+      "jp": "上屋敷",
+      "pattern": "2"
+    },
+    {
+      "town": "北新町",
+      "townEn": "Kitashimmachi",
+      "kana": "キタシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "北新町",
+      "jp": "北新町",
+      "pattern": "2"
+    },
+    {
+      "town": "紺屋町",
+      "townEn": "Konyamachi",
+      "kana": "コンヤマチ",
+      "chome": null,
+      "detail": null,
+      "en": "紺屋町",
+      "jp": "紺屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaemachi",
+      "kana": "サカエマチ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "城山台",
+      "townEn": "Shiroyamadai",
+      "kana": "シロヤマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "城山台",
+      "jp": "城山台",
+      "pattern": "2"
+    },
+    {
+      "town": "新万",
+      "townEn": "Shimman",
+      "kana": "シンマン",
+      "chome": null,
+      "detail": null,
+      "en": "新万",
+      "jp": "新万",
+      "pattern": "1"
+    },
+    {
+      "town": "高雄",
+      "townEn": "Takao",
+      "kana": "タカオ",
+      "chome": null,
+      "detail": "高雄一丁目（会津町・八幡町（鉄道南側地域））",
+      "en": "高雄一丁目（会津町・八幡町（鉄道南側地域））",
+      "jp": "高雄一丁目（会津町・八幡町（鉄道南側地域））",
+      "pattern": "2"
+    },
+    {
+      "town": "高雄",
+      "townEn": "Takao",
+      "kana": "タカオ",
+      "chome": null,
+      "detail": "高雄三丁目（小泉一部・八幡町（鉄道北側地域））",
+      "en": "高雄三丁目（小泉一部・八幡町（鉄道北側地域））",
+      "jp": "高雄三丁目（小泉一部・八幡町（鉄道北側地域））",
+      "pattern": "1"
+    },
+    {
+      "town": "高雄",
+      "townEn": "Takao",
+      "kana": "タカオ",
+      "chome": null,
+      "detail": "高雄三丁目（万呂小泉）",
+      "en": "高雄三丁目（万呂小泉）",
+      "jp": "高雄三丁目（万呂小泉）",
+      "pattern": "2"
+    },
+    {
+      "town": "高雄",
+      "townEn": "Takao",
+      "kana": "タカオ",
+      "chome": null,
+      "detail": "高雄二丁目（小泉町、山手町、会津町・八幡町（鉄道北側地域））",
+      "en": "高雄二丁目（小泉町、山手町、会津町・八幡町（鉄道北側地域））",
+      "jp": "高雄二丁目（小泉町、山手町、会津町・八幡町（鉄道北側地域））",
+      "pattern": "1"
+    },
+    {
+      "town": "たきない町",
+      "townEn": "Takinaicho",
+      "kana": "タキナイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "たきない町",
+      "jp": "たきない町",
+      "pattern": "1"
+    },
+    {
+      "town": "天神崎",
+      "townEn": "Tenjinzaki",
+      "kana": "テンジンザキ",
+      "chome": null,
+      "detail": "天神崎（天神、立戸）",
+      "en": "天神崎（天神、立戸）",
+      "jp": "天神崎（天神、立戸）",
+      "pattern": "1"
+    },
+    {
+      "town": "東陽",
+      "townEn": "Toyo",
+      "kana": "トウヨウ",
+      "chome": null,
+      "detail": "東陽（ファミール・ヴィラ）",
+      "en": "東陽（ファミール・ヴィラ）",
+      "jp": "東陽（ファミール・ヴィラ）",
+      "pattern": "2"
+    },
+    {
+      "town": "東陽",
+      "townEn": "Toyo",
+      "kana": "トウヨウ",
+      "chome": null,
+      "detail": "東陽（神田、東本町）",
+      "en": "東陽（神田、東本町）",
+      "jp": "東陽（神田、東本町）",
+      "pattern": "2"
+    },
+    {
+      "town": "長野",
+      "townEn": "Nagano",
+      "kana": "ナガノ",
+      "chome": null,
+      "detail": null,
+      "en": "長野",
+      "jp": "長野",
+      "pattern": "2"
+    },
+    {
+      "town": "中芳養",
+      "townEn": "Nakahaya",
+      "kana": "ナカハヤ",
+      "chome": null,
+      "detail": null,
+      "en": "中芳養",
+      "jp": "中芳養",
+      "pattern": "1"
+    },
+    {
+      "town": "芳養松原",
+      "townEn": "Hayamatsubara",
+      "kana": "ハヤマツバラ",
+      "chome": null,
+      "detail": "芳養松原一丁目（松原）",
+      "en": "芳養松原一丁目（松原）",
+      "jp": "芳養松原一丁目（松原）",
+      "pattern": "1"
+    },
+    {
+      "town": "芳養松原",
+      "townEn": "Hayamatsubara",
+      "kana": "ハヤマツバラ",
+      "chome": null,
+      "detail": "芳養松原二丁目（松原、崖一部）",
+      "en": "芳養松原二丁目（松原、崖一部）",
+      "jp": "芳養松原二丁目（松原、崖一部）",
+      "pattern": "1"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山町",
+      "en": "東山町",
+      "jp": "東山町",
+      "pattern": "2"
+    },
+    {
+      "town": "福路町",
+      "townEn": "Fukuromachi",
+      "kana": "フクロマチ",
+      "chome": null,
+      "detail": null,
+      "en": "福路町",
+      "jp": "福路町",
+      "pattern": "2"
+    },
+    {
+      "town": "古尾",
+      "townEn": "Furuo",
+      "kana": "フルオ",
+      "chome": null,
+      "detail": null,
+      "en": "古尾",
+      "jp": "古尾",
+      "pattern": "1"
+    },
+    {
+      "town": "宝来町",
+      "townEn": "Horaicho",
+      "kana": "ホウライチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "宝来町",
+      "jp": "宝来町",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "2"
+    },
+    {
+      "town": "神子浜",
+      "townEn": "Mikonohama",
+      "kana": "ミコノハマ",
+      "chome": null,
+      "detail": null,
+      "en": "神子浜",
+      "jp": "神子浜",
+      "pattern": "2"
+    },
+    {
+      "town": "神子浜",
+      "townEn": "Mikonohama",
+      "kana": "ミコノハマ",
+      "chome": null,
+      "detail": "神子浜一部",
+      "en": "神子浜一部",
+      "jp": "神子浜一部",
+      "pattern": "2"
+    },
+    {
+      "town": "湊",
+      "townEn": "Minato",
+      "kana": "ミナト",
+      "chome": null,
+      "detail": "湊東部",
+      "en": "湊東部",
+      "jp": "湊東部",
+      "pattern": "2"
+    },
+    {
+      "town": "湊",
+      "townEn": "Minato",
+      "kana": "ミナト",
+      "chome": null,
+      "detail": "湊本通",
+      "en": "湊本通",
+      "jp": "湊本通",
+      "pattern": "2"
+    },
+    {
+      "town": "南新町",
+      "townEn": "Minamishimmachi",
+      "kana": "ミナミシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "南新町",
+      "jp": "南新町",
+      "pattern": "2"
+    },
+    {
+      "town": "南新万",
+      "townEn": "Minamishimman",
+      "kana": "ミナミシンマン",
+      "chome": null,
+      "detail": null,
+      "en": "南新万",
+      "jp": "南新万",
+      "pattern": "1"
+    },
+    {
+      "town": "むつみ",
+      "townEn": "Mutsumi",
+      "kana": "ムツミ",
+      "chome": null,
+      "detail": null,
+      "en": "むつみ",
+      "jp": "むつみ",
+      "pattern": "1"
+    },
+    {
+      "town": "明洋",
+      "townEn": "Meiyo",
+      "kana": "メイヨウ",
+      "chome": null,
+      "detail": "明洋一丁目（元町明洋、目良一部）",
+      "en": "明洋一丁目（元町明洋、目良一部）",
+      "jp": "明洋一丁目（元町明洋、目良一部）",
+      "pattern": "1"
+    },
+    {
+      "town": "明洋",
+      "townEn": "Meiyo",
+      "kana": "メイヨウ",
+      "chome": null,
+      "detail": "明洋三丁目（明洋一部、青葉台）",
+      "en": "明洋三丁目（明洋一部、青葉台）",
+      "jp": "明洋三丁目（明洋一部、青葉台）",
+      "pattern": "1"
+    },
+    {
+      "town": "明洋",
+      "townEn": "Meiyo",
+      "kana": "メイヨウ",
+      "chome": null,
+      "detail": "明洋二丁目（明洋一部、松原一部）",
+      "en": "明洋二丁目（明洋一部、松原一部）",
+      "jp": "明洋二丁目（明洋一部、松原一部）",
+      "pattern": "1"
+    },
+    {
+      "town": "目良",
+      "townEn": "Mera",
+      "kana": "メラ",
+      "chome": null,
+      "detail": null,
+      "en": "目良",
+      "jp": "目良",
+      "pattern": "1"
+    },
+    {
+      "town": "目良",
+      "townEn": "Mera",
+      "kana": "メラ",
+      "chome": null,
+      "detail": "目良（シーサイド天神崎）",
+      "en": "目良（シーサイド天神崎）",
+      "jp": "目良（シーサイド天神崎）",
+      "pattern": "1"
+    },
+    {
+      "town": "目良",
+      "townEn": "Mera",
+      "kana": "メラ",
+      "chome": null,
+      "detail": "目良（目良団地）",
+      "en": "目良（目良団地）",
+      "jp": "目良（目良団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "文里",
+      "townEn": "Mori",
+      "kana": "モリ",
+      "chome": null,
+      "detail": null,
+      "en": "文里",
+      "jp": "文里",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tanabe.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

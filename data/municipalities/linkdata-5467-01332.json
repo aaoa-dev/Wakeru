@@ -1,0 +1,496 @@
+{
+  "id": "linkdata-5467-01332",
+  "code": "01332",
+  "pref": "01",
+  "jp": "福島町",
+  "en": "Fukushima",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s5467i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s5467i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          2,
+          5
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          1,
+          4
+        ],
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          1,
+          4
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "4": {
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          1,
+          4
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "5": {
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          2,
+          5
+        ],
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "6": {
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          2,
+          5
+        ],
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "7": {
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "burnable": [
+          1,
+          5
+        ],
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "常葉地区１",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常葉地区１",
+      "jp": "常葉地区１",
+      "pattern": "4"
+    },
+    {
+      "town": "常葉地区２",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常葉地区２",
+      "jp": "常葉地区２",
+      "pattern": "5"
+    },
+    {
+      "town": "船引地区１",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船引地区１",
+      "jp": "船引地区１",
+      "pattern": "4"
+    },
+    {
+      "town": "船引地区２",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船引地区２",
+      "jp": "船引地区２",
+      "pattern": "6"
+    },
+    {
+      "town": "船引地区３",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船引地区３",
+      "jp": "船引地区３",
+      "pattern": "1"
+    },
+    {
+      "town": "船引地区４",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船引地区４",
+      "jp": "船引地区４",
+      "pattern": "7"
+    },
+    {
+      "town": "大越地区１",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大越地区１",
+      "jp": "大越地区１",
+      "pattern": "2"
+    },
+    {
+      "town": "大越地区２",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大越地区２",
+      "jp": "大越地区２",
+      "pattern": "1"
+    },
+    {
+      "town": "滝根地区１",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滝根地区１",
+      "jp": "滝根地区１",
+      "pattern": "1"
+    },
+    {
+      "town": "滝根地区２",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滝根地区２",
+      "jp": "滝根地区２",
+      "pattern": "2"
+    },
+    {
+      "town": "滝根地区３",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滝根地区３",
+      "jp": "滝根地区３",
+      "pattern": "1"
+    },
+    {
+      "town": "都路地区",
+      "townEn": "Fukushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "都路地区",
+      "jp": "都路地区",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s5467i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

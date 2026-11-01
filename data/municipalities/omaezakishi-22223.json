@@ -1,0 +1,245 @@
+{
+  "id": "omaezakishi-22223",
+  "code": "22223",
+  "pref": "22",
+  "jp": "御前崎市",
+  "en": "Omaezaki",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://omaezakishi.5374.jp/data/area_days.csv",
+    "http://omaezakishi.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "女岩区・広沢区・新谷区・薄原区",
+      "townEn": "Omaezaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "女岩区・広沢区・新谷区・薄原区",
+      "jp": "女岩区・広沢区・新谷区・薄原区",
+      "pattern": "2"
+    },
+    {
+      "town": "上岬区・下岬区・大山区・西側区",
+      "townEn": "Omaezaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上岬区・下岬区・大山区・西側区",
+      "jp": "上岬区・下岬区・大山区・西側区",
+      "pattern": "2"
+    },
+    {
+      "town": "中原区・白羽区・白浜区・新神子区",
+      "townEn": "Omaezaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中原区・白羽区・白浜区・新神子区",
+      "jp": "中原区・白羽区・白浜区・新神子区",
+      "pattern": "2"
+    },
+    {
+      "town": "中町・大山",
+      "townEn": "Omaezaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中町・大山",
+      "jp": "中町・大山",
+      "pattern": "1"
+    },
+    {
+      "town": "東町・本町・早苗町",
+      "townEn": "Omaezaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東町・本町・早苗町",
+      "jp": "東町・本町・早苗町",
+      "pattern": "1"
+    },
+    {
+      "town": "門屋",
+      "townEn": "Kadoya",
+      "kana": "カドヤ",
+      "chome": null,
+      "detail": "門屋・塩原・合戸",
+      "en": "門屋・塩原・合戸",
+      "jp": "門屋・塩原・合戸",
+      "pattern": "1"
+    },
+    {
+      "town": "佐倉",
+      "townEn": "Sakura",
+      "kana": "サクラ",
+      "chome": null,
+      "detail": null,
+      "en": "佐倉",
+      "jp": "佐倉",
+      "pattern": "1"
+    },
+    {
+      "town": "比木",
+      "townEn": "Hiki",
+      "kana": "ヒキ",
+      "chome": null,
+      "detail": "比木・朝比奈・新野",
+      "en": "比木・朝比奈・新野",
+      "jp": "比木・朝比奈・新野",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://omaezakishi.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

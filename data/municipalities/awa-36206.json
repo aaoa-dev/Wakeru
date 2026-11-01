@@ -1,0 +1,237 @@
+{
+  "id": "awa-36206",
+  "code": "36206",
+  "pref": "36",
+  "jp": "阿波市",
+  "en": "Awa",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://awa.5374.jp/data/area_days.csv",
+    "http://awa.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4,
+            5
+          ]
+        },
+        "pet_bottle": [
+          5
+        ],
+        "oversized": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        },
+        "res": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4,
+            5
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "oversized": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        },
+        "res": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 0,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "阿波町",
+      "townEn": "Awa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "阿波町",
+      "jp": "阿波町",
+      "pattern": "1"
+    },
+    {
+      "town": "阿波町（大久保・伊沢谷）",
+      "townEn": "Awa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "阿波町（大久保・伊沢谷）",
+      "jp": "阿波町（大久保・伊沢谷）",
+      "pattern": "2"
+    },
+    {
+      "town": "吉野町一条地区",
+      "townEn": "Awa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉野町一条地区",
+      "jp": "吉野町一条地区",
+      "pattern": "2"
+    },
+    {
+      "town": "市場",
+      "townEn": "Ichiba",
+      "kana": "イチバ",
+      "chome": null,
+      "detail": "市場町",
+      "en": "市場町",
+      "jp": "市場町",
+      "pattern": "1"
+    },
+    {
+      "town": "土成",
+      "townEn": "Donari",
+      "kana": "ドナリ",
+      "chome": null,
+      "detail": "土成町",
+      "en": "土成町",
+      "jp": "土成町",
+      "pattern": "1"
+    },
+    {
+      "town": "吉野町柿原",
+      "townEn": "Yoshinocho Kakihara",
+      "kana": "ヨシノチョウカキハラ",
+      "chome": null,
+      "detail": "吉野町柿原地区",
+      "en": "吉野町柿原地区",
+      "jp": "吉野町柿原地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://awa.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

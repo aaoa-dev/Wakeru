@@ -1,0 +1,171 @@
+{
+  "id": "hinode-town",
+  "code": "13305",
+  "pref": "13",
+  "jp": "日の出町",
+  "en": "Hinode",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.town.hinode.tokyo.jp/0000000162.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res_a": {
+      "label": "資源A",
+      "en": "Recyclables A",
+      "kind": "res"
+    },
+    "res_b": {
+      "label": "資源B",
+      "en": "Recyclables B",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル・白色トレイ",
+      "en": "PET & white trays",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「鍋（金属製、ホーロー製）」 under 「不燃」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ（可燃ごみ専用袋に入らないもの）」 under 「可燃」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「可燃ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Same collection weekdays town-wide; A/B districts differ only by hauler (see the town's 地番 table). 資源A/B and PET use twice-monthly collection (2nd and 4th week of the month on the listed weekday).",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "res_a": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res_b": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A地区（大久野・平井の一部）",
+      "townEn": "A地区（大久野・平井の一部）",
+      "kana": "A地区（大久野・平井の一部）",
+      "chome": null,
+      "detail": null,
+      "en": "A地区（大久野・平井の一部）",
+      "jp": "A地区（大久野・平井の一部）",
+      "pattern": "1"
+    },
+    {
+      "town": "B地区（平井の一部）",
+      "townEn": "B地区（平井の一部）",
+      "kana": "B地区（平井の一部）",
+      "chome": null,
+      "detail": null,
+      "en": "B地区（平井の一部）",
+      "jp": "B地区（平井の一部）",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Hinode Town garbage separation and collection days",
+      "url": "https://www.town.hinode.tokyo.jp/0000000162.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

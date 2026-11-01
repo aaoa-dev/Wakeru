@@ -1,0 +1,180 @@
+{
+  "id": "fukaya",
+  "code": "11218",
+  "pref": "11",
+  "jp": "深谷市",
+  "en": "Fukaya",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.fukaya.saitama.jp/soshiki/kankyosuido/kankyoeisei/tanto/gomi/1391428524402.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "res": {
+      "label": "資源物",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源物（紙類）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源物（紙類） ひもでしばる」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源物（紙類） ひもでしばる」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源物（紙類） ひもでしばる」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ペットボトル（PETマーク無し）」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「空き缶（その他）」 under 「燃やせないごみ ペンキの缶等」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かさ」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「燃やせないごみ 替刃も「燃やせないごみ」」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「トレー（食品用）」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「天ぷら油」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ソファー」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Two collection groups by postal code (366 vs other). Non-burnable skips the 2nd Wednesday or Friday each month. Monthly items (small appliances, hazardous waste) are on the city leaflet — not in this pattern set.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "res": [
+          4
+        ],
+        "oversized": [
+          2
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "深谷地区（郵便番号366〜）",
+      "townEn": "深谷地区（郵便番号366〜）",
+      "kana": "深谷地区（郵便番号366〜）",
+      "chome": null,
+      "detail": null,
+      "en": "深谷地区（郵便番号366〜）",
+      "jp": "深谷地区（郵便番号366〜）",
+      "pattern": "1"
+    },
+    {
+      "town": "岡部・川本・花園地区",
+      "townEn": "岡部・川本・花園地区",
+      "kana": "岡部・川本・花園地区",
+      "chome": null,
+      "detail": null,
+      "en": "岡部・川本・花園地区",
+      "jp": "岡部・川本・花園地区",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukaya City garbage collection rules (official HTML)",
+      "url": "https://www.city.fukaya.saitama.jp/soshiki/kankyosuido/kankyoeisei/tanto/gomi/1391428524402.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

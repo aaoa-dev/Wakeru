@@ -1,0 +1,1100 @@
+{
+  "id": "wakasa",
+  "code": "18501",
+  "pref": "18",
+  "jp": "若狭町",
+  "en": "Wakasa",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/wakasasyusyubi_mikata.csv",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/wakasasyusyubi_kaminaka.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Fukui Prefecture DX Promotion Division",
+      "tel": "0776-20-0270"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル類",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん・電池類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "ダンボール・紙製容器・紙パック",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "蛍光灯",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from Fukui Prefecture's open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": {
+          "day": 6,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "相田",
+      "townEn": "Aida",
+      "kana": "アイダ",
+      "chome": null,
+      "detail": null,
+      "en": "相田",
+      "jp": "相田",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 相田,あいだ"
+    },
+    {
+      "town": "安賀里",
+      "townEn": "Agari",
+      "kana": "アガリ",
+      "chome": null,
+      "detail": null,
+      "en": "安賀里",
+      "jp": "安賀里",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 安賀里,あがり"
+    },
+    {
+      "town": "朝霧",
+      "townEn": "朝霧",
+      "kana": "あさぎり",
+      "chome": null,
+      "detail": null,
+      "en": "朝霧",
+      "jp": "朝霧",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 朝霧,あさぎり"
+    },
+    {
+      "town": "麻生野",
+      "townEn": "Asono",
+      "kana": "アソノ",
+      "chome": null,
+      "detail": null,
+      "en": "麻生野",
+      "jp": "麻生野",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 麻生野,あその"
+    },
+    {
+      "town": "海士坂",
+      "townEn": "Amasaka",
+      "kana": "アマサカ",
+      "chome": null,
+      "detail": null,
+      "en": "海士坂",
+      "jp": "海士坂",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 海士坂,あまさか"
+    },
+    {
+      "town": "有田",
+      "townEn": "Arida",
+      "kana": "アリダ",
+      "chome": null,
+      "detail": null,
+      "en": "有田",
+      "jp": "有田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 有田,ありた"
+    },
+    {
+      "town": "井崎",
+      "townEn": "Izaki",
+      "kana": "イザキ",
+      "chome": null,
+      "detail": null,
+      "en": "井崎",
+      "jp": "井崎",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 井崎,いざき"
+    },
+    {
+      "town": "市場",
+      "townEn": "Ichiba",
+      "kana": "イチバ",
+      "chome": null,
+      "detail": null,
+      "en": "市場",
+      "jp": "市場",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 市場,いちば"
+    },
+    {
+      "town": "井ノ口",
+      "townEn": "Inokuchi",
+      "kana": "イノクチ",
+      "chome": null,
+      "detail": null,
+      "en": "井ノ口",
+      "jp": "井ノ口",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 井ノ口,いのくち"
+    },
+    {
+      "town": "伊良積",
+      "townEn": "伊良積",
+      "kana": "いらづみ",
+      "chome": null,
+      "detail": null,
+      "en": "伊良積",
+      "jp": "伊良積",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 伊良積,いらづみ"
+    },
+    {
+      "town": "岩屋",
+      "townEn": "Iwaya",
+      "kana": "イワヤ",
+      "chome": null,
+      "detail": null,
+      "en": "岩屋",
+      "jp": "岩屋",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 岩屋,いわや"
+    },
+    {
+      "town": "上野",
+      "townEn": "Ueno",
+      "kana": "ウエノ",
+      "chome": null,
+      "detail": null,
+      "en": "上野",
+      "jp": "上野",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 上野,うえの"
+    },
+    {
+      "town": "海山",
+      "townEn": "Umiyama",
+      "kana": "ウミヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "海山",
+      "jp": "海山",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 海山,うみやま"
+    },
+    {
+      "town": "梅ヶ原",
+      "townEn": "梅ヶ原",
+      "kana": "うめがはら",
+      "chome": null,
+      "detail": null,
+      "en": "梅ヶ原",
+      "jp": "梅ヶ原",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 梅ヶ原,うめがはら"
+    },
+    {
+      "town": "瓜生",
+      "townEn": "Uryu",
+      "kana": "ウリュウ",
+      "chome": null,
+      "detail": null,
+      "en": "瓜生",
+      "jp": "瓜生",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 瓜生,うりゅう"
+    },
+    {
+      "town": "瓜生",
+      "townEn": "Uryu",
+      "kana": "ウリュウ",
+      "chome": null,
+      "detail": "瓜生コーポ",
+      "en": "瓜生コーポ",
+      "jp": "瓜生コーポ",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 瓜生コーポ,うりゅうコーポ,瓜生こーぽ,うりゅうこーぽ"
+    },
+    {
+      "town": "上瀬",
+      "townEn": "Uwase",
+      "kana": "ウワセ",
+      "chome": null,
+      "detail": null,
+      "en": "上瀬",
+      "jp": "上瀬",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 上瀬,うわせ"
+    },
+    {
+      "town": "大鳥羽",
+      "townEn": "Otoba",
+      "kana": "オオトバ",
+      "chome": null,
+      "detail": null,
+      "en": "大鳥羽",
+      "jp": "大鳥羽",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 大鳥羽,おおとば"
+    },
+    {
+      "town": "小川",
+      "townEn": "Ogawa",
+      "kana": "オガワ",
+      "chome": null,
+      "detail": null,
+      "en": "小川",
+      "jp": "小川",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 小川,おがわ"
+    },
+    {
+      "town": "小原",
+      "townEn": "Ohara",
+      "kana": "オハラ",
+      "chome": null,
+      "detail": null,
+      "en": "小原",
+      "jp": "小原",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 小原,おはら"
+    },
+    {
+      "town": "兼田",
+      "townEn": "Kaneda",
+      "kana": "カネダ",
+      "chome": null,
+      "detail": null,
+      "en": "兼田",
+      "jp": "兼田",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 兼田,かねだ"
+    },
+    {
+      "town": "上黒田",
+      "townEn": "Kamikuroda",
+      "kana": "カミクロダ",
+      "chome": null,
+      "detail": null,
+      "en": "上黒田",
+      "jp": "上黒田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 上黒田,かみくろだ"
+    },
+    {
+      "town": "かみなかコーポ",
+      "townEn": "かみなかコーポ",
+      "kana": "かみなかこーぽ",
+      "chome": null,
+      "detail": null,
+      "en": "かみなかコーポ",
+      "jp": "かみなかコーポ",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · かみなかこーぽ,かみなかこーぽ,上中コーポ"
+    },
+    {
+      "town": "上野木",
+      "townEn": "Kaminogi",
+      "kana": "カミノギ",
+      "chome": null,
+      "detail": null,
+      "en": "上野木",
+      "jp": "上野木",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 上野木,かみのぎ"
+    },
+    {
+      "town": "上吉田",
+      "townEn": "Kamiyoshida",
+      "kana": "カミヨシダ",
+      "chome": null,
+      "detail": null,
+      "en": "上吉田",
+      "jp": "上吉田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 上吉田,かみよしだ"
+    },
+    {
+      "town": "仮屋",
+      "townEn": "Kariya",
+      "kana": "カリヤ",
+      "chome": null,
+      "detail": null,
+      "en": "仮屋",
+      "jp": "仮屋",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 仮屋,かりや"
+    },
+    {
+      "town": "北庄",
+      "townEn": "北庄",
+      "kana": "きたじょう",
+      "chome": null,
+      "detail": null,
+      "en": "北庄",
+      "jp": "北庄",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 北庄,きたじょう"
+    },
+    {
+      "town": "北前川",
+      "townEn": "Kitamaegawa",
+      "kana": "キタマエガワ",
+      "chome": null,
+      "detail": null,
+      "en": "北前川",
+      "jp": "北前川",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 北前川,きたまえがわ"
+    },
+    {
+      "town": "気山",
+      "townEn": "Kiyama",
+      "kana": "キヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "気山",
+      "jp": "気山",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 気山,きやま"
+    },
+    {
+      "town": "熊川",
+      "townEn": "Kumagawa",
+      "kana": "クマガワ",
+      "chome": null,
+      "detail": null,
+      "en": "熊川",
+      "jp": "熊川",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 熊川,くまがわ"
+    },
+    {
+      "town": "倉見",
+      "townEn": "Kurami",
+      "kana": "クラミ",
+      "chome": null,
+      "detail": null,
+      "en": "倉見",
+      "jp": "倉見",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 倉見,くらみ"
+    },
+    {
+      "town": "グリーンハイツ",
+      "townEn": "グリーンハイツ",
+      "kana": "ぐりーんはいつ",
+      "chome": null,
+      "detail": null,
+      "en": "グリーンハイツ",
+      "jp": "グリーンハイツ",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · グリーンハイツ,ぐりーんはいつ"
+    },
+    {
+      "town": "神谷",
+      "townEn": "Kodani",
+      "kana": "コウダニ",
+      "chome": null,
+      "detail": null,
+      "en": "神谷",
+      "jp": "神谷",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 神谷,こうだに"
+    },
+    {
+      "town": "河内",
+      "townEn": "Kochi",
+      "kana": "コウチ",
+      "chome": null,
+      "detail": null,
+      "en": "河内",
+      "jp": "河内",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 河内,こうち"
+    },
+    {
+      "town": "無悪",
+      "townEn": "Sakanashi",
+      "kana": "サカナシ",
+      "chome": null,
+      "detail": null,
+      "en": "無悪",
+      "jp": "無悪",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 無悪,さかなし"
+    },
+    {
+      "town": "佐古",
+      "townEn": "Sako",
+      "kana": "サコ",
+      "chome": null,
+      "detail": null,
+      "en": "佐古",
+      "jp": "佐古",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 佐古,さこ"
+    },
+    {
+      "town": "食見",
+      "townEn": "食見",
+      "kana": "しきみ",
+      "chome": null,
+      "detail": null,
+      "en": "食見",
+      "jp": "食見",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 食見,しきみ"
+    },
+    {
+      "town": "下タ中",
+      "townEn": "Shitanaka",
+      "kana": "シタナカ",
+      "chome": null,
+      "detail": null,
+      "en": "下タ中",
+      "jp": "下タ中",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 下タ中,したなか"
+    },
+    {
+      "town": "下野木",
+      "townEn": "Shimonogi",
+      "kana": "シモノギ",
+      "chome": null,
+      "detail": null,
+      "en": "下野木",
+      "jp": "下野木",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 下野木,しものぎ"
+    },
+    {
+      "town": "下吉田",
+      "townEn": "Shimoyoshida",
+      "kana": "シモヨシダ",
+      "chome": null,
+      "detail": null,
+      "en": "下吉田",
+      "jp": "下吉田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 下吉田,しもよしだ"
+    },
+    {
+      "town": "塩坂越",
+      "townEn": "Shakushi",
+      "kana": "シャクシ",
+      "chome": null,
+      "detail": null,
+      "en": "塩坂越",
+      "jp": "塩坂越",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 塩坂越,しゃくし"
+    },
+    {
+      "town": "成願寺",
+      "townEn": "Joganji",
+      "kana": "ジョウガンジ",
+      "chome": null,
+      "detail": null,
+      "en": "成願寺",
+      "jp": "成願寺",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 成願寺,じょうがんじ"
+    },
+    {
+      "town": "白屋",
+      "townEn": "Shiroya",
+      "kana": "シロヤ",
+      "chome": null,
+      "detail": null,
+      "en": "白屋",
+      "jp": "白屋",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 白屋,しろや"
+    },
+    {
+      "town": "新道",
+      "townEn": "Shindo",
+      "kana": "シンドウ",
+      "chome": null,
+      "detail": null,
+      "en": "新道",
+      "jp": "新道",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 新道,しんどう"
+    },
+    {
+      "town": "末野",
+      "townEn": "Sueno",
+      "kana": "スエノ",
+      "chome": null,
+      "detail": null,
+      "en": "末野",
+      "jp": "末野",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 末野,すえの"
+    },
+    {
+      "town": "杉山",
+      "townEn": "Sugiyama",
+      "kana": "スギヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "杉山",
+      "jp": "杉山",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 杉山,すぎやま"
+    },
+    {
+      "town": "関",
+      "townEn": "Seki",
+      "kana": "セキ",
+      "chome": null,
+      "detail": null,
+      "en": "関",
+      "jp": "関",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 関,せき"
+    },
+    {
+      "town": "世久津",
+      "townEn": "世久津",
+      "kana": "せくづ",
+      "chome": null,
+      "detail": null,
+      "en": "世久津",
+      "jp": "世久津",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 世久津,せくづ"
+    },
+    {
+      "town": "世久見",
+      "townEn": "Sekumi",
+      "kana": "セクミ",
+      "chome": null,
+      "detail": null,
+      "en": "世久見",
+      "jp": "世久見",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 世久見,せくみ"
+    },
+    {
+      "town": "せせらぎ",
+      "townEn": "せせらぎ",
+      "kana": "せせらぎ",
+      "chome": null,
+      "detail": null,
+      "en": "せせらぎ",
+      "jp": "せせらぎ",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · せせらぎ,せせらぎ"
+    },
+    {
+      "town": "田井",
+      "townEn": "Tai",
+      "kana": "タイ",
+      "chome": null,
+      "detail": "田井野",
+      "en": "田井野",
+      "jp": "田井野",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 田井野,たいの"
+    },
+    {
+      "town": "高岸",
+      "townEn": "高岸",
+      "kana": "たかぎし",
+      "chome": null,
+      "detail": null,
+      "en": "高岸",
+      "jp": "高岸",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 高岸,たかぎし"
+    },
+    {
+      "town": "田上",
+      "townEn": "Tagami",
+      "kana": "タガミ",
+      "chome": null,
+      "detail": null,
+      "en": "田上",
+      "jp": "田上",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 田上,たがみ"
+    },
+    {
+      "town": "田立",
+      "townEn": "田立",
+      "kana": "ただち",
+      "chome": null,
+      "detail": null,
+      "en": "田立",
+      "jp": "田立",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 田立,ただち"
+    },
+    {
+      "town": "館川",
+      "townEn": "Tachikawa",
+      "kana": "タチカワ",
+      "chome": null,
+      "detail": null,
+      "en": "館川",
+      "jp": "館川",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 館川,たちかわ"
+    },
+    {
+      "town": "田名",
+      "townEn": "Tana",
+      "kana": "タナ",
+      "chome": null,
+      "detail": null,
+      "en": "田名",
+      "jp": "田名",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 田名,たな"
+    },
+    {
+      "town": "玉置",
+      "townEn": "Tamaki",
+      "kana": "タマキ",
+      "chome": null,
+      "detail": null,
+      "en": "玉置",
+      "jp": "玉置",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 玉置,たまき"
+    },
+    {
+      "town": "堤",
+      "townEn": "Tsutsumi",
+      "kana": "ツツミ",
+      "chome": null,
+      "detail": null,
+      "en": "堤",
+      "jp": "堤",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 堤,つつみ"
+    },
+    {
+      "town": "常神",
+      "townEn": "Tsunekami",
+      "kana": "ツネカミ",
+      "chome": null,
+      "detail": null,
+      "en": "常神",
+      "jp": "常神",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 常神,つねかみ"
+    },
+    {
+      "town": "天徳寺",
+      "townEn": "Tentokuji",
+      "kana": "テントクジ",
+      "chome": null,
+      "detail": null,
+      "en": "天徳寺",
+      "jp": "天徳寺",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 天徳寺,てんとくじ"
+    },
+    {
+      "town": "鳥浜",
+      "townEn": "Torihama",
+      "kana": "トリハマ",
+      "chome": null,
+      "detail": null,
+      "en": "鳥浜",
+      "jp": "鳥浜",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 鳥浜,とりはま"
+    },
+    {
+      "town": "長江",
+      "townEn": "Nagae",
+      "kana": "ナガエ",
+      "chome": null,
+      "detail": null,
+      "en": "長江",
+      "jp": "長江",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 長江,ながえ"
+    },
+    {
+      "town": "中野木",
+      "townEn": "Nakanogi",
+      "kana": "ナカノギ",
+      "chome": null,
+      "detail": null,
+      "en": "中野木",
+      "jp": "中野木",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 中野木,なかのぎ"
+    },
+    {
+      "town": "成出",
+      "townEn": "Narude",
+      "kana": "ナルデ",
+      "chome": null,
+      "detail": null,
+      "en": "成出",
+      "jp": "成出",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 成出,なるで"
+    },
+    {
+      "town": "能登野",
+      "townEn": "Notono",
+      "kana": "ノトノ",
+      "chome": null,
+      "detail": null,
+      "en": "能登野",
+      "jp": "能登野",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 能登野,のとの"
+    },
+    {
+      "town": "日笠",
+      "townEn": "Hikasa",
+      "kana": "ヒカサ",
+      "chome": null,
+      "detail": null,
+      "en": "日笠",
+      "jp": "日笠",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 日笠,ひかさ"
+    },
+    {
+      "town": "東黒田",
+      "townEn": "Higashikurota",
+      "kana": "ヒガシクロタ",
+      "chome": null,
+      "detail": null,
+      "en": "東黒田",
+      "jp": "東黒田",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 東黒田,ひがしくろた"
+    },
+    {
+      "town": "藤井",
+      "townEn": "Fujii",
+      "kana": "フジイ",
+      "chome": null,
+      "detail": null,
+      "en": "藤井",
+      "jp": "藤井",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 藤井,ふじい"
+    },
+    {
+      "town": "別庄",
+      "townEn": "別庄",
+      "kana": "べっしょ",
+      "chome": null,
+      "detail": null,
+      "en": "別庄",
+      "jp": "別庄",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 別庄,べっしょ"
+    },
+    {
+      "town": "三方",
+      "townEn": "Mikata",
+      "kana": "ミカタ",
+      "chome": null,
+      "detail": null,
+      "en": "三方",
+      "jp": "三方",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 三方,みかた"
+    },
+    {
+      "town": "神子",
+      "townEn": "Miko",
+      "kana": "ミコ",
+      "chome": null,
+      "detail": null,
+      "en": "神子",
+      "jp": "神子",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 神子,みこ"
+    },
+    {
+      "town": "三生野",
+      "townEn": "Mishono",
+      "kana": "ミショウノ",
+      "chome": null,
+      "detail": null,
+      "en": "三生野",
+      "jp": "三生野",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 三生野,みしょうの"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": null,
+      "en": "三田",
+      "jp": "三田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 三田,みた"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "南",
+      "jp": "南",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 南,みなみ"
+    },
+    {
+      "town": "南前川",
+      "townEn": "Minamimaegawa",
+      "kana": "ミナミマエガワ",
+      "chome": null,
+      "detail": null,
+      "en": "南前川",
+      "jp": "南前川",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 南前川,みなみまえがわ"
+    },
+    {
+      "town": "三宅",
+      "townEn": "Miyake",
+      "kana": "ミヤケ",
+      "chome": null,
+      "detail": null,
+      "en": "三宅",
+      "jp": "三宅",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 三宅,みやけ"
+    },
+    {
+      "town": "向笠",
+      "townEn": "Mukasa",
+      "kana": "ムカサ",
+      "chome": null,
+      "detail": null,
+      "en": "向笠",
+      "jp": "向笠",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 向笠,むかさ"
+    },
+    {
+      "town": "武生",
+      "townEn": "Mushu",
+      "kana": "ムシュウ",
+      "chome": null,
+      "detail": null,
+      "en": "武生",
+      "jp": "武生",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 武生,むしゅう"
+    },
+    {
+      "town": "持田",
+      "townEn": "Mochida",
+      "kana": "モチダ",
+      "chome": null,
+      "detail": null,
+      "en": "持田",
+      "jp": "持田",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 持田,もちだ"
+    },
+    {
+      "town": "山内",
+      "townEn": "Yamauchi",
+      "kana": "ヤマウチ",
+      "chome": null,
+      "detail": null,
+      "en": "山内",
+      "jp": "山内",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 山内,やまうち"
+    },
+    {
+      "town": "遊子",
+      "townEn": "Yushi",
+      "kana": "ユウシ",
+      "chome": null,
+      "detail": null,
+      "en": "遊子",
+      "jp": "遊子",
+      "pattern": "2",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 遊子,ゆうし"
+    },
+    {
+      "town": "横渡",
+      "townEn": "Yokowatari",
+      "kana": "ヨコワタリ",
+      "chome": null,
+      "detail": null,
+      "en": "横渡",
+      "jp": "横渡",
+      "pattern": "1",
+      "note": "年末年始、積雪状況等により収集日に変動あり。 · 横渡,よこわたり"
+    },
+    {
+      "town": "若王子",
+      "townEn": "Wakaoji",
+      "kana": "ワカオウジ",
+      "chome": null,
+      "detail": null,
+      "en": "若王子",
+      "jp": "若王子",
+      "pattern": "4",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 若王子,わかおうじ"
+    },
+    {
+      "town": "若葉",
+      "townEn": "若葉",
+      "kana": "わかば",
+      "chome": null,
+      "detail": null,
+      "en": "若葉",
+      "jp": "若葉",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 若葉,わかば"
+    },
+    {
+      "town": "脇袋",
+      "townEn": "Wakibukuro",
+      "kana": "ワキブクロ",
+      "chome": null,
+      "detail": null,
+      "en": "脇袋",
+      "jp": "脇袋",
+      "pattern": "3",
+      "note": "盆、年末年始、積雪状況等により収集日に変動あり。 · 脇袋,わきぶくろ"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukui Prefecture garbage collection schedule open data",
+      "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+      "license": "Fukui Prefecture open data (attribution required)",
+      "commit": "pref-portal"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "updated": "2026-10-31"
+}

@@ -1,0 +1,770 @@
+{
+  "id": "otsu",
+  "code": "25201",
+  "pref": "25",
+  "jp": "大津市",
+  "en": "Otsu",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.otsu.lg.jp/kurashi/gomi/",
+    "https://www.city.otsu.lg.jp/material/files/group/41/od_listgomiyoubi.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラ",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              3,
+              6
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 6,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "beverage_can": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": {
+          "any": [
+            [
+              3,
+              6
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "6": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 5,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "小松",
+      "townEn": "小松",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小松",
+      "jp": "小松",
+      "pattern": "1"
+    },
+    {
+      "town": "小松",
+      "townEn": "小松",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小松",
+      "jp": "小松",
+      "pattern": "2"
+    },
+    {
+      "town": "和邇",
+      "townEn": "和邇",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和邇",
+      "jp": "和邇",
+      "pattern": "1"
+    },
+    {
+      "town": "和邇",
+      "townEn": "和邇",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和邇",
+      "jp": "和邇",
+      "pattern": "2"
+    },
+    {
+      "town": "和邇",
+      "townEn": "和邇",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和邇",
+      "jp": "和邇",
+      "pattern": "3"
+    },
+    {
+      "town": "葛川",
+      "townEn": "葛川",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "葛川",
+      "jp": "葛川",
+      "pattern": "4"
+    },
+    {
+      "town": "伊香立",
+      "townEn": "伊香立",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊香立",
+      "jp": "伊香立",
+      "pattern": "4"
+    },
+    {
+      "town": "滋賀",
+      "townEn": "滋賀",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "滋賀",
+      "jp": "滋賀",
+      "pattern": "6"
+    },
+    {
+      "town": "山中比叡平",
+      "townEn": "山中比叡平",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山中比叡平",
+      "jp": "山中比叡平",
+      "pattern": "2"
+    },
+    {
+      "town": "藤尾",
+      "townEn": "藤尾",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "藤尾",
+      "jp": "藤尾",
+      "pattern": "2"
+    },
+    {
+      "town": "富士見",
+      "townEn": "富士見",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見",
+      "jp": "富士見",
+      "pattern": "3"
+    },
+    {
+      "town": "石山",
+      "townEn": "石山",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石山",
+      "jp": "石山",
+      "pattern": "1"
+    },
+    {
+      "town": "大石",
+      "townEn": "大石",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大石",
+      "jp": "大石",
+      "pattern": "4"
+    },
+    {
+      "town": "田上",
+      "townEn": "田上",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田上",
+      "jp": "田上",
+      "pattern": "4"
+    },
+    {
+      "town": "上田上",
+      "townEn": "上田上",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上田上",
+      "jp": "上田上",
+      "pattern": "1"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "青山",
+      "jp": "青山",
+      "pattern": "1"
+    },
+    {
+      "town": "逢坂",
+      "townEn": "Osaka",
+      "kana": "オウサカ",
+      "chome": null,
+      "detail": null,
+      "en": "逢坂",
+      "jp": "逢坂",
+      "pattern": "6"
+    },
+    {
+      "town": "仰木",
+      "townEn": "Ogi",
+      "kana": "オオギ",
+      "chome": null,
+      "detail": null,
+      "en": "仰木",
+      "jp": "仰木",
+      "pattern": "6"
+    },
+    {
+      "town": "仰木の里",
+      "townEn": "Oginosato",
+      "kana": "オオギノサト",
+      "chome": null,
+      "detail": null,
+      "en": "仰木の里",
+      "jp": "仰木の里",
+      "pattern": "3"
+    },
+    {
+      "town": "雄琴",
+      "townEn": "Ogoto",
+      "kana": "オゴト",
+      "chome": null,
+      "detail": null,
+      "en": "雄琴",
+      "jp": "雄琴",
+      "pattern": "6"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ono",
+      "kana": "オノ",
+      "chome": null,
+      "detail": null,
+      "en": "小野",
+      "jp": "小野",
+      "pattern": "2"
+    },
+    {
+      "town": "堅田",
+      "townEn": "Katata",
+      "kana": "カタタ",
+      "chome": null,
+      "detail": null,
+      "en": "堅田",
+      "jp": "堅田",
+      "pattern": "5"
+    },
+    {
+      "town": "唐崎",
+      "townEn": "Karasaki",
+      "kana": "カラサキ",
+      "chome": null,
+      "detail": null,
+      "en": "唐崎",
+      "jp": "唐崎",
+      "pattern": "5"
+    },
+    {
+      "town": "木戸",
+      "townEn": "Kido",
+      "kana": "キド",
+      "chome": null,
+      "detail": null,
+      "en": "木戸",
+      "jp": "木戸",
+      "pattern": "1"
+    },
+    {
+      "town": "木戸",
+      "townEn": "Kido",
+      "kana": "キド",
+      "chome": null,
+      "detail": null,
+      "en": "木戸",
+      "jp": "木戸",
+      "pattern": "3"
+    },
+    {
+      "town": "坂本",
+      "townEn": "Sakamoto",
+      "kana": "サカモト",
+      "chome": null,
+      "detail": null,
+      "en": "坂本",
+      "jp": "坂本",
+      "pattern": "4"
+    },
+    {
+      "town": "下阪本",
+      "townEn": "Shimosakamoto",
+      "kana": "シモサカモト",
+      "chome": null,
+      "detail": null,
+      "en": "下阪本",
+      "jp": "下阪本",
+      "pattern": "1"
+    },
+    {
+      "town": "晴嵐",
+      "townEn": "Seiran",
+      "kana": "セイラン",
+      "chome": null,
+      "detail": null,
+      "en": "晴嵐",
+      "jp": "晴嵐",
+      "pattern": "4"
+    },
+    {
+      "town": "膳所",
+      "townEn": "Zeze",
+      "kana": "ゼゼ",
+      "chome": null,
+      "detail": null,
+      "en": "膳所",
+      "jp": "膳所",
+      "pattern": "2"
+    },
+    {
+      "town": "瀬田",
+      "townEn": "Seta",
+      "kana": "セタ",
+      "chome": null,
+      "detail": null,
+      "en": "瀬田",
+      "jp": "瀬田",
+      "pattern": "6"
+    },
+    {
+      "town": "瀬田",
+      "townEn": "Seta",
+      "kana": "セタ",
+      "chome": null,
+      "detail": "瀬田南",
+      "en": "瀬田南",
+      "jp": "瀬田南",
+      "pattern": "3"
+    },
+    {
+      "town": "瀬田",
+      "townEn": "Seta",
+      "kana": "セタ",
+      "chome": null,
+      "detail": "瀬田東",
+      "en": "瀬田東",
+      "jp": "瀬田東",
+      "pattern": "2"
+    },
+    {
+      "town": "瀬田",
+      "townEn": "Seta",
+      "kana": "セタ",
+      "chome": null,
+      "detail": "瀬田北",
+      "en": "瀬田北",
+      "jp": "瀬田北",
+      "pattern": "5"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": null,
+      "en": "中央",
+      "jp": "中央",
+      "pattern": "6"
+    },
+    {
+      "town": "長等",
+      "townEn": "Nagara",
+      "kana": "ナガラ",
+      "chome": null,
+      "detail": null,
+      "en": "長等",
+      "jp": "長等",
+      "pattern": "3"
+    },
+    {
+      "town": "南郷",
+      "townEn": "Nango",
+      "kana": "ナンゴウ",
+      "chome": null,
+      "detail": null,
+      "en": "南郷",
+      "jp": "南郷",
+      "pattern": "3"
+    },
+    {
+      "town": "日吉台",
+      "townEn": "Hiyoshidai",
+      "kana": "ヒヨシダイ",
+      "chome": null,
+      "detail": null,
+      "en": "日吉台",
+      "jp": "日吉台",
+      "pattern": "2"
+    },
+    {
+      "town": "平野",
+      "townEn": "Hirano",
+      "kana": "ヒラノ",
+      "chome": null,
+      "detail": null,
+      "en": "平野",
+      "jp": "平野",
+      "pattern": "5"
+    },
+    {
+      "town": "真野",
+      "townEn": "Mano",
+      "kana": "マノ",
+      "chome": null,
+      "detail": null,
+      "en": "真野",
+      "jp": "真野",
+      "pattern": "4"
+    },
+    {
+      "town": "真野",
+      "townEn": "Mano",
+      "kana": "マノ",
+      "chome": null,
+      "detail": "真野北",
+      "en": "真野北",
+      "jp": "真野北",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Otsu City garbage collection weekdays open data",
+      "url": "https://www.city.otsu.lg.jp/kurashi/gomi/",
+      "license": "Otsu City open data",
+      "commit": "open-data"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "skippedRows": 0
+}

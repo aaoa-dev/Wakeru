@@ -59,7 +59,53 @@
     }
   },
   "plasticTest": null,
-  "sorting": {},
+  "sorting": {
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「可燃」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「びん」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「不燃」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「不燃」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「トースター」 under 「不燃」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「布団」 under 「粗大」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「収集不可」.",
+      "auto": true
+    }
+  },
   "calendar": {
     "noCollection": {
       "weekdays": [],
@@ -2704,5 +2750,5 @@
       "path": "municipalities/tokyo/suginami"
     }
   },
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }

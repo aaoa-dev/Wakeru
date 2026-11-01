@@ -1,0 +1,251 @@
+{
+  "id": "mima-36207",
+  "code": "36207",
+  "pref": "36",
+  "jp": "美馬市",
+  "en": "Mima",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://mima.5374.jp/data/area_days.csv",
+    "http://mima.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          3
+        ],
+        "plastic": [
+          2
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ]
+      },
+      "6": {
+        "burnable": [
+          3
+        ],
+        "plastic": [
+          1
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ]
+      },
+      "8": {
+        "burnable": [
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "穴吹１",
+      "townEn": "Mima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "穴吹１",
+      "jp": "穴吹１",
+      "pattern": "1"
+    },
+    {
+      "town": "穴吹２",
+      "townEn": "Mima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "穴吹２",
+      "jp": "穴吹２",
+      "pattern": "2"
+    },
+    {
+      "town": "美馬１",
+      "townEn": "Mima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美馬１",
+      "jp": "美馬１",
+      "pattern": "6"
+    },
+    {
+      "town": "美馬２",
+      "townEn": "Mima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美馬２",
+      "jp": "美馬２",
+      "pattern": "7"
+    },
+    {
+      "town": "木屋平",
+      "townEn": "Koyadaira",
+      "kana": "コヤダイラ",
+      "chome": null,
+      "detail": null,
+      "en": "木屋平",
+      "jp": "木屋平",
+      "pattern": "8"
+    },
+    {
+      "town": "脇町",
+      "townEn": "Wakimachi",
+      "kana": "ワキマチ",
+      "chome": null,
+      "detail": "脇町１",
+      "en": "脇町１",
+      "jp": "脇町１",
+      "pattern": "3"
+    },
+    {
+      "town": "脇町",
+      "townEn": "Wakimachi",
+      "kana": "ワキマチ",
+      "chome": null,
+      "detail": "脇町２",
+      "en": "脇町２",
+      "jp": "脇町２",
+      "pattern": "4"
+    },
+    {
+      "town": "脇町",
+      "townEn": "Wakimachi",
+      "kana": "ワキマチ",
+      "chome": null,
+      "detail": "脇町３",
+      "en": "脇町３",
+      "jp": "脇町３",
+      "pattern": "5"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://mima.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

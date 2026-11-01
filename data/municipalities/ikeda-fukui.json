@@ -1,0 +1,579 @@
+{
+  "id": "ikeda-fukui",
+  "code": "18382",
+  "pref": "18",
+  "jp": "池田町",
+  "en": "Ikeda",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/ikedatyousyusyubi.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Fukui Prefecture DX Promotion Division",
+      "tel": "0776-20-0270"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル類",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん・電池類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "ダンボール・紙製容器・紙パック",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "蛍光灯",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙回収」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「古紙回収」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「古紙回収」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「空き瓶（飲料・食品用）」 under 「あきびん」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯（160㎝以下）」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「天ぷら油」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ソファー」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「家電リサイクル品」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from Fukui Prefecture's open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "安善寺",
+      "townEn": "Anzenji",
+      "kana": "アンゼンジ",
+      "chome": null,
+      "detail": null,
+      "en": "安善寺",
+      "jp": "安善寺",
+      "pattern": "1",
+      "note": "安善寺,あんぜんじ"
+    },
+    {
+      "town": "池田",
+      "townEn": "Ikeda",
+      "kana": "イケダ",
+      "chome": null,
+      "detail": null,
+      "en": "池田",
+      "jp": "池田",
+      "pattern": "1",
+      "note": "池田,いけだ"
+    },
+    {
+      "town": "板垣",
+      "townEn": "Itagaki",
+      "kana": "イタガキ",
+      "chome": null,
+      "detail": null,
+      "en": "板垣",
+      "jp": "板垣",
+      "pattern": "1",
+      "note": "板垣,いたがき"
+    },
+    {
+      "town": "市",
+      "townEn": "Ichi",
+      "kana": "イチ",
+      "chome": null,
+      "detail": null,
+      "en": "市",
+      "jp": "市",
+      "pattern": "1",
+      "note": "市,いち"
+    },
+    {
+      "town": "稲荷",
+      "townEn": "Inari",
+      "kana": "イナリ",
+      "chome": null,
+      "detail": null,
+      "en": "稲荷",
+      "jp": "稲荷",
+      "pattern": "1",
+      "note": "稲荷,いなり"
+    },
+    {
+      "town": "柿ヶ原",
+      "townEn": "Kakigahara",
+      "kana": "カキガハラ",
+      "chome": null,
+      "detail": null,
+      "en": "柿ヶ原",
+      "jp": "柿ヶ原",
+      "pattern": "1",
+      "note": "柿ヶ原,かきがはら"
+    },
+    {
+      "town": "学園",
+      "townEn": "学園",
+      "kana": "がくえん",
+      "chome": null,
+      "detail": null,
+      "en": "学園",
+      "jp": "学園",
+      "pattern": "1",
+      "note": "学園,がくえん"
+    },
+    {
+      "town": "金山",
+      "townEn": "金山",
+      "kana": "かなやま",
+      "chome": null,
+      "detail": null,
+      "en": "金山",
+      "jp": "金山",
+      "pattern": "1",
+      "note": "金山,かなやま,魚見,うおみ"
+    },
+    {
+      "town": "上荒谷",
+      "townEn": "Kamiaratani",
+      "kana": "カミアラタニ",
+      "chome": null,
+      "detail": null,
+      "en": "上荒谷",
+      "jp": "上荒谷",
+      "pattern": "1",
+      "note": "上荒谷,かみあらたに"
+    },
+    {
+      "town": "定方",
+      "townEn": "Sadakata",
+      "kana": "サダカタ",
+      "chome": null,
+      "detail": null,
+      "en": "定方",
+      "jp": "定方",
+      "pattern": "1",
+      "note": "定方,さだかた"
+    },
+    {
+      "town": "志津原",
+      "townEn": "Shizuhara",
+      "kana": "シズハラ",
+      "chome": null,
+      "detail": null,
+      "en": "志津原",
+      "jp": "志津原",
+      "pattern": "1",
+      "note": "志津原,しづはら"
+    },
+    {
+      "town": "清水谷",
+      "townEn": "Shimizutani",
+      "kana": "シミズダニ",
+      "chome": null,
+      "detail": null,
+      "en": "清水谷",
+      "jp": "清水谷",
+      "pattern": "1",
+      "note": "清水谷,しみずたに"
+    },
+    {
+      "town": "白粟",
+      "townEn": "白粟",
+      "kana": "しらわ",
+      "chome": null,
+      "detail": null,
+      "en": "白粟",
+      "jp": "白粟",
+      "pattern": "1",
+      "note": "白粟,しらわ"
+    },
+    {
+      "town": "新保",
+      "townEn": "Shimbo",
+      "kana": "シンボ",
+      "chome": null,
+      "detail": null,
+      "en": "新保",
+      "jp": "新保",
+      "pattern": "1",
+      "note": "新保,しんぼ"
+    },
+    {
+      "town": "菅生",
+      "townEn": "Sugo",
+      "kana": "スゴウ",
+      "chome": null,
+      "detail": null,
+      "en": "菅生",
+      "jp": "菅生",
+      "pattern": "1",
+      "note": "菅生,すごう"
+    },
+    {
+      "town": "谷口",
+      "townEn": "Taniguchi",
+      "kana": "タニグチ",
+      "chome": null,
+      "detail": null,
+      "en": "谷口",
+      "jp": "谷口",
+      "pattern": "1",
+      "note": "谷口,たにぐち"
+    },
+    {
+      "town": "月ヶ瀬",
+      "townEn": "Tsukigase",
+      "kana": "ツキガセ",
+      "chome": null,
+      "detail": null,
+      "en": "月ヶ瀬",
+      "jp": "月ヶ瀬",
+      "pattern": "1",
+      "note": "月ヶ瀬,つきがせ"
+    },
+    {
+      "town": "辻",
+      "townEn": "辻",
+      "kana": "つじ",
+      "chome": null,
+      "detail": null,
+      "en": "辻",
+      "jp": "辻",
+      "pattern": "1",
+      "note": "辻,つじ,魚見,うおみ"
+    },
+    {
+      "town": "常安",
+      "townEn": "Tsuneyasu",
+      "kana": "ツネヤス",
+      "chome": null,
+      "detail": null,
+      "en": "常安",
+      "jp": "常安",
+      "pattern": "1",
+      "note": "常安,つねやす"
+    },
+    {
+      "town": "寺島",
+      "townEn": "Terajima",
+      "kana": "テラジマ",
+      "chome": null,
+      "detail": null,
+      "en": "寺島",
+      "jp": "寺島",
+      "pattern": "1",
+      "note": "寺島,てらじま"
+    },
+    {
+      "town": "寺谷",
+      "townEn": "Teradani",
+      "kana": "テラダニ",
+      "chome": null,
+      "detail": null,
+      "en": "寺谷",
+      "jp": "寺谷",
+      "pattern": "1",
+      "note": "寺谷,てらだに"
+    },
+    {
+      "town": "土合皿尾",
+      "townEn": "Doaisarao",
+      "kana": "ドアイサラオ",
+      "chome": null,
+      "detail": null,
+      "en": "土合皿尾",
+      "jp": "土合皿尾",
+      "pattern": "1",
+      "note": "土合皿尾,どあいさらお"
+    },
+    {
+      "town": "中出",
+      "townEn": "中出",
+      "kana": "なかで",
+      "chome": null,
+      "detail": null,
+      "en": "中出",
+      "jp": "中出",
+      "pattern": "1",
+      "note": "中出,なかで,魚見,うおみ"
+    },
+    {
+      "town": "西角間",
+      "townEn": "Nishikakuma",
+      "kana": "ニシカクマ",
+      "chome": null,
+      "detail": null,
+      "en": "西角間",
+      "jp": "西角間",
+      "pattern": "1",
+      "note": "西角間,にしかくま"
+    },
+    {
+      "town": "野尻",
+      "townEn": "Nojiri",
+      "kana": "ノジリ",
+      "chome": null,
+      "detail": null,
+      "en": "野尻",
+      "jp": "野尻",
+      "pattern": "1",
+      "note": "野尻,のじり"
+    },
+    {
+      "town": "東角間",
+      "townEn": "Higashikakuma",
+      "kana": "ヒガシカクマ",
+      "chome": null,
+      "detail": null,
+      "en": "東角間",
+      "jp": "東角間",
+      "pattern": "1",
+      "note": "東角間,ひがしかくま"
+    },
+    {
+      "town": "東俣",
+      "townEn": "Higashimata",
+      "kana": "ヒガシマタ",
+      "chome": null,
+      "detail": null,
+      "en": "東俣",
+      "jp": "東俣",
+      "pattern": "1",
+      "note": "東俣,ひがしまた"
+    },
+    {
+      "town": "広瀬",
+      "townEn": "Hirose",
+      "kana": "ヒロセ",
+      "chome": null,
+      "detail": null,
+      "en": "広瀬",
+      "jp": "広瀬",
+      "pattern": "1",
+      "note": "広瀬,ひろせ"
+    },
+    {
+      "town": "松ヶ谷",
+      "townEn": "Matsugatani",
+      "kana": "マツガタニ",
+      "chome": null,
+      "detail": null,
+      "en": "松ヶ谷",
+      "jp": "松ヶ谷",
+      "pattern": "1",
+      "note": "松ヶ谷,まつがたに"
+    },
+    {
+      "town": "水海",
+      "townEn": "Mizumi",
+      "kana": "ミズミ",
+      "chome": null,
+      "detail": null,
+      "en": "水海",
+      "jp": "水海",
+      "pattern": "1",
+      "note": "水海,みずうみ"
+    },
+    {
+      "town": "持越",
+      "townEn": "Mochikoshi",
+      "kana": "モチコシ",
+      "chome": null,
+      "detail": null,
+      "en": "持越",
+      "jp": "持越",
+      "pattern": "1",
+      "note": "持越,もちこし"
+    },
+    {
+      "town": "藪田",
+      "townEn": "藪田",
+      "kana": "やぶた",
+      "chome": null,
+      "detail": null,
+      "en": "藪田",
+      "jp": "藪田",
+      "pattern": "1",
+      "note": "藪田,やぶた"
+    },
+    {
+      "town": "山田",
+      "townEn": "Yamada",
+      "kana": "ヤマダ",
+      "chome": null,
+      "detail": null,
+      "en": "山田",
+      "jp": "山田",
+      "pattern": "1",
+      "note": "山田,やまだ"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukui Prefecture garbage collection schedule open data",
+      "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+      "license": "Fukui Prefecture open data (attribution required)",
+      "commit": "pref-portal"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "updated": "2026-10-31"
+}

@@ -1,0 +1,661 @@
+{
+  "id": "ito-22208",
+  "code": "22208",
+  "pref": "22",
+  "jp": "伊東市",
+  "en": "Ito",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ito.5374.jp/data/area_days.csv",
+    "http://ito.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "glass_bottle": {
+          "dates": [
+            "2026-04-28",
+            "2026-05-26",
+            "2026-06-16",
+            "2026-07-14",
+            "2026-08-04",
+            "2026-09-08",
+            "2026-10-06",
+            "2026-11-10",
+            "2026-12-01",
+            "2027-01-05",
+            "2027-01-26",
+            "2027-03-02",
+            "2027-03-23"
+          ]
+        },
+        "res": {
+          "dates": [
+            "2026-04-07",
+            "2026-05-12",
+            "2026-06-02",
+            "2026-06-23",
+            "2026-07-21",
+            "2026-08-18",
+            "2026-09-15",
+            "2026-10-13",
+            "2026-11-17",
+            "2026-12-08",
+            "2027-01-12",
+            "2027-02-02",
+            "2027-03-09",
+            "2027-03-30"
+          ]
+        },
+        "hazardous": {
+          "dates": [
+            "2026-04-14",
+            "2026-06-30",
+            "2026-08-25",
+            "2026-10-20",
+            "2026-12-15",
+            "2027-02-09"
+          ]
+        },
+        "paper": {
+          "dates": [
+            "2026-04-02",
+            "2026-04-16",
+            "2026-05-07",
+            "2026-05-21",
+            "2026-06-04",
+            "2026-06-18",
+            "2026-07-02",
+            "2026-07-16",
+            "2026-08-06",
+            "2026-08-20",
+            "2026-09-03",
+            "2026-09-17",
+            "2026-10-01",
+            "2026-10-15",
+            "2026-11-05",
+            "2026-11-19",
+            "2026-12-03",
+            "2026-12-17",
+            "2027-01-07",
+            "2027-01-21",
+            "2027-02-04",
+            "2027-02-18",
+            "2027-03-04",
+            "2027-03-18"
+          ]
+        },
+        "pet_bottle": {
+          "dates": [
+            "2026-04-09",
+            "2026-04-23",
+            "2026-05-14",
+            "2026-05-28",
+            "2026-06-11",
+            "2026-06-25",
+            "2026-07-09",
+            "2026-07-23",
+            "2026-08-13",
+            "2026-08-27",
+            "2026-09-10",
+            "2026-09-24",
+            "2026-10-08",
+            "2026-10-22",
+            "2026-11-12",
+            "2026-11-26",
+            "2026-12-10",
+            "2026-12-24",
+            "2027-01-14",
+            "2027-01-28",
+            "2027-02-11",
+            "2027-02-25",
+            "2027-03-11",
+            "2027-03-25"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "伊豆急分譲地の一部、浮山温泉郷",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊豆急分譲地の一部、浮山温泉郷",
+      "jp": "伊豆急分譲地の一部、浮山温泉郷",
+      "pattern": "1"
+    },
+    {
+      "town": "塩木道・初津",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩木道・初津",
+      "jp": "塩木道・初津",
+      "pattern": "1"
+    },
+    {
+      "town": "玖須美下(赤坂バス停まで)",
+      "townEn": "Basu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玖須美下(赤坂バス停まで)",
+      "jp": "玖須美下(赤坂バス停まで)",
+      "pattern": "1"
+    },
+    {
+      "town": "玖須美上（赤坂バス停から上）",
+      "townEn": "Basu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玖須美上（赤坂バス停から上）",
+      "jp": "玖須美上（赤坂バス停から上）",
+      "pattern": "1"
+    },
+    {
+      "town": "山田・桑原",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田・桑原",
+      "jp": "山田・桑原",
+      "pattern": "1"
+    },
+    {
+      "town": "渚町、銀座元町",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渚町、銀座元町",
+      "jp": "渚町、銀座元町",
+      "pattern": "1"
+    },
+    {
+      "town": "大室高原",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大室高原",
+      "jp": "大室高原",
+      "pattern": "1"
+    },
+    {
+      "town": "中里・峰",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中里・峰",
+      "jp": "中里・峰",
+      "pattern": "1"
+    },
+    {
+      "town": "南熱海グリーンヒル(宇佐美番地)",
+      "townEn": "Gurinhiru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南熱海グリーンヒル(宇佐美番地)",
+      "jp": "南熱海グリーンヒル(宇佐美番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡・阿原田",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡・阿原田",
+      "jp": "八幡・阿原田",
+      "pattern": "1"
+    },
+    {
+      "town": "留田・城宿",
+      "townEn": "Ito",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "留田・城宿",
+      "jp": "留田・城宿",
+      "pattern": "1"
+    },
+    {
+      "town": "新井",
+      "townEn": "Arai",
+      "kana": "アライ",
+      "chome": null,
+      "detail": "新井全域",
+      "en": "新井全域",
+      "jp": "新井全域",
+      "pattern": "1"
+    },
+    {
+      "town": "池",
+      "townEn": "Ike",
+      "kana": "イケ",
+      "chome": null,
+      "detail": "池全域、赤沢全域",
+      "en": "池全域、赤沢全域",
+      "jp": "池全域、赤沢全域",
+      "pattern": "1"
+    },
+    {
+      "town": "大原",
+      "townEn": "Ohara",
+      "kana": "オオハラ",
+      "chome": null,
+      "detail": "大原1～3丁目",
+      "en": "大原1～3丁目",
+      "jp": "大原1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "岡",
+      "townEn": "Oka",
+      "kana": "オカ",
+      "chome": null,
+      "detail": "岡(青葉台、泉、赤坂)",
+      "en": "岡(青葉台、泉、赤坂)",
+      "jp": "岡(青葉台、泉、赤坂)",
+      "pattern": "1"
+    },
+    {
+      "town": "岡",
+      "townEn": "Oka",
+      "kana": "オカ",
+      "chome": null,
+      "detail": "岡（泉、いずみ台、青葉台、赤坂を除く）",
+      "en": "岡（泉、いずみ台、青葉台、赤坂を除く）",
+      "jp": "岡（泉、いずみ台、青葉台、赤坂を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "岡",
+      "townEn": "Oka",
+      "kana": "オカ",
+      "chome": null,
+      "detail": "岡の一部（自動車学校付近・いずみ台）",
+      "en": "岡の一部（自動車学校付近・いずみ台）",
+      "jp": "岡の一部（自動車学校付近・いずみ台）",
+      "pattern": "1"
+    },
+    {
+      "town": "岡広町",
+      "townEn": "Okahirocho",
+      "kana": "オカヒロチョウ",
+      "chome": null,
+      "detail": "岡広町、末広町",
+      "en": "岡広町、末広町",
+      "jp": "岡広町、末広町",
+      "pattern": "1"
+    },
+    {
+      "town": "音無町",
+      "townEn": "Otonashicho",
+      "kana": "オトナシチョウ",
+      "chome": null,
+      "detail": "音無町、湯田町",
+      "en": "音無町、湯田町",
+      "jp": "音無町、湯田町",
+      "pattern": "1"
+    },
+    {
+      "town": "鎌田",
+      "townEn": "Kamada",
+      "kana": "カマダ",
+      "chome": null,
+      "detail": "鎌田（門野中付近・松川湖付近を除く）",
+      "en": "鎌田（門野中付近・松川湖付近を除く）",
+      "jp": "鎌田（門野中付近・松川湖付近を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "鎌田",
+      "townEn": "Kamada",
+      "kana": "カマダ",
+      "chome": null,
+      "detail": "鎌田の一部（門野中付近・松川湖付近）",
+      "en": "鎌田の一部（門野中付近・松川湖付近）",
+      "jp": "鎌田の一部（門野中付近・松川湖付近）",
+      "pattern": "1"
+    },
+    {
+      "town": "瓶山",
+      "townEn": "Kameyama",
+      "kana": "カメヤマ",
+      "chome": null,
+      "detail": "瓶山1～2丁目",
+      "en": "瓶山1～2丁目",
+      "jp": "瓶山1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "川奈",
+      "townEn": "Kawana",
+      "kana": "カワナ",
+      "chome": null,
+      "detail": "川奈全域、荻全域",
+      "en": "川奈全域、荻全域",
+      "jp": "川奈全域、荻全域",
+      "pattern": "1"
+    },
+    {
+      "town": "桜ガ丘",
+      "townEn": "Sakuragaoka",
+      "kana": "サクラガオカ",
+      "chome": null,
+      "detail": "桜ガ丘1～2丁目",
+      "en": "桜ガ丘1～2丁目",
+      "jp": "桜ガ丘1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "桜木町",
+      "townEn": "Sakuragicho",
+      "kana": "サクラギチョウ",
+      "chome": null,
+      "detail": "桜木町1～2丁目",
+      "en": "桜木町1～2丁目",
+      "jp": "桜木町1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "猪戸",
+      "townEn": "Shishido",
+      "kana": "シシド",
+      "chome": null,
+      "detail": "猪戸1～2丁目",
+      "en": "猪戸1～2丁目",
+      "jp": "猪戸1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "芝町",
+      "townEn": "Shibacho",
+      "kana": "シバチョウ",
+      "chome": null,
+      "detail": "芝町、静梅町",
+      "en": "芝町、静梅町",
+      "jp": "芝町、静梅町",
+      "pattern": "1"
+    },
+    {
+      "town": "宝町",
+      "townEn": "Takaracho",
+      "kana": "タカラチョウ",
+      "chome": null,
+      "detail": "宝町、寿町、幸町",
+      "en": "宝町、寿町、幸町",
+      "jp": "宝町、寿町、幸町",
+      "pattern": "1"
+    },
+    {
+      "town": "竹の内",
+      "townEn": "Takenochi",
+      "kana": "タケノウチ",
+      "chome": null,
+      "detail": "竹の内1～2丁目",
+      "en": "竹の内1～2丁目",
+      "jp": "竹の内1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "竹の台",
+      "townEn": "Takenodai",
+      "kana": "タケノダイ",
+      "chome": null,
+      "detail": "竹の台、物見が丘",
+      "en": "竹の台、物見が丘",
+      "jp": "竹の台、物見が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "十足",
+      "townEn": "Totari",
+      "kana": "トウタリ",
+      "chome": null,
+      "detail": "十足（青少年キャンプ場下を除く）、田代",
+      "en": "十足（青少年キャンプ場下を除く）、田代",
+      "jp": "十足（青少年キャンプ場下を除く）、田代",
+      "pattern": "1"
+    },
+    {
+      "town": "十足",
+      "townEn": "Totari",
+      "kana": "トウタリ",
+      "chome": null,
+      "detail": "十足の一部（青少年キャンプ場下のみ）",
+      "en": "十足の一部（青少年キャンプ場下のみ）",
+      "jp": "十足の一部（青少年キャンプ場下のみ）",
+      "pattern": "1"
+    },
+    {
+      "town": "馬場町",
+      "townEn": "Babacho",
+      "kana": "ババチョウ",
+      "chome": null,
+      "detail": "馬場町1～2丁目",
+      "en": "馬場町1～2丁目",
+      "jp": "馬場町1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東松原町",
+      "townEn": "Higashimatsubaracho",
+      "kana": "ヒガシマツバラチョウ",
+      "chome": null,
+      "detail": "東松原町、中央町",
+      "en": "東松原町、中央町",
+      "jp": "東松原町、中央町",
+      "pattern": "1"
+    },
+    {
+      "town": "広野",
+      "townEn": "Hirono",
+      "kana": "ヒロノ",
+      "chome": null,
+      "detail": "広野1～4丁目",
+      "en": "広野1～4丁目",
+      "jp": "広野1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "富戸",
+      "townEn": "Futo",
+      "kana": "フト",
+      "chome": null,
+      "detail": "富戸全域、八幡野全域",
+      "en": "富戸全域、八幡野全域",
+      "jp": "富戸全域、八幡野全域",
+      "pattern": "1"
+    },
+    {
+      "town": "松原",
+      "townEn": "Matsubara",
+      "kana": "マツバラ",
+      "chome": null,
+      "detail": "松原、松原湯端町",
+      "en": "松原、松原湯端町",
+      "jp": "松原、松原湯端町",
+      "pattern": "1"
+    },
+    {
+      "town": "松原本町",
+      "townEn": "Matsubara Honcho",
+      "kana": "マツバラホンチョウ",
+      "chome": null,
+      "detail": "松原本町、松川町",
+      "en": "松原本町、松川町",
+      "jp": "松原本町、松川町",
+      "pattern": "1"
+    },
+    {
+      "town": "南町",
+      "townEn": "Minamicho",
+      "kana": "ミナミチョウ",
+      "chome": null,
+      "detail": "南町1～2丁目",
+      "en": "南町1～2丁目",
+      "jp": "南町1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "宮川町",
+      "townEn": "Miyagawacho",
+      "kana": "ミヤガワチョウ",
+      "chome": null,
+      "detail": "宮川町1～2丁目",
+      "en": "宮川町1～2丁目",
+      "jp": "宮川町1～2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "弥生町",
+      "jp": "弥生町",
+      "pattern": "1"
+    },
+    {
+      "town": "湯川",
+      "townEn": "Yukawa",
+      "kana": "ユカワ",
+      "chome": null,
+      "detail": "湯川1～7丁目",
+      "en": "湯川1～7丁目",
+      "jp": "湯川1～7丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "吉田",
+      "townEn": "Yoshida",
+      "kana": "ヨシダ",
+      "chome": null,
+      "detail": "吉田（地久保台・吉田みかん園バス停を除く）",
+      "en": "吉田（地久保台・吉田みかん園バス停を除く）",
+      "jp": "吉田（地久保台・吉田みかん園バス停を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "吉田",
+      "townEn": "Yoshida",
+      "kana": "ヨシダ",
+      "chome": null,
+      "detail": "吉田の一部（地久保台、吉田みかん園バス停のみ）",
+      "en": "吉田の一部（地久保台、吉田みかん園バス停のみ）",
+      "jp": "吉田の一部（地久保台、吉田みかん園バス停のみ）",
+      "pattern": "1"
+    },
+    {
+      "town": "和田",
+      "townEn": "Wada",
+      "kana": "ワダ",
+      "chome": null,
+      "detail": "和田1～2丁目",
+      "en": "和田1～2丁目",
+      "jp": "和田1～2丁目",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ito.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

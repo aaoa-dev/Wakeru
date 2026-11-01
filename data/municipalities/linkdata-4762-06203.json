@@ -1,0 +1,1608 @@
+{
+  "id": "linkdata-4762-06203",
+  "code": "06203",
+  "pref": "06",
+  "jp": "鶴岡市",
+  "en": "Tsuruoka",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4762i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4762i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "pet_bottle": [
+          1
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          1
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "pet_bottle": [
+          4,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          5
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "鶴岡市＿ほなみ町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿ほなみ町",
+      "jp": "鶴岡市＿ほなみ町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿みどり町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿みどり町",
+      "jp": "鶴岡市＿みどり町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿伊勢原町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿伊勢原町",
+      "jp": "鶴岡市＿伊勢原町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿井岡字塔の腰",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿井岡字塔の腰",
+      "jp": "鶴岡市＿井岡字塔の腰",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿一霞",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿一霞",
+      "jp": "鶴岡市＿一霞",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿稲生一",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿稲生一",
+      "jp": "鶴岡市＿稲生一",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿稲生二丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿稲生二丁目",
+      "jp": "鶴岡市＿稲生二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿羽黒地区",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿羽黒地区",
+      "jp": "鶴岡市＿羽黒地区",
+      "pattern": "7"
+    },
+    {
+      "town": "鶴岡市＿栄",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿栄",
+      "jp": "鶴岡市＿栄",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿黄金",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿黄金",
+      "jp": "鶴岡市＿黄金",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿温海",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿温海",
+      "jp": "鶴岡市＿温海",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿加茂",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿加茂",
+      "jp": "鶴岡市＿加茂",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿家中新町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿家中新町",
+      "jp": "鶴岡市＿家中新町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿海老島町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿海老島町",
+      "jp": "鶴岡市＿海老島町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿茅原町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿茅原町",
+      "jp": "鶴岡市＿茅原町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿岩本",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿岩本",
+      "jp": "鶴岡市＿岩本",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿宮田",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿宮田",
+      "jp": "鶴岡市＿宮田",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿京田",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿京田",
+      "jp": "鶴岡市＿京田",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿錦町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿錦町",
+      "jp": "鶴岡市＿錦町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿櫛引地区",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿櫛引地区",
+      "jp": "鶴岡市＿櫛引地区",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿熊出",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿熊出",
+      "jp": "鶴岡市＿熊出",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿戸沢",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿戸沢",
+      "jp": "鶴岡市＿戸沢",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿五十川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿五十川",
+      "jp": "鶴岡市＿五十川",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿砂田町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿砂田町",
+      "jp": "鶴岡市＿砂田町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿斎",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿斎",
+      "jp": "鶴岡市＿斎",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿桜新町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿桜新町",
+      "jp": "鶴岡市＿桜新町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿三光町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿三光町",
+      "jp": "鶴岡市＿三光町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿三瀬",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿三瀬",
+      "jp": "鶴岡市＿三瀬",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿三和町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿三和町",
+      "jp": "鶴岡市＿三和町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿山王町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿山王町",
+      "jp": "鶴岡市＿山王町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿山五十川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿山五十川",
+      "jp": "鶴岡市＿山五十川",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿七窪",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿七窪",
+      "jp": "鶴岡市＿七窪",
+      "pattern": "7"
+    },
+    {
+      "town": "鶴岡市＿若葉町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿若葉町",
+      "jp": "鶴岡市＿若葉町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿小岩川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿小岩川",
+      "jp": "鶴岡市＿小岩川",
+      "pattern": "8"
+    },
+    {
+      "town": "鶴岡市＿小堅",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿小堅",
+      "jp": "鶴岡市＿小堅",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿小国",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿小国",
+      "jp": "鶴岡市＿小国",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿小真木原町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿小真木原町",
+      "jp": "鶴岡市＿小真木原町",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿小名部",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿小名部",
+      "jp": "鶴岡市＿小名部",
+      "pattern": "8"
+    },
+    {
+      "town": "鶴岡市＿昭和町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿昭和町",
+      "jp": "鶴岡市＿昭和町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿松並町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿松並町",
+      "jp": "鶴岡市＿松並町",
+      "pattern": "7"
+    },
+    {
+      "town": "鶴岡市＿上郷",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿上郷",
+      "jp": "鶴岡市＿上郷",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿上畑町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿上畑町",
+      "jp": "鶴岡市＿上畑町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿城南町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿城南町",
+      "jp": "鶴岡市＿城南町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿城北町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿城北町",
+      "jp": "鶴岡市＿城北町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿新海町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿新海町",
+      "jp": "鶴岡市＿新海町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿新形町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿新形町",
+      "jp": "鶴岡市＿新形町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿神明町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿神明町",
+      "jp": "鶴岡市＿神明町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿西茅原（宝田一丁目）",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿西茅原（宝田一丁目）",
+      "jp": "鶴岡市＿西茅原（宝田一丁目）",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿西郷",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿西郷",
+      "jp": "鶴岡市＿西郷",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿西新斎町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿西新斎町",
+      "jp": "鶴岡市＿西新斎町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿青柳町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿青柳町",
+      "jp": "鶴岡市＿青柳町",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿切添町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿切添町",
+      "jp": "鶴岡市＿切添町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿千石町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿千石町",
+      "jp": "鶴岡市＿千石町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿泉町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿泉町",
+      "jp": "鶴岡市＿泉町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿鼠ヶ関",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿鼠ヶ関",
+      "jp": "鶴岡市＿鼠ヶ関",
+      "pattern": "8"
+    },
+    {
+      "town": "鶴岡市＿双葉町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿双葉町",
+      "jp": "鶴岡市＿双葉町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿早田",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿早田",
+      "jp": "鶴岡市＿早田",
+      "pattern": "8"
+    },
+    {
+      "town": "鶴岡市＿大岩川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大岩川",
+      "jp": "鶴岡市＿大岩川",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿大山一丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大山一丁目",
+      "jp": "鶴岡市＿大山一丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿大山郊外",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大山郊外",
+      "jp": "鶴岡市＿大山郊外",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿大山三丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大山三丁目",
+      "jp": "鶴岡市＿大山三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿大山二丁目（一部）",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大山二丁目（一部）",
+      "jp": "鶴岡市＿大山二丁目（一部）",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿大山二丁目（一部）",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大山二丁目（一部）",
+      "jp": "鶴岡市＿大山二丁目（一部）",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿大針",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大針",
+      "jp": "鶴岡市＿大針",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿大西町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大西町",
+      "jp": "鶴岡市＿大西町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿大泉",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大泉",
+      "jp": "鶴岡市＿大泉",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿大泉",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大泉",
+      "jp": "鶴岡市＿大泉",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿大鳥",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大鳥",
+      "jp": "鶴岡市＿大鳥",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿大塚町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大塚町",
+      "jp": "鶴岡市＿大塚町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿大東町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大東町",
+      "jp": "鶴岡市＿大東町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿大部町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大部町",
+      "jp": "鶴岡市＿大部町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿大宝寺町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大宝寺町",
+      "jp": "鶴岡市＿大宝寺町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿大網",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿大網",
+      "jp": "鶴岡市＿大網",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿谷地田",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿谷地田",
+      "jp": "鶴岡市＿谷地田",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿朝暘町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿朝暘町",
+      "jp": "鶴岡市＿朝暘町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿長者町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿長者町",
+      "jp": "鶴岡市＿長者町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿長沼",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿長沼",
+      "jp": "鶴岡市＿長沼",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿鳥居町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿鳥居町",
+      "jp": "鶴岡市＿鳥居町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿田川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿田川",
+      "jp": "鶴岡市＿田川",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿渡前",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿渡前",
+      "jp": "鶴岡市＿渡前",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿東栄",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿東栄",
+      "jp": "鶴岡市＿東栄",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿東原町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿東原町",
+      "jp": "鶴岡市＿東原町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿東新斎町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿東新斎町",
+      "jp": "鶴岡市＿東新斎町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿湯温海",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿湯温海",
+      "jp": "鶴岡市＿湯温海",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿湯田川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿湯田川",
+      "jp": "鶴岡市＿湯田川",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿湯野浜",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿湯野浜",
+      "jp": "鶴岡市＿湯野浜",
+      "pattern": "7"
+    },
+    {
+      "town": "鶴岡市＿藤沢",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿藤沢",
+      "jp": "鶴岡市＿藤沢",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿藤島",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿藤島",
+      "jp": "鶴岡市＿藤島",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿道形町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿道形町",
+      "jp": "鶴岡市＿道形町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿道田町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿道田町",
+      "jp": "鶴岡市＿道田町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿鍋倉",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿鍋倉",
+      "jp": "鶴岡市＿鍋倉",
+      "pattern": "8"
+    },
+    {
+      "town": "鶴岡市＿日吉町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿日吉町",
+      "jp": "鶴岡市＿日吉町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿日枝",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿日枝",
+      "jp": "鶴岡市＿日枝",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿日出一丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿日出一丁目",
+      "jp": "鶴岡市＿日出一丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿日出二丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿日出二丁目",
+      "jp": "鶴岡市＿日出二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿日和田町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿日和田町",
+      "jp": "鶴岡市＿日和田町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿馬場町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿馬場町",
+      "jp": "鶴岡市＿馬場町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿馬町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿馬町",
+      "jp": "鶴岡市＿馬町",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿八栄島",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿八栄島",
+      "jp": "鶴岡市＿八栄島",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿美原町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿美原町",
+      "jp": "鶴岡市＿美原町",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿美咲町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿美咲町",
+      "jp": "鶴岡市＿美咲町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿苗津町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿苗津町",
+      "jp": "鶴岡市＿苗津町",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿福栄",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿福栄",
+      "jp": "鶴岡市＿福栄",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿文園町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿文園町",
+      "jp": "鶴岡市＿文園町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿文下",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿文下",
+      "jp": "鶴岡市＿文下",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿平京田",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿平京田",
+      "jp": "鶴岡市＿平京田",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿平成町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿平成町",
+      "jp": "鶴岡市＿平成町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿暮坪",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿暮坪",
+      "jp": "鶴岡市＿暮坪",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿宝町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿宝町",
+      "jp": "鶴岡市＿宝町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿宝田三丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿宝田三丁目",
+      "jp": "鶴岡市＿宝田三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿宝田二",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿宝田二",
+      "jp": "鶴岡市＿宝田二",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿睦町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿睦町",
+      "jp": "鶴岡市＿睦町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿本郷",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿本郷",
+      "jp": "鶴岡市＿本郷",
+      "pattern": "5"
+    },
+    {
+      "town": "鶴岡市＿本町一丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿本町一丁目",
+      "jp": "鶴岡市＿本町一丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿本町三丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿本町三丁目",
+      "jp": "鶴岡市＿本町三丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿本町二丁目",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿本町二丁目",
+      "jp": "鶴岡市＿本町二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿槙代",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿槙代",
+      "jp": "鶴岡市＿槙代",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴岡市＿末広町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿末広町",
+      "jp": "鶴岡市＿末広町",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴岡市＿名川",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿名川",
+      "jp": "鶴岡市＿名川",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿油戸",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿油戸",
+      "jp": "鶴岡市＿油戸",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿友江町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿友江町",
+      "jp": "鶴岡市＿友江町",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿由良",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿由良",
+      "jp": "鶴岡市＿由良",
+      "pattern": "6"
+    },
+    {
+      "town": "鶴岡市＿余慶",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿余慶",
+      "jp": "鶴岡市＿余慶",
+      "pattern": "3"
+    },
+    {
+      "town": "鶴岡市＿陽光町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿陽光町",
+      "jp": "鶴岡市＿陽光町",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴岡市＿淀川町",
+      "townEn": "Tsuruoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴岡市＿淀川町",
+      "jp": "鶴岡市＿淀川町",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4762i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

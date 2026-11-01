@@ -1,0 +1,423 @@
+{
+  "id": "ube",
+  "code": "35202",
+  "pref": "35",
+  "jp": "宇部市",
+  "en": "Ube",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://yamaguchi-opendata.jp/ckan/dataset/352021_garbage_collection/resource/d0a1471d-b117-46dd-bee1-17341799000c/download",
+    "https://yamaguchi-opendata.jp/ckan/dataset/352021_garbage_collection/resource/d0a1471d-b117-46dd-bee1-17341799000c/download"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              3,
+              5
+            ],
+            {
+              "dates": [
+                "2026-04-14",
+                "2026-05-19",
+                "2026-06-16",
+                "2026-07-14",
+                "2026-08-11",
+                "2026-09-08",
+                "2026-10-13",
+                "2026-11-10",
+                "2026-12-08"
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "dates": [
+            "2026-04-21",
+            "2026-05-26",
+            "2026-06-23",
+            "2026-07-21",
+            "2026-08-18",
+            "2026-09-15",
+            "2026-10-20",
+            "2026-11-17",
+            "2026-12-15"
+          ]
+        }
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              3,
+              5
+            ],
+            {
+              "dates": [
+                "2026-04-16",
+                "2026-05-21",
+                "2026-06-18",
+                "2026-07-16",
+                "2026-08-20",
+                "2026-09-17",
+                "2026-10-15",
+                "2026-11-19",
+                "2026-12-17"
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "dates": [
+            "2026-04-09",
+            "2026-05-14",
+            "2026-06-11",
+            "2026-07-09",
+            "2026-08-06",
+            "2026-09-10",
+            "2026-10-08",
+            "2026-11-12",
+            "2026-12-10"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "鵜の島",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鵜の島",
+      "jp": "鵜の島",
+      "pattern": "2"
+    },
+    {
+      "town": "恩田",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "恩田",
+      "jp": "恩田",
+      "pattern": "1"
+    },
+    {
+      "town": "吉部",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉部",
+      "jp": "吉部",
+      "pattern": "2"
+    },
+    {
+      "town": "琴芝",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "琴芝",
+      "jp": "琴芝",
+      "pattern": "1"
+    },
+    {
+      "town": "見初",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "見初",
+      "jp": "見初",
+      "pattern": "1"
+    },
+    {
+      "town": "原",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "原",
+      "jp": "原",
+      "pattern": "2"
+    },
+    {
+      "town": "厚東",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "厚東",
+      "jp": "厚東",
+      "pattern": "2"
+    },
+    {
+      "town": "厚南",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "厚南",
+      "jp": "厚南",
+      "pattern": "2"
+    },
+    {
+      "town": "黒石",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "黒石",
+      "jp": "黒石",
+      "pattern": "2"
+    },
+    {
+      "town": "小羽山",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小羽山",
+      "jp": "小羽山",
+      "pattern": "2"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小野",
+      "jp": "小野",
+      "pattern": "2"
+    },
+    {
+      "town": "上宇部",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上宇部",
+      "jp": "上宇部",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤",
+      "jp": "常盤",
+      "pattern": "1"
+    },
+    {
+      "town": "新川",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新川",
+      "jp": "新川",
+      "pattern": "2"
+    },
+    {
+      "town": "神原",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神原",
+      "jp": "神原",
+      "pattern": "1"
+    },
+    {
+      "town": "西宇部",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西宇部",
+      "jp": "西宇部",
+      "pattern": "2"
+    },
+    {
+      "town": "西岐波",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西岐波",
+      "jp": "西岐波",
+      "pattern": "1"
+    },
+    {
+      "town": "川上",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川上",
+      "jp": "川上",
+      "pattern": "1"
+    },
+    {
+      "town": "船木",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船木",
+      "jp": "船木",
+      "pattern": "2"
+    },
+    {
+      "town": "東岐波",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東岐波",
+      "jp": "東岐波",
+      "pattern": "1"
+    },
+    {
+      "town": "藤山",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "藤山",
+      "jp": "藤山",
+      "pattern": "2"
+    },
+    {
+      "town": "二俣瀬",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二俣瀬",
+      "jp": "二俣瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "万倉",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "万倉",
+      "jp": "万倉",
+      "pattern": "2"
+    },
+    {
+      "town": "岬",
+      "townEn": "Ube",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岬",
+      "jp": "岬",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "https://yamaguchi-opendata.jp/ckan/dataset/352021_garbage_collection/resource/d0a1471d-b117-46dd-bee1-17341799000c/download",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,6 +1,5 @@
-/* Data: shared items tagged by material type (data/shared), and one generated file per municipality (data/municipalities/<id>.json)
-   that maps types to bins and lists every town/chome area with its collection pattern, plus the official Japanese sorting list
-   (<id>.dict.json). Collection-day rules live in schedule.js, shared with the importer's cross-check. */
+/* Data: static JSON under data/ (built by npm run import). At runtime we fetch the index, shared guides, then only the
+   user's municipality JSON; sorting dictionaries load when you search. GSI reverse geocoding is optional for "Locate me". */
 import { dayState, binsOn } from "./schedule.js";
 import { runOnboarding } from "./onboarding.js";
 
@@ -14,31 +13,52 @@ const norm = s => kataToHira((s||"").toLowerCase().normalize("NFKC"));
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 const shortDate = d => `${d.getMonth()+1}/${d.getDate()}`;
 const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
-let DATA, RS, DICT, AREA, ITEMS = [], LOADING = 0;
+let DATA, RS, DICT, AREA, ITEMS = [], LOADING = 0, SEARCHING = 0;
 
 async function getJSON(path){
   const res = await fetch(path);
   if(!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
   return res.json();
 }
-/* a municipality and its dictionary load on first use and stay cached (a failed load is retried next time) */
+/* Per-city cache: schedule JSON always; sorting dict loaded on demand (can be 100KB+). */
 const CITIES = {};
-function loadCity(entry){
-  return CITIES[entry.id] ??= Promise.all([
-    getJSON(`data/municipalities/${entry.id}.json`),
-    entry.dictionary ? getJSON(`data/municipalities/${entry.id}.dict.json`) : null,
-  ]).then(([rs, dict]) => {
-    if(dict) dict.index = dict.items.map(([name,,,keywords]) => [norm(name), norm(keywords)]);
-    return [rs, dict];
-  }).catch(err => { delete CITIES[entry.id]; throw err });
+const cityCache = entry => CITIES[entry.id] ??= {rs:null, dict:null, rsPromise:null, dictPromise:null};
+async function loadCity(entry){
+  const cache = cityCache(entry);
+  if(!cache.rsPromise){
+    cache.rsPromise = getJSON(`data/municipalities/${entry.id}.json`)
+      .then(rs => cache.rs = rs)
+      .catch(err => { cache.rsPromise = null; throw err });
+  }
+  const rs = cache.rs ?? await cache.rsPromise;
+  return [rs, cache.dict];
+}
+async function ensureDict(){
+  if(DICT || !RS || !DATA) return DICT;
+  const entry = DATA.cities.find(c => c.id === RS.id);
+  if(!entry?.dictionary) return null;
+  const cache = cityCache(entry);
+  if(!cache.dictPromise){
+    cache.dictPromise = getJSON(`data/municipalities/${entry.id}.dict.json`)
+      .then(dict => {
+        dict.index = dict.items.map(([name,,,keywords]) => [norm(name), norm(keywords)]);
+        return cache.dict = dict;
+      })
+      .catch(err => { cache.dictPromise = null; throw err });
+  }
+  const dict = cache.dict ?? await cache.dictPromise;
+  if(RS?.id !== entry.id) return null;
+  DICT = dict;
+  $("#footSrc").innerHTML = footerHTML();
+  return DICT;
 }
 function showError(err){
   const html = `<div class="empty">Couldn't load the trash data (${esc(err.message)}). Reload the page to try again.</div>`;
-  $("#today").innerHTML = html; $("#homeWeek").innerHTML = html;
+  $("#today").innerHTML = html;
 }
 
 const binOf = (bin, rs = RS) => rs.bins[bin] || {en:bin,label:"",kind:"no"};
-const chipHTML = (kind, en, label) => `<span class="chip" style="--cc:var(${BIN_COLOR[kind]||"--c-no"})"><i></i>${esc(en)} <small>${esc(label)}</small></span>`;
+const chipHTML = (kind, en, label) => `<span class="chip" style="--cc:var(${BIN_COLOR[kind]||"--c-no"})"><i></i><span class="chip-text">${esc(en)}${label ? ` <small>${esc(label)}</small>` : ""}</span></span>`;
 const chip = (bin, rs = RS) => { const b = binOf(bin, rs); return chipHTML(b.kind, b.en, b.label) };
 /* turn an item's material types into this city's bins; null when the city's guide doesn't cover one of its types */
 function resolve(it){
@@ -90,7 +110,8 @@ function searchDict(words){
     return [s - name.length/100, i];
   }).filter(Boolean).sort((a,b)=>b[0]-a[0]).slice(0, DICT_LIMIT).map(([,i]) => DICT.items[i]);
 }
-function search(q){
+async function search(q){
+  const token = ++SEARCHING, city = RS?.id;
   const nq = norm(q).trim(); if(!nq){showHome();return}
   const words = nq.split(/\s+/);
   const hits = ITEMS.map(it => {
@@ -98,30 +119,165 @@ function search(q){
     let s = 0; for(const w of words){ if(!hay.includes(w)) return null; s += (norm(it.en)+norm(it.jp)).includes(w) ? 3 : 1 }
     return [s,it];
   }).filter(Boolean).sort((a,b)=>b[0]-a[0]).map(x=>x[1]);
-  showResults(hits, `${hits.length} result${hits.length===1?"":"s"} for "${q.trim()}"`, searchDict(words));
+  const title = `${hits.length} result${hits.length===1?"":"s"} for "${q.trim()}"`;
+  showResults(hits, title);
+  try { await ensureDict() } catch(err) { console.warn("Official sorting dictionary unavailable", err); return }
+  if(token !== SEARCHING || city !== RS?.id || norm($("#q").value).trim() !== nq) return;
+  showResults(hits, title, searchDict(words));
 }
-function renderPlasticTest(){
-  const pt = RS.plasticTest;
-  $(".test").hidden = !pt;
-  if(!pt) return;
+const GUIDE_KINDS = ["burn", "pla", "res", "non", "haz"];
+const binKeysForKind = (kind, rs = RS) => Object.keys(rs.bins).filter(k => rs.bins[k].kind === kind);
+const firstBin = kind => binKeysForKind(kind)[0];
+
+const SORT_GUIDES = {
+  burn: {
+    title: "Burnable check",
+    lede: "Food, soiled paper, cloth and dirty plastic usually go here.",
+    steps: [
+      ["Drain or wipe off liquids", "Soggy messes leak in the truck. A quick squeeze or paper towel helps."],
+      ["No batteries, spray cans or bulbs", "Those are hazardous or non-burnable, even if they're small."],
+      ["Cut long items to about 50 cm", "Branches, hoses and fabric sheets over ~50 cm need cutting or oversized booking."],
+    ],
+  },
+  res: {
+    title: "Recyclables check",
+    lede: "Bottles, cans and paper each have their own bundle or box.",
+    steps: [
+      ["Rinse drink bottles and cans", "A quick rinse is enough. Heavily oily or smelly ones go to burnable."],
+      ["Sort paper by type", "Newspaper, magazines, cardboard and cartons don't go in the same bundle."],
+      ["PET bottle bodies only", "Caps and labels often go to plastic; the clear bottle body goes to PET recycling."],
+    ],
+  },
+  non: {
+    title: "Non-burnable check",
+    lede: "Metal, ceramics and small hard things — usually twice a month.",
+    steps: [
+      ["Metal, ceramic or hard glass?", "Pots, plates, mirrors and foil trays belong here, not burnable."],
+      ["Small enough to fit in a bag?", "Larger items may need oversized garbage (粗大ごみ) with a sticker."],
+      ["Remove batteries first", "Built-in or loose batteries go to hazardous collection, not this bag."],
+    ],
+  },
+  haz: {
+    title: "Hazardous check",
+    lede: "Separate bag, often on non-burnable day, with キケン written on it.",
+    steps: [
+      ["Tape battery terminals", "Use clear tape on +/− ends. Swollen or damaged cells: call the city first."],
+      ["Mark the bag キケン", "Blades, broken glass and thermometers need a visible danger label."],
+      ["Never mix with plastic or burnable", "Even one battery in the wrong bag can stop the whole collection."],
+    ],
+  },
+};
+
+function plasticGuideSteps(pt){
+  const pla = pt?.bin ?? firstBin("pla"), dirty = pt?.otherwise ?? firstBin("burn");
   const steps = [
-    pt.products ? ["Is it 100% plastic?", "No metal, paper or rubber parts attached. Pump tops and wrap boxes with a cutter fail this."]
+    pt?.products !== false ? ["Is it 100% plastic?", "No metal, paper or rubber parts attached. Pump tops and wrap boxes with a cutter fail this."]
       : ["Is it packaging with the プラマーク?", `${RS.en} only takes plastic packaging. Plastic products like hangers, toys or cutlery fail this, even if they're 100% plastic.`],
     ["Is it empty and clean?", "Give it a quick rinse or wipe. Curry stains, oil or stuck rice that won't come off fail this."],
-    ...(pt.maxCm ? [[`Is it under ${pt.maxCm} cm?`, "Bigger than that is oversized garbage (粗大ごみ)."]] : []),
+    ...(pt?.maxCm ? [[`Is it under ${pt.maxCm} cm?`, "Bigger than that is oversized garbage (粗大ごみ)."]] : []),
   ];
-  $("#plasticSteps").innerHTML = steps.map(([q, no]) => `<li><div><b>${q}</b><span class="no">${no}</span></div></li>`).join("");
-  $("#plasticSummary").textContent = pt.summary;
-  $("#verdict").innerHTML = `<span>Yes to all ${steps.length === 3 ? "three" : "two"} →</span> ${chip(pt.bin)} <span>Any no →</span> ${chip(pt.otherwise)}`;
+  return {steps, pla, dirty, summary: pt?.summary ?? "Clean, empty plastic packaging in a clear bag. Anything dirty or mixed goes to burnable."};
+}
+
+function itemsForKind(kind, limit = 5){
+  const keys = new Set(binKeysForKind(kind));
+  return ITEMS.map((it, i) => [it, i]).filter(([it]) => it.outs.some(o => keys.has(o.bin))).slice(0, limit);
+}
+
+function nextPickupInfo(rs = RS, area = AREA){
+  if(!rs || !area) return null;
+  const pat = rs.calendar.patterns[area.pattern];
+  const now = new Date(); now.setHours(0, 0, 0, 0);
+  for(let i = 0; i < 40; i++){
+    const d = new Date(now); d.setDate(now.getDate() + i);
+    const ps = pickupsOn(d, pat, rs);
+    if(typeof ps === "string" || !Array.isArray(ps) || !ps.length) continue;
+    const label = i === 0 ? "Today" : i === 1 ? "Tomorrow" : `${shortDate(d)} (${DOWJ[d.getDay()]})`;
+    const by = ps.map(([, t]) => t).filter((v, j, a) => v && a.indexOf(v) === j).join("; ");
+    return {label, bins: ps.map(([b]) => b), by: by || null};
+  }
+  return null;
+}
+
+function guideStepsHTML(steps){
+  return `<ol>${steps.map(([q, no]) => `<li><div><b>${esc(q)}</b><span class="no">${esc(no)}</span></div></li>`).join("")}</ol>`;
+}
+
+function guideQuickHTML(kind){
+  const picks = itemsForKind(kind);
+  if(!picks.length) return "";
+  const label = kind === "pla" ? "Common packaging" : "Examples in the guide";
+  return `<p class="fine guide-examples">${esc(label)}</p><div class="quick">${picks.map(([it, i]) =>
+    `<button type="button" data-guide-i="${i}"><span class="pill-text">${esc(it.en.replace(/ \(.*\)/, ""))}</span></button>`).join("")}</div>`;
+}
+
+function guideCardHTML(kind, isNext){
+  const color = BIN_COLOR[kind] || "--c-no";
+  const ribbon = isNext ? `<p class="guide-ribbon">Next on your schedule</p>` : "";
+  if(kind === "pla"){
+    const {steps, pla, dirty, summary} = plasticGuideSteps(RS.plasticTest);
+    const n = steps.length;
+    return `<article class="guide-card card test${isNext ? " next" : ""}" style="--guide-accent:var(${color})">${ribbon}
+      <h2>The plastic test ${chip(pla)}</h2>
+      <p class="lede">Most takeout and konbini packaging comes down to a few questions. ${esc(summary)}</p>
+      ${guideStepsHTML(steps)}
+      <div class="verdict"><span>Yes to all ${n === 3 ? "three" : n === 4 ? "four" : "two"} →</span> ${chip(pla)} <span>Any no →</span> ${chip(dirty)}</div>
+      ${guideQuickHTML(kind)}</article>`;
+  }
+  const g = SORT_GUIDES[kind]; if(!g) return "";
+  const bin = firstBin(kind); if(!bin) return "";
+  return `<article class="guide-card card test${isNext ? " next" : ""}" style="--guide-accent:var(${color})">${ribbon}
+    <h2>${esc(g.title)} ${chip(bin)}</h2>
+    <p class="lede">${esc(g.lede)}</p>
+    ${guideStepsHTML(g.steps)}
+    ${guideQuickHTML(kind)}</article>`;
+}
+
+let GUIDE_ORDER = [], guideSlide = 0, guideDrag = null;
+
+function applyGuideSlide(){
+  const track = $("#sortGuides"); if(!track || !GUIDE_ORDER.length) return;
+  guideSlide = ((guideSlide % GUIDE_ORDER.length) + GUIDE_ORDER.length) % GUIDE_ORDER.length;
+  track.style.transform = `translate3d(-${guideSlide * 100}%,0,0)`;
+  $("#guideDots")?.querySelectorAll(".guide-dot").forEach((b, i) => b.setAttribute("aria-current", i === guideSlide ? "true" : "false"));
+}
+
+function renderSortGuides(){
+  const wrap = $("#sortGuidesWrap");
+  if(!RS){ wrap.hidden = true; return }
+  const kinds = GUIDE_KINDS.filter(k => binKeysForKind(k).length);
+  if(!kinds.length){ wrap.hidden = true; return }
+  const next = nextPickupInfo();
+  const nextKinds = new Set(next ? next.bins.map(b => binOf(b).kind) : []);
+  const lede = $("#sortGuidesLede");
+  if(next){
+    const names = next.bins.map(b => binOf(b).en).join(", ");
+    lede.textContent = `Next pickup: ${next.label} · ${names}${next.by ? ` · ${next.by}` : ""}`;
+    lede.hidden = false;
+  } else lede.hidden = true;
+  GUIDE_ORDER = [...kinds].sort((a, b) => Number(nextKinds.has(b)) - Number(nextKinds.has(a)) || GUIDE_KINDS.indexOf(a) - GUIDE_KINDS.indexOf(b));
+  guideSlide = 0;
+  $("#sortGuides").innerHTML = GUIDE_ORDER.map(k => guideCardHTML(k, nextKinds.has(k))).join("");
+  const nav = $("#guideNav");
+  if(GUIDE_ORDER.length <= 1) nav.hidden = true;
+  else {
+    nav.hidden = false;
+    $("#guideDots").innerHTML = GUIDE_ORDER.map((k, i) => {
+      const b = binOf(firstBin(k));
+      return `<button type="button" class="guide-dot" data-guide-dot="${i}" style="--guide-accent:var(${BIN_COLOR[k]})" aria-label="${esc(b.en)}" aria-current="${i === 0 ? "true" : "false"}"></button>`;
+    }).join("");
+  }
+  applyGuideSlide();
+  wrap.hidden = false;
 }
 
 /* ---------- schedule ---------- */
 /* [[bin, "by 8:00"]] for a day, or a dayState string ("off", "unconfirmed", "unpublished") */
 function pickupsOn(d, pattern, rs = RS){
-  const state = dayState(rs.calendar, d);
-  if(state) return state;
   const by = rs.calendar.putOutBy;
-  return binsOn(rs.calendar, pattern, d).map(bin => [bin, by ? "by " + (by[bin] || "8:00") : ""]);
+  const bins = binsOn(rs.calendar, pattern, d);
+  if(bins.length) return bins.map(bin => [bin, by ? "by " + (by[bin] || "8:00") : ""]);
+  return dayState(rs.calendar, d) || [];
 }
 function ruleText(r){
   if(Array.isArray(r)) return r.map(d=>DOW[d]).join(" & ");
@@ -161,21 +317,16 @@ function restoreArea(){
 function renderDays(){
   $("#whereText").textContent = `${areaName(AREA)}, ${RS.en}`;
   const pat = RS.calendar.patterns[AREA.pattern];
-  const now = new Date(); now.setHours(0,0,0,0);
-  const at = i => { const d = new Date(now); d.setDate(now.getDate()+i); return d };
   const rows = nextDays(RS, AREA, 7);
   const list = r => Array.isArray(r.ps) && r.ps.length ? `<div class="pickups">${r.ps.map(([c,by])=>`<div class="pickup">${chip(c)}<span class="by">${esc(by)}</span></div>`).join("")}</div>`
     : none(LONG[r.ps] ?? "Nothing collected");
   const [t, tm] = rows;
   $("#areaNote").hidden = !AREA.note; $("#areaNote").textContent = AREA.note || "";
   $("#today").innerHTML = `<div class="date">Today<small>${shortDate(t.d)} (${DOWJ[t.d.getDay()]})</small></div>${list(t)}
-    <div class="date" style="font-size:16px;margin-top:4px">Tomorrow<small>${shortDate(tm.d)} (${DOWJ[tm.d.getDay()]})</small></div>${list(tm)}
+    <div class="date date--tomorrow">Tomorrow<small>${shortDate(tm.d)} (${DOWJ[tm.d.getDay()]})</small></div>${list(tm)}
     <p class="fine">${esc(patternText(pat))}</p>`;
   $("#week").innerHTML = rows.map(r => dayRow(r)).join("");
-  let nextNon = null;
-  for(let i=0;i<40 && !nextNon;i++){ const ps = pickupsOn(at(i),pat); if(ps === "unpublished") break; if(Array.isArray(ps) && ps.some(([b])=>binOf(b).kind==="non")) nextNon = at(i) }
-  $("#homeWeek").innerHTML = `<div class="today"><h2 style="margin:0">${esc(areaName(AREA))} · next 3 days</h2><div class="week">${rows.slice(0,3).map(r => dayRow(r)).join("")}</div>
-    ${nextNon?`<p class="fine">Next non-burnable day: <b>${shortDate(nextNon)} (${DOWJ[nextNon.getDay()]})</b>. ${esc(patternText(pat))}</p>`:""}</div>`;
+  renderSortGuides();
 }
 
 /* ---------- municipality ---------- */
@@ -197,12 +348,12 @@ async function setCity(id){
   const token = ++LOADING;
   const [rs, dict] = await loadCity(entry);
   if(token !== LOADING) return; // another city was picked while this one was loading
-  RS = rs; DICT = dict;
+  SEARCHING++;
+  RS = rs; DICT = dict ?? null;
   store.set("wakeru-city", RS.id);
   ITEMS = DATA.items.map(resolve).filter(Boolean);
-  $("#quick").innerHTML = ITEMS.map((i,n)=>i.quick?`<button type="button" data-i="${n}">${i.en.replace(/ \(.*\)/,"")}</button>`:"").join("");
-  $("#cats").innerHTML = Object.keys(RS.bins).map(c=>`<button type="button" data-c="${c}">${esc(RS.bins[c].en)} · ${esc(RS.bins[c].label)}</button>`).join("");
-  renderPlasticTest();
+  $("#quick").innerHTML = ITEMS.map((i,n)=>i.quick?`<button type="button" data-i="${n}"><span class="pill-text">${esc(i.en.replace(/ \(.*\)/,""))}</span></button>`:"").join("");
+  $("#cats").innerHTML = Object.keys(RS.bins).map(c=>`<button type="button" data-c="${c}"><span class="pill-text">${esc(RS.bins[c].en)} · ${esc(RS.bins[c].label)}</span></button>`).join("");
   restoreArea();
   const validTo = RS.calendar.validTo ? ` Dates are published through ${RS.calendar.validTo}.` : "";
   $("#schedNote").textContent = `${RS.calendar.note || ""}${validTo} Your collection point's sign has the final word.`;
@@ -231,7 +382,7 @@ async function init(){
 
 /* ---------- events ---------- */
 $("#where").addEventListener("click", () => chooseLocation().catch(showError));
-$("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.target.value) });
+$("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.target.value).catch(showError) });
 /* presets get a history entry so the browser/phone back gesture returns to the sort home instead of leaving the site */
 function openPreset(list, title){
   showResults(list, title); window.scrollTo({top:0});
@@ -239,6 +390,33 @@ function openPreset(list, title){
 }
 function closeResults(){ $("#q").value = ""; showHome(); window.scrollTo({top:0}) }
 $("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; openPreset([it], it.en) });
+$("#sortGuidesWrap").addEventListener("click", e => {
+  if(e.target.closest("[data-guide-prev]")){ guideSlide--; applyGuideSlide(); return }
+  if(e.target.closest("[data-guide-next]")){ guideSlide++; applyGuideSlide(); return }
+  const dot = e.target.closest("[data-guide-dot]");
+  if(dot){ guideSlide = +dot.dataset.guideDot; applyGuideSlide(); return }
+  const b = e.target.closest("button[data-guide-i]"); if(!b) return;
+  const it = ITEMS[+b.dataset.guideI]; if(it) openPreset([it], it.en);
+});
+const guideViewport = $("#guideViewport");
+guideViewport.addEventListener("pointerdown", e => {
+  if(GUIDE_ORDER.length <= 1 || e.target.closest("button")) return;
+  guideDrag = {x: e.clientX, id: e.pointerId};
+  guideViewport.setPointerCapture(e.pointerId);
+});
+guideViewport.addEventListener("pointerup", e => {
+  if(!guideDrag || guideDrag.id !== e.pointerId) return;
+  const dx = e.clientX - guideDrag.x;
+  guideDrag = null;
+  if(Math.abs(dx) < 48) return;
+  guideSlide += dx < 0 ? 1 : -1;
+  applyGuideSlide();
+});
+guideViewport.addEventListener("pointercancel", () => { guideDrag = null });
+guideViewport.addEventListener("keydown", e => {
+  if(e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+  e.preventDefault(); guideSlide += e.key === "ArrowRight" ? 1 : -1; applyGuideSlide();
+});
 $("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const c = b.dataset.c;
   openPreset(ITEMS.filter(i=>i.outs.some(o=>o.bin===c)), `Things that can go in ${RS.bins[c].en} (${RS.bins[c].label})`) });
 $("#resBack").addEventListener("click", () => history.state?.results ? history.back() : closeResults());

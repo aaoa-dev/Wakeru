@@ -1,0 +1,371 @@
+{
+  "id": "kitajima-36402",
+  "code": "36402",
+  "pref": "36",
+  "jp": "北島町",
+  "en": "Kitajima",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kitajima.5374.jp/data/area_days.csv",
+    "http://kitajima.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          4
+        ],
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "hazardous": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ],
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "hazardous": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "hazardous": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "hazardous": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "1コース",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "1コース",
+      "jp": "1コース",
+      "pattern": "1"
+    },
+    {
+      "town": "2コース",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "2コース",
+      "jp": "2コース",
+      "pattern": "2"
+    },
+    {
+      "town": "3コース",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "3コース",
+      "jp": "3コース",
+      "pattern": "3"
+    },
+    {
+      "town": "4コース",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "4コース",
+      "jp": "4コース",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kitajima.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

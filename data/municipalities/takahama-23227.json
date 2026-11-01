@@ -1,0 +1,429 @@
+{
+  "id": "takahama-23227",
+  "code": "23227",
+  "pref": "23",
+  "jp": "高浜市",
+  "en": "Takahama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://takahama.5374.jp/data/area_days.csv",
+    "http://takahama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ハサミ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「CD」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「蛍光灯・電池類」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "青木町",
+      "townEn": "Aokicho",
+      "kana": "アオキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "青木町",
+      "jp": "青木町",
+      "pattern": "1"
+    },
+    {
+      "town": "碧海町",
+      "townEn": "Aomicho",
+      "kana": "アオミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "碧海町",
+      "jp": "碧海町",
+      "pattern": "1"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Kasugacho",
+      "kana": "カスガチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "春日町",
+      "jp": "春日町",
+      "pattern": "1"
+    },
+    {
+      "town": "呉竹町",
+      "townEn": "Kuretakecho",
+      "kana": "クレタケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "呉竹町",
+      "jp": "呉竹町",
+      "pattern": "2"
+    },
+    {
+      "town": "小池町",
+      "townEn": "Koikecho",
+      "kana": "コイケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小池町",
+      "jp": "小池町",
+      "pattern": "2"
+    },
+    {
+      "town": "沢渡町",
+      "townEn": "Sawataricho",
+      "kana": "サワタリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "沢渡町",
+      "jp": "沢渡町",
+      "pattern": "2"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Shimizucho",
+      "kana": "シミズチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "清水町",
+      "jp": "清水町",
+      "pattern": "1"
+    },
+    {
+      "town": "新田町",
+      "townEn": "Shindencho",
+      "kana": "シンデンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "新田町",
+      "jp": "新田町",
+      "pattern": "2"
+    },
+    {
+      "town": "神明町",
+      "townEn": "Shimmeicho",
+      "kana": "シンメイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "神明町",
+      "jp": "神明町",
+      "pattern": "2"
+    },
+    {
+      "town": "田戸町",
+      "townEn": "Tadocho",
+      "kana": "タドチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "田戸町",
+      "jp": "田戸町",
+      "pattern": "1"
+    },
+    {
+      "town": "豊田町",
+      "townEn": "Toyodacho",
+      "kana": "トヨダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "豊田町",
+      "jp": "豊田町",
+      "pattern": "2"
+    },
+    {
+      "town": "八幡町",
+      "townEn": "Hachimancho",
+      "kana": "ハチマンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "八幡町",
+      "jp": "八幡町",
+      "pattern": "2"
+    },
+    {
+      "town": "稗田町",
+      "townEn": "Hiedacho",
+      "kana": "ヒエダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "稗田町",
+      "jp": "稗田町",
+      "pattern": "1"
+    },
+    {
+      "town": "二池町",
+      "townEn": "Futatsuikecho",
+      "kana": "フタツイケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "二池町",
+      "jp": "二池町",
+      "pattern": "1"
+    },
+    {
+      "town": "本郷町",
+      "townEn": "Hongocho",
+      "kana": "ホンゴウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "本郷町",
+      "jp": "本郷町",
+      "pattern": "1"
+    },
+    {
+      "town": "向山町",
+      "townEn": "Mukaiyamacho",
+      "kana": "ムカイヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "向山町",
+      "jp": "向山町",
+      "pattern": "1"
+    },
+    {
+      "town": "屋敷町",
+      "townEn": "Yashikicho",
+      "kana": "ヤシキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "屋敷町",
+      "jp": "屋敷町",
+      "pattern": "2"
+    },
+    {
+      "town": "湯山町",
+      "townEn": "Yuyamacho",
+      "kana": "ユヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "湯山町",
+      "jp": "湯山町",
+      "pattern": "2"
+    },
+    {
+      "town": "芳川町",
+      "townEn": "Yoshikawacho",
+      "kana": "ヨシカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "芳川町",
+      "jp": "芳川町",
+      "pattern": "2"
+    },
+    {
+      "town": "論地町",
+      "townEn": "Ronchicho",
+      "kana": "ロンチチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "論地町",
+      "jp": "論地町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://takahama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

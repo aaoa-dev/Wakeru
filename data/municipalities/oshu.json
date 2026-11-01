@@ -1,0 +1,837 @@
+{
+  "id": "oshu",
+  "code": "03215",
+  "pref": "03",
+  "jp": "奥州市",
+  "en": "Oshu",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4773i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4773i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「菓子箱」 under 「金属」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙パック（裏側が銀色）」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「鍋」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ（白色）」 under 「白色プラスチック」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「ボタン電池及び小型充電式電池回収」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「布団」 under 「燃えるごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "岩手県奥州市水沢区安久戸地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区安久戸地区全域",
+      "jp": "岩手県奥州市水沢区安久戸地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区羽田地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区羽田地区全域",
+      "jp": "岩手県奥州市水沢区羽田地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区駅通り地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区駅通り地区",
+      "jp": "岩手県奥州市水沢区駅通り地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区横町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区横町地区",
+      "jp": "岩手県奥州市水沢区横町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区花園町地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区花園町地区全域",
+      "jp": "岩手県奥州市水沢区花園町地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区吉小路地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区吉小路地区",
+      "jp": "岩手県奥州市水沢区吉小路地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区宮下町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区宮下町地区",
+      "jp": "岩手県奥州市水沢区宮下町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区見分森地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区見分森地区",
+      "jp": "岩手県奥州市水沢区見分森地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区原中第１～第６地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区原中第１～第６地区全域",
+      "jp": "岩手県奥州市水沢区原中第１～第６地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区黒石地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区黒石地区全域",
+      "jp": "岩手県奥州市水沢区黒石地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区佐倉河地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区佐倉河地区全域",
+      "jp": "岩手県奥州市水沢区佐倉河地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区桜屋敷地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区桜屋敷地区",
+      "jp": "岩手県奥州市水沢区桜屋敷地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区桜屋敷東地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区桜屋敷東地区",
+      "jp": "岩手県奥州市水沢区桜屋敷東地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区桜屋敷南地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区桜屋敷南地区",
+      "jp": "岩手県奥州市水沢区桜屋敷南地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区三本木地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区三本木地区",
+      "jp": "岩手県奥州市水沢区三本木地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区山崎町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区山崎町地区",
+      "jp": "岩手県奥州市水沢区山崎町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区姉体地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区姉体地区全域",
+      "jp": "岩手県奥州市水沢区姉体地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区寺小路地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区寺小路地区",
+      "jp": "岩手県奥州市水沢区寺小路地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区春日町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区春日町地区",
+      "jp": "岩手県奥州市水沢区春日町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区勝手町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区勝手町地区",
+      "jp": "岩手県奥州市水沢区勝手町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区上町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区上町地区",
+      "jp": "岩手県奥州市水沢区上町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区上町南地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区上町南地区",
+      "jp": "岩手県奥州市水沢区上町南地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区新小路地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区新小路地区",
+      "jp": "岩手県奥州市水沢区新小路地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区真城地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区真城地区全域",
+      "jp": "岩手県奥州市水沢区真城地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区瀬台野西地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区瀬台野西地区全域",
+      "jp": "岩手県奥州市水沢区瀬台野西地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区瀬台野東地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区瀬台野東地区全域",
+      "jp": "岩手県奥州市水沢区瀬台野東地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区西上野町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区西上野町地区",
+      "jp": "岩手県奥州市水沢区西上野町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区西常盤地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区西常盤地区全域",
+      "jp": "岩手県奥州市水沢区西常盤地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区青葉町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区青葉町地区",
+      "jp": "岩手県奥州市水沢区青葉町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区石田西地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区石田西地区",
+      "jp": "岩手県奥州市水沢区石田西地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区石田南地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区石田南地区",
+      "jp": "岩手県奥州市水沢区石田南地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区石田北地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区石田北地区",
+      "jp": "岩手県奥州市水沢区石田北地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区跡呂井地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区跡呂井地区全域",
+      "jp": "岩手県奥州市水沢区跡呂井地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区川原小路地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区川原小路地区",
+      "jp": "岩手県奥州市水沢区川原小路地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区川口町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区川口町地区",
+      "jp": "岩手県奥州市水沢区川口町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区川端地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区川端地区",
+      "jp": "岩手県奥州市水沢区川端地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区袋町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区袋町地区",
+      "jp": "岩手県奥州市水沢区袋町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大橋地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大橋地区",
+      "jp": "岩手県奥州市水沢区大橋地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大手町西地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大手町西地区",
+      "jp": "岩手県奥州市水沢区大手町西地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大手町東地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大手町東地区",
+      "jp": "岩手県奥州市水沢区大手町東地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大鐘町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大鐘町地区",
+      "jp": "岩手県奥州市水沢区大鐘町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大町地区",
+      "jp": "岩手県奥州市水沢区大町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区大畑小路地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区大畑小路地区",
+      "jp": "岩手県奥州市水沢区大畑小路地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区中央通り地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区中央通り地区",
+      "jp": "岩手県奥州市水沢区中央通り地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区中上野町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区中上野町地区",
+      "jp": "岩手県奥州市水沢区中上野町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区天文台通り地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区天文台通り地区",
+      "jp": "岩手県奥州市水沢区天文台通り地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区東上野町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区東上野町地区",
+      "jp": "岩手県奥州市水沢区東上野町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区東町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区東町地区",
+      "jp": "岩手県奥州市水沢区東町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区南大鐘地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区南大鐘地区",
+      "jp": "岩手県奥州市水沢区南大鐘地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区南町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区南町地区",
+      "jp": "岩手県奥州市水沢区南町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区日高地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区日高地区",
+      "jp": "岩手県奥州市水沢区日高地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区日高南地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区日高南地区",
+      "jp": "岩手県奥州市水沢区日高南地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区不断町西地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区不断町西地区",
+      "jp": "岩手県奥州市水沢区不断町西地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区不断町東地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区不断町東地区",
+      "jp": "岩手県奥州市水沢区不断町東地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区福吉町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区福吉町地区",
+      "jp": "岩手県奥州市水沢区福吉町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区福原地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区福原地区",
+      "jp": "岩手県奥州市水沢区福原地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区北下巾地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区北下巾地区",
+      "jp": "岩手県奥州市水沢区北下巾地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区北常盤地区全域",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区北常盤地区全域",
+      "jp": "岩手県奥州市水沢区北常盤地区全域",
+      "pattern": "1"
+    },
+    {
+      "town": "岩手県奥州市水沢区柳町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区柳町地区",
+      "jp": "岩手県奥州市水沢区柳町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区立町地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区立町地区",
+      "jp": "岩手県奥州市水沢区立町地区",
+      "pattern": "2"
+    },
+    {
+      "town": "岩手県奥州市水沢区龍ヶ馬場地区",
+      "townEn": "Oshu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岩手県奥州市水沢区龍ヶ馬場地区",
+      "jp": "岩手県奥州市水沢区龍ヶ馬場地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4773i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

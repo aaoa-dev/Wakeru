@@ -1,0 +1,1554 @@
+{
+  "id": "linkdata-5465-04214",
+  "code": "04214",
+  "pref": "04",
+  "jp": "東松島市",
+  "en": "Higashimatsushima",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s5465i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s5465i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ（水分を切る）」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「枝」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類（洗濯したもの）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙（紙紐で束ねる）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌（紙紐で束ねる）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「資源ごみ／紙類」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶（水で軽くすすぐ）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「傘」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「乾電池（筒型）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ライター（使い切る）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光管（割れないように購入時の箱等に入れる）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ソファ」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          1
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          5
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          2
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "oversized": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "あおい",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": "あおい一丁目",
+      "en": "あおい一丁目",
+      "jp": "あおい一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "あおい",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": "あおい三丁目",
+      "en": "あおい三丁目",
+      "jp": "あおい三丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "あおい",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": "あおい二丁目",
+      "en": "あおい二丁目",
+      "jp": "あおい二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "あおぞらコミュニティ（グリーンタウンやもと）",
+      "townEn": "Komyunitegurintaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あおぞらコミュニティ（グリーンタウンやもと）",
+      "jp": "あおぞらコミュニティ（グリーンタウンやもと）",
+      "pattern": "2"
+    },
+    {
+      "town": "ひびきコミュニティ",
+      "townEn": "Komyunite",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひびきコミュニティ",
+      "jp": "ひびきコミュニティ",
+      "pattern": "4"
+    },
+    {
+      "town": "ひまわりコミュニティ（グリーンタウンやもと）",
+      "townEn": "Komyunitegurintaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひまわりコミュニティ（グリーンタウンやもと）",
+      "jp": "ひまわりコミュニティ（グリーンタウンやもと）",
+      "pattern": "2"
+    },
+    {
+      "town": "駅前",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前",
+      "jp": "駅前",
+      "pattern": "1"
+    },
+    {
+      "town": "塩入",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩入",
+      "jp": "塩入",
+      "pattern": "2"
+    },
+    {
+      "town": "横関",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横関",
+      "jp": "横関",
+      "pattern": "6"
+    },
+    {
+      "town": "横沼一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横沼一",
+      "jp": "横沼一",
+      "pattern": "7"
+    },
+    {
+      "town": "横沼西",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横沼西",
+      "jp": "横沼西",
+      "pattern": "7"
+    },
+    {
+      "town": "横沼東",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横沼東",
+      "jp": "横沼東",
+      "pattern": "7"
+    },
+    {
+      "town": "横沼二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横沼二",
+      "jp": "横沼二",
+      "pattern": "7"
+    },
+    {
+      "town": "下小松",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下小松",
+      "jp": "下小松",
+      "pattern": "2"
+    },
+    {
+      "town": "下町一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町一",
+      "jp": "下町一",
+      "pattern": "1"
+    },
+    {
+      "town": "下町五",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町五",
+      "jp": "下町五",
+      "pattern": "1"
+    },
+    {
+      "town": "下町三",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町三",
+      "jp": "下町三",
+      "pattern": "1"
+    },
+    {
+      "town": "下町四",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町四",
+      "jp": "下町四",
+      "pattern": "1"
+    },
+    {
+      "town": "下町二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町二",
+      "jp": "下町二",
+      "pattern": "1"
+    },
+    {
+      "town": "下裏",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下裏",
+      "jp": "下裏",
+      "pattern": "2"
+    },
+    {
+      "town": "河戸",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河戸",
+      "jp": "河戸",
+      "pattern": "1"
+    },
+    {
+      "town": "貝殻塚一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "貝殻塚一",
+      "jp": "貝殻塚一",
+      "pattern": "7"
+    },
+    {
+      "town": "貝殻塚二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "貝殻塚二",
+      "jp": "貝殻塚二",
+      "pattern": "7"
+    },
+    {
+      "town": "貝田",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "貝田",
+      "jp": "貝田",
+      "pattern": "7"
+    },
+    {
+      "town": "関の内一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "関の内一",
+      "jp": "関の内一",
+      "pattern": "1"
+    },
+    {
+      "town": "関の内三",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "関の内三",
+      "jp": "関の内三",
+      "pattern": "1"
+    },
+    {
+      "town": "関の内二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "関の内二",
+      "jp": "関の内二",
+      "pattern": "1"
+    },
+    {
+      "town": "亀岡",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀岡",
+      "jp": "亀岡",
+      "pattern": "8"
+    },
+    {
+      "town": "月浜",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "月浜",
+      "jp": "月浜",
+      "pattern": "8"
+    },
+    {
+      "town": "五味倉",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五味倉",
+      "jp": "五味倉",
+      "pattern": "5"
+    },
+    {
+      "town": "御下",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "御下",
+      "jp": "御下",
+      "pattern": "6"
+    },
+    {
+      "town": "作田浦",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "作田浦",
+      "jp": "作田浦",
+      "pattern": "2"
+    },
+    {
+      "town": "四反走",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "四反走",
+      "jp": "四反走",
+      "pattern": "2"
+    },
+    {
+      "town": "市営柳の東住宅（柳下）",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市営柳の東住宅（柳下）",
+      "jp": "市営柳の東住宅（柳下）",
+      "pattern": "8"
+    },
+    {
+      "town": "寺",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺",
+      "jp": "寺",
+      "pattern": "6"
+    },
+    {
+      "town": "鹿妻一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿妻一",
+      "jp": "鹿妻一",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿妻二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿妻二",
+      "jp": "鹿妻二",
+      "pattern": "1"
+    },
+    {
+      "town": "室浜",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "室浜",
+      "jp": "室浜",
+      "pattern": "8"
+    },
+    {
+      "town": "若葉",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若葉",
+      "jp": "若葉",
+      "pattern": "1"
+    },
+    {
+      "town": "手招",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "手招",
+      "jp": "手招",
+      "pattern": "2"
+    },
+    {
+      "town": "住環下",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住環下",
+      "jp": "住環下",
+      "pattern": "2"
+    },
+    {
+      "town": "住環上",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住環上",
+      "jp": "住環上",
+      "pattern": "2"
+    },
+    {
+      "town": "小幡",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小幡",
+      "jp": "小幡",
+      "pattern": "6"
+    },
+    {
+      "town": "小分木",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小分木",
+      "jp": "小分木",
+      "pattern": "3"
+    },
+    {
+      "town": "松島基地",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松島基地",
+      "jp": "松島基地",
+      "pattern": "5"
+    },
+    {
+      "town": "照井",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "照井",
+      "jp": "照井",
+      "pattern": "5"
+    },
+    {
+      "town": "上河戸一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上河戸一",
+      "jp": "上河戸一",
+      "pattern": "1"
+    },
+    {
+      "town": "上河戸三",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上河戸三",
+      "jp": "上河戸三",
+      "pattern": "1"
+    },
+    {
+      "town": "上河戸四",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上河戸四",
+      "jp": "上河戸四",
+      "pattern": "1"
+    },
+    {
+      "town": "上河戸二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上河戸二",
+      "jp": "上河戸二",
+      "pattern": "1"
+    },
+    {
+      "town": "上小松",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上小松",
+      "jp": "上小松",
+      "pattern": "2"
+    },
+    {
+      "town": "上町一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町一",
+      "jp": "上町一",
+      "pattern": "1"
+    },
+    {
+      "town": "上町三",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町三",
+      "jp": "上町三",
+      "pattern": "1"
+    },
+    {
+      "town": "上町二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町二",
+      "jp": "上町二",
+      "pattern": "1"
+    },
+    {
+      "town": "上納",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上納",
+      "jp": "上納",
+      "pattern": "7"
+    },
+    {
+      "town": "上北谷地地区仮設",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上北谷地地区仮設",
+      "jp": "上北谷地地区仮設",
+      "pattern": "4"
+    },
+    {
+      "town": "新川前",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新川前",
+      "jp": "新川前",
+      "pattern": "7"
+    },
+    {
+      "town": "新町",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "8"
+    },
+    {
+      "town": "新東名",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新東名",
+      "jp": "新東名",
+      "pattern": "8"
+    },
+    {
+      "town": "西新町",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西新町",
+      "jp": "西新町",
+      "pattern": "2"
+    },
+    {
+      "town": "西副田下",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西副田下",
+      "jp": "西副田下",
+      "pattern": "3"
+    },
+    {
+      "town": "前柳",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "前柳",
+      "jp": "前柳",
+      "pattern": "2"
+    },
+    {
+      "town": "前里",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "前里",
+      "jp": "前里",
+      "pattern": "2"
+    },
+    {
+      "town": "大島",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島",
+      "jp": "大島",
+      "pattern": "3"
+    },
+    {
+      "town": "大浜",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大浜",
+      "jp": "大浜",
+      "pattern": "8"
+    },
+    {
+      "town": "大溜",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大溜",
+      "jp": "大溜",
+      "pattern": "1"
+    },
+    {
+      "town": "鷹来の森運動公園仮設",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鷹来の森運動公園仮設",
+      "jp": "鷹来の森運動公園仮設",
+      "pattern": "2"
+    },
+    {
+      "town": "沢田",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "沢田",
+      "jp": "沢田",
+      "pattern": "2"
+    },
+    {
+      "town": "谷地",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "谷地",
+      "jp": "谷地",
+      "pattern": "2"
+    },
+    {
+      "town": "中",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中",
+      "jp": "中",
+      "pattern": "2"
+    },
+    {
+      "town": "中下",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中下",
+      "jp": "中下",
+      "pattern": "4"
+    },
+    {
+      "town": "中東",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中東",
+      "jp": "中東",
+      "pattern": "6"
+    },
+    {
+      "town": "東大溜",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東大溜",
+      "jp": "東大溜",
+      "pattern": "1"
+    },
+    {
+      "town": "東名",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東名",
+      "jp": "東名",
+      "pattern": "8"
+    },
+    {
+      "town": "筒揚",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "筒揚",
+      "jp": "筒揚",
+      "pattern": "7"
+    },
+    {
+      "town": "道地",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道地",
+      "jp": "道地",
+      "pattern": "1"
+    },
+    {
+      "town": "南一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南一",
+      "jp": "南一",
+      "pattern": "7"
+    },
+    {
+      "town": "南五",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南五",
+      "jp": "南五",
+      "pattern": "7"
+    },
+    {
+      "town": "南三",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南三",
+      "jp": "南三",
+      "pattern": "7"
+    },
+    {
+      "town": "南四",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南四",
+      "jp": "南四",
+      "pattern": "7"
+    },
+    {
+      "town": "南新一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南新一",
+      "jp": "南新一",
+      "pattern": "7"
+    },
+    {
+      "town": "南新二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南新二",
+      "jp": "南新二",
+      "pattern": "7"
+    },
+    {
+      "town": "南二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南二",
+      "jp": "南二",
+      "pattern": "7"
+    },
+    {
+      "town": "南裏宿舎",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南裏宿舎",
+      "jp": "南裏宿舎",
+      "pattern": "2"
+    },
+    {
+      "town": "南緑",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南緑",
+      "jp": "南緑",
+      "pattern": "7"
+    },
+    {
+      "town": "南六",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南六",
+      "jp": "南六",
+      "pattern": "7"
+    },
+    {
+      "town": "二反走",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二反走",
+      "jp": "二反走",
+      "pattern": "1"
+    },
+    {
+      "town": "肘曲",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "肘曲",
+      "jp": "肘曲",
+      "pattern": "3"
+    },
+    {
+      "town": "表",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "表",
+      "jp": "表",
+      "pattern": "2"
+    },
+    {
+      "town": "平岡",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平岡",
+      "jp": "平岡",
+      "pattern": "2"
+    },
+    {
+      "town": "北区官舎",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区官舎",
+      "jp": "北区官舎",
+      "pattern": "1"
+    },
+    {
+      "town": "野蒜ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": "野蒜ケ丘一丁目",
+      "en": "野蒜ケ丘一丁目",
+      "jp": "野蒜ケ丘一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "野蒜ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": "野蒜ケ丘三丁目",
+      "en": "野蒜ケ丘三丁目",
+      "jp": "野蒜ケ丘三丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "野蒜ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": "野蒜ケ丘二丁目",
+      "en": "野蒜ケ丘二丁目",
+      "jp": "野蒜ケ丘二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "柳下",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳下",
+      "jp": "柳下",
+      "pattern": "7"
+    },
+    {
+      "town": "柳上",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳上",
+      "jp": "柳上",
+      "pattern": "7"
+    },
+    {
+      "town": "柳西",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳西",
+      "jp": "柳西",
+      "pattern": "7"
+    },
+    {
+      "town": "柳北",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳北",
+      "jp": "柳北",
+      "pattern": "7"
+    },
+    {
+      "town": "裏",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "裏",
+      "jp": "裏",
+      "pattern": "6"
+    },
+    {
+      "town": "裏一",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "裏一",
+      "jp": "裏一",
+      "pattern": "3"
+    },
+    {
+      "town": "裏二",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "裏二",
+      "jp": "裏二",
+      "pattern": "3"
+    },
+    {
+      "town": "里南",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "里南",
+      "jp": "里南",
+      "pattern": "8"
+    },
+    {
+      "town": "里北",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "里北",
+      "jp": "里北",
+      "pattern": "8"
+    },
+    {
+      "town": "立沼",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立沼",
+      "jp": "立沼",
+      "pattern": "1"
+    },
+    {
+      "town": "六槍",
+      "townEn": "Higashimatsushima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "六槍",
+      "jp": "六槍",
+      "pattern": "6"
+    },
+    {
+      "town": "赤井",
+      "townEn": "Akai",
+      "kana": "アカイ",
+      "chome": null,
+      "detail": "赤井中央公園仮設",
+      "en": "赤井中央公園仮設",
+      "jp": "赤井中央公園仮設",
+      "pattern": "7"
+    },
+    {
+      "town": "浅井",
+      "townEn": "Asai",
+      "kana": "アサイ",
+      "chome": null,
+      "detail": null,
+      "en": "浅井",
+      "jp": "浅井",
+      "pattern": "4"
+    },
+    {
+      "town": "大塚",
+      "townEn": "Otsuka",
+      "kana": "オオツカ",
+      "chome": null,
+      "detail": null,
+      "en": "大塚",
+      "jp": "大塚",
+      "pattern": "8"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ono",
+      "kana": "オノ",
+      "chome": null,
+      "detail": "小野下",
+      "en": "小野下",
+      "jp": "小野下",
+      "pattern": "2"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ono",
+      "kana": "オノ",
+      "chome": null,
+      "detail": "小野上",
+      "en": "小野上",
+      "jp": "小野上",
+      "pattern": "2"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ono",
+      "kana": "オノ",
+      "chome": null,
+      "detail": "小野中央ミニ公園仮設",
+      "en": "小野中央ミニ公園仮設",
+      "jp": "小野中央ミニ公園仮設",
+      "pattern": "2"
+    },
+    {
+      "town": "小野",
+      "townEn": "Ono",
+      "kana": "オノ",
+      "chome": null,
+      "detail": "小野風の子公園仮設",
+      "en": "小野風の子公園仮設",
+      "jp": "小野風の子公園仮設",
+      "pattern": "2"
+    },
+    {
+      "town": "川下",
+      "townEn": "Kawakudari",
+      "kana": "カワクダリ",
+      "chome": null,
+      "detail": null,
+      "en": "川下",
+      "jp": "川下",
+      "pattern": "4"
+    },
+    {
+      "town": "小松",
+      "townEn": "Komatsu",
+      "kana": "コマツ",
+      "chome": null,
+      "detail": "小松台",
+      "en": "小松台",
+      "jp": "小松台",
+      "pattern": "2"
+    },
+    {
+      "town": "小松",
+      "townEn": "Komatsu",
+      "kana": "コマツ",
+      "chome": null,
+      "detail": "小松南",
+      "en": "小松南",
+      "jp": "小松南",
+      "pattern": "2"
+    },
+    {
+      "town": "上下堤",
+      "townEn": "Jogetsutsumi",
+      "kana": "ジョウゲツツミ",
+      "chome": null,
+      "detail": null,
+      "en": "上下堤",
+      "jp": "上下堤",
+      "pattern": "4"
+    },
+    {
+      "town": "高松",
+      "townEn": "Takamatsu",
+      "kana": "タカマツ",
+      "chome": null,
+      "detail": null,
+      "en": "高松",
+      "jp": "高松",
+      "pattern": "2"
+    },
+    {
+      "town": "西福田",
+      "townEn": "Nishifukuda",
+      "kana": "ニシフクダ",
+      "chome": null,
+      "detail": "西福田上",
+      "en": "西福田上",
+      "jp": "西福田上",
+      "pattern": "3"
+    },
+    {
+      "town": "新田",
+      "townEn": "Nitsuta",
+      "kana": "ニッタ",
+      "chome": null,
+      "detail": null,
+      "en": "新田",
+      "jp": "新田",
+      "pattern": "3"
+    },
+    {
+      "town": "根古",
+      "townEn": "Neko",
+      "kana": "ネコ",
+      "chome": null,
+      "detail": null,
+      "en": "根古",
+      "jp": "根古",
+      "pattern": "2"
+    },
+    {
+      "town": "根古",
+      "townEn": "Neko",
+      "kana": "ネコ",
+      "chome": null,
+      "detail": "根古地区センター仮設",
+      "en": "根古地区センター仮設",
+      "jp": "根古地区センター仮設",
+      "pattern": "2"
+    },
+    {
+      "town": "宮戸",
+      "townEn": "Miyato",
+      "kana": "ミヤト",
+      "chome": null,
+      "detail": "宮戸小学校グラウンド仮設",
+      "en": "宮戸小学校グラウンド仮設",
+      "jp": "宮戸小学校グラウンド仮設",
+      "pattern": "8"
+    },
+    {
+      "town": "矢本",
+      "townEn": "Yamoto",
+      "kana": "ヤモト",
+      "chome": null,
+      "detail": "矢本運動公園仮設西コミュニティ",
+      "en": "矢本運動公園仮設西コミュニティ",
+      "jp": "矢本運動公園仮設西コミュニティ",
+      "pattern": "7"
+    },
+    {
+      "town": "矢本",
+      "townEn": "Yamoto",
+      "kana": "ヤモト",
+      "chome": null,
+      "detail": "矢本運動公園仮設東コミュニティ",
+      "en": "矢本運動公園仮設東コミュニティ",
+      "jp": "矢本運動公園仮設東コミュニティ",
+      "pattern": "7"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s5465i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,3213 @@
+{
+  "id": "wajima-17204",
+  "code": "17204",
+  "pref": "17",
+  "jp": "輪島市",
+  "en": "Wajima",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://wajima.5374.jp/data/area_days.csv",
+    "http://wajima.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "plastic": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "あ 旭町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 旭町",
+      "jp": "あ 旭町",
+      "pattern": "1"
+    },
+    {
+      "town": "あ 粟蔵",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 粟蔵",
+      "jp": "あ 粟蔵",
+      "pattern": "2"
+    },
+    {
+      "town": "あ 安代原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 安代原",
+      "jp": "あ 安代原",
+      "pattern": "1"
+    },
+    {
+      "town": "あ 海士町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 海士町",
+      "jp": "あ 海士町",
+      "pattern": "2"
+    },
+    {
+      "town": "あ 荒屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 荒屋",
+      "jp": "あ 荒屋",
+      "pattern": "1"
+    },
+    {
+      "town": "あ 青山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 青山町",
+      "jp": "あ 青山町",
+      "pattern": "1"
+    },
+    {
+      "town": "あ 青葉ヶ丘",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 青葉ヶ丘",
+      "jp": "あ 青葉ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "あ 赤崎町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 赤崎町",
+      "jp": "あ 赤崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "あ 赤神",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 赤神",
+      "jp": "あ 赤神",
+      "pattern": "2"
+    },
+    {
+      "town": "あ 浅生田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あ 浅生田",
+      "jp": "あ 浅生田",
+      "pattern": "1"
+    },
+    {
+      "town": "い 伊右エ門",
+      "townEn": "E",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 伊右エ門",
+      "jp": "い 伊右エ門",
+      "pattern": "1"
+    },
+    {
+      "town": "い 井守上坂",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 井守上坂",
+      "jp": "い 井守上坂",
+      "pattern": "1"
+    },
+    {
+      "town": "い 井面",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 井面",
+      "jp": "い 井面",
+      "pattern": "2"
+    },
+    {
+      "town": "い 稲荷西",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 稲荷西",
+      "jp": "い 稲荷西",
+      "pattern": "2"
+    },
+    {
+      "town": "い 稲荷東",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 稲荷東",
+      "jp": "い 稲荷東",
+      "pattern": "2"
+    },
+    {
+      "town": "い 稲荷南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 稲荷南",
+      "jp": "い 稲荷南",
+      "pattern": "2"
+    },
+    {
+      "town": "い 稲舟町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 稲舟町",
+      "jp": "い 稲舟町",
+      "pattern": "2"
+    },
+    {
+      "town": "い 五十洲",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 五十洲",
+      "jp": "い 五十洲",
+      "pattern": "1"
+    },
+    {
+      "town": "い 市ノ坂",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 市ノ坂",
+      "jp": "い 市ノ坂",
+      "pattern": "1"
+    },
+    {
+      "town": "い 市ノ瀬町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 市ノ瀬町",
+      "jp": "い 市ノ瀬町",
+      "pattern": "1"
+    },
+    {
+      "town": "い 石浦町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 石浦町",
+      "jp": "い 石浦町",
+      "pattern": "2"
+    },
+    {
+      "town": "い 石休場町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 石休場町",
+      "jp": "い 石休場町",
+      "pattern": "1"
+    },
+    {
+      "town": "い 池田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 池田",
+      "jp": "い 池田",
+      "pattern": "2"
+    },
+    {
+      "town": "い 池田新町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 池田新町",
+      "jp": "い 池田新町",
+      "pattern": "2"
+    },
+    {
+      "town": "い 入山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 入山",
+      "jp": "い 入山",
+      "pattern": "2"
+    },
+    {
+      "town": "い 飯川谷",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "い 飯川谷",
+      "jp": "い 飯川谷",
+      "pattern": "2"
+    },
+    {
+      "town": "う 鵜山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 鵜山",
+      "jp": "う 鵜山",
+      "pattern": "1"
+    },
+    {
+      "town": "う 鵜入",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 鵜入",
+      "jp": "う 鵜入",
+      "pattern": "2"
+    },
+    {
+      "town": "う 浦上（亀部田）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（亀部田）",
+      "jp": "う 浦上（亀部田）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（吉ヶ谷内）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（吉ヶ谷内）",
+      "jp": "う 浦上（吉ヶ谷内）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（宮田）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（宮田）",
+      "jp": "う 浦上（宮田）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（蛇喰）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（蛇喰）",
+      "jp": "う 浦上（蛇喰）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（尺ヶ池）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（尺ヶ池）",
+      "jp": "う 浦上（尺ヶ池）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（菅の原）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（菅の原）",
+      "jp": "う 浦上（菅の原）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（正仏）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（正仏）",
+      "jp": "う 浦上（正仏）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（清太郎）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（清太郎）",
+      "jp": "う 浦上（清太郎）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（清土）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（清土）",
+      "jp": "う 浦上（清土）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（大久保）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（大久保）",
+      "jp": "う 浦上（大久保）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（大町）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（大町）",
+      "jp": "う 浦上（大町）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（滝又）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（滝又）",
+      "jp": "う 浦上（滝又）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（濁池）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（濁池）",
+      "jp": "う 浦上（濁池）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（知気女）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（知気女）",
+      "jp": "う 浦上（知気女）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（中屋）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（中屋）",
+      "jp": "う 浦上（中屋）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（中尾）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（中尾）",
+      "jp": "う 浦上（中尾）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（日砂子）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（日砂子）",
+      "jp": "う 浦上（日砂子）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（番頭屋）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（番頭屋）",
+      "jp": "う 浦上（番頭屋）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 浦上（盤若地）",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 浦上（盤若地）",
+      "jp": "う 浦上（盤若地）",
+      "pattern": "1"
+    },
+    {
+      "town": "う 漆原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 漆原",
+      "jp": "う 漆原",
+      "pattern": "1"
+    },
+    {
+      "town": "う 上代",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 上代",
+      "jp": "う 上代",
+      "pattern": "2"
+    },
+    {
+      "town": "う 上野台町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 上野台町",
+      "jp": "う 上野台町",
+      "pattern": "2"
+    },
+    {
+      "town": "う 打越町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 打越町",
+      "jp": "う 打越町",
+      "pattern": "1"
+    },
+    {
+      "town": "う 内屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 内屋",
+      "jp": "う 内屋",
+      "pattern": "1"
+    },
+    {
+      "town": "う 内保",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 内保",
+      "jp": "う 内保",
+      "pattern": "1"
+    },
+    {
+      "town": "う 窕",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "う 窕",
+      "jp": "う 窕",
+      "pattern": "2"
+    },
+    {
+      "town": "え 駅前",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "え 駅前",
+      "jp": "え 駅前",
+      "pattern": "1"
+    },
+    {
+      "town": "え 江崎",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "え 江崎",
+      "jp": "え 江崎",
+      "pattern": "2"
+    },
+    {
+      "town": "お 桶戸",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 桶戸",
+      "jp": "お 桶戸",
+      "pattern": "2"
+    },
+    {
+      "town": "お 鬼屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 鬼屋",
+      "jp": "お 鬼屋",
+      "pattern": "1"
+    },
+    {
+      "town": "お 御蔵",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 御蔵",
+      "jp": "お 御蔵",
+      "pattern": "1"
+    },
+    {
+      "town": "お 小伊勢町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 小伊勢町",
+      "jp": "お 小伊勢町",
+      "pattern": "2"
+    },
+    {
+      "town": "お 小石",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 小石",
+      "jp": "お 小石",
+      "pattern": "1"
+    },
+    {
+      "town": "お 小池町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 小池町",
+      "jp": "お 小池町",
+      "pattern": "2"
+    },
+    {
+      "town": "お 小田屋町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 小田屋町",
+      "jp": "お 小田屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大釜",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大釜",
+      "jp": "お 大釜",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大久保",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大久保",
+      "jp": "お 大久保",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大寺山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大寺山",
+      "jp": "お 大寺山",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大生",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大生",
+      "jp": "お 大生",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大切",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大切",
+      "jp": "お 大切",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大川",
+      "jp": "お 大川",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大倉住宅",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大倉住宅",
+      "jp": "お 大倉住宅",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大滝",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大滝",
+      "jp": "お 大滝",
+      "pattern": "1"
+    },
+    {
+      "town": "お 大沢町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大沢町",
+      "jp": "お 大沢町",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大町",
+      "jp": "お 大町",
+      "pattern": "1"
+    },
+    {
+      "town": "お 大馬場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大馬場",
+      "jp": "お 大馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "お 大泊",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大泊",
+      "jp": "お 大泊",
+      "pattern": "2"
+    },
+    {
+      "town": "お 大野町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "お 大野町",
+      "jp": "お 大野町",
+      "pattern": "2"
+    },
+    {
+      "town": "か 河原町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 河原町",
+      "jp": "か 河原町",
+      "pattern": "1"
+    },
+    {
+      "town": "か 貝吹",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 貝吹",
+      "jp": "か 貝吹",
+      "pattern": "1"
+    },
+    {
+      "town": "か 釜屋谷",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 釜屋谷",
+      "jp": "か 釜屋谷",
+      "pattern": "2"
+    },
+    {
+      "town": "か 観音町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 観音町",
+      "jp": "か 観音町",
+      "pattern": "1"
+    },
+    {
+      "town": "か 金蔵",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 金蔵",
+      "jp": "か 金蔵",
+      "pattern": "2"
+    },
+    {
+      "town": "か 鹿磯",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 鹿磯",
+      "jp": "か 鹿磯",
+      "pattern": "2"
+    },
+    {
+      "town": "か 春日町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 春日町",
+      "jp": "か 春日町",
+      "pattern": "1"
+    },
+    {
+      "town": "か 勝田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 勝田",
+      "jp": "か 勝田",
+      "pattern": "2"
+    },
+    {
+      "town": "か 上河内",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上河内",
+      "jp": "か 上河内",
+      "pattern": "1"
+    },
+    {
+      "town": "か 上黒川町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上黒川町",
+      "jp": "か 上黒川町",
+      "pattern": "2"
+    },
+    {
+      "town": "か 上山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上山町",
+      "jp": "か 上山町",
+      "pattern": "2"
+    },
+    {
+      "town": "か 上川町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上川町",
+      "jp": "か 上川町",
+      "pattern": "1"
+    },
+    {
+      "town": "か 上大沢町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上大沢町",
+      "jp": "か 上大沢町",
+      "pattern": "2"
+    },
+    {
+      "town": "か 上町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上町",
+      "jp": "か 上町",
+      "pattern": "2"
+    },
+    {
+      "town": "か 上本町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 上本町",
+      "jp": "か 上本町",
+      "pattern": "1"
+    },
+    {
+      "town": "か 川西",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 川西",
+      "jp": "か 川西",
+      "pattern": "2"
+    },
+    {
+      "town": "か 川端丁",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 川端丁",
+      "jp": "か 川端丁",
+      "pattern": "1"
+    },
+    {
+      "town": "か 鍛冶屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 鍛冶屋",
+      "jp": "か 鍛冶屋",
+      "pattern": "2"
+    },
+    {
+      "town": "か 風原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "か 風原",
+      "jp": "か 風原",
+      "pattern": "1"
+    },
+    {
+      "town": "ぎ 祇園",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ぎ 祇園",
+      "jp": "ぎ 祇園",
+      "pattern": "1"
+    },
+    {
+      "town": "き 久川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 久川",
+      "jp": "き 久川",
+      "pattern": "2"
+    },
+    {
+      "town": "き 切狭",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 切狭",
+      "jp": "き 切狭",
+      "pattern": "2"
+    },
+    {
+      "town": "き 北円山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 北円山",
+      "jp": "き 北円山",
+      "pattern": "2"
+    },
+    {
+      "town": "き 北川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 北川",
+      "jp": "き 北川",
+      "pattern": "2"
+    },
+    {
+      "town": "き 北谷町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 北谷町",
+      "jp": "き 北谷町",
+      "pattern": "1"
+    },
+    {
+      "town": "き 木原月",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "き 木原月",
+      "jp": "き 木原月",
+      "pattern": "2"
+    },
+    {
+      "town": "く 久手川団地",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 久手川団地",
+      "jp": "く 久手川団地",
+      "pattern": "2"
+    },
+    {
+      "town": "く 久手川町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 久手川町",
+      "jp": "く 久手川町",
+      "pattern": "2"
+    },
+    {
+      "town": "く 熊野町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 熊野町",
+      "jp": "く 熊野町",
+      "pattern": "1"
+    },
+    {
+      "town": "く 黒岩",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 黒岩",
+      "jp": "く 黒岩",
+      "pattern": "2"
+    },
+    {
+      "town": "く 黒島町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 黒島町",
+      "jp": "く 黒島町",
+      "pattern": "2"
+    },
+    {
+      "town": "く 暮坂",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "く 暮坂",
+      "jp": "く 暮坂",
+      "pattern": "1"
+    },
+    {
+      "town": "け 気勝平町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "け 気勝平町",
+      "jp": "け 気勝平町",
+      "pattern": "2"
+    },
+    {
+      "town": "こ 興徳寺",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 興徳寺",
+      "jp": "こ 興徳寺",
+      "pattern": "1"
+    },
+    {
+      "town": "こ 腰細",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 腰細",
+      "jp": "こ 腰細",
+      "pattern": "2"
+    },
+    {
+      "town": "こ 小山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 小山",
+      "jp": "こ 小山",
+      "pattern": "2"
+    },
+    {
+      "town": "こ 小泉",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 小泉",
+      "jp": "こ 小泉",
+      "pattern": "1"
+    },
+    {
+      "town": "こ 小滝",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 小滝",
+      "jp": "こ 小滝",
+      "pattern": "1"
+    },
+    {
+      "town": "こ 小峰山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 小峰山",
+      "jp": "こ 小峰山",
+      "pattern": "1"
+    },
+    {
+      "town": "こ 是清",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "こ 是清",
+      "jp": "こ 是清",
+      "pattern": "2"
+    },
+    {
+      "town": "さ さくら町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ さくら町",
+      "jp": "さ さくら町",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 栄町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 栄町",
+      "jp": "さ 栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 猿橋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 猿橋",
+      "jp": "さ 猿橋",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 五月町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 五月町",
+      "jp": "さ 五月町",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 佐野",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 佐野",
+      "jp": "さ 佐野",
+      "pattern": "2"
+    },
+    {
+      "town": "さ 坂田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 坂田",
+      "jp": "さ 坂田",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 真久",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 真久",
+      "jp": "さ 真久",
+      "pattern": "2"
+    },
+    {
+      "town": "さ 定広",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 定広",
+      "jp": "さ 定広",
+      "pattern": "1"
+    },
+    {
+      "town": "さ 里町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "さ 里町",
+      "jp": "さ 里町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 下黒川町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 下黒川町",
+      "jp": "し 下黒川町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 下山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 下山町",
+      "jp": "し 下山町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 四位",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 四位",
+      "jp": "し 四位",
+      "pattern": "1"
+    },
+    {
+      "town": "し 渋田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 渋田町",
+      "jp": "し 渋田町",
+      "pattern": "2"
+    },
+    {
+      "town": "じ 重蓮区",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "じ 重蓮区",
+      "jp": "じ 重蓮区",
+      "pattern": "1"
+    },
+    {
+      "town": "し 昭南町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 昭南町",
+      "jp": "し 昭南町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 城兼団地",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 城兼団地",
+      "jp": "し 城兼団地",
+      "pattern": "2"
+    },
+    {
+      "town": "じ 常盤",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "じ 常盤",
+      "jp": "じ 常盤",
+      "pattern": "1"
+    },
+    {
+      "town": "し 新橋通",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 新橋通",
+      "jp": "し 新橋通",
+      "pattern": "2"
+    },
+    {
+      "town": "し 新町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 新町",
+      "jp": "し 新町",
+      "pattern": "1"
+    },
+    {
+      "town": "し 新町分",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 新町分",
+      "jp": "し 新町分",
+      "pattern": "2"
+    },
+    {
+      "town": "し 新田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 新田町",
+      "jp": "し 新田町",
+      "pattern": "1"
+    },
+    {
+      "town": "し 新保",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 新保",
+      "jp": "し 新保",
+      "pattern": "1"
+    },
+    {
+      "town": "し 神明原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 神明原",
+      "jp": "し 神明原",
+      "pattern": "2"
+    },
+    {
+      "town": "し 清水",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 清水",
+      "jp": "し 清水",
+      "pattern": "1"
+    },
+    {
+      "town": "し 椎木",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 椎木",
+      "jp": "し 椎木",
+      "pattern": "2"
+    },
+    {
+      "town": "し 忍町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 忍町",
+      "jp": "し 忍町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 白禿",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 白禿",
+      "jp": "し 白禿",
+      "pattern": "2"
+    },
+    {
+      "town": "し 白米町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 白米町",
+      "jp": "し 白米町",
+      "pattern": "2"
+    },
+    {
+      "town": "し 敷戸",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "し 敷戸",
+      "jp": "し 敷戸",
+      "pattern": "2"
+    },
+    {
+      "town": "す 洲衛",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 洲衛",
+      "jp": "す 洲衛",
+      "pattern": "1"
+    },
+    {
+      "town": "す 諏訪",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 諏訪",
+      "jp": "す 諏訪",
+      "pattern": "1"
+    },
+    {
+      "town": "す 諏訪南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 諏訪南",
+      "jp": "す 諏訪南",
+      "pattern": "1"
+    },
+    {
+      "town": "す 杉平町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 杉平町",
+      "jp": "す 杉平町",
+      "pattern": "1"
+    },
+    {
+      "town": "す 薄野",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 薄野",
+      "jp": "す 薄野",
+      "pattern": "1"
+    },
+    {
+      "town": "す 末広区",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 末広区",
+      "jp": "す 末広区",
+      "pattern": "2"
+    },
+    {
+      "town": "す 末広南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 末広南",
+      "jp": "す 末広南",
+      "pattern": "2"
+    },
+    {
+      "town": "す 末広北",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 末広北",
+      "jp": "す 末広北",
+      "pattern": "2"
+    },
+    {
+      "town": "す 鈴屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "す 鈴屋",
+      "jp": "す 鈴屋",
+      "pattern": "2"
+    },
+    {
+      "town": "せ 清沢",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "せ 清沢",
+      "jp": "せ 清沢",
+      "pattern": "2"
+    },
+    {
+      "town": "せ 千代",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "せ 千代",
+      "jp": "せ 千代",
+      "pattern": "2"
+    },
+    {
+      "town": "そ 空熊町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "そ 空熊町",
+      "jp": "そ 空熊町",
+      "pattern": "2"
+    },
+    {
+      "town": "そ 曽々木",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "そ 曽々木",
+      "jp": "そ 曽々木",
+      "pattern": "2"
+    },
+    {
+      "town": "そ 惣領町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "そ 惣領町",
+      "jp": "そ 惣領町",
+      "pattern": "2"
+    },
+    {
+      "town": "そ 袖ヶ浜",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "そ 袖ヶ浜",
+      "jp": "そ 袖ヶ浜",
+      "pattern": "2"
+    },
+    {
+      "town": "そ 尊利地町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "そ 尊利地町",
+      "jp": "そ 尊利地町",
+      "pattern": "2"
+    },
+    {
+      "town": "た 舘",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 舘",
+      "jp": "た 舘",
+      "pattern": "1"
+    },
+    {
+      "town": "た 高根尾",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 高根尾",
+      "jp": "た 高根尾",
+      "pattern": "1"
+    },
+    {
+      "town": "た 滝上",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 滝上",
+      "jp": "た 滝上",
+      "pattern": "1"
+    },
+    {
+      "town": "た 滝町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 滝町",
+      "jp": "た 滝町",
+      "pattern": "2"
+    },
+    {
+      "town": "た 滝又町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 滝又町",
+      "jp": "た 滝又町",
+      "pattern": "2"
+    },
+    {
+      "town": "た 宅田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 宅田町",
+      "jp": "た 宅田町",
+      "pattern": "2"
+    },
+    {
+      "town": "た 谷口",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 谷口",
+      "jp": "た 谷口",
+      "pattern": "1"
+    },
+    {
+      "town": "た 樽見",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 樽見",
+      "jp": "た 樽見",
+      "pattern": "1"
+    },
+    {
+      "town": "た 田村",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 田村",
+      "jp": "た 田村",
+      "pattern": "1"
+    },
+    {
+      "town": "た 平",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "た 平",
+      "jp": "た 平",
+      "pattern": "1"
+    },
+    {
+      "town": "ち 地原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ち 地原",
+      "jp": "ち 地原",
+      "pattern": "1"
+    },
+    {
+      "town": "ち 地方",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ち 地方",
+      "jp": "ち 地方",
+      "pattern": "2"
+    },
+    {
+      "town": "ち 中央通３丁目",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ち 中央通３丁目",
+      "jp": "ち 中央通３丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "ち 中段町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ち 中段町",
+      "jp": "ち 中段町",
+      "pattern": "2"
+    },
+    {
+      "town": "ち 丁字",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ち 丁字",
+      "jp": "ち 丁字",
+      "pattern": "1"
+    },
+    {
+      "town": "つ 塚田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つ 塚田町",
+      "jp": "つ 塚田町",
+      "pattern": "2"
+    },
+    {
+      "town": "つ 剱地",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つ 剱地",
+      "jp": "つ 剱地",
+      "pattern": "2"
+    },
+    {
+      "town": "て 寺山岸",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "て 寺山岸",
+      "jp": "て 寺山岸",
+      "pattern": "2"
+    },
+    {
+      "town": "て 寺地",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "て 寺地",
+      "jp": "て 寺地",
+      "pattern": "2"
+    },
+    {
+      "town": "と 稲屋町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 稲屋町",
+      "jp": "と 稲屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "と 俊兼",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 俊兼",
+      "jp": "と 俊兼",
+      "pattern": "1"
+    },
+    {
+      "town": "と 道下",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 道下",
+      "jp": "と 道下",
+      "pattern": "2"
+    },
+    {
+      "town": "と 徳成",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 徳成",
+      "jp": "と 徳成",
+      "pattern": "2"
+    },
+    {
+      "town": "と 徳成谷内",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 徳成谷内",
+      "jp": "と 徳成谷内",
+      "pattern": "2"
+    },
+    {
+      "town": "と 栃木",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 栃木",
+      "jp": "と 栃木",
+      "pattern": "1"
+    },
+    {
+      "town": "と 巴",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "と 巴",
+      "jp": "と 巴",
+      "pattern": "1"
+    },
+    {
+      "town": "ど 百成",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ど 百成",
+      "jp": "ど 百成",
+      "pattern": "1"
+    },
+    {
+      "town": "ど 百成大角間",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ど 百成大角間",
+      "jp": "ど 百成大角間",
+      "pattern": "1"
+    },
+    {
+      "town": "ど 本江・渡合",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ど 本江・渡合",
+      "jp": "ど 本江・渡合",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中",
+      "jp": "な 中",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中谷内",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中谷内",
+      "jp": "な 中谷内",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中田",
+      "jp": "な 中田",
+      "pattern": "2"
+    },
+    {
+      "town": "な 中田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中田町",
+      "jp": "な 中田町",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中浜",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中浜",
+      "jp": "な 中浜",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中浜東",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中浜東",
+      "jp": "な 中浜東",
+      "pattern": "1"
+    },
+    {
+      "town": "な 中野屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 中野屋",
+      "jp": "な 中野屋",
+      "pattern": "1"
+    },
+    {
+      "town": "な 長井坂",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 長井坂",
+      "jp": "な 長井坂",
+      "pattern": "1"
+    },
+    {
+      "town": "な 長井町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 長井町",
+      "jp": "な 長井町",
+      "pattern": "2"
+    },
+    {
+      "town": "な 長沢町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 長沢町",
+      "jp": "な 長沢町",
+      "pattern": "1"
+    },
+    {
+      "town": "な 縄又町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 縄又町",
+      "jp": "な 縄又町",
+      "pattern": "2"
+    },
+    {
+      "town": "な 名舟町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "な 名舟町",
+      "jp": "な 名舟町",
+      "pattern": "2"
+    },
+    {
+      "town": "に 錦川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 錦川",
+      "jp": "に 錦川",
+      "pattern": "1"
+    },
+    {
+      "town": "に 小西山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 小西山町",
+      "jp": "に 小西山町",
+      "pattern": "2"
+    },
+    {
+      "town": "に 仁行",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 仁行",
+      "jp": "に 仁行",
+      "pattern": "1"
+    },
+    {
+      "town": "に 西院内町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西院内町",
+      "jp": "に 西院内町",
+      "pattern": "2"
+    },
+    {
+      "town": "に 西円山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西円山",
+      "jp": "に 西円山",
+      "pattern": "1"
+    },
+    {
+      "town": "に 西時国",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西時国",
+      "jp": "に 西時国",
+      "pattern": "2"
+    },
+    {
+      "town": "に 西中尾",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西中尾",
+      "jp": "に 西中尾",
+      "pattern": "1"
+    },
+    {
+      "town": "に 西二又町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西二又町",
+      "jp": "に 西二又町",
+      "pattern": "2"
+    },
+    {
+      "town": "に 西脇町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 西脇町",
+      "jp": "に 西脇町",
+      "pattern": "1"
+    },
+    {
+      "town": "に 大西山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "に 大西山町",
+      "jp": "に 大西山町",
+      "pattern": "2"
+    },
+    {
+      "town": "の 能納屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "の 能納屋",
+      "jp": "の 能納屋",
+      "pattern": "1"
+    },
+    {
+      "town": "の 野田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "の 野田町",
+      "jp": "の 野田町",
+      "pattern": "2"
+    },
+    {
+      "town": "は 原",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 原",
+      "jp": "は 原",
+      "pattern": "1"
+    },
+    {
+      "town": "は 走出",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 走出",
+      "jp": "は 走出",
+      "pattern": "1"
+    },
+    {
+      "town": "ば 馬場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ば 馬場",
+      "jp": "ば 馬場",
+      "pattern": "2"
+    },
+    {
+      "town": "ば 馬場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ば 馬場",
+      "jp": "ば 馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "ば 馬場元",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ば 馬場元",
+      "jp": "ば 馬場元",
+      "pattern": "1"
+    },
+    {
+      "town": "ば 馬場崎",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ば 馬場崎",
+      "jp": "ば 馬場崎",
+      "pattern": "1"
+    },
+    {
+      "town": "は 畠田東",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 畠田東",
+      "jp": "は 畠田東",
+      "pattern": "2"
+    },
+    {
+      "town": "は 畠田南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 畠田南",
+      "jp": "は 畠田南",
+      "pattern": "2"
+    },
+    {
+      "town": "は 浜町下",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 浜町下",
+      "jp": "は 浜町下",
+      "pattern": "2"
+    },
+    {
+      "town": "は 浜町上",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "は 浜町上",
+      "jp": "は 浜町上",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 光浦",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 光浦",
+      "jp": "ひ 光浦",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 広岡",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 広岡",
+      "jp": "ひ 広岡",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 広岡住宅",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 広岡住宅",
+      "jp": "ひ 広岡住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 広江",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 広江",
+      "jp": "ひ 広江",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 広瀬",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 広瀬",
+      "jp": "ひ 広瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 東",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東",
+      "jp": "ひ 東",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 東印内町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東印内町",
+      "jp": "ひ 東印内町",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 東山町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東山町",
+      "jp": "ひ 東山町",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 東大町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東大町",
+      "jp": "ひ 東大町",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 東大野",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東大野",
+      "jp": "ひ 東大野",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 東中尾町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東中尾町",
+      "jp": "ひ 東中尾町",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 東馬場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 東馬場",
+      "jp": "ひ 東馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "ひ 日吉山",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 日吉山",
+      "jp": "ひ 日吉山",
+      "pattern": "2"
+    },
+    {
+      "town": "ひ 日野尾",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ひ 日野尾",
+      "jp": "ひ 日野尾",
+      "pattern": "1"
+    },
+    {
+      "town": "ふ 深見",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 深見",
+      "jp": "ふ 深見",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 深見町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 深見町",
+      "jp": "ふ 深見町",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 深田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 深田",
+      "jp": "ふ 深田",
+      "pattern": "1"
+    },
+    {
+      "town": "ふ 藤浜",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 藤浜",
+      "jp": "ふ 藤浜",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 二ツ屋町",
+      "townEn": "Tsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 二ツ屋町",
+      "jp": "ふ 二ツ屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 二勢町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 二勢町",
+      "jp": "ふ 二勢町",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 二俣町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 二俣町",
+      "jp": "ふ 二俣町",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 二又",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 二又",
+      "jp": "ふ 二又",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 二又川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 二又川",
+      "jp": "ふ 二又川",
+      "pattern": "1"
+    },
+    {
+      "town": "ふ 伏戸",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 伏戸",
+      "jp": "ふ 伏戸",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 鳳至本町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 鳳至本町",
+      "jp": "ふ 鳳至本町",
+      "pattern": "2"
+    },
+    {
+      "town": "ふ 房田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ふ 房田町",
+      "jp": "ふ 房田町",
+      "pattern": "2"
+    },
+    {
+      "town": "へ 平成町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "へ 平成町",
+      "jp": "へ 平成町",
+      "pattern": "2"
+    },
+    {
+      "town": "べ 別所",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "べ 別所",
+      "jp": "べ 別所",
+      "pattern": "1"
+    },
+    {
+      "town": "べ 別所谷町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "べ 別所谷町",
+      "jp": "べ 別所谷町",
+      "pattern": "2"
+    },
+    {
+      "town": "ほ 細屋",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 細屋",
+      "jp": "ほ 細屋",
+      "pattern": "1"
+    },
+    {
+      "town": "ほ 方南町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 方南町",
+      "jp": "ほ 方南町",
+      "pattern": "1"
+    },
+    {
+      "town": "ほ 鳳至丁",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 鳳至丁",
+      "jp": "ほ 鳳至丁",
+      "pattern": "2"
+    },
+    {
+      "town": "ほ 鳳南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 鳳南",
+      "jp": "ほ 鳳南",
+      "pattern": "2"
+    },
+    {
+      "town": "ほ 堀腰",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 堀腰",
+      "jp": "ほ 堀腰",
+      "pattern": "1"
+    },
+    {
+      "town": "ほ 堀町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 堀町",
+      "jp": "ほ 堀町",
+      "pattern": "2"
+    },
+    {
+      "town": "ほ 本江・渡合",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 本江・渡合",
+      "jp": "ほ 本江・渡合",
+      "pattern": "1"
+    },
+    {
+      "town": "ほ 本町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 本町",
+      "jp": "ほ 本町",
+      "pattern": "1"
+    },
+    {
+      "town": "ほ 本田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ほ 本田町",
+      "jp": "ほ 本田町",
+      "pattern": "1"
+    },
+    {
+      "town": "ま マリンタウン",
+      "townEn": "Marintaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ま マリンタウン",
+      "jp": "ま マリンタウン",
+      "pattern": "1"
+    },
+    {
+      "town": "ま 真喜野",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ま 真喜野",
+      "jp": "ま 真喜野",
+      "pattern": "2"
+    },
+    {
+      "town": "ま 馬渡",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ま 馬渡",
+      "jp": "ま 馬渡",
+      "pattern": "2"
+    },
+    {
+      "town": "ま 舞谷",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ま 舞谷",
+      "jp": "ま 舞谷",
+      "pattern": "2"
+    },
+    {
+      "town": "み 皆月",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 皆月",
+      "jp": "み 皆月",
+      "pattern": "1"
+    },
+    {
+      "town": "み 宮古場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 宮古場",
+      "jp": "み 宮古場",
+      "pattern": "1"
+    },
+    {
+      "town": "み 宮川町1",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 宮川町1",
+      "jp": "み 宮川町1",
+      "pattern": "1"
+    },
+    {
+      "town": "み 宮川町2",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 宮川町2",
+      "jp": "み 宮川町2",
+      "pattern": "1"
+    },
+    {
+      "town": "み 三洲穂",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 三洲穂",
+      "jp": "み 三洲穂",
+      "pattern": "1"
+    },
+    {
+      "town": "み 水守町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 水守町",
+      "jp": "み 水守町",
+      "pattern": "2"
+    },
+    {
+      "town": "み 南",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 南",
+      "jp": "み 南",
+      "pattern": "2"
+    },
+    {
+      "town": "み 南時国",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 南時国",
+      "jp": "み 南時国",
+      "pattern": "2"
+    },
+    {
+      "town": "み 南町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 南町",
+      "jp": "み 南町",
+      "pattern": "2"
+    },
+    {
+      "town": "み 美谷",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 美谷",
+      "jp": "み 美谷",
+      "pattern": "2"
+    },
+    {
+      "town": "み 緑町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "み 緑町",
+      "jp": "み 緑町",
+      "pattern": "1"
+    },
+    {
+      "town": "む 麦生野",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "む 麦生野",
+      "jp": "む 麦生野",
+      "pattern": "2"
+    },
+    {
+      "town": "も 森の下",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 森の下",
+      "jp": "も 森の下",
+      "pattern": "1"
+    },
+    {
+      "town": "も 申ヶ場",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 申ヶ場",
+      "jp": "も 申ヶ場",
+      "pattern": "2"
+    },
+    {
+      "town": "も 本市",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 本市",
+      "jp": "も 本市",
+      "pattern": "1"
+    },
+    {
+      "town": "も 本市住宅",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 本市住宅",
+      "jp": "も 本市住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "も 本内",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 本内",
+      "jp": "も 本内",
+      "pattern": "1"
+    },
+    {
+      "town": "も 餅田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 餅田",
+      "jp": "も 餅田",
+      "pattern": "1"
+    },
+    {
+      "town": "も 門前",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "も 門前",
+      "jp": "も 門前",
+      "pattern": "1"
+    },
+    {
+      "town": "や 山ノ上町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 山ノ上町",
+      "jp": "や 山ノ上町",
+      "pattern": "1"
+    },
+    {
+      "town": "や 山岸町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 山岸町",
+      "jp": "や 山岸町",
+      "pattern": "1"
+    },
+    {
+      "town": "や 山是清",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 山是清",
+      "jp": "や 山是清",
+      "pattern": "2"
+    },
+    {
+      "town": "や 山辺",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 山辺",
+      "jp": "や 山辺",
+      "pattern": "1"
+    },
+    {
+      "town": "や 山本町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 山本町",
+      "jp": "や 山本町",
+      "pattern": "2"
+    },
+    {
+      "town": "や 大和町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 大和町",
+      "jp": "や 大和町",
+      "pattern": "1"
+    },
+    {
+      "town": "や 弥生町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 弥生町",
+      "jp": "や 弥生町",
+      "pattern": "1"
+    },
+    {
+      "town": "や 矢田町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 矢田町",
+      "jp": "や 矢田町",
+      "pattern": "1"
+    },
+    {
+      "town": "や 矢徳",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 矢徳",
+      "jp": "や 矢徳",
+      "pattern": "1"
+    },
+    {
+      "town": "や 鑓川",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "や 鑓川",
+      "jp": "や 鑓川",
+      "pattern": "1"
+    },
+    {
+      "town": "ゆ 夕陽ヶ丘",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ゆ 夕陽ヶ丘",
+      "jp": "ゆ 夕陽ヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "よ 横地町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "よ 横地町",
+      "jp": "よ 横地町",
+      "pattern": "1"
+    },
+    {
+      "town": "よ 吉浦",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "よ 吉浦",
+      "jp": "よ 吉浦",
+      "pattern": "1"
+    },
+    {
+      "town": "よ 与呂見",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "よ 与呂見",
+      "jp": "よ 与呂見",
+      "pattern": "1"
+    },
+    {
+      "town": "ろ 六郎木",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ろ 六郎木",
+      "jp": "ろ 六郎木",
+      "pattern": "2"
+    },
+    {
+      "town": "わ 若桑",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "わ 若桑",
+      "jp": "わ 若桑",
+      "pattern": "2"
+    },
+    {
+      "town": "わ 若葉",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "わ 若葉",
+      "jp": "わ 若葉",
+      "pattern": "1"
+    },
+    {
+      "town": "わ 渡瀬",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "わ 渡瀬",
+      "jp": "わ 渡瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "わ 輪島崎町",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "わ 輪島崎町",
+      "jp": "わ 輪島崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "わ 和田",
+      "townEn": "Wajima",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "わ 和田",
+      "jp": "わ 和田",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://wajima.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,804 @@
+{
+  "id": "shibuya-13113",
+  "code": "13113",
+  "pref": "13",
+  "jp": "渋谷区",
+  "en": "Shibuya",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://shibuya.5374.jp/data/area_days.csv",
+    "http://shibuya.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「拠点回収または可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「資源」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「書籍」 under 「資源」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「資源」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「拠点回収または可燃ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶（飲食料用）」 under 「資源」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「包丁」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「CD」 under 「資源」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「発泡スチロールトレイ」 under 「拠点回収または資源」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「乾電池（アルカリ・マンガン）」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「拠点回収」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「資源」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「資源」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          6
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "笹塚1丁目（52～64を除く）",
+      "townEn": "Shibuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笹塚1丁目（52～64を除く）",
+      "jp": "笹塚1丁目（52～64を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "笹塚1丁目52～64、2 3丁目",
+      "townEn": "Shibuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笹塚1丁目52～64、2 3丁目",
+      "jp": "笹塚1丁目52～64、2 3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "上原",
+      "townEn": "Uehara",
+      "kana": "ウエハラ",
+      "chome": null,
+      "detail": "上原1丁目",
+      "en": "上原1丁目",
+      "jp": "上原1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "上原",
+      "townEn": "Uehara",
+      "kana": "ウエハラ",
+      "chome": null,
+      "detail": "上原2 3丁目",
+      "en": "上原2 3丁目",
+      "jp": "上原2 3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶯谷町",
+      "townEn": "Uguisudanicho",
+      "kana": "ウグイスダニチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鶯谷町",
+      "jp": "鶯谷町",
+      "pattern": "1"
+    },
+    {
+      "town": "宇田川町",
+      "townEn": "Udagawacho",
+      "kana": "ウダガワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "宇田川町",
+      "jp": "宇田川町",
+      "pattern": "1"
+    },
+    {
+      "town": "恵比寿",
+      "townEn": "Ebisu",
+      "kana": "エビス",
+      "chome": null,
+      "detail": "恵比寿1 2丁目",
+      "en": "恵比寿1 2丁目",
+      "jp": "恵比寿1 2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "恵比寿",
+      "townEn": "Ebisu",
+      "kana": "エビス",
+      "chome": null,
+      "detail": "恵比寿3 4丁目",
+      "en": "恵比寿3 4丁目",
+      "jp": "恵比寿3 4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "恵比寿西",
+      "townEn": "Ebisunishi",
+      "kana": "エビスニシ",
+      "chome": null,
+      "detail": "恵比寿西1 2丁目",
+      "en": "恵比寿西1 2丁目",
+      "jp": "恵比寿西1 2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "恵比寿南",
+      "townEn": "Ebisuminami",
+      "kana": "エビスミナミ",
+      "chome": null,
+      "detail": "恵比寿南1～3丁目",
+      "en": "恵比寿南1～3丁目",
+      "jp": "恵比寿南1～3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "大山町",
+      "townEn": "Oyamacho",
+      "kana": "オオヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "大山町",
+      "jp": "大山町",
+      "pattern": "2"
+    },
+    {
+      "town": "神山町",
+      "townEn": "Kamiyamacho",
+      "kana": "カミヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "神山町",
+      "jp": "神山町",
+      "pattern": "2"
+    },
+    {
+      "town": "桜丘町",
+      "townEn": "Sakuragaokacho",
+      "kana": "サクラガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "桜丘町",
+      "jp": "桜丘町",
+      "pattern": "1"
+    },
+    {
+      "town": "猿楽町",
+      "townEn": "Sarugakucho",
+      "kana": "サルガクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "猿楽町",
+      "jp": "猿楽町",
+      "pattern": "1"
+    },
+    {
+      "town": "渋谷",
+      "townEn": "Shibuya",
+      "kana": "シブヤ",
+      "chome": null,
+      "detail": "渋谷1～4丁目",
+      "en": "渋谷1～4丁目",
+      "jp": "渋谷1～4丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "松濤",
+      "townEn": "Shoto",
+      "kana": "ショウトウ",
+      "chome": null,
+      "detail": "松濤1 2丁目",
+      "en": "松濤1 2丁目",
+      "jp": "松濤1 2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "神宮前",
+      "townEn": "Jingumae",
+      "kana": "ジングウマエ",
+      "chome": null,
+      "detail": "神宮前1丁目",
+      "en": "神宮前1丁目",
+      "jp": "神宮前1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "神宮前",
+      "townEn": "Jingumae",
+      "kana": "ジングウマエ",
+      "chome": null,
+      "detail": "神宮前2～4丁目",
+      "en": "神宮前2～4丁目",
+      "jp": "神宮前2～4丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "神宮前",
+      "townEn": "Jingumae",
+      "kana": "ジングウマエ",
+      "chome": null,
+      "detail": "神宮前5丁目",
+      "en": "神宮前5丁目",
+      "jp": "神宮前5丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "神宮前",
+      "townEn": "Jingumae",
+      "kana": "ジングウマエ",
+      "chome": null,
+      "detail": "神宮前6丁目",
+      "en": "神宮前6丁目",
+      "jp": "神宮前6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "神泉町",
+      "townEn": "Shinsencho",
+      "kana": "シンセンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "神泉町",
+      "jp": "神泉町",
+      "pattern": "1"
+    },
+    {
+      "town": "神南",
+      "townEn": "Jinnan",
+      "kana": "ジンナン",
+      "chome": null,
+      "detail": "神南1丁目",
+      "en": "神南1丁目",
+      "jp": "神南1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "千駄ヶ谷",
+      "townEn": "Sendagaya",
+      "kana": "センダガヤ",
+      "chome": null,
+      "detail": "千駄ヶ谷1～4丁目",
+      "en": "千駄ヶ谷1～4丁目",
+      "jp": "千駄ヶ谷1～4丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "千駄ヶ谷",
+      "townEn": "Sendagaya",
+      "kana": "センダガヤ",
+      "chome": null,
+      "detail": "千駄ヶ谷5 6丁目",
+      "en": "千駄ヶ谷5 6丁目",
+      "jp": "千駄ヶ谷5 6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "代官山町",
+      "townEn": "Daikanyamacho",
+      "kana": "ダイカンヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "代官山町",
+      "jp": "代官山町",
+      "pattern": "1"
+    },
+    {
+      "town": "道玄坂",
+      "townEn": "Dogenzaka",
+      "kana": "ドウゲンザカ",
+      "chome": null,
+      "detail": "道玄坂1丁目 2丁目1～10",
+      "en": "道玄坂1丁目 2丁目1～10",
+      "jp": "道玄坂1丁目 2丁目1～10",
+      "pattern": "1"
+    },
+    {
+      "town": "道玄坂",
+      "townEn": "Dogenzaka",
+      "kana": "ドウゲンザカ",
+      "chome": null,
+      "detail": "道玄坂2丁目（1～10を除く）",
+      "en": "道玄坂2丁目（1～10を除く）",
+      "jp": "道玄坂2丁目（1～10を除く）",
+      "pattern": "3"
+    },
+    {
+      "town": "富ヶ谷",
+      "townEn": "Tomigaya",
+      "kana": "トミガヤ",
+      "chome": null,
+      "detail": "富ヶ谷1丁目",
+      "en": "富ヶ谷1丁目",
+      "jp": "富ヶ谷1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "富ヶ谷",
+      "townEn": "Tomigaya",
+      "kana": "トミガヤ",
+      "chome": null,
+      "detail": "富ヶ谷2丁目",
+      "en": "富ヶ谷2丁目",
+      "jp": "富ヶ谷2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南平台町",
+      "townEn": "Nampeidaicho",
+      "kana": "ナンペイダイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "南平台町",
+      "jp": "南平台町",
+      "pattern": "1"
+    },
+    {
+      "town": "西原",
+      "townEn": "Nishihara",
+      "kana": "ニシハラ",
+      "chome": null,
+      "detail": "西原1～3丁目",
+      "en": "西原1～3丁目",
+      "jp": "西原1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "幡ヶ谷",
+      "townEn": "Hatagaya",
+      "kana": "ハタガヤ",
+      "chome": null,
+      "detail": "幡ヶ谷1丁目",
+      "en": "幡ヶ谷1丁目",
+      "jp": "幡ヶ谷1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "幡ヶ谷",
+      "townEn": "Hatagaya",
+      "kana": "ハタガヤ",
+      "chome": null,
+      "detail": "幡ヶ谷2丁目",
+      "en": "幡ヶ谷2丁目",
+      "jp": "幡ヶ谷2丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "幡ヶ谷",
+      "townEn": "Hatagaya",
+      "kana": "ハタガヤ",
+      "chome": null,
+      "detail": "幡ヶ谷3丁目",
+      "en": "幡ヶ谷3丁目",
+      "jp": "幡ヶ谷3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "鉢山町",
+      "townEn": "Hachiyamacho",
+      "kana": "ハチヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鉢山町",
+      "jp": "鉢山町",
+      "pattern": "1"
+    },
+    {
+      "town": "初台",
+      "townEn": "Hatsudai",
+      "kana": "ハツダイ",
+      "chome": null,
+      "detail": "初台1 2丁目",
+      "en": "初台1 2丁目",
+      "jp": "初台1 2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東",
+      "townEn": "Higashi",
+      "kana": "ヒガシ",
+      "chome": null,
+      "detail": "東1～4丁目",
+      "en": "東1～4丁目",
+      "jp": "東1～4丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "広尾",
+      "townEn": "Hiro",
+      "kana": "ヒロオ",
+      "chome": null,
+      "detail": "広尾1～5丁目",
+      "en": "広尾1～5丁目",
+      "jp": "広尾1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町1丁目",
+      "en": "本町1丁目",
+      "jp": "本町1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町2丁目、4丁目、6丁目",
+      "en": "本町2丁目、4丁目、6丁目",
+      "jp": "本町2丁目、4丁目、6丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町3丁目、5丁目",
+      "en": "本町3丁目、5丁目",
+      "jp": "本町3丁目、5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "円山町",
+      "townEn": "Maruyamacho",
+      "kana": "マルヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "円山町",
+      "jp": "円山町",
+      "pattern": "3"
+    },
+    {
+      "town": "元代々木町",
+      "townEn": "Motoyoyogicho",
+      "kana": "モトヨヨギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "元代々木町",
+      "jp": "元代々木町",
+      "pattern": "1"
+    },
+    {
+      "town": "代々木",
+      "townEn": "Yoyogi",
+      "kana": "ヨヨギ",
+      "chome": null,
+      "detail": "代々木1 2丁目",
+      "en": "代々木1 2丁目",
+      "jp": "代々木1 2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "代々木",
+      "townEn": "Yoyogi",
+      "kana": "ヨヨギ",
+      "chome": null,
+      "detail": "代々木3丁目、4丁目（8を除く）",
+      "en": "代々木3丁目、4丁目（8を除く）",
+      "jp": "代々木3丁目、4丁目（8を除く）",
+      "pattern": "5"
+    },
+    {
+      "town": "代々木",
+      "townEn": "Yoyogi",
+      "kana": "ヨヨギ",
+      "chome": null,
+      "detail": "代々木4丁目8",
+      "en": "代々木4丁目8",
+      "jp": "代々木4丁目8",
+      "pattern": "2"
+    },
+    {
+      "town": "代々木",
+      "townEn": "Yoyogi",
+      "kana": "ヨヨギ",
+      "chome": null,
+      "detail": "代々木5丁目（57～68を除く）",
+      "en": "代々木5丁目（57～68を除く）",
+      "jp": "代々木5丁目（57～68を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "代々木",
+      "townEn": "Yoyogi",
+      "kana": "ヨヨギ",
+      "chome": null,
+      "detail": "代々木5丁目57～68",
+      "en": "代々木5丁目57～68",
+      "jp": "代々木5丁目57～68",
+      "pattern": "1"
+    },
+    {
+      "town": "代々木神園町",
+      "townEn": "Yoyogikamizonocho",
+      "kana": "ヨヨギカミゾノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "代々木神園町",
+      "jp": "代々木神園町",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://shibuya.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

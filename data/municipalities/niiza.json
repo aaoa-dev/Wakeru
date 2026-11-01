@@ -1,0 +1,514 @@
+{
+  "id": "niiza",
+  "code": "11230",
+  "pref": "11",
+  "jp": "新座市",
+  "en": "Niiza",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.niiza.lg.jp/site/gominodasikata/gomirecycleshushunittei.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "res": {
+      "label": "リサイクル資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's official recyclable & burnable table. Non-burnable collection days are not in this table — see the city PDF calendar for those bins.",
+    "patterns": {
+      "1": {
+        "res": [
+          1
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "2": {
+        "res": [
+          4
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "3": {
+        "res": [
+          5
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "4": {
+        "res": [
+          2
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "5": {
+        "res": [
+          3
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "6": {
+        "res": [
+          6
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "7": {
+        "res": [
+          6
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "あたご",
+      "townEn": "あたご",
+      "kana": "あたご",
+      "chome": null,
+      "detail": null,
+      "en": "あたご",
+      "jp": "あたご",
+      "pattern": "1"
+    },
+    {
+      "town": "池田",
+      "townEn": "池田",
+      "kana": "池田",
+      "chome": null,
+      "detail": null,
+      "en": "池田",
+      "jp": "池田",
+      "pattern": "2"
+    },
+    {
+      "town": "石神",
+      "townEn": "石神",
+      "kana": "石神",
+      "chome": null,
+      "detail": null,
+      "en": "石神",
+      "jp": "石神",
+      "pattern": "3"
+    },
+    {
+      "town": "大和田一丁目1～11番",
+      "townEn": "大和田一丁目1～11番",
+      "kana": "大和田一丁目1～11番",
+      "chome": null,
+      "detail": null,
+      "en": "大和田一丁目1～11番",
+      "jp": "大和田一丁目1～11番",
+      "pattern": "1"
+    },
+    {
+      "town": "大和田一丁目12～28番",
+      "townEn": "大和田一丁目12～28番",
+      "kana": "大和田一丁目12～28番",
+      "chome": null,
+      "detail": null,
+      "en": "大和田一丁目12～28番",
+      "jp": "大和田一丁目12～28番",
+      "pattern": "4"
+    },
+    {
+      "town": "大和田二・三丁目",
+      "townEn": "大和田二・三丁目",
+      "kana": "大和田二・三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大和田二・三丁目",
+      "jp": "大和田二・三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大和田四丁目1～3番",
+      "townEn": "大和田四丁目1～3番",
+      "kana": "大和田四丁目1～3番",
+      "chome": null,
+      "detail": null,
+      "en": "大和田四丁目1～3番",
+      "jp": "大和田四丁目1～3番",
+      "pattern": "1"
+    },
+    {
+      "town": "大和田四丁目4～18番",
+      "townEn": "大和田四丁目4～18番",
+      "kana": "大和田四丁目4～18番",
+      "chome": null,
+      "detail": null,
+      "en": "大和田四丁目4～18番",
+      "jp": "大和田四丁目4～18番",
+      "pattern": "4"
+    },
+    {
+      "town": "大和田五丁目",
+      "townEn": "大和田五丁目",
+      "kana": "大和田五丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大和田五丁目",
+      "jp": "大和田五丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "片山一丁目1～15番",
+      "townEn": "片山一丁目1～15番",
+      "kana": "片山一丁目1～15番",
+      "chome": null,
+      "detail": null,
+      "en": "片山一丁目1～15番",
+      "jp": "片山一丁目1～15番",
+      "pattern": "1"
+    },
+    {
+      "town": "片山一丁目16～21番",
+      "townEn": "片山一丁目16～21番",
+      "kana": "片山一丁目16～21番",
+      "chome": null,
+      "detail": null,
+      "en": "片山一丁目16～21番",
+      "jp": "片山一丁目16～21番",
+      "pattern": "4"
+    },
+    {
+      "town": "片山二丁目1～11番",
+      "townEn": "片山二丁目1～11番",
+      "kana": "片山二丁目1～11番",
+      "chome": null,
+      "detail": null,
+      "en": "片山二丁目1～11番",
+      "jp": "片山二丁目1～11番",
+      "pattern": "1"
+    },
+    {
+      "town": "片山二丁目12～14番",
+      "townEn": "片山二丁目12～14番",
+      "kana": "片山二丁目12～14番",
+      "chome": null,
+      "detail": null,
+      "en": "片山二丁目12～14番",
+      "jp": "片山二丁目12～14番",
+      "pattern": "4"
+    },
+    {
+      "town": "片山三丁目1～8番",
+      "townEn": "片山三丁目1～8番",
+      "kana": "片山三丁目1～8番",
+      "chome": null,
+      "detail": null,
+      "en": "片山三丁目1～8番",
+      "jp": "片山三丁目1～8番",
+      "pattern": "1"
+    },
+    {
+      "town": "片山三丁目9～10番",
+      "townEn": "片山三丁目9～10番",
+      "kana": "片山三丁目9～10番",
+      "chome": null,
+      "detail": null,
+      "en": "片山三丁目9～10番",
+      "jp": "片山三丁目9～10番",
+      "pattern": "4"
+    },
+    {
+      "town": "片山三丁目11～12番",
+      "townEn": "片山三丁目11～12番",
+      "kana": "片山三丁目11～12番",
+      "chome": null,
+      "detail": null,
+      "en": "片山三丁目11～12番",
+      "jp": "片山三丁目11～12番",
+      "pattern": "1"
+    },
+    {
+      "town": "片山三丁目13～18番",
+      "townEn": "片山三丁目13～18番",
+      "kana": "片山三丁目13～18番",
+      "chome": null,
+      "detail": null,
+      "en": "片山三丁目13～18番",
+      "jp": "片山三丁目13～18番",
+      "pattern": "4"
+    },
+    {
+      "town": "北野一・二丁目",
+      "townEn": "北野一・二丁目",
+      "kana": "北野一・二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "北野一・二丁目",
+      "jp": "北野一・二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "北野三丁目",
+      "townEn": "北野三丁目",
+      "kana": "北野三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "北野三丁目",
+      "jp": "北野三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "栗原",
+      "townEn": "栗原",
+      "kana": "栗原",
+      "chome": null,
+      "detail": null,
+      "en": "栗原",
+      "jp": "栗原",
+      "pattern": "4"
+    },
+    {
+      "town": "栄",
+      "townEn": "栄",
+      "kana": "栄",
+      "chome": null,
+      "detail": null,
+      "en": "栄",
+      "jp": "栄",
+      "pattern": "2"
+    },
+    {
+      "town": "新堀",
+      "townEn": "新堀",
+      "kana": "新堀",
+      "chome": null,
+      "detail": null,
+      "en": "新堀",
+      "jp": "新堀",
+      "pattern": "3"
+    },
+    {
+      "town": "菅沢",
+      "townEn": "菅沢",
+      "kana": "菅沢",
+      "chome": null,
+      "detail": null,
+      "en": "菅沢",
+      "jp": "菅沢",
+      "pattern": "1"
+    },
+    {
+      "town": "道場一丁目",
+      "townEn": "道場一丁目",
+      "kana": "道場一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "道場一丁目",
+      "jp": "道場一丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "道場二丁目",
+      "townEn": "道場二丁目",
+      "kana": "道場二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "道場二丁目",
+      "jp": "道場二丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東北一丁目",
+      "townEn": "東北一丁目",
+      "kana": "東北一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "東北一丁目",
+      "jp": "東北一丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "東北二丁目",
+      "townEn": "東北二丁目",
+      "kana": "東北二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "東北二丁目",
+      "jp": "東北二丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "中野",
+      "townEn": "中野",
+      "kana": "中野",
+      "chome": null,
+      "detail": null,
+      "en": "中野",
+      "jp": "中野",
+      "pattern": "1"
+    },
+    {
+      "town": "新座",
+      "townEn": "新座",
+      "kana": "新座",
+      "chome": null,
+      "detail": null,
+      "en": "新座",
+      "jp": "新座",
+      "pattern": "3"
+    },
+    {
+      "town": "新塚",
+      "townEn": "新塚",
+      "kana": "新塚",
+      "chome": null,
+      "detail": null,
+      "en": "新塚",
+      "jp": "新塚",
+      "pattern": "2"
+    },
+    {
+      "town": "西堀",
+      "townEn": "西堀",
+      "kana": "西堀",
+      "chome": null,
+      "detail": null,
+      "en": "西堀",
+      "jp": "西堀",
+      "pattern": "3"
+    },
+    {
+      "town": "野寺",
+      "townEn": "野寺",
+      "kana": "野寺",
+      "chome": null,
+      "detail": null,
+      "en": "野寺",
+      "jp": "野寺",
+      "pattern": "4"
+    },
+    {
+      "town": "野火止",
+      "townEn": "野火止",
+      "kana": "野火止",
+      "chome": null,
+      "detail": null,
+      "en": "野火止",
+      "jp": "野火止",
+      "pattern": "5"
+    },
+    {
+      "town": "畑中",
+      "townEn": "畑中",
+      "kana": "畑中",
+      "chome": null,
+      "detail": null,
+      "en": "畑中",
+      "jp": "畑中",
+      "pattern": "2"
+    },
+    {
+      "town": "馬場",
+      "townEn": "馬場",
+      "kana": "馬場",
+      "chome": null,
+      "detail": null,
+      "en": "馬場",
+      "jp": "馬場",
+      "pattern": "2"
+    },
+    {
+      "town": "東",
+      "townEn": "東",
+      "kana": "東",
+      "chome": null,
+      "detail": null,
+      "en": "東",
+      "jp": "東",
+      "pattern": "7"
+    },
+    {
+      "town": "堀ノ内一丁目",
+      "townEn": "堀ノ内一丁目",
+      "kana": "堀ノ内一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "堀ノ内一丁目",
+      "jp": "堀ノ内一丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "堀ノ内二・三丁目",
+      "townEn": "堀ノ内二・三丁目",
+      "kana": "堀ノ内二・三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "堀ノ内二・三丁目",
+      "jp": "堀ノ内二・三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "本多",
+      "townEn": "本多",
+      "kana": "本多",
+      "chome": null,
+      "detail": null,
+      "en": "本多",
+      "jp": "本多",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Niiza City recyclable & burnable collection weekday table",
+      "url": "https://www.city.niiza.lg.jp/site/gominodasikata/gomirecycleshushunittei.html",
+      "license": "Niiza City website (collection facts)"
+    }
+  },
+  "updated": "2026-10-31"
+}

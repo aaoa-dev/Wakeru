@@ -1,0 +1,186 @@
+{
+  "id": "kamisato-town",
+  "code": "11385",
+  "pref": "11",
+  "jp": "上里町",
+  "en": "Kamisato",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.town.kamisato.saitama.jp/1643.htm"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass": {
+      "label": "ガラス類",
+      "en": "Glass",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the town's official HTML table (地区×ごみ種別).",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "黛・金久保・勅使河原",
+      "townEn": "黛・金久保・勅使河原",
+      "kana": "黛・金久保・勅使河原",
+      "chome": null,
+      "detail": null,
+      "en": "黛・金久保・勅使河原",
+      "jp": "黛・金久保・勅使河原",
+      "pattern": "1"
+    },
+    {
+      "town": "藤木戸・五明・帯刀 長浜・大御堂",
+      "townEn": "藤木戸・五明・帯刀 長浜・大御堂",
+      "kana": "藤木戸・五明・帯刀 長浜・大御堂",
+      "chome": null,
+      "detail": null,
+      "en": "藤木戸・五明・帯刀 長浜・大御堂",
+      "jp": "藤木戸・五明・帯刀 長浜・大御堂",
+      "pattern": "1"
+    },
+    {
+      "town": "三町・堤・嘉美・七本木",
+      "townEn": "三町・堤・嘉美・七本木",
+      "kana": "三町・堤・嘉美・七本木",
+      "chome": null,
+      "detail": null,
+      "en": "三町・堤・嘉美・七本木",
+      "jp": "三町・堤・嘉美・七本木",
+      "pattern": "2"
+    },
+    {
+      "town": "七本木・下久城",
+      "townEn": "七本木・下久城",
+      "kana": "七本木・下久城",
+      "chome": null,
+      "detail": null,
+      "en": "七本木・下久城",
+      "jp": "七本木・下久城",
+      "pattern": "2"
+    },
+    {
+      "town": "神保原町・八町河原 忍保・西原町・金下東",
+      "townEn": "神保原町・八町河原 忍保・西原町・金下東",
+      "kana": "神保原町・八町河原 忍保・西原町・金下東",
+      "chome": null,
+      "detail": null,
+      "en": "神保原町・八町河原 忍保・西原町・金下東",
+      "jp": "神保原町・八町河原 忍保・西原町・金下東",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Kamisato Town collection schedule table",
+      "url": "https://www.town.kamisato.saitama.jp/1643.htm",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

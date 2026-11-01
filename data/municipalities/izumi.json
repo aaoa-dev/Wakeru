@@ -1,0 +1,240 @@
+{
+  "id": "izumi",
+  "code": "46208",
+  "pref": "46",
+  "jp": "出水市",
+  "en": "Izumi",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.kagoshima-izumi.lg.jp/page/page_20007.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「残飯」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶(飲料用・食用)」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ビールびん」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「鍋」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「包丁」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ＣＤ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「トレイ(プラマーク付き)」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ライター(100円ライター)」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「燃やせない粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「収集不可」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「収集不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Burnable weekdays from Izumi City FY2026 district tables (Izumi / Takao / Noda areas). Recycling and non-burnable use monthly rules — see the city's district calendar for your neighborhood association.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "出水・高尾野（月・木）",
+      "townEn": "Mon & Thu burnable",
+      "kana": "出水・高尾野（月・木）",
+      "chome": null,
+      "detail": null,
+      "en": "Mon & Thu burnable",
+      "jp": "出水・高尾野（月・木）",
+      "pattern": "1"
+    },
+    {
+      "town": "出水・高尾野（火・金）",
+      "townEn": "Tue & Fri burnable",
+      "kana": "出水・高尾野（火・金）",
+      "chome": null,
+      "detail": null,
+      "en": "Tue & Fri burnable",
+      "jp": "出水・高尾野（火・金）",
+      "pattern": "2"
+    },
+    {
+      "town": "野田地域（月・金）",
+      "townEn": "Mon & Fri burnable (Noda)",
+      "kana": "野田地域（月・金）",
+      "chome": null,
+      "detail": null,
+      "en": "Mon & Fri burnable (Noda)",
+      "jp": "野田地域（月・金）",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Izumi City household waste district schedule tables",
+      "url": "https://www.city.kagoshima-izumi.lg.jp/page/page_20007.html",
+      "license": "Izumi City open data"
+    }
+  },
+  "updated": "2026-10-31"
+}

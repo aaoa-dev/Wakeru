@@ -1,0 +1,310 @@
+{
+  "id": "linkdata-4767-04323",
+  "code": "04323",
+  "pref": "04",
+  "jp": "柴田町",
+  "en": "Shibata",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4767i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4767i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「衣類・布」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「レシート」 under 「紙類」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「紙類」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙（折込チラシ）」 under 「紙類」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「紙類」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「紙類」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「紙パック（飲料用）」 under 「紙類」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「スチール缶」 under 「缶」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「ビールびん」 under 「びん」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「びん」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「容器包装プラ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「タンス」 under 「もやせる粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              5
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "plastic": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3,
+                5
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            2,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              5
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": {
+          "any": [
+            [
+              3
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "柴田町",
+      "townEn": "Shibata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柴田町",
+      "jp": "柴田町",
+      "pattern": "1"
+    },
+    {
+      "town": "川崎町",
+      "townEn": "Shibata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川崎町",
+      "jp": "川崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "村田町",
+      "townEn": "Shibata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村田町",
+      "jp": "村田町",
+      "pattern": "1"
+    },
+    {
+      "town": "大河原町",
+      "townEn": "Shibata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大河原町",
+      "jp": "大河原町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4767i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

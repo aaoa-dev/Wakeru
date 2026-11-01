@@ -1,0 +1,1067 @@
+{
+  "id": "kusatsu-10426",
+  "code": "10426",
+  "pref": "10",
+  "jp": "草津町",
+  "en": "Kusatsu",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kusatsu.5374.jp/data/area_days.csv",
+    "http://kusatsu.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            1,
+            3,
+            5
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "笠山 笠山一から八丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠山 笠山一から八丁目",
+      "jp": "笠山 笠山一から八丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "笠山 南笠東一から四丁目（横山ハイツ、コルボリウム南笠）",
+      "townEn": "Haitsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠山 南笠東一から四丁目（横山ハイツ、コルボリウム南笠）",
+      "jp": "笠山 南笠東一から四丁目（横山ハイツ、コルボリウム南笠）",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 下笠町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 下笠町",
+      "jp": "笠縫A 下笠町",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 駒井沢町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 駒井沢町",
+      "jp": "笠縫A 駒井沢町",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 集町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 集町",
+      "jp": "笠縫A 集町",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 上笠五丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 上笠五丁目",
+      "jp": "笠縫A 上笠五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 新堂町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 新堂町",
+      "jp": "笠縫A 新堂町",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫A 川原町（葉山川より北）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫A 川原町（葉山川より北）",
+      "jp": "笠縫A 川原町（葉山川より北）",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫B 川原一から四丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫B 川原一から四丁目",
+      "jp": "笠縫B 川原一から四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫B 川原町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫B 川原町",
+      "jp": "笠縫B 川原町",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫B 野村三から八丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫B 野村三から八丁目",
+      "jp": "笠縫B 野村三から八丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "笠縫B 野村二丁目（11から23）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "笠縫B 野村二丁目（11から23）",
+      "jp": "笠縫B 野村二丁目（11から23）",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川A 南笠東一から四丁目横山ハイツ、コルボリウム南笠は笠山",
+      "townEn": "Haitsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川A 南笠東一から四丁目横山ハイツ、コルボリウム南笠は笠山",
+      "jp": "玉川A 南笠東一から四丁目横山ハイツ、コルボリウム南笠は笠山",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川A 野路一から九丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川A 野路一から九丁目",
+      "jp": "玉川A 野路一から九丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川B 桜ヶ丘一から五丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川B 桜ヶ丘一から五丁目",
+      "jp": "玉川B 桜ヶ丘一から五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川B 追分南二丁目（15から22番の一部（追分鴨田町内会））",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川B 追分南二丁目（15から22番の一部（追分鴨田町内会））",
+      "jp": "玉川B 追分南二丁目（15から22番の一部（追分鴨田町内会））",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川B 野路町（ＪＲ東海道本線より国道1号側）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川B 野路町（ＪＲ東海道本線より国道1号側）",
+      "jp": "玉川B 野路町（ＪＲ東海道本線より国道1号側）",
+      "pattern": "1"
+    },
+    {
+      "town": "玉川B 野路東一から七丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "玉川B 野路東一から七丁目",
+      "jp": "玉川B 野路東一から七丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "山田A 御倉町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田A 御倉町",
+      "jp": "山田A 御倉町",
+      "pattern": "1"
+    },
+    {
+      "town": "山田A 山田町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田A 山田町",
+      "jp": "山田A 山田町",
+      "pattern": "1"
+    },
+    {
+      "town": "山田A 南山田町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田A 南山田町",
+      "jp": "山田A 南山田町",
+      "pattern": "1"
+    },
+    {
+      "town": "山田A 北山田",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田A 北山田",
+      "jp": "山田A 北山田",
+      "pattern": "1"
+    },
+    {
+      "town": "山田A 木川町（県道交差点ケーズデンキ側）",
+      "townEn": "Kezudenki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田A 木川町（県道交差点ケーズデンキ側）",
+      "jp": "山田A 木川町（県道交差点ケーズデンキ側）",
+      "pattern": "1"
+    },
+    {
+      "town": "山田B 草津町（エルシティ、ベルヴィ、湖都町、パールタウンなどエルシティ、ベルヴィ、湖都町、パールタウンなど）",
+      "townEn": "Erushite",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田B 草津町（エルシティ、ベルヴィ、湖都町、パールタウンなどエルシティ、ベルヴィ、湖都町、パールタウンなど）",
+      "jp": "山田B 草津町（エルシティ、ベルヴィ、湖都町、パールタウンなどエルシティ、ベルヴィ、湖都町、パールタウンなど）",
+      "pattern": "1"
+    },
+    {
+      "town": "山田B 木川町（陽ノ丘、出屋敷、日光、新田、砂池、三つ池団地）",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田B 木川町（陽ノ丘、出屋敷、日光、新田、砂池、三つ池団地）",
+      "jp": "山田B 木川町（陽ノ丘、出屋敷、日光、新田、砂池、三つ池団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 岡本町2番地、山手幹線より山側",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 岡本町2番地、山手幹線より山側",
+      "jp": "志津A 岡本町2番地、山手幹線より山側",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 山寺町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 山寺町",
+      "jp": "志津A 山寺町",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 若草一から八丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 若草一から八丁目",
+      "jp": "志津A 若草一から八丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 青地町1から500番地、1500から1600番地台",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 青地町1から500番地、1500から1600番地台",
+      "jp": "志津A 青地町1から500番地、1500から1600番地台",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "jp": "志津A 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津A 馬場町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津A 馬場町",
+      "jp": "志津A 馬場町",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 岡本町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 岡本町",
+      "jp": "志津B 岡本町",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 若草一から八丁目ビアンクール",
+      "townEn": "Biankuru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 若草一から八丁目ビアンクール",
+      "jp": "志津B 若草一から八丁目ビアンクール",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "jp": "志津B 青地町500、600番地（志津Aまたは志津Bか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 青地町700から1300番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 青地町700から1300番地",
+      "jp": "志津B 青地町700から1300番地",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分一から三丁目（ルネス・アンは草津B）",
+      "townEn": "Runesuan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分一から三丁目（ルネス・アンは草津B）",
+      "jp": "志津B 追分一から三丁目（ルネス・アンは草津B）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分五から七丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分五から七丁目",
+      "jp": "志津B 追分五から七丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "jp": "志津B 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分四丁目8番地、13から14番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分四丁目8番地、13から14番地",
+      "jp": "志津B 追分四丁目8番地、13から14番地",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分南一丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分南一丁目",
+      "jp": "志津B 追分南一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分南三から九丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分南三から九丁目",
+      "jp": "志津B 追分南三から九丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分南二丁目ライラック、1番、3番、5から14番、23から25番、22番の一部",
+      "townEn": "Rairakku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分南二丁目ライラック、1番、3番、5から14番、23から25番、22番の一部",
+      "jp": "志津B 追分南二丁目ライラック、1番、3番、5から14番、23から25番、22番の一部",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分八丁目1から5番地、9から16番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分八丁目1から5番地、9から16番地",
+      "jp": "志津B 追分八丁目1から5番地、9から16番地",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "jp": "志津B 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 東草津三丁目13番",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 東草津三丁目13番",
+      "jp": "志津B 東草津三丁目13番",
+      "pattern": "1"
+    },
+    {
+      "town": "志津B 東草津四丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志津B 東草津四丁目",
+      "jp": "志津B 東草津四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "渋川 渋川一から二丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渋川 渋川一から二丁目",
+      "jp": "渋川 渋川一から二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "渋川 西渋川一から二丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渋川 西渋川一から二丁目",
+      "jp": "渋川 西渋川一から二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "渋川 野村一丁目（上記以外ロイヤルハイツ吉田）",
+      "townEn": "Roiyaruhaitsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渋川 野村一丁目（上記以外ロイヤルハイツ吉田）",
+      "jp": "渋川 野村一丁目（上記以外ロイヤルハイツ吉田）",
+      "pattern": "1"
+    },
+    {
+      "town": "上笠 上笠一から四丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上笠 上笠一から四丁目",
+      "jp": "上笠 上笠一から四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "上笠 上笠町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上笠 上笠町",
+      "jp": "上笠 上笠町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 芦浦町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 芦浦町",
+      "jp": "常盤 芦浦町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 下寺町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 下寺町",
+      "jp": "常盤 下寺町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 下物町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 下物町",
+      "jp": "常盤 下物町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 穴村町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 穴村町",
+      "jp": "常盤 穴村町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 志那中町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 志那中町",
+      "jp": "常盤 志那中町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 志那町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 志那町",
+      "jp": "常盤 志那町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 上寺町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 上寺町",
+      "jp": "常盤 上寺町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 長束町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 長束町",
+      "jp": "常盤 長束町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 片岡町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 片岡町",
+      "jp": "常盤 片岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤 北大萱町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤 北大萱町",
+      "jp": "常盤 北大萱町",
+      "pattern": "1"
+    },
+    {
+      "town": "草津A 西草津一から二丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津A 西草津一から二丁目",
+      "jp": "草津A 西草津一から二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "草津A 草津一から四丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津A 草津一から四丁目",
+      "jp": "草津A 草津一から四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "草津A 草津町グリーンピア、草津団地、六ノ坪団地、ベルヴィタウンなど",
+      "townEn": "Gurimpia",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津A 草津町グリーンピア、草津団地、六ノ坪団地、ベルヴィタウンなど",
+      "jp": "草津A 草津町グリーンピア、草津団地、六ノ坪団地、ベルヴィタウンなど",
+      "pattern": "1"
+    },
+    {
+      "town": "草津A 矢倉一から二丁目7番8から20号（メゾン久保除く）",
+      "townEn": "Mezon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津A 矢倉一から二丁目7番8から20号（メゾン久保除く）",
+      "jp": "草津A 矢倉一から二丁目7番8から20号（メゾン久保除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "草津B 追分一から三丁目ルネス・アン",
+      "townEn": "Runesuan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津B 追分一から三丁目ルネス・アン",
+      "jp": "草津B 追分一から三丁目ルネス・アン",
+      "pattern": "1"
+    },
+    {
+      "town": "草津B 東草津一から二丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津B 東草津一から二丁目",
+      "jp": "草津B 東草津一から二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "草津B 東草津三丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草津B 東草津三丁目",
+      "jp": "草津B 東草津三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 若竹町1番地、8から10番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 若竹町1番地、8から10番地",
+      "jp": "大路A 若竹町1番地、8から10番地",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 西大路町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 西大路町",
+      "jp": "大路A 西大路町",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 大路一から二丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 大路一から二丁目",
+      "jp": "大路A 大路一から二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 野村一丁目2から7番、12から15番、21から24番",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 野村一丁目2から7番、12から15番、21から24番",
+      "jp": "大路A 野村一丁目2から7番、12から15番、21から24番",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 野村一丁目ロイヤルハイツ吉田",
+      "townEn": "Roiyaruhaitsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 野村一丁目ロイヤルハイツ吉田",
+      "jp": "大路A 野村一丁目ロイヤルハイツ吉田",
+      "pattern": "1"
+    },
+    {
+      "town": "大路A 野村二丁目1から10番",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路A 野村二丁目1から10番",
+      "jp": "大路A 野村二丁目1から10番",
+      "pattern": "1"
+    },
+    {
+      "town": "大路B 大路三丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大路B 大路三丁目",
+      "jp": "大路B 大路三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "平井 平井一から六丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平井 平井一から六丁目",
+      "jp": "平井 平井一から六丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "平井 平井町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平井 平井町",
+      "jp": "平井 平井町",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 追分四丁目1番地、4から7番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 追分四丁目1番地、4から7番地",
+      "jp": "矢倉A 追分四丁目1番地、4から7番地",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "jp": "矢倉A 追分四丁目2から3番地、9から12番地（志津Aまたは矢倉Aか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 追分南二丁目2番13から15号、4番の一部",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 追分南二丁目2番13から15号、4番の一部",
+      "jp": "矢倉A 追分南二丁目2番13から15号、4番の一部",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "jp": "矢倉A 追分八丁目6番地、8番地（志津Aまたは矢倉Aか要確認）",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 追分八丁目7番地",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 追分八丁目7番地",
+      "jp": "矢倉A 追分八丁目7番地",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 東矢倉一から四丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 東矢倉一から四丁目",
+      "jp": "矢倉A 東矢倉一から四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉A 矢倉一から二丁目【7番8から20号（メゾン久保除く）は草津A】",
+      "townEn": "Mezon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉A 矢倉一から二丁目【7番8から20号（メゾン久保除く）は草津A】",
+      "jp": "矢倉A 矢倉一から二丁目【7番8から20号（メゾン久保除く）は草津A】",
+      "pattern": "1"
+    },
+    {
+      "town": "矢倉B 西矢倉一から三丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "矢倉B 西矢倉一から三丁目",
+      "jp": "矢倉B 西矢倉一から三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "老上A 橋岡町南草津団地、雇用促進住宅など",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上A 橋岡町南草津団地、雇用促進住宅など",
+      "jp": "老上A 橋岡町南草津団地、雇用促進住宅など",
+      "pattern": "1"
+    },
+    {
+      "town": "老上A 南草津一から五丁目",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上A 南草津一から五丁目",
+      "jp": "老上A 南草津一から五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "老上A 野路町ＪＲ東海道本線より琵琶湖側",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上A 野路町ＪＲ東海道本線より琵琶湖側",
+      "jp": "老上A 野路町ＪＲ東海道本線より琵琶湖側",
+      "pattern": "1"
+    },
+    {
+      "town": "老上A 矢橋町湖州平団地、南草津団地など",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上A 矢橋町湖州平団地、南草津団地など",
+      "jp": "老上A 矢橋町湖州平団地、南草津団地など",
+      "pattern": "1"
+    },
+    {
+      "town": "老上B 橋岡町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上B 橋岡町",
+      "jp": "老上B 橋岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "老上B 新浜町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上B 新浜町",
+      "jp": "老上B 新浜町",
+      "pattern": "1"
+    },
+    {
+      "town": "老上B 南笠町",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上B 南笠町",
+      "jp": "老上B 南笠町",
+      "pattern": "1"
+    },
+    {
+      "town": "老上B 矢橋町橋岡団地など",
+      "townEn": "Kusatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "老上B 矢橋町橋岡団地など",
+      "jp": "老上B 矢橋町橋岡団地など",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kusatsu.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

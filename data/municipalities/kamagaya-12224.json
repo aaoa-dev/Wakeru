@@ -1,0 +1,1085 @@
+{
+  "id": "kamagaya-12224",
+  "code": "12224",
+  "pref": "12",
+  "jp": "鎌ケ谷市",
+  "en": "Kamagaya",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kamagaya.5374.jp/data/area_days.csv",
+    "http://kamagaya.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「資源」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「不燃」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「プラ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶」 under 「資源」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「不燃」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「不燃」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「資源」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「不燃」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「不燃」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「ソファ」 under 「粗大」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "plastic": [
+          6
+        ],
+        "pet_bottle": [
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          2
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "plastic": [
+          6
+        ],
+        "pet_bottle": [
+          6
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          4
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "plastic": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          4
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          5
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          5
+        ]
+      },
+      "9": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "plastic": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          6
+        ]
+      },
+      "10": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "plastic": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          2
+        ]
+      },
+      "11": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          3
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ]
+      },
+      "12": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "plastic": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "それ以外の粟野",
+      "townEn": "Kamagaya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "それ以外の粟野",
+      "jp": "それ以外の粟野",
+      "pattern": "3"
+    },
+    {
+      "town": "それ以外の佐津間",
+      "townEn": "Kamagaya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "それ以外の佐津間",
+      "jp": "それ以外の佐津間",
+      "pattern": "3"
+    },
+    {
+      "town": "それ以外の初富",
+      "townEn": "Kamagaya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "それ以外の初富",
+      "jp": "それ以外の初富",
+      "pattern": "1"
+    },
+    {
+      "town": "それ以外の中沢",
+      "townEn": "Kamagaya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "それ以外の中沢",
+      "jp": "それ以外の中沢",
+      "pattern": "9"
+    },
+    {
+      "town": "粟野",
+      "townEn": "Awano",
+      "kana": "アワノ",
+      "chome": null,
+      "detail": "粟野28の一部、29～31、779～790、795番地",
+      "en": "粟野28の一部、29～31、779～790、795番地",
+      "jp": "粟野28の一部、29～31、779～790、795番地",
+      "pattern": "2"
+    },
+    {
+      "town": "粟野",
+      "townEn": "Awano",
+      "kana": "アワノ",
+      "chome": null,
+      "detail": "粟野426～514番地",
+      "en": "粟野426～514番地",
+      "jp": "粟野426～514番地",
+      "pattern": "1"
+    },
+    {
+      "town": "右京塚",
+      "townEn": "Ukyozuka",
+      "kana": "ウキョウヅカ",
+      "chome": null,
+      "detail": "右京塚1～4番",
+      "en": "右京塚1～4番",
+      "jp": "右京塚1～4番",
+      "pattern": "2"
+    },
+    {
+      "town": "右京塚",
+      "townEn": "Ukyozuka",
+      "kana": "ウキョウヅカ",
+      "chome": null,
+      "detail": "右京塚5～6番",
+      "en": "右京塚5～6番",
+      "jp": "右京塚5～6番",
+      "pattern": "4"
+    },
+    {
+      "town": "右京塚",
+      "townEn": "Ukyozuka",
+      "kana": "ウキョウヅカ",
+      "chome": null,
+      "detail": "右京塚7～15番",
+      "en": "右京塚7～15番",
+      "jp": "右京塚7～15番",
+      "pattern": "5"
+    },
+    {
+      "town": "鎌ケ谷",
+      "townEn": "Kamagaya",
+      "kana": "カマガヤ",
+      "chome": null,
+      "detail": "鎌ケ谷1丁目",
+      "en": "鎌ケ谷1丁目",
+      "jp": "鎌ケ谷1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "鎌ケ谷",
+      "townEn": "Kamagaya",
+      "kana": "カマガヤ",
+      "chome": null,
+      "detail": "鎌ケ谷2丁目～9丁目",
+      "en": "鎌ケ谷2丁目～9丁目",
+      "jp": "鎌ケ谷2丁目～9丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "軽井沢",
+      "townEn": "Karuizawa",
+      "kana": "カルイザワ",
+      "chome": null,
+      "detail": null,
+      "en": "軽井沢",
+      "jp": "軽井沢",
+      "pattern": "8"
+    },
+    {
+      "town": "北中沢",
+      "townEn": "Kitanakazawa",
+      "kana": "キタナカザワ",
+      "chome": null,
+      "detail": "北中沢1丁目～3丁目",
+      "en": "北中沢1丁目～3丁目",
+      "jp": "北中沢1丁目～3丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "北初富",
+      "townEn": "Kitahatsutomi",
+      "kana": "キタハツトミ",
+      "chome": null,
+      "detail": null,
+      "en": "北初富",
+      "jp": "北初富",
+      "pattern": "1"
+    },
+    {
+      "town": "串崎新田",
+      "townEn": "Kushizakishinden",
+      "kana": "クシザキシンデン",
+      "chome": null,
+      "detail": "串崎新田1～34番地",
+      "en": "串崎新田1～34番地",
+      "jp": "串崎新田1～34番地",
+      "pattern": "1"
+    },
+    {
+      "town": "串崎新田",
+      "townEn": "Kushizakishinden",
+      "kana": "クシザキシンデン",
+      "chome": null,
+      "detail": "串崎新田237～302番地",
+      "en": "串崎新田237～302番地",
+      "jp": "串崎新田237～302番地",
+      "pattern": "9"
+    },
+    {
+      "town": "くぬぎ山",
+      "townEn": "Kunugiyama",
+      "kana": "クヌギヤマ",
+      "chome": null,
+      "detail": "くぬぎ山1丁目～5丁目4番",
+      "en": "くぬぎ山1丁目～5丁目4番",
+      "jp": "くぬぎ山1丁目～5丁目4番",
+      "pattern": "9"
+    },
+    {
+      "town": "くぬぎ山",
+      "townEn": "Kunugiyama",
+      "kana": "クヌギヤマ",
+      "chome": null,
+      "detail": "くぬぎ山5丁目5番～10番",
+      "en": "くぬぎ山5丁目5番～10番",
+      "jp": "くぬぎ山5丁目5番～10番",
+      "pattern": "9"
+    },
+    {
+      "town": "佐津間",
+      "townEn": "Satsuma",
+      "kana": "サツマ",
+      "chome": null,
+      "detail": "佐津間1299～1389番地",
+      "en": "佐津間1299～1389番地",
+      "jp": "佐津間1299～1389番地",
+      "pattern": "1"
+    },
+    {
+      "town": "新鎌ケ谷",
+      "townEn": "Shinkamagaya",
+      "kana": "シンカマガヤ",
+      "chome": null,
+      "detail": "新鎌ケ谷1丁目",
+      "en": "新鎌ケ谷1丁目",
+      "jp": "新鎌ケ谷1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "新鎌ケ谷",
+      "townEn": "Shinkamagaya",
+      "kana": "シンカマガヤ",
+      "chome": null,
+      "detail": "新鎌ケ谷2丁目",
+      "en": "新鎌ケ谷2丁目",
+      "jp": "新鎌ケ谷2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "新鎌ケ谷",
+      "townEn": "Shinkamagaya",
+      "kana": "シンカマガヤ",
+      "chome": null,
+      "detail": "新鎌ケ谷3丁目1番～3番",
+      "en": "新鎌ケ谷3丁目1番～3番",
+      "jp": "新鎌ケ谷3丁目1番～3番",
+      "pattern": "1"
+    },
+    {
+      "town": "新鎌ケ谷",
+      "townEn": "Shinkamagaya",
+      "kana": "シンカマガヤ",
+      "chome": null,
+      "detail": "新鎌ケ谷3丁目4番～22番",
+      "en": "新鎌ケ谷3丁目4番～22番",
+      "jp": "新鎌ケ谷3丁目4番～22番",
+      "pattern": "2"
+    },
+    {
+      "town": "新鎌ケ谷",
+      "townEn": "Shinkamagaya",
+      "kana": "シンカマガヤ",
+      "chome": null,
+      "detail": "新鎌ケ谷4丁目",
+      "en": "新鎌ケ谷4丁目",
+      "jp": "新鎌ケ谷4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": "中央1丁目1番、8番",
+      "en": "中央1丁目1番、8番",
+      "jp": "中央1丁目1番、8番",
+      "pattern": "1"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": "中央1丁目2～7番、14～20番",
+      "en": "中央1丁目2～7番、14～20番",
+      "jp": "中央1丁目2～7番、14～20番",
+      "pattern": "2"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": "中央2丁目",
+      "en": "中央2丁目",
+      "jp": "中央2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "富岡",
+      "townEn": "Tomioka",
+      "kana": "トミオカ",
+      "chome": null,
+      "detail": "富岡1丁目～3丁目",
+      "en": "富岡1丁目～3丁目",
+      "jp": "富岡1丁目～3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "中佐津間",
+      "townEn": "Nakasatsuma",
+      "kana": "ナカサツマ",
+      "chome": null,
+      "detail": "中佐津間1丁目～2丁目",
+      "en": "中佐津間1丁目～2丁目",
+      "jp": "中佐津間1丁目～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中沢",
+      "townEn": "Nakazawa",
+      "kana": "ナカザワ",
+      "chome": null,
+      "detail": "中沢1384、1439～1444番地",
+      "en": "中沢1384、1439～1444番地",
+      "jp": "中沢1384、1439～1444番地",
+      "pattern": "9"
+    },
+    {
+      "town": "中沢新町",
+      "townEn": "Nakazawashimmachi",
+      "kana": "ナカザワシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "中沢新町",
+      "jp": "中沢新町",
+      "pattern": "9"
+    },
+    {
+      "town": "西佐津間",
+      "townEn": "Nishisatsuma",
+      "kana": "ニシサツマ",
+      "chome": null,
+      "detail": "西佐津間1丁目～2丁目",
+      "en": "西佐津間1丁目～2丁目",
+      "jp": "西佐津間1丁目～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西道野辺",
+      "townEn": "Nishimichinobe",
+      "kana": "ニシミチノベ",
+      "chome": null,
+      "detail": null,
+      "en": "西道野辺",
+      "jp": "西道野辺",
+      "pattern": "10"
+    },
+    {
+      "town": "初富",
+      "townEn": "Hatsutomi",
+      "kana": "ハツトミ",
+      "chome": null,
+      "detail": "初富22～24、29～99番地",
+      "en": "初富22～24、29～99番地",
+      "jp": "初富22～24、29～99番地",
+      "pattern": "9"
+    },
+    {
+      "town": "初富",
+      "townEn": "Hatsutomi",
+      "kana": "ハツトミ",
+      "chome": null,
+      "detail": "初富727～857番地",
+      "en": "初富727～857番地",
+      "jp": "初富727～857番地",
+      "pattern": "8"
+    },
+    {
+      "town": "初富",
+      "townEn": "Hatsutomi",
+      "kana": "ハツトミ",
+      "chome": null,
+      "detail": "初富858～924番地",
+      "en": "初富858～924番地",
+      "jp": "初富858～924番地",
+      "pattern": "2"
+    },
+    {
+      "town": "初富本町",
+      "townEn": "Hatsutomihoncho",
+      "kana": "ハツトミホンチョウ",
+      "chome": null,
+      "detail": "初富本町1丁目",
+      "en": "初富本町1丁目",
+      "jp": "初富本町1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "初富本町",
+      "townEn": "Hatsutomihoncho",
+      "kana": "ハツトミホンチョウ",
+      "chome": null,
+      "detail": "初富本町2丁目",
+      "en": "初富本町2丁目",
+      "jp": "初富本町2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "東鎌ケ谷",
+      "townEn": "Higashikamagaya",
+      "kana": "ヒガシカマガヤ",
+      "chome": null,
+      "detail": "東鎌ケ谷1丁目",
+      "en": "東鎌ケ谷1丁目",
+      "jp": "東鎌ケ谷1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "東鎌ケ谷",
+      "townEn": "Higashikamagaya",
+      "kana": "ヒガシカマガヤ",
+      "chome": null,
+      "detail": "東鎌ケ谷2丁目～3丁目",
+      "en": "東鎌ケ谷2丁目～3丁目",
+      "jp": "東鎌ケ谷2丁目～3丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "東中沢",
+      "townEn": "Higashinakazawa",
+      "kana": "ヒガシナカザワ",
+      "chome": null,
+      "detail": "東中沢1丁目～4丁目",
+      "en": "東中沢1丁目～4丁目",
+      "jp": "東中沢1丁目～4丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "東初富",
+      "townEn": "Higashihatsutomi",
+      "kana": "ヒガシハツトミ",
+      "chome": null,
+      "detail": "東初富1丁目～3丁目9番",
+      "en": "東初富1丁目～3丁目9番",
+      "jp": "東初富1丁目～3丁目9番",
+      "pattern": "8"
+    },
+    {
+      "town": "東初富",
+      "townEn": "Higashihatsutomi",
+      "kana": "ヒガシハツトミ",
+      "chome": null,
+      "detail": "東初富3丁目10～32番",
+      "en": "東初富3丁目10～32番",
+      "jp": "東初富3丁目10～32番",
+      "pattern": "6"
+    },
+    {
+      "town": "東初富",
+      "townEn": "Higashihatsutomi",
+      "kana": "ヒガシハツトミ",
+      "chome": null,
+      "detail": "東初富4丁目1～5番、12番の一部",
+      "en": "東初富4丁目1～5番、12番の一部",
+      "jp": "東初富4丁目1～5番、12番の一部",
+      "pattern": "2"
+    },
+    {
+      "town": "東初富",
+      "townEn": "Higashihatsutomi",
+      "kana": "ヒガシハツトミ",
+      "chome": null,
+      "detail": "東初富4丁目6番～6丁目",
+      "en": "東初富4丁目6番～6丁目",
+      "jp": "東初富4丁目6番～6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "東道野辺",
+      "townEn": "Higashimichinobe",
+      "kana": "ヒガシミチノベ",
+      "chome": null,
+      "detail": "東道野辺1丁目",
+      "en": "東道野辺1丁目",
+      "jp": "東道野辺1丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "東道野辺",
+      "townEn": "Higashimichinobe",
+      "kana": "ヒガシミチノベ",
+      "chome": null,
+      "detail": "東道野辺2丁目～5丁目7番",
+      "en": "東道野辺2丁目～5丁目7番",
+      "jp": "東道野辺2丁目～5丁目7番",
+      "pattern": "4"
+    },
+    {
+      "town": "東道野辺",
+      "townEn": "Higashimichinobe",
+      "kana": "ヒガシミチノベ",
+      "chome": null,
+      "detail": "東道野辺5丁目8～22番",
+      "en": "東道野辺5丁目8～22番",
+      "jp": "東道野辺5丁目8～22番",
+      "pattern": "11"
+    },
+    {
+      "town": "東道野辺",
+      "townEn": "Higashimichinobe",
+      "kana": "ヒガシミチノベ",
+      "chome": null,
+      "detail": "東道野辺6丁目",
+      "en": "東道野辺6丁目",
+      "jp": "東道野辺6丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "東道野辺",
+      "townEn": "Higashimichinobe",
+      "kana": "ヒガシミチノベ",
+      "chome": null,
+      "detail": "東道野辺7丁目",
+      "en": "東道野辺7丁目",
+      "jp": "東道野辺7丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "馬込沢",
+      "townEn": "Magomezawa",
+      "kana": "マゴメザワ",
+      "chome": null,
+      "detail": null,
+      "en": "馬込沢",
+      "jp": "馬込沢",
+      "pattern": "12"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": null,
+      "detail": "丸山1丁目",
+      "en": "丸山1丁目",
+      "jp": "丸山1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": null,
+      "detail": "丸山2丁目～3丁目",
+      "en": "丸山2丁目～3丁目",
+      "jp": "丸山2丁目～3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "道野辺",
+      "townEn": "Michinobe",
+      "kana": "ミチノベ",
+      "chome": null,
+      "detail": "道野辺1～228番地",
+      "en": "道野辺1～228番地",
+      "jp": "道野辺1～228番地",
+      "pattern": "9"
+    },
+    {
+      "town": "道野辺",
+      "townEn": "Michinobe",
+      "kana": "ミチノベ",
+      "chome": null,
+      "detail": "道野辺370、1026～1051番地",
+      "en": "道野辺370、1026～1051番地",
+      "jp": "道野辺370、1026～1051番地",
+      "pattern": "12"
+    },
+    {
+      "town": "道野辺中央",
+      "townEn": "Michinobechuo",
+      "kana": "ミチノベチュウオウ",
+      "chome": null,
+      "detail": "道野辺中央1丁目～5丁目(3丁目12番～14番の一部を除く)",
+      "en": "道野辺中央1丁目～5丁目(3丁目12番～14番の一部を除く)",
+      "jp": "道野辺中央1丁目～5丁目(3丁目12番～14番の一部を除く)",
+      "pattern": "9"
+    },
+    {
+      "town": "道野辺中央",
+      "townEn": "Michinobechuo",
+      "kana": "ミチノベチュウオウ",
+      "chome": null,
+      "detail": "道野辺中央3丁目12番～14番の一部",
+      "en": "道野辺中央3丁目12番～14番の一部",
+      "jp": "道野辺中央3丁目12番～14番の一部",
+      "pattern": "5"
+    },
+    {
+      "town": "道野辺本町",
+      "townEn": "Michinobehoncho",
+      "kana": "ミチノベホンチョウ",
+      "chome": null,
+      "detail": "道野辺本町1丁目～2丁目",
+      "en": "道野辺本町1丁目～2丁目",
+      "jp": "道野辺本町1丁目～2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "南鎌ケ谷",
+      "townEn": "Minamikamagaya",
+      "kana": "ミナミカマガヤ",
+      "chome": null,
+      "detail": "南鎌ケ谷1丁目1～8番",
+      "en": "南鎌ケ谷1丁目1～8番",
+      "jp": "南鎌ケ谷1丁目1～8番",
+      "pattern": "7"
+    },
+    {
+      "town": "南鎌ケ谷",
+      "townEn": "Minamikamagaya",
+      "kana": "ミナミカマガヤ",
+      "chome": null,
+      "detail": "南鎌ケ谷1丁目9～15番",
+      "en": "南鎌ケ谷1丁目9～15番",
+      "jp": "南鎌ケ谷1丁目9～15番",
+      "pattern": "11"
+    },
+    {
+      "town": "南鎌ケ谷",
+      "townEn": "Minamikamagaya",
+      "kana": "ミナミカマガヤ",
+      "chome": null,
+      "detail": "南鎌ケ谷2丁目",
+      "en": "南鎌ケ谷2丁目",
+      "jp": "南鎌ケ谷2丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "南鎌ケ谷",
+      "townEn": "Minamikamagaya",
+      "kana": "ミナミカマガヤ",
+      "chome": null,
+      "detail": "南鎌ケ谷3丁目～4丁目",
+      "en": "南鎌ケ谷3丁目～4丁目",
+      "jp": "南鎌ケ谷3丁目～4丁目",
+      "pattern": "11"
+    },
+    {
+      "town": "南佐津間",
+      "townEn": "Minamisatsuma",
+      "kana": "ミナミサツマ",
+      "chome": null,
+      "detail": null,
+      "en": "南佐津間",
+      "jp": "南佐津間",
+      "pattern": "3"
+    },
+    {
+      "town": "南初富",
+      "townEn": "Minamihatsutomi",
+      "kana": "ミナミハツトミ",
+      "chome": null,
+      "detail": "南初富1丁目～6丁目",
+      "en": "南初富1丁目～6丁目",
+      "jp": "南初富1丁目～6丁目",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kamagaya.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

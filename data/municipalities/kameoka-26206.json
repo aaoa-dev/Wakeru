@@ -1,0 +1,569 @@
+{
+  "id": "kameoka-26206",
+  "code": "26206",
+  "pref": "26",
+  "jp": "亀岡市",
+  "en": "Kameoka",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kameoka.5374.jp/data/area_days.csv",
+    "http://kameoka.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "河原林町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河原林町",
+      "jp": "河原林町",
+      "pattern": "2"
+    },
+    {
+      "town": "亀岡地区西部",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀岡地区西部",
+      "jp": "亀岡地区西部",
+      "pattern": "5"
+    },
+    {
+      "town": "亀岡地区中部",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀岡地区中部",
+      "jp": "亀岡地区中部",
+      "pattern": "5"
+    },
+    {
+      "town": "亀岡地区東部",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀岡地区東部",
+      "jp": "亀岡地区東部",
+      "pattern": "5"
+    },
+    {
+      "town": "吉川町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉川町",
+      "jp": "吉川町",
+      "pattern": "4"
+    },
+    {
+      "town": "宮前町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮前町",
+      "jp": "宮前町",
+      "pattern": "2"
+    },
+    {
+      "town": "篠町Ⅰ",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "篠町Ⅰ",
+      "jp": "篠町Ⅰ",
+      "pattern": "6"
+    },
+    {
+      "town": "篠町Ⅱ",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "篠町Ⅱ",
+      "jp": "篠町Ⅱ",
+      "pattern": "1"
+    },
+    {
+      "town": "西つつじヶ丘",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西つつじヶ丘",
+      "jp": "西つつじヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "西別院町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西別院町",
+      "jp": "西別院町",
+      "pattern": "4"
+    },
+    {
+      "town": "千歳町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千歳町",
+      "jp": "千歳町",
+      "pattern": "1"
+    },
+    {
+      "town": "千代川町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千代川町",
+      "jp": "千代川町",
+      "pattern": "3"
+    },
+    {
+      "town": "曽我部町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "曽我部町",
+      "jp": "曽我部町",
+      "pattern": "3"
+    },
+    {
+      "town": "大井町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大井町",
+      "jp": "大井町",
+      "pattern": "4"
+    },
+    {
+      "town": "東つつじヶ丘",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東つつじヶ丘",
+      "jp": "東つつじヶ丘",
+      "pattern": "6"
+    },
+    {
+      "town": "東別院町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東別院町",
+      "jp": "東別院町",
+      "pattern": "2"
+    },
+    {
+      "town": "東本梅町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東本梅町",
+      "jp": "東本梅町",
+      "pattern": "2"
+    },
+    {
+      "town": "南つつじヶ丘",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南つつじヶ丘",
+      "jp": "南つつじヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "畑野町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "畑野町",
+      "jp": "畑野町",
+      "pattern": "2"
+    },
+    {
+      "town": "本梅町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本梅町",
+      "jp": "本梅町",
+      "pattern": "2"
+    },
+    {
+      "town": "薭田野町",
+      "townEn": "Kameoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "薭田野町",
+      "jp": "薭田野町",
+      "pattern": "4"
+    },
+    {
+      "town": "旭町",
+      "townEn": "Asahicho",
+      "kana": "アサヒチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "旭町",
+      "jp": "旭町",
+      "pattern": "1"
+    },
+    {
+      "town": "馬路町",
+      "townEn": "Umajicho",
+      "kana": "ウマジチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "馬路町",
+      "jp": "馬路町",
+      "pattern": "1"
+    },
+    {
+      "town": "亀岡駅北",
+      "townEn": "Kameokaekikita",
+      "kana": "カメオカエキキタ",
+      "chome": null,
+      "detail": null,
+      "en": "亀岡駅北",
+      "jp": "亀岡駅北",
+      "pattern": "5"
+    },
+    {
+      "town": "保津町",
+      "townEn": "Hozucho",
+      "kana": "ホヅチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "保津町",
+      "jp": "保津町",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kameoka.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

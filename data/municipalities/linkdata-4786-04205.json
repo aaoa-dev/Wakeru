@@ -1,0 +1,1355 @@
+{
+  "id": "linkdata-4786-04205",
+  "code": "04205",
+  "pref": "04",
+  "jp": "気仙沼市",
+  "en": "Kesennuma",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4786i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4786i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "階上地区   岩井崎",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   岩井崎",
+      "jp": "階上地区   岩井崎",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   向原",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   向原",
+      "jp": "階上地区   向原",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   最知高",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   最知高",
+      "jp": "階上地区   最知高",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   七半沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   七半沢",
+      "jp": "階上地区   七半沢",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   上町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   上町",
+      "jp": "階上地区   上町",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   森前林",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   森前林",
+      "jp": "階上地区   森前林",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   杉ノ下",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   杉ノ下",
+      "jp": "階上地区   杉ノ下",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   川原",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   川原",
+      "jp": "階上地区   川原",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   長磯原",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   長磯原",
+      "jp": "階上地区   長磯原",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   長磯高",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   長磯高",
+      "jp": "階上地区   長磯高",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   長磯浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   長磯浜",
+      "jp": "階上地区   長磯浜",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   内田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   内田",
+      "jp": "階上地区   内田",
+      "pattern": "1"
+    },
+    {
+      "town": "階上地区   牧",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "階上地区   牧",
+      "jp": "階上地区   牧",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 化粧坂",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 化粧坂",
+      "jp": "気仙沼地区 化粧坂",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 河原田1/河原田2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 河原田1/河原田2",
+      "jp": "気仙沼地区 河原田1/河原田2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 館山2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 館山2",
+      "jp": "気仙沼地区 館山2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 魚市場前",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 魚市場前",
+      "jp": "気仙沼地区 魚市場前",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 魚町1/魚町2/魚町3/陣山/太田1/太田2/入沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 魚町1/魚町2/魚町3/陣山/太田1/太田2/入沢",
+      "jp": "気仙沼地区 魚町1/魚町2/魚町3/陣山/太田1/太田2/入沢",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 九条1/九条2/九条3/九条4/九条5/四反田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 九条1/九条2/九条3/九条4/九条5/四反田",
+      "jp": "気仙沼地区 九条1/九条2/九条3/九条4/九条5/四反田",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 古町1/古町2/古町3/古町4/古町5/古町6",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 古町1/古町2/古町3/古町4/古町5/古町6",
+      "jp": "気仙沼地区 古町1/古町2/古町3/古町4/古町5/古町6",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 幸町1/幸町3/幸町4",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 幸町1/幸町3/幸町4",
+      "jp": "気仙沼地区 幸町1/幸町3/幸町4",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 港町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 港町",
+      "jp": "気仙沼地区 港町",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 三日町1/三日町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 三日町1/三日町2",
+      "jp": "気仙沼地区 三日町1/三日町2",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 四反田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 四反田",
+      "jp": "気仙沼地区 四反田",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 新町1/新町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 新町1/新町2",
+      "jp": "気仙沼地区 新町1/新町2",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 神山",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 神山",
+      "jp": "気仙沼地区 神山",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 川口町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 川口町",
+      "jp": "気仙沼地区 川口町",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 滝の入1/滝の入2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 滝の入1/滝の入2",
+      "jp": "気仙沼地区 滝の入1/滝の入2",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 沢田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 沢田",
+      "jp": "気仙沼地区 沢田",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 仲町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 仲町",
+      "jp": "気仙沼地区 仲町",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 潮見町1/潮見町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 潮見町1/潮見町2",
+      "jp": "気仙沼地区 潮見町1/潮見町2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 田谷",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 田谷",
+      "jp": "気仙沼地区 田谷",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 田中1/田中2/田中3/田中4",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 田中1/田中2/田中3/田中4",
+      "jp": "気仙沼地区 田中1/田中2/田中3/田中4",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 田中前1/田中前2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 田中前1/田中前2",
+      "jp": "気仙沼地区 田中前1/田中前2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 内の脇1/内の脇2/内の脇3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 内の脇1/内の脇2/内の脇3",
+      "jp": "気仙沼地区 内の脇1/内の脇2/内の脇3",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 南が丘",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 南が丘",
+      "jp": "気仙沼地区 南が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 南郷1/南郷2/南郷3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 南郷1/南郷2/南郷3",
+      "jp": "気仙沼地区 南郷1/南郷2/南郷3",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 南町1/南町2/南町3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 南町1/南町2/南町3",
+      "jp": "気仙沼地区 南町1/南町2/南町3",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 南町4",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 南町4",
+      "jp": "気仙沼地区 南町4",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 柏崎",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 柏崎",
+      "jp": "気仙沼地区 柏崎",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 八日町1/八日町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 八日町1/八日町2",
+      "jp": "気仙沼地区 八日町1/八日町2",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 福美町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 福美町",
+      "jp": "気仙沼地区 福美町",
+      "pattern": "2"
+    },
+    {
+      "town": "気仙沼地区 弁天町1/弁天町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 弁天町1/弁天町2",
+      "jp": "気仙沼地区 弁天町1/弁天町2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 本郷1/本郷2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 本郷1/本郷2",
+      "jp": "気仙沼地区 本郷1/本郷2",
+      "pattern": "1"
+    },
+    {
+      "town": "気仙沼地区 本町1/本町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "気仙沼地区 本町1/本町2",
+      "jp": "気仙沼地区 本町1/本町2",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿折地区   栄町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   栄町",
+      "jp": "鹿折地区   栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   梶ヶ浦",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   梶ヶ浦",
+      "jp": "鹿折地区   梶ヶ浦",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   錦町1/錦町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   錦町1/錦町2",
+      "jp": "鹿折地区   錦町1/錦町2",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   小々汐",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   小々汐",
+      "jp": "鹿折地区   小々汐",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   新浜町1/新浜町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   新浜町1/新浜町2",
+      "jp": "鹿折地区   新浜町1/新浜町2",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   西みなと町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   西みなと町",
+      "jp": "鹿折地区   西みなと町",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   西中才",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   西中才",
+      "jp": "鹿折地区   西中才",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   西八幡町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   西八幡町",
+      "jp": "鹿折地区   西八幡町",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   大浦",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   大浦",
+      "jp": "鹿折地区   大浦",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   中みなと町1/中みなと町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   中みなと町1/中みなと町2",
+      "jp": "鹿折地区   中みなと町1/中みなと町2",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   鶴ヶ浦",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   鶴ヶ浦",
+      "jp": "鹿折地区   鶴ヶ浦",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   東みなと町",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   東みなと町",
+      "jp": "鹿折地区   東みなと町",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   東中才1/東中才2/東中才3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   東中才1/東中才2/東中才3",
+      "jp": "鹿折地区   東中才1/東中才2/東中才3",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   東八幡",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   東八幡",
+      "jp": "鹿折地区   東八幡",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   日の口1/日の口2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   日の口1/日の口2",
+      "jp": "鹿折地区   日の口1/日の口2",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   本浜町1/本浜町2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   本浜町1/本浜町2",
+      "jp": "鹿折地区   本浜町1/本浜町2",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   両沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   両沢",
+      "jp": "鹿折地区   両沢",
+      "pattern": "2"
+    },
+    {
+      "town": "鹿折地区   浪板1/浪板2",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿折地区   浪板1/浪板2",
+      "jp": "鹿折地区   浪板1/浪板2",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   羽田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   羽田",
+      "jp": "松岩地区   羽田",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   浦田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   浦田",
+      "jp": "松岩地区   浦田",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   館森",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   館森",
+      "jp": "松岩地区   館森",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   金取",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   金取",
+      "jp": "松岩地区   金取",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   古谷館",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   古谷館",
+      "jp": "松岩地区   古谷館",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   後沢1/後沢2/後沢3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   後沢1/後沢2/後沢3",
+      "jp": "松岩地区   後沢1/後沢2/後沢3",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   三峰",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   三峰",
+      "jp": "松岩地区   三峰",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   松崎五駄鱈",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   松崎五駄鱈",
+      "jp": "松岩地区   松崎五駄鱈",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   上沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   上沢",
+      "jp": "松岩地区   上沢",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   水梨",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   水梨",
+      "jp": "松岩地区   水梨",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   石甲",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   石甲",
+      "jp": "松岩地区   石甲",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   赤岩",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   赤岩",
+      "jp": "松岩地区   赤岩",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   赤岩五駄鱈",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   赤岩五駄鱈",
+      "jp": "松岩地区   赤岩五駄鱈",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   前田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   前田",
+      "jp": "松岩地区   前田",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   前浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   前浜",
+      "jp": "松岩地区   前浜",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   大石倉",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   大石倉",
+      "jp": "松岩地区   大石倉",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   平貝",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   平貝",
+      "jp": "松岩地区   平貝",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   片浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   片浜",
+      "jp": "松岩地区   片浜",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   牧沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   牧沢",
+      "jp": "松岩地区   牧沢",
+      "pattern": "2"
+    },
+    {
+      "town": "松岩地区   老松",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松岩地区   老松",
+      "jp": "松岩地区   老松",
+      "pattern": "2"
+    },
+    {
+      "town": "新月地区   下前木",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   下前木",
+      "jp": "新月地区   下前木",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   下廿一",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   下廿一",
+      "jp": "新月地区   下廿一",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   関根",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   関根",
+      "jp": "新月地区   関根",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   金成沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   金成沢",
+      "jp": "新月地区   金成沢",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   高屋敷",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   高屋敷",
+      "jp": "新月地区   高屋敷",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   上前木",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   上前木",
+      "jp": "新月地区   上前木",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   上廿一",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   上廿一",
+      "jp": "新月地区   上廿一",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   上八瀬下",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   上八瀬下",
+      "jp": "新月地区   上八瀬下",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   上八瀬上",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   上八瀬上",
+      "jp": "新月地区   上八瀬上",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   新城東",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   新城東",
+      "jp": "新月地区   新城東",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   早稲谷",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   早稲谷",
+      "jp": "新月地区   早稲谷",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   台下八瀬",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   台下八瀬",
+      "jp": "新月地区   台下八瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   塚沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   塚沢",
+      "jp": "新月地区   塚沢",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   田柄1/田柄2/田柄3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   田柄1/田柄2/田柄3",
+      "jp": "新月地区   田柄1/田柄2/田柄3",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   内松川",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   内松川",
+      "jp": "新月地区   内松川",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   表松川",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   表松川",
+      "jp": "新月地区   表松川",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   立沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   立沢",
+      "jp": "新月地区   立沢",
+      "pattern": "1"
+    },
+    {
+      "town": "新月地区   和野",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新月地区   和野",
+      "jp": "新月地区   和野",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   磯草",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   磯草",
+      "jp": "大島地区   磯草",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   浦の浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   浦の浜",
+      "jp": "大島地区   浦の浜",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   廻館",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   廻館",
+      "jp": "大島地区   廻館",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   外浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   外浜",
+      "jp": "大島地区   外浜",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   亀山",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   亀山",
+      "jp": "大島地区   亀山",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   崎浜",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   崎浜",
+      "jp": "大島地区   崎浜",
+      "pattern": "2"
+    },
+    {
+      "town": "大島地区   浅根",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   浅根",
+      "jp": "大島地区   浅根",
+      "pattern": "2"
+    },
+    {
+      "town": "大島地区   大初平",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   大初平",
+      "jp": "大島地区   大初平",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   長崎",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   長崎",
+      "jp": "大島地区   長崎",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   田尻",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   田尻",
+      "jp": "大島地区   田尻",
+      "pattern": "1"
+    },
+    {
+      "town": "大島地区   要害",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大島地区   要害",
+      "jp": "大島地区   要害",
+      "pattern": "2"
+    },
+    {
+      "town": "面瀬地区   下沢",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   下沢",
+      "jp": "面瀬地区   下沢",
+      "pattern": "1"
+    },
+    {
+      "town": "面瀬地区   高谷",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   高谷",
+      "jp": "面瀬地区   高谷",
+      "pattern": "2"
+    },
+    {
+      "town": "面瀬地区   上沢1/上沢2/上沢3",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   上沢1/上沢2/上沢3",
+      "jp": "面瀬地区   上沢1/上沢2/上沢3",
+      "pattern": "1"
+    },
+    {
+      "town": "面瀬地区   青葉が丘",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   青葉が丘",
+      "jp": "面瀬地区   青葉が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "面瀬地区   赤田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   赤田",
+      "jp": "面瀬地区   赤田",
+      "pattern": "1"
+    },
+    {
+      "town": "面瀬地区   千岩田",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   千岩田",
+      "jp": "面瀬地区   千岩田",
+      "pattern": "1"
+    },
+    {
+      "town": "面瀬地区   鶴巻",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   鶴巻",
+      "jp": "面瀬地区   鶴巻",
+      "pattern": "2"
+    },
+    {
+      "town": "面瀬地区   尾崎",
+      "townEn": "Kesennuma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "面瀬地区   尾崎",
+      "jp": "面瀬地区   尾崎",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4786i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

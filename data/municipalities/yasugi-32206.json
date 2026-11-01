@@ -1,0 +1,4200 @@
+{
+  "id": "yasugi-32206",
+  "code": "32206",
+  "pref": "32",
+  "jp": "安来市",
+  "en": "Yasugi",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://yasugi.5374.jp/data/area_days.csv",
+    "http://yasugi.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「衣類」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「菓子箱（金属）」 under 「金属類」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「アルミ缶（飲料用）」 under 「缶類（飲料用）」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「金属類」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「DVD」 under 「プラスチック類」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「金属類」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「金属類」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「金属類」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "A",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A",
+      "jp": "A",
+      "pattern": "2"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    },
+    {
+      "town": "B",
+      "townEn": "Yasugi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B",
+      "jp": "B",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://yasugi.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

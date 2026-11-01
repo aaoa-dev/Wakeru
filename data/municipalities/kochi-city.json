@@ -1,0 +1,215 @@
+{
+  "id": "kochi-city",
+  "code": "39201",
+  "pref": "39",
+  "jp": "高知市",
+  "en": "Kochi",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.kochi.kochi.jp/soshiki/64/collection-kochi2.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「残飯」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「枝」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「資源物「布類」」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源物「雑がみ」」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「資源物「新聞・チラシ」」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「本」 under 「資源物「雑誌」」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源物「飲料用紙パック」」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶」 under 「資源物「カン」」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「資源物「ビン」」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「傘」 under 「資源物「金属」」.",
+      "auto": true
+    },
+    "plastic-pack": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「プラスチック製容器包装」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「プラスチック製容器包装」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「リチウムイオン電池」 under 「水銀を含むごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「資源物「カン」」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「可燃ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Burnable weekdays from Kochi City's published district table; plastic is citywide Wednesday. Resource/non-burnable dates are not fully published — confirm on the city site.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "月・木曜地区（朝倉・高知街など）",
+      "townEn": "Mon & Thu burnable zone",
+      "kana": "月・木曜地区（朝倉・高知街など）",
+      "chome": null,
+      "detail": null,
+      "en": "Mon & Thu burnable zone",
+      "jp": "月・木曜地区（朝倉・高知街など）",
+      "pattern": "1"
+    },
+    {
+      "town": "火・金曜地区（小高坂・一宮など）",
+      "townEn": "Tue & Fri burnable zone",
+      "kana": "火・金曜地区（小高坂・一宮など）",
+      "chome": null,
+      "detail": null,
+      "en": "Tue & Fri burnable zone",
+      "jp": "火・金曜地区（小高坂・一宮など）",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Kochi City official garbage collection schedule",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/64/collection-kochi2.html",
+      "license": "Kochi City (CC BY 4.0 open data terms)"
+    }
+  },
+  "updated": "2026-10-31"
+}

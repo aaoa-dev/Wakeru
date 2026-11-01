@@ -1,0 +1,391 @@
+{
+  "id": "ebina-14215",
+  "code": "14215",
+  "pref": "14",
+  "jp": "海老名市",
+  "en": "Ebina",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ebina.5374.jp/data/area_days.csv",
+    "http://ebina.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "paper": [
+          5
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "plastic": [
+          6
+        ]
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        "paper": [
+          2
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "plastic": [
+          6
+        ]
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              4
+            ]
+          ]
+        },
+        "paper": [
+          1
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "plastic": [
+          6
+        ]
+      },
+      "4": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "paper": [
+          4
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "plastic": [
+          6
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "大谷",
+      "townEn": "Oya",
+      "kana": "オオヤ",
+      "chome": null,
+      "detail": "大谷・国分寺台",
+      "en": "大谷・国分寺台",
+      "jp": "大谷・国分寺台",
+      "pattern": "3"
+    },
+    {
+      "town": "柏ケ谷",
+      "townEn": "Kashiwagaya",
+      "kana": "カシワガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "柏ケ谷",
+      "jp": "柏ケ谷",
+      "pattern": "1"
+    },
+    {
+      "town": "勝瀬",
+      "townEn": "Katsuse",
+      "kana": "カツセ",
+      "chome": null,
+      "detail": null,
+      "en": "勝瀬",
+      "jp": "勝瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "上今泉",
+      "townEn": "Kamiimaizumi",
+      "kana": "カミイマイズミ",
+      "chome": null,
+      "detail": null,
+      "en": "上今泉",
+      "jp": "上今泉",
+      "pattern": "1"
+    },
+    {
+      "town": "河原口",
+      "townEn": "Kawaraguchi",
+      "kana": "カワラグチ",
+      "chome": null,
+      "detail": "河原口・上郷",
+      "en": "河原口・上郷",
+      "jp": "河原口・上郷",
+      "pattern": "3"
+    },
+    {
+      "town": "国分北",
+      "townEn": "Kokubukita",
+      "kana": "コクブキタ",
+      "chome": null,
+      "detail": null,
+      "en": "国分北",
+      "jp": "国分北",
+      "pattern": "2"
+    },
+    {
+      "town": "国分南",
+      "townEn": "Kokubuminami",
+      "kana": "コクブミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "国分南",
+      "jp": "国分南",
+      "pattern": "2"
+    },
+    {
+      "town": "さつき町",
+      "townEn": "Satsukicho",
+      "kana": "サツキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "さつき町",
+      "jp": "さつき町",
+      "pattern": "3"
+    },
+    {
+      "town": "下今泉",
+      "townEn": "Shimoimaizumi",
+      "kana": "シモイマイズミ",
+      "chome": null,
+      "detail": "下今泉・中新田",
+      "en": "下今泉・中新田",
+      "jp": "下今泉・中新田",
+      "pattern": "3"
+    },
+    {
+      "town": "社家",
+      "townEn": "Shake",
+      "kana": "シャケ",
+      "chome": null,
+      "detail": "社家・今里",
+      "en": "社家・今里",
+      "jp": "社家・今里",
+      "pattern": "4"
+    },
+    {
+      "town": "杉久保",
+      "townEn": "Sugikubo",
+      "kana": "スギクボ",
+      "chome": null,
+      "detail": null,
+      "en": "杉久保",
+      "jp": "杉久保",
+      "pattern": "4"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chiyuo",
+      "kana": "チユウオウ",
+      "chome": null,
+      "detail": "中央1丁目",
+      "en": "中央1丁目",
+      "jp": "中央1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chiyuo",
+      "kana": "チユウオウ",
+      "chome": null,
+      "detail": "中央2丁目",
+      "en": "中央2丁目",
+      "jp": "中央2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chiyuo",
+      "kana": "チユウオウ",
+      "chome": null,
+      "detail": "中央3丁目",
+      "en": "中央3丁目",
+      "jp": "中央3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中河内",
+      "townEn": "Nakagochi",
+      "kana": "ナカゴウチ",
+      "chome": null,
+      "detail": null,
+      "en": "中河内",
+      "jp": "中河内",
+      "pattern": "4"
+    },
+    {
+      "town": "中野",
+      "townEn": "Nakano",
+      "kana": "ナカノ",
+      "chome": null,
+      "detail": "中野・上河内",
+      "en": "中野・上河内",
+      "jp": "中野・上河内",
+      "pattern": "4"
+    },
+    {
+      "town": "浜田町",
+      "townEn": "Hamadacho",
+      "kana": "ハマダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "浜田町",
+      "jp": "浜田町",
+      "pattern": "3"
+    },
+    {
+      "town": "東柏ケ谷",
+      "townEn": "Higashikashiwagaya",
+      "kana": "ヒガシカシワガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "東柏ケ谷",
+      "jp": "東柏ケ谷",
+      "pattern": "1"
+    },
+    {
+      "town": "本郷",
+      "townEn": "Hongo",
+      "kana": "ホンゴウ",
+      "chome": null,
+      "detail": "本郷・門沢橋",
+      "en": "本郷・門沢橋",
+      "jp": "本郷・門沢橋",
+      "pattern": "4"
+    },
+    {
+      "town": "望地",
+      "townEn": "Mochi",
+      "kana": "モウチ",
+      "chome": null,
+      "detail": null,
+      "en": "望地",
+      "jp": "望地",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ebina.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

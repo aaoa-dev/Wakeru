@@ -1,0 +1,391 @@
+{
+  "id": "linkdata-4766-02205",
+  "code": "02205",
+  "pref": "02",
+  "jp": "五所川原市",
+  "en": "Goshogawara",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4766i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4766i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「残飯」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「長靴（ゴム製）」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「紙・金属・小型電子機器等リサイクル」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「紙・金属・小型電子機器等リサイクル」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「紙・金属・小型電子機器等リサイクル」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「紙・金属・小型電子機器等リサイクル」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源リサイクル」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶」 under 「資源リサイクル」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「CD」 under 「プラスチック類リサイクル」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「プラスチック類リサイクル」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「燃やせないごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "金木地区O-1コース(嘉瀬・中柏木)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金木地区O-1コース(嘉瀬・中柏木)",
+      "jp": "金木地区O-1コース(嘉瀬・中柏木)",
+      "pattern": "2"
+    },
+    {
+      "town": "金木地区O-2コース(旭ヶ丘団地・喜良市・更生・大東ヶ丘)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金木地区O-2コース(旭ヶ丘団地・喜良市・更生・大東ヶ丘)",
+      "jp": "金木地区O-2コース(旭ヶ丘団地・喜良市・更生・大東ヶ丘)",
+      "pattern": "2"
+    },
+    {
+      "town": "金木地区P-1コース(相内・太田・桂川)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金木地区P-1コース(相内・太田・桂川)",
+      "jp": "金木地区P-1コース(相内・太田・桂川)",
+      "pattern": "4"
+    },
+    {
+      "town": "金木地区P-2コース(磯松・十三・脇元)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金木地区P-2コース(磯松・十三・脇元)",
+      "jp": "金木地区P-2コース(磯松・十三・脇元)",
+      "pattern": "4"
+    },
+    {
+      "town": "五所川原市Aコース(中央一丁目～三丁目・湊市営住宅)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Aコース(中央一丁目～三丁目・湊市営住宅)",
+      "jp": "五所川原市Aコース(中央一丁目～三丁目・湊市営住宅)",
+      "pattern": "1"
+    },
+    {
+      "town": "五所川原市Bコース(漆川字鍋懸の一部・川山・小曲・尻無・下平井町4班・十川町・種井・沼田・福井・若葉一丁目～三丁目・若葉市営県営住宅・若葉第一第二)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Bコース(漆川字鍋懸の一部・川山・小曲・尻無・下平井町4班・十川町・種井・沼田・福井・若葉一丁目～三丁目・若葉市営県営住宅・若葉第一第二)",
+      "jp": "五所川原市Bコース(漆川字鍋懸の一部・川山・小曲・尻無・下平井町4班・十川町・種井・沼田・福井・若葉一丁目～三丁目・若葉市営県営住宅・若葉第一第二)",
+      "pattern": "1"
+    },
+    {
+      "town": "五所川原市Cコース(旭町の一部・幾世森・柏原町・上平井町・さつき町・敷島町・下平井町4班以外・新宮・新宮町・末広町・蘇鉄・長橋字橋元・西若葉・ニュータウン新宮・芭蕉・若葉苑)",
+      "townEn": "Kosunyutaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Cコース(旭町の一部・幾世森・柏原町・上平井町・さつき町・敷島町・下平井町4班以外・新宮・新宮町・末広町・蘇鉄・長橋字橋元・西若葉・ニュータウン新宮・芭蕉・若葉苑)",
+      "jp": "五所川原市Cコース(旭町の一部・幾世森・柏原町・上平井町・さつき町・敷島町・下平井町4班以外・新宮・新宮町・末広町・蘇鉄・長橋字橋元・西若葉・ニュータウン新宮・芭蕉・若葉苑)",
+      "pattern": "1"
+    },
+    {
+      "town": "五所川原市Dコース(旭町・幾島町・岩木町成城ハイツ付近・柏原町・東雲町・末広町バス停向かい・寺町飯詰・成田町・錦町・平和町専照電気横・元町・柳町・)",
+      "townEn": "Kosuhaitsubasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Dコース(旭町・幾島町・岩木町成城ハイツ付近・柏原町・東雲町・末広町バス停向かい・寺町飯詰・成田町・錦町・平和町専照電気横・元町・柳町・)",
+      "jp": "五所川原市Dコース(旭町・幾島町・岩木町成城ハイツ付近・柏原町・東雲町・末広町バス停向かい・寺町飯詰・成田町・錦町・平和町専照電気横・元町・柳町・)",
+      "pattern": "1"
+    },
+    {
+      "town": "五所川原市Eコース(不魚住・菖蒲・中央五丁目～六丁目・蓮沼・日の出町・広田雇用促進住宅・平和町・湊)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Eコース(不魚住・菖蒲・中央五丁目～六丁目・蓮沼・日の出町・広田雇用促進住宅・平和町・湊)",
+      "jp": "五所川原市Eコース(不魚住・菖蒲・中央五丁目～六丁目・蓮沼・日の出町・広田雇用促進住宅・平和町・湊)",
+      "pattern": "2"
+    },
+    {
+      "town": "五所川原市Fコース(青葉町・石岡・東松島・一ツ谷団地、五一中寄り・吹畑・松島町一丁目～八丁目)",
+      "townEn": "Kosutsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Fコース(青葉町・石岡・東松島・一ツ谷団地、五一中寄り・吹畑・松島町一丁目～八丁目)",
+      "jp": "五所川原市Fコース(青葉町・石岡・東松島・一ツ谷団地、五一中寄り・吹畑・松島町一丁目～八丁目)",
+      "pattern": "2"
+    },
+    {
+      "town": "五所川原市Gコース(石岡・姥萢はるにれ町・鎌谷町・鳥森・中央一丁目・中央四丁目・田園町)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Gコース(石岡・姥萢はるにれ町・鎌谷町・鳥森・中央一丁目・中央四丁目・田園町)",
+      "jp": "五所川原市Gコース(石岡・姥萢はるにれ町・鎌谷町・鳥森・中央一丁目・中央四丁目・田園町)",
+      "pattern": "2"
+    },
+    {
+      "town": "五所川原市Hコース(浅井・東町・岩木町・鎌谷町国道339号沿い～防災センター前・川端町・栄町・新町・田町・七ツ館・本町・弥生町・)",
+      "townEn": "Kosusentatsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Hコース(浅井・東町・岩木町・鎌谷町国道339号沿い～防災センター前・川端町・栄町・新町・田町・七ツ館・本町・弥生町・)",
+      "jp": "五所川原市Hコース(浅井・東町・岩木町・鎌谷町国道339号沿い～防災センター前・川端町・栄町・新町・田町・七ツ館・本町・弥生町・)",
+      "pattern": "2"
+    },
+    {
+      "town": "五所川原市Iコース(梅田・高野・俵元・豊成・中泉・羽野木沢・原子・前田野目)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Iコース(梅田・高野・俵元・豊成・中泉・羽野木沢・原子・前田野目)",
+      "jp": "五所川原市Iコース(梅田・高野・俵元・豊成・中泉・羽野木沢・原子・前田野目)",
+      "pattern": "3"
+    },
+    {
+      "town": "五所川原市Jコース(飯詰興隆～朝日・石田坂・神山・杉派立・高瀬・田川・鶴ヶ岡・戸沢・長橋字広野・野里・福岡・福山・松野木・藻川・若山)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Jコース(飯詰興隆～朝日・石田坂・神山・杉派立・高瀬・田川・鶴ヶ岡・戸沢・長橋字広野・野里・福岡・福山・松野木・藻川・若山)",
+      "jp": "五所川原市Jコース(飯詰興隆～朝日・石田坂・神山・杉派立・高瀬・田川・鶴ヶ岡・戸沢・長橋字広野・野里・福岡・福山・松野木・藻川・若山)",
+      "pattern": "3"
+    },
+    {
+      "town": "五所川原市Kコース(旭・新田・沖飯詰・共栄・桜田・長富・中野・毘沙門・桃崎)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Kコース(旭・新田・沖飯詰・共栄・桜田・長富・中野・毘沙門・桃崎)",
+      "jp": "五所川原市Kコース(旭・新田・沖飯詰・共栄・桜田・長富・中野・毘沙門・桃崎)",
+      "pattern": "3"
+    },
+    {
+      "town": "五所川原市Lコース(悪戸・石岡・石畑・一野坪・漆川・金山・唐笠柳・川代田・第２柳沼・太刀打・田中・二本柳・野崎・馬性・広田・吹畑・藤浦団地・前萢・水野尾・虫流・米田)",
+      "townEn": "Kosu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Lコース(悪戸・石岡・石畑・一野坪・漆川・金山・唐笠柳・川代田・第２柳沼・太刀打・田中・二本柳・野崎・馬性・広田・吹畑・藤浦団地・前萢・水野尾・虫流・米田)",
+      "jp": "五所川原市Lコース(悪戸・石岡・石畑・一野坪・漆川・金山・唐笠柳・川代田・第２柳沼・太刀打・田中・二本柳・野崎・馬性・広田・吹畑・藤浦団地・前萢・水野尾・虫流・米田)",
+      "pattern": "3"
+    },
+    {
+      "town": "五所川原市Mコース(稲実・稲実団地・姥萢・第一船橋・七ツ館・猫渕・ひがし光が丘・光が丘・広田・広平・マイタウン船橋・三ツ谷。湊・みなみ広田・虫流・柳沼・米崎)",
+      "townEn": "Kosutsumaitauntsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五所川原市Mコース(稲実・稲実団地・姥萢・第一船橋・七ツ館・猫渕・ひがし光が丘・光が丘・広田・広平・マイタウン船橋・三ツ谷。湊・みなみ広田・虫流・柳沼・米崎)",
+      "jp": "五所川原市Mコース(稲実・稲実団地・姥萢・第一船橋・七ツ館・猫渕・ひがし光が丘・光が丘・広田・広平・マイタウン船橋・三ツ谷。湊・みなみ広田・虫流・柳沼・米崎)",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4766i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

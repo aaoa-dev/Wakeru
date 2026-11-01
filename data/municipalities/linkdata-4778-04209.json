@@ -1,0 +1,833 @@
+{
+  "id": "linkdata-4778-04209",
+  "code": "04209",
+  "pref": "04",
+  "jp": "多賀城市",
+  "en": "Tagajo",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4778i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4778i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶」 under 「資源物」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空きびん」 under 「資源物」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「資源物」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「なべ（金属製）」 under 「資源物」.",
+      "auto": true
+    },
+    "plastic-pack": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「プラスチック製容器包装」 under 「プラスチック製品」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「有害ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                2
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "JR東北本線南側の留ヶ谷",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "JR東北本線南側の留ヶ谷",
+      "jp": "JR東北本線南側の留ヶ谷",
+      "pattern": "3"
+    },
+    {
+      "town": "JR東北本線北側の留ヶ谷",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "JR東北本線北側の留ヶ谷",
+      "jp": "JR東北本線北側の留ヶ谷",
+      "pattern": "2"
+    },
+    {
+      "town": "旭ヶ丘",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭ヶ丘",
+      "jp": "旭ヶ丘",
+      "pattern": "3"
+    },
+    {
+      "town": "隅田",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "隅田",
+      "jp": "隅田",
+      "pattern": "4"
+    },
+    {
+      "town": "向山",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向山",
+      "jp": "向山",
+      "pattern": "3"
+    },
+    {
+      "town": "黒石崎",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "黒石崎",
+      "jp": "黒石崎",
+      "pattern": "4"
+    },
+    {
+      "town": "志引",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志引",
+      "jp": "志引",
+      "pattern": "3"
+    },
+    {
+      "town": "西能ヶ田",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西能ヶ田",
+      "jp": "西能ヶ田",
+      "pattern": "4"
+    },
+    {
+      "town": "蔵王・城南仮設住宅",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蔵王・城南仮設住宅",
+      "jp": "蔵王・城南仮設住宅",
+      "pattern": "2"
+    },
+    {
+      "town": "東能ヶ田",
+      "townEn": "Tagajo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東能ヶ田",
+      "jp": "東能ヶ田",
+      "pattern": "4"
+    },
+    {
+      "town": "市川",
+      "townEn": "Ichikawa",
+      "kana": "イチカワ",
+      "chome": null,
+      "detail": null,
+      "en": "市川",
+      "jp": "市川",
+      "pattern": "2"
+    },
+    {
+      "town": "浮島",
+      "townEn": "Ukishima",
+      "kana": "ウキシマ",
+      "chome": null,
+      "detail": null,
+      "en": "浮島",
+      "jp": "浮島",
+      "pattern": "2"
+    },
+    {
+      "town": "大代",
+      "townEn": "Oshiro",
+      "kana": "オオシロ",
+      "chome": null,
+      "detail": "大代西",
+      "en": "大代西",
+      "jp": "大代西",
+      "pattern": "6"
+    },
+    {
+      "town": "大代",
+      "townEn": "Oshiro",
+      "kana": "オオシロ",
+      "chome": null,
+      "detail": "大代中",
+      "en": "大代中",
+      "jp": "大代中",
+      "pattern": "6"
+    },
+    {
+      "town": "大代",
+      "townEn": "Oshiro",
+      "kana": "オオシロ",
+      "chome": null,
+      "detail": "大代東",
+      "en": "大代東",
+      "jp": "大代東",
+      "pattern": "6"
+    },
+    {
+      "town": "大代",
+      "townEn": "Oshiro",
+      "kana": "オオシロ",
+      "chome": null,
+      "detail": "大代北",
+      "en": "大代北",
+      "jp": "大代北",
+      "pattern": "6"
+    },
+    {
+      "town": "笠神",
+      "townEn": "Kasagami",
+      "kana": "カサガミ",
+      "chome": null,
+      "detail": "笠神西",
+      "en": "笠神西",
+      "jp": "笠神西",
+      "pattern": "6"
+    },
+    {
+      "town": "笠神",
+      "townEn": "Kasagami",
+      "kana": "カサガミ",
+      "chome": null,
+      "detail": "笠神東",
+      "en": "笠神東",
+      "jp": "笠神東",
+      "pattern": "6"
+    },
+    {
+      "town": "下馬",
+      "townEn": "Geba",
+      "kana": "ゲバ",
+      "chome": null,
+      "detail": "下馬西",
+      "en": "下馬西",
+      "jp": "下馬西",
+      "pattern": "4"
+    },
+    {
+      "town": "下馬",
+      "townEn": "Geba",
+      "kana": "ゲバ",
+      "chome": null,
+      "detail": "下馬東",
+      "en": "下馬東",
+      "jp": "下馬東",
+      "pattern": "4"
+    },
+    {
+      "town": "下馬",
+      "townEn": "Geba",
+      "kana": "ゲバ",
+      "chome": null,
+      "detail": "下馬南",
+      "en": "下馬南",
+      "jp": "下馬南",
+      "pattern": "4"
+    },
+    {
+      "town": "下馬",
+      "townEn": "Geba",
+      "kana": "ゲバ",
+      "chome": null,
+      "detail": "下馬北",
+      "en": "下馬北",
+      "jp": "下馬北",
+      "pattern": "4"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Sakuragi",
+      "kana": "サクラギ",
+      "chome": null,
+      "detail": "桜木中",
+      "en": "桜木中",
+      "jp": "桜木中",
+      "pattern": "5"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Sakuragi",
+      "kana": "サクラギ",
+      "chome": null,
+      "detail": "桜木東",
+      "en": "桜木東",
+      "jp": "桜木東",
+      "pattern": "5"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Sakuragi",
+      "kana": "サクラギ",
+      "chome": null,
+      "detail": "桜木南",
+      "en": "桜木南",
+      "jp": "桜木南",
+      "pattern": "5"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Sakuragi",
+      "kana": "サクラギ",
+      "chome": null,
+      "detail": "桜木北",
+      "en": "桜木北",
+      "jp": "桜木北",
+      "pattern": "5"
+    },
+    {
+      "town": "山王",
+      "townEn": "Sanno",
+      "kana": "サンノウ",
+      "chome": null,
+      "detail": null,
+      "en": "山王",
+      "jp": "山王",
+      "pattern": "2"
+    },
+    {
+      "town": "城南",
+      "townEn": "Jonan",
+      "kana": "ジョウナン",
+      "chome": null,
+      "detail": null,
+      "en": "城南",
+      "jp": "城南",
+      "pattern": "2"
+    },
+    {
+      "town": "高崎",
+      "townEn": "Takasaki",
+      "kana": "タカサキ",
+      "chome": null,
+      "detail": null,
+      "en": "高崎",
+      "jp": "高崎",
+      "pattern": "2"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋仮設住宅",
+      "en": "高橋仮設住宅",
+      "jp": "高橋仮設住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋東",
+      "en": "高橋東",
+      "jp": "高橋東",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋東一区",
+      "en": "高橋東一区",
+      "jp": "高橋東一区",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋東二区",
+      "en": "高橋東二区",
+      "jp": "高橋東二区",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋北",
+      "en": "高橋北",
+      "jp": "高橋北",
+      "pattern": "1"
+    },
+    {
+      "town": "鶴ケ谷",
+      "townEn": "Tsurugaya",
+      "kana": "ツルガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "鶴ケ谷",
+      "jp": "鶴ケ谷",
+      "pattern": "4"
+    },
+    {
+      "town": "鶴ケ谷",
+      "townEn": "Tsurugaya",
+      "kana": "ツルガヤ",
+      "chome": null,
+      "detail": "鶴ケ谷仮設住宅",
+      "en": "鶴ケ谷仮設住宅",
+      "jp": "鶴ケ谷仮設住宅",
+      "pattern": "4"
+    },
+    {
+      "town": "伝上山",
+      "townEn": "Denjoyama",
+      "kana": "デンジョウヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "伝上山",
+      "jp": "伝上山",
+      "pattern": "4"
+    },
+    {
+      "town": "南宮",
+      "townEn": "Nangu",
+      "kana": "ナングウ",
+      "chome": null,
+      "detail": null,
+      "en": "南宮",
+      "jp": "南宮",
+      "pattern": "1"
+    },
+    {
+      "town": "新田",
+      "townEn": "Niida",
+      "kana": "ニイダ",
+      "chome": null,
+      "detail": "新田一区",
+      "en": "新田一区",
+      "jp": "新田一区",
+      "pattern": "1"
+    },
+    {
+      "town": "新田",
+      "townEn": "Niida",
+      "kana": "ニイダ",
+      "chome": null,
+      "detail": "新田三区",
+      "en": "新田三区",
+      "jp": "新田三区",
+      "pattern": "1"
+    },
+    {
+      "town": "新田",
+      "townEn": "Niida",
+      "kana": "ニイダ",
+      "chome": null,
+      "detail": "新田中",
+      "en": "新田中",
+      "jp": "新田中",
+      "pattern": "3"
+    },
+    {
+      "town": "新田",
+      "townEn": "Niida",
+      "kana": "ニイダ",
+      "chome": null,
+      "detail": "新田二区",
+      "en": "新田二区",
+      "jp": "新田二区",
+      "pattern": "1"
+    },
+    {
+      "town": "東田中",
+      "townEn": "Higashitanaka",
+      "kana": "ヒガシタナカ",
+      "chome": null,
+      "detail": null,
+      "en": "東田中",
+      "jp": "東田中",
+      "pattern": "3"
+    },
+    {
+      "town": "東田中",
+      "townEn": "Higashitanaka",
+      "kana": "ヒガシタナカ",
+      "chome": null,
+      "detail": "東田中南",
+      "en": "東田中南",
+      "jp": "東田中南",
+      "pattern": "3"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "丸山",
+      "jp": "丸山",
+      "pattern": "4"
+    },
+    {
+      "town": "丸山",
+      "townEn": "Maruyama",
+      "kana": "マルヤマ",
+      "chome": null,
+      "detail": "丸山二丁目",
+      "en": "丸山二丁目",
+      "jp": "丸山二丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yawata",
+      "kana": "ヤワタ",
+      "chome": null,
+      "detail": "八幡沖",
+      "en": "八幡沖",
+      "jp": "八幡沖",
+      "pattern": "5"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yawata",
+      "kana": "ヤワタ",
+      "chome": null,
+      "detail": "八幡下一",
+      "en": "八幡下一",
+      "jp": "八幡下一",
+      "pattern": "5"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yawata",
+      "kana": "ヤワタ",
+      "chome": null,
+      "detail": "八幡下二",
+      "en": "八幡下二",
+      "jp": "八幡下二",
+      "pattern": "5"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yawata",
+      "kana": "ヤワタ",
+      "chome": null,
+      "detail": "八幡上一",
+      "en": "八幡上一",
+      "jp": "八幡上一",
+      "pattern": "5"
+    },
+    {
+      "town": "八幡",
+      "townEn": "Yawata",
+      "kana": "ヤワタ",
+      "chome": null,
+      "detail": "八幡上二",
+      "en": "八幡上二",
+      "jp": "八幡上二",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4778i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -8,6 +8,7 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const kataToHira = s => s.replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60));
 const norm = s => kataToHira((s || "").toLowerCase().normalize("NFKC"));
 const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+const normPref = c => String(c ?? "").padStart(2, "0");
 const K = 1000, COS = Math.cos(36 * Math.PI / 180);
 const project = (lon, lat) => [(lon - 122) * COS * K, (46 - lat) * K];
 const reducedMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -55,12 +56,75 @@ function setPin(lon, lat){
 }
 const mark = (sel, attr, value) => document.querySelectorAll(sel).forEach(p => p.classList.toggle("active", p.dataset[attr] === value));
 
+let mapTipKey = "", obState = null;
+
+function mapTipPayload(target){
+  const S = obState; if(!S) return null;
+  const p = target.closest?.("path");
+  if(!p || p.closest("#obPin")) return null;
+  const step = S.step;
+
+  if(step === "japan" && p.dataset.pref && p.closest("#obPrefs")){
+    const pref = JAPAN.prefs.find(x => x.code === p.dataset.pref);
+    return pref ? {en: pref.en, jp: pref.jp} : null;
+  }
+  if(step === "pref"){
+    if(p.dataset.code && p.closest("#obMunis")){
+      const m = S.munisList?.find(x => x.code === p.dataset.code);
+      return m ? {en: m.en, jp: m.jp} : null;
+    }
+    if(p.dataset.pref && p.closest("#obPrefs") && p.classList.contains("context")){
+      const pref = JAPAN.prefs.find(x => x.code === p.dataset.pref);
+      return pref ? {en: pref.en, jp: pref.jp} : null;
+    }
+  }
+  if((step === "ward" || step === "town" || step === "area") && p.dataset.code && p.closest("#obMunis")){
+    const m = S.munisList?.find(x => x.code === p.dataset.code);
+    if(!m) return null;
+    if(S.muni && m.code === S.muni.code && S.ward && (step === "town" || step === "area"))
+      return {en: S.ward.en, jp: S.ward.jp};
+    return {en: m.en, jp: m.jp};
+  }
+  if(p.dataset.tipEn) return {en: p.dataset.tipEn, jp: p.dataset.tipJp};
+  return null;
+}
+
+function positionMapTip(clientX, clientY){
+  const tip = $("#obMapTip"), map = $(".ob-map"), rect = map.getBoundingClientRect();
+  const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  const pad = 0.5 * rem, offset = 0.75 * rem;
+  let x = clientX - rect.left + offset, y = clientY - rect.top + offset;
+  x = Math.max(pad, Math.min(x, rect.width - tip.offsetWidth - pad));
+  y = Math.max(pad, Math.min(y, rect.height - tip.offsetHeight - pad));
+  tip.style.transform = `translate(${x / rem}rem,${y / rem}rem)`;
+}
+
+function showMapTip(payload, clientX, clientY){
+  const tip = $("#obMapTip");
+  if(!payload){ tip.hidden = true; mapTipKey = ""; return }
+  const key = `${payload.en}\0${payload.jp}`;
+  if(key !== mapTipKey){
+    mapTipKey = key;
+    tip.innerHTML = `<b>${esc(payload.en)}</b><span lang="ja">${esc(payload.jp)}</span>`;
+  }
+  tip.hidden = false;
+  positionMapTip(clientX, clientY);
+}
+function hideMapTip(){ mapTipKey = ""; $("#obMapTip").hidden = true }
+
 /* ---------- flow ---------- */
 export function runOnboarding({cities, loadCity, describe, current}){
   const covered = new Map(cities.map(c => [c.code, c]));
-  const coveredPrefs = new Set(cities.map(c => c.pref));
-  const S = {step:"japan"};
+  const coveredPrefs = new Set(cities.map(c => normPref(c.pref)));
+  const S = {step:"japan"}; obState = S;
   let finish;
+
+  const paintPrefCoverage = () => {
+    document.querySelectorAll("#obPrefs path").forEach(p => {
+      p.classList.toggle("on", coveredPrefs.has(normPref(p.dataset.pref)));
+      p.classList.toggle("off", !coveredPrefs.has(normPref(p.dataset.pref)));
+    });
+  };
 
   const panel = (title, lede, body) => {
     $("#obTitle").textContent = title;
@@ -78,11 +142,12 @@ export function runOnboarding({cities, loadCity, describe, current}){
 
   /* Japan */
   async function showJapan(){
-    S.step = "japan"; S.pref = S.muni = null;
+    S.step = "japan"; S.pref = S.muni = null; S.munisList = null;
     $("#obMunis").innerHTML = ""; $("#obPin").innerHTML = "";
     document.querySelectorAll("#obPrefs path").forEach(p => p.classList.remove("active", "context"));
-    const list = JAPAN.prefs.filter(p => coveredPrefs.has(p.code))
-      .map(p => option(`data-pref="${p.code}"`, p.en, p.jp, plural(cities.filter(c => c.pref === p.code).length, "city", "cities"))).join("");
+    paintPrefCoverage();
+    const list = JAPAN.prefs.filter(p => coveredPrefs.has(normPref(p.code)))
+      .map(p => option(`data-pref="${p.code}"`, p.en, p.jp, plural(cities.filter(c => normPref(c.pref) === normPref(p.code)).length, "city", "cities"))).join("");
     panel("Where do you live?", "Wakeru shows your pickup days and sorting rules for your exact area. It's saved on this device only.",
       `<button type="button" class="ob-locate" data-locate><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>Locate me</button>
        <p class="fine">Or tap your prefecture on the map. Shaded areas are covered so far.</p><div class="ob-list">${list}</div>`);
@@ -93,9 +158,9 @@ export function runOnboarding({cities, loadCity, describe, current}){
   async function showPref(code, {zoom = true} = {}){
     const pref = JAPAN.prefs.find(p => p.code === code);
     const {munis} = await mapFile(code);
-    S.step = "pref"; S.pref = pref; S.muni = null;
+    S.step = "pref"; S.pref = pref; S.muni = null; S.munisList = munis;
     document.querySelectorAll("#obPrefs path").forEach(p => { p.classList.toggle("context", p.dataset.pref !== code); p.classList.remove("active") });
-    $("#obMunis").innerHTML = munis.map(m => `<path d="${m.d}" data-code="${m.code}" class="${covered.has(m.code) ? "on" : "off"}"><title>${esc(m.en)} ${esc(m.jp)}</title></path>`).join("");
+    $("#obMunis").innerHTML = munis.map(m => `<path d="${m.d}" data-code="${m.code}" data-tip-en="${esc(m.en)}" data-tip-jp="${esc(m.jp)}" class="${covered.has(m.code) ? "on" : "off"}"></path>`).join("");
     const render = q => {
       const nq = norm(q).trim(), hit = m => !nq || norm(m.en + m.jp).includes(nq);
       const on = munis.filter(m => covered.has(m.code) && hit(m)), off = munis.filter(m => !covered.has(m.code) && hit(m));
@@ -220,6 +285,12 @@ export function runOnboarding({cities, loadCity, describe, current}){
     if(p.dataset.pref && (S.step === "japan" || p.classList.contains("context"))) return showPref(p.dataset.pref).catch(fail);
     if(p.dataset.code) chooseMuni(p.dataset.code).catch(fail);
   };
+  const onMapOver = e => showMapTip(mapTipPayload(e.target), e.clientX, e.clientY);
+  const onMapMove = e => {
+    const payload = mapTipPayload(e.target);
+    if(payload) showMapTip(payload, e.clientX, e.clientY); else hideMapTip();
+  };
+  const onMapLeave = () => hideMapTip();
   const onPanel = e => {
     const b = e.target.closest("button"); if(!b) return;
     if(b.hasAttribute("data-locate")) return locate();
@@ -235,9 +306,13 @@ export function runOnboarding({cities, loadCity, describe, current}){
   const onResize = () => { if(view) zoomTo(S.muni?.box ?? S.pref?.box ?? JAPAN.view, 0) };
   const fail = err => message(`Something went wrong (${err.message}). Please try again.`);
   function close(result){
-    $("#obMap").removeEventListener("click", onMap); $("#obBody").removeEventListener("click", onPanel);
+    $("#obMap").removeEventListener("click", onMap);
+    $("#obMap").removeEventListener("pointerover", onMapOver); $("#obMap").removeEventListener("pointermove", onMapMove);
+    $("#obMap").removeEventListener("pointerleave", onMapLeave);
+    $("#obBody").removeEventListener("click", onPanel);
     $("#obBack").removeEventListener("click", onBack); $("#obClose").removeEventListener("click", onClose);
     removeEventListener("resize", onResize);
+    hideMapTip(); obState = null;
     $("#onboard").hidden = true; document.body.classList.remove("ob-open");
     finish(result);
   }
@@ -248,8 +323,12 @@ export function runOnboarding({cities, loadCity, describe, current}){
       JAPAN ??= await fetch("data/map/japan.json").then(r => r.json());
       $("#onboard").hidden = false; document.body.classList.add("ob-open");
       $("#obClose").hidden = !current;
-      $("#obPrefs").innerHTML = JAPAN.prefs.map(p => `<path d="${p.d}" data-pref="${p.code}" class="${coveredPrefs.has(p.code) ? "on" : "off"}"><title>${esc(p.en)} ${esc(p.jp)}</title></path>`).join("");
-      $("#obMap").addEventListener("click", onMap); $("#obBody").addEventListener("click", onPanel);
+      $("#obPrefs").innerHTML = JAPAN.prefs.map(p => `<path d="${p.d}" data-pref="${p.code}" data-tip-en="${esc(p.en)}" data-tip-jp="${esc(p.jp)}" class="${coveredPrefs.has(normPref(p.code)) ? "on" : "off"}"></path>`).join("");
+      paintPrefCoverage();
+      $("#obMap").addEventListener("click", onMap);
+      $("#obMap").addEventListener("pointerover", onMapOver); $("#obMap").addEventListener("pointermove", onMapMove);
+      $("#obMap").addEventListener("pointerleave", onMapLeave);
+      $("#obBody").addEventListener("click", onPanel);
       $("#obBack").addEventListener("click", onBack); $("#obClose").addEventListener("click", onClose);
       addEventListener("resize", onResize);
       view = null; await zoomTo(JAPAN.view, 0);

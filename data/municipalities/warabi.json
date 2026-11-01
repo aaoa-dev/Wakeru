@@ -1,0 +1,205 @@
+{
+  "id": "warabi",
+  "code": "11223",
+  "pref": "11",
+  "jp": "蕨市",
+  "en": "Warabi",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.warabi.saitama.jp/kurashi/gomi/shushubi/1001322.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "もやすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "もえないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules derived from the city's district × weekday × bin lists. Dry-cell batteries and oversized waste are not included.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": [
+          1
+        ],
+        "plastic": [
+          1
+        ],
+        "paper": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "non_burnable": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": [
+          2
+        ],
+        "plastic": [
+          2
+        ],
+        "paper": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ],
+        "non_burnable": [
+          5
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "non_burnable": [
+          2
+        ],
+        "res": [
+          5
+        ],
+        "plastic": [
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": [
+          3
+        ],
+        "plastic": [
+          3
+        ],
+        "paper": [
+          6
+        ],
+        "pet_bottle": [
+          6
+        ],
+        "non_burnable": [
+          6
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "中央全域・南町4丁目（南町1丁目33～35番含む）",
+      "townEn": "中央全域・南町4丁目（南町1丁目33～35番含む）",
+      "kana": "中央全域・南町4丁目（南町1丁目33～35番含む）",
+      "chome": null,
+      "detail": null,
+      "en": "中央全域・南町4丁目（南町1丁目33～35番含む）",
+      "jp": "中央全域・南町4丁目（南町1丁目33～35番含む）",
+      "pattern": "1"
+    },
+    {
+      "town": "南町1～3丁目（南町1丁目33～35番除く）",
+      "townEn": "南町1～3丁目（南町1丁目33～35番除く）",
+      "kana": "南町1～3丁目（南町1丁目33～35番除く）",
+      "chome": null,
+      "detail": null,
+      "en": "南町1～3丁目（南町1丁目33～35番除く）",
+      "jp": "南町1～3丁目（南町1丁目33～35番除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "塚越全域",
+      "townEn": "塚越全域",
+      "kana": "塚越全域",
+      "chome": null,
+      "detail": null,
+      "en": "塚越全域",
+      "jp": "塚越全域",
+      "pattern": "3"
+    },
+    {
+      "town": "錦町全域・北町全域",
+      "townEn": "錦町全域・北町全域",
+      "kana": "錦町全域・北町全域",
+      "chome": null,
+      "detail": null,
+      "en": "錦町全域・北町全域",
+      "jp": "錦町全域・北町全域",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Warabi City garbage collection day page",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/shushubi/1001322.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

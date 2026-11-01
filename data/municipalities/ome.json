@@ -69,7 +69,63 @@
     }
   },
   "plasticTest": null,
-  "sorting": {},
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割りばし」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「雑誌・雑紙類」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「空きビン（飲料・食料・薬用・化粧用）」 under 「ビン」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ（金属製・プラスチック製）」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「水銀体温計」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油（動物性油）」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
   "calendar": {
     "noCollection": {
       "weekdays": [],
@@ -3695,5 +3751,5 @@
       "path": "municipalities/tokyo/ome"
     }
   },
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }

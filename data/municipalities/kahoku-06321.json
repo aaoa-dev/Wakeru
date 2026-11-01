@@ -1,0 +1,713 @@
+{
+  "id": "kahoku-06321",
+  "code": "06321",
+  "pref": "06",
+  "jp": "河北町",
+  "en": "Kahoku",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kahoku.5374.jp/data/area_days.csv",
+    "http://kahoku.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "oversized": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A宇気",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A宇気",
+      "jp": "A宇気",
+      "pattern": "1"
+    },
+    {
+      "town": "A宇野気",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A宇野気",
+      "jp": "A宇野気",
+      "pattern": "1"
+    },
+    {
+      "town": "A遠塚",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A遠塚",
+      "jp": "A遠塚",
+      "pattern": "1"
+    },
+    {
+      "town": "A向野",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A向野",
+      "jp": "A向野",
+      "pattern": "1"
+    },
+    {
+      "town": "A七窪",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A七窪",
+      "jp": "A七窪",
+      "pattern": "1"
+    },
+    {
+      "town": "A松浜",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A松浜",
+      "jp": "A松浜",
+      "pattern": "1"
+    },
+    {
+      "town": "A森",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A森",
+      "jp": "A森",
+      "pattern": "1"
+    },
+    {
+      "town": "A木津",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A木津",
+      "jp": "A木津",
+      "pattern": "1"
+    },
+    {
+      "town": "B旭町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B旭町",
+      "jp": "B旭町",
+      "pattern": "2"
+    },
+    {
+      "town": "B下伊丹町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B下伊丹町",
+      "jp": "B下伊丹町",
+      "pattern": "2"
+    },
+    {
+      "town": "B学園台",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B学園台",
+      "jp": "B学園台",
+      "pattern": "2"
+    },
+    {
+      "town": "B岸川町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B岸川町",
+      "jp": "B岸川町",
+      "pattern": "2"
+    },
+    {
+      "town": "B元町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B元町",
+      "jp": "B元町",
+      "pattern": "2"
+    },
+    {
+      "town": "B古宮町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B古宮町",
+      "jp": "B古宮町",
+      "pattern": "2"
+    },
+    {
+      "town": "B桜井町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B桜井町",
+      "jp": "B桜井町",
+      "pattern": "2"
+    },
+    {
+      "town": "B上伊丹町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B上伊丹町",
+      "jp": "B上伊丹町",
+      "pattern": "2"
+    },
+    {
+      "town": "B上北町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B上北町",
+      "jp": "B上北町",
+      "pattern": "2"
+    },
+    {
+      "town": "B中町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B中町",
+      "jp": "B中町",
+      "pattern": "2"
+    },
+    {
+      "town": "B東町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B東町",
+      "jp": "B東町",
+      "pattern": "2"
+    },
+    {
+      "town": "B南新町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B南新町",
+      "jp": "B南新町",
+      "pattern": "2"
+    },
+    {
+      "town": "B南町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B南町",
+      "jp": "B南町",
+      "pattern": "2"
+    },
+    {
+      "town": "B北新町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B北新町",
+      "jp": "B北新町",
+      "pattern": "2"
+    },
+    {
+      "town": "B北中町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B北中町",
+      "jp": "B北中町",
+      "pattern": "2"
+    },
+    {
+      "town": "B流川町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B流川町",
+      "jp": "B流川町",
+      "pattern": "2"
+    },
+    {
+      "town": "B六軒町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B六軒町",
+      "jp": "B六軒町",
+      "pattern": "2"
+    },
+    {
+      "town": "C外日角",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C外日角",
+      "jp": "C外日角",
+      "pattern": "3"
+    },
+    {
+      "town": "C秋浜",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C秋浜",
+      "jp": "C秋浜",
+      "pattern": "3"
+    },
+    {
+      "town": "C大崎",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C大崎",
+      "jp": "C大崎",
+      "pattern": "3"
+    },
+    {
+      "town": "C内日角",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C内日角",
+      "jp": "C内日角",
+      "pattern": "3"
+    },
+    {
+      "town": "C浜北",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C浜北",
+      "jp": "C浜北",
+      "pattern": "3"
+    },
+    {
+      "town": "D白尾",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D白尾",
+      "jp": "D白尾",
+      "pattern": "4"
+    },
+    {
+      "town": "E横山",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E横山",
+      "jp": "E横山",
+      "pattern": "3"
+    },
+    {
+      "town": "E下山田",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E下山田",
+      "jp": "E下山田",
+      "pattern": "3"
+    },
+    {
+      "town": "E笠島",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E笠島",
+      "jp": "E笠島",
+      "pattern": "3"
+    },
+    {
+      "town": "E気屋",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E気屋",
+      "jp": "E気屋",
+      "pattern": "3"
+    },
+    {
+      "town": "E指江",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E指江",
+      "jp": "E指江",
+      "pattern": "3"
+    },
+    {
+      "town": "E狩鹿野",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E狩鹿野",
+      "jp": "E狩鹿野",
+      "pattern": "3"
+    },
+    {
+      "town": "E上山田",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E上山田",
+      "jp": "E上山田",
+      "pattern": "3"
+    },
+    {
+      "town": "E上田名",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E上田名",
+      "jp": "E上田名",
+      "pattern": "3"
+    },
+    {
+      "town": "E多田",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E多田",
+      "jp": "E多田",
+      "pattern": "3"
+    },
+    {
+      "town": "E谷",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E谷",
+      "jp": "E谷",
+      "pattern": "3"
+    },
+    {
+      "town": "E鉢伏",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E鉢伏",
+      "jp": "E鉢伏",
+      "pattern": "3"
+    },
+    {
+      "town": "E余地",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E余地",
+      "jp": "E余地",
+      "pattern": "3"
+    },
+    {
+      "town": "F夏栗",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F夏栗",
+      "jp": "F夏栗",
+      "pattern": "3"
+    },
+    {
+      "town": "F元女",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F元女",
+      "jp": "F元女",
+      "pattern": "3"
+    },
+    {
+      "town": "F黒川",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F黒川",
+      "jp": "F黒川",
+      "pattern": "3"
+    },
+    {
+      "town": "F若緑",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F若緑",
+      "jp": "F若緑",
+      "pattern": "3"
+    },
+    {
+      "town": "F瀬戸町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F瀬戸町",
+      "jp": "F瀬戸町",
+      "pattern": "3"
+    },
+    {
+      "town": "F中沼",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F中沼",
+      "jp": "F中沼",
+      "pattern": "3"
+    },
+    {
+      "town": "F長柄町",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F長柄町",
+      "jp": "F長柄町",
+      "pattern": "3"
+    },
+    {
+      "town": "F内高松",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F内高松",
+      "jp": "F内高松",
+      "pattern": "3"
+    },
+    {
+      "town": "F二ッ屋",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F二ッ屋",
+      "jp": "F二ッ屋",
+      "pattern": "3"
+    },
+    {
+      "town": "F八野",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F八野",
+      "jp": "F八野",
+      "pattern": "3"
+    },
+    {
+      "town": "F箕打",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F箕打",
+      "jp": "F箕打",
+      "pattern": "3"
+    },
+    {
+      "town": "F野寺",
+      "townEn": "Kahoku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F野寺",
+      "jp": "F野寺",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kahoku.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

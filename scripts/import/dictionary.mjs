@@ -1,9 +1,13 @@
 /* A ward's official sorting dictionary (open data CSV) → {categories:[{label, bins}], items:[[name, category, note, keywords]]} */
+import XLSX from "xlsx";
 import { decode, csvObjects } from "./lib.mjs";
 
 const NAME = ["ゴミの品目", "ごみの品目", "品名", "ごみ名"], CATEGORY = ["分別区分", "種別"];
 const NOTES = ["注意点", "備考", "説明"], KEYWORDS = ["インデックス", "追加検索キーワード"];
-const pick = (row, keys) => keys.map(k => row[k]).find(v => v !== undefined);
+const pick = (row, keys) => keys.map(key => {
+  const suffixes = [`_${key}`, `_${key.replace(/^[ゴご]ミの/, "")}`];
+  return row[key] ?? Object.entries(row).find(([name]) => suffixes.some(suffix => name.endsWith(suffix)))?.[1];
+}).find(v => v !== undefined);
 export const clean = s => (s ?? "").replace(/\r/g, "").replace(/[ \t　]+/g, " ").replace(/\n{2,}/g, "\n").trim();
 
 /* keyword → candidate bin ids, first existing one wins. Curated wards use burn/non/res/pla/…, japan-gomi-data bins use its vocabulary */
@@ -55,8 +59,12 @@ export function binsFor(label, bins, {splitDot = false} = {}){
 }
 
 export async function importDictionary(rs, get){
-  const {url, encoding, overrides = []} = rs.dictionary;
-  const rows = csvObjects(decode(await get(url), encoding));
+  const {url, encoding, overrides = []} = rs.dictionary, data = await get(url);
+  let rows;
+  if(/\.xlsx?($|\?)/i.test(url)){
+    const workbook = XLSX.read(data), sheet = workbook.Sheets[workbook.SheetNames[0]];
+    rows = XLSX.utils.sheet_to_json(sheet, {defval:"", raw:false});
+  } else rows = csvObjects(decode(data, encoding));
   const categories = [], catIndex = new Map(), unmapped = new Set();
   const items = rows.map(row => {
     const name = clean(pick(row, NAME));

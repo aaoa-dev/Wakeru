@@ -1,0 +1,9448 @@
+{
+  "id": "shizuoka",
+  "code": "22100",
+  "pref": "22",
+  "jp": "静岡市",
+  "en": "Shizuoka",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.shizuoka.lg.jp/kurashi/gomi/",
+    "https://www.city.shizuoka.lg.jp/documents/11333/sjis_shushubi260313.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "不燃・粗大",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Bottles",
+      "kind": "res"
+    },
+    "plastic": {
+      "label": "プラ",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": []
+    },
+    "note": "Weekday rules from Shizuoka City open-data CSV.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "8": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "9": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "10": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "11": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "12": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "13": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "14": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "15": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "16": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "17": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "18": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "19": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "20": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "21": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "22": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "23": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "24": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "25": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "26": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "27": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "28": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "29": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "30": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "31": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "32": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "33": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "34": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "35": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "36": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "37": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "38": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "39": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "40": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "41": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "42": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "43": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "44": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "45": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "46": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "47": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "48": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "49": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "50": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "51": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "52": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "53": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "54": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "55": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "56": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "57": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "58": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "59": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "60": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "61": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "62": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "63": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "64": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "65": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "66": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "67": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "68": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "69": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "70": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "71": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "72": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "73": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "74": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "75": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "76": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "77": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "78": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "79": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "80": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "81": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "82": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "83": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "84": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "85": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "86": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "87": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "88": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "89": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "90": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "91": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "92": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "93": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "94": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "95": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "96": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "97": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "98": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "99": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "100": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "101": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "102": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "103": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "104": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "105": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "106": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "107": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "108": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "109": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "110": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "111": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "112": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "113": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "114": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "115": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "116": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "117": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "118": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "119": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "120": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "121": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "122": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "123": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "124": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "125": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "126": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "127": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "128": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "129": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "130": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "131": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "132": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "133": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "134": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "135": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "136": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "137": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "138": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "139": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "140": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "141": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "142": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "143": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "144": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "145": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "146": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "147": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "148": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "149": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "相生町",
+      "townEn": "Aioicho",
+      "kana": "アイオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区相生町",
+      "jp": "葵区相生町",
+      "pattern": "1"
+    },
+    {
+      "town": "葵町",
+      "townEn": "Aoicho",
+      "kana": "アオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区葵町",
+      "jp": "葵区葵町",
+      "pattern": "2"
+    },
+    {
+      "town": "赤松",
+      "townEn": "Akamatsu",
+      "kana": "アカマツ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区赤松",
+      "jp": "葵区赤松",
+      "pattern": "3"
+    },
+    {
+      "town": "秋山町",
+      "townEn": "Akiyamacho",
+      "kana": "アキヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区秋山町",
+      "jp": "葵区秋山町",
+      "pattern": "4"
+    },
+    {
+      "town": "上土1丁目（古庄自治会を除く）",
+      "townEn": "上土1丁目（古庄自治会を除く）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上土1丁目（古庄自治会を除く）",
+      "jp": "葵区上土1丁目（古庄自治会を除く）",
+      "pattern": "5"
+    },
+    {
+      "town": "上土1丁目（古庄自治会）",
+      "townEn": "上土1丁目（古庄自治会）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上土1丁目（古庄自治会）",
+      "jp": "葵区上土1丁目（古庄自治会）",
+      "pattern": "6"
+    },
+    {
+      "town": "上土2丁目（南沼上西部自治会を除く）",
+      "townEn": "上土2丁目（南沼上西部自治会を除く）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上土2丁目（南沼上西部自治会を除く）",
+      "jp": "葵区上土2丁目（南沼上西部自治会を除く）",
+      "pattern": "7"
+    },
+    {
+      "town": "上土2丁目（南沼上西部自治会）",
+      "townEn": "上土2丁目（南沼上西部自治会）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上土2丁目（南沼上西部自治会）",
+      "jp": "葵区上土2丁目（南沼上西部自治会）",
+      "pattern": "8"
+    },
+    {
+      "town": "あさはた1～2丁目",
+      "townEn": "あさはた1～2丁目",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区あさはた1～2丁目",
+      "jp": "葵区あさはた1～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "足久保奥組、足久保口組",
+      "townEn": "足久保奥組、足久保口組",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区足久保奥組、足久保口組",
+      "jp": "葵区足久保奥組、足久保口組",
+      "pattern": "9"
+    },
+    {
+      "town": "東町",
+      "townEn": "Azumacho",
+      "kana": "アズマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東町",
+      "jp": "葵区東町",
+      "pattern": "10"
+    },
+    {
+      "town": "安倍口新田",
+      "townEn": "Abeguchi Shinden",
+      "kana": "アベグチシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安倍口新田",
+      "jp": "葵区安倍口新田",
+      "pattern": "11"
+    },
+    {
+      "town": "安倍口団地",
+      "townEn": "Abeguchi Danchi",
+      "kana": "アベグチダンチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安倍口団地",
+      "jp": "葵区安倍口団地",
+      "pattern": "12"
+    },
+    {
+      "town": "安倍町",
+      "townEn": "Abecho",
+      "kana": "アベチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安倍町",
+      "jp": "葵区安倍町",
+      "pattern": "2"
+    },
+    {
+      "town": "有永",
+      "townEn": "Arinaga",
+      "kana": "アリナガ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区有永",
+      "jp": "葵区有永",
+      "pattern": "3"
+    },
+    {
+      "town": "安西1丁目",
+      "townEn": "安西1丁目",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安西1丁目",
+      "jp": "葵区安西1丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "安西2～4丁目",
+      "townEn": "安西2～4丁目",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安西2～4丁目",
+      "jp": "葵区安西2～4丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "安西5丁目",
+      "townEn": "安西5丁目",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安西5丁目",
+      "jp": "葵区安西5丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "安東1～2丁目",
+      "townEn": "安東1～2丁目",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安東1～2丁目",
+      "jp": "葵区安東1～2丁目",
+      "pattern": "16"
+    },
+    {
+      "town": "安東3丁目（大岩2丁目町内会を除く）",
+      "townEn": "安東3丁目（大岩2丁目町内会を除く）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安東3丁目（大岩2丁目町内会を除く）",
+      "jp": "葵区安東3丁目（大岩2丁目町内会を除く）",
+      "pattern": "17"
+    },
+    {
+      "town": "安東3丁目（大岩2丁目町内会）",
+      "townEn": "安東3丁目（大岩2丁目町内会）",
+      "kana": "あ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安東3丁目（大岩2丁目町内会）",
+      "jp": "葵区安東3丁目（大岩2丁目町内会）",
+      "pattern": "18"
+    },
+    {
+      "town": "安東柳町",
+      "townEn": "Andoyanagicho",
+      "kana": "アンドウヤナギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区安東柳町",
+      "jp": "葵区安東柳町",
+      "pattern": "16"
+    },
+    {
+      "town": "池ヶ谷",
+      "townEn": "Ikegaya",
+      "kana": "イケガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区池ヶ谷",
+      "jp": "葵区池ヶ谷",
+      "pattern": "19"
+    },
+    {
+      "town": "池ヶ谷東",
+      "townEn": "Ikegayahigashi",
+      "kana": "イケガヤヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区池ヶ谷東",
+      "jp": "葵区池ヶ谷東",
+      "pattern": "20"
+    },
+    {
+      "town": "一番町",
+      "townEn": "Ichibancho",
+      "kana": "イチバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区一番町",
+      "jp": "葵区一番町",
+      "pattern": "21"
+    },
+    {
+      "town": "井宮町",
+      "townEn": "Inomiyacho",
+      "kana": "イノミヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区井宮町",
+      "jp": "葵区井宮町",
+      "pattern": "22"
+    },
+    {
+      "town": "伊呂波町",
+      "townEn": "Irohacho",
+      "kana": "イロハチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区伊呂波町",
+      "jp": "葵区伊呂波町",
+      "pattern": "23"
+    },
+    {
+      "town": "牛妻",
+      "townEn": "Ushizuma",
+      "kana": "ウシヅマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区牛妻",
+      "jp": "葵区牛妻",
+      "pattern": "24"
+    },
+    {
+      "town": "内牧",
+      "townEn": "Uchimaki",
+      "kana": "ウチマキ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区内牧",
+      "jp": "葵区内牧",
+      "pattern": "11"
+    },
+    {
+      "town": "産女",
+      "townEn": "Ubume",
+      "kana": "ウブメ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区産女",
+      "jp": "葵区産女",
+      "pattern": "25"
+    },
+    {
+      "town": "梅屋町",
+      "townEn": "Umeyacho",
+      "kana": "ウメヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区梅屋町",
+      "jp": "葵区梅屋町",
+      "pattern": "26"
+    },
+    {
+      "town": "漆山",
+      "townEn": "Urushiyama",
+      "kana": "ウルシヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区漆山",
+      "jp": "葵区漆山",
+      "pattern": "3"
+    },
+    {
+      "town": "遠藤新田",
+      "townEn": "Endoshinden",
+      "kana": "エンドウシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "葵区遠藤新田",
+      "jp": "葵区遠藤新田",
+      "pattern": "11"
+    },
+    {
+      "town": "追手町",
+      "townEn": "Otemachi",
+      "kana": "オウテマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区追手町",
+      "jp": "葵区追手町",
+      "pattern": "26"
+    },
+    {
+      "town": "大岩1～3丁目",
+      "townEn": "大岩1～3丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩1～3丁目",
+      "jp": "葵区大岩1～3丁目",
+      "pattern": "18"
+    },
+    {
+      "town": "大岩4丁目（静清バイパス以北を除く）",
+      "townEn": "大岩4丁目（静清バイパス以北を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩4丁目（静清バイパス以北を除く）",
+      "jp": "葵区大岩4丁目（静清バイパス以北を除く）",
+      "pattern": "27"
+    },
+    {
+      "town": "大岩4丁目（静清バイパス以北）",
+      "townEn": "大岩4丁目（静清バイパス以北）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩4丁目（静清バイパス以北）",
+      "jp": "葵区大岩4丁目（静清バイパス以北）",
+      "pattern": "28"
+    },
+    {
+      "town": "大岩町（大岩町町内会を除く）",
+      "townEn": "大岩町（大岩町町内会を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩町（大岩町町内会を除く）",
+      "jp": "葵区大岩町（大岩町町内会を除く）",
+      "pattern": "18"
+    },
+    {
+      "town": "大岩町（大岩町町内会）",
+      "townEn": "大岩町（大岩町町内会）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩町（大岩町町内会）",
+      "jp": "葵区大岩町（大岩町町内会）",
+      "pattern": "27"
+    },
+    {
+      "town": "大岩本町、大岩宮下町",
+      "townEn": "大岩本町、大岩宮下町",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大岩本町、大岩宮下町",
+      "jp": "葵区大岩本町、大岩宮下町",
+      "pattern": "29"
+    },
+    {
+      "town": "大鋸町",
+      "townEn": "Ogamachi",
+      "kana": "オオガマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大鋸町",
+      "jp": "葵区大鋸町",
+      "pattern": "21"
+    },
+    {
+      "town": "太田町",
+      "townEn": "Otamachi",
+      "kana": "オオタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区太田町",
+      "jp": "葵区太田町",
+      "pattern": "30"
+    },
+    {
+      "town": "大原",
+      "townEn": "Ohara",
+      "kana": "オオハラ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大原",
+      "jp": "葵区大原",
+      "pattern": "25"
+    },
+    {
+      "town": "音羽町",
+      "townEn": "Otowacho",
+      "kana": "オトワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区音羽町",
+      "jp": "葵区音羽町",
+      "pattern": "10"
+    },
+    {
+      "town": "籠上",
+      "townEn": "Kagoe",
+      "kana": "カゴウエ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区籠上",
+      "jp": "葵区籠上",
+      "pattern": "31"
+    },
+    {
+      "town": "春日1～3丁目",
+      "townEn": "春日1～3丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区春日1～3丁目",
+      "jp": "葵区春日1～3丁目",
+      "pattern": "10"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Kasugacho",
+      "kana": "カスガチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区春日町",
+      "jp": "葵区春日町",
+      "pattern": "30"
+    },
+    {
+      "town": "片羽町",
+      "townEn": "Katahacho",
+      "kana": "カタハチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区片羽町",
+      "jp": "葵区片羽町",
+      "pattern": "2"
+    },
+    {
+      "town": "門屋",
+      "townEn": "Kadoya",
+      "kana": "カドヤ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区門屋",
+      "jp": "葵区門屋",
+      "pattern": "24"
+    },
+    {
+      "town": "上足洗",
+      "townEn": "Kamiashiarai",
+      "kana": "カミアシアライ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上足洗",
+      "jp": "葵区上足洗",
+      "pattern": "32"
+    },
+    {
+      "town": "上足洗1～2丁目",
+      "townEn": "上足洗1～2丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上足洗1～2丁目",
+      "jp": "葵区上足洗1～2丁目",
+      "pattern": "33"
+    },
+    {
+      "town": "上足洗3丁目",
+      "townEn": "上足洗3丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上足洗3丁目",
+      "jp": "葵区上足洗3丁目",
+      "pattern": "34"
+    },
+    {
+      "town": "上足洗4丁目",
+      "townEn": "上足洗4丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上足洗4丁目",
+      "jp": "葵区上足洗4丁目",
+      "pattern": "35"
+    },
+    {
+      "town": "上桶屋町",
+      "townEn": "Kamiokeyacho",
+      "kana": "カミオケヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上桶屋町",
+      "jp": "葵区上桶屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "上沓谷町",
+      "townEn": "Kamikutsunoyacho",
+      "kana": "カミクツノヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上沓谷町",
+      "jp": "葵区上沓谷町",
+      "pattern": "30"
+    },
+    {
+      "town": "上石町",
+      "townEn": "Kamigokucho",
+      "kana": "カミゴクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上石町",
+      "jp": "葵区上石町",
+      "pattern": "26"
+    },
+    {
+      "town": "上新富町",
+      "townEn": "Kamishintomicho",
+      "kana": "カミシントミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上新富町",
+      "jp": "葵区上新富町",
+      "pattern": "21"
+    },
+    {
+      "town": "上伝馬",
+      "townEn": "Kamitemma",
+      "kana": "カミテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区上伝馬",
+      "jp": "葵区上伝馬",
+      "pattern": "36"
+    },
+    {
+      "town": "唐瀬1丁目（岳美町内を除く）",
+      "townEn": "唐瀬1丁目（岳美町内を除く）",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区唐瀬1丁目（岳美町内を除く）",
+      "jp": "葵区唐瀬1丁目（岳美町内を除く）",
+      "pattern": "19"
+    },
+    {
+      "town": "唐瀬1丁目（岳美町内会）",
+      "townEn": "唐瀬1丁目（岳美町内会）",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区唐瀬1丁目（岳美町内会）",
+      "jp": "葵区唐瀬1丁目（岳美町内会）",
+      "pattern": "20"
+    },
+    {
+      "town": "唐瀬2～3丁目",
+      "townEn": "唐瀬2～3丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区唐瀬2～3丁目",
+      "jp": "葵区唐瀬2～3丁目",
+      "pattern": "19"
+    },
+    {
+      "town": "川合",
+      "townEn": "Kawai",
+      "kana": "カワイ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区川合",
+      "jp": "葵区川合",
+      "pattern": "8"
+    },
+    {
+      "town": "川合1～3丁目",
+      "townEn": "川合1～3丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区川合1～3丁目",
+      "jp": "葵区川合1～3丁目",
+      "pattern": "7"
+    },
+    {
+      "town": "川越町",
+      "townEn": "Kawagoshicho",
+      "kana": "カワゴシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区川越町",
+      "jp": "葵区川越町",
+      "pattern": "37"
+    },
+    {
+      "town": "川辺町1～2丁目",
+      "townEn": "川辺町1～2丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "葵区川辺町1～2丁目",
+      "jp": "葵区川辺町1～2丁目",
+      "pattern": "38"
+    },
+    {
+      "town": "瓦場町",
+      "townEn": "Kawarabacho",
+      "kana": "カワラバチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瓦場町",
+      "jp": "葵区瓦場町",
+      "pattern": "30"
+    },
+    {
+      "town": "北、北1～5丁目",
+      "townEn": "北、北1～5丁目",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北、北1～5丁目",
+      "jp": "葵区北、北1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "北安東1丁目（安東3丁目町内会）",
+      "townEn": "北安東1丁目（安東3丁目町内会）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東1丁目（安東3丁目町内会）",
+      "jp": "葵区北安東1丁目（安東3丁目町内会）",
+      "pattern": "39"
+    },
+    {
+      "town": "北安東1丁目（北安東1丁目町内会）",
+      "townEn": "北安東1丁目（北安東1丁目町内会）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東1丁目（北安東1丁目町内会）",
+      "jp": "葵区北安東1丁目（北安東1丁目町内会）",
+      "pattern": "40"
+    },
+    {
+      "town": "北安東2丁目（北安東2丁目1区自治会を除く）",
+      "townEn": "北安東2丁目（北安東2丁目1区自治会を除く）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東2丁目（北安東2丁目1区自治会を除く）",
+      "jp": "葵区北安東2丁目（北安東2丁目1区自治会を除く）",
+      "pattern": "41"
+    },
+    {
+      "town": "北安東2丁目（北安東2丁目1区自治会）",
+      "townEn": "北安東2丁目（北安東2丁目1区自治会）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東2丁目（北安東2丁目1区自治会）",
+      "jp": "葵区北安東2丁目（北安東2丁目1区自治会）",
+      "pattern": "40"
+    },
+    {
+      "town": "北安東3丁目（大岩2丁目町内会）",
+      "townEn": "北安東3丁目（大岩2丁目町内会）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東3丁目（大岩2丁目町内会）",
+      "jp": "葵区北安東3丁目（大岩2丁目町内会）",
+      "pattern": "41"
+    },
+    {
+      "town": "北安東3丁目（北安東3丁目町内会）",
+      "townEn": "北安東3丁目（北安東3丁目町内会）",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東3丁目（北安東3丁目町内会）",
+      "jp": "葵区北安東3丁目（北安東3丁目町内会）",
+      "pattern": "40"
+    },
+    {
+      "town": "北安東4丁目",
+      "townEn": "北安東4丁目",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東4丁目",
+      "jp": "葵区北安東4丁目",
+      "pattern": "42"
+    },
+    {
+      "town": "北安東5丁目",
+      "townEn": "北安東5丁目",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北安東5丁目",
+      "jp": "葵区北安東5丁目",
+      "pattern": "40"
+    },
+    {
+      "town": "北沼上",
+      "townEn": "Kitanumagami",
+      "kana": "キタヌマガミ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北沼上",
+      "jp": "葵区北沼上",
+      "pattern": "43"
+    },
+    {
+      "town": "北番町",
+      "townEn": "Kitabancho",
+      "kana": "キタバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区北番町",
+      "jp": "葵区北番町",
+      "pattern": "14"
+    },
+    {
+      "town": "金座町",
+      "townEn": "Kinzamachi",
+      "kana": "キンザマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区金座町",
+      "jp": "葵区金座町",
+      "pattern": "2"
+    },
+    {
+      "town": "沓谷（上土立町自治会を除く）",
+      "townEn": "沓谷（上土立町自治会を除く）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷（上土立町自治会を除く）",
+      "jp": "葵区沓谷（上土立町自治会を除く）",
+      "pattern": "30"
+    },
+    {
+      "town": "沓谷（上土立町自治会）",
+      "townEn": "沓谷（上土立町自治会）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷（上土立町自治会）",
+      "jp": "葵区沓谷（上土立町自治会）",
+      "pattern": "44"
+    },
+    {
+      "town": "沓谷1～4丁目",
+      "townEn": "沓谷1～4丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷1～4丁目",
+      "jp": "葵区沓谷1～4丁目",
+      "pattern": "30"
+    },
+    {
+      "town": "沓谷5丁目（上土立町自治会）",
+      "townEn": "沓谷5丁目（上土立町自治会）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷5丁目（上土立町自治会）",
+      "jp": "葵区沓谷5丁目（上土立町自治会）",
+      "pattern": "5"
+    },
+    {
+      "town": "沓谷5丁目（沓谷456丁目町内会）",
+      "townEn": "沓谷5丁目（沓谷456丁目町内会）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷5丁目（沓谷456丁目町内会）",
+      "jp": "葵区沓谷5丁目（沓谷456丁目町内会）",
+      "pattern": "6"
+    },
+    {
+      "town": "沓谷6丁目（上土立町自治会）",
+      "townEn": "沓谷6丁目（上土立町自治会）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷6丁目（上土立町自治会）",
+      "jp": "葵区沓谷6丁目（上土立町自治会）",
+      "pattern": "5"
+    },
+    {
+      "town": "沓谷6丁目（沓谷456丁目町内会）",
+      "townEn": "沓谷6丁目（沓谷456丁目町内会）",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "葵区沓谷6丁目（沓谷456丁目町内会）",
+      "jp": "葵区沓谷6丁目（沓谷456丁目町内会）",
+      "pattern": "6"
+    },
+    {
+      "town": "車町",
+      "townEn": "Kurumacho",
+      "kana": "クルマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区車町",
+      "jp": "葵区車町",
+      "pattern": "2"
+    },
+    {
+      "town": "黒金町",
+      "townEn": "Kuroganecho",
+      "kana": "クロガネチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区黒金町",
+      "jp": "葵区黒金町",
+      "pattern": "10"
+    },
+    {
+      "town": "幸庵新田",
+      "townEn": "Koanshinden",
+      "kana": "コウアンシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "葵区幸庵新田",
+      "jp": "葵区幸庵新田",
+      "pattern": "11"
+    },
+    {
+      "town": "郷島",
+      "townEn": "Gojima",
+      "kana": "ゴウジマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区郷島",
+      "jp": "葵区郷島",
+      "pattern": "24"
+    },
+    {
+      "town": "紺屋町",
+      "townEn": "Koyamachi",
+      "kana": "コウヤマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区紺屋町",
+      "jp": "葵区紺屋町",
+      "pattern": "26"
+    },
+    {
+      "town": "小瀬戸",
+      "townEn": "Kozeto",
+      "kana": "コゼト",
+      "chome": null,
+      "detail": null,
+      "en": "葵区小瀬戸",
+      "jp": "葵区小瀬戸",
+      "pattern": "25"
+    },
+    {
+      "town": "五番町",
+      "townEn": "Gobancho",
+      "kana": "ゴバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区五番町",
+      "jp": "葵区五番町",
+      "pattern": "21"
+    },
+    {
+      "town": "呉服町1～2丁目",
+      "townEn": "呉服町1～2丁目",
+      "kana": "こ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区呉服町1～2丁目",
+      "jp": "葵区呉服町1～2丁目",
+      "pattern": "26"
+    },
+    {
+      "town": "小布杉",
+      "townEn": "Kobusugi",
+      "kana": "コブスギ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区小布杉",
+      "jp": "葵区小布杉",
+      "pattern": "45"
+    },
+    {
+      "town": "駒形通1～5丁目",
+      "townEn": "駒形通1～5丁目",
+      "kana": "こ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区駒形通1～5丁目",
+      "jp": "葵区駒形通1～5丁目",
+      "pattern": "46"
+    },
+    {
+      "town": "駒形通6丁目（インター通り以東）",
+      "townEn": "駒形通6丁目（インター通り以東）",
+      "kana": "こ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区駒形通6丁目（インター通り以東）",
+      "jp": "葵区駒形通6丁目（インター通り以東）",
+      "pattern": "46"
+    },
+    {
+      "town": "駒形通6丁目（インター通り以西）",
+      "townEn": "駒形通6丁目（インター通り以西）",
+      "kana": "さ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区駒形通6丁目（インター通り以西）",
+      "jp": "葵区駒形通6丁目（インター通り以西）",
+      "pattern": "47"
+    },
+    {
+      "town": "材木町",
+      "townEn": "Zaimokucho",
+      "kana": "ザイモクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区材木町",
+      "jp": "葵区材木町",
+      "pattern": "2"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaicho",
+      "kana": "サイワイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区幸町",
+      "jp": "葵区幸町",
+      "pattern": "21"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaecho",
+      "kana": "サカエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区栄町",
+      "jp": "葵区栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "桜木町",
+      "townEn": "Sakuragicho",
+      "kana": "サクラギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区桜木町",
+      "jp": "葵区桜木町",
+      "pattern": "38"
+    },
+    {
+      "town": "桜町1～2丁目",
+      "townEn": "桜町1～2丁目",
+      "kana": "さ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区桜町1～2丁目",
+      "jp": "葵区桜町1～2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "三番町",
+      "townEn": "Sambancho",
+      "kana": "サンバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区三番町",
+      "jp": "葵区三番町",
+      "pattern": "21"
+    },
+    {
+      "town": "慈悲尾",
+      "townEn": "Shiino",
+      "kana": "シイノオ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区慈悲尾",
+      "jp": "葵区慈悲尾",
+      "pattern": "48"
+    },
+    {
+      "town": "七間町",
+      "townEn": "Shichikencho",
+      "kana": "シチケンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区七間町",
+      "jp": "葵区七間町",
+      "pattern": "26"
+    },
+    {
+      "town": "七番町",
+      "townEn": "Shichibancho",
+      "kana": "シチバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区七番町",
+      "jp": "葵区七番町",
+      "pattern": "21"
+    },
+    {
+      "town": "芝原",
+      "townEn": "Shibahara",
+      "kana": "シバハラ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区芝原",
+      "jp": "葵区芝原",
+      "pattern": "3"
+    },
+    {
+      "town": "下",
+      "townEn": "Shimo",
+      "kana": "シモ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区下",
+      "jp": "葵区下",
+      "pattern": "24"
+    },
+    {
+      "town": "城東町",
+      "townEn": "Jotocho",
+      "kana": "ジョウトウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区城東町",
+      "jp": "葵区城東町",
+      "pattern": "49"
+    },
+    {
+      "town": "城内町",
+      "townEn": "Jonaicho",
+      "kana": "ジョウナイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区城内町",
+      "jp": "葵区城内町",
+      "pattern": "50"
+    },
+    {
+      "town": "昭府1～2丁目、昭府町",
+      "townEn": "昭府1～2丁目、昭府町",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区昭府1～2丁目、昭府町",
+      "jp": "葵区昭府1～2丁目、昭府町",
+      "pattern": "31"
+    },
+    {
+      "town": "城北、城北2丁目",
+      "townEn": "城北、城北2丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区城北、城北2丁目",
+      "jp": "葵区城北、城北2丁目",
+      "pattern": "42"
+    },
+    {
+      "town": "昭和町",
+      "townEn": "Showacho",
+      "kana": "ショウワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区昭和町",
+      "jp": "葵区昭和町",
+      "pattern": "26"
+    },
+    {
+      "town": "新伝馬1～3丁目",
+      "townEn": "新伝馬1～3丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区新伝馬1～3丁目",
+      "jp": "葵区新伝馬1～3丁目",
+      "pattern": "31"
+    },
+    {
+      "town": "新通1～2丁目",
+      "townEn": "新通1～2丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区新通1～2丁目",
+      "jp": "葵区新通1～2丁目",
+      "pattern": "51"
+    },
+    {
+      "town": "新富町1～2丁目",
+      "townEn": "新富町1～2丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区新富町1～2丁目",
+      "jp": "葵区新富町1～2丁目",
+      "pattern": "52"
+    },
+    {
+      "town": "新富町3～6丁目",
+      "townEn": "新富町3～6丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "葵区新富町3～6丁目",
+      "jp": "葵区新富町3～6丁目",
+      "pattern": "21"
+    },
+    {
+      "town": "新間",
+      "townEn": "Shimma",
+      "kana": "シンマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区新間",
+      "jp": "葵区新間",
+      "pattern": "25"
+    },
+    {
+      "town": "神明町",
+      "townEn": "Shimmeicho",
+      "kana": "シンメイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区神明町",
+      "jp": "葵区神明町",
+      "pattern": "14"
+    },
+    {
+      "town": "水道町",
+      "townEn": "Suidocho",
+      "kana": "スイドウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区水道町",
+      "jp": "葵区水道町",
+      "pattern": "14"
+    },
+    {
+      "town": "末広町",
+      "townEn": "Suehirocho",
+      "kana": "スエヒロチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区末広町",
+      "jp": "葵区末広町",
+      "pattern": "13"
+    },
+    {
+      "town": "住吉町1～2丁目",
+      "townEn": "住吉町1～2丁目",
+      "kana": "す",
+      "chome": null,
+      "detail": null,
+      "en": "葵区住吉町1～2丁目",
+      "jp": "葵区住吉町1～2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "駿河町",
+      "townEn": "Surugacho",
+      "kana": "スルガチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区駿河町",
+      "jp": "葵区駿河町",
+      "pattern": "26"
+    },
+    {
+      "town": "駿府町",
+      "townEn": "Sumpucho",
+      "kana": "スンプチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区駿府町",
+      "jp": "葵区駿府町",
+      "pattern": "53"
+    },
+    {
+      "town": "清閑町",
+      "townEn": "Seikancho",
+      "kana": "セイカンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区清閑町",
+      "jp": "葵区清閑町",
+      "pattern": "37"
+    },
+    {
+      "town": "瀬名（長尾自治会を除く）",
+      "townEn": "瀬名（長尾自治会を除く）",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名（長尾自治会を除く）",
+      "jp": "葵区瀬名（長尾自治会を除く）",
+      "pattern": "54"
+    },
+    {
+      "town": "瀬名（長尾自治会）",
+      "townEn": "瀬名（長尾自治会）",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名（長尾自治会）",
+      "jp": "葵区瀬名（長尾自治会）",
+      "pattern": "43"
+    },
+    {
+      "town": "瀬名1～3丁目、5～7丁目",
+      "townEn": "瀬名1～3丁目、5～7丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名1～3丁目、5～7丁目",
+      "jp": "葵区瀬名1～3丁目、5～7丁目",
+      "pattern": "54"
+    },
+    {
+      "town": "瀬名4丁目（瀬名大門自治会）",
+      "townEn": "瀬名4丁目（瀬名大門自治会）",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名4丁目（瀬名大門自治会）",
+      "jp": "葵区瀬名4丁目（瀬名大門自治会）",
+      "pattern": "55"
+    },
+    {
+      "town": "瀬名4丁目（水梨古瀬名町内会）",
+      "townEn": "瀬名4丁目（水梨古瀬名町内会）",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名4丁目（水梨古瀬名町内会）",
+      "jp": "葵区瀬名4丁目（水梨古瀬名町内会）",
+      "pattern": "56"
+    },
+    {
+      "town": "瀬名川1～3丁目",
+      "townEn": "瀬名川1～3丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名川1～3丁目",
+      "jp": "葵区瀬名川1～3丁目",
+      "pattern": "57"
+    },
+    {
+      "town": "瀬名中央1丁目",
+      "townEn": "瀬名中央1丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名中央1丁目",
+      "jp": "葵区瀬名中央1丁目",
+      "pattern": "57"
+    },
+    {
+      "town": "瀬名中央2～4丁目",
+      "townEn": "瀬名中央2～4丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区瀬名中央2～4丁目",
+      "jp": "葵区瀬名中央2～4丁目",
+      "pattern": "54"
+    },
+    {
+      "town": "浅間町1～2丁目",
+      "townEn": "浅間町1～2丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区浅間町1～2丁目",
+      "jp": "葵区浅間町1～2丁目",
+      "pattern": "16"
+    },
+    {
+      "town": "銭座町",
+      "townEn": "Zenzamachi",
+      "kana": "ゼンザマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区銭座町",
+      "jp": "葵区銭座町",
+      "pattern": "30"
+    },
+    {
+      "town": "千代、千代1～2丁目",
+      "townEn": "千代、千代1～2丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区千代、千代1～2丁目",
+      "jp": "葵区千代、千代1～2丁目",
+      "pattern": "48"
+    },
+    {
+      "town": "大工町",
+      "townEn": "Daikucho",
+      "kana": "ダイクチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区大工町",
+      "jp": "葵区大工町",
+      "pattern": "21"
+    },
+    {
+      "town": "鷹匠1～3丁目",
+      "townEn": "鷹匠1～3丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "葵区鷹匠1～3丁目",
+      "jp": "葵区鷹匠1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "建穂、建穂1～2丁目",
+      "townEn": "建穂、建穂1～2丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "葵区建穂、建穂1～2丁目",
+      "jp": "葵区建穂、建穂1～2丁目",
+      "pattern": "58"
+    },
+    {
+      "town": "岳美、岳美1丁目",
+      "townEn": "岳美、岳美1丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "葵区岳美、岳美1丁目",
+      "jp": "葵区岳美、岳美1丁目",
+      "pattern": "20"
+    },
+    {
+      "town": "辰起町",
+      "townEn": "Tatsukicho",
+      "kana": "タツキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区辰起町",
+      "jp": "葵区辰起町",
+      "pattern": "59"
+    },
+    {
+      "town": "田町1～3丁目",
+      "townEn": "田町1～3丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "葵区田町1～3丁目",
+      "jp": "葵区田町1～3丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "田町4～7丁目",
+      "townEn": "田町4～7丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "葵区田町4～7丁目",
+      "jp": "葵区田町4～7丁目",
+      "pattern": "21"
+    },
+    {
+      "town": "俵沢",
+      "townEn": "Tawarazawa",
+      "kana": "タワラザワ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区俵沢",
+      "jp": "葵区俵沢",
+      "pattern": "24"
+    },
+    {
+      "town": "俵峰",
+      "townEn": "Tawaramine",
+      "kana": "タワラミネ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区俵峰",
+      "jp": "葵区俵峰",
+      "pattern": "24"
+    },
+    {
+      "town": "茶町1～2丁目",
+      "townEn": "茶町1～2丁目",
+      "kana": "ち",
+      "chome": null,
+      "detail": null,
+      "en": "葵区茶町1～2丁目",
+      "jp": "葵区茶町1～2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "千代田",
+      "townEn": "Chiyoda",
+      "kana": "チヨダ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区千代田",
+      "jp": "葵区千代田",
+      "pattern": "60"
+    },
+    {
+      "town": "千代田1～5丁目",
+      "townEn": "千代田1～5丁目",
+      "kana": "ち",
+      "chome": null,
+      "detail": null,
+      "en": "葵区千代田1～5丁目",
+      "jp": "葵区千代田1～5丁目",
+      "pattern": "61"
+    },
+    {
+      "town": "千代田6～7丁目",
+      "townEn": "千代田6～7丁目",
+      "kana": "ち",
+      "chome": null,
+      "detail": null,
+      "en": "葵区千代田6～7丁目",
+      "jp": "葵区千代田6～7丁目",
+      "pattern": "62"
+    },
+    {
+      "town": "堤町",
+      "townEn": "Tsutsumicho",
+      "kana": "ツツミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区堤町",
+      "jp": "葵区堤町",
+      "pattern": "4"
+    },
+    {
+      "town": "津渡野",
+      "townEn": "Tsudono",
+      "kana": "ツドノ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区津渡野",
+      "jp": "葵区津渡野",
+      "pattern": "9"
+    },
+    {
+      "town": "天王町",
+      "townEn": "Tennocho",
+      "kana": "テンノウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区天王町",
+      "jp": "葵区天王町",
+      "pattern": "38"
+    },
+    {
+      "town": "伝馬町",
+      "townEn": "Temmacho",
+      "kana": "テンマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区伝馬町",
+      "jp": "葵区伝馬町",
+      "pattern": "1"
+    },
+    {
+      "town": "通車町",
+      "townEn": "Torikurumacho",
+      "kana": "トオリクルマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区通車町",
+      "jp": "葵区通車町",
+      "pattern": "21"
+    },
+    {
+      "town": "研屋町",
+      "townEn": "Togiyacho",
+      "kana": "トギヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区研屋町",
+      "jp": "葵区研屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "常磐町1～3丁目",
+      "townEn": "常磐町1～3丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "葵区常磐町1～3丁目",
+      "jp": "葵区常磐町1～3丁目",
+      "pattern": "26"
+    },
+    {
+      "town": "土太夫町",
+      "townEn": "Dodayucho",
+      "kana": "ドダユウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区土太夫町",
+      "jp": "葵区土太夫町",
+      "pattern": "2"
+    },
+    {
+      "town": "巴町",
+      "townEn": "Tomoecho",
+      "kana": "トモエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区巴町",
+      "jp": "葵区巴町",
+      "pattern": "30"
+    },
+    {
+      "town": "富沢",
+      "townEn": "Tonzawa",
+      "kana": "トンザワ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区富沢",
+      "jp": "葵区富沢",
+      "pattern": "25"
+    },
+    {
+      "town": "長尾",
+      "townEn": "Nagao",
+      "kana": "ナガオ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区長尾",
+      "jp": "葵区長尾",
+      "pattern": "43"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区中町",
+      "jp": "葵区中町",
+      "pattern": "2"
+    },
+    {
+      "town": "長沼",
+      "townEn": "Naganuma",
+      "kana": "ナガヌマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区長沼",
+      "jp": "葵区長沼",
+      "pattern": "63"
+    },
+    {
+      "town": "長沼1～3丁目",
+      "townEn": "長沼1～3丁目",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "葵区長沼1～3丁目",
+      "jp": "葵区長沼1～3丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "長沼南",
+      "townEn": "Naganumaminami",
+      "kana": "ナガヌマミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区長沼南",
+      "jp": "葵区長沼南",
+      "pattern": "63"
+    },
+    {
+      "town": "中ノ郷",
+      "townEn": "Nakanogo",
+      "kana": "ナカノゴウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区中ノ郷",
+      "jp": "葵区中ノ郷",
+      "pattern": "11"
+    },
+    {
+      "town": "奈良間",
+      "townEn": "Narama",
+      "kana": "ナラマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区奈良間",
+      "jp": "葵区奈良間",
+      "pattern": "25"
+    },
+    {
+      "town": "西ケ谷",
+      "townEn": "西ケ谷",
+      "kana": "に",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西ケ谷",
+      "jp": "葵区西ケ谷",
+      "pattern": "11"
+    },
+    {
+      "town": "錦町",
+      "townEn": "Nishikicho",
+      "kana": "ニシキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区錦町",
+      "jp": "葵区錦町",
+      "pattern": "2"
+    },
+    {
+      "town": "西草深町",
+      "townEn": "Nishikusabukacho",
+      "kana": "ニシクサブカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西草深町",
+      "jp": "葵区西草深町",
+      "pattern": "50"
+    },
+    {
+      "town": "西瀬名町（川合町自治会）",
+      "townEn": "西瀬名町（川合町自治会）",
+      "kana": "に",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西瀬名町（川合町自治会）",
+      "jp": "葵区西瀬名町（川合町自治会）",
+      "pattern": "7"
+    },
+    {
+      "town": "西瀬名町（西瀬名町自治会）",
+      "townEn": "西瀬名町（西瀬名町自治会）",
+      "kana": "に",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西瀬名町（西瀬名町自治会）",
+      "jp": "葵区西瀬名町（西瀬名町自治会）",
+      "pattern": "57"
+    },
+    {
+      "town": "西千代田町",
+      "townEn": "Nishichiyodacho",
+      "kana": "ニシチヨダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西千代田町",
+      "jp": "葵区西千代田町",
+      "pattern": "33"
+    },
+    {
+      "town": "西又",
+      "townEn": "Nishimata",
+      "kana": "ニシマタ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西又",
+      "jp": "葵区西又",
+      "pattern": "45"
+    },
+    {
+      "town": "西門町",
+      "townEn": "Nishimoncho",
+      "kana": "ニシモンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区西門町",
+      "jp": "葵区西門町",
+      "pattern": "26"
+    },
+    {
+      "town": "二番町",
+      "townEn": "Nibancho",
+      "kana": "ニバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区二番町",
+      "jp": "葵区二番町",
+      "pattern": "21"
+    },
+    {
+      "town": "野田平",
+      "townEn": "Notahira",
+      "kana": "ノタヒラ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区野田平",
+      "jp": "葵区野田平",
+      "pattern": "24"
+    },
+    {
+      "town": "長谷町",
+      "townEn": "Hasecho",
+      "kana": "ハセチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区長谷町",
+      "jp": "葵区長谷町",
+      "pattern": "16"
+    },
+    {
+      "town": "羽高町",
+      "townEn": "Hatakacho",
+      "kana": "ハタカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽高町",
+      "jp": "葵区羽高町",
+      "pattern": "3"
+    },
+    {
+      "town": "八番町",
+      "townEn": "Hachibancho",
+      "kana": "ハチバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区八番町",
+      "jp": "葵区八番町",
+      "pattern": "21"
+    },
+    {
+      "town": "羽鳥1丁目（静清バイパス以東）",
+      "townEn": "羽鳥1丁目（静清バイパス以東）",
+      "kana": "は",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽鳥1丁目（静清バイパス以東）",
+      "jp": "葵区羽鳥1丁目（静清バイパス以東）",
+      "pattern": "48"
+    },
+    {
+      "town": "羽鳥1丁目（静清バイパス以西）",
+      "townEn": "羽鳥1丁目（静清バイパス以西）",
+      "kana": "は",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽鳥1丁目（静清バイパス以西）",
+      "jp": "葵区羽鳥1丁目（静清バイパス以西）",
+      "pattern": "58"
+    },
+    {
+      "town": "羽鳥2～3丁目、羽鳥本町",
+      "townEn": "羽鳥2～3丁目、羽鳥本町",
+      "kana": "は",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽鳥2～3丁目、羽鳥本町",
+      "jp": "葵区羽鳥2～3丁目、羽鳥本町",
+      "pattern": "25"
+    },
+    {
+      "town": "羽鳥、羽鳥4～7丁目",
+      "townEn": "羽鳥、羽鳥4～7丁目",
+      "kana": "は",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽鳥、羽鳥4～7丁目",
+      "jp": "葵区羽鳥、羽鳥4～7丁目",
+      "pattern": "58"
+    },
+    {
+      "town": "羽鳥大門町",
+      "townEn": "Hatoridaimoncho",
+      "kana": "ハトリダイモンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区羽鳥大門町",
+      "jp": "葵区羽鳥大門町",
+      "pattern": "48"
+    },
+    {
+      "town": "馬場町",
+      "townEn": "Babancho",
+      "kana": "ババンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区馬場町",
+      "jp": "葵区馬場町",
+      "pattern": "2"
+    },
+    {
+      "town": "飯間",
+      "townEn": "Hamma",
+      "kana": "ハンマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区飯間",
+      "jp": "葵区飯間",
+      "pattern": "25"
+    },
+    {
+      "town": "東、東1～2丁目",
+      "townEn": "東、東1～2丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東、東1～2丁目",
+      "jp": "葵区東、東1～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東草深町",
+      "townEn": "Higashikusabukacho",
+      "kana": "ヒガシクサブカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東草深町",
+      "jp": "葵区東草深町",
+      "pattern": "50"
+    },
+    {
+      "town": "東静岡1丁目",
+      "townEn": "東静岡1丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東静岡1丁目",
+      "jp": "葵区東静岡1丁目",
+      "pattern": "63"
+    },
+    {
+      "town": "東瀬名町",
+      "townEn": "Higashisenacho",
+      "kana": "ヒガシセナチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東瀬名町",
+      "jp": "葵区東瀬名町",
+      "pattern": "57"
+    },
+    {
+      "town": "東鷹匠町",
+      "townEn": "Higashitakajomachi",
+      "kana": "ヒガシタカジョウマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東鷹匠町",
+      "jp": "葵区東鷹匠町",
+      "pattern": "64"
+    },
+    {
+      "town": "東千代田1～2丁目",
+      "townEn": "東千代田1～2丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東千代田1～2丁目",
+      "jp": "葵区東千代田1～2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "東千代田3丁目（上土自治会）",
+      "townEn": "東千代田3丁目（上土自治会）",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東千代田3丁目（上土自治会）",
+      "jp": "葵区東千代田3丁目（上土自治会）",
+      "pattern": "45"
+    },
+    {
+      "town": "東千代田3丁目（東千代田3丁目町内会）",
+      "townEn": "東千代田3丁目（東千代田3丁目町内会）",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区東千代田3丁目（東千代田3丁目町内会）",
+      "jp": "葵区東千代田3丁目（東千代田3丁目町内会）",
+      "pattern": "65"
+    },
+    {
+      "town": "人宿町1～2丁目",
+      "townEn": "人宿町1～2丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区人宿町1～2丁目",
+      "jp": "葵区人宿町1～2丁目",
+      "pattern": "26"
+    },
+    {
+      "town": "日出町",
+      "townEn": "Hinodecho",
+      "kana": "ヒノデチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区日出町",
+      "jp": "葵区日出町",
+      "pattern": "10"
+    },
+    {
+      "town": "平山",
+      "townEn": "Hirayama",
+      "kana": "ヒラヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区平山",
+      "jp": "葵区平山",
+      "pattern": "43"
+    },
+    {
+      "town": "福田ヶ谷",
+      "townEn": "Fukudagaya",
+      "kana": "フクダガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区福田ヶ谷",
+      "jp": "葵区福田ヶ谷",
+      "pattern": "24"
+    },
+    {
+      "town": "富厚里",
+      "townEn": "Fukori",
+      "kana": "フコウリ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区富厚里",
+      "jp": "葵区富厚里",
+      "pattern": "25"
+    },
+    {
+      "town": "富士見町",
+      "townEn": "Fujimicho",
+      "kana": "フジミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区富士見町",
+      "jp": "葵区富士見町",
+      "pattern": "2"
+    },
+    {
+      "town": "双葉町",
+      "townEn": "Futabacho",
+      "kana": "フタバチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区双葉町",
+      "jp": "葵区双葉町",
+      "pattern": "46"
+    },
+    {
+      "town": "古庄1～3丁目、6丁目",
+      "townEn": "古庄1～3丁目、6丁目",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区古庄1～3丁目、6丁目",
+      "jp": "葵区古庄1～3丁目、6丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "古庄4丁目（上土立町自治会）",
+      "townEn": "古庄4丁目（上土立町自治会）",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区古庄4丁目（上土立町自治会）",
+      "jp": "葵区古庄4丁目（上土立町自治会）",
+      "pattern": "5"
+    },
+    {
+      "town": "古庄4丁目（古庄自治会）",
+      "townEn": "古庄4丁目（古庄自治会）",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区古庄4丁目（古庄自治会）",
+      "jp": "葵区古庄4丁目（古庄自治会）",
+      "pattern": "6"
+    },
+    {
+      "town": "古庄5丁目（古庄自治会を除く）",
+      "townEn": "古庄5丁目（古庄自治会を除く）",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区古庄5丁目（古庄自治会を除く）",
+      "jp": "葵区古庄5丁目（古庄自治会を除く）",
+      "pattern": "5"
+    },
+    {
+      "town": "古庄5丁目（古庄自治会）",
+      "townEn": "古庄5丁目（古庄自治会）",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区古庄5丁目（古庄自治会）",
+      "jp": "葵区古庄5丁目（古庄自治会）",
+      "pattern": "6"
+    },
+    {
+      "town": "平和1～3丁目",
+      "townEn": "平和1～3丁目",
+      "kana": "へ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区平和1～3丁目",
+      "jp": "葵区平和1～3丁目",
+      "pattern": "31"
+    },
+    {
+      "town": "本通1～10丁目（本通以北）",
+      "townEn": "本通1～10丁目（本通以北）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区本通1～10丁目（本通以北）",
+      "jp": "葵区本通1～10丁目（本通以北）",
+      "pattern": "66"
+    },
+    {
+      "town": "本通1～10丁目（本通以南）",
+      "townEn": "本通1～10丁目（本通以南）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区本通1～10丁目（本通以南）",
+      "jp": "葵区本通1～10丁目（本通以南）",
+      "pattern": "51"
+    },
+    {
+      "town": "本通西町（本通以北）",
+      "townEn": "本通西町（本通以北）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区本通西町（本通以北）",
+      "jp": "葵区本通西町（本通以北）",
+      "pattern": "47"
+    },
+    {
+      "town": "本通西町（本通以南）",
+      "townEn": "本通西町（本通以南）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区本通西町（本通以南）",
+      "jp": "葵区本通西町（本通以南）",
+      "pattern": "37"
+    },
+    {
+      "town": "牧ヶ谷",
+      "townEn": "Makigaya",
+      "kana": "マキガヤ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区牧ヶ谷",
+      "jp": "葵区牧ヶ谷",
+      "pattern": "25"
+    },
+    {
+      "town": "松富1～3丁目",
+      "townEn": "松富1～3丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "葵区松富1～3丁目",
+      "jp": "葵区松富1～3丁目",
+      "pattern": "67"
+    },
+    {
+      "town": "松富4丁目（1番～8番）",
+      "townEn": "松富4丁目（1番～8番）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "葵区松富4丁目（1番～8番）",
+      "jp": "葵区松富4丁目（1番～8番）",
+      "pattern": "67"
+    },
+    {
+      "town": "松富4丁目（9番～14番）、松富上組",
+      "townEn": "松富4丁目（9番～14番）、松富上組",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "葵区松富4丁目（9番～14番）、松富上組",
+      "jp": "葵区松富4丁目（9番～14番）、松富上組",
+      "pattern": "68"
+    },
+    {
+      "town": "松野",
+      "townEn": "Matsuno",
+      "kana": "マツノ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区松野",
+      "jp": "葵区松野",
+      "pattern": "9"
+    },
+    {
+      "town": "丸山町",
+      "townEn": "Maruyamacho",
+      "kana": "マルヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区丸山町",
+      "jp": "葵区丸山町",
+      "pattern": "16"
+    },
+    {
+      "town": "美川町",
+      "townEn": "Mikawacho",
+      "kana": "ミカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区美川町",
+      "jp": "葵区美川町",
+      "pattern": "69"
+    },
+    {
+      "town": "水落町",
+      "townEn": "Mizuochicho",
+      "kana": "ミズオチチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区水落町",
+      "jp": "葵区水落町",
+      "pattern": "49"
+    },
+    {
+      "town": "水見色",
+      "townEn": "Mizumiiro",
+      "kana": "ミズミイロ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区水見色",
+      "jp": "葵区水見色",
+      "pattern": "25"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区緑町",
+      "jp": "葵区緑町",
+      "pattern": "49"
+    },
+    {
+      "town": "南、南1～2丁目",
+      "townEn": "南、南1～2丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南、南1～2丁目",
+      "jp": "葵区南、南1～2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南安倍1丁目（インター通り以東）",
+      "townEn": "南安倍1丁目（インター通り以東）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南安倍1丁目（インター通り以東）",
+      "jp": "葵区南安倍1丁目（インター通り以東）",
+      "pattern": "37"
+    },
+    {
+      "town": "南安倍1丁目（インター通り以西）",
+      "townEn": "南安倍1丁目（インター通り以西）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南安倍1丁目（インター通り以西）",
+      "jp": "葵区南安倍1丁目（インター通り以西）",
+      "pattern": "47"
+    },
+    {
+      "town": "南安倍2丁目",
+      "townEn": "南安倍2丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南安倍2丁目",
+      "jp": "葵区南安倍2丁目",
+      "pattern": "47"
+    },
+    {
+      "town": "南瀬名町",
+      "townEn": "Minamisenacho",
+      "kana": "ミナミセナチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南瀬名町",
+      "jp": "葵区南瀬名町",
+      "pattern": "57"
+    },
+    {
+      "town": "南田町",
+      "townEn": "Minamitamachi",
+      "kana": "ミナミタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南田町",
+      "jp": "葵区南田町",
+      "pattern": "21"
+    },
+    {
+      "town": "南沼上1丁目",
+      "townEn": "南沼上1丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南沼上1丁目",
+      "jp": "葵区南沼上1丁目",
+      "pattern": "70"
+    },
+    {
+      "town": "南沼上2丁目（川合町自治会を除く）",
+      "townEn": "南沼上2丁目（川合町自治会を除く）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南沼上2丁目（川合町自治会を除く）",
+      "jp": "葵区南沼上2丁目（川合町自治会を除く）",
+      "pattern": "70"
+    },
+    {
+      "town": "南沼上2丁目（川合町自治会）",
+      "townEn": "南沼上2丁目（川合町自治会）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南沼上2丁目（川合町自治会）",
+      "jp": "葵区南沼上2丁目（川合町自治会）",
+      "pattern": "71"
+    },
+    {
+      "town": "南沼上、南沼上3丁目",
+      "townEn": "南沼上、南沼上3丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区南沼上、南沼上3丁目",
+      "jp": "葵区南沼上、南沼上3丁目",
+      "pattern": "56"
+    },
+    {
+      "town": "宮ヶ崎町",
+      "townEn": "Miyagasakicho",
+      "kana": "ミヤガサキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区宮ヶ崎町",
+      "jp": "葵区宮ヶ崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "宮前町",
+      "townEn": "Miyamaecho",
+      "kana": "ミヤマエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区宮前町",
+      "jp": "葵区宮前町",
+      "pattern": "63"
+    },
+    {
+      "town": "御幸町",
+      "townEn": "Miyukicho",
+      "kana": "ミユキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区御幸町",
+      "jp": "葵区御幸町",
+      "pattern": "1"
+    },
+    {
+      "town": "弥勒1丁目（インター通り以東）",
+      "townEn": "弥勒1丁目（インター通り以東）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区弥勒1丁目（インター通り以東）",
+      "jp": "葵区弥勒1丁目（インター通り以東）",
+      "pattern": "37"
+    },
+    {
+      "town": "弥勒1丁目（インター通り以西）",
+      "townEn": "弥勒1丁目（インター通り以西）",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区弥勒1丁目（インター通り以西）",
+      "jp": "葵区弥勒1丁目（インター通り以西）",
+      "pattern": "47"
+    },
+    {
+      "town": "弥勒2丁目",
+      "townEn": "弥勒2丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "葵区弥勒2丁目",
+      "jp": "葵区弥勒2丁目",
+      "pattern": "47"
+    },
+    {
+      "town": "屋形町",
+      "townEn": "Yakatamachi",
+      "kana": "ヤカタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区屋形町",
+      "jp": "葵区屋形町",
+      "pattern": "21"
+    },
+    {
+      "town": "薬師",
+      "townEn": "Yakushi",
+      "kana": "ヤクシ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区薬師",
+      "jp": "葵区薬師",
+      "pattern": "56"
+    },
+    {
+      "town": "八千代町",
+      "townEn": "Yachiyocho",
+      "kana": "ヤチヨチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区八千代町",
+      "jp": "葵区八千代町",
+      "pattern": "2"
+    },
+    {
+      "town": "谷津",
+      "townEn": "Yatsu",
+      "kana": "ヤツ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区谷津",
+      "jp": "葵区谷津",
+      "pattern": "25"
+    },
+    {
+      "town": "柳町",
+      "townEn": "Yanagicho",
+      "kana": "ヤナギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区柳町",
+      "jp": "葵区柳町",
+      "pattern": "15"
+    },
+    {
+      "town": "柳原",
+      "townEn": "Yanagihara",
+      "kana": "ヤナギハラ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区柳原",
+      "jp": "葵区柳原",
+      "pattern": "3"
+    },
+    {
+      "town": "山崎1～2丁目",
+      "townEn": "山崎1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": null,
+      "en": "葵区山崎1～2丁目",
+      "jp": "葵区山崎1～2丁目",
+      "pattern": "48"
+    },
+    {
+      "town": "油島",
+      "townEn": "Yujima",
+      "kana": "ユジマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区油島",
+      "jp": "葵区油島",
+      "pattern": "24"
+    },
+    {
+      "town": "柚木町",
+      "townEn": "Yuzunokicho",
+      "kana": "ユズノキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区柚木町",
+      "jp": "葵区柚木町",
+      "pattern": "2"
+    },
+    {
+      "town": "柚木",
+      "townEn": "Yunoki",
+      "kana": "ユノキ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区柚木",
+      "jp": "葵区柚木",
+      "pattern": "63"
+    },
+    {
+      "town": "油山",
+      "townEn": "Yuyama",
+      "kana": "ユヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区油山",
+      "jp": "葵区油山",
+      "pattern": "9"
+    },
+    {
+      "town": "与一1～6丁目",
+      "townEn": "与一1～6丁目",
+      "kana": "よ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区与一1～6丁目",
+      "jp": "葵区与一1～6丁目",
+      "pattern": "36"
+    },
+    {
+      "town": "横内町",
+      "townEn": "Yokochicho",
+      "kana": "ヨコウチチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区横内町",
+      "jp": "葵区横内町",
+      "pattern": "64"
+    },
+    {
+      "town": "横田町",
+      "townEn": "Yokotamachi",
+      "kana": "ヨコタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区横田町",
+      "jp": "葵区横田町",
+      "pattern": "10"
+    },
+    {
+      "town": "与左衛門新田",
+      "townEn": "Yozaemonshinden",
+      "kana": "ヨザエモンシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "葵区与左衛門新田",
+      "jp": "葵区与左衛門新田",
+      "pattern": "11"
+    },
+    {
+      "town": "吉津",
+      "townEn": "Yoshizu",
+      "kana": "ヨシヅ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区吉津",
+      "jp": "葵区吉津",
+      "pattern": "25"
+    },
+    {
+      "town": "吉野町",
+      "townEn": "Yoshinocho",
+      "kana": "ヨシノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区吉野町",
+      "jp": "葵区吉野町",
+      "pattern": "38"
+    },
+    {
+      "town": "四番町",
+      "townEn": "Yombancho",
+      "kana": "ヨンバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区四番町",
+      "jp": "葵区四番町",
+      "pattern": "21"
+    },
+    {
+      "town": "竜南1丁目、3丁目",
+      "townEn": "竜南1丁目、3丁目",
+      "kana": "り",
+      "chome": null,
+      "detail": null,
+      "en": "葵区竜南1丁目、3丁目",
+      "jp": "葵区竜南1丁目、3丁目",
+      "pattern": "35"
+    },
+    {
+      "town": "竜南2丁目",
+      "townEn": "竜南2丁目",
+      "kana": "り",
+      "chome": null,
+      "detail": null,
+      "en": "葵区竜南2丁目",
+      "jp": "葵区竜南2丁目",
+      "pattern": "72"
+    },
+    {
+      "town": "両替町1～2丁目",
+      "townEn": "両替町1～2丁目",
+      "kana": "り",
+      "chome": null,
+      "detail": null,
+      "en": "葵区両替町1～2丁目",
+      "jp": "葵区両替町1～2丁目",
+      "pattern": "26"
+    },
+    {
+      "town": "六番町",
+      "townEn": "Rokubancho",
+      "kana": "ロクバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区六番町",
+      "jp": "葵区六番町",
+      "pattern": "21"
+    },
+    {
+      "town": "若松町",
+      "townEn": "Wakamatsucho",
+      "kana": "ワカマツチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "葵区若松町",
+      "jp": "葵区若松町",
+      "pattern": "14"
+    },
+    {
+      "town": "青木",
+      "townEn": "Aoki",
+      "kana": "アオキ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区青木",
+      "jp": "駿河区青木",
+      "pattern": "73"
+    },
+    {
+      "town": "青沢",
+      "townEn": "Aosawa",
+      "kana": "アオサワ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区青沢",
+      "jp": "駿河区青沢",
+      "pattern": "74"
+    },
+    {
+      "town": "安居",
+      "townEn": "Ago",
+      "kana": "アゴ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区安居",
+      "jp": "駿河区安居",
+      "pattern": "74"
+    },
+    {
+      "town": "有明町",
+      "townEn": "Ariakecho",
+      "kana": "アリアケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区有明町",
+      "jp": "駿河区有明町",
+      "pattern": "75"
+    },
+    {
+      "town": "池田（池田自治会を除く）",
+      "townEn": "池田（池田自治会を除く）",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区池田（池田自治会を除く）",
+      "jp": "駿河区池田（池田自治会を除く）",
+      "pattern": "76"
+    },
+    {
+      "town": "池田（池田自治会）",
+      "townEn": "池田（池田自治会）",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区池田（池田自治会）",
+      "jp": "駿河区池田（池田自治会）",
+      "pattern": "77"
+    },
+    {
+      "town": "石田1丁目",
+      "townEn": "石田1丁目",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区石田1丁目",
+      "jp": "駿河区石田1丁目",
+      "pattern": "78"
+    },
+    {
+      "town": "石田2丁目",
+      "townEn": "石田2丁目",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区石田2丁目",
+      "jp": "駿河区石田2丁目",
+      "pattern": "79"
+    },
+    {
+      "town": "石田3丁目（中田三・四丁目町内会を除く）",
+      "townEn": "石田3丁目（中田三・四丁目町内会を除く）",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区石田3丁目（中田三・四丁目町内会を除く）",
+      "jp": "駿河区石田3丁目（中田三・四丁目町内会を除く）",
+      "pattern": "80"
+    },
+    {
+      "town": "石田3丁目（中田三・四丁目町内会）",
+      "townEn": "石田3丁目（中田三・四丁目町内会）",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区石田3丁目（中田三・四丁目町内会）",
+      "jp": "駿河区石田3丁目（中田三・四丁目町内会）",
+      "pattern": "81"
+    },
+    {
+      "town": "泉町",
+      "townEn": "Izumicho",
+      "kana": "イズミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区泉町",
+      "jp": "駿河区泉町",
+      "pattern": "10"
+    },
+    {
+      "town": "稲川1丁目",
+      "townEn": "稲川1丁目",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区稲川1丁目",
+      "jp": "駿河区稲川1丁目",
+      "pattern": "82"
+    },
+    {
+      "town": "稲川2～3丁目",
+      "townEn": "稲川2～3丁目",
+      "kana": "い",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区稲川2～3丁目",
+      "jp": "駿河区稲川2～3丁目",
+      "pattern": "83"
+    },
+    {
+      "town": "宇津ノ谷",
+      "townEn": "Utsunoya",
+      "kana": "ウツノヤ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区宇津ノ谷",
+      "jp": "駿河区宇津ノ谷",
+      "pattern": "84"
+    },
+    {
+      "town": "有東1～2丁目",
+      "townEn": "有東1～2丁目",
+      "kana": "う",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区有東1～2丁目",
+      "jp": "駿河区有東1～2丁目",
+      "pattern": "78"
+    },
+    {
+      "town": "有東3丁目",
+      "townEn": "有東3丁目",
+      "kana": "う",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区有東3丁目",
+      "jp": "駿河区有東3丁目",
+      "pattern": "79"
+    },
+    {
+      "town": "大坪町",
+      "townEn": "Otsubocho",
+      "kana": "オオツボチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区大坪町",
+      "jp": "駿河区大坪町",
+      "pattern": "85"
+    },
+    {
+      "town": "大谷、大谷1～3丁目",
+      "townEn": "大谷、大谷1～3丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区大谷、大谷1～3丁目",
+      "jp": "駿河区大谷、大谷1～3丁目",
+      "pattern": "74"
+    },
+    {
+      "town": "大和田",
+      "townEn": "Owada",
+      "kana": "オオワダ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区大和田",
+      "jp": "駿河区大和田",
+      "pattern": "73"
+    },
+    {
+      "town": "小黒1丁目（曲金2丁目2区自治会を除く）",
+      "townEn": "小黒1丁目（曲金2丁目2区自治会を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小黒1丁目（曲金2丁目2区自治会を除く）",
+      "jp": "駿河区小黒1丁目（曲金2丁目2区自治会を除く）",
+      "pattern": "47"
+    },
+    {
+      "town": "小黒1丁目（曲金2丁目2区自治会）",
+      "townEn": "小黒1丁目（曲金2丁目2区自治会）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小黒1丁目（曲金2丁目2区自治会）",
+      "jp": "駿河区小黒1丁目（曲金2丁目2区自治会）",
+      "pattern": "86"
+    },
+    {
+      "town": "小黒2～3丁目",
+      "townEn": "小黒2～3丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小黒2～3丁目",
+      "jp": "駿河区小黒2～3丁目",
+      "pattern": "37"
+    },
+    {
+      "town": "小坂、小坂1～3丁目",
+      "townEn": "小坂、小坂1～3丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小坂、小坂1～3丁目",
+      "jp": "駿河区小坂、小坂1～3丁目",
+      "pattern": "73"
+    },
+    {
+      "town": "小鹿（小鹿自治会）",
+      "townEn": "小鹿（小鹿自治会）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿（小鹿自治会）",
+      "jp": "駿河区小鹿（小鹿自治会）",
+      "pattern": "87"
+    },
+    {
+      "town": "小鹿（片山町内会）",
+      "townEn": "小鹿（片山町内会）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿（片山町内会）",
+      "jp": "駿河区小鹿（片山町内会）",
+      "pattern": "88"
+    },
+    {
+      "town": "小鹿1丁目（曲金蔵屋敷自治会を除く）",
+      "townEn": "小鹿1丁目（曲金蔵屋敷自治会を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿1丁目（曲金蔵屋敷自治会を除く）",
+      "jp": "駿河区小鹿1丁目（曲金蔵屋敷自治会を除く）",
+      "pattern": "87"
+    },
+    {
+      "town": "小鹿1丁目（曲金蔵屋敷自治会）",
+      "townEn": "小鹿1丁目（曲金蔵屋敷自治会）",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿1丁目（曲金蔵屋敷自治会）",
+      "jp": "駿河区小鹿1丁目（曲金蔵屋敷自治会）",
+      "pattern": "68"
+    },
+    {
+      "town": "小鹿2丁目",
+      "townEn": "小鹿2丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿2丁目",
+      "jp": "駿河区小鹿2丁目",
+      "pattern": "87"
+    },
+    {
+      "town": "小鹿3丁目",
+      "townEn": "小鹿3丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区小鹿3丁目",
+      "jp": "駿河区小鹿3丁目",
+      "pattern": "89"
+    },
+    {
+      "town": "恩田原",
+      "townEn": "Ondabara",
+      "kana": "オンダバラ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区恩田原",
+      "jp": "駿河区恩田原",
+      "pattern": "74"
+    },
+    {
+      "town": "片山",
+      "townEn": "Katayama",
+      "kana": "カタヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区片山",
+      "jp": "駿河区片山",
+      "pattern": "74"
+    },
+    {
+      "town": "鎌田",
+      "townEn": "Kamata",
+      "kana": "カマタ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区鎌田",
+      "jp": "駿河区鎌田",
+      "pattern": "90"
+    },
+    {
+      "town": "上川原（上川原自治会を除く）",
+      "townEn": "上川原（上川原自治会を除く）",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区上川原（上川原自治会を除く）",
+      "jp": "駿河区上川原（上川原自治会を除く）",
+      "pattern": "90"
+    },
+    {
+      "town": "上川原（上川原自治会）",
+      "townEn": "上川原（上川原自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区上川原（上川原自治会）",
+      "jp": "駿河区上川原（上川原自治会）",
+      "pattern": "91"
+    },
+    {
+      "town": "北丸子1～2丁目",
+      "townEn": "北丸子1～2丁目",
+      "kana": "き",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区北丸子1～2丁目",
+      "jp": "駿河区北丸子1～2丁目",
+      "pattern": "84"
+    },
+    {
+      "town": "国吉田1～6丁目",
+      "townEn": "国吉田1～6丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区国吉田1～6丁目",
+      "jp": "駿河区国吉田1～6丁目",
+      "pattern": "92"
+    },
+    {
+      "town": "栗原",
+      "townEn": "Kurihara",
+      "kana": "クリハラ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区栗原",
+      "jp": "駿河区栗原",
+      "pattern": "92"
+    },
+    {
+      "town": "光陽町",
+      "townEn": "Koyocho",
+      "kana": "コウヨウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区光陽町",
+      "jp": "駿河区光陽町",
+      "pattern": "93"
+    },
+    {
+      "town": "寿町",
+      "townEn": "Kotobukicho",
+      "kana": "コトブキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区寿町",
+      "jp": "駿河区寿町",
+      "pattern": "94"
+    },
+    {
+      "town": "さつき町",
+      "townEn": "Satsukicho",
+      "kana": "サツキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区さつき町",
+      "jp": "駿河区さつき町",
+      "pattern": "47"
+    },
+    {
+      "town": "敷地1～2丁目",
+      "townEn": "敷地1～2丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区敷地1～2丁目",
+      "jp": "駿河区敷地1～2丁目",
+      "pattern": "95"
+    },
+    {
+      "town": "下川原",
+      "townEn": "Shimokawahara",
+      "kana": "シモカワハラ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区下川原",
+      "jp": "駿河区下川原",
+      "pattern": "91"
+    },
+    {
+      "town": "下川原1～3丁目",
+      "townEn": "下川原1～3丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区下川原1～3丁目",
+      "jp": "駿河区下川原1～3丁目",
+      "pattern": "93"
+    },
+    {
+      "town": "下川原4～5丁目",
+      "townEn": "下川原4～5丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区下川原4～5丁目",
+      "jp": "駿河区下川原4～5丁目",
+      "pattern": "96"
+    },
+    {
+      "town": "下川原6丁目、下川原南",
+      "townEn": "下川原6丁目、下川原南",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区下川原6丁目、下川原南",
+      "jp": "駿河区下川原6丁目、下川原南",
+      "pattern": "97"
+    },
+    {
+      "town": "下島",
+      "townEn": "Shimojima",
+      "kana": "シモジマ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区下島",
+      "jp": "駿河区下島",
+      "pattern": "98"
+    },
+    {
+      "town": "新川1～2丁目",
+      "townEn": "新川1～2丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区新川1～2丁目",
+      "jp": "駿河区新川1～2丁目",
+      "pattern": "99"
+    },
+    {
+      "town": "石部",
+      "townEn": "Sekibe",
+      "kana": "セキベ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区石部",
+      "jp": "駿河区石部",
+      "pattern": "100"
+    },
+    {
+      "town": "高松、高松1～2丁目",
+      "townEn": "高松、高松1～2丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区高松、高松1～2丁目",
+      "jp": "駿河区高松、高松1～2丁目",
+      "pattern": "95"
+    },
+    {
+      "town": "津島町",
+      "townEn": "Tsushimacho",
+      "kana": "ツシマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区津島町",
+      "jp": "駿河区津島町",
+      "pattern": "99"
+    },
+    {
+      "town": "手越、手越原",
+      "townEn": "手越、手越原",
+      "kana": "て",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区手越、手越原",
+      "jp": "駿河区手越、手越原",
+      "pattern": "101"
+    },
+    {
+      "town": "寺田",
+      "townEn": "Terada",
+      "kana": "テラダ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区寺田",
+      "jp": "駿河区寺田",
+      "pattern": "73"
+    },
+    {
+      "town": "東新田（東新田自治会）",
+      "townEn": "東新田（東新田自治会）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東新田（東新田自治会）",
+      "jp": "駿河区東新田（東新田自治会）",
+      "pattern": "102"
+    },
+    {
+      "town": "東新田（丸子新田自治会）",
+      "townEn": "東新田（丸子新田自治会）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東新田（丸子新田自治会）",
+      "jp": "駿河区東新田（丸子新田自治会）",
+      "pattern": "93"
+    },
+    {
+      "town": "東新田1～4丁目",
+      "townEn": "東新田1～4丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東新田1～4丁目",
+      "jp": "駿河区東新田1～4丁目",
+      "pattern": "102"
+    },
+    {
+      "town": "東新田5丁目（東新田自治会を除く）",
+      "townEn": "東新田5丁目（東新田自治会を除く）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東新田5丁目（東新田自治会を除く）",
+      "jp": "駿河区東新田5丁目（東新田自治会を除く）",
+      "pattern": "93"
+    },
+    {
+      "town": "東新田5丁目（東新田自治会）",
+      "townEn": "東新田5丁目（東新田自治会）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東新田5丁目（東新田自治会）",
+      "jp": "駿河区東新田5丁目（東新田自治会）",
+      "pattern": "102"
+    },
+    {
+      "town": "豊田1～3丁目",
+      "townEn": "豊田1～3丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区豊田1～3丁目",
+      "jp": "駿河区豊田1～3丁目",
+      "pattern": "103"
+    },
+    {
+      "town": "豊原町",
+      "townEn": "Toyoharacho",
+      "kana": "トヨハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区豊原町",
+      "jp": "駿河区豊原町",
+      "pattern": "47"
+    },
+    {
+      "town": "登呂1丁目",
+      "townEn": "登呂1丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区登呂1丁目",
+      "jp": "駿河区登呂1丁目",
+      "pattern": "104"
+    },
+    {
+      "town": "登呂2～4丁目",
+      "townEn": "登呂2～4丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区登呂2～4丁目",
+      "jp": "駿河区登呂2～4丁目",
+      "pattern": "79"
+    },
+    {
+      "town": "登呂5丁目（登呂本町町内会）",
+      "townEn": "登呂5丁目（登呂本町町内会）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区登呂5丁目（登呂本町町内会）",
+      "jp": "駿河区登呂5丁目（登呂本町町内会）",
+      "pattern": "79"
+    },
+    {
+      "town": "登呂5丁目（登呂6丁目自治会）",
+      "townEn": "登呂5丁目（登呂6丁目自治会）",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区登呂5丁目（登呂6丁目自治会）",
+      "jp": "駿河区登呂5丁目（登呂6丁目自治会）",
+      "pattern": "80"
+    },
+    {
+      "town": "登呂6丁目",
+      "townEn": "登呂6丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区登呂6丁目",
+      "jp": "駿河区登呂6丁目",
+      "pattern": "80"
+    },
+    {
+      "town": "中島",
+      "townEn": "Nakajima",
+      "kana": "ナカジマ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中島",
+      "jp": "駿河区中島",
+      "pattern": "105"
+    },
+    {
+      "town": "中田1～4丁目",
+      "townEn": "中田1～4丁目",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中田1～4丁目",
+      "jp": "駿河区中田1～4丁目",
+      "pattern": "82"
+    },
+    {
+      "town": "中田本町（西脇町内会を除く）",
+      "townEn": "中田本町（西脇町内会を除く）",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中田本町（西脇町内会を除く）",
+      "jp": "駿河区中田本町（西脇町内会を除く）",
+      "pattern": "82"
+    },
+    {
+      "town": "中田本町（西脇町内会）",
+      "townEn": "中田本町（西脇町内会）",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中田本町（西脇町内会）",
+      "jp": "駿河区中田本町（西脇町内会）",
+      "pattern": "106"
+    },
+    {
+      "town": "中野新田",
+      "townEn": "Nakanoshinden",
+      "kana": "ナカノシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中野新田",
+      "jp": "駿河区中野新田",
+      "pattern": "99"
+    },
+    {
+      "town": "中原（中原自治会・ファミールグランデージ中原自治会を除く）",
+      "townEn": "中原（中原自治会・ファミールグランデージ中原自治会を除く）",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中原（中原自治会・ファミールグランデージ中原自治会を除く）",
+      "jp": "駿河区中原（中原自治会・ファミールグランデージ中原自治会を除く）",
+      "pattern": "99"
+    },
+    {
+      "town": "中原（中原自治会・ファミールグランデージ中原自治会）",
+      "townEn": "中原（中原自治会・ファミールグランデージ中原自治会）",
+      "kana": "な",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中原（中原自治会・ファミールグランデージ中原自治会）",
+      "jp": "駿河区中原（中原自治会・ファミールグランデージ中原自治会）",
+      "pattern": "107"
+    },
+    {
+      "town": "中平松",
+      "townEn": "Nakahiramatsu",
+      "kana": "ナカヒラマツ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中平松",
+      "jp": "駿河区中平松",
+      "pattern": "74"
+    },
+    {
+      "town": "中村町",
+      "townEn": "Nakamuracho",
+      "kana": "ナカムラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中村町",
+      "jp": "駿河区中村町",
+      "pattern": "108"
+    },
+    {
+      "town": "中吉田",
+      "townEn": "Nakayoshida",
+      "kana": "ナカヨシダ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区中吉田",
+      "jp": "駿河区中吉田",
+      "pattern": "92"
+    },
+    {
+      "town": "西大谷",
+      "townEn": "Nishioya",
+      "kana": "ニシオオヤ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西大谷",
+      "jp": "駿河区西大谷",
+      "pattern": "74"
+    },
+    {
+      "town": "西島",
+      "townEn": "Nishijima",
+      "kana": "ニシジマ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西島",
+      "jp": "駿河区西島",
+      "pattern": "105"
+    },
+    {
+      "town": "西中原1丁目",
+      "townEn": "西中原1丁目",
+      "kana": "に",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西中原1丁目",
+      "jp": "駿河区西中原1丁目",
+      "pattern": "94"
+    },
+    {
+      "town": "西中原2丁目",
+      "townEn": "西中原2丁目",
+      "kana": "に",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西中原2丁目",
+      "jp": "駿河区西中原2丁目",
+      "pattern": "37"
+    },
+    {
+      "town": "西平松",
+      "townEn": "Nishihiramatsu",
+      "kana": "ニシヒラマツ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西平松",
+      "jp": "駿河区西平松",
+      "pattern": "74"
+    },
+    {
+      "town": "西脇",
+      "townEn": "Nishiwaki",
+      "kana": "ニシワキ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区西脇",
+      "jp": "駿河区西脇",
+      "pattern": "109"
+    },
+    {
+      "town": "根古屋",
+      "townEn": "Negoya",
+      "kana": "ネゴヤ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区根古屋",
+      "jp": "駿河区根古屋",
+      "pattern": "74"
+    },
+    {
+      "town": "東静岡2丁目",
+      "townEn": "東静岡2丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区東静岡2丁目",
+      "jp": "駿河区東静岡2丁目",
+      "pattern": "77"
+    },
+    {
+      "town": "聖一色",
+      "townEn": "Hijiriisshiki",
+      "kana": "ヒジリイッシキ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区聖一色",
+      "jp": "駿河区聖一色",
+      "pattern": "92"
+    },
+    {
+      "town": "平沢",
+      "townEn": "Hirasawa",
+      "kana": "ヒラサワ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区平沢",
+      "jp": "駿河区平沢",
+      "pattern": "92"
+    },
+    {
+      "town": "広野1～2丁目",
+      "townEn": "広野1～2丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区広野1～2丁目",
+      "jp": "駿河区広野1～2丁目",
+      "pattern": "110"
+    },
+    {
+      "town": "広野3丁目",
+      "townEn": "広野3丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区広野3丁目",
+      "jp": "駿河区広野3丁目",
+      "pattern": "41"
+    },
+    {
+      "town": "広野、広野4～6丁目",
+      "townEn": "広野、広野4～6丁目",
+      "kana": "ひ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区広野、広野4～6丁目",
+      "jp": "駿河区広野、広野4～6丁目",
+      "pattern": "111"
+    },
+    {
+      "town": "富士見台1～3丁目",
+      "townEn": "富士見台1～3丁目",
+      "kana": "ふ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区富士見台1～3丁目",
+      "jp": "駿河区富士見台1～3丁目",
+      "pattern": "112"
+    },
+    {
+      "town": "古宿",
+      "townEn": "Furuyado",
+      "kana": "フルヤド",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区古宿",
+      "jp": "駿河区古宿",
+      "pattern": "74"
+    },
+    {
+      "town": "曲金1丁目（豊原町自治会を除く）",
+      "townEn": "曲金1丁目（豊原町自治会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金1丁目（豊原町自治会を除く）",
+      "jp": "駿河区曲金1丁目（豊原町自治会を除く）",
+      "pattern": "86"
+    },
+    {
+      "town": "曲金1丁目（豊原町自治会）",
+      "townEn": "曲金1丁目（豊原町自治会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金1丁目（豊原町自治会）",
+      "jp": "駿河区曲金1丁目（豊原町自治会）",
+      "pattern": "47"
+    },
+    {
+      "town": "曲金2丁目",
+      "townEn": "曲金2丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金2丁目",
+      "jp": "駿河区曲金2丁目",
+      "pattern": "86"
+    },
+    {
+      "town": "曲金3～4丁目",
+      "townEn": "曲金3～4丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金3～4丁目",
+      "jp": "駿河区曲金3～4丁目",
+      "pattern": "103"
+    },
+    {
+      "town": "曲金5丁目",
+      "townEn": "曲金5丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金5丁目",
+      "jp": "駿河区曲金5丁目",
+      "pattern": "68"
+    },
+    {
+      "town": "曲金6～7丁目",
+      "townEn": "曲金6～7丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区曲金6～7丁目",
+      "jp": "駿河区曲金6～7丁目",
+      "pattern": "113"
+    },
+    {
+      "town": "馬渕1～3丁目",
+      "townEn": "馬渕1～3丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区馬渕1～3丁目",
+      "jp": "駿河区馬渕1～3丁目",
+      "pattern": "114"
+    },
+    {
+      "town": "馬渕4丁目（中田本町自治会を除く）",
+      "townEn": "馬渕4丁目（中田本町自治会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区馬渕4丁目（中田本町自治会を除く）",
+      "jp": "駿河区馬渕4丁目（中田本町自治会を除く）",
+      "pattern": "114"
+    },
+    {
+      "town": "馬渕4丁目（中田本町自治会）",
+      "townEn": "馬渕4丁目（中田本町自治会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区馬渕4丁目（中田本町自治会）",
+      "jp": "駿河区馬渕4丁目（中田本町自治会）",
+      "pattern": "10"
+    },
+    {
+      "town": "丸子（寺田町内会を除く）",
+      "townEn": "丸子（寺田町内会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子（寺田町内会を除く）",
+      "jp": "駿河区丸子（寺田町内会を除く）",
+      "pattern": "84"
+    },
+    {
+      "town": "丸子（寺田町内会）",
+      "townEn": "丸子（寺田町内会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子（寺田町内会）",
+      "jp": "駿河区丸子（寺田町内会）",
+      "pattern": "115"
+    },
+    {
+      "town": "丸子1丁目（鎌田自治会を除く）",
+      "townEn": "丸子1丁目（鎌田自治会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子1丁目（鎌田自治会を除く）",
+      "jp": "駿河区丸子1丁目（鎌田自治会を除く）",
+      "pattern": "84"
+    },
+    {
+      "town": "丸子1丁目（鎌田自治会）",
+      "townEn": "丸子1丁目（鎌田自治会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子1丁目（鎌田自治会）",
+      "jp": "駿河区丸子1丁目（鎌田自治会）",
+      "pattern": "116"
+    },
+    {
+      "town": "丸子2丁目（鎌田自治会を除く）",
+      "townEn": "丸子2丁目（鎌田自治会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子2丁目（鎌田自治会を除く）",
+      "jp": "駿河区丸子2丁目（鎌田自治会を除く）",
+      "pattern": "84"
+    },
+    {
+      "town": "丸子2丁目（鎌田自治会）",
+      "townEn": "丸子2丁目（鎌田自治会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子2丁目（鎌田自治会）",
+      "jp": "駿河区丸子2丁目（鎌田自治会）",
+      "pattern": "116"
+    },
+    {
+      "town": "丸子3～7丁目、丸子芹が谷町",
+      "townEn": "丸子3～7丁目、丸子芹が谷町",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子3～7丁目、丸子芹が谷町",
+      "jp": "駿河区丸子3～7丁目、丸子芹が谷町",
+      "pattern": "84"
+    },
+    {
+      "town": "丸子新田（丸子新田自治会を除く）",
+      "townEn": "丸子新田（丸子新田自治会を除く）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子新田（丸子新田自治会を除く）",
+      "jp": "駿河区丸子新田（丸子新田自治会を除く）",
+      "pattern": "90"
+    },
+    {
+      "town": "丸子新田（丸子新田自治会）",
+      "townEn": "丸子新田（丸子新田自治会）",
+      "kana": "ま",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区丸子新田（丸子新田自治会）",
+      "jp": "駿河区丸子新田（丸子新田自治会）",
+      "pattern": "91"
+    },
+    {
+      "town": "水上",
+      "townEn": "Mizukami",
+      "kana": "ミズカミ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区水上",
+      "jp": "駿河区水上",
+      "pattern": "74"
+    },
+    {
+      "town": "みずほ1～5丁目",
+      "townEn": "みずほ1～5丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区みずほ1～5丁目",
+      "jp": "駿河区みずほ1～5丁目",
+      "pattern": "117"
+    },
+    {
+      "town": "見瀬",
+      "townEn": "Mise",
+      "kana": "ミセ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区見瀬",
+      "jp": "駿河区見瀬",
+      "pattern": "114"
+    },
+    {
+      "town": "緑が丘町",
+      "townEn": "Midorigaokacho",
+      "kana": "ミドリガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区緑が丘町",
+      "jp": "駿河区緑が丘町",
+      "pattern": "99"
+    },
+    {
+      "town": "南安倍3丁目",
+      "townEn": "南安倍3丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区南安倍3丁目",
+      "jp": "駿河区南安倍3丁目",
+      "pattern": "37"
+    },
+    {
+      "town": "南町",
+      "townEn": "Minamicho",
+      "kana": "ミナミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区南町",
+      "jp": "駿河区南町",
+      "pattern": "10"
+    },
+    {
+      "town": "南八幡町",
+      "townEn": "Minamiyahatacho",
+      "kana": "ミナミヤハタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区南八幡町",
+      "jp": "駿河区南八幡町",
+      "pattern": "78"
+    },
+    {
+      "town": "宮川",
+      "townEn": "Miyagawa",
+      "kana": "ミヤガワ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区宮川",
+      "jp": "駿河区宮川",
+      "pattern": "74"
+    },
+    {
+      "town": "宮竹1～2丁目",
+      "townEn": "宮竹1～2丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区宮竹1～2丁目",
+      "jp": "駿河区宮竹1～2丁目",
+      "pattern": "95"
+    },
+    {
+      "town": "宮本町",
+      "townEn": "Miyamotocho",
+      "kana": "ミヤモトチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区宮本町",
+      "jp": "駿河区宮本町",
+      "pattern": "99"
+    },
+    {
+      "town": "向敷地",
+      "townEn": "Mukoshikiji",
+      "kana": "ムコウシキジ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区向敷地",
+      "jp": "駿河区向敷地",
+      "pattern": "101"
+    },
+    {
+      "town": "向敷地1～6丁目",
+      "townEn": "向敷地1～6丁目",
+      "kana": "む",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区向敷地1～6丁目",
+      "jp": "駿河区向敷地1～6丁目",
+      "pattern": "101"
+    },
+    {
+      "town": "向手越1～2丁目",
+      "townEn": "向手越1～2丁目",
+      "kana": "む",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区向手越1～2丁目",
+      "jp": "駿河区向手越1～2丁目",
+      "pattern": "101"
+    },
+    {
+      "town": "用宗、用宗1～5丁目、用宗小石町、用宗城山町、用宗巴町",
+      "townEn": "用宗、用宗1～5丁目、用宗小石町、用宗城山町、用宗巴町",
+      "kana": "も",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区用宗、用宗1～5丁目、用宗小石町、用宗城山町、用宗巴町",
+      "jp": "駿河区用宗、用宗1～5丁目、用宗小石町、用宗城山町、用宗巴町",
+      "pattern": "100"
+    },
+    {
+      "town": "桃園町",
+      "townEn": "Momozonocho",
+      "kana": "モモゾノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区桃園町",
+      "jp": "駿河区桃園町",
+      "pattern": "97"
+    },
+    {
+      "town": "森下町",
+      "townEn": "Morishitacho",
+      "kana": "モリシタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区森下町",
+      "jp": "駿河区森下町",
+      "pattern": "86"
+    },
+    {
+      "town": "谷田",
+      "townEn": "Yada",
+      "kana": "ヤダ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区谷田",
+      "jp": "駿河区谷田",
+      "pattern": "92"
+    },
+    {
+      "town": "八幡1～2丁目",
+      "townEn": "八幡1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区八幡1～2丁目",
+      "jp": "駿河区八幡1～2丁目",
+      "pattern": "86"
+    },
+    {
+      "town": "八幡3丁目",
+      "townEn": "八幡3丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区八幡3丁目",
+      "jp": "駿河区八幡3丁目",
+      "pattern": "118"
+    },
+    {
+      "town": "八幡4～5丁目",
+      "townEn": "八幡4～5丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区八幡4～5丁目",
+      "jp": "駿河区八幡4～5丁目",
+      "pattern": "119"
+    },
+    {
+      "town": "八幡山",
+      "townEn": "Yahatayama",
+      "kana": "ヤハタヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区八幡山",
+      "jp": "駿河区八幡山",
+      "pattern": "120"
+    },
+    {
+      "town": "大和1～2丁目",
+      "townEn": "大和1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区大和1～2丁目",
+      "jp": "駿河区大和1～2丁目",
+      "pattern": "86"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駿河区弥生町",
+      "jp": "駿河区弥生町",
+      "pattern": "92"
+    },
+    {
+      "town": "相生町",
+      "townEn": "Aioicho",
+      "kana": "アイオイチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区相生町浜田",
+      "jp": "清水区相生町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "愛染町",
+      "townEn": "Aizomecho",
+      "kana": "アイゾメチョウ",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区愛染町辻",
+      "jp": "清水区愛染町辻",
+      "pattern": "122"
+    },
+    {
+      "town": "青葉町",
+      "townEn": "Aobacho",
+      "kana": "アオバチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区青葉町岡",
+      "jp": "清水区青葉町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "秋吉町（八坂町自治会を除く）",
+      "townEn": "秋吉町（八坂町自治会を除く）",
+      "kana": "あ",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区秋吉町（八坂町自治会を除く）辻",
+      "jp": "清水区秋吉町（八坂町自治会を除く）辻",
+      "pattern": "122"
+    },
+    {
+      "town": "秋吉町の一部（八坂町自治会）",
+      "townEn": "秋吉町の一部（八坂町自治会）",
+      "kana": "あ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区秋吉町の一部（八坂町自治会）飯田東",
+      "jp": "清水区秋吉町の一部（八坂町自治会）飯田東",
+      "pattern": "122"
+    },
+    {
+      "town": "旭町",
+      "townEn": "Asahicho",
+      "kana": "アサヒチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区旭町浜田",
+      "jp": "清水区旭町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "淡島町",
+      "townEn": "Awashimacho",
+      "kana": "アワシマチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区淡島町入江",
+      "jp": "清水区淡島町入江",
+      "pattern": "121"
+    },
+    {
+      "town": "飯田町",
+      "townEn": "Iidacho",
+      "kana": "イイダチョウ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区飯田町飯田東",
+      "jp": "清水区飯田町飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "伊佐布",
+      "townEn": "Isabu",
+      "kana": "イサブ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区伊佐布庵原",
+      "jp": "清水区伊佐布庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区石川飯田西",
+      "jp": "清水区石川飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "石川新町（高部団地自治会を除く）",
+      "townEn": "石川新町（高部団地自治会を除く）",
+      "kana": "い",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区石川新町（高部団地自治会を除く）飯田西",
+      "jp": "清水区石川新町（高部団地自治会を除く）飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "石川新町（高部団地自治会）",
+      "townEn": "石川新町（高部団地自治会）",
+      "kana": "い",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区石川新町（高部団地自治会）高部",
+      "jp": "清水区石川新町（高部団地自治会）高部",
+      "pattern": "126"
+    },
+    {
+      "town": "石川本町",
+      "townEn": "Ishikawahoncho",
+      "kana": "イシカワホンチョウ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区石川本町飯田西",
+      "jp": "清水区石川本町飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "庵原町",
+      "townEn": "Iharacho",
+      "kana": "イハラチョウ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区庵原町庵原",
+      "jp": "清水区庵原町庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "今泉",
+      "townEn": "Imaizumi",
+      "kana": "イマイズミ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区今泉船越",
+      "jp": "清水区今泉船越",
+      "pattern": "127"
+    },
+    {
+      "town": "入江1～3丁目",
+      "townEn": "入江1～3丁目",
+      "kana": "い",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区入江1～3丁目入江",
+      "jp": "清水区入江1～3丁目入江",
+      "pattern": "121"
+    },
+    {
+      "town": "入江岡町",
+      "townEn": "Irieokacho",
+      "kana": "イリエオカチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区入江岡町浜田",
+      "jp": "清水区入江岡町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "入江南町",
+      "townEn": "Irieminamicho",
+      "kana": "イリエミナミチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区入江南町入江",
+      "jp": "清水区入江南町入江",
+      "pattern": "121"
+    },
+    {
+      "town": "入船町",
+      "townEn": "Irifunecho",
+      "kana": "イリフネチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区入船町清水",
+      "jp": "清水区入船町清水",
+      "pattern": "121"
+    },
+    {
+      "town": "有東坂（平川地自治会を除く）",
+      "townEn": "有東坂（平川地自治会を除く）",
+      "kana": "う",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区有東坂（平川地自治会を除く）船越",
+      "jp": "清水区有東坂（平川地自治会を除く）船越",
+      "pattern": "127"
+    },
+    {
+      "town": "有東坂（平川地自治会）",
+      "townEn": "有東坂（平川地自治会）",
+      "kana": "う",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区有東坂（平川地自治会）有度東",
+      "jp": "清水区有東坂（平川地自治会）有度東",
+      "pattern": "127"
+    },
+    {
+      "town": "有東坂1～2丁目",
+      "townEn": "有東坂1～2丁目",
+      "kana": "う",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区有東坂1～2丁目船越",
+      "jp": "清水区有東坂1～2丁目船越",
+      "pattern": "127"
+    },
+    {
+      "town": "有度本町",
+      "townEn": "Udohoncho",
+      "kana": "ウドホンチョウ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区有度本町有度東",
+      "jp": "清水区有度本町有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "梅が岡",
+      "townEn": "Umegaoka",
+      "kana": "ウメガオカ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区梅が岡岡",
+      "jp": "清水区梅が岡岡",
+      "pattern": "129"
+    },
+    {
+      "town": "梅ヶ谷",
+      "townEn": "Umegaya",
+      "kana": "ウメガヤ",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区梅ヶ谷高部",
+      "jp": "清水区梅ヶ谷高部",
+      "pattern": "130"
+    },
+    {
+      "town": "梅田町",
+      "townEn": "Umedacho",
+      "kana": "ウメダチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区梅田町岡",
+      "jp": "清水区梅田町岡",
+      "pattern": "129"
+    },
+    {
+      "town": "上原",
+      "townEn": "Uwahara",
+      "kana": "ウワハラ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区上原有度東",
+      "jp": "清水区上原有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "上原1～2丁目",
+      "townEn": "上原1～2丁目",
+      "kana": "う",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区上原1～2丁目有度東",
+      "jp": "清水区上原1～2丁目有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "永楽町",
+      "townEn": "Eirakucho",
+      "kana": "エイラクチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区永楽町江尻",
+      "jp": "清水区永楽町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻台町",
+      "townEn": "Ejiridaimachi",
+      "kana": "エジリダイマチ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区江尻台町江尻",
+      "jp": "清水区江尻台町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻町",
+      "townEn": "Ejiricho",
+      "kana": "エジリチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区江尻町江尻",
+      "jp": "清水区江尻町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻東1～2丁目（末広町自治会を除く）",
+      "townEn": "江尻東1～2丁目（末広町自治会を除く）",
+      "kana": "え",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区江尻東1～2丁目（末広町自治会を除く）江尻",
+      "jp": "清水区江尻東1～2丁目（末広町自治会を除く）江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻東1～2丁目（末広町自治会）",
+      "townEn": "江尻東1～2丁目（末広町自治会）",
+      "kana": "え",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区江尻東1～2丁目（末広町自治会）辻",
+      "jp": "清水区江尻東1～2丁目（末広町自治会）辻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻東3丁目（仲浜町自治会を除く）",
+      "townEn": "江尻東3丁目（仲浜町自治会を除く）",
+      "kana": "え",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区江尻東3丁目（仲浜町自治会を除く）江尻",
+      "jp": "清水区江尻東3丁目（仲浜町自治会を除く）江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "江尻東3丁目（仲浜町自治会）",
+      "townEn": "江尻東3丁目（仲浜町自治会）",
+      "kana": "え",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区江尻東3丁目（仲浜町自治会）辻",
+      "jp": "清水区江尻東3丁目（仲浜町自治会）辻",
+      "pattern": "131"
+    },
+    {
+      "town": "恵比寿町",
+      "townEn": "Ebisucho",
+      "kana": "エビスチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区恵比寿町入江",
+      "jp": "清水区恵比寿町入江",
+      "pattern": "132"
+    },
+    {
+      "town": "追分1～4丁目",
+      "townEn": "追分1～4丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区追分1～4丁目入江",
+      "jp": "清水区追分1～4丁目入江",
+      "pattern": "132"
+    },
+    {
+      "town": "大内",
+      "townEn": "Ouchi",
+      "kana": "オオウチ",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区大内高部",
+      "jp": "清水区大内高部",
+      "pattern": "130"
+    },
+    {
+      "town": "大内新田",
+      "townEn": "Ouchishinden",
+      "kana": "オオウチシンデン",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区大内新田高部",
+      "jp": "清水区大内新田高部",
+      "pattern": "130"
+    },
+    {
+      "town": "大沢町",
+      "townEn": "Osawacho",
+      "kana": "オオサワチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区大沢町岡",
+      "jp": "清水区大沢町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "大坪1～2丁目",
+      "townEn": "大坪1～2丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区大坪1～2丁目船越",
+      "jp": "清水区大坪1～2丁目船越",
+      "pattern": "127"
+    },
+    {
+      "town": "大手1～2丁目",
+      "townEn": "大手1～2丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区大手1～2丁目江尻",
+      "jp": "清水区大手1～2丁目江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "大手3丁目（自由ヶ丘自治会を除く）",
+      "townEn": "大手3丁目（自由ヶ丘自治会を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区大手3丁目（自由ヶ丘自治会を除く）江尻",
+      "jp": "清水区大手3丁目（自由ヶ丘自治会を除く）江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "大手3丁目（自由ヶ丘自治会）",
+      "townEn": "大手3丁目（自由ヶ丘自治会）",
+      "kana": "お",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区大手3丁目（自由ヶ丘自治会）辻",
+      "jp": "清水区大手3丁目（自由ヶ丘自治会）辻",
+      "pattern": "131"
+    },
+    {
+      "town": "大平",
+      "townEn": "Ohira",
+      "kana": "オオヒラ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区大平両河内",
+      "jp": "清水区大平両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "岡町",
+      "townEn": "Okamachi",
+      "kana": "オカマチ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区岡町岡",
+      "jp": "清水区岡町岡",
+      "pattern": "129"
+    },
+    {
+      "town": "興津東町",
+      "townEn": "Okitsuazumacho",
+      "kana": "オキツアズマチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区興津東町興津",
+      "jp": "清水区興津東町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "興津井上町",
+      "townEn": "Okitsuinoecho",
+      "kana": "オキツイノウエチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区興津井上町興津",
+      "jp": "清水区興津井上町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "興津清見寺町",
+      "townEn": "Okitsuseikenjicho",
+      "kana": "オキツセイケンジチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区興津清見寺町興津",
+      "jp": "清水区興津清見寺町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "興津中町",
+      "townEn": "Okitsunakacho",
+      "kana": "オキツナカチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区興津中町興津",
+      "jp": "清水区興津中町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "興津本町",
+      "townEn": "Okitsuhoncho",
+      "kana": "オキツホンチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区興津本町興津",
+      "jp": "清水区興津本町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "押切",
+      "townEn": "Oshikiri",
+      "kana": "オシキリ",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区押切高部",
+      "jp": "清水区押切高部",
+      "pattern": "130"
+    },
+    {
+      "town": "小芝町",
+      "townEn": "Oshibacho",
+      "kana": "オシバチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区小芝町江尻",
+      "jp": "清水区小芝町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "小島町",
+      "townEn": "Ojimacho",
+      "kana": "オジマチョウ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区小島町小島",
+      "jp": "清水区小島町小島",
+      "pattern": "133"
+    },
+    {
+      "town": "小島本町",
+      "townEn": "Ojimahoncho",
+      "kana": "オジマホンチョウ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区小島本町小島",
+      "jp": "清水区小島本町小島",
+      "pattern": "133"
+    },
+    {
+      "town": "尾羽",
+      "townEn": "Obane",
+      "kana": "オバネ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区尾羽庵原",
+      "jp": "清水区尾羽庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "折戸（宮方3区・白浜自治会を除く）",
+      "townEn": "折戸（宮方3区・白浜自治会を除く）",
+      "kana": "お",
+      "chome": null,
+      "detail": "折戸",
+      "en": "清水区折戸（宮方3区・白浜自治会を除く）折戸",
+      "jp": "清水区折戸（宮方3区・白浜自治会を除く）折戸",
+      "pattern": "135"
+    },
+    {
+      "town": "折戸（宮方3区・白浜自治会）",
+      "townEn": "折戸（宮方3区・白浜自治会）",
+      "kana": "お",
+      "chome": null,
+      "detail": "三保",
+      "en": "清水区折戸（宮方3区・白浜自治会）三保",
+      "jp": "清水区折戸（宮方3区・白浜自治会）三保",
+      "pattern": "135"
+    },
+    {
+      "town": "折戸1～5丁目",
+      "townEn": "折戸1～5丁目",
+      "kana": "お",
+      "chome": null,
+      "detail": "折戸",
+      "en": "清水区折戸1～5丁目折戸",
+      "jp": "清水区折戸1～5丁目折戸",
+      "pattern": "135"
+    },
+    {
+      "town": "柏尾",
+      "townEn": "Kashio",
+      "kana": "カシオ",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区柏尾高部",
+      "jp": "清水区柏尾高部",
+      "pattern": "130"
+    },
+    {
+      "town": "春日1～2丁目",
+      "townEn": "春日1～2丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区春日1～2丁目岡",
+      "jp": "清水区春日1～2丁目岡",
+      "pattern": "123"
+    },
+    {
+      "town": "上1丁目",
+      "townEn": "上1丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区上1丁目浜田",
+      "jp": "清水区上1丁目浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "上2丁目",
+      "townEn": "上2丁目",
+      "kana": "か",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区上2丁目岡",
+      "jp": "清水区上2丁目岡",
+      "pattern": "129"
+    },
+    {
+      "town": "上清水町",
+      "townEn": "Kamishimizucho",
+      "kana": "カミシミズチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区上清水町浜田",
+      "jp": "清水区上清水町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "川原町",
+      "townEn": "Kawaharacho",
+      "kana": "カワハラチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区川原町岡",
+      "jp": "清水区川原町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "神田町",
+      "townEn": "Kanda Cho",
+      "kana": "カンダチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区神田町岡",
+      "jp": "清水区神田町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "蒲原（蒲原白銀自治会）",
+      "townEn": "蒲原（蒲原白銀自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原（蒲原白銀自治会）蒲原（西部自治会）",
+      "jp": "清水区蒲原（蒲原白銀自治会）蒲原（西部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（小金自治会）",
+      "townEn": "蒲原（小金自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（西部）",
+      "en": "清水区蒲原（小金自治会）蒲原（西部）",
+      "jp": "清水区蒲原（小金自治会）蒲原（西部）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（高浜自治会）",
+      "townEn": "蒲原（高浜自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（西部）",
+      "en": "清水区蒲原（高浜自治会）蒲原（西部）",
+      "jp": "清水区蒲原（高浜自治会）蒲原（西部）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（善福寺自治会）",
+      "townEn": "蒲原（善福寺自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部）",
+      "en": "清水区蒲原（善福寺自治会）蒲原（東部）",
+      "jp": "清水区蒲原（善福寺自治会）蒲原（東部）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（蒲原諏訪町自治会）",
+      "townEn": "蒲原（蒲原諏訪町自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部）",
+      "en": "清水区蒲原（蒲原諏訪町自治会）蒲原（東部）",
+      "jp": "清水区蒲原（蒲原諏訪町自治会）蒲原（東部）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（蒲原新栄自治会）",
+      "townEn": "蒲原（蒲原新栄自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部）",
+      "en": "清水区蒲原（蒲原新栄自治会）蒲原（東部）",
+      "jp": "清水区蒲原（蒲原新栄自治会）蒲原（東部）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原（蒲原日の出自治会）",
+      "townEn": "蒲原（蒲原日の出自治会）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部自治会）",
+      "en": "清水区蒲原（蒲原日の出自治会）蒲原（東部自治会）",
+      "jp": "清水区蒲原（蒲原日の出自治会）蒲原（東部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原1～4丁目（JR以南）",
+      "townEn": "蒲原1～4丁目（JR以南）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原1～4丁目（JR以南）蒲原（西部自治会）",
+      "jp": "清水区蒲原1～4丁目（JR以南）蒲原（西部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原1～4丁目（JR以北）",
+      "townEn": "蒲原1～4丁目（JR以北）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部自治会）",
+      "en": "清水区蒲原1～4丁目（JR以北）蒲原（東部自治会）",
+      "jp": "清水区蒲原1～4丁目（JR以北）蒲原（東部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原神沢",
+      "townEn": "Kambara Kanzawa",
+      "kana": "カンバラカンザワ",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原神沢蒲原（西部自治会）",
+      "jp": "清水区蒲原神沢蒲原（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "蒲原小金",
+      "townEn": "Kambara Kogane",
+      "kana": "カンバラコガネ",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原小金蒲原（西部自治会）",
+      "jp": "清水区蒲原小金蒲原（西部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原新栄",
+      "townEn": "Kambara Shinei",
+      "kana": "カンバラシンエイ",
+      "chome": null,
+      "detail": "蒲原（東部自治会）",
+      "en": "清水区蒲原新栄蒲原（東部自治会）",
+      "jp": "清水区蒲原新栄蒲原（東部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原新田1～2丁目（JR以南）",
+      "townEn": "蒲原新田1～2丁目（JR以南）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原新田1～2丁目（JR以南）蒲原（西部自治会）",
+      "jp": "清水区蒲原新田1～2丁目（JR以南）蒲原（西部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原新田1～2丁目（JR以北）",
+      "townEn": "蒲原新田1～2丁目（JR以北）",
+      "kana": "か",
+      "chome": null,
+      "detail": "蒲原（東部自治会）",
+      "en": "清水区蒲原新田1～2丁目（JR以北）蒲原（東部自治会）",
+      "jp": "清水区蒲原新田1～2丁目（JR以北）蒲原（東部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原堰沢",
+      "townEn": "Kambara Segizawa",
+      "kana": "カンバラセギザワ",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原堰沢蒲原（西部自治会）",
+      "jp": "清水区蒲原堰沢蒲原（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "蒲原中",
+      "townEn": "Kambara Naka",
+      "kana": "カンバラナカ",
+      "chome": null,
+      "detail": "蒲原（西部自治会）",
+      "en": "清水区蒲原中蒲原（西部自治会）",
+      "jp": "清水区蒲原中蒲原（西部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "蒲原東",
+      "townEn": "Kambara Higashi",
+      "kana": "カンバラヒガシ",
+      "chome": null,
+      "detail": "蒲原（東部自治会）",
+      "en": "清水区蒲原東蒲原（東部自治会）",
+      "jp": "清水区蒲原東蒲原（東部自治会）",
+      "pattern": "136"
+    },
+    {
+      "town": "北矢部",
+      "townEn": "Kitayabe",
+      "kana": "キタヤベ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区北矢部船越",
+      "jp": "清水区北矢部船越",
+      "pattern": "127"
+    },
+    {
+      "town": "北矢部町1～2丁目",
+      "townEn": "北矢部町1～2丁目",
+      "kana": "き",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区北矢部町1～2丁目清水",
+      "jp": "清水区北矢部町1～2丁目清水",
+      "pattern": "129"
+    },
+    {
+      "town": "北脇（北脇新田・渋川北自治会を除く国道以北）",
+      "townEn": "北脇（北脇新田・渋川北自治会を除く国道以北）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区北脇（北脇新田・渋川北自治会を除く国道以北）有度東",
+      "jp": "清水区北脇（北脇新田・渋川北自治会を除く国道以北）有度東",
+      "pattern": "138"
+    },
+    {
+      "town": "北脇（国道以南）",
+      "townEn": "北脇（国道以南）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区北脇（国道以南）有度東",
+      "jp": "清水区北脇（国道以南）有度東",
+      "pattern": "132"
+    },
+    {
+      "town": "北脇（北脇新田、渋川北自治会）",
+      "townEn": "北脇（北脇新田、渋川北自治会）",
+      "kana": "き",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区北脇（北脇新田、渋川北自治会）入江",
+      "jp": "清水区北脇（北脇新田、渋川北自治会）入江",
+      "pattern": "138"
+    },
+    {
+      "town": "北脇新田（北脇自治会を除く国道以北）",
+      "townEn": "北脇新田（北脇自治会を除く国道以北）",
+      "kana": "き",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区北脇新田（北脇自治会を除く国道以北）入江",
+      "jp": "清水区北脇新田（北脇自治会を除く国道以北）入江",
+      "pattern": "138"
+    },
+    {
+      "town": "北脇新田（北脇自治会を除く国道以南）",
+      "townEn": "北脇新田（北脇自治会を除く国道以南）",
+      "kana": "き",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区北脇新田（北脇自治会を除く国道以南）入江",
+      "jp": "清水区北脇新田（北脇自治会を除く国道以南）入江",
+      "pattern": "132"
+    },
+    {
+      "town": "北脇新田（北脇自治会の国道以北）",
+      "townEn": "北脇新田（北脇自治会の国道以北）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区北脇新田（北脇自治会の国道以北）有度東",
+      "jp": "清水区北脇新田（北脇自治会の国道以北）有度東",
+      "pattern": "138"
+    },
+    {
+      "town": "北脇新田（北脇自治会の国道以南）",
+      "townEn": "北脇新田（北脇自治会の国道以南）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区北脇新田（北脇自治会の国道以南）有度東",
+      "jp": "清水区北脇新田（北脇自治会の国道以南）有度東",
+      "pattern": "132"
+    },
+    {
+      "town": "吉川（吉川団地自治会を除く国道以北）",
+      "townEn": "吉川（吉川団地自治会を除く国道以北）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区吉川（吉川団地自治会を除く国道以北）有度東",
+      "jp": "清水区吉川（吉川団地自治会を除く国道以北）有度東",
+      "pattern": "139"
+    },
+    {
+      "town": "吉川（国道以南）",
+      "townEn": "吉川（国道以南）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区吉川（国道以南）有度東",
+      "jp": "清水区吉川（国道以南）有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "吉川（吉川団地自治会）",
+      "townEn": "吉川（吉川団地自治会）",
+      "kana": "き",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区吉川（吉川団地自治会）有度北",
+      "jp": "清水区吉川（吉川団地自治会）有度北",
+      "pattern": "139"
+    },
+    {
+      "town": "木の下町",
+      "townEn": "Kinoshitacho",
+      "kana": "キノシタチョウ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区木の下町船越",
+      "jp": "清水区木の下町船越",
+      "pattern": "127"
+    },
+    {
+      "town": "清地",
+      "townEn": "Kiyoji",
+      "kana": "キヨジ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区清地両河内",
+      "jp": "清水区清地両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "銀座（仲浜町自治会を除く）",
+      "townEn": "銀座（仲浜町自治会を除く）",
+      "kana": "き",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区銀座（仲浜町自治会を除く）江尻",
+      "jp": "清水区銀座（仲浜町自治会を除く）江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "銀座（仲浜町自治会）",
+      "townEn": "銀座（仲浜町自治会）",
+      "kana": "き",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区銀座（仲浜町自治会）辻",
+      "jp": "清水区銀座（仲浜町自治会）辻",
+      "pattern": "131"
+    },
+    {
+      "town": "草ヶ谷",
+      "townEn": "Kusagaya",
+      "kana": "クサガヤ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区草ヶ谷庵原",
+      "jp": "清水区草ヶ谷庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "草薙（国道以北）",
+      "townEn": "草薙（国道以北）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙（国道以北）有度西",
+      "jp": "清水区草薙（国道以北）有度西",
+      "pattern": "140"
+    },
+    {
+      "town": "草薙（国道以南）",
+      "townEn": "草薙（国道以南）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙（国道以南）有度西",
+      "jp": "清水区草薙（国道以南）有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙1丁目",
+      "townEn": "草薙1丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙1丁目有度西",
+      "jp": "清水区草薙1丁目有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙2丁目",
+      "townEn": "草薙2丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙2丁目有度西",
+      "jp": "清水区草薙2丁目有度西",
+      "pattern": "142"
+    },
+    {
+      "town": "草薙3丁目",
+      "townEn": "草薙3丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙3丁目有度西",
+      "jp": "清水区草薙3丁目有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙一里山",
+      "townEn": "Kusanagiichiriyama",
+      "kana": "クサナギイチリヤマ",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙一里山有度西",
+      "jp": "清水区草薙一里山有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙北",
+      "townEn": "Kusanagikita",
+      "kana": "クサナギキタ",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙北有度西",
+      "jp": "清水区草薙北有度西",
+      "pattern": "142"
+    },
+    {
+      "town": "草薙杉道1丁目（馬走一里山自治会を除く）",
+      "townEn": "草薙杉道1丁目（馬走一里山自治会を除く）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙杉道1丁目（馬走一里山自治会を除く）有度西",
+      "jp": "清水区草薙杉道1丁目（馬走一里山自治会を除く）有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙杉道1丁目（馬走一里山自治会）",
+      "townEn": "草薙杉道1丁目（馬走一里山自治会）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区草薙杉道1丁目（馬走一里山自治会）有度東",
+      "jp": "清水区草薙杉道1丁目（馬走一里山自治会）有度東",
+      "pattern": "141"
+    },
+    {
+      "town": "草薙杉道2～3丁目",
+      "townEn": "草薙杉道2～3丁目",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区草薙杉道2～3丁目有度西",
+      "jp": "清水区草薙杉道2～3丁目有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "楠",
+      "townEn": "Kusunoki",
+      "kana": "クスノキ",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区楠有度北",
+      "jp": "清水区楠有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "楠新田（国道以北）",
+      "townEn": "楠新田（国道以北）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区楠新田（国道以北）有度北",
+      "jp": "清水区楠新田（国道以北）有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "楠新田（国道以南）",
+      "townEn": "楠新田（国道以南）",
+      "kana": "く",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区楠新田（国道以南）有度北",
+      "jp": "清水区楠新田（国道以南）有度北",
+      "pattern": "142"
+    },
+    {
+      "town": "河内",
+      "townEn": "Kochi",
+      "kana": "コウチ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区河内両河内",
+      "jp": "清水区河内両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "港南町",
+      "townEn": "Konancho",
+      "kana": "コウナンチョウ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区港南町駒越",
+      "jp": "清水区港南町駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "小河内",
+      "townEn": "Kogochi",
+      "kana": "コゴウチ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区小河内小島",
+      "jp": "清水区小河内小島",
+      "pattern": "133"
+    },
+    {
+      "town": "駒越",
+      "townEn": "Komagoe",
+      "kana": "コマゴエ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越駒越",
+      "jp": "清水区駒越駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "駒越北町",
+      "townEn": "Komagoekitamachi",
+      "kana": "コマゴエキタマチ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越北町駒越",
+      "jp": "清水区駒越北町駒越",
+      "pattern": "144"
+    },
+    {
+      "town": "駒越中1～2丁目",
+      "townEn": "駒越中1～2丁目",
+      "kana": "こ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越中1～2丁目駒越",
+      "jp": "清水区駒越中1～2丁目駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "駒越西1～2丁目",
+      "townEn": "駒越西1～2丁目",
+      "kana": "こ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越西1～2丁目駒越",
+      "jp": "清水区駒越西1～2丁目駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "駒越東町",
+      "townEn": "Komagoehigashicho",
+      "kana": "コマゴエヒガシチョウ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越東町駒越",
+      "jp": "清水区駒越東町駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "駒越南町",
+      "townEn": "Komagoeminamicho",
+      "kana": "コマゴエミナミチョウ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区駒越南町駒越",
+      "jp": "清水区駒越南町駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaicho",
+      "kana": "サイワイチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区幸町清水",
+      "jp": "清水区幸町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "桜が丘町",
+      "townEn": "Sakuragaokacho",
+      "kana": "サクラガオカチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区桜が丘町岡",
+      "jp": "清水区桜が丘町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "桜橋町",
+      "townEn": "Sakurabashicho",
+      "kana": "サクラバシチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区桜橋町入江",
+      "jp": "清水区桜橋町入江",
+      "pattern": "132"
+    },
+    {
+      "town": "三光町",
+      "townEn": "Sankocho",
+      "kana": "サンコウチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区三光町清水",
+      "jp": "清水区三光町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "茂野島",
+      "townEn": "Shigenoshima",
+      "kana": "シゲノシマ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区茂野島両河内",
+      "jp": "清水区茂野島両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "宍原",
+      "townEn": "Shishihara",
+      "kana": "シシハラ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区宍原小島",
+      "jp": "清水区宍原小島",
+      "pattern": "133"
+    },
+    {
+      "town": "渋川（国道以北）",
+      "townEn": "渋川（国道以北）",
+      "kana": "し",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区渋川（国道以北）入江",
+      "jp": "清水区渋川（国道以北）入江",
+      "pattern": "138"
+    },
+    {
+      "town": "渋川（国道以南）",
+      "townEn": "渋川（国道以南）",
+      "kana": "し",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区渋川（国道以南）入江",
+      "jp": "清水区渋川（国道以南）入江",
+      "pattern": "132"
+    },
+    {
+      "town": "渋川1～3丁目",
+      "townEn": "渋川1～3丁目",
+      "kana": "し",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区渋川1～3丁目入江",
+      "jp": "清水区渋川1～3丁目入江",
+      "pattern": "138"
+    },
+    {
+      "town": "島崎町",
+      "townEn": "Shimazakicho",
+      "kana": "シマザキチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区島崎町浜田",
+      "jp": "清水区島崎町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "清水町（梅田町自治会を除く）",
+      "townEn": "清水町（梅田町自治会を除く）",
+      "kana": "し",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区清水町（梅田町自治会を除く）清水",
+      "jp": "清水区清水町（梅田町自治会を除く）清水",
+      "pattern": "129"
+    },
+    {
+      "town": "清水町の一部（梅田町自治会）",
+      "townEn": "清水町の一部（梅田町自治会）",
+      "kana": "し",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区清水町の一部（梅田町自治会）岡",
+      "jp": "清水区清水町の一部（梅田町自治会）岡",
+      "pattern": "129"
+    },
+    {
+      "town": "清水村松地先新田",
+      "townEn": "Shimizumuramatsuchisakishinden",
+      "kana": "シミズムラマツチサキシンデン",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区清水村松地先新田不二見",
+      "jp": "清水区清水村松地先新田不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "下清水町",
+      "townEn": "Shimoshimizucho",
+      "kana": "シモシミズチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区下清水町岡",
+      "jp": "清水区下清水町岡",
+      "pattern": "129"
+    },
+    {
+      "town": "下野",
+      "townEn": "Shimono",
+      "kana": "シモノ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区下野飯田西",
+      "jp": "清水区下野飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "下野北",
+      "townEn": "Shimonokita",
+      "kana": "シモノキタ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区下野北飯田東",
+      "jp": "清水区下野北飯田東",
+      "pattern": "126"
+    },
+    {
+      "town": "下野町",
+      "townEn": "Shimonocho",
+      "kana": "シモノチョウ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区下野町飯田西",
+      "jp": "清水区下野町飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "下野中",
+      "townEn": "Shimononaka",
+      "kana": "シモノナカ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区下野中飯田東",
+      "jp": "清水区下野中飯田東",
+      "pattern": "126"
+    },
+    {
+      "town": "下野西",
+      "townEn": "Shimononishi",
+      "kana": "シモノニシ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区下野西飯田西",
+      "jp": "清水区下野西飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "下野東",
+      "townEn": "Shimonohigashi",
+      "kana": "シモノヒガシ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区下野東飯田東",
+      "jp": "清水区下野東飯田東",
+      "pattern": "126"
+    },
+    {
+      "town": "下野緑町（下野南自治会を除く）",
+      "townEn": "下野緑町（下野南自治会を除く）",
+      "kana": "し",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区下野緑町（下野南自治会を除く）飯田西",
+      "jp": "清水区下野緑町（下野南自治会を除く）飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "下野緑町（下野南自治会）",
+      "townEn": "下野緑町（下野南自治会）",
+      "kana": "し",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区下野緑町（下野南自治会）飯田東",
+      "jp": "清水区下野緑町（下野南自治会）飯田東",
+      "pattern": "126"
+    },
+    {
+      "town": "承元寺町",
+      "townEn": "Shogenjicho",
+      "kana": "ショウゲンジチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区承元寺町興津",
+      "jp": "清水区承元寺町興津",
+      "pattern": "133"
+    },
+    {
+      "town": "庄福町（南矢部自治会を除く）",
+      "townEn": "庄福町（南矢部自治会を除く）",
+      "kana": "し",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区庄福町（南矢部自治会を除く）清水",
+      "jp": "清水区庄福町（南矢部自治会を除く）清水",
+      "pattern": "123"
+    },
+    {
+      "town": "庄福町（南矢部自治会）",
+      "townEn": "庄福町（南矢部自治会）",
+      "kana": "し",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区庄福町（南矢部自治会）船越",
+      "jp": "清水区庄福町（南矢部自治会）船越",
+      "pattern": "123"
+    },
+    {
+      "town": "上力町",
+      "townEn": "Jorikicho",
+      "kana": "ジョウリキチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区上力町不二見",
+      "jp": "清水区上力町不二見",
+      "pattern": "123"
+    },
+    {
+      "town": "新富町",
+      "townEn": "Shintomicho",
+      "kana": "シントミチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区新富町入江",
+      "jp": "清水区新富町入江",
+      "pattern": "121"
+    },
+    {
+      "town": "新緑町",
+      "townEn": "Shimmidoricho",
+      "kana": "シンミドリチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区新緑町不二見",
+      "jp": "清水区新緑町不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "杉山",
+      "townEn": "Sugiyama",
+      "kana": "スギヤマ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区杉山庵原",
+      "jp": "清水区杉山庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "清開2丁目",
+      "townEn": "清開2丁目",
+      "kana": "せ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区清開2丁目不二見",
+      "jp": "清水区清開2丁目不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "増（宮加三自治会を除く）",
+      "townEn": "増（宮加三自治会を除く）",
+      "kana": "そ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区増（宮加三自治会を除く）駒越",
+      "jp": "清水区増（宮加三自治会を除く）駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "増（宮加三自治会）",
+      "townEn": "増（宮加三自治会）",
+      "kana": "そ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区増（宮加三自治会）不二見",
+      "jp": "清水区増（宮加三自治会）不二見",
+      "pattern": "135"
+    },
+    {
+      "town": "袖師町",
+      "townEn": "Sodeshicho",
+      "kana": "ソデシチョウ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区袖師町袖師",
+      "jp": "清水区袖師町袖師",
+      "pattern": "122"
+    },
+    {
+      "town": "高橋1～2丁目",
+      "townEn": "高橋1～2丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区高橋1～2丁目飯田東",
+      "jp": "清水区高橋1～2丁目飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "高橋3丁目（高橋中・下野南自治会を除く）",
+      "townEn": "高橋3丁目（高橋中・下野南自治会を除く）",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区高橋3丁目（高橋中・下野南自治会を除く）飯田西",
+      "jp": "清水区高橋3丁目（高橋中・下野南自治会を除く）飯田西",
+      "pattern": "124"
+    },
+    {
+      "town": "高橋3丁目（高橋中・下野南自治会）",
+      "townEn": "高橋3丁目（高橋中・下野南自治会）",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区高橋3丁目（高橋中・下野南自治会）飯田東",
+      "jp": "清水区高橋3丁目（高橋中・下野南自治会）飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "高橋4丁目",
+      "townEn": "高橋4丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区高橋4丁目飯田東",
+      "jp": "清水区高橋4丁目飯田東",
+      "pattern": "131"
+    },
+    {
+      "town": "高橋5丁目（高橋中自治会を除く）",
+      "townEn": "高橋5丁目（高橋中自治会を除く）",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区高橋5丁目（高橋中自治会を除く）飯田西",
+      "jp": "清水区高橋5丁目（高橋中自治会を除く）飯田西",
+      "pattern": "131"
+    },
+    {
+      "town": "高橋5丁目（高橋中自治会）",
+      "townEn": "高橋5丁目（高橋中自治会）",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区高橋5丁目（高橋中自治会）飯田東",
+      "jp": "清水区高橋5丁目（高橋中自治会）飯田東",
+      "pattern": "131"
+    },
+    {
+      "town": "高橋6丁目",
+      "townEn": "高橋6丁目",
+      "kana": "た",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区高橋6丁目飯田西",
+      "jp": "清水区高橋6丁目飯田西",
+      "pattern": "131"
+    },
+    {
+      "town": "高橋町",
+      "townEn": "Takahashicho",
+      "kana": "タカハシチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区高橋町入江",
+      "jp": "清水区高橋町入江",
+      "pattern": "138"
+    },
+    {
+      "town": "高橋南町",
+      "townEn": "Takahashiminamicho",
+      "kana": "タカハシミナミチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区高橋南町江尻",
+      "jp": "清水区高橋南町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "高山",
+      "townEn": "Takayama",
+      "kana": "タカヤマ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区高山両河内",
+      "jp": "清水区高山両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "宝町",
+      "townEn": "Takaracho",
+      "kana": "タカラチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区宝町江尻",
+      "jp": "清水区宝町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "但沼町",
+      "townEn": "Tadanumacho",
+      "kana": "タダヌマチョウ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区但沼町小島",
+      "jp": "清水区但沼町小島",
+      "pattern": "133"
+    },
+    {
+      "town": "立花",
+      "townEn": "Tachibana",
+      "kana": "タチバナ",
+      "chome": null,
+      "detail": "小島",
+      "en": "清水区立花小島",
+      "jp": "清水区立花小島",
+      "pattern": "133"
+    },
+    {
+      "town": "田町",
+      "townEn": "Tamachi",
+      "kana": "タマチ",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区田町辻",
+      "jp": "清水区田町辻",
+      "pattern": "122"
+    },
+    {
+      "town": "千歳町",
+      "townEn": "Chitosecho",
+      "kana": "チトセチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区千歳町浜田",
+      "jp": "清水区千歳町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "築地町",
+      "townEn": "Tsukijicho",
+      "kana": "ツキジチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区築地町清水",
+      "jp": "清水区築地町清水",
+      "pattern": "145"
+    },
+    {
+      "town": "月見町",
+      "townEn": "Tsukimicho",
+      "kana": "ツキミチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区月見町岡",
+      "jp": "清水区月見町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "辻1～5丁目",
+      "townEn": "辻1～5丁目",
+      "kana": "つ",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区辻1～5丁目辻",
+      "jp": "清水区辻1～5丁目辻",
+      "pattern": "122"
+    },
+    {
+      "town": "鶴舞町",
+      "townEn": "Tsurumaicho",
+      "kana": "ツルマイチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区鶴舞町入江",
+      "jp": "清水区鶴舞町入江",
+      "pattern": "132"
+    },
+    {
+      "town": "天神1～2丁目",
+      "townEn": "天神1～2丁目",
+      "kana": "て",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区天神1～2丁目江尻",
+      "jp": "清水区天神1～2丁目江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "天王西",
+      "townEn": "Tennonishi",
+      "kana": "テンノウニシ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区天王西飯田西",
+      "jp": "清水区天王西飯田西",
+      "pattern": "130"
+    },
+    {
+      "town": "天王東",
+      "townEn": "Tennohigashi",
+      "kana": "テンノウヒガシ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区天王東飯田西",
+      "jp": "清水区天王東飯田西",
+      "pattern": "130"
+    },
+    {
+      "town": "天王南",
+      "townEn": "Tennominami",
+      "kana": "テンノウミナミ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区天王南飯田西",
+      "jp": "清水区天王南飯田西",
+      "pattern": "146"
+    },
+    {
+      "town": "土",
+      "townEn": "Do",
+      "kana": "ド",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区土両河内",
+      "jp": "清水区土両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "堂林1～2丁目",
+      "townEn": "堂林1～2丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区堂林1～2丁目岡",
+      "jp": "清水区堂林1～2丁目岡",
+      "pattern": "123"
+    },
+    {
+      "town": "葛沢",
+      "townEn": "Tozurasawa",
+      "kana": "トズラサワ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区葛沢両河内",
+      "jp": "清水区葛沢両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "殿沢1～2丁目",
+      "townEn": "殿沢1～2丁目",
+      "kana": "と",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区殿沢1～2丁目駒越",
+      "jp": "清水区殿沢1～2丁目駒越",
+      "pattern": "144"
+    },
+    {
+      "town": "巴町",
+      "townEn": "Tomoecho",
+      "kana": "トモエチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区巴町浜田",
+      "jp": "清水区巴町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "鳥坂（楠・長崎自治会を除く）",
+      "townEn": "鳥坂（楠・長崎自治会を除く）",
+      "kana": "と",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区鳥坂（楠・長崎自治会を除く）高部",
+      "jp": "清水区鳥坂（楠・長崎自治会を除く）高部",
+      "pattern": "130"
+    },
+    {
+      "town": "鳥坂（楠・長崎自治会）",
+      "townEn": "鳥坂（楠・長崎自治会）",
+      "kana": "と",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区鳥坂（楠・長崎自治会）有度北",
+      "jp": "清水区鳥坂（楠・長崎自治会）有度北",
+      "pattern": "146"
+    },
+    {
+      "town": "中河内",
+      "townEn": "Nakagochi",
+      "kana": "ナカゴウチ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区中河内両河内",
+      "jp": "清水区中河内両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "長崎（鳥坂・大内自治会を除く）",
+      "townEn": "長崎（鳥坂・大内自治会を除く）",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区長崎（鳥坂・大内自治会を除く）有度北",
+      "jp": "清水区長崎（鳥坂・大内自治会を除く）有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "長崎（鳥坂・大内自治会）",
+      "townEn": "長崎（鳥坂・大内自治会）",
+      "kana": "な",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区長崎（鳥坂・大内自治会）高部",
+      "jp": "清水区長崎（鳥坂・大内自治会）高部",
+      "pattern": "147"
+    },
+    {
+      "town": "長崎新田",
+      "townEn": "Nagasakishinden",
+      "kana": "ナガサキシンデン",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区長崎新田有度北",
+      "jp": "清水区長崎新田有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "長崎南町",
+      "townEn": "Nagasakiminamicho",
+      "kana": "ナガサキミナミチョウ",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区長崎南町有度西",
+      "jp": "清水区長崎南町有度西",
+      "pattern": "142"
+    },
+    {
+      "town": "中之郷",
+      "townEn": "Nakanogo",
+      "kana": "ナカノゴウ",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区中之郷有度西",
+      "jp": "清水区中之郷有度西",
+      "pattern": "143"
+    },
+    {
+      "town": "中之郷1～2丁目",
+      "townEn": "中之郷1～2丁目",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区中之郷1～2丁目有度西",
+      "jp": "清水区中之郷1～2丁目有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "中之郷3丁目",
+      "townEn": "中之郷3丁目",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区中之郷3丁目有度西",
+      "jp": "清水区中之郷3丁目有度西",
+      "pattern": "142"
+    },
+    {
+      "town": "中矢部町",
+      "townEn": "Nakayabecho",
+      "kana": "ナカヤベチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区中矢部町岡",
+      "jp": "清水区中矢部町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "七ツ新屋（長崎・長崎新田・吉川自治会を除く国道以北）",
+      "townEn": "七ツ新屋（長崎・長崎新田・吉川自治会を除く国道以北）",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区七ツ新屋（長崎・長崎新田・吉川自治会を除く国道以北）有度東",
+      "jp": "清水区七ツ新屋（長崎・長崎新田・吉川自治会を除く国道以北）有度東",
+      "pattern": "139"
+    },
+    {
+      "town": "七ツ新屋（国道以南）",
+      "townEn": "七ツ新屋（国道以南）",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区七ツ新屋（国道以南）有度東",
+      "jp": "清水区七ツ新屋（国道以南）有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "七ツ新屋（長崎・長崎新田・吉川自治会）",
+      "townEn": "七ツ新屋（長崎・長崎新田・吉川自治会）",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区七ツ新屋（長崎・長崎新田・吉川自治会）有度北",
+      "jp": "清水区七ツ新屋（長崎・長崎新田・吉川自治会）有度北",
+      "pattern": "139"
+    },
+    {
+      "town": "七ツ新屋1～2丁目",
+      "townEn": "七ツ新屋1～2丁目",
+      "kana": "な",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区七ツ新屋1～2丁目有度東",
+      "jp": "清水区七ツ新屋1～2丁目有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "西大曲町",
+      "townEn": "Nishiomagaricho",
+      "kana": "ニシオオマガリチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区西大曲町入江",
+      "jp": "清水区西大曲町入江",
+      "pattern": "138"
+    },
+    {
+      "town": "西久保",
+      "townEn": "Nishikubo",
+      "kana": "ニシクボ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区西久保袖師",
+      "jp": "清水区西久保袖師",
+      "pattern": "122"
+    },
+    {
+      "town": "西久保1丁目（八坂町自治会を除く）",
+      "townEn": "西久保1丁目（八坂町自治会を除く）",
+      "kana": "に",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区西久保1丁目（八坂町自治会を除く）袖師",
+      "jp": "清水区西久保1丁目（八坂町自治会を除く）袖師",
+      "pattern": "122"
+    },
+    {
+      "town": "西久保1丁目（八坂町自治会）",
+      "townEn": "西久保1丁目（八坂町自治会）",
+      "kana": "に",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区西久保1丁目（八坂町自治会）飯田東",
+      "jp": "清水区西久保1丁目（八坂町自治会）飯田東",
+      "pattern": "122"
+    },
+    {
+      "town": "西里",
+      "townEn": "Nishizato",
+      "kana": "ニシザト",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区西里両河内",
+      "jp": "清水区西里両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "西高町",
+      "townEn": "Nishitakacho",
+      "kana": "ニシタカチョウ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区西高町岡",
+      "jp": "清水区西高町岡",
+      "pattern": "123"
+    },
+    {
+      "town": "二の丸町",
+      "townEn": "Ninomarucho",
+      "kana": "ニノマルチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区二の丸町江尻",
+      "jp": "清水区二の丸町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "布沢",
+      "townEn": "Nunozawa",
+      "kana": "ヌノザワ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区布沢両河内",
+      "jp": "清水区布沢両河内",
+      "pattern": "133"
+    },
+    {
+      "town": "沼田町",
+      "townEn": "Numatacho",
+      "kana": "ヌマタチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区沼田町不二見",
+      "jp": "清水区沼田町不二見",
+      "pattern": "129"
+    },
+    {
+      "town": "能島",
+      "townEn": "Nojima",
+      "kana": "ノウジマ",
+      "chome": null,
+      "detail": "高部",
+      "en": "清水区能島高部",
+      "jp": "清水区能島高部",
+      "pattern": "130"
+    },
+    {
+      "town": "蜂ヶ谷",
+      "townEn": "Hachigaya",
+      "kana": "ハチガヤ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区蜂ヶ谷飯田西",
+      "jp": "清水区蜂ヶ谷飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "蜂ヶ谷南町",
+      "townEn": "Hachigayaminamicho",
+      "kana": "ハチガヤミナミチョウ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区蜂ヶ谷南町飯田西",
+      "jp": "清水区蜂ヶ谷南町飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "浜田町",
+      "townEn": "Hamadacho",
+      "kana": "ハマダチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区浜田町浜田",
+      "jp": "清水区浜田町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "原",
+      "townEn": "Hara",
+      "kana": "ハラ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区原庵原",
+      "jp": "清水区原庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "半左衛門新田（国道以北）",
+      "townEn": "半左衛門新田（国道以北）",
+      "kana": "は",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区半左衛門新田（国道以北）有度北",
+      "jp": "清水区半左衛門新田（国道以北）有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "半左衛門新田（国道以南）",
+      "townEn": "半左衛門新田（国道以南）",
+      "kana": "は",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区半左衛門新田（国道以南）有度東",
+      "jp": "清水区半左衛門新田（国道以南）有度東",
+      "pattern": "142"
+    },
+    {
+      "town": "東大曲町",
+      "townEn": "Higashiomagaricho",
+      "kana": "ヒガシオオマガリチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区東大曲町入江",
+      "jp": "清水区東大曲町入江",
+      "pattern": "138"
+    },
+    {
+      "town": "日立町",
+      "townEn": "Hitachicho",
+      "kana": "ヒタチチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区日立町不二見",
+      "jp": "清水区日立町不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "日の出町",
+      "townEn": "Hinodecho",
+      "kana": "ヒノデチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区日の出町清水",
+      "jp": "清水区日の出町清水",
+      "pattern": "145"
+    },
+    {
+      "town": "平川地",
+      "townEn": "Hirakawaji",
+      "kana": "ヒラカワジ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区平川地有度東",
+      "jp": "清水区平川地有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "広瀬",
+      "townEn": "Hirose",
+      "kana": "ヒロセ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区広瀬庵原",
+      "jp": "清水区広瀬庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "富士見町",
+      "townEn": "Fujimicho",
+      "kana": "フジミチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区富士見町清水",
+      "jp": "清水区富士見町清水",
+      "pattern": "121"
+    },
+    {
+      "town": "船越",
+      "townEn": "Funakoshi",
+      "kana": "フナコシ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船越船越",
+      "jp": "清水区船越船越",
+      "pattern": "127"
+    },
+    {
+      "town": "船越町",
+      "townEn": "Funakoshicho",
+      "kana": "フナコシチョウ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船越町船越",
+      "jp": "清水区船越町船越",
+      "pattern": "127"
+    },
+    {
+      "town": "船越1～3丁目",
+      "townEn": "船越1～3丁目",
+      "kana": "ふ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船越1～3丁目船越",
+      "jp": "清水区船越1～3丁目船越",
+      "pattern": "127"
+    },
+    {
+      "town": "船越東町",
+      "townEn": "Funakoshihigashicho",
+      "kana": "フナコシヒガシチョウ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船越東町船越",
+      "jp": "清水区船越東町船越",
+      "pattern": "127"
+    },
+    {
+      "town": "船越南町",
+      "townEn": "Funakoshiminamicho",
+      "kana": "フナコシミナミチョウ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船越南町船越",
+      "jp": "清水区船越南町船越",
+      "pattern": "127"
+    },
+    {
+      "town": "船原1～2丁目",
+      "townEn": "船原1～2丁目",
+      "kana": "ふ",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区船原1～2丁目船越",
+      "jp": "清水区船原1～2丁目船越",
+      "pattern": "127"
+    },
+    {
+      "town": "蛇塚",
+      "townEn": "Hebitsuka",
+      "kana": "ヘビツカ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区蛇塚駒越",
+      "jp": "清水区蛇塚駒越",
+      "pattern": "135"
+    },
+    {
+      "town": "堀込（巴川以北）",
+      "townEn": "堀込（巴川以北）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区堀込（巴川以北）有度東",
+      "jp": "清水区堀込（巴川以北）有度東",
+      "pattern": "147"
+    },
+    {
+      "town": "堀込（巴川以南）",
+      "townEn": "堀込（巴川以南）",
+      "kana": "ほ",
+      "chome": null,
+      "detail": "有度北",
+      "en": "清水区堀込（巴川以南）有度北",
+      "jp": "清水区堀込（巴川以南）有度北",
+      "pattern": "143"
+    },
+    {
+      "town": "本郷町",
+      "townEn": "Hongocho",
+      "kana": "ホンゴウチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区本郷町江尻",
+      "jp": "清水区本郷町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区本町清水",
+      "jp": "清水区本町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "真砂町",
+      "townEn": "Masagocho",
+      "kana": "マサゴチョウ",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区真砂町辻",
+      "jp": "清水区真砂町辻",
+      "pattern": "122"
+    },
+    {
+      "town": "松井町",
+      "townEn": "Matsuicho",
+      "kana": "マツイチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区松井町清水",
+      "jp": "清水区松井町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "松原町",
+      "townEn": "Matsubaracho",
+      "kana": "マツバラチョウ",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区松原町浜田",
+      "jp": "清水区松原町浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "馬走",
+      "townEn": "Mabase",
+      "kana": "マバセ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区馬走有度東",
+      "jp": "清水区馬走有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "馬走北",
+      "townEn": "Mabasekita",
+      "kana": "マバセキタ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区馬走北有度東",
+      "jp": "清水区馬走北有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "馬走坂の上",
+      "townEn": "Mabasesakanoe",
+      "kana": "マバセサカノウエ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区馬走坂の上有度東",
+      "jp": "清水区馬走坂の上有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "万世町1～2丁目",
+      "townEn": "万世町1～2丁目",
+      "kana": "ま",
+      "chome": null,
+      "detail": "浜田",
+      "en": "清水区万世町1～2丁目浜田",
+      "jp": "清水区万世町1～2丁目浜田",
+      "pattern": "121"
+    },
+    {
+      "town": "御門台",
+      "townEn": "Mikadodai",
+      "kana": "ミカドダイ",
+      "chome": null,
+      "detail": "有度東",
+      "en": "清水区御門台有度東",
+      "jp": "清水区御門台有度東",
+      "pattern": "128"
+    },
+    {
+      "town": "緑が丘町",
+      "townEn": "Midorigaokacho",
+      "kana": "ミドリガオカチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区緑が丘町不二見",
+      "jp": "清水区緑が丘町不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "港町1丁目",
+      "townEn": "港町1丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区港町1丁目清水",
+      "jp": "清水区港町1丁目清水",
+      "pattern": "121"
+    },
+    {
+      "town": "港町2丁目",
+      "townEn": "港町2丁目",
+      "kana": "み",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区港町2丁目清水",
+      "jp": "清水区港町2丁目清水",
+      "pattern": "145"
+    },
+    {
+      "town": "南岡町",
+      "townEn": "Minamiokamachi",
+      "kana": "ミナミオカマチ",
+      "chome": null,
+      "detail": "岡",
+      "en": "清水区南岡町岡",
+      "jp": "清水区南岡町岡",
+      "pattern": "129"
+    },
+    {
+      "town": "南矢部（上力町自治会を除く）",
+      "townEn": "南矢部（上力町自治会を除く）",
+      "kana": "み",
+      "chome": null,
+      "detail": "船越",
+      "en": "清水区南矢部（上力町自治会を除く）船越",
+      "jp": "清水区南矢部（上力町自治会を除く）船越",
+      "pattern": "123"
+    },
+    {
+      "town": "南矢部（上力町自治会）",
+      "townEn": "南矢部（上力町自治会）",
+      "kana": "み",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区南矢部（上力町自治会）不二見",
+      "jp": "清水区南矢部（上力町自治会）不二見",
+      "pattern": "123"
+    },
+    {
+      "town": "美濃輪町",
+      "townEn": "Minowacho",
+      "kana": "ミノワチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区美濃輪町清水",
+      "jp": "清水区美濃輪町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "三保",
+      "townEn": "Miho",
+      "kana": "ミホ",
+      "chome": null,
+      "detail": "三保",
+      "en": "清水区三保三保",
+      "jp": "清水区三保三保",
+      "pattern": "148"
+    },
+    {
+      "town": "三保松原町（折戸5区・6区自治会を除く）",
+      "townEn": "三保松原町（折戸5区・6区自治会を除く）",
+      "kana": "み",
+      "chome": null,
+      "detail": "三保",
+      "en": "清水区三保松原町（折戸5区・6区自治会を除く）三保",
+      "jp": "清水区三保松原町（折戸5区・6区自治会を除く）三保",
+      "pattern": "148"
+    },
+    {
+      "town": "三保松原町（折戸5区・6区自治会）",
+      "townEn": "三保松原町（折戸5区・6区自治会）",
+      "kana": "み",
+      "chome": null,
+      "detail": "折戸",
+      "en": "清水区三保松原町（折戸5区・6区自治会）折戸",
+      "jp": "清水区三保松原町（折戸5区・6区自治会）折戸",
+      "pattern": "148"
+    },
+    {
+      "town": "宮加三",
+      "townEn": "Miyakami",
+      "kana": "ミヤカミ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区宮加三不二見",
+      "jp": "清水区宮加三不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "宮下町（西久保自治会を除く）",
+      "townEn": "宮下町（西久保自治会を除く）",
+      "kana": "み",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区宮下町（西久保自治会を除く）辻",
+      "jp": "清水区宮下町（西久保自治会を除く）辻",
+      "pattern": "122"
+    },
+    {
+      "town": "宮下町（西久保自治会）",
+      "townEn": "宮下町（西久保自治会）",
+      "kana": "み",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区宮下町（西久保自治会）袖師",
+      "jp": "清水区宮下町（西久保自治会）袖師",
+      "pattern": "122"
+    },
+    {
+      "town": "宮代町",
+      "townEn": "Miyashirocho",
+      "kana": "ミヤシロチョウ",
+      "chome": null,
+      "detail": "江尻",
+      "en": "清水区宮代町江尻",
+      "jp": "清水区宮代町江尻",
+      "pattern": "131"
+    },
+    {
+      "town": "向田町",
+      "townEn": "Mukaidacho",
+      "kana": "ムカイダチョウ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区向田町不二見",
+      "jp": "清水区向田町不二見",
+      "pattern": "129"
+    },
+    {
+      "town": "迎山町",
+      "townEn": "Mukaeyamacho",
+      "kana": "ムカエヤマチョウ",
+      "chome": null,
+      "detail": "駒越",
+      "en": "清水区迎山町駒越",
+      "jp": "清水区迎山町駒越",
+      "pattern": "144"
+    },
+    {
+      "town": "村松",
+      "townEn": "Muramatsu",
+      "kana": "ムラマツ",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区村松不二見",
+      "jp": "清水区村松不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "村松1丁目",
+      "townEn": "村松1丁目",
+      "kana": "む",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区村松1丁目不二見",
+      "jp": "清水区村松1丁目不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "村松原1～2丁目",
+      "townEn": "村松原1～2丁目",
+      "kana": "む",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区村松原1～2丁目不二見",
+      "jp": "清水区村松原1～2丁目不二見",
+      "pattern": "129"
+    },
+    {
+      "town": "村松原3丁目",
+      "townEn": "村松原3丁目",
+      "kana": "む",
+      "chome": null,
+      "detail": "不二見",
+      "en": "清水区村松原3丁目不二見",
+      "jp": "清水区村松原3丁目不二見",
+      "pattern": "144"
+    },
+    {
+      "town": "元城町",
+      "townEn": "Motoshirocho",
+      "kana": "モトシロチョウ",
+      "chome": null,
+      "detail": "入江",
+      "en": "清水区元城町入江",
+      "jp": "清水区元城町入江",
+      "pattern": "121"
+    },
+    {
+      "town": "茂畑",
+      "townEn": "Mobata",
+      "kana": "モバタ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区茂畑庵原",
+      "jp": "清水区茂畑庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "八木間町",
+      "townEn": "Yagimacho",
+      "kana": "ヤギマチョウ",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区八木間町興津",
+      "jp": "清水区八木間町興津",
+      "pattern": "134"
+    },
+    {
+      "town": "矢倉町（西久保自治会を除く）",
+      "townEn": "矢倉町（西久保自治会を除く）",
+      "kana": "や",
+      "chome": null,
+      "detail": "辻",
+      "en": "清水区矢倉町（西久保自治会を除く）辻",
+      "jp": "清水区矢倉町（西久保自治会を除く）辻",
+      "pattern": "122"
+    },
+    {
+      "town": "矢倉町（西久保自治会）",
+      "townEn": "矢倉町（西久保自治会）",
+      "kana": "や",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区矢倉町（西久保自治会）袖師",
+      "jp": "清水区矢倉町（西久保自治会）袖師",
+      "pattern": "122"
+    },
+    {
+      "town": "八坂北1～2丁目",
+      "townEn": "八坂北1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区八坂北1～2丁目飯田東",
+      "jp": "清水区八坂北1～2丁目飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "八坂町（庵原町第一自治会を除く）",
+      "townEn": "八坂町（庵原町第一自治会を除く）",
+      "kana": "や",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区八坂町（庵原町第一自治会を除く）袖師",
+      "jp": "清水区八坂町（庵原町第一自治会を除く）袖師",
+      "pattern": "124"
+    },
+    {
+      "town": "八坂町（庵原町第一自治会）",
+      "townEn": "八坂町（庵原町第一自治会）",
+      "kana": "や",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区八坂町（庵原町第一自治会）庵原",
+      "jp": "清水区八坂町（庵原町第一自治会）庵原",
+      "pattern": "126"
+    },
+    {
+      "town": "八坂西町",
+      "townEn": "Yasakanishicho",
+      "kana": "ヤサカニシチョウ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区八坂西町飯田東",
+      "jp": "清水区八坂西町飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "八坂東1～2丁目",
+      "townEn": "八坂東1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区八坂東1～2丁目飯田東",
+      "jp": "清水区八坂東1～2丁目飯田東",
+      "pattern": "124"
+    },
+    {
+      "town": "八坂南町",
+      "townEn": "Yasakaminamicho",
+      "kana": "ヤサカミナミチョウ",
+      "chome": null,
+      "detail": "飯田東",
+      "en": "清水区八坂南町飯田東",
+      "jp": "清水区八坂南町飯田東",
+      "pattern": "131"
+    },
+    {
+      "town": "谷田",
+      "townEn": "Yada",
+      "kana": "ヤダ",
+      "chome": null,
+      "detail": "有度西",
+      "en": "清水区谷田有度西",
+      "jp": "清水区谷田有度西",
+      "pattern": "141"
+    },
+    {
+      "town": "八千代町",
+      "townEn": "Yachiyocho",
+      "kana": "ヤチヨチョウ",
+      "chome": null,
+      "detail": "清水",
+      "en": "清水区八千代町清水",
+      "jp": "清水区八千代町清水",
+      "pattern": "129"
+    },
+    {
+      "town": "谷津町1～2丁目",
+      "townEn": "谷津町1～2丁目",
+      "kana": "や",
+      "chome": null,
+      "detail": "興津",
+      "en": "清水区谷津町1～2丁目興津",
+      "jp": "清水区谷津町1～2丁目興津",
+      "pattern": "133"
+    },
+    {
+      "town": "山切",
+      "townEn": "Yamakiri",
+      "kana": "ヤマキリ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区山切庵原",
+      "jp": "清水区山切庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Yayoicho",
+      "kana": "ヤヨイチョウ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区弥生町飯田西",
+      "jp": "清水区弥生町飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "山原",
+      "townEn": "Yambara",
+      "kana": "ヤンバラ",
+      "chome": null,
+      "detail": "飯田西",
+      "en": "清水区山原飯田西",
+      "jp": "清水区山原飯田西",
+      "pattern": "126"
+    },
+    {
+      "town": "由比",
+      "townEn": "Yui",
+      "kana": "ユイ",
+      "chome": null,
+      "detail": "由比（東部自治会）",
+      "en": "清水区由比由比（東部自治会）",
+      "jp": "清水区由比由比（東部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比阿僧",
+      "townEn": "Yui Aso",
+      "kana": "ユイアソウ",
+      "chome": null,
+      "detail": "由比（東部自治会）",
+      "en": "清水区由比阿僧由比（東部自治会）",
+      "jp": "清水区由比阿僧由比（東部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比今宿",
+      "townEn": "Yui Imajuku",
+      "kana": "ユイイマジュク",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比今宿由比（西部自治会）",
+      "jp": "清水区由比今宿由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比入山",
+      "townEn": "Yui Iriyama",
+      "kana": "ユイイリヤマ",
+      "chome": null,
+      "detail": "由比（東部自治会）",
+      "en": "清水区由比入山由比（東部自治会）",
+      "jp": "清水区由比入山由比（東部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比北田（由比北田自治会）",
+      "townEn": "由比北田（由比北田自治会）",
+      "kana": "ゆ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比北田（由比北田自治会）由比（西部自治会）",
+      "jp": "清水区由比北田（由比北田自治会）由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比北田（由比阿僧自治会）",
+      "townEn": "由比北田（由比阿僧自治会）",
+      "kana": "ゆ",
+      "chome": null,
+      "detail": "由比（東部）",
+      "en": "清水区由比北田（由比阿僧自治会）由比（東部）",
+      "jp": "清水区由比北田（由比阿僧自治会）由比（東部）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比寺尾",
+      "townEn": "Yui Terao",
+      "kana": "ユイテラオ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比寺尾由比（西部自治会）",
+      "jp": "清水区由比寺尾由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比西倉沢",
+      "townEn": "由比西倉沢",
+      "kana": "ゆ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比西倉沢由比（西部自治会）",
+      "jp": "清水区由比西倉沢由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比西山寺",
+      "townEn": "Yui Nishiyamadera",
+      "kana": "ユイニシヤマデラ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比西山寺由比（西部自治会）",
+      "jp": "清水区由比西山寺由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比東倉沢",
+      "townEn": "由比東倉沢",
+      "kana": "ゆ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比東倉沢由比（西部自治会）",
+      "jp": "清水区由比東倉沢由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比東山寺",
+      "townEn": "Yui Higashiyamadera",
+      "kana": "ユイヒガシヤマデラ",
+      "chome": null,
+      "detail": "由比（東部自治会）",
+      "en": "清水区由比東山寺由比（東部自治会）",
+      "jp": "清水区由比東山寺由比（東部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "由比町屋原",
+      "townEn": "Yui Machiyahara",
+      "kana": "ユイマチヤハラ",
+      "chome": null,
+      "detail": "由比（西部自治会）",
+      "en": "清水区由比町屋原由比（西部自治会）",
+      "jp": "清水区由比町屋原由比（西部自治会）",
+      "pattern": "137"
+    },
+    {
+      "town": "横砂",
+      "townEn": "Yokosuna",
+      "kana": "ヨコスナ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂袖師",
+      "jp": "清水区横砂袖師",
+      "pattern": "125"
+    },
+    {
+      "town": "横砂中町",
+      "townEn": "Yokosunanakacho",
+      "kana": "ヨコスナナカチョウ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂中町袖師",
+      "jp": "清水区横砂中町袖師",
+      "pattern": "125"
+    },
+    {
+      "town": "横砂西町",
+      "townEn": "Yokosunanishicho",
+      "kana": "ヨコスナニシチョウ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂西町袖師",
+      "jp": "清水区横砂西町袖師",
+      "pattern": "149"
+    },
+    {
+      "town": "横砂東町",
+      "townEn": "Yokosunahigashicho",
+      "kana": "ヨコスナヒガシチョウ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂東町袖師",
+      "jp": "清水区横砂東町袖師",
+      "pattern": "125"
+    },
+    {
+      "town": "横砂本町",
+      "townEn": "Yokosunahoncho",
+      "kana": "ヨコスナホンチョウ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂本町袖師",
+      "jp": "清水区横砂本町袖師",
+      "pattern": "125"
+    },
+    {
+      "town": "横砂南町（庵原川以東）",
+      "townEn": "横砂南町（庵原川以東）",
+      "kana": "よ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂南町（庵原川以東）袖師",
+      "jp": "清水区横砂南町（庵原川以東）袖師",
+      "pattern": "125"
+    },
+    {
+      "town": "横砂南町（庵原川以西）",
+      "townEn": "横砂南町（庵原川以西）",
+      "kana": "よ",
+      "chome": null,
+      "detail": "袖師",
+      "en": "清水区横砂南町（庵原川以西）袖師",
+      "jp": "清水区横砂南町（庵原川以西）袖師",
+      "pattern": "149"
+    },
+    {
+      "town": "吉原",
+      "townEn": "Yoshiwara",
+      "kana": "ヨシワラ",
+      "chome": null,
+      "detail": "庵原",
+      "en": "清水区吉原庵原",
+      "jp": "清水区吉原庵原",
+      "pattern": "125"
+    },
+    {
+      "town": "和田島",
+      "townEn": "Wadashima",
+      "kana": "ワダシマ",
+      "chome": null,
+      "detail": "両河内",
+      "en": "清水区和田島両河内",
+      "jp": "清水区和田島両河内",
+      "pattern": "133"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Shizuoka City garbage collection weekdays open data",
+      "url": "https://www.city.shizuoka.lg.jp/kurashi/gomi/",
+      "license": "Shizuoka City open data"
+    }
+  },
+  "updated": "2026-10-31"
+}

@@ -1,0 +1,1996 @@
+{
+  "id": "ogi-41208",
+  "code": "41208",
+  "pref": "41",
+  "jp": "小城市",
+  "en": "Ogi",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ogi.5374.jp/data/area_days.csv",
+    "http://ogi.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          3
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "ビレッジハウス小城",
+      "townEn": "Birejjihausu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ビレッジハウス小城",
+      "jp": "ビレッジハウス小城",
+      "pattern": "1"
+    },
+    {
+      "town": "芦刈永田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芦刈永田",
+      "jp": "芦刈永田",
+      "pattern": "2"
+    },
+    {
+      "town": "芦刈中村",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芦刈中村",
+      "jp": "芦刈中村",
+      "pattern": "2"
+    },
+    {
+      "town": "芦田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芦田",
+      "jp": "芦田",
+      "pattern": "1"
+    },
+    {
+      "town": "一本松",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一本松",
+      "jp": "一本松",
+      "pattern": "2"
+    },
+    {
+      "town": "永泉寺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "永泉寺",
+      "jp": "永泉寺",
+      "pattern": "1"
+    },
+    {
+      "town": "円光寺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "円光寺",
+      "jp": "円光寺",
+      "pattern": "2"
+    },
+    {
+      "town": "遠江",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遠江",
+      "jp": "遠江",
+      "pattern": "2"
+    },
+    {
+      "town": "横町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横町",
+      "jp": "横町",
+      "pattern": "1"
+    },
+    {
+      "town": "岡町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岡町",
+      "jp": "岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "岡本",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岡本",
+      "jp": "岡本",
+      "pattern": "1"
+    },
+    {
+      "town": "乙柳",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "乙柳",
+      "jp": "乙柳",
+      "pattern": "1"
+    },
+    {
+      "town": "下右原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下右原",
+      "jp": "下右原",
+      "pattern": "2"
+    },
+    {
+      "town": "下久須",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下久須",
+      "jp": "下久須",
+      "pattern": "2"
+    },
+    {
+      "town": "下古賀",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下古賀",
+      "jp": "下古賀",
+      "pattern": "2"
+    },
+    {
+      "town": "下江良",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下江良",
+      "jp": "下江良",
+      "pattern": "1"
+    },
+    {
+      "town": "下町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町",
+      "jp": "下町",
+      "pattern": "1"
+    },
+    {
+      "town": "下畑田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下畑田",
+      "jp": "下畑田",
+      "pattern": "2"
+    },
+    {
+      "town": "柿樋瀬",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柿樋瀬",
+      "jp": "柿樋瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "蒲原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蒲原",
+      "jp": "蒲原",
+      "pattern": "2"
+    },
+    {
+      "town": "寒気",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寒気",
+      "jp": "寒気",
+      "pattern": "2"
+    },
+    {
+      "town": "甘木",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "甘木",
+      "jp": "甘木",
+      "pattern": "1"
+    },
+    {
+      "town": "吉原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉原",
+      "jp": "吉原",
+      "pattern": "1"
+    },
+    {
+      "town": "吉田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉田",
+      "jp": "吉田",
+      "pattern": "1"
+    },
+    {
+      "town": "久蘇",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久蘇",
+      "jp": "久蘇",
+      "pattern": "2"
+    },
+    {
+      "town": "久米",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久米",
+      "jp": "久米",
+      "pattern": "1"
+    },
+    {
+      "town": "久本",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久本",
+      "jp": "久本",
+      "pattern": "1"
+    },
+    {
+      "town": "牛王",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛王",
+      "jp": "牛王",
+      "pattern": "2"
+    },
+    {
+      "town": "牛津栄町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛津栄町",
+      "jp": "牛津栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "牛津永田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛津永田",
+      "jp": "牛津永田",
+      "pattern": "2"
+    },
+    {
+      "town": "牛津団地",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛津団地",
+      "jp": "牛津団地",
+      "pattern": "1"
+    },
+    {
+      "town": "牛津本町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛津本町",
+      "jp": "牛津本町",
+      "pattern": "1"
+    },
+    {
+      "town": "牛尾",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "牛尾",
+      "jp": "牛尾",
+      "pattern": "2"
+    },
+    {
+      "town": "郷の木",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "郷の木",
+      "jp": "郷の木",
+      "pattern": "2"
+    },
+    {
+      "town": "金田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金田",
+      "jp": "金田",
+      "pattern": "2"
+    },
+    {
+      "town": "轡ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "轡ヶ里",
+      "jp": "轡ヶ里",
+      "pattern": "2"
+    },
+    {
+      "town": "桑鶴",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桑鶴",
+      "jp": "桑鶴",
+      "pattern": "3"
+    },
+    {
+      "town": "君ヶ坂",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "君ヶ坂",
+      "jp": "君ヶ坂",
+      "pattern": "2"
+    },
+    {
+      "town": "県営住宅",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "県営住宅",
+      "jp": "県営住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "原田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "原田",
+      "jp": "原田",
+      "pattern": "1"
+    },
+    {
+      "town": "袴田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "袴田",
+      "jp": "袴田",
+      "pattern": "1"
+    },
+    {
+      "town": "虎坊",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "虎坊",
+      "jp": "虎坊",
+      "pattern": "2"
+    },
+    {
+      "town": "五条",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五条",
+      "jp": "五条",
+      "pattern": "2"
+    },
+    {
+      "town": "江口",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江口",
+      "jp": "江口",
+      "pattern": "2"
+    },
+    {
+      "town": "江津",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江津",
+      "jp": "江津",
+      "pattern": "1"
+    },
+    {
+      "town": "江津ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江津ヶ里",
+      "jp": "江津ヶ里",
+      "pattern": "2"
+    },
+    {
+      "town": "江利",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江利",
+      "jp": "江利",
+      "pattern": "2"
+    },
+    {
+      "town": "江里口",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江里口",
+      "jp": "江里口",
+      "pattern": "1"
+    },
+    {
+      "town": "江里山",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江里山",
+      "jp": "江里山",
+      "pattern": "1"
+    },
+    {
+      "town": "甲柳原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "甲柳原",
+      "jp": "甲柳原",
+      "pattern": "1"
+    },
+    {
+      "town": "高原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高原",
+      "jp": "高原",
+      "pattern": "1"
+    },
+    {
+      "town": "高田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高田",
+      "jp": "高田",
+      "pattern": "1"
+    },
+    {
+      "town": "高道",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高道",
+      "jp": "高道",
+      "pattern": "2"
+    },
+    {
+      "town": "高柳",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高柳",
+      "jp": "高柳",
+      "pattern": "2"
+    },
+    {
+      "town": "黒原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "黒原",
+      "jp": "黒原",
+      "pattern": "2"
+    },
+    {
+      "town": "今市",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今市",
+      "jp": "今市",
+      "pattern": "1"
+    },
+    {
+      "town": "佐織",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐織",
+      "jp": "佐織",
+      "pattern": "2"
+    },
+    {
+      "town": "砂田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "砂田",
+      "jp": "砂田",
+      "pattern": "2"
+    },
+    {
+      "town": "坂井",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "坂井",
+      "jp": "坂井",
+      "pattern": "2"
+    },
+    {
+      "town": "鷺ノ原",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鷺ノ原",
+      "jp": "鷺ノ原",
+      "pattern": "1"
+    },
+    {
+      "town": "鯖岡",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鯖岡",
+      "jp": "鯖岡",
+      "pattern": "1"
+    },
+    {
+      "town": "三ヶ島",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三ヶ島",
+      "jp": "三ヶ島",
+      "pattern": "2"
+    },
+    {
+      "town": "三間寺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三間寺",
+      "jp": "三間寺",
+      "pattern": "1"
+    },
+    {
+      "town": "三条",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三条",
+      "jp": "三条",
+      "pattern": "2"
+    },
+    {
+      "town": "山崎",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山崎",
+      "jp": "山崎",
+      "pattern": "2"
+    },
+    {
+      "town": "四条",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "四条",
+      "jp": "四条",
+      "pattern": "2"
+    },
+    {
+      "town": "寺浦",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺浦",
+      "jp": "寺浦",
+      "pattern": "2"
+    },
+    {
+      "town": "寺町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺町",
+      "jp": "寺町",
+      "pattern": "2"
+    },
+    {
+      "town": "舎人",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "舎人",
+      "jp": "舎人",
+      "pattern": "2"
+    },
+    {
+      "town": "社",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "社",
+      "jp": "社",
+      "pattern": "1"
+    },
+    {
+      "town": "社搦",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "社搦",
+      "jp": "社搦",
+      "pattern": "2"
+    },
+    {
+      "town": "住の江西",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住の江西",
+      "jp": "住の江西",
+      "pattern": "2"
+    },
+    {
+      "town": "住の江東",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住の江東",
+      "jp": "住の江東",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住吉町",
+      "jp": "住吉町",
+      "pattern": "1"
+    },
+    {
+      "town": "宿",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宿",
+      "jp": "宿",
+      "pattern": "2"
+    },
+    {
+      "town": "宿古賀",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宿古賀",
+      "jp": "宿古賀",
+      "pattern": "2"
+    },
+    {
+      "town": "出分",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "出分",
+      "jp": "出分",
+      "pattern": "2"
+    },
+    {
+      "town": "初田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "初田",
+      "jp": "初田",
+      "pattern": "1"
+    },
+    {
+      "town": "勝",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "勝",
+      "jp": "勝",
+      "pattern": "2"
+    },
+    {
+      "town": "小隈",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小隈",
+      "jp": "小隈",
+      "pattern": "2"
+    },
+    {
+      "town": "小城栄町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小城栄町",
+      "jp": "小城栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "小城中村",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小城中村",
+      "jp": "小城中村",
+      "pattern": "2"
+    },
+    {
+      "town": "小城本町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小城本町",
+      "jp": "小城本町",
+      "pattern": "1"
+    },
+    {
+      "town": "小島",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小島",
+      "jp": "小島",
+      "pattern": "2"
+    },
+    {
+      "town": "小路",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小路",
+      "jp": "小路",
+      "pattern": "2"
+    },
+    {
+      "town": "庄",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庄",
+      "jp": "庄",
+      "pattern": "2"
+    },
+    {
+      "town": "松尾",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松尾",
+      "jp": "松尾",
+      "pattern": "1"
+    },
+    {
+      "town": "松本",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松本",
+      "jp": "松本",
+      "pattern": "1"
+    },
+    {
+      "town": "松葉",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松葉",
+      "jp": "松葉",
+      "pattern": "2"
+    },
+    {
+      "town": "焼山",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "焼山",
+      "jp": "焼山",
+      "pattern": "3"
+    },
+    {
+      "town": "上右原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上右原",
+      "jp": "上右原",
+      "pattern": "2"
+    },
+    {
+      "town": "上江良",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上江良",
+      "jp": "上江良",
+      "pattern": "1"
+    },
+    {
+      "town": "上町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町",
+      "jp": "上町",
+      "pattern": "1"
+    },
+    {
+      "town": "城栄町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城栄町",
+      "jp": "城栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "新屋敷",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新屋敷",
+      "jp": "新屋敷",
+      "pattern": "2"
+    },
+    {
+      "town": "新村",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新村",
+      "jp": "新村",
+      "pattern": "2"
+    },
+    {
+      "town": "新町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "2"
+    },
+    {
+      "town": "深川",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "深川",
+      "jp": "深川",
+      "pattern": "1"
+    },
+    {
+      "town": "深町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "深町",
+      "jp": "深町",
+      "pattern": "2"
+    },
+    {
+      "town": "仁俣",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仁俣",
+      "jp": "仁俣",
+      "pattern": "1"
+    },
+    {
+      "town": "須の木",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "須の木",
+      "jp": "須の木",
+      "pattern": "1"
+    },
+    {
+      "town": "杉町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉町",
+      "jp": "杉町",
+      "pattern": "1"
+    },
+    {
+      "town": "正徳町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "正徳町",
+      "jp": "正徳町",
+      "pattern": "1"
+    },
+    {
+      "town": "清水",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "清水",
+      "jp": "清水",
+      "pattern": "1"
+    },
+    {
+      "town": "生立ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "生立ヶ里",
+      "jp": "生立ヶ里",
+      "pattern": "1"
+    },
+    {
+      "town": "西戸崎",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西戸崎",
+      "jp": "西戸崎",
+      "pattern": "2"
+    },
+    {
+      "town": "西江津",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西江津",
+      "jp": "西江津",
+      "pattern": "1"
+    },
+    {
+      "town": "西小路",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西小路",
+      "jp": "西小路",
+      "pattern": "2"
+    },
+    {
+      "town": "西新町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西新町",
+      "jp": "西新町",
+      "pattern": "2"
+    },
+    {
+      "town": "西晴気",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西晴気",
+      "jp": "西晴気",
+      "pattern": "2"
+    },
+    {
+      "town": "西川",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西川",
+      "jp": "西川",
+      "pattern": "2"
+    },
+    {
+      "town": "西谷",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西谷",
+      "jp": "西谷",
+      "pattern": "2"
+    },
+    {
+      "town": "西道免",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西道免",
+      "jp": "西道免",
+      "pattern": "2"
+    },
+    {
+      "town": "西分",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西分",
+      "jp": "西分",
+      "pattern": "1"
+    },
+    {
+      "town": "石体",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石体",
+      "jp": "石体",
+      "pattern": "3"
+    },
+    {
+      "town": "石木",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石木",
+      "jp": "石木",
+      "pattern": "1"
+    },
+    {
+      "town": "赤司",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤司",
+      "jp": "赤司",
+      "pattern": "1"
+    },
+    {
+      "town": "川越",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川越",
+      "jp": "川越",
+      "pattern": "2"
+    },
+    {
+      "town": "川原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川原",
+      "jp": "川原",
+      "pattern": "2"
+    },
+    {
+      "town": "川内",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川内",
+      "jp": "川内",
+      "pattern": "3"
+    },
+    {
+      "town": "泉",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "泉",
+      "jp": "泉",
+      "pattern": "2"
+    },
+    {
+      "town": "船田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船田",
+      "jp": "船田",
+      "pattern": "2"
+    },
+    {
+      "town": "前満江",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "前満江",
+      "jp": "前満江",
+      "pattern": "2"
+    },
+    {
+      "town": "大戸ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大戸ヶ里",
+      "jp": "大戸ヶ里",
+      "pattern": "2"
+    },
+    {
+      "town": "大江",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江",
+      "jp": "大江",
+      "pattern": "2"
+    },
+    {
+      "town": "大寺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大寺",
+      "jp": "大寺",
+      "pattern": "1"
+    },
+    {
+      "town": "大手町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大手町",
+      "jp": "大手町",
+      "pattern": "1"
+    },
+    {
+      "town": "大地町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大地町",
+      "jp": "大地町",
+      "pattern": "1"
+    },
+    {
+      "town": "大塚",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大塚",
+      "jp": "大塚",
+      "pattern": "1"
+    },
+    {
+      "town": "大日",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大日",
+      "jp": "大日",
+      "pattern": "1"
+    },
+    {
+      "town": "谷",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "谷",
+      "jp": "谷",
+      "pattern": "2"
+    },
+    {
+      "town": "中溝",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中溝",
+      "jp": "中溝",
+      "pattern": "2"
+    },
+    {
+      "town": "中善寺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中善寺",
+      "jp": "中善寺",
+      "pattern": "2"
+    },
+    {
+      "town": "中町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中町",
+      "jp": "中町",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝日町",
+      "jp": "朝日町",
+      "pattern": "1"
+    },
+    {
+      "town": "町分",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "町分",
+      "jp": "町分",
+      "pattern": "2"
+    },
+    {
+      "town": "長神田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長神田",
+      "jp": "長神田",
+      "pattern": "1"
+    },
+    {
+      "town": "天満町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "天満町",
+      "jp": "天満町",
+      "pattern": "1"
+    },
+    {
+      "town": "砥川町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "砥川町",
+      "jp": "砥川町",
+      "pattern": "2"
+    },
+    {
+      "town": "土生",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "土生",
+      "jp": "土生",
+      "pattern": "1"
+    },
+    {
+      "town": "島溝",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島溝",
+      "jp": "島溝",
+      "pattern": "2"
+    },
+    {
+      "town": "東戸崎",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東戸崎",
+      "jp": "東戸崎",
+      "pattern": "2"
+    },
+    {
+      "town": "東小松",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東小松",
+      "jp": "東小松",
+      "pattern": "2"
+    },
+    {
+      "town": "東新町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東新町",
+      "jp": "東新町",
+      "pattern": "1"
+    },
+    {
+      "town": "東道免",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東道免",
+      "jp": "東道免",
+      "pattern": "2"
+    },
+    {
+      "town": "東分",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東分",
+      "jp": "東分",
+      "pattern": "1"
+    },
+    {
+      "town": "湯谷",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "湯谷",
+      "jp": "湯谷",
+      "pattern": "2"
+    },
+    {
+      "town": "道辺",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道辺",
+      "jp": "道辺",
+      "pattern": "1"
+    },
+    {
+      "town": "道免",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道免",
+      "jp": "道免",
+      "pattern": "2"
+    },
+    {
+      "town": "内砥川",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内砥川",
+      "jp": "内砥川",
+      "pattern": "2"
+    },
+    {
+      "town": "二瀬川",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二瀬川",
+      "jp": "二瀬川",
+      "pattern": "1"
+    },
+    {
+      "town": "馬場",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "馬場",
+      "jp": "馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "萩ノ町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萩ノ町",
+      "jp": "萩ノ町",
+      "pattern": "2"
+    },
+    {
+      "town": "畑田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "畑田",
+      "jp": "畑田",
+      "pattern": "2"
+    },
+    {
+      "town": "八枝",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八枝",
+      "jp": "八枝",
+      "pattern": "2"
+    },
+    {
+      "town": "樋口",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "樋口",
+      "jp": "樋口",
+      "pattern": "2"
+    },
+    {
+      "town": "蛭子町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蛭子町",
+      "jp": "蛭子町",
+      "pattern": "1"
+    },
+    {
+      "town": "浜中",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "浜中",
+      "jp": "浜中",
+      "pattern": "2"
+    },
+    {
+      "town": "不二町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "不二町",
+      "jp": "不二町",
+      "pattern": "2"
+    },
+    {
+      "town": "布施ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "布施ヶ里",
+      "jp": "布施ヶ里",
+      "pattern": "1"
+    },
+    {
+      "town": "平原",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平原",
+      "jp": "平原",
+      "pattern": "2"
+    },
+    {
+      "town": "米隈",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米隈",
+      "jp": "米隈",
+      "pattern": "2"
+    },
+    {
+      "town": "弁財",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "弁財",
+      "jp": "弁財",
+      "pattern": "2"
+    },
+    {
+      "town": "戊",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戊",
+      "jp": "戊",
+      "pattern": "1"
+    },
+    {
+      "town": "峰",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "峰",
+      "jp": "峰",
+      "pattern": "2"
+    },
+    {
+      "town": "北浦",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北浦",
+      "jp": "北浦",
+      "pattern": "1"
+    },
+    {
+      "town": "北小路",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北小路",
+      "jp": "北小路",
+      "pattern": "1"
+    },
+    {
+      "town": "堀江",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀江",
+      "jp": "堀江",
+      "pattern": "1"
+    },
+    {
+      "town": "本告",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本告",
+      "jp": "本告",
+      "pattern": "1"
+    },
+    {
+      "town": "本山",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本山",
+      "jp": "本山",
+      "pattern": "2"
+    },
+    {
+      "town": "門前",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "門前",
+      "jp": "門前",
+      "pattern": "2"
+    },
+    {
+      "town": "弥生町",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "弥生町",
+      "jp": "弥生町",
+      "pattern": "2"
+    },
+    {
+      "town": "柳鶴",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳鶴",
+      "jp": "柳鶴",
+      "pattern": "2"
+    },
+    {
+      "town": "友田",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "友田",
+      "jp": "友田",
+      "pattern": "1"
+    },
+    {
+      "town": "立石",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立石",
+      "jp": "立石",
+      "pattern": "2"
+    },
+    {
+      "town": "立物",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立物",
+      "jp": "立物",
+      "pattern": "1"
+    },
+    {
+      "town": "立野",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立野",
+      "jp": "立野",
+      "pattern": "2"
+    },
+    {
+      "town": "両新村",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "両新村",
+      "jp": "両新村",
+      "pattern": "2"
+    },
+    {
+      "town": "緑",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑",
+      "jp": "緑",
+      "pattern": "1"
+    },
+    {
+      "town": "練ヶ里",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "練ヶ里",
+      "jp": "練ヶ里",
+      "pattern": "1"
+    },
+    {
+      "town": "六丁",
+      "townEn": "Ogi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "六丁",
+      "jp": "六丁",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ogi.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

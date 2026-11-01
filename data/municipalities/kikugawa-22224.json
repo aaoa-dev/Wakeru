@@ -1,0 +1,1652 @@
+{
+  "id": "kikugawa-22224",
+  "code": "22224",
+  "pref": "22",
+  "jp": "菊川市",
+  "en": "Kikugawa",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kikugawa.5374.jp/data/area_days.csv",
+    "http://kikugawa.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割りばし」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源物」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「集団回収」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源物」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル（飲料用・醤油など）」 under 「資源物（ペットボトル）」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「トレー（色つき）」 under 「資源物（資源プラ）」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「資源物」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「リチウムイオン電池」 under 「資源物」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「資源物」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃えるごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "dates": [
+            "2026-04-03",
+            "2026-04-07",
+            "2026-04-10",
+            "2026-04-14",
+            "2026-04-17",
+            "2026-04-21",
+            "2026-04-24",
+            "2026-04-28",
+            "2026-05-01",
+            "2026-05-05",
+            "2026-05-08",
+            "2026-05-12",
+            "2026-05-15",
+            "2026-05-19",
+            "2026-05-22",
+            "2026-05-26",
+            "2026-05-29",
+            "2026-06-02",
+            "2026-06-05",
+            "2026-06-09",
+            "2026-06-12",
+            "2026-06-16",
+            "2026-06-19",
+            "2026-06-23",
+            "2026-06-26",
+            "2026-06-30",
+            "2026-07-03",
+            "2026-07-07",
+            "2026-07-10",
+            "2026-07-14",
+            "2026-07-17",
+            "2026-07-21",
+            "2026-07-24",
+            "2026-07-28",
+            "2026-07-31",
+            "2026-08-04",
+            "2026-08-07",
+            "2026-08-11",
+            "2026-08-14",
+            "2026-08-18",
+            "2026-08-21",
+            "2026-08-25",
+            "2026-08-28",
+            "2026-09-01",
+            "2026-09-04",
+            "2026-09-08",
+            "2026-09-11",
+            "2026-09-15",
+            "2026-09-18",
+            "2026-09-22",
+            "2026-09-25",
+            "2026-09-29",
+            "2026-10-02",
+            "2026-10-06",
+            "2026-10-09",
+            "2026-10-13",
+            "2026-10-16",
+            "2026-10-20",
+            "2026-10-23",
+            "2026-10-27",
+            "2026-10-30",
+            "2026-11-03",
+            "2026-11-06",
+            "2026-11-10",
+            "2026-11-13",
+            "2026-11-17",
+            "2026-11-20",
+            "2026-11-24",
+            "2026-11-27",
+            "2026-12-01",
+            "2026-12-04",
+            "2026-12-08",
+            "2026-12-11",
+            "2026-12-15",
+            "2026-12-18",
+            "2026-12-22",
+            "2026-12-25",
+            "2026-12-29",
+            "2027-01-05",
+            "2027-01-08",
+            "2027-01-12",
+            "2027-01-15",
+            "2027-01-19",
+            "2027-01-22",
+            "2027-01-26",
+            "2027-01-29",
+            "2027-02-02",
+            "2027-02-05",
+            "2027-02-09",
+            "2027-02-12",
+            "2027-02-16",
+            "2027-02-19",
+            "2027-02-23",
+            "2027-02-26",
+            "2027-03-02",
+            "2027-03-05",
+            "2027-03-09",
+            "2027-03-12",
+            "2027-03-16",
+            "2027-03-19",
+            "2027-03-23",
+            "2027-03-26",
+            "2027-03-30"
+          ]
+        },
+        "non_burnable": {
+          "dates": [
+            "2026-04-09",
+            "2026-04-23",
+            "2026-05-07",
+            "2026-05-21",
+            "2026-06-04",
+            "2026-06-18",
+            "2026-07-02",
+            "2026-07-16",
+            "2026-07-30",
+            "2026-08-13",
+            "2026-08-27",
+            "2026-09-10",
+            "2026-09-24",
+            "2026-10-08",
+            "2026-10-22",
+            "2026-11-05",
+            "2026-11-19",
+            "2026-12-03",
+            "2026-12-17",
+            "2027-01-07",
+            "2027-01-21",
+            "2027-02-04",
+            "2027-02-18",
+            "2027-03-04",
+            "2027-03-18"
+          ]
+        },
+        "res": {
+          "dates": [
+            "2026-04-02",
+            "2026-04-16",
+            "2026-04-30",
+            "2026-05-14",
+            "2026-05-28",
+            "2026-06-11",
+            "2026-06-25",
+            "2026-07-09",
+            "2026-07-23",
+            "2026-08-06",
+            "2026-08-20",
+            "2026-09-03",
+            "2026-09-17",
+            "2026-10-01",
+            "2026-10-15",
+            "2026-10-29",
+            "2026-11-12",
+            "2026-11-26",
+            "2026-12-10",
+            "2026-12-24",
+            "2027-01-14",
+            "2027-01-28",
+            "2027-02-11",
+            "2027-02-25",
+            "2027-03-11",
+            "2027-03-25"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "サンライズ",
+      "townEn": "Sanraizu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "サンライズ",
+      "jp": "サンライズ",
+      "pattern": "1"
+    },
+    {
+      "town": "つつじヶ丘",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つつじヶ丘",
+      "jp": "つつじヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "稲荷部",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "稲荷部",
+      "jp": "稲荷部",
+      "pattern": "1"
+    },
+    {
+      "town": "奥の谷",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奥の谷",
+      "jp": "奥の谷",
+      "pattern": "1"
+    },
+    {
+      "town": "奥横地",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奥横地",
+      "jp": "奥横地",
+      "pattern": "1"
+    },
+    {
+      "town": "横地雇用促進",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横地雇用促進",
+      "jp": "横地雇用促進",
+      "pattern": "1"
+    },
+    {
+      "town": "下新道",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下新道",
+      "jp": "下新道",
+      "pattern": "1"
+    },
+    {
+      "town": "下倉沢",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下倉沢",
+      "jp": "下倉沢",
+      "pattern": "1"
+    },
+    {
+      "town": "下半済",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下半済",
+      "jp": "下半済",
+      "pattern": "1"
+    },
+    {
+      "town": "下本所",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下本所",
+      "jp": "下本所",
+      "pattern": "1"
+    },
+    {
+      "town": "花水木",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花水木",
+      "jp": "花水木",
+      "pattern": "1"
+    },
+    {
+      "town": "岳洋",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "岳洋",
+      "jp": "岳洋",
+      "pattern": "1"
+    },
+    {
+      "town": "宮下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮下",
+      "jp": "宮下",
+      "pattern": "1"
+    },
+    {
+      "town": "宮前",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮前",
+      "jp": "宮前",
+      "pattern": "1"
+    },
+    {
+      "town": "県営住宅",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "県営住宅",
+      "jp": "県営住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "原磯部",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "原磯部",
+      "jp": "原磯部",
+      "pattern": "1"
+    },
+    {
+      "town": "雇用促進第1",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雇用促進第1",
+      "jp": "雇用促進第1",
+      "pattern": "1"
+    },
+    {
+      "town": "雇用促進第2",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雇用促進第2",
+      "jp": "雇用促進第2",
+      "pattern": "1"
+    },
+    {
+      "town": "五丁目下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五丁目下",
+      "jp": "五丁目下",
+      "pattern": "1"
+    },
+    {
+      "town": "五丁目上",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五丁目上",
+      "jp": "五丁目上",
+      "pattern": "1"
+    },
+    {
+      "town": "五反通",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五反通",
+      "jp": "五反通",
+      "pattern": "1"
+    },
+    {
+      "town": "御門",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "御門",
+      "jp": "御門",
+      "pattern": "1"
+    },
+    {
+      "town": "公文名",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "公文名",
+      "jp": "公文名",
+      "pattern": "1"
+    },
+    {
+      "town": "高田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高田",
+      "jp": "高田",
+      "pattern": "1"
+    },
+    {
+      "town": "三協",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三協",
+      "jp": "三協",
+      "pattern": "1"
+    },
+    {
+      "town": "三軒家",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三軒家",
+      "jp": "三軒家",
+      "pattern": "1"
+    },
+    {
+      "town": "山西",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山西",
+      "jp": "山西",
+      "pattern": "1"
+    },
+    {
+      "town": "志瑞",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志瑞",
+      "jp": "志瑞",
+      "pattern": "1"
+    },
+    {
+      "town": "志茂組",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志茂組",
+      "jp": "志茂組",
+      "pattern": "1"
+    },
+    {
+      "town": "初咲町",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "初咲町",
+      "jp": "初咲町",
+      "pattern": "1"
+    },
+    {
+      "town": "小川端",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小川端",
+      "jp": "小川端",
+      "pattern": "1"
+    },
+    {
+      "town": "上倉沢",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上倉沢",
+      "jp": "上倉沢",
+      "pattern": "1"
+    },
+    {
+      "town": "上本所下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上本所下",
+      "jp": "上本所下",
+      "pattern": "1"
+    },
+    {
+      "town": "上本所上",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上本所上",
+      "jp": "上本所上",
+      "pattern": "1"
+    },
+    {
+      "town": "上本所団地",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上本所団地",
+      "jp": "上本所団地",
+      "pattern": "1"
+    },
+    {
+      "town": "城山下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城山下",
+      "jp": "城山下",
+      "pattern": "1"
+    },
+    {
+      "town": "新通",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新通",
+      "jp": "新通",
+      "pattern": "1"
+    },
+    {
+      "town": "新道",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新道",
+      "jp": "新道",
+      "pattern": "1"
+    },
+    {
+      "town": "森",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森",
+      "jp": "森",
+      "pattern": "1"
+    },
+    {
+      "town": "杉森",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉森",
+      "jp": "杉森",
+      "pattern": "1"
+    },
+    {
+      "town": "政所",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "政所",
+      "jp": "政所",
+      "pattern": "1"
+    },
+    {
+      "town": "星ヶ丘",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "星ヶ丘",
+      "jp": "星ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "西ヶ崎",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西ヶ崎",
+      "jp": "西ヶ崎",
+      "pattern": "1"
+    },
+    {
+      "town": "西袋",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西袋",
+      "jp": "西袋",
+      "pattern": "1"
+    },
+    {
+      "town": "西通り",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西通り",
+      "jp": "西通り",
+      "pattern": "1"
+    },
+    {
+      "town": "西冨田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西冨田",
+      "jp": "西冨田",
+      "pattern": "1"
+    },
+    {
+      "town": "西平尾",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西平尾",
+      "jp": "西平尾",
+      "pattern": "1"
+    },
+    {
+      "town": "西嶺田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西嶺田",
+      "jp": "西嶺田",
+      "pattern": "1"
+    },
+    {
+      "town": "石原",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石原",
+      "jp": "石原",
+      "pattern": "1"
+    },
+    {
+      "town": "川西",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川西",
+      "jp": "川西",
+      "pattern": "1"
+    },
+    {
+      "town": "川中",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川中",
+      "jp": "川中",
+      "pattern": "1"
+    },
+    {
+      "town": "川島",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川島",
+      "jp": "川島",
+      "pattern": "1"
+    },
+    {
+      "town": "川東",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川東",
+      "jp": "川東",
+      "pattern": "1"
+    },
+    {
+      "town": "打上",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "打上",
+      "jp": "打上",
+      "pattern": "1"
+    },
+    {
+      "town": "大門",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大門",
+      "jp": "大門",
+      "pattern": "1"
+    },
+    {
+      "town": "沢田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "沢田",
+      "jp": "沢田",
+      "pattern": "1"
+    },
+    {
+      "town": "段横地",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "段横地",
+      "jp": "段横地",
+      "pattern": "1"
+    },
+    {
+      "town": "段平尾",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "段平尾",
+      "jp": "段平尾",
+      "pattern": "1"
+    },
+    {
+      "town": "池村",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "池村",
+      "jp": "池村",
+      "pattern": "1"
+    },
+    {
+      "town": "中嶺田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中嶺田",
+      "jp": "中嶺田",
+      "pattern": "1"
+    },
+    {
+      "town": "長池",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長池",
+      "jp": "長池",
+      "pattern": "1"
+    },
+    {
+      "town": "堤",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堤",
+      "jp": "堤",
+      "pattern": "1"
+    },
+    {
+      "town": "田ヶ谷",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田ヶ谷",
+      "jp": "田ヶ谷",
+      "pattern": "1"
+    },
+    {
+      "town": "島",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島",
+      "jp": "島",
+      "pattern": "1"
+    },
+    {
+      "town": "島川",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島川",
+      "jp": "島川",
+      "pattern": "1"
+    },
+    {
+      "town": "東河東",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東河東",
+      "jp": "東河東",
+      "pattern": "1"
+    },
+    {
+      "town": "東組",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東組",
+      "jp": "東組",
+      "pattern": "1"
+    },
+    {
+      "town": "東冨田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東冨田",
+      "jp": "東冨田",
+      "pattern": "1"
+    },
+    {
+      "town": "東平尾",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東平尾",
+      "jp": "東平尾",
+      "pattern": "1"
+    },
+    {
+      "town": "東嶺田",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東嶺田",
+      "jp": "東嶺田",
+      "pattern": "1"
+    },
+    {
+      "town": "堂山",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堂山",
+      "jp": "堂山",
+      "pattern": "1"
+    },
+    {
+      "town": "南ニュータウン",
+      "townEn": "Nyutaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南ニュータウン",
+      "jp": "南ニュータウン",
+      "pattern": "1"
+    },
+    {
+      "town": "南町",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南町",
+      "jp": "南町",
+      "pattern": "1"
+    },
+    {
+      "town": "虹の丘",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "虹の丘",
+      "jp": "虹の丘",
+      "pattern": "1"
+    },
+    {
+      "town": "日吉町",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日吉町",
+      "jp": "日吉町",
+      "pattern": "1"
+    },
+    {
+      "town": "日之出町１",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日之出町１",
+      "jp": "日之出町１",
+      "pattern": "1"
+    },
+    {
+      "town": "日之出町2",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日之出町2",
+      "jp": "日之出町2",
+      "pattern": "1"
+    },
+    {
+      "town": "白岩下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白岩下",
+      "jp": "白岩下",
+      "pattern": "1"
+    },
+    {
+      "town": "白岩段",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白岩段",
+      "jp": "白岩段",
+      "pattern": "1"
+    },
+    {
+      "town": "白岩東",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白岩東",
+      "jp": "白岩東",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡谷",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡谷",
+      "jp": "八幡谷",
+      "pattern": "1"
+    },
+    {
+      "town": "富士見台",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見台",
+      "jp": "富士見台",
+      "pattern": "1"
+    },
+    {
+      "town": "布引原",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "布引原",
+      "jp": "布引原",
+      "pattern": "1"
+    },
+    {
+      "town": "平ノ都",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平ノ都",
+      "jp": "平ノ都",
+      "pattern": "1"
+    },
+    {
+      "town": "堀田下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀田下",
+      "jp": "堀田下",
+      "pattern": "1"
+    },
+    {
+      "town": "堀田上",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀田上",
+      "jp": "堀田上",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "1"
+    },
+    {
+      "town": "本通り下",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本通り下",
+      "jp": "本通り下",
+      "pattern": "1"
+    },
+    {
+      "town": "本通り上",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本通り上",
+      "jp": "本通り上",
+      "pattern": "1"
+    },
+    {
+      "town": "緑ヶ丘",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑ヶ丘",
+      "jp": "緑ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "六本松",
+      "townEn": "Kikugawa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "六本松",
+      "jp": "六本松",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台1",
+      "en": "青葉台1",
+      "jp": "青葉台1",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台2",
+      "en": "青葉台2",
+      "jp": "青葉台2",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台3",
+      "en": "青葉台3",
+      "jp": "青葉台3",
+      "pattern": "1"
+    },
+    {
+      "town": "赤土",
+      "townEn": "Akatsuchi",
+      "kana": "アカツチ",
+      "chome": null,
+      "detail": "赤土下",
+      "en": "赤土下",
+      "jp": "赤土下",
+      "pattern": "1"
+    },
+    {
+      "town": "赤土",
+      "townEn": "Akatsuchi",
+      "kana": "アカツチ",
+      "chome": null,
+      "detail": "赤土上",
+      "en": "赤土上",
+      "jp": "赤土上",
+      "pattern": "1"
+    },
+    {
+      "town": "赤土",
+      "townEn": "Akatsuchi",
+      "kana": "アカツチ",
+      "chome": null,
+      "detail": "赤土団地",
+      "en": "赤土団地",
+      "jp": "赤土団地",
+      "pattern": "1"
+    },
+    {
+      "town": "牛渕",
+      "townEn": "Ushibuchi",
+      "kana": "ウシブチ",
+      "chome": null,
+      "detail": "牛渕下",
+      "en": "牛渕下",
+      "jp": "牛渕下",
+      "pattern": "1"
+    },
+    {
+      "town": "牛渕",
+      "townEn": "Ushibuchi",
+      "kana": "ウシブチ",
+      "chome": null,
+      "detail": "牛渕上",
+      "en": "牛渕上",
+      "jp": "牛渕上",
+      "pattern": "1"
+    },
+    {
+      "town": "小出",
+      "townEn": "Oide",
+      "kana": "オイデ",
+      "chome": null,
+      "detail": null,
+      "en": "小出",
+      "jp": "小出",
+      "pattern": "1"
+    },
+    {
+      "town": "大石",
+      "townEn": "Oishi",
+      "kana": "オオイシ",
+      "chome": null,
+      "detail": null,
+      "en": "大石",
+      "jp": "大石",
+      "pattern": "1"
+    },
+    {
+      "town": "河東",
+      "townEn": "Kato",
+      "kana": "カトウ",
+      "chome": null,
+      "detail": "河東西",
+      "en": "河東西",
+      "jp": "河東西",
+      "pattern": "1"
+    },
+    {
+      "town": "河東",
+      "townEn": "Kato",
+      "kana": "カトウ",
+      "chome": null,
+      "detail": "河東中",
+      "en": "河東中",
+      "jp": "河東中",
+      "pattern": "1"
+    },
+    {
+      "town": "上平川",
+      "townEn": "Kamihirakawa",
+      "kana": "カミヒラカワ",
+      "chome": null,
+      "detail": null,
+      "en": "上平川",
+      "jp": "上平川",
+      "pattern": "1"
+    },
+    {
+      "town": "神尾",
+      "townEn": "Kanno",
+      "kana": "カンノオ",
+      "chome": null,
+      "detail": "神尾下",
+      "en": "神尾下",
+      "jp": "神尾下",
+      "pattern": "1"
+    },
+    {
+      "town": "神尾",
+      "townEn": "Kanno",
+      "kana": "カンノオ",
+      "chome": null,
+      "detail": "神尾上",
+      "en": "神尾上",
+      "jp": "神尾上",
+      "pattern": "1"
+    },
+    {
+      "town": "沢水加",
+      "townEn": "Sabaka",
+      "kana": "サバカ",
+      "chome": null,
+      "detail": null,
+      "en": "沢水加",
+      "jp": "沢水加",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋口",
+      "en": "高橋口",
+      "jp": "高橋口",
+      "pattern": "1"
+    },
+    {
+      "town": "高橋",
+      "townEn": "Takahashi",
+      "kana": "タカハシ",
+      "chome": null,
+      "detail": "高橋中",
+      "en": "高橋中",
+      "jp": "高橋中",
+      "pattern": "1"
+    },
+    {
+      "town": "棚草",
+      "townEn": "Tanakusa",
+      "kana": "タナクサ",
+      "chome": null,
+      "detail": null,
+      "en": "棚草",
+      "jp": "棚草",
+      "pattern": "1"
+    },
+    {
+      "town": "丹野",
+      "townEn": "Tanno",
+      "kana": "タンノ",
+      "chome": null,
+      "detail": null,
+      "en": "丹野",
+      "jp": "丹野",
+      "pattern": "1"
+    },
+    {
+      "town": "潮海寺",
+      "townEn": "Chokaiji",
+      "kana": "チョウカイジ",
+      "chome": null,
+      "detail": "潮海寺下",
+      "en": "潮海寺下",
+      "jp": "潮海寺下",
+      "pattern": "1"
+    },
+    {
+      "town": "潮海寺",
+      "townEn": "Chokaiji",
+      "kana": "チョウカイジ",
+      "chome": null,
+      "detail": "潮海寺上",
+      "en": "潮海寺上",
+      "jp": "潮海寺上",
+      "pattern": "1"
+    },
+    {
+      "town": "潮海寺",
+      "townEn": "Chokaiji",
+      "kana": "チョウカイジ",
+      "chome": null,
+      "detail": "潮海寺中",
+      "en": "潮海寺中",
+      "jp": "潮海寺中",
+      "pattern": "1"
+    },
+    {
+      "town": "月岡",
+      "townEn": "Tsukioka",
+      "kana": "ツキオカ",
+      "chome": null,
+      "detail": null,
+      "en": "月岡",
+      "jp": "月岡",
+      "pattern": "1"
+    },
+    {
+      "town": "土橋",
+      "townEn": "Tsuchihashi",
+      "kana": "ツチハシ",
+      "chome": null,
+      "detail": null,
+      "en": "土橋",
+      "jp": "土橋",
+      "pattern": "1"
+    },
+    {
+      "town": "友田",
+      "townEn": "Tomoda",
+      "kana": "トモダ",
+      "chome": null,
+      "detail": null,
+      "en": "友田",
+      "jp": "友田",
+      "pattern": "1"
+    },
+    {
+      "town": "仲島",
+      "townEn": "Nakajima",
+      "kana": "ナカジマ",
+      "chome": null,
+      "detail": null,
+      "en": "仲島",
+      "jp": "仲島",
+      "pattern": "1"
+    },
+    {
+      "town": "奈良野",
+      "townEn": "Narano",
+      "kana": "ナラノ",
+      "chome": null,
+      "detail": null,
+      "en": "奈良野",
+      "jp": "奈良野",
+      "pattern": "1"
+    },
+    {
+      "town": "西横地",
+      "townEn": "Nishiyokoji",
+      "kana": "ニシヨコジ",
+      "chome": null,
+      "detail": null,
+      "en": "西横地",
+      "jp": "西横地",
+      "pattern": "1"
+    },
+    {
+      "town": "平尾",
+      "townEn": "Hirao",
+      "kana": "ヒラオ",
+      "chome": null,
+      "detail": null,
+      "en": "平尾",
+      "jp": "平尾",
+      "pattern": "1"
+    },
+    {
+      "town": "古谷",
+      "townEn": "Furuya",
+      "kana": "フルヤ",
+      "chome": null,
+      "detail": null,
+      "en": "古谷",
+      "jp": "古谷",
+      "pattern": "1"
+    },
+    {
+      "town": "堀之内",
+      "townEn": "Horinochi",
+      "kana": "ホリノウチ",
+      "chome": null,
+      "detail": null,
+      "en": "堀之内",
+      "jp": "堀之内",
+      "pattern": "1"
+    },
+    {
+      "town": "牧之原",
+      "townEn": "Makinohara",
+      "kana": "マキノハラ",
+      "chome": null,
+      "detail": "牧之原下",
+      "en": "牧之原下",
+      "jp": "牧之原下",
+      "pattern": "1"
+    },
+    {
+      "town": "牧之原",
+      "townEn": "Makinohara",
+      "kana": "マキノハラ",
+      "chome": null,
+      "detail": "牧之原上",
+      "en": "牧之原上",
+      "jp": "牧之原上",
+      "pattern": "1"
+    },
+    {
+      "town": "三沢",
+      "townEn": "Misawa",
+      "kana": "ミサワ",
+      "chome": null,
+      "detail": null,
+      "en": "三沢",
+      "jp": "三沢",
+      "pattern": "1"
+    },
+    {
+      "town": "柳",
+      "townEn": "Yanagi",
+      "kana": "ヤナギ",
+      "chome": null,
+      "detail": "柳町",
+      "en": "柳町",
+      "jp": "柳町",
+      "pattern": "1"
+    },
+    {
+      "town": "吉沢",
+      "townEn": "Yoshisawa",
+      "kana": "ヨシサワ",
+      "chome": null,
+      "detail": null,
+      "en": "吉沢",
+      "jp": "吉沢",
+      "pattern": "1"
+    },
+    {
+      "town": "和田",
+      "townEn": "Wada",
+      "kana": "ワダ",
+      "chome": null,
+      "detail": null,
+      "en": "和田",
+      "jp": "和田",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kikugawa.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

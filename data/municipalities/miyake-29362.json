@@ -1,0 +1,217 @@
+{
+  "id": "miyake-29362",
+  "code": "29362",
+  "pref": "29",
+  "jp": "三宅町",
+  "en": "Miyake",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://miyake.5374.jp/data/area_days.csv",
+    "http://miyake.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "上但馬・但馬出屋敷・但馬・小柳・上但馬団地",
+      "townEn": "Miyake",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上但馬・但馬出屋敷・但馬・小柳・上但馬団地",
+      "jp": "上但馬・但馬出屋敷・但馬・小柳・上但馬団地",
+      "pattern": "2"
+    },
+    {
+      "town": "石見・石見団地（北・中・南）・伴堂１・伴堂２",
+      "townEn": "Miyake",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石見・石見団地（北・中・南）・伴堂１・伴堂２",
+      "jp": "石見・石見団地（北・中・南）・伴堂１・伴堂２",
+      "pattern": "1"
+    },
+    {
+      "town": "伴堂",
+      "townEn": "Miyake",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伴堂",
+      "jp": "伴堂",
+      "pattern": "2"
+    },
+    {
+      "town": "屏風・東屏風・三河",
+      "townEn": "Miyake",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "屏風・東屏風・三河",
+      "jp": "屏風・東屏風・三河",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://miyake.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,574 @@
+{
+  "id": "linkdata-5470-03205",
+  "code": "03205",
+  "pref": "03",
+  "jp": "花巻市",
+  "en": "Hanamaki",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s5470i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s5470i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            5
+          ]
+        }
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": [
+          5
+        ]
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      },
+      "5": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": [
+          1
+        ]
+      },
+      "6": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            5
+          ]
+        },
+        "plastic": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "花巻地域 花南地区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 花南地区",
+      "jp": "花巻地域 花南地区",
+      "pattern": "3"
+    },
+    {
+      "town": "花巻地域 宮野目地区 葛第1・第2、田力、上似内、下似内",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 宮野目地区 葛第1・第2、田力、上似内、下似内",
+      "jp": "花巻地域 宮野目地区 葛第1・第2、田力、上似内、下似内",
+      "pattern": "2"
+    },
+    {
+      "town": "花巻地域 宮野目地区 西宮野目第1から第4、東宮野目、本館",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 宮野目地区 西宮野目第1から第4、東宮野目、本館",
+      "jp": "花巻地域 宮野目地区 西宮野目第1から第4、東宮野目、本館",
+      "pattern": "6"
+    },
+    {
+      "town": "花巻地域 太田地区・笹間地区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 太田地区・笹間地区",
+      "jp": "花巻地域 太田地区・笹間地区",
+      "pattern": "4"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 松園町1区から松園町5区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 松園町1区から松園町5区",
+      "jp": "花巻地域 中央・花北地区 松園町1区から松園町5区",
+      "pattern": "1"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 星が丘1丁目、四日町1丁目1区2区、四日町2・3丁目、一日市、愛宕町、桜台、坂本町",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 星が丘1丁目、四日町1丁目1区2区、四日町2・3丁目、一日市、愛宕町、桜台、坂本町",
+      "jp": "花巻地域 中央・花北地区 星が丘1丁目、四日町1丁目1区2区、四日町2・3丁目、一日市、愛宕町、桜台、坂本町",
+      "pattern": "3"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 西大通り、材木町、若葉町",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 西大通り、材木町、若葉町",
+      "jp": "花巻地域 中央・花北地区 西大通り、材木町、若葉町",
+      "pattern": "4"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 浅沢、新田、四日町3丁目の一部、小舟渡、北万丁目、本館の一部",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 浅沢、新田、四日町3丁目の一部、小舟渡、北万丁目、本館の一部",
+      "jp": "花巻地域 中央・花北地区 浅沢、新田、四日町3丁目の一部、小舟渡、北万丁目、本館の一部",
+      "pattern": "2"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 大通り1・2丁目、末広町、藤沢町、桜木町、南川原町、鍛治町、双葉町、上町、豊沢町、東町、大町、仲町、御田屋町、里川口、城内、花城町1・2区、吹張町",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 大通り1・2丁目、末広町、藤沢町、桜木町、南川原町、鍛治町、双葉町、上町、豊沢町、東町、大町、仲町、御田屋町、里川口、城内、花城町1・2区、吹張町",
+      "jp": "花巻地域 中央・花北地区 大通り1・2丁目、末広町、藤沢町、桜木町、南川原町、鍛治町、双葉町、上町、豊沢町、東町、大町、仲町、御田屋町、里川口、城内、花城町1・2区、吹張町",
+      "pattern": "3"
+    },
+    {
+      "town": "花巻地域 中央・花北地区 北万丁目の一部、南万丁目、石神町、中根子の一部",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 中央・花北地区 北万丁目の一部、南万丁目、石神町、中根子の一部",
+      "jp": "花巻地域 中央・花北地区 北万丁目の一部、南万丁目、石神町、中根子の一部",
+      "pattern": "5"
+    },
+    {
+      "town": "花巻地域 湯口地区 南中根子",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 湯口地区 南中根子",
+      "jp": "花巻地域 湯口地区 南中根子",
+      "pattern": "4"
+    },
+    {
+      "town": "花巻地域 湯口地区(南中根子行政区を除く)",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 湯口地区(南中根子行政区を除く)",
+      "jp": "花巻地域 湯口地区(南中根子行政区を除く)",
+      "pattern": "5"
+    },
+    {
+      "town": "花巻地域 湯本地区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 湯本地区",
+      "jp": "花巻地域 湯本地区",
+      "pattern": "6"
+    },
+    {
+      "town": "花巻地域 矢沢地区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花巻地域 矢沢地区",
+      "jp": "花巻地域 矢沢地区",
+      "pattern": "2"
+    },
+    {
+      "town": "石鳥谷地域 石鳥谷1区から6区、16区から19区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥谷地域 石鳥谷1区から6区、16区から19区",
+      "jp": "石鳥谷地域 石鳥谷1区から6区、16区から19区",
+      "pattern": "3"
+    },
+    {
+      "town": "石鳥谷地域 石鳥谷7区から15区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥谷地域 石鳥谷7区から15区",
+      "jp": "石鳥谷地域 石鳥谷7区から15区",
+      "pattern": "3"
+    },
+    {
+      "town": "石鳥谷地域 八重畑、新堀地区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥谷地域 八重畑、新堀地区",
+      "jp": "石鳥谷地域 八重畑、新堀地区",
+      "pattern": "5"
+    },
+    {
+      "town": "石鳥谷地域 八幡7区",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥谷地域 八幡7区",
+      "jp": "石鳥谷地域 八幡7区",
+      "pattern": "6"
+    },
+    {
+      "town": "石鳥谷地域 八幡地区[八幡7区を除く]",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥谷地域 八幡地区[八幡7区を除く]",
+      "jp": "石鳥谷地域 八幡地区[八幡7区を除く]",
+      "pattern": "5"
+    },
+    {
+      "town": "大迫地域 大迫地区[亀ケ森鶴尾地区を含む]",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大迫地域 大迫地区[亀ケ森鶴尾地区を含む]",
+      "jp": "大迫地域 大迫地区[亀ケ森鶴尾地区を含む]",
+      "pattern": "4"
+    },
+    {
+      "town": "大迫地域 内川目地区、外川目、亀ケ森地区[鶴尾地区を除く]",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大迫地域 内川目地区、外川目、亀ケ森地区[鶴尾地区を除く]",
+      "jp": "大迫地域 内川目地区、外川目、亀ケ森地区[鶴尾地区を除く]",
+      "pattern": "2"
+    },
+    {
+      "town": "東和地域 安俵の一部【土沢第7行政区】",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 安俵の一部【土沢第7行政区】",
+      "jp": "東和地域 安俵の一部【土沢第7行政区】",
+      "pattern": "3"
+    },
+    {
+      "town": "東和地域 五町内、八日市場、前郷、安俵(六本木)【土沢第2、3、4、5、9行政区】",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 五町内、八日市場、前郷、安俵(六本木)【土沢第2、3、4、5、9行政区】",
+      "jp": "東和地域 五町内、八日市場、前郷、安俵(六本木)【土沢第2、3、4、5、9行政区】",
+      "pattern": "3"
+    },
+    {
+      "town": "東和地域 小山田全域、百ノ沢、新地、平山",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 小山田全域、百ノ沢、新地、平山",
+      "jp": "東和地域 小山田全域、百ノ沢、新地、平山",
+      "pattern": "6"
+    },
+    {
+      "town": "東和地域 谷内、倉沢、砂子、田瀬",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 谷内、倉沢、砂子、田瀬",
+      "jp": "東和地域 谷内、倉沢、砂子、田瀬",
+      "pattern": "3"
+    },
+    {
+      "town": "東和地域 町井、舘迫、落合、東晴山",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 町井、舘迫、落合、東晴山",
+      "jp": "東和地域 町井、舘迫、落合、東晴山",
+      "pattern": "6"
+    },
+    {
+      "town": "東和地域 毒沢、浮田、中内、成島、子通",
+      "townEn": "Hanamaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東和地域 毒沢、浮田、中内、成島、子通",
+      "jp": "東和地域 毒沢、浮田、中内、成島、子通",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s5470i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

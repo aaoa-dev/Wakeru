@@ -1,0 +1,410 @@
+{
+  "id": "matsushige-36401",
+  "code": "36401",
+  "pref": "36",
+  "jp": "松茂町",
+  "en": "Matsushige",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://matsushige.5374.jp/data/area_days.csv",
+    "http://matsushige.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「紙類（紙の日）」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「紙類（紙の日）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「紙類（紙の日）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「紙類（紙の日）」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「紙類（紙の日）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源ごみ①」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶（飲料用）」 under 「資源ごみ①」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「資源ごみ①」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「トレイ（白色）」 under 「資源ごみ①」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "向喜来（稲本の国道28号より東）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向喜来（稲本の国道28号より東）",
+      "jp": "向喜来（稲本の国道28号より東）",
+      "pattern": "2"
+    },
+    {
+      "town": "向喜来（群恵・稲本の国道28号より西）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向喜来（群恵・稲本の国道28号より西）",
+      "jp": "向喜来（群恵・稲本の国道28号より西）",
+      "pattern": "1"
+    },
+    {
+      "town": "広　島（国道11号より西）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広　島（国道11号より西）",
+      "jp": "広　島（国道11号より西）",
+      "pattern": "1"
+    },
+    {
+      "town": "広　島（国道11号より東）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広　島（国道11号より東）",
+      "jp": "広　島（国道11号より東）",
+      "pattern": "1"
+    },
+    {
+      "town": "広　島（北川向）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広　島（北川向）",
+      "jp": "広　島（北川向）",
+      "pattern": "1"
+    },
+    {
+      "town": "住　吉（自衛隊正門進入路より西）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住　吉（自衛隊正門進入路より西）",
+      "jp": "住　吉（自衛隊正門進入路より西）",
+      "pattern": "2"
+    },
+    {
+      "town": "住　吉（自衛隊正門進入路より東）",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住　吉（自衛隊正門進入路より東）",
+      "jp": "住　吉（自衛隊正門進入路より東）",
+      "pattern": "2"
+    },
+    {
+      "town": "長　岸",
+      "townEn": "Matsushige",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長　岸",
+      "jp": "長　岸",
+      "pattern": "1"
+    },
+    {
+      "town": "笹木野",
+      "townEn": "Sasagino",
+      "kana": "ササギノ",
+      "chome": null,
+      "detail": "笹木野（ 以外の笹木野全域）",
+      "en": "笹木野（ 以外の笹木野全域）",
+      "jp": "笹木野（ 以外の笹木野全域）",
+      "pattern": "2"
+    },
+    {
+      "town": "笹木野",
+      "townEn": "Sasagino",
+      "kana": "ササギノ",
+      "chome": null,
+      "detail": "笹木野（県道空港線より北）",
+      "en": "笹木野（県道空港線より北）",
+      "jp": "笹木野（県道空港線より北）",
+      "pattern": "2"
+    },
+    {
+      "town": "笹木野",
+      "townEn": "Sasagino",
+      "kana": "ササギノ",
+      "chome": null,
+      "detail": "笹木野（国道28号沿い）",
+      "en": "笹木野（国道28号沿い）",
+      "jp": "笹木野（国道28号沿い）",
+      "pattern": "1"
+    },
+    {
+      "town": "笹木野",
+      "townEn": "Sasagino",
+      "kana": "ササギノ",
+      "chome": null,
+      "detail": "笹木野（笹木野排水機場排水路より東）",
+      "en": "笹木野（笹木野排水機場排水路より東）",
+      "jp": "笹木野（笹木野排水機場排水路より東）",
+      "pattern": "2"
+    },
+    {
+      "town": "豊岡",
+      "townEn": "Toyoka",
+      "kana": "トヨオカ",
+      "chome": null,
+      "detail": "豊岡・豊中・長原の全地域",
+      "en": "豊岡・豊中・長原の全地域",
+      "jp": "豊岡・豊中・長原の全地域",
+      "pattern": "2"
+    },
+    {
+      "town": "中喜来",
+      "townEn": "Nakagirai",
+      "kana": "ナカギライ",
+      "chome": null,
+      "detail": "中喜来（旧吉野川から北）",
+      "en": "中喜来（旧吉野川から北）",
+      "jp": "中喜来（旧吉野川から北）",
+      "pattern": "1"
+    },
+    {
+      "town": "満穂",
+      "townEn": "Mitsuho",
+      "kana": "ミツホ",
+      "chome": null,
+      "detail": "満穂・福有・豊久の全地域",
+      "en": "満穂・福有・豊久の全地域",
+      "jp": "満穂・福有・豊久の全地域",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://matsushige.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -69,7 +69,113 @@
     }
   },
   "plasticTest": null,
-  "sorting": {},
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "paper_cloth",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「古布」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑紙」 under 「古紙」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「古紙」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「古紙」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「古紙」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル（飲料用・食用）」 under 「ペットボトル」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「割れたガラス」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「小形充電式電池」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「水銀体温計」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「家電リサイクル法対象品」.",
+      "auto": true
+    }
+  },
   "calendar": {
     "noCollection": {
       "weekdays": [],
@@ -1629,5 +1735,5 @@
       "path": "municipalities/tokyo/chofu"
     }
   },
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }

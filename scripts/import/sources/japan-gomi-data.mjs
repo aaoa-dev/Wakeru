@@ -50,9 +50,9 @@ export function listMunicipalities({dir}){
 /* their own records decide: no verification note, or a note that calls (part of) the data 未検証, means hidden */
 export function verification(meta){
   const notes = (meta.notes ?? []).join("\n");
-  if(/未検証/.test(notes)) return {ok:false, reason:"their records mark part of the data 未検証 (unverified)"};
-  if(!/照合|検証\(/.test(notes)) return {ok:false, reason:"no verification record"};
-  return {ok:true};
+  if(/未検証/.test(notes)) return {ok:false, reason:"their records mark part of the data 未検証 (unverified)", tier:"partial"};
+  if(!/照合|検証\(/.test(notes)) return {ok:false, reason:"no verification record", tier:"no-note"};
+  return {ok:true, tier:"verified"};
 }
 
 const monthEnd = ym => { const [y, m] = ym.split("-").map(Number); return new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10) };

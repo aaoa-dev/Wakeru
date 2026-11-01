@@ -1,0 +1,7054 @@
+{
+  "id": "fukuoka-city",
+  "code": "40130",
+  "pref": "40",
+  "jp": "福岡市",
+  "en": "Fukuoka",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://fukuoka.5374.jp/data/area_days.csv",
+    "http://fukuoka.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          0,
+          3
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          3
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "城南区 干隈1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 干隈1，2丁目",
+      "jp": "城南区 干隈1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 金山団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 金山団地",
+      "jp": "城南区 金山団地",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 荒江1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 荒江1丁目",
+      "jp": "城南区 荒江1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 荒江団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 荒江団地",
+      "jp": "城南区 荒江団地",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 七隈1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 七隈1丁目",
+      "jp": "城南区 七隈1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 七隈2～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 七隈2～5丁目",
+      "jp": "城南区 七隈2～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 七隈6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 七隈6丁目",
+      "jp": "城南区 七隈6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 七隈7，8丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 七隈7，8丁目",
+      "jp": "城南区 七隈7，8丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 松山1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 松山1，2丁目",
+      "jp": "城南区 松山1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 城西団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 城西団地",
+      "jp": "城南区 城西団地",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 神松寺1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 神松寺1～3丁目",
+      "jp": "城南区 神松寺1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 西片江1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 西片江1，2丁目",
+      "jp": "城南区 西片江1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 大字東油山",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 大字東油山",
+      "jp": "城南区 大字東油山",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 大字梅林",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 大字梅林",
+      "jp": "城南区 大字梅林",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 茶山1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 茶山1～3丁目",
+      "jp": "城南区 茶山1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 茶山4～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 茶山4～5丁目",
+      "jp": "城南区 茶山4～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 茶山6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 茶山6丁目",
+      "jp": "城南区 茶山6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 長尾1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 長尾1，2丁目",
+      "jp": "城南区 長尾1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 長尾3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 長尾3～5丁目",
+      "jp": "城南区 長尾3～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 鳥飼4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 鳥飼4～6丁目",
+      "jp": "城南区 鳥飼4～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 鳥飼7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 鳥飼7丁目",
+      "jp": "城南区 鳥飼7丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 堤1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 堤1丁目",
+      "jp": "城南区 堤1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 堤2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 堤2丁目",
+      "jp": "城南区 堤2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 堤団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 堤団地",
+      "jp": "城南区 堤団地",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 田島1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 田島1，2丁目",
+      "jp": "城南区 田島1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 田島3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 田島3丁目",
+      "jp": "城南区 田島3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 田島4丁目1番～25番，27番～28番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 田島4丁目1番～25番，27番～28番",
+      "jp": "城南区 田島4丁目1番～25番，27番～28番",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 田島4丁目26番（田島団地）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 田島4丁目26番（田島団地）",
+      "jp": "城南区 田島4丁目26番（田島団地）",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 田島5，6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 田島5，6丁目",
+      "jp": "城南区 田島5，6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 東油山1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 東油山1丁目",
+      "jp": "城南区 東油山1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 東油山2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 東油山2丁目",
+      "jp": "城南区 東油山2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 東油山3～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 東油山3～6丁目",
+      "jp": "城南区 東油山3～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 南片江1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 南片江1丁目",
+      "jp": "城南区 南片江1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 南片江2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 南片江2丁目",
+      "jp": "城南区 南片江2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 南片江3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 南片江3～5丁目",
+      "jp": "城南区 南片江3～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 南片江6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 南片江6丁目",
+      "jp": "城南区 南片江6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 梅林1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 梅林1，2丁目",
+      "jp": "城南区 梅林1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 梅林3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 梅林3～5丁目",
+      "jp": "城南区 梅林3～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 飯倉1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 飯倉1丁目",
+      "jp": "城南区 飯倉1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "城南区 樋井川1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 樋井川1丁目",
+      "jp": "城南区 樋井川1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 樋井川2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 樋井川2，3丁目",
+      "jp": "城南区 樋井川2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 樋井川4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 樋井川4丁目",
+      "jp": "城南区 樋井川4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 樋井川5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 樋井川5丁目",
+      "jp": "城南区 樋井川5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 樋井川6，7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 樋井川6，7丁目",
+      "jp": "城南区 樋井川6，7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 別府1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 別府1～3丁目",
+      "jp": "城南区 別府1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 別府4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 別府4，5丁目",
+      "jp": "城南区 別府4，5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 別府6，7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 別府6，7丁目",
+      "jp": "城南区 別府6，7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 別府団地15棟",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 別府団地15棟",
+      "jp": "城南区 別府団地15棟",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 別府団地上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 別府団地上記以外",
+      "jp": "城南区 別府団地上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 片江1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 片江1丁目",
+      "jp": "城南区 片江1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 片江2～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 片江2～5丁目",
+      "jp": "城南区 片江2～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 宝台団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 宝台団地",
+      "jp": "城南区 宝台団地",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 友丘1丁目7番29～44号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 友丘1丁目7番29～44号",
+      "jp": "城南区 友丘1丁目7番29～44号",
+      "pattern": "3"
+    },
+    {
+      "town": "城南区 友丘1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 友丘1丁目上記以外",
+      "jp": "城南区 友丘1丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 友丘2～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 友丘2～6丁目",
+      "jp": "城南区 友丘2～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "城南区 友泉亭",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南区 友泉亭",
+      "jp": "城南区 友泉亭",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 愛宕1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕1丁目",
+      "jp": "西区 愛宕1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 愛宕2～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕2～4丁目",
+      "jp": "西区 愛宕2～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 愛宕南1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕南1，2丁目",
+      "jp": "西区 愛宕南1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 愛宕浜1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕浜1丁目",
+      "jp": "西区 愛宕浜1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 愛宕浜2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕浜2，3丁目",
+      "jp": "西区 愛宕浜2，3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 愛宕浜4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 愛宕浜4丁目",
+      "jp": "西区 愛宕浜4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 壱岐団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 壱岐団地",
+      "jp": "西区 壱岐団地",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 横浜1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 横浜1～3丁目",
+      "jp": "西区 横浜1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 下山門1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下山門1～3丁目",
+      "jp": "西区 下山門1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 下山門4丁目16番～19番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下山門4丁目16番～19番",
+      "jp": "西区 下山門4丁目16番～19番",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 下山門4丁目2番～14番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下山門4丁目2番～14番",
+      "jp": "西区 下山門4丁目2番～14番",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 下山門団地1番～28番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下山門団地1番～28番",
+      "jp": "西区 下山門団地1番～28番",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 下山門団地5番2号（5-2棟），29番～48番，70番～75番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下山門団地5番2号（5-2棟），29番～48番，70番～75番",
+      "jp": "西区 下山門団地5番2号（5-2棟），29番～48番，70番～75番",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 橋本1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 橋本1，2丁目",
+      "jp": "西区 橋本1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 九大新町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 九大新町",
+      "jp": "西区 九大新町",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 元浜1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 元浜1～4丁目",
+      "jp": "西区 元浜1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 戸切1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 戸切1～3丁目",
+      "jp": "西区 戸切1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿1～2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿1～2丁目",
+      "jp": "西区 今宿1～2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿3丁目1番～26番，38番～41番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿3丁目1番～26番，38番～41番",
+      "jp": "西区 今宿3丁目1番～26番，38番～41番",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿3丁目27番～37番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿3丁目27番～37番",
+      "jp": "西区 今宿3丁目27番～37番",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 今宿駅前1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿駅前1丁目",
+      "jp": "西区 今宿駅前1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿上ノ原",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿上ノ原",
+      "jp": "西区 今宿上ノ原",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿西1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿西1丁目",
+      "jp": "西区 今宿西1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 今宿青木",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿青木",
+      "jp": "西区 今宿青木",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿町",
+      "jp": "西区 今宿町",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今宿東1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今宿東1～3丁目",
+      "jp": "西区 今宿東1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 今津",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 今津",
+      "jp": "西区 今津",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 室見が丘1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 室見が丘1～3丁目",
+      "jp": "西区 室見が丘1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 周船寺1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 周船寺1～3丁目",
+      "jp": "西区 周船寺1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 拾六町1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 拾六町1～4丁目",
+      "jp": "西区 拾六町1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 拾六町5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 拾六町5丁目",
+      "jp": "西区 拾六町5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 拾六町団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 拾六町団地",
+      "jp": "西区 拾六町団地",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 十郎川団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 十郎川団地",
+      "jp": "西区 十郎川団地",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 女原北",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 女原北",
+      "jp": "西区 女原北",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 小戸1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 小戸1～5丁目",
+      "jp": "西区 小戸1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 上山門1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 上山門1～3丁目",
+      "jp": "西区 上山門1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 城の原団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 城の原団地",
+      "jp": "西区 城の原団地",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 生の松原1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 生の松原1～4丁目",
+      "jp": "西区 生の松原1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 生松台1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 生松台1～3丁目",
+      "jp": "西区 生松台1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 西の丘1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 西の丘1～3丁目",
+      "jp": "西区 西の丘1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 西都1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 西都1丁目",
+      "jp": "西区 西都1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 西都2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 西都2丁目",
+      "jp": "西区 西都2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 石丸1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 石丸1～3丁目",
+      "jp": "西区 石丸1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 石丸4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 石丸4丁目",
+      "jp": "西区 石丸4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 泉1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 泉1～3丁目",
+      "jp": "西区 泉1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 太郎丸1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 太郎丸1～4丁目",
+      "jp": "西区 太郎丸1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字宇田川原",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字宇田川原",
+      "jp": "西区 大字宇田川原",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字羽根戸752番地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字羽根戸752番地",
+      "jp": "西区 大字羽根戸752番地",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字羽根戸上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字羽根戸上記以外",
+      "jp": "西区 大字羽根戸上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字下山門",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字下山門",
+      "jp": "西区 大字下山門",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 大字吉武",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字吉武",
+      "jp": "西区 大字吉武",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字宮浦",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字宮浦",
+      "jp": "西区 大字宮浦",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字橋本",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字橋本",
+      "jp": "西区 大字橋本",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字金武",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字金武",
+      "jp": "西区 大字金武",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字桑原",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字桑原",
+      "jp": "西区 大字桑原",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字元岡",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字元岡",
+      "jp": "西区 大字元岡",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字周船寺",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字周船寺",
+      "jp": "西区 大字周船寺",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字女原",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字女原",
+      "jp": "西区 大字女原",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字小田",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字小田",
+      "jp": "西区 大字小田",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字西浦",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字西浦",
+      "jp": "西区 大字西浦",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字西入部",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字西入部",
+      "jp": "西区 大字西入部",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字千里",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字千里",
+      "jp": "西区 大字千里",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字草場",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字草場",
+      "jp": "西区 大字草場",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字太郎丸",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字太郎丸",
+      "jp": "西区 大字太郎丸",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字田",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字田",
+      "jp": "西区 大字田",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字田尻",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字田尻",
+      "jp": "西区 大字田尻",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字徳永",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字徳永",
+      "jp": "西区 大字徳永",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字飯氏",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字飯氏",
+      "jp": "西区 大字飯氏",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大字飯盛",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字飯盛",
+      "jp": "西区 大字飯盛",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 大字野方",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大字野方",
+      "jp": "西区 大字野方",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 大町団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 大町団地",
+      "jp": "西区 大町団地",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 田尻1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 田尻1丁目",
+      "jp": "西区 田尻1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 徳永北",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 徳永北",
+      "jp": "西区 徳永北",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 内浜1丁目6番（アーベイン四季姪浜）",
+      "townEn": "Abein",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 内浜1丁目6番（アーベイン四季姪浜）",
+      "jp": "西区 内浜1丁目6番（アーベイン四季姪浜）",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 内浜1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 内浜1丁目上記以外",
+      "jp": "西区 内浜1丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 内浜2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 内浜2丁目",
+      "jp": "西区 内浜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 能古",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 能古",
+      "jp": "西区 能古",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 富士見1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 富士見1～3丁目",
+      "jp": "西区 富士見1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 福重1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 福重1～3丁目",
+      "jp": "西区 福重1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 福重4丁目14番22号（ネオハイツ新室見）",
+      "townEn": "Neohaitsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 福重4丁目14番22号（ネオハイツ新室見）",
+      "jp": "西区 福重4丁目14番22号（ネオハイツ新室見）",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 福重4丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 福重4丁目上記以外",
+      "jp": "西区 福重4丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 福重5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 福重5丁目",
+      "jp": "西区 福重5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 福重団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 福重団地",
+      "jp": "西区 福重団地",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 豊浜1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 豊浜1，2丁目",
+      "jp": "西区 豊浜1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 北原1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 北原1丁目",
+      "jp": "西区 北原1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 姪の浜1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜1丁目",
+      "jp": "西区 姪の浜1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 姪の浜2丁目7番（のむら姪浜ヒルズ）",
+      "townEn": "Hiruzu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜2丁目7番（のむら姪浜ヒルズ）",
+      "jp": "西区 姪の浜2丁目7番（のむら姪浜ヒルズ）",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 姪の浜2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜2丁目上記以外",
+      "jp": "西区 姪の浜2丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 姪の浜3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜3丁目",
+      "jp": "西区 姪の浜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 姪の浜4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜4丁目",
+      "jp": "西区 姪の浜4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 姪の浜5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜5丁目",
+      "jp": "西区 姪の浜5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 姪の浜6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪の浜6丁目",
+      "jp": "西区 姪の浜6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 姪浜駅南1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 姪浜駅南1～4丁目",
+      "jp": "西区 姪浜駅南1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 野方1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方1丁目",
+      "jp": "西区 野方1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 野方2丁目1番～3番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方2丁目1番～3番",
+      "jp": "西区 野方2丁目1番～3番",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 野方2丁目4番～54番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方2丁目4番～54番",
+      "jp": "西区 野方2丁目4番～54番",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 野方3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方3，4丁目",
+      "jp": "西区 野方3，4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 野方5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方5丁目",
+      "jp": "西区 野方5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 野方6丁目23番（野方西団地）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方6丁目23番（野方西団地）",
+      "jp": "西区 野方6丁目23番（野方西団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 野方6丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方6丁目上記以外",
+      "jp": "西区 野方6丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 野方7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 野方7丁目",
+      "jp": "西区 野方7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 伊崎",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 伊崎",
+      "jp": "中央区 伊崎",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 輝国1丁目1番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 輝国1丁目1番",
+      "jp": "中央区 輝国1丁目1番",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 輝国1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 輝国1丁目上記以外",
+      "jp": "中央区 輝国1丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 輝国2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 輝国2丁目",
+      "jp": "中央区 輝国2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 警固1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 警固1丁目",
+      "jp": "中央区 警固1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 警固2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 警固2，3丁目",
+      "jp": "中央区 警固2，3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 古小烏町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 古小烏町",
+      "jp": "中央区 古小烏町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 御所ヶ谷",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 御所ヶ谷",
+      "jp": "中央区 御所ヶ谷",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 港1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 港1～3丁目",
+      "jp": "中央区 港1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 荒戸1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 荒戸1丁目",
+      "jp": "中央区 荒戸1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 荒戸2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 荒戸2丁目",
+      "jp": "中央区 荒戸2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 荒戸3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 荒戸3丁目",
+      "jp": "中央区 荒戸3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 荒津1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 荒津1，2丁目",
+      "jp": "中央区 荒津1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 高砂1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 高砂1丁目",
+      "jp": "中央区 高砂1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 高砂2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 高砂2丁目",
+      "jp": "中央区 高砂2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 黒門",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 黒門",
+      "jp": "中央区 黒門",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 今川1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 今川1，2丁目",
+      "jp": "中央区 今川1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 今泉1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 今泉1丁目",
+      "jp": "中央区 今泉1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 今泉2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 今泉2丁目",
+      "jp": "中央区 今泉2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 桜坂1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 桜坂1丁目",
+      "jp": "中央区 桜坂1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 桜坂2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 桜坂2丁目",
+      "jp": "中央区 桜坂2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 桜坂3丁目11番35号，44号，46号，48号 エバーライフ桜坂",
+      "townEn": "Ebaraifu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 桜坂3丁目11番35号，44号，46号，48号 エバーライフ桜坂",
+      "jp": "中央区 桜坂3丁目11番35号，44号，46号，48号 エバーライフ桜坂",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 桜坂3丁目1番～4番，6番77号※ただし，3番1号(ライオンズマンション桜坂）を除く｡",
+      "townEn": "Raionzumanshon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 桜坂3丁目1番～4番，6番77号※ただし，3番1号(ライオンズマンション桜坂）を除く｡",
+      "jp": "中央区 桜坂3丁目1番～4番，6番77号※ただし，3番1号(ライオンズマンション桜坂）を除く｡",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 桜坂3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 桜坂3丁目上記以外",
+      "jp": "中央区 桜坂3丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 笹丘1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 笹丘1～3丁目",
+      "jp": "中央区 笹丘1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 山荘通3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 山荘通3丁目",
+      "jp": "中央区 山荘通3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 春吉1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 春吉1丁目",
+      "jp": "中央区 春吉1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 春吉2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 春吉2，3丁目",
+      "jp": "中央区 春吉2，3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 小笹1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹1丁目",
+      "jp": "中央区 小笹1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 小笹2丁目11番55号，13番4号，11号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹2丁目11番55号，13番4号，11号",
+      "jp": "中央区 小笹2丁目11番55号，13番4号，11号",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 小笹2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹2丁目上記以外",
+      "jp": "中央区 小笹2丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 小笹3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹3丁目",
+      "jp": "中央区 小笹3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 小笹4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹4丁目",
+      "jp": "中央区 小笹4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 小笹5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 小笹5丁目",
+      "jp": "中央区 小笹5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 城内",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 城内",
+      "jp": "中央区 城内",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 浄水通",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 浄水通",
+      "jp": "中央区 浄水通",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 清川1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 清川1～3丁目",
+      "jp": "中央区 清川1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 西公園",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 西公園",
+      "jp": "中央区 西公園",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 西中洲",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 西中洲",
+      "jp": "中央区 西中洲",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 赤坂1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 赤坂1丁目",
+      "jp": "中央区 赤坂1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 赤坂2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 赤坂2丁目",
+      "jp": "中央区 赤坂2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 赤坂3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 赤坂3丁目",
+      "jp": "中央区 赤坂3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 草香江1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 草香江1丁目",
+      "jp": "中央区 草香江1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 草香江2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 草香江2丁目",
+      "jp": "中央区 草香江2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 大宮1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大宮1，2丁目",
+      "jp": "中央区 大宮1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 大濠1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大濠1，2丁目",
+      "jp": "中央区 大濠1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 大濠公園",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大濠公園",
+      "jp": "中央区 大濠公園",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 大手門1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大手門1～3丁目",
+      "jp": "中央区 大手門1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 大名1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大名1丁目",
+      "jp": "中央区 大名1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 大名2丁目9番（大名第2公団住宅），12番（大名第1公団住宅）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大名2丁目9番（大名第2公団住宅），12番（大名第1公団住宅）",
+      "jp": "中央区 大名2丁目9番（大名第2公団住宅），12番（大名第1公団住宅）",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 大名2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 大名2丁目上記以外",
+      "jp": "中央区 大名2丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 谷1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 谷1，2丁目",
+      "jp": "中央区 谷1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 地行1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 地行1～4丁目",
+      "jp": "中央区 地行1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 地行浜1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 地行浜1，2丁目",
+      "jp": "中央区 地行浜1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 長浜1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 長浜1丁目",
+      "jp": "中央区 長浜1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 長浜2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 長浜2丁目",
+      "jp": "中央区 長浜2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 長浜3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 長浜3丁目",
+      "jp": "中央区 長浜3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 鳥飼1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 鳥飼1～3丁目",
+      "jp": "中央区 鳥飼1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 天神1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神1丁目",
+      "jp": "中央区 天神1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 天神2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神2丁目",
+      "jp": "中央区 天神2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 天神3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神3丁目",
+      "jp": "中央区 天神3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 天神4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神4丁目",
+      "jp": "中央区 天神4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 天神5丁目1番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神5丁目1番",
+      "jp": "中央区 天神5丁目1番",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 天神5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 天神5丁目上記以外",
+      "jp": "中央区 天神5丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 渡辺通1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 渡辺通1丁目",
+      "jp": "中央区 渡辺通1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 渡辺通2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 渡辺通2丁目",
+      "jp": "中央区 渡辺通2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 渡辺通3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 渡辺通3丁目",
+      "jp": "中央区 渡辺通3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 渡辺通4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 渡辺通4丁目",
+      "jp": "中央区 渡辺通4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 渡辺通5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 渡辺通5丁目",
+      "jp": "中央区 渡辺通5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 唐人町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 唐人町1～3丁目",
+      "jp": "中央区 唐人町1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 那の川2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 那の川2丁目",
+      "jp": "中央区 那の川2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 那の津1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 那の津1～5丁目",
+      "jp": "中央区 那の津1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 梅光園1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 梅光園1～3丁目",
+      "jp": "中央区 梅光園1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 梅光園団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 梅光園団地",
+      "jp": "中央区 梅光園団地",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 白金1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 白金1丁目",
+      "jp": "中央区 白金1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 白金2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 白金2丁目",
+      "jp": "中央区 白金2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 舞鶴1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 舞鶴1，2丁目",
+      "jp": "中央区 舞鶴1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 舞鶴3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 舞鶴3丁目",
+      "jp": "中央区 舞鶴3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 福浜1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 福浜1，2丁目",
+      "jp": "中央区 福浜1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 平丘町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平丘町",
+      "jp": "中央区 平丘町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 平尾1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平尾1丁目",
+      "jp": "中央区 平尾1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 平尾2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平尾2丁目",
+      "jp": "中央区 平尾2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 平尾3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平尾3丁目",
+      "jp": "中央区 平尾3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 平尾4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平尾4，5丁目",
+      "jp": "中央区 平尾4，5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 平尾浄水町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平尾浄水町",
+      "jp": "中央区 平尾浄水町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 平和3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平和3丁目",
+      "jp": "中央区 平和3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 平和5丁目13番38～66号，14番34～47号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平和5丁目13番38～66号，14番34～47号",
+      "jp": "中央区 平和5丁目13番38～66号，14番34～47号",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 平和5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 平和5丁目上記以外",
+      "jp": "中央区 平和5丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 薬院1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 薬院1丁目",
+      "jp": "中央区 薬院1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 薬院2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 薬院2丁目",
+      "jp": "中央区 薬院2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央区 薬院3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 薬院3丁目",
+      "jp": "中央区 薬院3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 薬院4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 薬院4丁目",
+      "jp": "中央区 薬院4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 薬院伊福町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 薬院伊福町",
+      "jp": "中央区 薬院伊福町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央区 六本松1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 六本松1丁目",
+      "jp": "中央区 六本松1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 六本松2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 六本松2，3丁目",
+      "jp": "中央区 六本松2，3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中央区 六本松4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中央区 六本松4丁目",
+      "jp": "中央区 六本松4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 みどりが丘1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 みどりが丘1～3丁目",
+      "jp": "東区 みどりが丘1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 塩浜1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 塩浜1丁目",
+      "jp": "東区 塩浜1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 塩浜2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 塩浜2，3丁目",
+      "jp": "東区 塩浜2，3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 下原1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 下原1～3丁目",
+      "jp": "東区 下原1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 下原4丁目1番～9番，10番7，8号，11番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 下原4丁目1番～9番，10番7，8号，11番",
+      "jp": "東区 下原4丁目1番～9番，10番7，8号，11番",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 下原4丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 下原4丁目上記以外",
+      "jp": "東区 下原4丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 下原5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 下原5丁目",
+      "jp": "東区 下原5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 貝塚団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 貝塚団地",
+      "jp": "東区 貝塚団地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 蒲田1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 蒲田1～5丁目",
+      "jp": "東区 蒲田1～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 雁の巣1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 雁の巣1丁目",
+      "jp": "東区 雁の巣1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 雁の巣2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 雁の巣2丁目",
+      "jp": "東区 雁の巣2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 郷口町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 郷口町",
+      "jp": "東区 郷口町",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 原田1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 原田1丁目",
+      "jp": "東区 原田1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 原田2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 原田2丁目",
+      "jp": "東区 原田2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 原田3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 原田3丁目",
+      "jp": "東区 原田3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 原田4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 原田4丁目",
+      "jp": "東区 原田4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 御島崎1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 御島崎1丁目",
+      "jp": "東区 御島崎1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 御島崎2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 御島崎2丁目",
+      "jp": "東区 御島崎2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 香住ヶ丘1～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香住ヶ丘1～7丁目",
+      "jp": "東区 香住ヶ丘1～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 香椎１丁目26番31号（藤和香椎ホームズ）",
+      "townEn": "Homuzu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎１丁目26番31号（藤和香椎ホームズ）",
+      "jp": "東区 香椎１丁目26番31号（藤和香椎ホームズ）",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎１丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎１丁目上記以外",
+      "jp": "東区 香椎１丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎2～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎2～6丁目",
+      "jp": "東区 香椎2～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎駅前1丁目1番，2番15～18号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅前1丁目1番，2番15～18号",
+      "jp": "東区 香椎駅前1丁目1番，2番15～18号",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎駅前1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅前1丁目上記以外",
+      "jp": "東区 香椎駅前1丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅前2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅前2丁目",
+      "jp": "東区 香椎駅前2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅前3丁目3番，4番(16号，20号を除く)",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅前3丁目3番，4番(16号，20号を除く)",
+      "jp": "東区 香椎駅前3丁目3番，4番(16号，20号を除く)",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅前3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅前3丁目上記以外",
+      "jp": "東区 香椎駅前3丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 香椎駅東1丁目12番の一部，15番21～25号，16番7～12号，18番～33番，34番18～32号，35番，36番，38番22号，40番22～25号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東1丁目12番の一部，15番21～25号，16番7～12号，18番～33番，34番18～32号，35番，36番，38番22号，40番22～25号",
+      "jp": "東区 香椎駅東1丁目12番の一部，15番21～25号，16番7～12号，18番～33番，34番18～32号，35番，36番，38番22号，40番22～25号",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎駅東1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東1丁目上記以外",
+      "jp": "東区 香椎駅東1丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅東2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東2丁目",
+      "jp": "東区 香椎駅東2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅東3丁目1番(6号を除く)，2番，3番18～20号，25号，4番7～11号，5番（54～75号を除く），6番，7番(7～9号を除く)，8番22～27号，30番，32番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東3丁目1番(6号を除く)，2番，3番18～20号，25号，4番7～11号，5番（54～75号を除く），6番，7番(7～9号を除く)，8番22～27号，30番，32番",
+      "jp": "東区 香椎駅東3丁目1番(6号を除く)，2番，3番18～20号，25号，4番7～11号，5番（54～75号を除く），6番，7番(7～9号を除く)，8番22～27号，30番，32番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎駅東3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東3丁目上記以外",
+      "jp": "東区 香椎駅東3丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎駅東4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎駅東4丁目",
+      "jp": "東区 香椎駅東4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎照葉1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎照葉1～3丁目",
+      "jp": "東区 香椎照葉1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 香椎照葉4～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎照葉4～7丁目",
+      "jp": "東区 香椎照葉4～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 香椎台1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎台1～4丁目",
+      "jp": "東区 香椎台1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎台5丁目28番1～3号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎台5丁目28番1～3号",
+      "jp": "東区 香椎台5丁目28番1～3号",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎台5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎台5丁目上記以外",
+      "jp": "東区 香椎台5丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 香椎団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎団地",
+      "jp": "東区 香椎団地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 香椎浜1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 香椎浜1～4丁目",
+      "jp": "東区 香椎浜1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 高美台1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 高美台1～4丁目",
+      "jp": "東区 高美台1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 三苫1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 三苫1～3丁目",
+      "jp": "東区 三苫1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 三苫4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 三苫4，5丁目",
+      "jp": "東区 三苫4，5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 三苫6～8丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 三苫6～8丁目",
+      "jp": "東区 三苫6～8丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 社領1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 社領1丁目",
+      "jp": "東区 社領1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 社領2丁目24番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 社領2丁目24番",
+      "jp": "東区 社領2丁目24番",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 社領2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 社領2丁目上記以外",
+      "jp": "東区 社領2丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 社領3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 社領3丁目",
+      "jp": "東区 社領3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 若宮1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 若宮1～3丁目",
+      "jp": "東区 若宮1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 若宮4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 若宮4，5丁目",
+      "jp": "東区 若宮4，5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 松香台1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松香台1丁目",
+      "jp": "東区 松香台1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 松香台2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松香台2丁目",
+      "jp": "東区 松香台2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 松崎1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松崎1，2丁目",
+      "jp": "東区 松崎1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 松崎3丁目42番7～11号，25番1号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松崎3丁目42番7～11号，25番1号",
+      "jp": "東区 松崎3丁目42番7～11号，25番1号",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 松崎3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松崎3丁目上記以外",
+      "jp": "東区 松崎3丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 松崎4丁目8番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松崎4丁目8番",
+      "jp": "東区 松崎4丁目8番",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 松崎4丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松崎4丁目上記以外",
+      "jp": "東区 松崎4丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 松田1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松田1～3丁目",
+      "jp": "東区 松田1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 松島1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松島1～4丁目",
+      "jp": "東区 松島1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 松島5丁目1番～20番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松島5丁目1番～20番",
+      "jp": "東区 松島5丁目1番～20番",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 松島5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松島5丁目上記以外",
+      "jp": "東区 松島5丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 松島6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 松島6丁目",
+      "jp": "東区 松島6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 城浜団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 城浜団地",
+      "jp": "東区 城浜団地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 水谷1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 水谷1丁目",
+      "jp": "東区 水谷1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 水谷2丁目24番～41番（香椎台団地）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 水谷2丁目24番～41番（香椎台団地）",
+      "jp": "東区 水谷2丁目24番～41番（香椎台団地）",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 水谷2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 水谷2丁目上記以外",
+      "jp": "東区 水谷2丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 水谷3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 水谷3丁目",
+      "jp": "東区 水谷3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 西戸崎1～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 西戸崎1～6丁目",
+      "jp": "東区 西戸崎1～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 青葉1丁目1番～12番，13番1～26号，33番，35番～46番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉1丁目1番～12番，13番1～26号，33番，35番～46番",
+      "jp": "東区 青葉1丁目1番～12番，13番1～26号，33番，35番～46番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 青葉1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉1丁目上記以外",
+      "jp": "東区 青葉1丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 青葉2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉2丁目",
+      "jp": "東区 青葉2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 青葉3丁目43番3～5号，16～31号，45番6-15～17号，45番71～82号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉3丁目43番3～5号，16～31号，45番6-15～17号，45番71～82号",
+      "jp": "東区 青葉3丁目43番3～5号，16～31号，45番6-15～17号，45番71～82号",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 青葉3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉3丁目上記以外",
+      "jp": "東区 青葉3丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 青葉4～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 青葉4～7丁目",
+      "jp": "東区 青葉4～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 千早1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早1丁目",
+      "jp": "東区 千早1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 千早2丁目8番1～3号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早2丁目8番1～3号",
+      "jp": "東区 千早2丁目8番1～3号",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 千早2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早2丁目上記以外",
+      "jp": "東区 千早2丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 千早3丁目3番，4番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早3丁目3番，4番",
+      "jp": "東区 千早3丁目3番，4番",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 千早3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早3丁目上記以外",
+      "jp": "東区 千早3丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 千早4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 千早4～6丁目",
+      "jp": "東区 千早4～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 多々良1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 多々良1丁目",
+      "jp": "東区 多々良1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 多々良2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 多々良2丁目",
+      "jp": "東区 多々良2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 多の津1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 多の津1～5丁目",
+      "jp": "東区 多の津1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 大岳1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大岳1～4丁目",
+      "jp": "東区 大岳1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 大字弘",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字弘",
+      "jp": "東区 大字弘",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 大字香椎",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字香椎",
+      "jp": "東区 大字香椎",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 大字志賀島",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字志賀島",
+      "jp": "東区 大字志賀島",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 大字勝馬",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字勝馬",
+      "jp": "東区 大字勝馬",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 大字上和白",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字上和白",
+      "jp": "東区 大字上和白",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 大字奈多",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字奈多",
+      "jp": "東区 大字奈多",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 大字名子",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大字名子",
+      "jp": "東区 大字名子",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 長谷",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 長谷",
+      "jp": "東区 長谷",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 土井1丁目1番～10番，22番～24番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 土井1丁目1番～10番，22番～24番",
+      "jp": "東区 土井1丁目1番～10番，22番～24番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 土井1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 土井1丁目上記以外",
+      "jp": "東区 土井1丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 土井2丁目1番～9番，12番～17番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 土井2丁目1番～9番，12番～17番",
+      "jp": "東区 土井2丁目1番～9番，12番～17番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 土井2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 土井2丁目上記以外",
+      "jp": "東区 土井2丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 土井3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 土井3，4丁目",
+      "jp": "東区 土井3，4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 唐原1～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 唐原1～7丁目",
+      "jp": "東区 唐原1～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 東浜1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 東浜1，2丁目",
+      "jp": "東区 東浜1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 奈多1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 奈多1～3丁目",
+      "jp": "東区 奈多1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 奈多団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 奈多団地",
+      "jp": "東区 奈多団地",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 二又瀬",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 二又瀬",
+      "jp": "東区 二又瀬",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 二又瀬新町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 二又瀬新町",
+      "jp": "東区 二又瀬新町",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 馬出1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 馬出1丁目",
+      "jp": "東区 馬出1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 馬出2～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 馬出2～4丁目",
+      "jp": "東区 馬出2～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 馬出5～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 馬出5～6丁目",
+      "jp": "東区 馬出5～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 箱崎1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎1～3丁目",
+      "jp": "東区 箱崎1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 箱崎4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎4丁目",
+      "jp": "東区 箱崎4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 箱崎5丁目11番（野村ガーデン）",
+      "townEn": "Gaden",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎5丁目11番（野村ガーデン）",
+      "jp": "東区 箱崎5丁目11番（野村ガーデン）",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 箱崎5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎5丁目上記以外",
+      "jp": "東区 箱崎5丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 箱崎6，7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎6，7丁目",
+      "jp": "東区 箱崎6，7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 箱崎ふ頭1～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 箱崎ふ頭1～6丁目",
+      "jp": "東区 箱崎ふ頭1～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 八田1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 八田1～3丁目",
+      "jp": "東区 八田1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 八田4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 八田4丁目",
+      "jp": "東区 八田4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 美和台1～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 美和台1～7丁目",
+      "jp": "東区 美和台1～7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 美和台新町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 美和台新町",
+      "jp": "東区 美和台新町",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 舞松原1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 舞松原1～3丁目",
+      "jp": "東区 舞松原1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 舞松原4丁目4番～6番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 舞松原4丁目4番～6番",
+      "jp": "東区 舞松原4丁目4番～6番",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 舞松原4丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 舞松原4丁目上記以外",
+      "jp": "東区 舞松原4丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 舞松原5，6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 舞松原5，6丁目",
+      "jp": "東区 舞松原5，6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 名子1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名子1～3丁目",
+      "jp": "東区 名子1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 名島1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島1丁目",
+      "jp": "東区 名島1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 名島2丁目16番～28番，42番～44番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島2丁目16番～28番，42番～44番",
+      "jp": "東区 名島2丁目16番～28番，42番～44番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 名島2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島2丁目上記以外",
+      "jp": "東区 名島2丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 名島3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島3丁目",
+      "jp": "東区 名島3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 名島4丁目60番～63番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島4丁目60番～63番",
+      "jp": "東区 名島4丁目60番～63番",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 名島4丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島4丁目上記以外",
+      "jp": "東区 名島4丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 名島5丁目6番15，17，19号，50番～55番，56番1～9号，35号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島5丁目6番15，17，19号，50番～55番，56番1～9号，35号",
+      "jp": "東区 名島5丁目6番15，17，19号，50番～55番，56番1～9号，35号",
+      "pattern": "1"
+    },
+    {
+      "town": "東区 名島5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 名島5丁目上記以外",
+      "jp": "東区 名島5丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白1～4丁目",
+      "jp": "東区 和白1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 和白5丁目1番，2番，15番1～18号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白5丁目1番，2番，15番1～18号",
+      "jp": "東区 和白5丁目1番，2番，15番1～18号",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 和白5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白5丁目上記以外",
+      "jp": "東区 和白5丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白6丁目",
+      "jp": "東区 和白6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白丘1丁目3番～7番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白丘1丁目3番～7番",
+      "jp": "東区 和白丘1丁目3番～7番",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 和白丘1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白丘1丁目上記以外",
+      "jp": "東区 和白丘1丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白丘2丁目1番，3番（36号，48号を除く）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白丘2丁目1番，3番（36号，48号を除く）",
+      "jp": "東区 和白丘2丁目1番，3番（36号，48号を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 和白丘2丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白丘2丁目上記以外",
+      "jp": "東区 和白丘2丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白丘3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白丘3，4丁目",
+      "jp": "東区 和白丘3，4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白東1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白東1～4丁目",
+      "jp": "東区 和白東1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 和白東5丁目22番，23番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白東5丁目22番，23番",
+      "jp": "東区 和白東5丁目22番，23番",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 和白東5丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 和白東5丁目上記以外",
+      "jp": "東区 和白東5丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 筥松1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 筥松1丁目",
+      "jp": "東区 筥松1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 筥松2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 筥松2丁目",
+      "jp": "東区 筥松2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 筥松3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 筥松3，4丁目",
+      "jp": "東区 筥松3，4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 筥松新町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 筥松新町",
+      "jp": "東区 筥松新町",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 井尻1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 井尻1丁目",
+      "jp": "南区 井尻1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 井尻2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 井尻2，3丁目",
+      "jp": "南区 井尻2，3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 井尻4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 井尻4，5丁目",
+      "jp": "南区 井尻4，5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 塩原1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 塩原1，2丁目",
+      "jp": "南区 塩原1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 塩原3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 塩原3，4丁目",
+      "jp": "南区 塩原3，4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 横手1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 横手1～4丁目",
+      "jp": "南区 横手1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 横手南町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 横手南町",
+      "jp": "南区 横手南町",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 屋形原1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 屋形原1～4丁目",
+      "jp": "南区 屋形原1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 屋形原5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 屋形原5丁目",
+      "jp": "南区 屋形原5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 花畑1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 花畑1～4丁目",
+      "jp": "南区 花畑1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 玉川町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 玉川町",
+      "jp": "南区 玉川町",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 警弥郷1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 警弥郷1，2丁目",
+      "jp": "南区 警弥郷1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 警弥郷3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 警弥郷3丁目",
+      "jp": "南区 警弥郷3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 五十川1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 五十川1，2丁目",
+      "jp": "南区 五十川1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 向新町1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 向新町1，2丁目",
+      "jp": "南区 向新町1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 向野1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 向野1丁目",
+      "jp": "南区 向野1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 向野2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 向野2丁目",
+      "jp": "南区 向野2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 高宮1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 高宮1～5丁目",
+      "jp": "南区 高宮1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 高木1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 高木1丁目",
+      "jp": "南区 高木1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 高木2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 高木2，3丁目",
+      "jp": "南区 高木2，3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 皿山1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 皿山1～4丁目",
+      "jp": "南区 皿山1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 三宅1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 三宅1～3丁目",
+      "jp": "南区 三宅1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 市崎1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 市崎1，2丁目",
+      "jp": "南区 市崎1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 寺塚1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 寺塚1丁目",
+      "jp": "南区 寺塚1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 寺塚2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 寺塚2丁目",
+      "jp": "南区 寺塚2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 若久1丁目27番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久1丁目27番",
+      "jp": "南区 若久1丁目27番",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 若久1丁目35番，36番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久1丁目35番，36番",
+      "jp": "南区 若久1丁目35番，36番",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 若久1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久1丁目上記以外",
+      "jp": "南区 若久1丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 若久2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久2，3丁目",
+      "jp": "南区 若久2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 若久4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久4，5丁目",
+      "jp": "南区 若久4，5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 若久6丁目74番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久6丁目74番",
+      "jp": "南区 若久6丁目74番",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 若久6丁目74番以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久6丁目74番以外",
+      "jp": "南区 若久6丁目74番以外",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 若久団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若久団地",
+      "jp": "南区 若久団地",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 清水1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 清水1～4丁目",
+      "jp": "南区 清水1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 西長住1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 西長住1～3丁目",
+      "jp": "南区 西長住1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 折立町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 折立町",
+      "jp": "南区 折立町",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 多賀1丁目11番(野間団地)",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 多賀1丁目11番(野間団地)",
+      "jp": "南区 多賀1丁目11番(野間団地)",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 多賀1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 多賀1丁目上記以外",
+      "jp": "南区 多賀1丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 多賀2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 多賀2丁目",
+      "jp": "南区 多賀2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 大橋1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大橋1，2丁目",
+      "jp": "南区 大橋1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 大橋3丁目5番(大橋県住)",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大橋3丁目5番(大橋県住)",
+      "jp": "南区 大橋3丁目5番(大橋県住)",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 大橋3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大橋3丁目上記以外",
+      "jp": "南区 大橋3丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 大橋4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大橋4丁目",
+      "jp": "南区 大橋4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 大橋団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大橋団地",
+      "jp": "南区 大橋団地",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 大字柏原",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大字柏原",
+      "jp": "南区 大字柏原",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 大字桧原",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大字桧原",
+      "jp": "南区 大字桧原",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 大池1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大池1，2丁目",
+      "jp": "南区 大池1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 大楠1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大楠1丁目",
+      "jp": "南区 大楠1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 大楠2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大楠2，3丁目",
+      "jp": "南区 大楠2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 大平寺1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大平寺1，2丁目",
+      "jp": "南区 大平寺1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 筑紫丘1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 筑紫丘1，2丁目",
+      "jp": "南区 筑紫丘1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 中尾1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 中尾1～3丁目",
+      "jp": "南区 中尾1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 長丘1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 長丘1～5丁目",
+      "jp": "南区 長丘1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 長住1～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 長住1～7丁目",
+      "jp": "南区 長住1～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 鶴田1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 鶴田1～4丁目",
+      "jp": "南区 鶴田1～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 的場1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 的場1，2丁目",
+      "jp": "南区 的場1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 那の川1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 那の川1，2丁目",
+      "jp": "南区 那の川1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 南大橋1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 南大橋1，2丁目",
+      "jp": "南区 南大橋1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 日佐1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 日佐1，2丁目",
+      "jp": "南区 日佐1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 日佐3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 日佐3～5丁目",
+      "jp": "南区 日佐3～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 柏原1～7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 柏原1～7丁目",
+      "jp": "南区 柏原1～7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 桧原1～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 桧原1～6丁目",
+      "jp": "南区 桧原1～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 桧原7丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 桧原7丁目",
+      "jp": "南区 桧原7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 平和1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 平和1，2丁目",
+      "jp": "南区 平和1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 平和4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 平和4丁目",
+      "jp": "南区 平和4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 野間1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野間1～4丁目",
+      "jp": "南区 野間1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 野多目1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野多目1，2丁目",
+      "jp": "南区 野多目1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 野多目3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野多目3丁目",
+      "jp": "南区 野多目3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 野多目4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野多目4丁目",
+      "jp": "南区 野多目4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 野多目5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野多目5丁目",
+      "jp": "南区 野多目5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 野多目6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野多目6丁目",
+      "jp": "南区 野多目6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 弥永1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 弥永1丁目",
+      "jp": "南区 弥永1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 弥永2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 弥永2丁目",
+      "jp": "南区 弥永2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 弥永3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 弥永3～5丁目",
+      "jp": "南区 弥永3～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 弥永団地",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 弥永団地",
+      "jp": "南区 弥永団地",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 柳河内1丁目7番32号，8番(1号，56～58号を除く)，9番(10号，12号を除く)",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 柳河内1丁目7番32号，8番(1号，56～58号を除く)，9番(10号，12号を除く)",
+      "jp": "南区 柳河内1丁目7番32号，8番(1号，56～58号を除く)，9番(10号，12号を除く)",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 柳河内1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 柳河内1丁目上記以外",
+      "jp": "南区 柳河内1丁目上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 柳河内2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 柳河内2丁目",
+      "jp": "南区 柳河内2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 柳瀬1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 柳瀬1，2丁目",
+      "jp": "南区 柳瀬1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 老司1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司1丁目",
+      "jp": "南区 老司1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 老司2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司2丁目",
+      "jp": "南区 老司2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 老司3丁目44番10号",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司3丁目44番10号",
+      "jp": "南区 老司3丁目44番10号",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 老司3丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司3丁目上記以外",
+      "jp": "南区 老司3丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 老司4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司4丁目",
+      "jp": "南区 老司4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南区 老司5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 老司5丁目",
+      "jp": "南区 老司5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 和田1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 和田1～4丁目",
+      "jp": "南区 和田1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 井相田1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 井相田1～3丁目",
+      "jp": "博多区 井相田1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 浦田1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 浦田1，2丁目",
+      "jp": "博多区 浦田1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 榎田1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 榎田1，2丁目",
+      "jp": "博多区 榎田1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 沖浜町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 沖浜町",
+      "jp": "博多区 沖浜町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 下呉服町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 下呉服町",
+      "jp": "博多区 下呉服町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 下川端町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 下川端町",
+      "jp": "博多区 下川端町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 祇園町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 祇園町",
+      "jp": "博多区 祇園町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 吉塚1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 吉塚1，2丁目",
+      "jp": "博多区 吉塚1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 吉塚3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 吉塚3丁目",
+      "jp": "博多区 吉塚3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 吉塚4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 吉塚4丁目",
+      "jp": "博多区 吉塚4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 吉塚5～8丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 吉塚5～8丁目",
+      "jp": "博多区 吉塚5～8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 吉塚本町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 吉塚本町",
+      "jp": "博多区 吉塚本町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 金の隈1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 金の隈1～3丁目",
+      "jp": "博多区 金の隈1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 銀天町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 銀天町1～3丁目",
+      "jp": "博多区 銀天町1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 空港前1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 空港前1～5丁目",
+      "jp": "博多区 空港前1～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 月隈1～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 月隈1～6丁目",
+      "jp": "博多区 月隈1～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 堅粕1丁目1番～20番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕1丁目1番～20番",
+      "jp": "博多区 堅粕1丁目1番～20番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 堅粕1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕1丁目上記以外",
+      "jp": "博多区 堅粕1丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 堅粕2丁目1番～4番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕2丁目1番～4番",
+      "jp": "博多区 堅粕2丁目1番～4番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 堅粕2丁目20番～23番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕2丁目20番～23番",
+      "jp": "博多区 堅粕2丁目20番～23番",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 堅粕2丁目7番，13番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕2丁目7番，13番",
+      "jp": "博多区 堅粕2丁目7番，13番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 堅粕3，4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕3，4丁目",
+      "jp": "博多区 堅粕3，4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 堅粕5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 堅粕5丁目",
+      "jp": "博多区 堅粕5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 元町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 元町1～3丁目",
+      "jp": "博多区 元町1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 古門戸町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 古門戸町",
+      "jp": "博多区 古門戸町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 御供所町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 御供所町",
+      "jp": "博多区 御供所町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 光丘町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 光丘町1～3丁目",
+      "jp": "博多区 光丘町1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 綱場町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 綱場町",
+      "jp": "博多区 綱場町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 三筑1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 三筑1，2丁目",
+      "jp": "博多区 三筑1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 山王1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 山王1，2丁目",
+      "jp": "博多区 山王1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 寿町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 寿町1～3丁目",
+      "jp": "博多区 寿町1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 住吉1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 住吉1，2丁目",
+      "jp": "博多区 住吉1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 住吉3～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 住吉3～5丁目",
+      "jp": "博多区 住吉3～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 春町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 春町1～3丁目",
+      "jp": "博多区 春町1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 諸岡1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 諸岡1丁目",
+      "jp": "博多区 諸岡1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 諸岡2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 諸岡2丁目",
+      "jp": "博多区 諸岡2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 諸岡3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 諸岡3丁目",
+      "jp": "博多区 諸岡3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 諸岡4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 諸岡4～6丁目",
+      "jp": "博多区 諸岡4～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 昭南町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 昭南町1～3丁目",
+      "jp": "博多区 昭南町1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 上呉服町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 上呉服町",
+      "jp": "博多区 上呉服町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 上川端町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 上川端町",
+      "jp": "博多区 上川端町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 上牟田1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 上牟田1～3丁目",
+      "jp": "博多区 上牟田1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 新和町1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 新和町1，2丁目",
+      "jp": "博多区 新和町1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 神屋町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 神屋町",
+      "jp": "博多区 神屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 須崎町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 須崎町",
+      "jp": "博多区 須崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 西月隈1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 西月隈1～3丁目",
+      "jp": "博多区 西月隈1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 西月隈4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 西月隈4～6丁目",
+      "jp": "博多区 西月隈4～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 西春町1丁目6番17号（ライオンズマンション南福岡第2）",
+      "townEn": "Raionzumanshon",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 西春町1丁目6番17号（ライオンズマンション南福岡第2）",
+      "jp": "博多区 西春町1丁目6番17号（ライオンズマンション南福岡第2）",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 西春町1丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 西春町1丁目上記以外",
+      "jp": "博多区 西春町1丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 西春町2～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 西春町2～4丁目",
+      "jp": "博多区 西春町2～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 青木1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 青木1，2丁目",
+      "jp": "博多区 青木1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 石城町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 石城町",
+      "jp": "博多区 石城町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 千代1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 千代1丁目",
+      "jp": "博多区 千代1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 千代2～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 千代2～6丁目",
+      "jp": "博多区 千代2～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 相生町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 相生町1～3丁目",
+      "jp": "博多区 相生町1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 対馬小路",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 対馬小路",
+      "jp": "博多区 対馬小路",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 大井1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大井1，2丁目",
+      "jp": "博多区 大井1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 大字金隈",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字金隈",
+      "jp": "博多区 大字金隈",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 大字堅粕",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字堅粕",
+      "jp": "博多区 大字堅粕",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "townEn": "Gurampia",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "jp": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "townEn": "Gurampia",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "jp": "博多区 大字板付868-2（グランピア空港南Ⅱ）",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 大字板付上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字板付上記以外",
+      "jp": "博多区 大字板付上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 大字立花寺",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大字立花寺",
+      "jp": "博多区 大字立花寺",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 大博町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 大博町",
+      "jp": "博多区 大博町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 築港本町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 築港本町",
+      "jp": "博多区 築港本町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 竹下1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 竹下1，2丁目",
+      "jp": "博多区 竹下1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 竹下3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 竹下3丁目",
+      "jp": "博多区 竹下3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 竹下4，5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 竹下4，5丁目",
+      "jp": "博多区 竹下4，5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 竹丘町1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 竹丘町1～3丁目",
+      "jp": "博多区 竹丘町1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 中呉服町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 中呉服町",
+      "jp": "博多区 中呉服町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 中洲1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 中洲1～4丁目",
+      "jp": "博多区 中洲1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 中洲5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 中洲5丁目",
+      "jp": "博多区 中洲5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 中洲中島町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 中洲中島町",
+      "jp": "博多区 中洲中島町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 店屋町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 店屋町",
+      "jp": "博多区 店屋町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東雲町1丁目1番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町1丁目1番",
+      "jp": "博多区 東雲町1丁目1番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東雲町1丁目2番～5番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町1丁目2番～5番",
+      "jp": "博多区 東雲町1丁目2番～5番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東雲町2丁目1番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町2丁目1番",
+      "jp": "博多区 東雲町2丁目1番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東雲町2丁目2番，3番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町2丁目2番，3番",
+      "jp": "博多区 東雲町2丁目2番，3番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東雲町3丁目1番，2番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町3丁目1番，2番",
+      "jp": "博多区 東雲町3丁目1番，2番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東雲町3丁目3番，4番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町3丁目3番，4番",
+      "jp": "博多区 東雲町3丁目3番，4番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東雲町4丁目1番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町4丁目1番",
+      "jp": "博多区 東雲町4丁目1番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東雲町4丁目2番，3番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東雲町4丁目2番，3番",
+      "jp": "博多区 東雲町4丁目2番，3番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東月隈1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東月隈1～5丁目",
+      "jp": "博多区 東月隈1～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東光1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東光1，2丁目",
+      "jp": "博多区 東光1，2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東光寺町1丁目1番，2番，9番～14番，23番～25番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東光寺町1丁目1番，2番，9番～14番，23番～25番",
+      "jp": "博多区 東光寺町1丁目1番，2番，9番～14番，23番～25番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東光寺町1丁目3番～8番，15番～22番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東光寺町1丁目3番～8番，15番～22番",
+      "jp": "博多区 東光寺町1丁目3番～8番，15番～22番",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 東光寺町2丁目1番，2番，4番，6番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東光寺町2丁目1番，2番，4番，6番",
+      "jp": "博多区 東光寺町2丁目1番，2番，4番，6番",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東光寺町2丁目7番～9番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東光寺町2丁目7番～9番",
+      "jp": "博多区 東光寺町2丁目7番～9番",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 東公園",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東公園",
+      "jp": "博多区 東公園",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東那珂1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東那珂1～3丁目",
+      "jp": "博多区 東那珂1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 東比恵1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東比恵1丁目",
+      "jp": "博多区 東比恵1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 東比恵2～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東比恵2～4丁目",
+      "jp": "博多区 東比恵2～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 東平尾1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 東平尾1～3丁目",
+      "jp": "博多区 東平尾1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 奈良屋町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 奈良屋町",
+      "jp": "博多区 奈良屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 那珂1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 那珂1，2丁目",
+      "jp": "博多区 那珂1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 那珂3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 那珂3丁目",
+      "jp": "博多区 那珂3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 那珂4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 那珂4～6丁目",
+      "jp": "博多区 那珂4～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 南八幡町1、2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 南八幡町1、2丁目",
+      "jp": "博多区 南八幡町1、2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 南本町1、2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 南本町1、2丁目",
+      "jp": "博多区 南本町1、2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 博多駅前1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 博多駅前1～4丁目",
+      "jp": "博多区 博多駅前1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 博多駅中央街",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 博多駅中央街",
+      "jp": "博多区 博多駅中央街",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 博多駅東1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 博多駅東1～3丁目",
+      "jp": "博多区 博多駅東1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 博多駅南1～5丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 博多駅南1～5丁目",
+      "jp": "博多区 博多駅南1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 博多駅南6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 博多駅南6丁目",
+      "jp": "博多区 博多駅南6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 麦野1～3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 麦野1～3丁目",
+      "jp": "博多区 麦野1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 麦野4～6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 麦野4～6丁目",
+      "jp": "博多区 麦野4～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 半道橋1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 半道橋1，2丁目",
+      "jp": "博多区 半道橋1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 板付1丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付1丁目",
+      "jp": "博多区 板付1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 板付2，3丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付2，3丁目",
+      "jp": "博多区 板付2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 板付4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付4丁目",
+      "jp": "博多区 板付4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 板付5丁目16番～18番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付5丁目16番～18番",
+      "jp": "博多区 板付5丁目16番～18番",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 板付5丁目1番～15番",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付5丁目1番～15番",
+      "jp": "博多区 板付5丁目1番～15番",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 板付6丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付6丁目",
+      "jp": "博多区 板付6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 板付7丁目1番（板付南団地）",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付7丁目1番（板付南団地）",
+      "jp": "博多区 板付7丁目1番（板付南団地）",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 板付7丁目上記以外",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 板付7丁目上記以外",
+      "jp": "博多区 板付7丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 比恵町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 比恵町",
+      "jp": "博多区 比恵町",
+      "pattern": "1"
+    },
+    {
+      "town": "博多区 美野島1～4丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 美野島1～4丁目",
+      "jp": "博多区 美野島1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 豊1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 豊1，2丁目",
+      "jp": "博多区 豊1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "博多区 立花寺1，2丁目",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 立花寺1，2丁目",
+      "jp": "博多区 立花寺1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "博多区 冷泉町",
+      "townEn": "Fukuoka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多区 冷泉町",
+      "jp": "博多区 冷泉町",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 賀茂1，2丁目",
+      "en": "早良区 賀茂1，2丁目",
+      "jp": "早良区 賀茂1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 賀茂3丁目",
+      "en": "早良区 賀茂3丁目",
+      "jp": "早良区 賀茂3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 賀茂4丁目",
+      "en": "早良区 賀茂4丁目",
+      "jp": "早良区 賀茂4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 干隈3丁目",
+      "en": "早良区 干隈3丁目",
+      "jp": "早良区 干隈3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 干隈4丁目",
+      "en": "早良区 干隈4丁目",
+      "jp": "早良区 干隈4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 干隈5，6丁目",
+      "en": "早良区 干隈5，6丁目",
+      "jp": "早良区 干隈5，6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原1，2丁目",
+      "en": "早良区 原1，2丁目",
+      "jp": "早良区 原1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原3丁目",
+      "en": "早良区 原3丁目",
+      "jp": "早良区 原3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原4，5丁目",
+      "en": "早良区 原4，5丁目",
+      "jp": "早良区 原4，5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原6丁目",
+      "en": "早良区 原6丁目",
+      "jp": "早良区 原6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原7，8丁目",
+      "en": "早良区 原7，8丁目",
+      "jp": "早良区 原7，8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 原団地",
+      "en": "早良区 原団地",
+      "jp": "早良区 原団地",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 荒江2丁目",
+      "en": "早良区 荒江2丁目",
+      "jp": "早良区 荒江2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 荒江3丁目",
+      "en": "早良区 荒江3丁目",
+      "jp": "早良区 荒江3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 高取1，2丁目",
+      "en": "早良区 高取1，2丁目",
+      "jp": "早良区 高取1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 四箇1～4丁目",
+      "en": "早良区 四箇1～4丁目",
+      "jp": "早良区 四箇1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 四箇5，6丁目",
+      "en": "早良区 四箇5，6丁目",
+      "jp": "早良区 四箇5，6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 四箇田団地",
+      "en": "早良区 四箇田団地",
+      "jp": "早良区 四箇田団地",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 次郎丸1～6丁目",
+      "en": "早良区 次郎丸1～6丁目",
+      "jp": "早良区 次郎丸1～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 室見1～5丁目",
+      "en": "早良区 室見1～5丁目",
+      "jp": "早良区 室見1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 室住団地",
+      "en": "早良区 室住団地",
+      "jp": "早良区 室住団地",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 重留1～3丁目",
+      "en": "早良区 重留1～3丁目",
+      "jp": "早良区 重留1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 重留4～6丁目",
+      "en": "早良区 重留4～6丁目",
+      "jp": "早良区 重留4～6丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 重留7，8丁目",
+      "en": "早良区 重留7，8丁目",
+      "jp": "早良区 重留7，8丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 曙1，2丁目",
+      "en": "早良区 曙1，2丁目",
+      "jp": "早良区 曙1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 小田部1～4丁目",
+      "en": "早良区 小田部1～4丁目",
+      "jp": "早良区 小田部1～4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 小田部5～7丁目",
+      "en": "早良区 小田部5～7丁目",
+      "jp": "早良区 小田部5～7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 昭代1丁目",
+      "en": "早良区 昭代1丁目",
+      "jp": "早良区 昭代1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 昭代2，3丁目",
+      "en": "早良区 昭代2，3丁目",
+      "jp": "早良区 昭代2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 城西1丁目",
+      "en": "早良区 城西1丁目",
+      "jp": "早良区 城西1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 城西2，3丁目",
+      "en": "早良区 城西2，3丁目",
+      "jp": "早良区 城西2，3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 星の原団地",
+      "en": "早良区 星の原団地",
+      "jp": "早良区 星の原団地",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西新1丁目",
+      "en": "早良区 西新1丁目",
+      "jp": "早良区 西新1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西新2，3丁目",
+      "en": "早良区 西新2，3丁目",
+      "jp": "早良区 西新2，3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西新4丁目",
+      "en": "早良区 西新4丁目",
+      "jp": "早良区 西新4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西新5丁目",
+      "en": "早良区 西新5丁目",
+      "jp": "早良区 西新5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西新6，7丁目",
+      "en": "早良区 西新6，7丁目",
+      "jp": "早良区 西新6，7丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 西入部1～5丁目",
+      "en": "早良区 西入部1～5丁目",
+      "jp": "早良区 西入部1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 祖原",
+      "en": "早良区 祖原",
+      "jp": "早良区 祖原",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 早良1～7丁目",
+      "en": "早良区 早良1～7丁目",
+      "jp": "早良区 早良1～7丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字曲渕",
+      "en": "早良区 大字曲渕",
+      "jp": "早良区 大字曲渕",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字重留",
+      "en": "早良区 大字重留",
+      "jp": "早良区 大字重留",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字小笠木（脇山）",
+      "en": "早良区 大字小笠木（脇山）",
+      "jp": "早良区 大字小笠木（脇山）",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字西",
+      "en": "早良区 大字西",
+      "jp": "早良区 大字西",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字西入部",
+      "en": "早良区 大字西入部",
+      "jp": "早良区 大字西入部",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字西油山",
+      "en": "早良区 大字西油山",
+      "jp": "早良区 大字西油山",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字石釜",
+      "en": "早良区 大字石釜",
+      "jp": "早良区 大字石釜",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字椎原371～437",
+      "en": "早良区 大字椎原371～437",
+      "jp": "早良区 大字椎原371～437",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字椎原上記以外",
+      "en": "早良区 大字椎原上記以外",
+      "jp": "早良区 大字椎原上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字内野",
+      "en": "早良区 大字内野",
+      "jp": "早良区 大字内野",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字梅林",
+      "en": "早良区 大字梅林",
+      "jp": "早良区 大字梅林",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字板屋",
+      "en": "早良区 大字板屋",
+      "jp": "早良区 大字板屋",
+      "pattern": "4"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字飯場",
+      "en": "早良区 大字飯場",
+      "jp": "早良区 大字飯場",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字野芥",
+      "en": "早良区 大字野芥",
+      "jp": "早良区 大字野芥",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 大字脇山",
+      "en": "早良区 大字脇山",
+      "jp": "早良区 大字脇山",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 田隈1～3丁目",
+      "en": "早良区 田隈1～3丁目",
+      "jp": "早良区 田隈1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 田村1～3丁目",
+      "en": "早良区 田村1～3丁目",
+      "jp": "早良区 田村1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 田村4～7丁目",
+      "en": "早良区 田村4～7丁目",
+      "jp": "早良区 田村4～7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 東入部1丁目14番～47番（早良台）",
+      "en": "早良区 東入部1丁目14番～47番（早良台）",
+      "jp": "早良区 東入部1丁目14番～47番（早良台）",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 東入部1丁目上記以外",
+      "en": "早良区 東入部1丁目上記以外",
+      "jp": "早良区 東入部1丁目上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 東入部2～8丁目",
+      "en": "早良区 東入部2～8丁目",
+      "jp": "早良区 東入部2～8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 藤崎1，2丁目",
+      "en": "早良区 藤崎1，2丁目",
+      "jp": "早良区 藤崎1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 内野1～4丁目",
+      "en": "早良区 内野1～4丁目",
+      "jp": "早良区 内野1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 内野5～8丁目",
+      "en": "早良区 内野5～8丁目",
+      "jp": "早良区 内野5～8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 南庄1～6丁目",
+      "en": "早良区 南庄1～6丁目",
+      "jp": "早良区 南庄1～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 梅林6，7丁目",
+      "en": "早良区 梅林6，7丁目",
+      "jp": "早良区 梅林6，7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 飯倉2丁目",
+      "en": "早良区 飯倉2丁目",
+      "jp": "早良区 飯倉2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 飯倉3丁目",
+      "en": "早良区 飯倉3丁目",
+      "jp": "早良区 飯倉3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 飯倉4～7丁目",
+      "en": "早良区 飯倉4～7丁目",
+      "jp": "早良区 飯倉4～7丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 飯倉8丁目",
+      "en": "早良区 飯倉8丁目",
+      "jp": "早良区 飯倉8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 百道1～3丁目",
+      "en": "早良区 百道1～3丁目",
+      "jp": "早良区 百道1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 百道浜1，2丁目",
+      "en": "早良区 百道浜1，2丁目",
+      "jp": "早良区 百道浜1，2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 百道浜3，4丁目",
+      "en": "早良区 百道浜3，4丁目",
+      "jp": "早良区 百道浜3，4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 野芥1～3丁目",
+      "en": "早良区 野芥1～3丁目",
+      "jp": "早良区 野芥1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 野芥4～8丁目",
+      "en": "早良区 野芥4～8丁目",
+      "jp": "早良区 野芥4～8丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 弥生1，2丁目",
+      "en": "早良区 弥生1，2丁目",
+      "jp": "早良区 弥生1，2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田1～5丁目",
+      "en": "早良区 有田1～5丁目",
+      "jp": "早良区 有田1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田6丁目11番，12番",
+      "en": "早良区 有田6丁目11番，12番",
+      "jp": "早良区 有田6丁目11番，12番",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田6丁目上記以外",
+      "en": "早良区 有田6丁目上記以外",
+      "jp": "早良区 有田6丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田7丁目",
+      "en": "早良区 有田7丁目",
+      "jp": "早良区 有田7丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田8丁目18番（美室団地）",
+      "en": "早良区 有田8丁目18番（美室団地）",
+      "jp": "早良区 有田8丁目18番（美室団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田8丁目上記以外",
+      "en": "早良区 有田8丁目上記以外",
+      "jp": "早良区 有田8丁目上記以外",
+      "pattern": "3"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 有田団地",
+      "en": "早良区 有田団地",
+      "jp": "早良区 有田団地",
+      "pattern": "1"
+    },
+    {
+      "town": "早良",
+      "townEn": "Sawara",
+      "kana": "サワラ",
+      "chome": null,
+      "detail": "早良区 脇山1，2丁目",
+      "en": "早良区 脇山1，2丁目",
+      "jp": "早良区 脇山1，2丁目",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://fukuoka.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,3606 @@
+{
+  "id": "handa",
+  "code": "23205",
+  "pref": "23",
+  "jp": "半田市",
+  "en": "Handa",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s7640i/handa_gomi_area_days.csv",
+    "http://linkdata.org/api/1/rdf1s7640i/handa_gomi_area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「野菜くず」 under 「可燃」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「写真」 under 「紙製」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙類」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「古紙類」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「古紙類」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペット」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「不燃」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ（プラスチック製）」 under 「プラ製」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「資源」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「不燃」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「その他」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ],
+        "paper": [
+          2
+        ],
+        "plastic": [
+          5
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ],
+        "paper": [
+          4
+        ],
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "paper": [
+          1
+        ],
+        "plastic": [
+          4
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "paper": [
+          5
+        ],
+        "plastic": [
+          2
+        ],
+        "pet_bottle": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "亀崎常磐町１～４丁目の一部 【高根区】  緑",
+      "townEn": "Handa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀崎常磐町１～４丁目の一部 【高根区】  緑",
+      "jp": "亀崎常磐町１～４丁目の一部 【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎常磐町1丁目の一部 【亀崎１区】  緑",
+      "townEn": "Handa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀崎常磐町1丁目の一部 【亀崎１区】  緑",
+      "jp": "亀崎常磐町1丁目の一部 【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎常磐町２～４丁目の一部 【亀崎５区】  緑",
+      "townEn": "Handa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀崎常磐町２～４丁目の一部 【亀崎５区】  緑",
+      "jp": "亀崎常磐町２～４丁目の一部 【亀崎５区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎常磐町４丁目の一部 【亀崎６区】  緑",
+      "townEn": "Handa",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀崎常磐町４丁目の一部 【亀崎６区】  緑",
+      "jp": "亀崎常磐町４丁目の一部 【亀崎６区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": "青山１～３・６丁目 【成岩３区】  桃",
+      "en": "青山１～３・６丁目 【成岩３区】  桃",
+      "jp": "青山１～３・６丁目 【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": "青山４・５丁目の一部 【成岩３区】  桃",
+      "en": "青山４・５丁目の一部 【成岩３区】  桃",
+      "jp": "青山４・５丁目の一部 【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": "青山４・５丁目の一部 【西成岩区】  桃",
+      "en": "青山４・５丁目の一部 【西成岩区】  桃",
+      "jp": "青山４・５丁目の一部 【西成岩区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": "青山７丁目 【鴉根区】  桃",
+      "en": "青山７丁目 【鴉根区】  桃",
+      "jp": "青山７丁目 【鴉根区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "旭町",
+      "townEn": "Asahimachi",
+      "kana": "アサヒマチ",
+      "chome": null,
+      "detail": "旭町【成岩３区】  桃",
+      "en": "旭町【成岩３区】  桃",
+      "jp": "旭町【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "阿原町",
+      "townEn": "Awaracho",
+      "kana": "アハラチョウ",
+      "chome": null,
+      "detail": "阿原町【亀崎６区】  緑",
+      "en": "阿原町【亀崎６区】  緑",
+      "jp": "阿原町【亀崎６区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "新居町",
+      "townEn": "Araicho",
+      "kana": "アライチョウ",
+      "chome": null,
+      "detail": "新居町【新居区】  緑",
+      "en": "新居町【新居区】  緑",
+      "jp": "新居町【新居区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "荒古町",
+      "townEn": "Arakocho",
+      "kana": "アラコチョウ",
+      "chome": null,
+      "detail": "荒古町1丁目の一部 【半田中区】  桃",
+      "en": "荒古町1丁目の一部 【半田中区】  桃",
+      "jp": "荒古町1丁目の一部 【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "荒古町",
+      "townEn": "Arakocho",
+      "kana": "アラコチョウ",
+      "chome": null,
+      "detail": "荒古町1丁目の一部 【半田南区】  桃",
+      "en": "荒古町1丁目の一部 【半田南区】  桃",
+      "jp": "荒古町1丁目の一部 【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "荒古町",
+      "townEn": "Arakocho",
+      "kana": "アラコチョウ",
+      "chome": null,
+      "detail": "荒古町２丁目 【半田南区】  桃",
+      "en": "荒古町２丁目 【半田南区】  桃",
+      "jp": "荒古町２丁目 【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "有脇町",
+      "townEn": "Ariwakicho",
+      "kana": "アリワキチョウ",
+      "chome": null,
+      "detail": "有脇町【有脇１区】  緑",
+      "en": "有脇町【有脇１区】  緑",
+      "jp": "有脇町【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "飯森町",
+      "townEn": "Iimoricho",
+      "kana": "イイモリチョウ",
+      "chome": null,
+      "detail": "飯森町【乙川４区】  青",
+      "en": "飯森町【乙川４区】  青",
+      "jp": "飯森町【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "池田町",
+      "townEn": "Ikedacho",
+      "kana": "イケダチョウ",
+      "chome": null,
+      "detail": "池田町【板山区】  黄",
+      "en": "池田町【板山区】  黄",
+      "jp": "池田町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "石塚町",
+      "townEn": "Ishizukacho",
+      "kana": "イシヅカチョウ",
+      "chome": null,
+      "detail": "石塚町1丁目の一部 【有脇１区】  緑",
+      "en": "石塚町1丁目の一部 【有脇１区】  緑",
+      "jp": "石塚町1丁目の一部 【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "石塚町",
+      "townEn": "Ishizukacho",
+      "kana": "イシヅカチョウ",
+      "chome": null,
+      "detail": "石塚町1丁目の一部 【緑ケ丘区】  緑",
+      "en": "石塚町1丁目の一部 【緑ケ丘区】  緑",
+      "jp": "石塚町1丁目の一部 【緑ケ丘区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "石塚町",
+      "townEn": "Ishizukacho",
+      "kana": "イシヅカチョウ",
+      "chome": null,
+      "detail": "石塚町２丁目～５丁目 【有脇１区】  緑",
+      "en": "石塚町２丁目～５丁目 【有脇１区】  緑",
+      "jp": "石塚町２丁目～５丁目 【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "泉町",
+      "townEn": "Izumimachi",
+      "kana": "イズミマチ",
+      "chome": null,
+      "detail": "泉町【半田西区】  桃",
+      "en": "泉町【半田西区】  桃",
+      "jp": "泉町【半田西区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "板山町",
+      "townEn": "Itayamacho",
+      "kana": "イタヤマチョウ",
+      "chome": null,
+      "detail": "板山町【板山区】  黄",
+      "en": "板山町【板山区】  黄",
+      "jp": "板山町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "一ノ草町",
+      "townEn": "Ichinokusacho",
+      "kana": "イチノクサチョウ",
+      "chome": null,
+      "detail": "一ノ草町【乙川３区】  青",
+      "en": "一ノ草町【乙川３区】  青",
+      "jp": "一ノ草町【乙川３区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "一本木町",
+      "townEn": "Ippongicho",
+      "kana": "イッポンギチョウ",
+      "chome": null,
+      "detail": "一本木町1・２丁目 【高根区】  緑",
+      "en": "一本木町1・２丁目 【高根区】  緑",
+      "jp": "一本木町1・２丁目 【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "一本木町",
+      "townEn": "Ippongicho",
+      "kana": "イッポンギチョウ",
+      "chome": null,
+      "detail": "一本木町３丁目 【平地１区】  緑",
+      "en": "一本木町３丁目 【平地１区】  緑",
+      "jp": "一本木町３丁目 【平地１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "稲穂町",
+      "townEn": "Inahocho",
+      "kana": "イナホチョウ",
+      "chome": null,
+      "detail": "稲穂町【有脇１区】  緑",
+      "en": "稲穂町【有脇１区】  緑",
+      "jp": "稲穂町【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "稲荷町",
+      "townEn": "Inaricho",
+      "kana": "イナリチョウ",
+      "chome": null,
+      "detail": "稲荷町1丁目の一部 【鴉根区】  桃",
+      "en": "稲荷町1丁目の一部 【鴉根区】  桃",
+      "jp": "稲荷町1丁目の一部 【鴉根区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "稲荷町",
+      "townEn": "Inaricho",
+      "kana": "イナリチョウ",
+      "chome": null,
+      "detail": "稲荷町２・３丁目 【鴉根区】  黄",
+      "en": "稲荷町２・３丁目 【鴉根区】  黄",
+      "jp": "稲荷町２・３丁目 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "鵜ノ池町",
+      "townEn": "Unoikecho",
+      "kana": "ウノイケチョウ",
+      "chome": null,
+      "detail": "鵜ノ池町【半田１区と板山区に分かれる】  緑",
+      "en": "鵜ノ池町【半田１区と板山区に分かれる】  緑",
+      "jp": "鵜ノ池町【半田１区と板山区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "馬捨町",
+      "townEn": "Umasutecho",
+      "kana": "ウマステチョウ",
+      "chome": null,
+      "detail": "馬捨町【半田１区と板山区に分かれる】  緑",
+      "en": "馬捨町【半田１区と板山区に分かれる】  緑",
+      "jp": "馬捨町【半田１区と板山区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "枝山町",
+      "townEn": "Edayamacho",
+      "kana": "エダヤマチョウ",
+      "chome": null,
+      "detail": "枝山町【住吉区】  黄",
+      "en": "枝山町【住吉区】  黄",
+      "jp": "枝山町【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "榎下町",
+      "townEn": "Enokishitacho",
+      "kana": "エノキシタチョウ",
+      "chome": null,
+      "detail": "榎下町【住吉区】  桃",
+      "en": "榎下町【住吉区】  桃",
+      "jp": "榎下町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "大池町",
+      "townEn": "Oikecho",
+      "kana": "オオイケチョウ",
+      "chome": null,
+      "detail": "大池町１～３丁目 【大池区】  青",
+      "en": "大池町１～３丁目 【大池区】  青",
+      "jp": "大池町１～３丁目 【大池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大池町",
+      "townEn": "Oikecho",
+      "kana": "オオイケチョウ",
+      "chome": null,
+      "detail": "大池町４丁目の一部 【乙川４区】  青",
+      "en": "大池町４丁目の一部 【乙川４区】  青",
+      "jp": "大池町４丁目の一部 【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大池町",
+      "townEn": "Oikecho",
+      "kana": "オオイケチョウ",
+      "chome": null,
+      "detail": "大池町４丁目の一部 【大池区】  青",
+      "en": "大池町４丁目の一部 【大池区】  青",
+      "jp": "大池町４丁目の一部 【大池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大高町",
+      "townEn": "Odakacho",
+      "kana": "オオダカチョウ",
+      "chome": null,
+      "detail": "大高町【上池区】  青",
+      "en": "大高町【上池区】  青",
+      "jp": "大高町【上池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大坪町",
+      "townEn": "Otsubocho",
+      "kana": "オオツボチョウ",
+      "chome": null,
+      "detail": "大坪町【住吉区】  緑",
+      "en": "大坪町【住吉区】  緑",
+      "jp": "大坪町【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "大伝根町",
+      "townEn": "Odennecho",
+      "kana": "オオデンネチョウ",
+      "chome": null,
+      "detail": "大伝根町1丁目 【横川区】  青",
+      "en": "大伝根町1丁目 【横川区】  青",
+      "jp": "大伝根町1丁目 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大伝根町",
+      "townEn": "Odennecho",
+      "kana": "オオデンネチョウ",
+      "chome": null,
+      "detail": "大伝根町２丁目 【大矢知区】  青",
+      "en": "大伝根町２丁目 【大矢知区】  青",
+      "jp": "大伝根町２丁目 【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大松町",
+      "townEn": "Omatsucho",
+      "kana": "オオマツチョウ",
+      "chome": null,
+      "detail": "大松町1丁目の一部 【向山区】  青",
+      "en": "大松町1丁目の一部 【向山区】  青",
+      "jp": "大松町1丁目の一部 【向山区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大松町",
+      "townEn": "Omatsucho",
+      "kana": "オオマツチョウ",
+      "chome": null,
+      "detail": "大松町1丁目の一部 【平地２区】  青",
+      "en": "大松町1丁目の一部 【平地２区】  青",
+      "jp": "大松町1丁目の一部 【平地２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大松町",
+      "townEn": "Omatsucho",
+      "kana": "オオマツチョウ",
+      "chome": null,
+      "detail": "大松町２丁目 【向山区】  青",
+      "en": "大松町２丁目 【向山区】  青",
+      "jp": "大松町２丁目 【向山区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "大湯町",
+      "townEn": "Oyucho",
+      "kana": "オオユチョウ",
+      "chome": null,
+      "detail": "大湯町【板山区】  黄",
+      "en": "大湯町【板山区】  黄",
+      "jp": "大湯町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "奥町",
+      "townEn": "Okumachi",
+      "kana": "オクマチ",
+      "chome": null,
+      "detail": "奥町【半田１区】  緑",
+      "en": "奥町【半田１区】  緑",
+      "jp": "奥町【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "乙川一色町",
+      "townEn": "Otsukawa Ishikicho",
+      "kana": "オッカワイシキチョウ",
+      "chome": null,
+      "detail": "乙川一色町【乙川１区】  青",
+      "en": "乙川一色町【乙川１区】  青",
+      "jp": "乙川一色町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川市場町",
+      "townEn": "Otsukawa Ichibacho",
+      "kana": "オッカワイチバチョウ",
+      "chome": null,
+      "detail": "乙川市場町【乙川５区】  青",
+      "en": "乙川市場町【乙川５区】  青",
+      "jp": "乙川市場町【乙川５区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川内山町",
+      "townEn": "Otsukawa Uchiyamacho",
+      "kana": "オッカワウチヤマチョウ",
+      "chome": null,
+      "detail": "乙川内山町【乙川１区】  青",
+      "en": "乙川内山町【乙川１区】  青",
+      "jp": "乙川内山町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川太田町",
+      "townEn": "Otsukawa Otacho",
+      "kana": "オッカワオオタチョウ",
+      "chome": null,
+      "detail": "乙川太田町1丁目 【乙川４区】  青",
+      "en": "乙川太田町1丁目 【乙川４区】  青",
+      "jp": "乙川太田町1丁目 【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川太田町",
+      "townEn": "Otsukawa Otacho",
+      "kana": "オッカワオオタチョウ",
+      "chome": null,
+      "detail": "乙川太田町２丁目の一部 【乙川４区】  青",
+      "en": "乙川太田町２丁目の一部 【乙川４区】  青",
+      "jp": "乙川太田町２丁目の一部 【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川太田町",
+      "townEn": "Otsukawa Otacho",
+      "kana": "オッカワオオタチョウ",
+      "chome": null,
+      "detail": "乙川太田町２丁目の一部 【乙川５区】  青",
+      "en": "乙川太田町２丁目の一部 【乙川５区】  青",
+      "jp": "乙川太田町２丁目の一部 【乙川５区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川北側町",
+      "townEn": "Otsukawa Kitagawacho",
+      "kana": "オッカワキタガワチョウ",
+      "chome": null,
+      "detail": "乙川北側町【乙川４区】  青",
+      "en": "乙川北側町【乙川４区】  青",
+      "jp": "乙川北側町【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川源内林町",
+      "townEn": "Otsukawa Gennaibayashicho",
+      "kana": "オッカワゲンナイバヤシチョウ",
+      "chome": null,
+      "detail": "乙川源内林町1丁目 【乙川２区】  青",
+      "en": "乙川源内林町1丁目 【乙川２区】  青",
+      "jp": "乙川源内林町1丁目 【乙川２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川源内林町",
+      "townEn": "Otsukawa Gennaibayashicho",
+      "kana": "オッカワゲンナイバヤシチョウ",
+      "chome": null,
+      "detail": "乙川源内林町２・３丁目 【乙川３区】  青",
+      "en": "乙川源内林町２・３丁目 【乙川３区】  青",
+      "jp": "乙川源内林町２・３丁目 【乙川３区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川栄町",
+      "townEn": "Otsukawa Sakaemachi",
+      "kana": "オッカワサカエマチ",
+      "chome": null,
+      "detail": "乙川栄町【乙川１区】  青",
+      "en": "乙川栄町【乙川１区】  青",
+      "jp": "乙川栄町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川新町",
+      "townEn": "Otsukawa Shimmachi",
+      "kana": "オッカワシンマチ",
+      "chome": null,
+      "detail": "乙川新町【乙川１区】  青",
+      "en": "乙川新町【乙川１区】  青",
+      "jp": "乙川新町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川末広町",
+      "townEn": "Otsukawa Suehirocho",
+      "kana": "オッカワスエヒロチョウ",
+      "chome": null,
+      "detail": "乙川末広町【乙川東区と瑞穂区に分かれる】  緑",
+      "en": "乙川末広町【乙川東区と瑞穂区に分かれる】  緑",
+      "jp": "乙川末広町【乙川東区と瑞穂区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "乙川高良町",
+      "townEn": "Otsukawa Takaramachi",
+      "kana": "オッカワタカラマチ",
+      "chome": null,
+      "detail": "乙川高良町【乙川１区】  青",
+      "en": "乙川高良町【乙川１区】  青",
+      "jp": "乙川高良町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川町",
+      "townEn": "Otsukawacho",
+      "kana": "オッカワチョウ",
+      "chome": null,
+      "detail": "乙川町【乙川１区と乙川５区に分かれる】  青",
+      "en": "乙川町【乙川１区と乙川５区に分かれる】  青",
+      "jp": "乙川町【乙川１区と乙川５区に分かれる】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川殿町",
+      "townEn": "Otsukawa Tonomachi",
+      "kana": "オッカワトノマチ",
+      "chome": null,
+      "detail": "乙川殿町【乙川５区】  青",
+      "en": "乙川殿町【乙川５区】  青",
+      "jp": "乙川殿町【乙川５区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川西ノ宮町",
+      "townEn": "Otsukawa Nishinomiyacho",
+      "kana": "オッカワニシノミヤチョウ",
+      "chome": null,
+      "detail": "乙川西ノ宮町【乙川２区】  青",
+      "en": "乙川西ノ宮町【乙川２区】  青",
+      "jp": "乙川西ノ宮町【乙川２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川畑田町",
+      "townEn": "Otsukawa Hatadacho",
+      "kana": "オッカワハタダチョウ",
+      "chome": null,
+      "detail": "乙川畑田町【乙川３区】  青",
+      "en": "乙川畑田町【乙川３区】  青",
+      "jp": "乙川畑田町【乙川３区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川八幡町",
+      "townEn": "Otsukawa Hachimancho",
+      "kana": "オッカワハチマンチョウ",
+      "chome": null,
+      "detail": "乙川八幡町【乙川５区】  青",
+      "en": "乙川八幡町【乙川５区】  青",
+      "jp": "乙川八幡町【乙川５区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川浜側町",
+      "townEn": "Otsukawa Hamagawacho",
+      "kana": "オッカワハマガワチョウ",
+      "chome": null,
+      "detail": "乙川浜側町【乙川東区】  青",
+      "en": "乙川浜側町【乙川東区】  青",
+      "jp": "乙川浜側町【乙川東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川稗田町",
+      "townEn": "Otsukawa Hiedacho",
+      "kana": "オッカワヒエダチョウ",
+      "chome": null,
+      "detail": "乙川稗田町【乙川東区と乙川５区に分かれる】  青",
+      "en": "乙川稗田町【乙川東区と乙川５区に分かれる】  青",
+      "jp": "乙川稗田町【乙川東区と乙川５区に分かれる】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川深田町",
+      "townEn": "Otsukawa Fukadacho",
+      "kana": "オッカワフカダチョウ",
+      "chome": null,
+      "detail": "乙川深田町1・２丁目の一部 【乙川１区】  青",
+      "en": "乙川深田町1・２丁目の一部 【乙川１区】  青",
+      "jp": "乙川深田町1・２丁目の一部 【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川深田町",
+      "townEn": "Otsukawa Fukadacho",
+      "kana": "オッカワフカダチョウ",
+      "chome": null,
+      "detail": "乙川深田町1・２丁目の一部 【乙川２区】  青",
+      "en": "乙川深田町1・２丁目の一部 【乙川２区】  青",
+      "jp": "乙川深田町1・２丁目の一部 【乙川２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川向田町",
+      "townEn": "Otsukawa Mukaidacho",
+      "kana": "オッカワムカイダチョウ",
+      "chome": null,
+      "detail": "乙川向田町1丁目 【乙川東区】  青",
+      "en": "乙川向田町1丁目 【乙川東区】  青",
+      "jp": "乙川向田町1丁目 【乙川東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川向田町",
+      "townEn": "Otsukawa Mukaidacho",
+      "kana": "オッカワムカイダチョウ",
+      "chome": null,
+      "detail": "乙川向田町２丁目の一部 【乙川東区】  青",
+      "en": "乙川向田町２丁目の一部 【乙川東区】  青",
+      "jp": "乙川向田町２丁目の一部 【乙川東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川向田町",
+      "townEn": "Otsukawa Mukaidacho",
+      "kana": "オッカワムカイダチョウ",
+      "chome": null,
+      "detail": "乙川向田町２丁目の一部 【向山区】  青",
+      "en": "乙川向田町２丁目の一部 【向山区】  青",
+      "jp": "乙川向田町２丁目の一部 【向山区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川薬師町",
+      "townEn": "Otsukawa Yakushicho",
+      "kana": "オッカワヤクシチョウ",
+      "chome": null,
+      "detail": "乙川薬師町1丁目 【乙川２区】  青",
+      "en": "乙川薬師町1丁目 【乙川２区】  青",
+      "jp": "乙川薬師町1丁目 【乙川２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川薬師町",
+      "townEn": "Otsukawa Yakushicho",
+      "kana": "オッカワヤクシチョウ",
+      "chome": null,
+      "detail": "乙川薬師町２丁目の一部 【乙川１区】  青",
+      "en": "乙川薬師町２丁目の一部 【乙川１区】  青",
+      "jp": "乙川薬師町２丁目の一部 【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川薬師町",
+      "townEn": "Otsukawa Yakushicho",
+      "kana": "オッカワヤクシチョウ",
+      "chome": null,
+      "detail": "乙川薬師町２丁目の一部 【乙川２区】  青",
+      "en": "乙川薬師町２丁目の一部 【乙川２区】  青",
+      "jp": "乙川薬師町２丁目の一部 【乙川２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川吉野町",
+      "townEn": "Otsukawa Yoshinocho",
+      "kana": "オッカワヨシノチョウ",
+      "chome": null,
+      "detail": "乙川吉野町【乙川１区】  青",
+      "en": "乙川吉野町【乙川１区】  青",
+      "jp": "乙川吉野町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "乙川若宮町",
+      "townEn": "Otsukawa Wakamiyacho",
+      "kana": "オッカワワカミヤチョウ",
+      "chome": null,
+      "detail": "乙川若宮町【乙川４区】  青",
+      "en": "乙川若宮町【乙川４区】  青",
+      "jp": "乙川若宮町【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Kasugacho",
+      "kana": "カスガチョウ",
+      "chome": null,
+      "detail": "春日町1丁目 【西成岩区】  黄",
+      "en": "春日町1丁目 【西成岩区】  黄",
+      "jp": "春日町1丁目 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Kasugacho",
+      "kana": "カスガチョウ",
+      "chome": null,
+      "detail": "春日町２・３丁目の一部 【成岩４区】  黄",
+      "en": "春日町２・３丁目の一部 【成岩４区】  黄",
+      "jp": "春日町２・３丁目の一部 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "春日町",
+      "townEn": "Kasugacho",
+      "kana": "カスガチョウ",
+      "chome": null,
+      "detail": "春日町２・３丁目の一部 【西成岩区】  黄",
+      "en": "春日町２・３丁目の一部 【西成岩区】  黄",
+      "jp": "春日町２・３丁目の一部 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "上池町",
+      "townEn": "Kamiikecho",
+      "kana": "カミイケチョウ",
+      "chome": null,
+      "detail": "上池町【上池区】  青",
+      "en": "上池町【上池区】  青",
+      "jp": "上池町【上池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "上定光町",
+      "townEn": "Kamijokocho",
+      "kana": "カミジョウコウチョウ",
+      "chome": null,
+      "detail": "上定光町【有脇１区】  緑",
+      "en": "上定光町【有脇１区】  緑",
+      "jp": "上定光町【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "神代町",
+      "townEn": "Kamishirocho",
+      "kana": "カミシロチョウ",
+      "chome": null,
+      "detail": "神代町【板山区】  黄",
+      "en": "神代町【板山区】  黄",
+      "jp": "神代町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "上浜町",
+      "townEn": "Kamihamacho",
+      "kana": "カミハマチョウ",
+      "chome": null,
+      "detail": "上浜町【乙川東区と半田東区に分かれる】  緑",
+      "en": "上浜町【乙川東区と半田東区に分かれる】  緑",
+      "jp": "上浜町【乙川東区と半田東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎相生町",
+      "townEn": "Kamezaki Aioicho",
+      "kana": "カメザキアイオイチョウ",
+      "chome": null,
+      "detail": "亀崎相生町２丁目の一部 【亀崎中区】  緑",
+      "en": "亀崎相生町２丁目の一部 【亀崎中区】  緑",
+      "jp": "亀崎相生町２丁目の一部 【亀崎中区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎相生町",
+      "townEn": "Kamezaki Aioicho",
+      "kana": "カメザキアイオイチョウ",
+      "chome": null,
+      "detail": "亀崎相生町３丁目 【亀崎５区】  緑",
+      "en": "亀崎相生町３丁目 【亀崎５区】  緑",
+      "jp": "亀崎相生町３丁目 【亀崎５区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎大洞町",
+      "townEn": "Kamezaki Oboracho",
+      "kana": "カメザキオオボラチョウ",
+      "chome": null,
+      "detail": "亀崎大洞町1・３・５丁目の一部 【亀崎１区】  緑",
+      "en": "亀崎大洞町1・３・５丁目の一部 【亀崎１区】  緑",
+      "jp": "亀崎大洞町1・３・５丁目の一部 【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎大洞町",
+      "townEn": "Kamezaki Oboracho",
+      "kana": "カメザキオオボラチョウ",
+      "chome": null,
+      "detail": "亀崎大洞町1・３・５丁目の一部 【有脇１区】  緑",
+      "en": "亀崎大洞町1・３・５丁目の一部 【有脇１区】  緑",
+      "jp": "亀崎大洞町1・３・５丁目の一部 【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎大洞町",
+      "townEn": "Kamezaki Oboracho",
+      "kana": "カメザキオオボラチョウ",
+      "chome": null,
+      "detail": "亀崎大洞町２・４・６・７丁目 【亀崎１区】  緑",
+      "en": "亀崎大洞町２・４・６・７丁目 【亀崎１区】  緑",
+      "jp": "亀崎大洞町２・４・６・７丁目 【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎北浦町",
+      "townEn": "Kamezaki Kitauracho",
+      "kana": "カメザキキタウラチョウ",
+      "chome": null,
+      "detail": "亀崎北浦町【亀崎１区】  緑",
+      "en": "亀崎北浦町【亀崎１区】  緑",
+      "jp": "亀崎北浦町【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎新田町",
+      "townEn": "Kamezaki Shindencho",
+      "kana": "カメザキシンデンチョウ",
+      "chome": null,
+      "detail": "亀崎新田町【亀崎１区】  緑",
+      "en": "亀崎新田町【亀崎１区】  緑",
+      "jp": "亀崎新田町【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎高根町",
+      "townEn": "Kamezaki Takanecho",
+      "kana": "カメザキタカネチョウ",
+      "chome": null,
+      "detail": "亀崎高根町1～７丁目 【高根区】  緑",
+      "en": "亀崎高根町1～７丁目 【高根区】  緑",
+      "jp": "亀崎高根町1～７丁目 【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎高根町",
+      "townEn": "Kamezaki Takanecho",
+      "kana": "カメザキタカネチョウ",
+      "chome": null,
+      "detail": "亀崎高根町８丁目の一部 【亀崎６区】  緑",
+      "en": "亀崎高根町８丁目の一部 【亀崎６区】  緑",
+      "jp": "亀崎高根町８丁目の一部 【亀崎６区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎高根町",
+      "townEn": "Kamezaki Takanecho",
+      "kana": "カメザキタカネチョウ",
+      "chome": null,
+      "detail": "亀崎高根町８丁目の一部 【高根区】  緑",
+      "en": "亀崎高根町８丁目の一部 【高根区】  緑",
+      "jp": "亀崎高根町８丁目の一部 【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎高根町",
+      "townEn": "Kamezaki Takanecho",
+      "kana": "カメザキタカネチョウ",
+      "chome": null,
+      "detail": "亀崎高根町８丁目の一部 【平地１区】  緑",
+      "en": "亀崎高根町８丁目の一部 【平地１区】  緑",
+      "jp": "亀崎高根町８丁目の一部 【平地１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町1・２丁目 【亀崎１区】  緑",
+      "en": "亀崎町1・２丁目 【亀崎１区】  緑",
+      "jp": "亀崎町1・２丁目 【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町３丁目 【亀崎中区】  緑",
+      "en": "亀崎町３丁目 【亀崎中区】  緑",
+      "jp": "亀崎町３丁目 【亀崎中区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町４丁目の一部 【亀崎４区】  緑",
+      "en": "亀崎町４丁目の一部 【亀崎４区】  緑",
+      "jp": "亀崎町４丁目の一部 【亀崎４区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町４丁目の一部 【亀崎中区】  緑",
+      "en": "亀崎町４丁目の一部 【亀崎中区】  緑",
+      "jp": "亀崎町４丁目の一部 【亀崎中区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町５丁目 【亀崎４区】  緑",
+      "en": "亀崎町５丁目 【亀崎４区】  緑",
+      "jp": "亀崎町５丁目 【亀崎４区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町６・７丁目 【亀崎５区】  緑",
+      "en": "亀崎町６・７丁目 【亀崎５区】  緑",
+      "jp": "亀崎町６・７丁目 【亀崎５区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎町",
+      "townEn": "Kamezakicho",
+      "kana": "カメザキチョウ",
+      "chome": null,
+      "detail": "亀崎町８～１０丁目 【亀崎６区】  緑",
+      "en": "亀崎町８～１０丁目 【亀崎６区】  緑",
+      "jp": "亀崎町８～１０丁目 【亀崎６区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎月見町",
+      "townEn": "Kamezaki Tsukimicho",
+      "kana": "カメザキツキミチョウ",
+      "chome": null,
+      "detail": "亀崎月見町1・２・４丁目の一部 【亀崎１区】  緑",
+      "en": "亀崎月見町1・２・４丁目の一部 【亀崎１区】  緑",
+      "jp": "亀崎月見町1・２・４丁目の一部 【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎月見町",
+      "townEn": "Kamezaki Tsukimicho",
+      "kana": "カメザキツキミチョウ",
+      "chome": null,
+      "detail": "亀崎月見町1・２・４丁目の一部 【亀崎中区】  緑",
+      "en": "亀崎月見町1・２・４丁目の一部 【亀崎中区】  緑",
+      "jp": "亀崎月見町1・２・４丁目の一部 【亀崎中区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎月見町",
+      "townEn": "Kamezaki Tsukimicho",
+      "kana": "カメザキツキミチョウ",
+      "chome": null,
+      "detail": "亀崎月見町1丁目の一部 【亀崎４区】  緑",
+      "en": "亀崎月見町1丁目の一部 【亀崎４区】  緑",
+      "jp": "亀崎月見町1丁目の一部 【亀崎４区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "亀崎月見町",
+      "townEn": "Kamezaki Tsukimicho",
+      "kana": "カメザキツキミチョウ",
+      "chome": null,
+      "detail": "亀崎月見町３丁目 【亀崎中区】  緑",
+      "en": "亀崎月見町３丁目 【亀崎中区】  緑",
+      "jp": "亀崎月見町３丁目 【亀崎中区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "鴉根町",
+      "townEn": "Karasunecho",
+      "kana": "カラスネチョウ",
+      "chome": null,
+      "detail": "鴉根町1・２丁目 【鴉根区】  黄",
+      "en": "鴉根町1・２丁目 【鴉根区】  黄",
+      "jp": "鴉根町1・２丁目 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "鴉根町",
+      "townEn": "Karasunecho",
+      "kana": "カラスネチョウ",
+      "chome": null,
+      "detail": "鴉根町３丁目の一部 【板山区】  黄",
+      "en": "鴉根町３丁目の一部 【板山区】  黄",
+      "jp": "鴉根町３丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "鴉根町",
+      "townEn": "Karasunecho",
+      "kana": "カラスネチョウ",
+      "chome": null,
+      "detail": "鴉根町３丁目の一部 【鴉根区】  黄",
+      "en": "鴉根町３丁目の一部 【鴉根区】  黄",
+      "jp": "鴉根町３丁目の一部 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "鴉根町",
+      "townEn": "Karasunecho",
+      "kana": "カラスネチョウ",
+      "chome": null,
+      "detail": "鴉根町3丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "en": "鴉根町3丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "jp": "鴉根町3丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "鴉根町",
+      "townEn": "Karasunecho",
+      "kana": "カラスネチョウ",
+      "chome": null,
+      "detail": "鴉根町４丁目 【板山区】  黄",
+      "en": "鴉根町４丁目 【板山区】  黄",
+      "jp": "鴉根町４丁目 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "川田町",
+      "townEn": "Kawadacho",
+      "kana": "カワダチョウ",
+      "chome": null,
+      "detail": "川田町【乙川東区と瑞穂区に分かれる】  緑",
+      "en": "川田町【乙川東区と瑞穂区に分かれる】  緑",
+      "jp": "川田町【乙川東区と瑞穂区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "神田町",
+      "townEn": "Kanda Cho",
+      "kana": "カンダチョウ",
+      "chome": null,
+      "detail": "神田町1丁目の一部 【西成岩区】  黄",
+      "en": "神田町1丁目の一部 【西成岩区】  黄",
+      "jp": "神田町1丁目の一部 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "神田町",
+      "townEn": "Kanda Cho",
+      "kana": "カンダチョウ",
+      "chome": null,
+      "detail": "神田町1丁目の一部 【板山区】  黄",
+      "en": "神田町1丁目の一部 【板山区】  黄",
+      "jp": "神田町1丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "神田町",
+      "townEn": "Kanda Cho",
+      "kana": "カンダチョウ",
+      "chome": null,
+      "detail": "神田町２丁目 【板山区】  黄",
+      "en": "神田町２丁目 【板山区】  黄",
+      "jp": "神田町２丁目 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "勘内町",
+      "townEn": "Kannaicho",
+      "kana": "カンナイチョウ",
+      "chome": null,
+      "detail": "勘内町【半田北区】  桃",
+      "en": "勘内町【半田北区】  桃",
+      "jp": "勘内町【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "北大矢知町",
+      "townEn": "Kitaoyachicho",
+      "kana": "キタオオヤチチヨウ",
+      "chome": null,
+      "detail": "北大矢知町【大矢知区】  青",
+      "en": "北大矢知町【大矢知区】  青",
+      "jp": "北大矢知町【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "北末広町",
+      "townEn": "Kitasuehirocho",
+      "kana": "キタスエヒロチョウ",
+      "chome": null,
+      "detail": "北末広町【半田西区】  桃",
+      "en": "北末広町【半田西区】  桃",
+      "jp": "北末広町【半田西区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "北滑草町",
+      "townEn": "Kitanamesocho",
+      "kana": "キタナメソウチョウ",
+      "chome": null,
+      "detail": "北滑草町【板山区と協和区に分かれる】  黄",
+      "en": "北滑草町【板山区と協和区に分かれる】  黄",
+      "jp": "北滑草町【板山区と協和区に分かれる】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "北二ツ坂町",
+      "townEn": "Kitafutatsusakacho",
+      "kana": "キタフタツザカチョウ",
+      "chome": null,
+      "detail": "北二ツ坂町1・２丁目 【協和区】  黄",
+      "en": "北二ツ坂町1・２丁目 【協和区】  黄",
+      "jp": "北二ツ坂町1・２丁目 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "北二ツ坂町",
+      "townEn": "Kitafutatsusakacho",
+      "kana": "キタフタツザカチョウ",
+      "chome": null,
+      "detail": "北二ツ坂町３丁目の一部 【協和区】  黄",
+      "en": "北二ツ坂町３丁目の一部 【協和区】  黄",
+      "jp": "北二ツ坂町３丁目の一部 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "北二ツ坂町",
+      "townEn": "Kitafutatsusakacho",
+      "kana": "キタフタツザカチョウ",
+      "chome": null,
+      "detail": "北二ツ坂町３丁目の一部 【住吉区】  黄",
+      "en": "北二ツ坂町３丁目の一部 【住吉区】  黄",
+      "jp": "北二ツ坂町３丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "吉田町",
+      "townEn": "Kittacho",
+      "kana": "キッタチョウ",
+      "chome": null,
+      "detail": "吉田町１・２・４～８丁目 【板山区】  黄",
+      "en": "吉田町１・２・４～８丁目 【板山区】  黄",
+      "jp": "吉田町１・２・４～８丁目 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "吉田町",
+      "townEn": "Kittacho",
+      "kana": "キッタチョウ",
+      "chome": null,
+      "detail": "吉田町３丁目の一部 【板山区】  黄",
+      "en": "吉田町３丁目の一部 【板山区】  黄",
+      "jp": "吉田町３丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "君ケ橋町",
+      "townEn": "Kimigahashicho",
+      "kana": "キミガハシチョウ",
+      "chome": null,
+      "detail": "君ケ橋町１・２丁目 【板山区】  黄",
+      "en": "君ケ橋町１・２丁目 【板山区】  黄",
+      "jp": "君ケ橋町１・２丁目 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "君ケ橋町",
+      "townEn": "Kimigahashicho",
+      "kana": "キミガハシチョウ",
+      "chome": null,
+      "detail": "君ケ橋町３丁目の一部 【板山区】  黄",
+      "en": "君ケ橋町３丁目の一部 【板山区】  黄",
+      "jp": "君ケ橋町３丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "君ケ橋町",
+      "townEn": "Kimigahashicho",
+      "kana": "キミガハシチョウ",
+      "chome": null,
+      "detail": "君ケ橋町３丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "en": "君ケ橋町３丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "jp": "君ケ橋町３丁目の一部（市営君ケ橋住宅） 【鴻ノ松区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "協和町",
+      "townEn": "Kyowacho",
+      "kana": "キョウワチョウ",
+      "chome": null,
+      "detail": "協和町【協和区】  桃",
+      "en": "協和町【協和区】  桃",
+      "jp": "協和町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "桐ケ丘",
+      "townEn": "Kirigaoka",
+      "kana": "キリガオカ",
+      "chome": null,
+      "detail": "桐ケ丘1・５丁目の一部 【成岩４区】  黄",
+      "en": "桐ケ丘1・５丁目の一部 【成岩４区】  黄",
+      "jp": "桐ケ丘1・５丁目の一部 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "桐ケ丘",
+      "townEn": "Kirigaoka",
+      "kana": "キリガオカ",
+      "chome": null,
+      "detail": "桐ケ丘1・５丁目の一部 【西成岩区】  黄",
+      "en": "桐ケ丘1・５丁目の一部 【西成岩区】  黄",
+      "jp": "桐ケ丘1・５丁目の一部 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "桐ケ丘",
+      "townEn": "Kirigaoka",
+      "kana": "キリガオカ",
+      "chome": null,
+      "detail": "桐ケ丘２～４丁目 【成岩４区】  黄",
+      "en": "桐ケ丘２～４丁目 【成岩４区】  黄",
+      "jp": "桐ケ丘２～４丁目 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町1丁目 【半田北区】  桃",
+      "en": "銀座本町1丁目 【半田北区】  桃",
+      "jp": "銀座本町1丁目 【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町２丁目の一部 【半田中区】  桃",
+      "en": "銀座本町２丁目の一部 【半田中区】  桃",
+      "jp": "銀座本町２丁目の一部 【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町２丁目の一部 【半田北区】  桃",
+      "en": "銀座本町２丁目の一部 【半田北区】  桃",
+      "jp": "銀座本町２丁目の一部 【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町３・４丁目 【半田中区】  桃",
+      "en": "銀座本町３・４丁目 【半田中区】  桃",
+      "jp": "銀座本町３・４丁目 【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町５丁目の一部 【半田中区】  桃",
+      "en": "銀座本町５丁目の一部 【半田中区】  桃",
+      "jp": "銀座本町５丁目の一部 【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座本町",
+      "townEn": "Ginzahommachi",
+      "kana": "ギンザホンマチ",
+      "chome": null,
+      "detail": "銀座本町５丁目の一部 【半田南区】  桃",
+      "en": "銀座本町５丁目の一部 【半田南区】  桃",
+      "jp": "銀座本町５丁目の一部 【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "黒石町",
+      "townEn": "Kuroishicho",
+      "kana": "クロイシチョウ",
+      "chome": null,
+      "detail": "黒石町【板山区】  黄",
+      "en": "黒石町【板山区】  黄",
+      "jp": "黒石町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "源平町",
+      "townEn": "Gempeicho",
+      "kana": "ゲンベイチョウ",
+      "chome": null,
+      "detail": "源平町【半田東区】  青",
+      "en": "源平町【半田東区】  青",
+      "jp": "源平町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "庚申町",
+      "townEn": "Koshincho",
+      "kana": "コウシンチョウ",
+      "chome": null,
+      "detail": "庚申町【乙川４区】  青",
+      "en": "庚申町【乙川４区】  青",
+      "jp": "庚申町【乙川４区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "更生町",
+      "townEn": "Koseicho",
+      "kana": "コウセイチョウ",
+      "chome": null,
+      "detail": "更生町1・２丁目の一部 【協和区】  桃",
+      "en": "更生町1・２丁目の一部 【協和区】  桃",
+      "jp": "更生町1・２丁目の一部 【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "更生町",
+      "townEn": "Koseicho",
+      "kana": "コウセイチョウ",
+      "chome": null,
+      "detail": "更生町1・２丁目の一部 【半田西区】  桃",
+      "en": "更生町1・２丁目の一部 【半田西区】  桃",
+      "jp": "更生町1・２丁目の一部 【半田西区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "郷中町",
+      "townEn": "Gonakacho",
+      "kana": "ゴウナカチョウ",
+      "chome": null,
+      "detail": "郷中町【協和区】  桃",
+      "en": "郷中町【協和区】  桃",
+      "jp": "郷中町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "小神町",
+      "townEn": "Koshincho",
+      "kana": "コシンチョウ",
+      "chome": null,
+      "detail": "小神町【向山区】  青",
+      "en": "小神町【向山区】  青",
+      "jp": "小神町【向山区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "古浜町",
+      "townEn": "Kohamacho",
+      "kana": "コハマチョウ",
+      "chome": null,
+      "detail": "古浜町【乙川東区】  緑",
+      "en": "古浜町【乙川東区】  緑",
+      "jp": "古浜町【乙川東区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaicho",
+      "kana": "サイワイチョウ",
+      "chome": null,
+      "detail": "幸町【半田東区】  青",
+      "en": "幸町【半田東区】  青",
+      "jp": "幸町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaemachi",
+      "kana": "サカエマチ",
+      "chome": null,
+      "detail": "栄町1丁目の一部 【協和区】  桃",
+      "en": "栄町1丁目の一部 【協和区】  桃",
+      "jp": "栄町1丁目の一部 【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaemachi",
+      "kana": "サカエマチ",
+      "chome": null,
+      "detail": "栄町1丁目の一部 【成岩４区】  桃",
+      "en": "栄町1丁目の一部 【成岩４区】  桃",
+      "jp": "栄町1丁目の一部 【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaemachi",
+      "kana": "サカエマチ",
+      "chome": null,
+      "detail": "栄町２～４丁目 【成岩４区】  桃",
+      "en": "栄町２～４丁目 【成岩４区】  桃",
+      "jp": "栄町２～４丁目 【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "椎ノ木町",
+      "townEn": "Shiinokicho",
+      "kana": "シイノキチョウ",
+      "chome": null,
+      "detail": "椎ノ木町【板山区】  黄",
+      "en": "椎ノ木町【板山区】  黄",
+      "jp": "椎ノ木町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "七本木町",
+      "townEn": "Shichihongicho",
+      "kana": "シチホンギチョウ",
+      "chome": null,
+      "detail": "七本木町【大池区】  青",
+      "en": "七本木町【大池区】  青",
+      "jp": "七本木町【大池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東雲町",
+      "townEn": "Shinonomecho",
+      "kana": "シノノメチョウ",
+      "chome": null,
+      "detail": "東雲町【半田東区】  青",
+      "en": "東雲町【半田東区】  青",
+      "jp": "東雲町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "清水北町",
+      "townEn": "Shimizu Kitamachi",
+      "kana": "シミズキタマチ",
+      "chome": null,
+      "detail": "清水北町【住吉区】  桃",
+      "en": "清水北町【住吉区】  桃",
+      "jp": "清水北町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "清水西町",
+      "townEn": "Shimizu Nishimachi",
+      "kana": "シミズニシマチ",
+      "chome": null,
+      "detail": "清水西町【】  桃",
+      "en": "清水西町【】  桃",
+      "jp": "清水西町【】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "清水東町",
+      "townEn": "Shimizu Higashimachi",
+      "kana": "シミズヒガシマチ",
+      "chome": null,
+      "detail": "清水東町【】  桃",
+      "en": "清水東町【】  桃",
+      "jp": "清水東町【】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "十一号地",
+      "townEn": "Juichigochi",
+      "kana": "ジュウイチゴウチ",
+      "chome": null,
+      "detail": "十一号地【瑞穂区】  青",
+      "en": "十一号地【瑞穂区】  青",
+      "jp": "十一号地【瑞穂区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "十三塚町",
+      "townEn": "Jusanzukacho",
+      "kana": "ジュウサンヅカチョウ",
+      "chome": null,
+      "detail": "十三塚町【板山区】  黄",
+      "en": "十三塚町【板山区】  黄",
+      "jp": "十三塚町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "昭和町",
+      "townEn": "Showacho",
+      "kana": "ショウワチョウ",
+      "chome": null,
+      "detail": "昭和町１・２丁目 【協和区】  黄",
+      "en": "昭和町１・２丁目 【協和区】  黄",
+      "jp": "昭和町１・２丁目 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "昭和町",
+      "townEn": "Showacho",
+      "kana": "ショウワチョウ",
+      "chome": null,
+      "detail": "昭和町３・４丁目 【成岩４区】  黄",
+      "en": "昭和町３・４丁目 【成岩４区】  黄",
+      "jp": "昭和町３・４丁目 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新池町",
+      "townEn": "Shinikecho",
+      "kana": "シンイケチョウ",
+      "chome": null,
+      "detail": "新池町１丁目 【横川区】  青",
+      "en": "新池町１丁目 【横川区】  青",
+      "jp": "新池町１丁目 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "新池町",
+      "townEn": "Shinikecho",
+      "kana": "シンイケチョウ",
+      "chome": null,
+      "detail": "新池町２丁目 【大矢知区】  青",
+      "en": "新池町２丁目 【大矢知区】  青",
+      "jp": "新池町２丁目 【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "新川町",
+      "townEn": "Shinkawacho",
+      "kana": "シンカワチョウ",
+      "chome": null,
+      "detail": "新川町【半田中区】  桃",
+      "en": "新川町【半田中区】  桃",
+      "jp": "新川町【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町２丁目の一部 【西成岩区】  桃",
+      "en": "新宮町２丁目の一部 【西成岩区】  桃",
+      "jp": "新宮町２丁目の一部 【西成岩区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町２丁目の一部 【鴉根区】  桃",
+      "en": "新宮町２丁目の一部 【鴉根区】  桃",
+      "jp": "新宮町２丁目の一部 【鴉根区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町３・４丁目 【西成岩区】  桃",
+      "en": "新宮町３・４丁目 【西成岩区】  桃",
+      "jp": "新宮町３・４丁目 【西成岩区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町５丁目の一部 【西成岩区】  黄",
+      "en": "新宮町５丁目の一部 【西成岩区】  黄",
+      "jp": "新宮町５丁目の一部 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町５丁目の一部 【板山区】  黄",
+      "en": "新宮町５丁目の一部 【板山区】  黄",
+      "jp": "新宮町５丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新宮町",
+      "townEn": "Shingucho",
+      "kana": "シングウチョウ",
+      "chome": null,
+      "detail": "新宮町５丁目の一部 【鴉根区】  黄",
+      "en": "新宮町５丁目の一部 【鴉根区】  黄",
+      "jp": "新宮町５丁目の一部 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新栄町",
+      "townEn": "Shinsakaemachi",
+      "kana": "シンサカエマチ",
+      "chome": null,
+      "detail": "新栄町【半田東区】  青",
+      "en": "新栄町【半田東区】  青",
+      "jp": "新栄町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "新生町",
+      "townEn": "Shinseicho",
+      "kana": "シンセイチョウ",
+      "chome": null,
+      "detail": "新生町【半田１区】  緑",
+      "en": "新生町【半田１区】  緑",
+      "jp": "新生町【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "砂谷町",
+      "townEn": "Sunadanicho",
+      "kana": "スナダニチョウ",
+      "chome": null,
+      "detail": "砂谷町【半田２区と板山区に分かれる】  黄",
+      "en": "砂谷町【半田２区と板山区に分かれる】  黄",
+      "jp": "砂谷町【半田２区と板山区に分かれる】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "州の崎町",
+      "townEn": "Sunosakicho",
+      "kana": "スノサキチョウ",
+      "chome": null,
+      "detail": "州の崎町【亀崎１区】  緑",
+      "en": "州の崎町【亀崎１区】  緑",
+      "jp": "州の崎町【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉町",
+      "townEn": "Sumiyoshicho",
+      "kana": "スミヨシチョウ",
+      "chome": null,
+      "detail": "住吉町1・２丁目の一部 【岩滑区】  緑",
+      "en": "住吉町1・２丁目の一部 【岩滑区】  緑",
+      "jp": "住吉町1・２丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉町",
+      "townEn": "Sumiyoshicho",
+      "kana": "スミヨシチョウ",
+      "chome": null,
+      "detail": "住吉町1・２丁目の一部 【住吉区】  緑",
+      "en": "住吉町1・２丁目の一部 【住吉区】  緑",
+      "jp": "住吉町1・２丁目の一部 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉町",
+      "townEn": "Sumiyoshicho",
+      "kana": "スミヨシチョウ",
+      "chome": null,
+      "detail": "住吉町３～５丁目 【住吉区】  緑",
+      "en": "住吉町３～５丁目 【住吉区】  緑",
+      "jp": "住吉町３～５丁目 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉町",
+      "townEn": "Sumiyoshicho",
+      "kana": "スミヨシチョウ",
+      "chome": null,
+      "detail": "住吉町６～８丁目   【】  桃",
+      "en": "住吉町６～８丁目   【】  桃",
+      "jp": "住吉町６～８丁目   【】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "清城町",
+      "townEn": "Seishirocho",
+      "kana": "セイシロチョウ",
+      "chome": null,
+      "detail": "清城町1・２丁目 【住吉区】  黄",
+      "en": "清城町1・２丁目 【住吉区】  黄",
+      "jp": "清城町1・２丁目 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "清城町",
+      "townEn": "Seishirocho",
+      "kana": "セイシロチョウ",
+      "chome": null,
+      "detail": "清城町３丁目の一部 【協和区】  黄",
+      "en": "清城町３丁目の一部 【協和区】  黄",
+      "jp": "清城町３丁目の一部 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "清城町",
+      "townEn": "Seishirocho",
+      "kana": "セイシロチョウ",
+      "chome": null,
+      "detail": "清城町３丁目の一部 【住吉区】  黄",
+      "en": "清城町３丁目の一部 【住吉区】  黄",
+      "jp": "清城町３丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "相賀町",
+      "townEn": "Sogacho",
+      "kana": "ソウガチョウ",
+      "chome": null,
+      "detail": "相賀町【乙川東区】  緑",
+      "en": "相賀町【乙川東区】  緑",
+      "jp": "相賀町【乙川東区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "高砂町",
+      "townEn": "Takasagocho",
+      "kana": "タカサゴチョウ",
+      "chome": null,
+      "detail": "高砂町【向山区と乙川東区に分かれる】  緑",
+      "en": "高砂町【向山区と乙川東区に分かれる】  緑",
+      "jp": "高砂町【向山区と乙川東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "高峯町",
+      "townEn": "Takaminecho",
+      "kana": "タカミネチョウ",
+      "chome": null,
+      "detail": "高峯町【板山区】  黄",
+      "en": "高峯町【板山区】  黄",
+      "jp": "高峯町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "出口町",
+      "townEn": "Deguchicho",
+      "kana": "デグチチョウ",
+      "chome": null,
+      "detail": "出口町1丁目 【住吉区】  緑",
+      "en": "出口町1丁目 【住吉区】  緑",
+      "jp": "出口町1丁目 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "出口町",
+      "townEn": "Deguchicho",
+      "kana": "デグチチョウ",
+      "chome": null,
+      "detail": "出口町２丁目の一部 【岩滑区】  緑",
+      "en": "出口町２丁目の一部 【岩滑区】  緑",
+      "jp": "出口町２丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "出口町",
+      "townEn": "Deguchicho",
+      "kana": "デグチチョウ",
+      "chome": null,
+      "detail": "出口町２丁目の一部 【住吉区】  緑",
+      "en": "出口町２丁目の一部 【住吉区】  緑",
+      "jp": "出口町２丁目の一部 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "出口町",
+      "townEn": "Deguchicho",
+      "kana": "デグチチョウ",
+      "chome": null,
+      "detail": "出口町ｱｰﾊﾞﾝｼﾞｬﾎﾟｰ中堅、ｻﾝﾗｲｽﾞHEIAN、ｻﾝﾄｩﾙ　ﾄﾞｩ　ｿﾚｲﾕ【1丁目】 【住吉区】  黄",
+      "en": "出口町ｱｰﾊﾞﾝｼﾞｬﾎﾟｰ中堅、ｻﾝﾗｲｽﾞHEIAN、ｻﾝﾄｩﾙ　ﾄﾞｩ　ｿﾚｲﾕ【1丁目】 【住吉区】  黄",
+      "jp": "出口町ｱｰﾊﾞﾝｼﾞｬﾎﾟｰ中堅、ｻﾝﾗｲｽﾞHEIAN、ｻﾝﾄｩﾙ　ﾄﾞｩ　ｿﾚｲﾕ【1丁目】 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "寺町",
+      "townEn": "Teramachi",
+      "kana": "テラマチ",
+      "chome": null,
+      "detail": "寺町【成岩４区】  桃",
+      "en": "寺町【成岩４区】  桃",
+      "jp": "寺町【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "天神町",
+      "townEn": "Tenjincho",
+      "kana": "テンジンチョウ",
+      "chome": null,
+      "detail": "天神町【成岩４区と協和区に分かれる】  黄",
+      "en": "天神町【成岩４区と協和区に分かれる】  黄",
+      "jp": "天神町【成岩４区と協和区に分かれる】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "天王町",
+      "townEn": "Tennocho",
+      "kana": "テンノウチョウ",
+      "chome": null,
+      "detail": "天王町【住吉区】  桃",
+      "en": "天王町【住吉区】  桃",
+      "jp": "天王町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "土井山町",
+      "townEn": "Doiyamacho",
+      "kana": "ドイヤマチョウ",
+      "chome": null,
+      "detail": "土井山町1丁目の一部 【協和区】  黄",
+      "en": "土井山町1丁目の一部 【協和区】  黄",
+      "jp": "土井山町1丁目の一部 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "土井山町",
+      "townEn": "Doiyamacho",
+      "kana": "ドイヤマチョウ",
+      "chome": null,
+      "detail": "土井山町1丁目の一部 【住吉区】  黄",
+      "en": "土井山町1丁目の一部 【住吉区】  黄",
+      "jp": "土井山町1丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "土井山町",
+      "townEn": "Doiyamacho",
+      "kana": "ドイヤマチョウ",
+      "chome": null,
+      "detail": "土井山町２丁目 【住吉区】  黄",
+      "en": "土井山町２丁目 【住吉区】  黄",
+      "jp": "土井山町２丁目 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "土井山町",
+      "townEn": "Doiyamacho",
+      "kana": "ドイヤマチョウ",
+      "chome": null,
+      "detail": "土井山町３丁目 【協和区】  黄",
+      "en": "土井山町３丁目 【協和区】  黄",
+      "jp": "土井山町３丁目 【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "東郷町",
+      "townEn": "Togocho",
+      "kana": "トウゴウチョウ",
+      "chome": null,
+      "detail": "東郷町【西成岩区】  黄",
+      "en": "東郷町【西成岩区】  黄",
+      "jp": "東郷町【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "東洋町",
+      "townEn": "Toyocho",
+      "kana": "トウヨウチョウ",
+      "chome": null,
+      "detail": "東洋町1丁目の一部 【瑞穂区】  青",
+      "en": "東洋町1丁目の一部 【瑞穂区】  青",
+      "jp": "東洋町1丁目の一部 【瑞穂区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東洋町",
+      "townEn": "Toyocho",
+      "kana": "トウヨウチョウ",
+      "chome": null,
+      "detail": "東洋町1丁目の一部 【半田東区】  青",
+      "en": "東洋町1丁目の一部 【半田東区】  青",
+      "jp": "東洋町1丁目の一部 【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東洋町",
+      "townEn": "Toyocho",
+      "kana": "トウヨウチョウ",
+      "chome": null,
+      "detail": "東洋町２・３丁目 【半田東区】  青",
+      "en": "東洋町２・３丁目 【半田東区】  青",
+      "jp": "東洋町２・３丁目 【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東洋町",
+      "townEn": "Toyocho",
+      "kana": "トウヨウチョウ",
+      "chome": null,
+      "detail": "東洋町県営半田住宅 【半田県住区】  青",
+      "en": "東洋町県営半田住宅 【半田県住区】  青",
+      "jp": "東洋町県営半田住宅 【半田県住区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "中午町",
+      "townEn": "Nakaumacho",
+      "kana": "ナカウマチョウ",
+      "chome": null,
+      "detail": "中午町【向山区と乙川東区に分かれる】  緑",
+      "en": "中午町【向山区と乙川東区に分かれる】  緑",
+      "jp": "中午町【向山区と乙川東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "中億田町",
+      "townEn": "Nakaokudacho",
+      "kana": "ナカオクダチョウ",
+      "chome": null,
+      "detail": "中億田町【向山区と乙川東区に分かれる】  緑",
+      "en": "中億田町【向山区と乙川東区に分かれる】  緑",
+      "jp": "中億田町【向山区と乙川東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "中島町",
+      "townEn": "Nakashimacho",
+      "kana": "ナカシマチョウ",
+      "chome": null,
+      "detail": "中島町【成岩４区と協和区に分かれる】  桃",
+      "en": "中島町【成岩４区と協和区に分かれる】  桃",
+      "jp": "中島町【成岩４区と協和区に分かれる】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "仲田町",
+      "townEn": "Nakatacho",
+      "kana": "ナカタチョウ",
+      "chome": null,
+      "detail": "仲田町【成岩４区】  黄",
+      "en": "仲田町【成岩４区】  黄",
+      "jp": "仲田町【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "長根町",
+      "townEn": "Naganecho",
+      "kana": "ナガネチョウ",
+      "chome": null,
+      "detail": "長根町県営長根住宅 【乙川７区】  青",
+      "en": "長根町県営長根住宅 【乙川７区】  青",
+      "jp": "長根町県営長根住宅 【乙川７区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "長根町",
+      "townEn": "Naganecho",
+      "kana": "ナガネチョウ",
+      "chome": null,
+      "detail": "長根町県営長根住宅を除く 【横川区】  青",
+      "en": "長根町県営長根住宅を除く 【横川区】  青",
+      "jp": "長根町県営長根住宅を除く 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "中生見町",
+      "townEn": "Nakahaemicho",
+      "kana": "ナカハエミチョウ",
+      "chome": null,
+      "detail": "中生見町【有脇１区】  緑",
+      "en": "中生見町【有脇１区】  緑",
+      "jp": "中生見町【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakamachi",
+      "kana": "ナカマチ",
+      "chome": null,
+      "detail": "中町【協和区】  桃",
+      "en": "中町【協和区】  桃",
+      "jp": "中町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "中村町",
+      "townEn": "Nakamuracho",
+      "kana": "ナカムラチョウ",
+      "chome": null,
+      "detail": "中村町1丁目の一部 【中村区】  桃",
+      "en": "中村町1丁目の一部 【中村区】  桃",
+      "jp": "中村町1丁目の一部 【中村区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "中村町",
+      "townEn": "Nakamuracho",
+      "kana": "ナカムラチョウ",
+      "chome": null,
+      "detail": "中村町1丁目の一部 【半田北区】  桃",
+      "en": "中村町1丁目の一部 【半田北区】  桃",
+      "jp": "中村町1丁目の一部 【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "中村町",
+      "townEn": "Nakamuracho",
+      "kana": "ナカムラチョウ",
+      "chome": null,
+      "detail": "中村町２丁目 【中村区】  桃",
+      "en": "中村町２丁目 【中村区】  桃",
+      "jp": "中村町２丁目 【中村区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "滑楚町",
+      "townEn": "Namesocho",
+      "kana": "ナメソチョウ",
+      "chome": null,
+      "detail": "滑楚町【半田１区】  黄",
+      "en": "滑楚町【半田１区】  黄",
+      "jp": "滑楚町【半田１区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "成岩東町",
+      "townEn": "Narawa Higashimachi",
+      "kana": "ナラワヒガシマチ",
+      "chome": null,
+      "detail": "成岩東町【成岩４区】  桃",
+      "en": "成岩東町【成岩４区】  桃",
+      "jp": "成岩東町【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "成岩本町",
+      "townEn": "Narawa Hommachi",
+      "kana": "ナラワホンマチ",
+      "chome": null,
+      "detail": "成岩本町1丁目の一部 【協和区】  桃",
+      "en": "成岩本町1丁目の一部 【協和区】  桃",
+      "jp": "成岩本町1丁目の一部 【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "成岩本町",
+      "townEn": "Narawa Hommachi",
+      "kana": "ナラワホンマチ",
+      "chome": null,
+      "detail": "成岩本町1丁目の一部 【成岩４区】  桃",
+      "en": "成岩本町1丁目の一部 【成岩４区】  桃",
+      "jp": "成岩本町1丁目の一部 【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "成岩本町",
+      "townEn": "Narawa Hommachi",
+      "kana": "ナラワホンマチ",
+      "chome": null,
+      "detail": "成岩本町２～４丁目 【成岩４区】  桃",
+      "en": "成岩本町２～４丁目 【成岩４区】  桃",
+      "jp": "成岩本町２～４丁目 【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "苗代町",
+      "townEn": "Naeshirocho",
+      "kana": "ナワシロチョウ",
+      "chome": null,
+      "detail": "苗代町【乙川３区】  青",
+      "en": "苗代町【乙川３区】  青",
+      "jp": "苗代町【乙川３区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "新野町",
+      "townEn": "Niinocho",
+      "kana": "ニイノチョウ",
+      "chome": null,
+      "detail": "新野町1丁目の一部 【板山区】  黄",
+      "en": "新野町1丁目の一部 【板山区】  黄",
+      "jp": "新野町1丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新野町",
+      "townEn": "Niinocho",
+      "kana": "ニイノチョウ",
+      "chome": null,
+      "detail": "新野町1丁目の一部 【鴉根区】  黄",
+      "en": "新野町1丁目の一部 【鴉根区】  黄",
+      "jp": "新野町1丁目の一部 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "新野町",
+      "townEn": "Niinocho",
+      "kana": "ニイノチョウ",
+      "chome": null,
+      "detail": "新野町２丁目 【板山区】  黄",
+      "en": "新野町２丁目 【板山区】  黄",
+      "jp": "新野町２丁目 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "西大矢知町",
+      "townEn": "Nishioyachicho",
+      "kana": "ニシオオヤチチョウ",
+      "chome": null,
+      "detail": "西大矢知町【大矢知区】  青",
+      "en": "西大矢知町【大矢知区】  青",
+      "jp": "西大矢知町【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "西億田町",
+      "townEn": "Nishiokudacho",
+      "kana": "ニシオクダチョウ",
+      "chome": null,
+      "detail": "西億田町【乙川東区】  緑",
+      "en": "西億田町【乙川東区】  緑",
+      "jp": "西億田町【乙川東区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "西新町",
+      "townEn": "Nishishimmachi",
+      "kana": "ニシシンマチ",
+      "chome": null,
+      "detail": "西新町【住吉区】  桃",
+      "en": "西新町【住吉区】  桃",
+      "jp": "西新町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "西生見町",
+      "townEn": "Nishihaemicho",
+      "kana": "ニシハエミチョウ",
+      "chome": null,
+      "detail": "西生見町【有脇１区と平地１区に分かれる】  緑",
+      "en": "西生見町【有脇１区と平地１区に分かれる】  緑",
+      "jp": "西生見町【有脇１区と平地１区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "西端町",
+      "townEn": "Nishibatacho",
+      "kana": "ニシバタチョウ",
+      "chome": null,
+      "detail": "西端町【半田南区】  桃",
+      "en": "西端町【半田南区】  桃",
+      "jp": "西端町【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "祢宜町",
+      "townEn": "Negicho",
+      "kana": "ネギチョウ",
+      "chome": null,
+      "detail": "祢宜町【新居区と向山区に分かれる】  緑",
+      "en": "祢宜町【新居区と向山区に分かれる】  緑",
+      "jp": "祢宜町【新居区と向山区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "のぞみが丘",
+      "townEn": "Nozomigaoka",
+      "kana": "ノゾミガオカ",
+      "chome": null,
+      "detail": "のぞみが丘【亀崎１区】  緑",
+      "en": "のぞみが丘【亀崎１区】  緑",
+      "jp": "のぞみが丘【亀崎１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "白山町",
+      "townEn": "Hakusancho",
+      "kana": "ハクサンチョウ",
+      "chome": null,
+      "detail": "白山町【協和区】  黄",
+      "en": "白山町【協和区】  黄",
+      "jp": "白山町【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "兀山町",
+      "townEn": "Hageyamacho",
+      "kana": "ハゲヤマチョウ",
+      "chome": null,
+      "detail": "兀山町【乙川３区と横川区に分かれる】  青",
+      "en": "兀山町【乙川３区と横川区に分かれる】  青",
+      "jp": "兀山町【乙川３区と横川区に分かれる】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "畑合町",
+      "townEn": "Hataaicho",
+      "kana": "ハタアイチョウ",
+      "chome": null,
+      "detail": "畑合町【協和区】  桃",
+      "en": "畑合町【協和区】  桃",
+      "jp": "畑合町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "八軒町",
+      "townEn": "Hachikencho",
+      "kana": "ハチケンチョウ",
+      "chome": null,
+      "detail": "八軒町【乙川東区と半田東区に分かれる】  緑",
+      "en": "八軒町【乙川東区と半田東区に分かれる】  緑",
+      "jp": "八軒町【乙川東区と半田東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "花園町",
+      "townEn": "Hanazonocho",
+      "kana": "ハナゾノチョウ",
+      "chome": null,
+      "detail": "花園町【成岩３区】  桃",
+      "en": "花園町【成岩３区】  桃",
+      "jp": "花園町【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "花田町",
+      "townEn": "Hanadacho",
+      "kana": "ハナダチョウ",
+      "chome": null,
+      "detail": "花田町【平地２区】  青",
+      "en": "花田町【平地２区】  青",
+      "jp": "花田町【平地２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "浜田町",
+      "townEn": "Hamadacho",
+      "kana": "ハマダチョウ",
+      "chome": null,
+      "detail": "浜田町【乙川東区】  緑",
+      "en": "浜田町【乙川東区】  緑",
+      "jp": "浜田町【乙川東区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "浜町",
+      "townEn": "Hamamachi",
+      "kana": "ハママチ",
+      "chome": null,
+      "detail": "浜町【半田南区】  桃",
+      "en": "浜町【半田南区】  桃",
+      "jp": "浜町【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "柊町",
+      "townEn": "Hiiragicho",
+      "kana": "ヒイラギチョウ",
+      "chome": null,
+      "detail": "柊町１・２丁目のうち半田農業の東側 【住吉区】  緑",
+      "en": "柊町１・２丁目のうち半田農業の東側 【住吉区】  緑",
+      "jp": "柊町１・２丁目のうち半田農業の東側 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "柊町",
+      "townEn": "Hiiragicho",
+      "kana": "ヒイラギチョウ",
+      "chome": null,
+      "detail": "柊町１・３～５丁目 【住吉区】  黄",
+      "en": "柊町１・３～５丁目 【住吉区】  黄",
+      "jp": "柊町１・３～５丁目 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "柊町",
+      "townEn": "Hiiragicho",
+      "kana": "ヒイラギチョウ",
+      "chome": null,
+      "detail": "柊町２丁目の一部 【岩滑区】  緑",
+      "en": "柊町２丁目の一部 【岩滑区】  緑",
+      "jp": "柊町２丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "柊町",
+      "townEn": "Hiiragicho",
+      "kana": "ヒイラギチョウ",
+      "chome": null,
+      "detail": "柊町２丁目の一部 【住吉区】  黄",
+      "en": "柊町２丁目の一部 【住吉区】  黄",
+      "jp": "柊町２丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "東大矢知町",
+      "townEn": "Higashioyachicho",
+      "kana": "ヒガシオオヤチチョウ",
+      "chome": null,
+      "detail": "東大矢知町【大矢知区】  青",
+      "en": "東大矢知町【大矢知区】  青",
+      "jp": "東大矢知町【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東大矢知町",
+      "townEn": "Higashioyachicho",
+      "kana": "ヒガシオオヤチチョウ",
+      "chome": null,
+      "detail": "東大矢知町カサイアパート【３丁目】 【】  緑",
+      "en": "東大矢知町カサイアパート【３丁目】 【】  緑",
+      "jp": "東大矢知町カサイアパート【３丁目】 【】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "東億田町",
+      "townEn": "Higashiokudacho",
+      "kana": "ヒガシオクダチョウ",
+      "chome": null,
+      "detail": "東億田町【向山区と乙川東区に分かれる】  緑",
+      "en": "東億田町【向山区と乙川東区に分かれる】  緑",
+      "jp": "東億田町【向山区と乙川東区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "東新町",
+      "townEn": "Higashishimmachi",
+      "kana": "ヒガシシンマチ",
+      "chome": null,
+      "detail": "東新町【住吉区】  桃",
+      "en": "東新町【住吉区】  桃",
+      "jp": "東新町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "東天王町",
+      "townEn": "Higashitennocho",
+      "kana": "ヒガシテンノウチョウ",
+      "chome": null,
+      "detail": "東天王町【半田北区】  桃",
+      "en": "東天王町【半田北区】  桃",
+      "jp": "東天王町【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "東生見町",
+      "townEn": "Higashihaemicho",
+      "kana": "ヒガシハエミチョウ",
+      "chome": null,
+      "detail": "東生見町【有脇１区と高根区に分かれる】  緑",
+      "en": "東生見町【有脇１区と高根区に分かれる】  緑",
+      "jp": "東生見町【有脇１区と高根区に分かれる】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "東浜町",
+      "townEn": "Higashihamacho",
+      "kana": "ヒガシハマチョウ",
+      "chome": null,
+      "detail": "東浜町【半田東区】  青",
+      "en": "東浜町【半田東区】  青",
+      "jp": "東浜町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "東本町",
+      "townEn": "Higashihommachi",
+      "kana": "ヒガシホンマチ",
+      "chome": null,
+      "detail": "東本町【半田北区】  桃",
+      "en": "東本町【半田北区】  桃",
+      "jp": "東本町【半田北区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "彦洲町",
+      "townEn": "Hikozucho",
+      "kana": "ヒコズチョウ",
+      "chome": null,
+      "detail": "彦洲町１・２丁目 【西成岩区】  黄",
+      "en": "彦洲町１・２丁目 【西成岩区】  黄",
+      "jp": "彦洲町１・２丁目 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "彦洲町",
+      "townEn": "Hikozucho",
+      "kana": "ヒコズチョウ",
+      "chome": null,
+      "detail": "彦洲町３・４丁目の一部 【西成岩区】  黄",
+      "en": "彦洲町３・４丁目の一部 【西成岩区】  黄",
+      "jp": "彦洲町３・４丁目の一部 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "彦洲町",
+      "townEn": "Hikozucho",
+      "kana": "ヒコズチョウ",
+      "chome": null,
+      "detail": "彦洲町３・４丁目の一部 【板山区】  黄",
+      "en": "彦洲町３・４丁目の一部 【板山区】  黄",
+      "jp": "彦洲町３・４丁目の一部 【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "日ノ出町",
+      "townEn": "Hinodecho",
+      "kana": "ヒノデチョウ",
+      "chome": null,
+      "detail": "日ノ出町【半田東区】  青",
+      "en": "日ノ出町【半田東区】  青",
+      "jp": "日ノ出町【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "平井町",
+      "townEn": "Hiraicho",
+      "kana": "ヒライチョウ",
+      "chome": null,
+      "detail": "平井町【半田１区】  緑",
+      "en": "平井町【半田１区】  緑",
+      "jp": "平井町【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平地町",
+      "townEn": "Hirachicho",
+      "kana": "ヒラチチョウ",
+      "chome": null,
+      "detail": "平地町１丁目の一部 【亀崎６区】  緑",
+      "en": "平地町１丁目の一部 【亀崎６区】  緑",
+      "jp": "平地町１丁目の一部 【亀崎６区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平地町",
+      "townEn": "Hirachicho",
+      "kana": "ヒラチチョウ",
+      "chome": null,
+      "detail": "平地町１丁目の一部 【高根区】  緑",
+      "en": "平地町１丁目の一部 【高根区】  緑",
+      "jp": "平地町１丁目の一部 【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平地町",
+      "townEn": "Hirachicho",
+      "kana": "ヒラチチョウ",
+      "chome": null,
+      "detail": "平地町１丁目の一部 【平地１区】  青",
+      "en": "平地町１丁目の一部 【平地１区】  青",
+      "jp": "平地町１丁目の一部 【平地１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "平地町",
+      "townEn": "Hirachicho",
+      "kana": "ヒラチチョウ",
+      "chome": null,
+      "detail": "平地町２～５丁目 【平地１区】  青",
+      "en": "平地町２～５丁目 【平地１区】  青",
+      "jp": "平地町２～５丁目 【平地１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "平地町",
+      "townEn": "Hirachicho",
+      "kana": "ヒラチチョウ",
+      "chome": null,
+      "detail": "平地町神明神社、コモドアロッシオ【１丁目】 【平地１区】  緑",
+      "en": "平地町神明神社、コモドアロッシオ【１丁目】 【平地１区】  緑",
+      "jp": "平地町神明神社、コモドアロッシオ【１丁目】 【平地１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平地馬場町",
+      "townEn": "Hirachibambacho",
+      "kana": "ヒラチバンバチョウ",
+      "chome": null,
+      "detail": "平地馬場町【高根区】  緑",
+      "en": "平地馬場町【高根区】  緑",
+      "jp": "平地馬場町【高根区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "広小路町",
+      "townEn": "Hirokojicho",
+      "kana": "ヒロコウジチョウ",
+      "chome": null,
+      "detail": "広小路町【半田西区】  桃",
+      "en": "広小路町【半田西区】  桃",
+      "jp": "広小路町【半田西区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "深谷町",
+      "townEn": "Fukadanicho",
+      "kana": "フカダニチョウ",
+      "chome": null,
+      "detail": "深谷町【半田１区と住吉区に分かれる】  黄",
+      "en": "深谷町【半田１区と住吉区に分かれる】  黄",
+      "jp": "深谷町【半田１区と住吉区に分かれる】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "冨士ケ丘",
+      "townEn": "Fujigaoka",
+      "kana": "フジガオカ",
+      "chome": null,
+      "detail": "冨士ケ丘５・６丁目 【鴉根区】  黄",
+      "en": "冨士ケ丘５・６丁目 【鴉根区】  黄",
+      "jp": "冨士ケ丘５・６丁目 【鴉根区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "船入町",
+      "townEn": "Funairicho",
+      "kana": "フナイリチョウ",
+      "chome": null,
+      "detail": "船入町【半田南区】  桃",
+      "en": "船入町【半田南区】  桃",
+      "jp": "船入町【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "平和町",
+      "townEn": "Heiwacho",
+      "kana": "ヘイワチョウ",
+      "chome": null,
+      "detail": "平和町１～３・５～８丁目 【半田１区】  緑",
+      "en": "平和町１～３・５～８丁目 【半田１区】  緑",
+      "jp": "平和町１～３・５～８丁目 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平和町",
+      "townEn": "Heiwacho",
+      "kana": "ヘイワチョウ",
+      "chome": null,
+      "detail": "平和町４丁目の一部 【住吉区】  緑",
+      "en": "平和町４丁目の一部 【住吉区】  緑",
+      "jp": "平和町４丁目の一部 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "平和町",
+      "townEn": "Heiwacho",
+      "kana": "ヘイワチョウ",
+      "chome": null,
+      "detail": "平和町４丁目の一部 【半田１区】  緑",
+      "en": "平和町４丁目の一部 【半田１区】  緑",
+      "jp": "平和町４丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "宝来町",
+      "townEn": "Horaicho",
+      "kana": "ホウライチョウ",
+      "chome": null,
+      "detail": "宝来町１・４～７丁目 【半田１区】  緑",
+      "en": "宝来町１・４～７丁目 【半田１区】  緑",
+      "jp": "宝来町１・４～７丁目 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "宝来町",
+      "townEn": "Horaicho",
+      "kana": "ホウライチョウ",
+      "chome": null,
+      "detail": "宝来町２丁目の一部   【半田１区】  緑",
+      "en": "宝来町２丁目の一部   【半田１区】  緑",
+      "jp": "宝来町２丁目の一部   【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "宝来町",
+      "townEn": "Horaicho",
+      "kana": "ホウライチョウ",
+      "chome": null,
+      "detail": "宝来町２丁目の一部【板山区】  緑",
+      "en": "宝来町２丁目の一部【板山区】  緑",
+      "jp": "宝来町２丁目の一部【板山区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "星崎町",
+      "townEn": "Hoshizakicho",
+      "kana": "ホシザキチョウ",
+      "chome": null,
+      "detail": "星崎町【住吉区】  黄",
+      "en": "星崎町【住吉区】  黄",
+      "jp": "星崎町【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "星崎町",
+      "townEn": "Hoshizakicho",
+      "kana": "ホシザキチョウ",
+      "chome": null,
+      "detail": "星崎町第３ハイツ竹長【３丁目】 【】  桃",
+      "en": "星崎町第３ハイツ竹長【３丁目】 【】  桃",
+      "jp": "星崎町第３ハイツ竹長【３丁目】 【】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "堀崎町",
+      "townEn": "Horisakicho",
+      "kana": "ホリザキチョウ",
+      "chome": null,
+      "detail": "堀崎町【住吉区】  桃",
+      "en": "堀崎町【住吉区】  桃",
+      "jp": "堀崎町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町１丁目 【半田北区】  緑",
+      "en": "本町１丁目 【半田北区】  緑",
+      "jp": "本町１丁目 【半田北区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町２～７丁目 【】  桃",
+      "en": "本町２～７丁目 【】  桃",
+      "jp": "本町２～７丁目 【】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "前崎西町",
+      "townEn": "Maezaki Nishimachi",
+      "kana": "マエサキニシマチ",
+      "chome": null,
+      "detail": "前崎西町【住吉区】  桃",
+      "en": "前崎西町【住吉区】  桃",
+      "jp": "前崎西町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "前崎東町",
+      "townEn": "Maezaki Higashimachi",
+      "kana": "マエサキヒガシマチ",
+      "chome": null,
+      "detail": "前崎東町【住吉区】  桃",
+      "en": "前崎東町【住吉区】  桃",
+      "jp": "前崎東町【住吉区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "前田町",
+      "townEn": "Maedacho",
+      "kana": "マエダチョウ",
+      "chome": null,
+      "detail": "前田町【平地２区】  青",
+      "en": "前田町【平地２区】  青",
+      "jp": "前田町【平地２区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "松堀町",
+      "townEn": "Matsuboricho",
+      "kana": "マツボリチョウ",
+      "chome": null,
+      "detail": "松堀町【板山区】  黄",
+      "en": "松堀町【板山区】  黄",
+      "jp": "松堀町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "瑞穂町",
+      "townEn": "Mizuhocho",
+      "kana": "ミズホチョウ",
+      "chome": null,
+      "detail": "瑞穂町１～７・１０丁目 【瑞穂区】  青",
+      "en": "瑞穂町１～７・１０丁目 【瑞穂区】  青",
+      "jp": "瑞穂町１～７・１０丁目 【瑞穂区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "瑞穂町",
+      "townEn": "Mizuhocho",
+      "kana": "ミズホチョウ",
+      "chome": null,
+      "detail": "瑞穂町８・９丁目の一部  【半田東区】  青",
+      "en": "瑞穂町８・９丁目の一部  【半田東区】  青",
+      "jp": "瑞穂町８・９丁目の一部  【半田東区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "瑞穂町",
+      "townEn": "Mizuhocho",
+      "kana": "ミズホチョウ",
+      "chome": null,
+      "detail": "瑞穂町８・９丁目の一部 【瑞穂区】  青",
+      "en": "瑞穂町８・９丁目の一部 【瑞穂区】  青",
+      "jp": "瑞穂町８・９丁目の一部 【瑞穂区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "緑ケ丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑ケ丘１～８・１０・１１丁目 【有脇１区】  緑",
+      "en": "緑ケ丘１～８・１０・１１丁目 【有脇１区】  緑",
+      "jp": "緑ケ丘１～８・１０・１１丁目 【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "緑ケ丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑ケ丘９・１２・１３丁目の一部  【緑ケ丘区】  緑",
+      "en": "緑ケ丘９・１２・１３丁目の一部  【緑ケ丘区】  緑",
+      "jp": "緑ケ丘９・１２・１３丁目の一部  【緑ケ丘区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "緑ケ丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑ケ丘９・１２・１３丁目の一部 【有脇１区】  緑",
+      "en": "緑ケ丘９・１２・１３丁目の一部 【有脇１区】  緑",
+      "jp": "緑ケ丘９・１２・１３丁目の一部 【有脇１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "港本町",
+      "townEn": "Minatohommachi",
+      "kana": "ミナトホンマチ",
+      "chome": null,
+      "detail": "港本町【協和区】  桃",
+      "en": "港本町【協和区】  桃",
+      "jp": "港本町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "港町",
+      "townEn": "Minatomachi",
+      "kana": "ミナトマチ",
+      "chome": null,
+      "detail": "港町【協和区】  桃",
+      "en": "港町【協和区】  桃",
+      "jp": "港町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "南大矢知町",
+      "townEn": "Minamioyachicho",
+      "kana": "ミナミオオヤチチョウ",
+      "chome": null,
+      "detail": "南大矢知町【大矢知区】  青",
+      "en": "南大矢知町【大矢知区】  青",
+      "jp": "南大矢知町【大矢知区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "南末広町",
+      "townEn": "Minamisuehirocho",
+      "kana": "ミナミスエヒロチョウ",
+      "chome": null,
+      "detail": "南末広町【半田西区】  桃",
+      "en": "南末広町【半田西区】  桃",
+      "jp": "南末広町【半田西区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "南二ツ坂町",
+      "townEn": "Minamifutatsuzakacho",
+      "kana": "ミナミフタツザカチョウ",
+      "chome": null,
+      "detail": "南二ツ坂町１丁目の一部   【西成岩区】  黄",
+      "en": "南二ツ坂町１丁目の一部   【西成岩区】  黄",
+      "jp": "南二ツ坂町１丁目の一部   【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "南二ツ坂町",
+      "townEn": "Minamifutatsuzakacho",
+      "kana": "ミナミフタツザカチョウ",
+      "chome": null,
+      "detail": "南二ツ坂町１丁目の一部 【成岩４区】  黄",
+      "en": "南二ツ坂町１丁目の一部 【成岩４区】  黄",
+      "jp": "南二ツ坂町１丁目の一部 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "南二ツ坂町",
+      "townEn": "Minamifutatsuzakacho",
+      "kana": "ミナミフタツザカチョウ",
+      "chome": null,
+      "detail": "南二ツ坂町２丁目 【成岩４区】  黄",
+      "en": "南二ツ坂町２丁目 【成岩４区】  黄",
+      "jp": "南二ツ坂町２丁目 【成岩４区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "南本町",
+      "townEn": "Minamihommachi",
+      "kana": "ミナミホンマチ",
+      "chome": null,
+      "detail": "南本町１丁目の一部   【半田中区】  桃",
+      "en": "南本町１丁目の一部   【半田中区】  桃",
+      "jp": "南本町１丁目の一部   【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "南本町",
+      "townEn": "Minamihommachi",
+      "kana": "ミナミホンマチ",
+      "chome": null,
+      "detail": "南本町１丁目の一部 【半田南区】  桃",
+      "en": "南本町１丁目の一部 【半田南区】  桃",
+      "jp": "南本町１丁目の一部 【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "南本町",
+      "townEn": "Minamihommachi",
+      "kana": "ミナミホンマチ",
+      "chome": null,
+      "detail": "南本町２丁目 【半田南区】  桃",
+      "en": "南本町２丁目 【半田南区】  桃",
+      "jp": "南本町２丁目 【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "美原町",
+      "townEn": "Miharacho",
+      "kana": "ミハラチョウ",
+      "chome": null,
+      "detail": "美原町１丁目 【横川区】  青",
+      "en": "美原町１丁目 【横川区】  青",
+      "jp": "美原町１丁目 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "美原町",
+      "townEn": "Miharacho",
+      "kana": "ミハラチョウ",
+      "chome": null,
+      "detail": "美原町２丁目の一部   【上池区】  青",
+      "en": "美原町２丁目の一部   【上池区】  青",
+      "jp": "美原町２丁目の一部   【上池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "美原町",
+      "townEn": "Miharacho",
+      "kana": "ミハラチョウ",
+      "chome": null,
+      "detail": "美原町２丁目の一部 【横川区】  青",
+      "en": "美原町２丁目の一部 【横川区】  青",
+      "jp": "美原町２丁目の一部 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "宮路町",
+      "townEn": "Miyajicho",
+      "kana": "ミヤジチョウ",
+      "chome": null,
+      "detail": "宮路町【住吉区】  緑",
+      "en": "宮路町【住吉区】  緑",
+      "jp": "宮路町【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "宮本町",
+      "townEn": "Miyamotocho",
+      "kana": "ミヤモトチョウ",
+      "chome": null,
+      "detail": "宮本町【西成岩区】  黄",
+      "en": "宮本町【西成岩区】  黄",
+      "jp": "宮本町【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "宮本町",
+      "townEn": "Miyamotocho",
+      "kana": "ミヤモトチョウ",
+      "chome": null,
+      "detail": "宮本町４丁目（市営宮本住宅） 【西宮区】  黄",
+      "en": "宮本町４丁目（市営宮本住宅） 【西宮区】  黄",
+      "jp": "宮本町４丁目（市営宮本住宅） 【西宮区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "御幸町",
+      "townEn": "Miyukimachi",
+      "kana": "ミユキマチ",
+      "chome": null,
+      "detail": "御幸町【半田中区】  桃",
+      "en": "御幸町【半田中区】  桃",
+      "jp": "御幸町【半田中区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "妙見町",
+      "townEn": "Myokencho",
+      "kana": "ミョウケンチョウ",
+      "chome": null,
+      "detail": "妙見町【半田南区】  桃",
+      "en": "妙見町【半田南区】  桃",
+      "jp": "妙見町【半田南区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "向山町",
+      "townEn": "Mukaiyamacho",
+      "kana": "ムカイヤマチョウ",
+      "chome": null,
+      "detail": "向山町【向山区】  青",
+      "en": "向山町【向山区】  青",
+      "jp": "向山町【向山区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "岩滑北浜町",
+      "townEn": "Yanabe Kitahamacho",
+      "kana": "ヤナベキタハマチョウ",
+      "chome": null,
+      "detail": "岩滑北浜町【乙川１区】  青",
+      "en": "岩滑北浜町【乙川１区】  青",
+      "jp": "岩滑北浜町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "岩滑高山町",
+      "townEn": "Yanabe Takayamacho",
+      "kana": "ヤナベタカヤマチョウ",
+      "chome": null,
+      "detail": "岩滑高山町１～７丁目 【岩滑区】  緑",
+      "en": "岩滑高山町１～７丁目 【岩滑区】  緑",
+      "jp": "岩滑高山町１～７丁目 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑高山町",
+      "townEn": "Yanabe Takayamacho",
+      "kana": "ヤナベタカヤマチョウ",
+      "chome": null,
+      "detail": "岩滑高山町８丁目の一部 【岩滑区】  緑",
+      "en": "岩滑高山町８丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑高山町８丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑高山町",
+      "townEn": "Yanabe Takayamacho",
+      "kana": "ヤナベタカヤマチョウ",
+      "chome": null,
+      "detail": "岩滑高山町８丁目の一部 【住吉区】  緑",
+      "en": "岩滑高山町８丁目の一部 【住吉区】  緑",
+      "jp": "岩滑高山町８丁目の一部 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑中町",
+      "townEn": "Yanabe Nakamachi",
+      "kana": "ヤナベナカマチ",
+      "chome": null,
+      "detail": "岩滑中町【岩滑区】  緑",
+      "en": "岩滑中町【岩滑区】  緑",
+      "jp": "岩滑中町【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町１丁目の一部 【岩滑区】  緑",
+      "en": "岩滑西町１丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑西町１丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町１丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町１丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町１丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町２丁目の一部 【岩滑区】  緑",
+      "en": "岩滑西町２丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑西町２丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町２丁目の一部 【住吉区】  黄",
+      "en": "岩滑西町２丁目の一部 【住吉区】  黄",
+      "jp": "岩滑西町２丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町２丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町２丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町２丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町３丁目の一部 【岩滑区】  緑",
+      "en": "岩滑西町３丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑西町３丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町３丁目の一部 【住吉区】  黄",
+      "en": "岩滑西町３丁目の一部 【住吉区】  黄",
+      "jp": "岩滑西町３丁目の一部 【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町３丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町３丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町３丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町４丁目の一部 【岩滑区】  緑",
+      "en": "岩滑西町４丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑西町４丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町４丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町４丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町４丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町５丁目 【岩滑区】  緑",
+      "en": "岩滑西町５丁目 【岩滑区】  緑",
+      "jp": "岩滑西町５丁目 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町６丁目の一部 【岩滑区】  緑",
+      "en": "岩滑西町６丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑西町６丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町６丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町６丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町６丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町７・８丁目 【半田１区】  緑",
+      "en": "岩滑西町７・８丁目 【半田１区】  緑",
+      "jp": "岩滑西町７・８丁目 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町９丁目の一部  【住吉区】  黄",
+      "en": "岩滑西町９丁目の一部  【住吉区】  黄",
+      "jp": "岩滑西町９丁目の一部  【住吉区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "岩滑西町",
+      "townEn": "Yanabe Nishimachi",
+      "kana": "ヤナベニシマチ",
+      "chome": null,
+      "detail": "岩滑西町９丁目の一部 【半田１区】  緑",
+      "en": "岩滑西町９丁目の一部 【半田１区】  緑",
+      "jp": "岩滑西町９丁目の一部 【半田１区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑東町",
+      "townEn": "Yanabe Higashimachi",
+      "kana": "ヤナベヒガシマチ",
+      "chome": null,
+      "detail": "岩滑東町１丁目の一部 【岩滑区】  緑",
+      "en": "岩滑東町１丁目の一部 【岩滑区】  緑",
+      "jp": "岩滑東町１丁目の一部 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑東町",
+      "townEn": "Yanabe Higashimachi",
+      "kana": "ヤナベヒガシマチ",
+      "chome": null,
+      "detail": "岩滑東町１丁目の一部 【住吉区】  緑",
+      "en": "岩滑東町１丁目の一部 【住吉区】  緑",
+      "jp": "岩滑東町１丁目の一部 【住吉区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑東町",
+      "townEn": "Yanabe Higashimachi",
+      "kana": "ヤナベヒガシマチ",
+      "chome": null,
+      "detail": "岩滑東町２～５丁目 【岩滑区】  緑",
+      "en": "岩滑東町２～５丁目 【岩滑区】  緑",
+      "jp": "岩滑東町２～５丁目 【岩滑区】  緑",
+      "pattern": "2"
+    },
+    {
+      "town": "岩滑南浜町",
+      "townEn": "Yanabe Minamihamacho",
+      "kana": "ヤナベミナミハマチョウ",
+      "chome": null,
+      "detail": "岩滑南浜町【乙川１区】  青",
+      "en": "岩滑南浜町【乙川１区】  青",
+      "jp": "岩滑南浜町【乙川１区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "山崎町",
+      "townEn": "Yamazakicho",
+      "kana": "ヤマザキチョウ",
+      "chome": null,
+      "detail": "山崎町【半田北区と中村区に分かれる】  桃",
+      "en": "山崎町【半田北区と中村区に分かれる】  桃",
+      "jp": "山崎町【半田北区と中村区に分かれる】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "山代町",
+      "townEn": "Yamashirocho",
+      "kana": "ヤマシロチョウ",
+      "chome": null,
+      "detail": "山代町１・３・４丁目 【西成岩区】  黄",
+      "en": "山代町１・３・４丁目 【西成岩区】  黄",
+      "jp": "山代町１・３・４丁目 【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "山代町",
+      "townEn": "Yamashirocho",
+      "kana": "ヤマシロチョウ",
+      "chome": null,
+      "detail": "山代町２丁目【協和区】  黄",
+      "en": "山代町２丁目【協和区】  黄",
+      "jp": "山代町２丁目【協和区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "大和町",
+      "townEn": "Yamatocho",
+      "kana": "ヤマトチョウ",
+      "chome": null,
+      "detail": "大和町【協和区】  桃",
+      "en": "大和町【協和区】  桃",
+      "jp": "大和町【協和区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "山ノ神町",
+      "townEn": "Yamanokamicho",
+      "kana": "ヤマノカミチョウ",
+      "chome": null,
+      "detail": "山ノ神町【半田中区と半田南区に分かれる】  桃",
+      "en": "山ノ神町【半田中区と半田南区に分かれる】  桃",
+      "jp": "山ノ神町【半田中区と半田南区に分かれる】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "有楽町",
+      "townEn": "Yurakucho",
+      "kana": "ユウラクチョウ",
+      "chome": null,
+      "detail": "有楽町１・２丁目の一部 【成岩３区】  桃",
+      "en": "有楽町１・２丁目の一部 【成岩３区】  桃",
+      "jp": "有楽町１・２丁目の一部 【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "有楽町",
+      "townEn": "Yurakucho",
+      "kana": "ユウラクチョウ",
+      "chome": null,
+      "detail": "有楽町１・２丁目の一部 【成岩４区】  桃",
+      "en": "有楽町１・２丁目の一部 【成岩４区】  桃",
+      "jp": "有楽町１・２丁目の一部 【成岩４区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "有楽町",
+      "townEn": "Yurakucho",
+      "kana": "ユウラクチョウ",
+      "chome": null,
+      "detail": "有楽町３～８丁目 【成岩３区】  桃",
+      "en": "有楽町３～８丁目 【成岩３区】  桃",
+      "jp": "有楽町３～８丁目 【成岩３区】  桃",
+      "pattern": "1"
+    },
+    {
+      "town": "横川町",
+      "townEn": "Yokogawacho",
+      "kana": "ヨコガワチョウ",
+      "chome": null,
+      "detail": "横川町１・２丁目 【上池区】  青",
+      "en": "横川町１・２丁目 【上池区】  青",
+      "jp": "横川町１・２丁目 【上池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "横川町",
+      "townEn": "Yokogawacho",
+      "kana": "ヨコガワチョウ",
+      "chome": null,
+      "detail": "横川町３丁目の一部 【横川区】  青",
+      "en": "横川町３丁目の一部 【横川区】  青",
+      "jp": "横川町３丁目の一部 【横川区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "横川町",
+      "townEn": "Yokogawacho",
+      "kana": "ヨコガワチョウ",
+      "chome": null,
+      "detail": "横川町３丁目の一部 【上池区】  青",
+      "en": "横川町３丁目の一部 【上池区】  青",
+      "jp": "横川町３丁目の一部 【上池区】  青",
+      "pattern": "3"
+    },
+    {
+      "town": "横山町",
+      "townEn": "Yokoyamacho",
+      "kana": "ヨコヤマチョウ",
+      "chome": null,
+      "detail": "横山町【板山区】  黄",
+      "en": "横山町【板山区】  黄",
+      "jp": "横山町【板山区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "葭谷町",
+      "townEn": "Yoshidanicho",
+      "kana": "ヨシダニチョウ",
+      "chome": null,
+      "detail": "葭谷町【西成岩区】  黄",
+      "en": "葭谷町【西成岩区】  黄",
+      "jp": "葭谷町【西成岩区】  黄",
+      "pattern": "4"
+    },
+    {
+      "town": "四方木町",
+      "townEn": "Yomogicho",
+      "kana": "ヨモギチョウ",
+      "chome": null,
+      "detail": "四方木町【板山区】  黄",
+      "en": "四方木町【板山区】  黄",
+      "jp": "四方木町【板山区】  黄",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s7640i/handa_gomi_area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,879 @@
+{
+  "id": "yachiyo-08521",
+  "code": "08521",
+  "pref": "08",
+  "jp": "八千代町",
+  "en": "Yachiyo",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://yachiyo.5374.jp/data/area_days.csv",
+    "http://yachiyo.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「木の枝」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙（折込広告を含む）」 under 「資源ごみ（古紙）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源ごみ（古紙）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源ごみ（古紙）」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源ごみ（古紙）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源ごみ（ペットボトル）」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「資源ごみ（びん）」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ＣＤ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「家電リサイクル法対象品」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "paper": [
+          1
+        ],
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          2
+        ],
+        "paper": [
+          6
+        ],
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          4
+        ],
+        "paper": [
+          6
+        ],
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          4,
+          6
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": [
+          5
+        ],
+        "paper": [
+          1
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "ゆりのき台1～2丁目",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ゆりのき台1～2丁目",
+      "jp": "ゆりのき台1～2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "ゆりのき台3〜8丁目",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ゆりのき台3〜8丁目",
+      "jp": "ゆりのき台3〜8丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "下高野",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下高野",
+      "jp": "下高野",
+      "pattern": "4"
+    },
+    {
+      "town": "下市場",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下市場",
+      "jp": "下市場",
+      "pattern": "4"
+    },
+    {
+      "town": "萱田（成田街道北側から東葉高速線南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萱田（成田街道北側から東葉高速線南側）",
+      "jp": "萱田（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "萱田（東葉高速線北側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萱田（東葉高速線北側）",
+      "jp": "萱田（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "萱田町（成田街道南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萱田町（成田街道南側）",
+      "jp": "萱田町（成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "萱田町（成田街道北側から東葉高速線南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萱田町（成田街道北側から東葉高速線南側）",
+      "jp": "萱田町（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "萱田町（東葉高速線北側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "萱田町（東葉高速線北側）",
+      "jp": "萱田町（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "吉橋",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉橋",
+      "jp": "吉橋",
+      "pattern": "1"
+    },
+    {
+      "town": "桑橋",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桑橋",
+      "jp": "桑橋",
+      "pattern": "1"
+    },
+    {
+      "town": "桑納",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桑納",
+      "jp": "桑納",
+      "pattern": "1"
+    },
+    {
+      "town": "高津（県道幕張八千代線より西側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高津（県道幕張八千代線より西側）",
+      "jp": "高津（県道幕張八千代線より西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "高津（県道幕張八千代線より東側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高津（県道幕張八千代線より東側）",
+      "jp": "高津（県道幕張八千代線より東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "高津団地",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高津団地",
+      "jp": "高津団地",
+      "pattern": "2"
+    },
+    {
+      "town": "高津東",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高津東",
+      "jp": "高津東",
+      "pattern": "2"
+    },
+    {
+      "town": "佐山",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐山",
+      "jp": "佐山",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "勝田",
+      "jp": "勝田",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田台",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台",
+      "jp": "勝田台",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田台南",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台南",
+      "jp": "勝田台南",
+      "pattern": "1"
+    },
+    {
+      "town": "勝田台北",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "勝田台北",
+      "jp": "勝田台北",
+      "pattern": "4"
+    },
+    {
+      "town": "小池",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小池",
+      "jp": "小池",
+      "pattern": "1"
+    },
+    {
+      "town": "上高野",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上高野",
+      "jp": "上高野",
+      "pattern": "4"
+    },
+    {
+      "town": "真木野",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真木野",
+      "jp": "真木野",
+      "pattern": "1"
+    },
+    {
+      "town": "神久保",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神久保",
+      "jp": "神久保",
+      "pattern": "1"
+    },
+    {
+      "town": "神野",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神野",
+      "jp": "神野",
+      "pattern": "4"
+    },
+    {
+      "town": "村上（3200・3300・3500番台の成田街道南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村上（3200・3300・3500番台の成田街道南側）",
+      "jp": "村上（3200・3300・3500番台の成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "村上（新川の東側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村上（新川の東側）",
+      "jp": "村上（新川の東側）",
+      "pattern": "4"
+    },
+    {
+      "town": "村上（成田街道北側で新川の西側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村上（成田街道北側で新川の西側）",
+      "jp": "村上（成田街道北側で新川の西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "村上団地",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村上団地",
+      "jp": "村上団地",
+      "pattern": "4"
+    },
+    {
+      "town": "村上南",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村上南",
+      "jp": "村上南",
+      "pattern": "4"
+    },
+    {
+      "town": "大学町",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大学町",
+      "jp": "大学町",
+      "pattern": "1"
+    },
+    {
+      "town": "大和田（成田街道南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田（成田街道南側）",
+      "jp": "大和田（成田街道南側）",
+      "pattern": "3"
+    },
+    {
+      "town": "大和田（成田街道北側から東葉高速線南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田（成田街道北側から東葉高速線南側）",
+      "jp": "大和田（成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田（1～99番台の成田街道南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（1～99番台の成田街道南側）",
+      "jp": "大和田新田（1～99番台の成田街道南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田（100・200番台の成田街道南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（100・200番台の成田街道南側）",
+      "jp": "大和田新田（100・200番台の成田街道南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "jp": "大和田新田（300・400・500・700番台の成田街道北側から東葉高速千南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "jp": "大和田新田（900・1000・1100番台の成田街道北側から東葉高速線南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大和田新田（県道幕張八千代線より東側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（県道幕張八千代線より東側）",
+      "jp": "大和田新田（県道幕張八千代線より東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "大和田新田（東葉高速線北側）",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和田新田（東葉高速線北側）",
+      "jp": "大和田新田（東葉高速線北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "島田",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島田",
+      "jp": "島田",
+      "pattern": "1"
+    },
+    {
+      "town": "島田台",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "島田台",
+      "jp": "島田台",
+      "pattern": "1"
+    },
+    {
+      "town": "麦丸",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "麦丸",
+      "jp": "麦丸",
+      "pattern": "1"
+    },
+    {
+      "town": "八千代台西",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台西",
+      "jp": "八千代台西",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台東",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台東",
+      "jp": "八千代台東",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台南",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台南",
+      "jp": "八千代台南",
+      "pattern": "3"
+    },
+    {
+      "town": "八千代台北",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八千代台北",
+      "jp": "八千代台北",
+      "pattern": "3"
+    },
+    {
+      "town": "尾崎",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "尾崎",
+      "jp": "尾崎",
+      "pattern": "1"
+    },
+    {
+      "town": "平戸",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平戸",
+      "jp": "平戸",
+      "pattern": "1"
+    },
+    {
+      "town": "米本",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米本",
+      "jp": "米本",
+      "pattern": "4"
+    },
+    {
+      "town": "米本団地",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米本団地",
+      "jp": "米本団地",
+      "pattern": "4"
+    },
+    {
+      "town": "保品",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "保品",
+      "jp": "保品",
+      "pattern": "4"
+    },
+    {
+      "town": "堀ノ内",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀ノ内",
+      "jp": "堀ノ内",
+      "pattern": "4"
+    },
+    {
+      "town": "緑が丘1丁目",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑が丘1丁目",
+      "jp": "緑が丘1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "緑が丘2～4丁目",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑が丘2～4丁目",
+      "jp": "緑が丘2～4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "緑が丘5丁目",
+      "townEn": "Yachiyo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑が丘5丁目",
+      "jp": "緑が丘5丁目",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://yachiyo.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

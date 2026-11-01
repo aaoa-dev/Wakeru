@@ -1,0 +1,279 @@
+{
+  "id": "ishigaki-47207",
+  "code": "47207",
+  "pref": "47",
+  "jp": "石垣市",
+  "en": "Ishigaki",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ishigaki.5374.jp/data/area_days.csv",
+    "http://ishigaki.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「飲料缶」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「飲料びん」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「水銀体温計」 under 「有害ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          6
+        ],
+        "res": [
+          2
+        ],
+        "hazardous": [
+          6
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ],
+        "res": [
+          3
+        ],
+        "hazardous": [
+          4
+        ]
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          5
+        ],
+        "res": [
+          1
+        ],
+        "hazardous": [
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "宮良・白保",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮良・白保",
+      "jp": "宮良・白保",
+      "pattern": "2"
+    },
+    {
+      "town": "崎枝〜川平〜野底",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "崎枝〜川平〜野底",
+      "jp": "崎枝〜川平〜野底",
+      "pattern": "2"
+    },
+    {
+      "town": "新川・新栄町",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新川・新栄町",
+      "jp": "新川・新栄町",
+      "pattern": "3"
+    },
+    {
+      "town": "大川・石垣・美崎町",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大川・石垣・美崎町",
+      "jp": "大川・石垣・美崎町",
+      "pattern": "2"
+    },
+    {
+      "town": "大浜・磯辺",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大浜・磯辺",
+      "jp": "大浜・磯辺",
+      "pattern": "3"
+    },
+    {
+      "town": "大里〜北部地区",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大里〜北部地区",
+      "jp": "大里〜北部地区",
+      "pattern": "1"
+    },
+    {
+      "town": "登野城・平得・八島町",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "登野城・平得・八島町",
+      "jp": "登野城・平得・八島町",
+      "pattern": "1"
+    },
+    {
+      "town": "名蔵・川原など(中部地区)",
+      "townEn": "Ishigaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "名蔵・川原など(中部地区)",
+      "jp": "名蔵・川原など(中部地区)",
+      "pattern": "1"
+    },
+    {
+      "town": "浜崎町",
+      "townEn": "Hamasakicho",
+      "kana": "ハマサキチョウ",
+      "chome": null,
+      "detail": "浜崎町・真栄里(一部除く)",
+      "en": "浜崎町・真栄里(一部除く)",
+      "jp": "浜崎町・真栄里(一部除く)",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ishigaki.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

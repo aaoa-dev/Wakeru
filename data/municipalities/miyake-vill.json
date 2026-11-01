@@ -1,0 +1,110 @@
+{
+  "id": "miyake-vill",
+  "code": "13381",
+  "pref": "13",
+  "jp": "三宅村",
+  "en": "Miyake",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.vill.miyake.tokyo.jp/kurashi/seikatsu_kankyou/kankyou_gomi_recycle/gomi.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Burnable collection days differ by settlement group; non-burnable and recyclables are collected island-wide on Wednesdays. Clean-center drop-off and hazardous waste use other weekdays — see the village website.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ],
+        "res": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "res": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "阿古・伊ヶ谷・伊豆地区",
+      "townEn": "阿古・伊ヶ谷・伊豆地区",
+      "kana": "阿古・伊ヶ谷・伊豆地区",
+      "chome": null,
+      "detail": null,
+      "en": "阿古・伊ヶ谷・伊豆地区",
+      "jp": "阿古・伊ヶ谷・伊豆地区",
+      "pattern": "1"
+    },
+    {
+      "town": "坪田・神着地区",
+      "townEn": "坪田・神着地区",
+      "kana": "坪田・神着地区",
+      "chome": null,
+      "detail": null,
+      "en": "坪田・神着地区",
+      "jp": "坪田・神着地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Miyake Village garbage collection rules (official HTML)",
+      "url": "https://www.vill.miyake.tokyo.jp/kurashi/seikatsu_kankyou/kankyou_gomi_recycle/gomi.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

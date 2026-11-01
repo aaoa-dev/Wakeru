@@ -1,0 +1,418 @@
+{
+  "id": "tokai-23222",
+  "code": "23222",
+  "pref": "23",
+  "jp": "東海市",
+  "en": "Tokai",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tokai.5374.jp/data/area_days.csv",
+    "http://tokai.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「残飯」 under 「可燃」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「可燃」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「可燃」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「資源」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「資源」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「不燃」.",
+      "auto": true
+    },
+    "plastic-pack": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「プラスチック製容器包装」 under 「資源」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「資源」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「資源」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「可燃」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「資源」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「資源」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「資源」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「パソコン」 under 「資源」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "浅山",
+      "townEn": "Asayama",
+      "kana": "アサヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "浅山",
+      "jp": "浅山",
+      "pattern": "2"
+    },
+    {
+      "town": "荒尾町",
+      "townEn": "Araomachi",
+      "kana": "アラオマチ",
+      "chome": null,
+      "detail": null,
+      "en": "荒尾町",
+      "jp": "荒尾町",
+      "pattern": "1"
+    },
+    {
+      "town": "大田町",
+      "townEn": "Otamachi",
+      "kana": "オオタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "大田町",
+      "jp": "大田町",
+      "pattern": "2"
+    },
+    {
+      "town": "加木屋町",
+      "townEn": "Kagiyamachi",
+      "kana": "カギヤマチ",
+      "chome": null,
+      "detail": null,
+      "en": "加木屋町",
+      "jp": "加木屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "高横須賀町",
+      "townEn": "Takayokosukamachi",
+      "kana": "タカヨコスカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "高横須賀町",
+      "jp": "高横須賀町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuomachi",
+      "kana": "チユウオウマチ",
+      "chome": null,
+      "detail": null,
+      "en": "中央町",
+      "jp": "中央町",
+      "pattern": "1"
+    },
+    {
+      "town": "東海町",
+      "townEn": "Tokaimachi",
+      "kana": "トウカイマチ",
+      "chome": null,
+      "detail": null,
+      "en": "東海町",
+      "jp": "東海町",
+      "pattern": "1"
+    },
+    {
+      "town": "中ノ池",
+      "townEn": "Nakanoike",
+      "kana": "ナカノイケ",
+      "chome": null,
+      "detail": null,
+      "en": "中ノ池",
+      "jp": "中ノ池",
+      "pattern": "2"
+    },
+    {
+      "town": "名和町",
+      "townEn": "Nawamachi",
+      "kana": "ナワマチ",
+      "chome": null,
+      "detail": null,
+      "en": "名和町",
+      "jp": "名和町",
+      "pattern": "2"
+    },
+    {
+      "town": "富木島町",
+      "townEn": "Fukishimamachi",
+      "kana": "フキシママチ",
+      "chome": null,
+      "detail": null,
+      "en": "富木島町",
+      "jp": "富木島町",
+      "pattern": "1"
+    },
+    {
+      "town": "富貴ノ台",
+      "townEn": "Fukinodai",
+      "kana": "フキノダイ",
+      "chome": null,
+      "detail": null,
+      "en": "富貴ノ台",
+      "jp": "富貴ノ台",
+      "pattern": "1"
+    },
+    {
+      "town": "南柴田町",
+      "townEn": "Minamishibatamachi",
+      "kana": "ミナミシバタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "南柴田町",
+      "jp": "南柴田町",
+      "pattern": "2"
+    },
+    {
+      "town": "元浜町",
+      "townEn": "Motohamamachi",
+      "kana": "モトハママチ",
+      "chome": null,
+      "detail": null,
+      "en": "元浜町",
+      "jp": "元浜町",
+      "pattern": "1"
+    },
+    {
+      "town": "養父町",
+      "townEn": "Yabumachi",
+      "kana": "ヤブマチ",
+      "chome": null,
+      "detail": null,
+      "en": "養父町",
+      "jp": "養父町",
+      "pattern": "1"
+    },
+    {
+      "town": "横須賀町",
+      "townEn": "Yokosukamachi",
+      "kana": "ヨコスカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "横須賀町",
+      "jp": "横須賀町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tokai.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

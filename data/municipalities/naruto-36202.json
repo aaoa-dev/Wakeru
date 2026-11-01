@@ -1,0 +1,142 @@
+{
+  "id": "naruto-36202",
+  "code": "36202",
+  "pref": "36",
+  "jp": "鳴門市",
+  "en": "Naruto",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://naruto.5374.jp/data/area_days.csv",
+    "http://naruto.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        "hazardous": [
+          3
+        ],
+        "plastic": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "撫養町一部(木津・南浜・斎田・黒崎・大桑島・小桑島) 北灘町 瀬戸町 鳴門町",
+      "townEn": "Naruto",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "撫養町一部(木津・南浜・斎田・黒崎・大桑島・小桑島) 北灘町 瀬戸町 鳴門町",
+      "jp": "撫養町一部(木津・南浜・斎田・黒崎・大桑島・小桑島) 北灘町 瀬戸町 鳴門町",
+      "pattern": "1"
+    },
+    {
+      "town": "撫養町一部(林崎・北浜・弁財天・岡崎・立岩) 里浦町 大津町 大麻町",
+      "townEn": "Naruto",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "撫養町一部(林崎・北浜・弁財天・岡崎・立岩) 里浦町 大津町 大麻町",
+      "jp": "撫養町一部(林崎・北浜・弁財天・岡崎・立岩) 里浦町 大津町 大麻町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://naruto.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

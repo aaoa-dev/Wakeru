@@ -1,0 +1,183 @@
+{
+  "id": "linkdata-4764-14207",
+  "code": "14207",
+  "pref": "14",
+  "jp": "茅ヶ崎市",
+  "en": "Chigasaki",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4764i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4764i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "carton": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「紙パック」 under 「大型ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「カセットボンベ（中身を使い切る）」 under 「玄関マット（布製） 燃やせるごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「大型ごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「テレビ」 under 「家電リサイクル」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「パソコン」 under 「パソコンリサイクル対象機器」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            3,
+            5
+          ]
+        },
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "湊浜",
+      "townEn": "Chigasaki",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "湊浜",
+      "jp": "湊浜",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4764i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,178 @@
+{
+  "id": "higashikurume",
+  "code": "13222",
+  "pref": "13",
+  "jp": "東久留米市",
+  "en": "Higashikurume",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.higashikurume.lg.jp/kurashi/kankyo/shigen/1018874/1000817.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "容器包装プラスチック",
+      "en": "Plastic packaging",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "PETボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙類",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "cloth": {
+      "label": "布類",
+      "en": "Cloth",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Two collection regions (east and west) with different weekday assignments. Public-holiday rules are on a separate city page — confirm before year-end.",
+    "patterns": {
+      "1": {
+        "plastic": [
+          1
+        ],
+        "pet_bottle": [
+          1
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "glass_bottle": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "beverage_can": [
+          4
+        ],
+        "paper": [
+          4
+        ],
+        "cloth": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "non_burnable": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "beverage_can": [
+          5
+        ],
+        "paper": [
+          5
+        ],
+        "cloth": [
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "東地区",
+      "townEn": "東地区",
+      "kana": "東地区",
+      "chome": null,
+      "detail": null,
+      "en": "東地区",
+      "jp": "東地区",
+      "pattern": "1"
+    },
+    {
+      "town": "西地区",
+      "townEn": "西地区",
+      "kana": "西地区",
+      "chome": null,
+      "detail": null,
+      "en": "西地区",
+      "jp": "西地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Higashikurume City collection weekday rules (official HTML)",
+      "url": "https://www.city.higashikurume.lg.jp/kurashi/kankyo/shigen/1018874/1000817.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

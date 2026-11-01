@@ -1,0 +1,348 @@
+{
+  "id": "shiojiri",
+  "code": "20215",
+  "pref": "20",
+  "jp": "塩尻市",
+  "en": "Shiojiri",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://shiojiri.5374.jp/data/area_days.csv",
+    "http://shiojiri.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "2": {
+        "plastic": [
+          1
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "3": {
+        "plastic": [
+          2
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "塩尻東",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩尻東",
+      "jp": "塩尻東",
+      "pattern": "2"
+    },
+    {
+      "town": "吉田1～5区",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉田1～5区",
+      "jp": "吉田1～5区",
+      "pattern": "3"
+    },
+    {
+      "town": "郷原",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "郷原",
+      "jp": "郷原",
+      "pattern": "2"
+    },
+    {
+      "town": "堅石",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堅石",
+      "jp": "堅石",
+      "pattern": "2"
+    },
+    {
+      "town": "原新田",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "原新田",
+      "jp": "原新田",
+      "pattern": "3"
+    },
+    {
+      "town": "高出1～5区",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高出1～5区",
+      "jp": "高出1～5区",
+      "pattern": "2"
+    },
+    {
+      "town": "宗賀",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宗賀",
+      "jp": "宗賀",
+      "pattern": "1"
+    },
+    {
+      "town": "洗馬",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "洗馬",
+      "jp": "洗馬",
+      "pattern": "3"
+    },
+    {
+      "town": "大門1～5番町（泉町）",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大門1～5番町（泉町）",
+      "jp": "大門1～5番町（泉町）",
+      "pattern": "1"
+    },
+    {
+      "town": "大門6（幸町）～8番町",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大門6（幸町）～8番町",
+      "jp": "大門6（幸町）～8番町",
+      "pattern": "2"
+    },
+    {
+      "town": "大門七区（並木町・桔梗町）",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大門七区（並木町・桔梗町）",
+      "jp": "大門七区（並木町・桔梗町）",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日村",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝日村",
+      "jp": "朝日村",
+      "pattern": "3"
+    },
+    {
+      "town": "田川町",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田川町",
+      "jp": "田川町",
+      "pattern": "2"
+    },
+    {
+      "town": "奈良井",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奈良井",
+      "jp": "奈良井",
+      "pattern": "2"
+    },
+    {
+      "town": "片丘",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "片丘",
+      "jp": "片丘",
+      "pattern": "2"
+    },
+    {
+      "town": "北小野",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北小野",
+      "jp": "北小野",
+      "pattern": "2"
+    },
+    {
+      "town": "木曽平沢",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "木曽平沢",
+      "jp": "木曽平沢",
+      "pattern": "2"
+    },
+    {
+      "town": "野村",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野村",
+      "jp": "野村",
+      "pattern": "2"
+    },
+    {
+      "town": "贄川",
+      "townEn": "Shiojiri",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "贄川",
+      "jp": "贄川",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://shiojiri.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

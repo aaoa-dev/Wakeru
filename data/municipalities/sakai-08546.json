@@ -1,0 +1,5193 @@
+{
+  "id": "sakai-08546",
+  "code": "08546",
+  "pref": "08",
+  "jp": "境町",
+  "en": "Sakai",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://sakai.5374.jp/data/area_days.csv",
+    "http://sakai.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          6
+        ]
+      },
+      "2": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ]
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ]
+      },
+      "4": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 6,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "9": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ]
+      },
+      "10": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      },
+      "11": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          6
+        ]
+      },
+      "12": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 6,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "13": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 6,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "14": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "15": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "16": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "17": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          6
+        ],
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "18": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 6,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "堺区 旭ヶ丘中町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 旭ヶ丘中町1から4丁",
+      "jp": "堺区 旭ヶ丘中町1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 旭ヶ丘南町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 旭ヶ丘南町1から4丁",
+      "jp": "堺区 旭ヶ丘南町1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 旭ヶ丘北町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 旭ヶ丘北町1から5丁",
+      "jp": "堺区 旭ヶ丘北町1から5丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 旭通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 旭通1から2街区",
+      "jp": "堺区 旭通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 旭通3街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 旭通3街区",
+      "jp": "堺区 旭通3街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 綾之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 綾之町西1から3丁",
+      "jp": "堺区 綾之町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 綾之町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 綾之町東1から2丁",
+      "jp": "堺区 綾之町東1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 一条通1､3､5､7､9､11､13､15､17､19街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 一条通1､3､5､7､9､11､13､15､17､19街区",
+      "jp": "堺区 一条通1､3､5､7､9､11､13､15､17､19街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 一条通12､14､16､18､20街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 一条通12､14､16､18､20街区",
+      "jp": "堺区 一条通12､14､16､18､20街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 一条通2､4､6､8､10街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 一条通2､4､6､8､10街区",
+      "jp": "堺区 一条通2､4､6､8､10街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 栄橋町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 栄橋町1から2丁",
+      "jp": "堺区 栄橋町1から2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 永代町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 永代町1から2丁",
+      "jp": "堺区 永代町1から2丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 永代町3丁から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 永代町3丁から6丁",
+      "jp": "堺区 永代町3丁から6丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 榎元町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 榎元町1から6丁",
+      "jp": "堺区 榎元町1から6丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 遠里小野町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 遠里小野町1から4丁",
+      "jp": "堺区 遠里小野町1から4丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 塩浜町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 塩浜町",
+      "jp": "堺区 塩浜町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 翁橋町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 翁橋町1から2丁",
+      "jp": "堺区 翁橋町1から2丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 霞ヶ丘町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 霞ヶ丘町1から4丁",
+      "jp": "堺区 霞ヶ丘町1から4丁",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 海山町1から7丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 海山町1から7丁",
+      "jp": "堺区 海山町1から7丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 京町通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 京町通1から2街区",
+      "jp": "堺区 京町通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 京町通3から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 京町通3から4街区",
+      "jp": "堺区 京町通3から4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 協和町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 協和町1から5丁",
+      "jp": "堺区 協和町1から5丁",
+      "pattern": "9"
+    },
+    {
+      "town": "堺区 錦綾町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 錦綾町1から3丁",
+      "jp": "堺区 錦綾町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 錦之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 錦之町西1から3丁",
+      "jp": "堺区 錦之町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 錦之町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 錦之町東1から2丁",
+      "jp": "堺区 錦之町東1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 九間町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 九間町西1から3丁",
+      "jp": "堺区 九間町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 九間町東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 九間町東1から3丁",
+      "jp": "堺区 九間町東1から3丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 櫛屋町西1丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 櫛屋町西1丁",
+      "jp": "堺区 櫛屋町西1丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 櫛屋町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 櫛屋町東1から4丁",
+      "jp": "堺区 櫛屋町東1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 熊野町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 熊野町西1から3丁",
+      "jp": "堺区 熊野町西1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 熊野町東1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 熊野町東1から5丁",
+      "jp": "堺区 熊野町東1から5丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 五月町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 五月町",
+      "jp": "堺区 五月町",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 五条通1から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 五条通1から5街区",
+      "jp": "堺区 五条通1から5街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 五条通6街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 五条通6街区",
+      "jp": "堺区 五条通6街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 御陵通1から3街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 御陵通1から3街区",
+      "jp": "堺区 御陵通1から3街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 御陵通4から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 御陵通4から5街区",
+      "jp": "堺区 御陵通4から5街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 向陵西町1丁、2丁1から7街区、3から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 向陵西町1丁、2丁1から7街区、3から4丁",
+      "jp": "堺区 向陵西町1丁、2丁1から7街区、3から4丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 向陵西町2丁8街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 向陵西町2丁8街区",
+      "jp": "堺区 向陵西町2丁8街区",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 向陵中町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 向陵中町1から6丁",
+      "jp": "堺区 向陵中町1から6丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 向陵東町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 向陵東町1から3丁",
+      "jp": "堺区 向陵東町1から3丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 幸通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 幸通1から2街区",
+      "jp": "堺区 幸通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 幸通3から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 幸通3から4街区",
+      "jp": "堺区 幸通3から4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 甲斐町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 甲斐町西1から3丁",
+      "jp": "堺区 甲斐町西1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 甲斐町東1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 甲斐町東1から6丁",
+      "jp": "堺区 甲斐町東1から6丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 香ヶ丘町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 香ヶ丘町1から5丁",
+      "jp": "堺区 香ヶ丘町1から5丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 高砂町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 高砂町1から4丁",
+      "jp": "堺区 高砂町1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 高須町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 高須町1から3丁",
+      "jp": "堺区 高須町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 今池町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 今池町1から6丁",
+      "jp": "堺区 今池町1から6丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 砂道町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 砂道町1から3丁",
+      "jp": "堺区 砂道町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 材木町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 材木町西1から3丁",
+      "jp": "堺区 材木町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 材木町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 材木町東1から4丁",
+      "jp": "堺区 材木町東1から4丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 桜之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 桜之町西1から3丁",
+      "jp": "堺区 桜之町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 桜之町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 桜之町東1から2丁",
+      "jp": "堺区 桜之町東1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 三国ヶ丘御幸通（ただし､1から38､152､153番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 三国ヶ丘御幸通（ただし､1から38､152､153番地を除く）",
+      "jp": "堺区 三国ヶ丘御幸通（ただし､1から38､152､153番地を除く）",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 三国ヶ丘御幸通1から38､152､153番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 三国ヶ丘御幸通1から38､152､153番地",
+      "jp": "堺区 三国ヶ丘御幸通1から38､152､153番地",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 三条通1から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 三条通1から5街区",
+      "jp": "堺区 三条通1から5街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 三条通6から7街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 三条通6から7街区",
+      "jp": "堺区 三条通6から7街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 三宝町1から9丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 三宝町1から9丁",
+      "jp": "堺区 三宝町1から9丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 山本町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 山本町1から6丁",
+      "jp": "堺区 山本町1から6丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 四条通1から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 四条通1から5街区",
+      "jp": "堺区 四条通1から5街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 四条通6から7街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 四条通6から7街区",
+      "jp": "堺区 四条通6から7街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 市之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 市之町西1から3丁",
+      "jp": "堺区 市之町西1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 市之町東1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 市之町東1から6丁",
+      "jp": "堺区 市之町東1から6丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 寺地町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 寺地町西1から4丁",
+      "jp": "堺区 寺地町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 寺地町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 寺地町東1から4丁",
+      "jp": "堺区 寺地町東1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 七条通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 七条通1から2街区",
+      "jp": "堺区 七条通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 七条通3から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 七条通3から4街区",
+      "jp": "堺区 七条通3から4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 七道西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 七道西町",
+      "jp": "堺区 七道西町",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 七道東町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 七道東町",
+      "jp": "堺区 七道東町",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 車之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 車之町西1から3丁",
+      "jp": "堺区 車之町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 車之町東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 車之町東1から3丁",
+      "jp": "堺区 車之町東1から3丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 住吉橋町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 住吉橋町1から2丁",
+      "jp": "堺区 住吉橋町1から2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 戎島町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 戎島町1から5丁",
+      "jp": "堺区 戎島町1から5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 戎之町西1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 戎之町西1から2丁",
+      "jp": "堺区 戎之町西1から2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 戎之町東1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 戎之町東1から5丁",
+      "jp": "堺区 戎之町東1から5丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 宿院町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 宿院町西1から4丁",
+      "jp": "堺区 宿院町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 宿院町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 宿院町東1から4丁",
+      "jp": "堺区 宿院町東1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 宿屋町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 宿屋町西1から3丁",
+      "jp": "堺区 宿屋町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 宿屋町東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 宿屋町東1から3丁",
+      "jp": "堺区 宿屋町東1から3丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 出島海岸通1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 出島海岸通1から4丁",
+      "jp": "堺区 出島海岸通1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 出島西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 出島西町",
+      "jp": "堺区 出島西町",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 出島町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 出島町1から5丁",
+      "jp": "堺区 出島町1から5丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 出島浜通",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 出島浜通",
+      "jp": "堺区 出島浜通",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 春日通1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 春日通1から4丁",
+      "jp": "堺区 春日通1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 匠町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 匠町",
+      "jp": "堺区 匠町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 少林寺町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 少林寺町西1から4丁",
+      "jp": "堺区 少林寺町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 少林寺町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 少林寺町東1から4丁",
+      "jp": "堺区 少林寺町東1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 昭和通1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 昭和通1から6丁",
+      "jp": "堺区 昭和通1から6丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 松屋大和川通1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 松屋大和川通1から4丁",
+      "jp": "堺区 松屋大和川通1から4丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 松屋町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 松屋町1から2丁",
+      "jp": "堺区 松屋町1から2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 新在家町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 新在家町西1から4丁",
+      "jp": "堺区 新在家町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 新在家町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 新在家町東1から4丁",
+      "jp": "堺区 新在家町東1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 新町1街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 新町1街区",
+      "jp": "堺区 新町1街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 新町2から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 新町2から5街区",
+      "jp": "堺区 新町2から5街区",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 神石市之町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神石市之町",
+      "jp": "堺区 神石市之町",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 神南辺町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神南辺町1から6丁",
+      "jp": "堺区 神南辺町1から6丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 神保通1街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神保通1街区",
+      "jp": "堺区 神保通1街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 神保通2から3街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神保通2から3街区",
+      "jp": "堺区 神保通2から3街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 神明町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神明町西1から3丁",
+      "jp": "堺区 神明町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 神明町東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 神明町東1から3丁",
+      "jp": "堺区 神明町東1から3丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 菅原通1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 菅原通1から5丁",
+      "jp": "堺区 菅原通1から5丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 西永山園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 西永山園",
+      "jp": "堺区 西永山園",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 西湊町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 西湊町1から6丁",
+      "jp": "堺区 西湊町1から6丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 石津町1丁から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 石津町1丁から4丁",
+      "jp": "堺区 石津町1丁から4丁",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 石津北町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 石津北町",
+      "jp": "堺区 石津北町",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 浅香山町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 浅香山町1から3丁",
+      "jp": "堺区 浅香山町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 大仙西町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大仙西町1から6丁",
+      "jp": "堺区 大仙西町1から6丁",
+      "pattern": "9"
+    },
+    {
+      "town": "堺区 大仙中町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大仙中町",
+      "jp": "堺区 大仙中町",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 大仙町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大仙町",
+      "jp": "堺区 大仙町",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 大町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大町西1から3丁",
+      "jp": "堺区 大町西1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 大町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大町東1から4丁",
+      "jp": "堺区 大町東1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 大浜西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大浜西町",
+      "jp": "堺区 大浜西町",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 大浜中町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大浜中町1から3丁",
+      "jp": "堺区 大浜中町1から3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 大浜南町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大浜南町1から3丁",
+      "jp": "堺区 大浜南町1から3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 大浜北町1から2丁、3丁3から12街区、4丁3から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大浜北町1から2丁、3丁3から12街区、4丁3から5街区",
+      "jp": "堺区 大浜北町1から2丁、3丁3から12街区、4丁3から5街区",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 大浜北町3丁1から2街区、4丁1から2街区、5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 大浜北町3丁1から2街区、4丁1から2街区、5丁",
+      "jp": "堺区 大浜北町3丁1から2街区、4丁1から2街区、5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 築港南町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 築港南町",
+      "jp": "堺区 築港南町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 築港八幡町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 築港八幡町",
+      "jp": "堺区 築港八幡町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 中安井町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中安井町1から3丁",
+      "jp": "堺区 中安井町1から3丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 中永山園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中永山園",
+      "jp": "堺区 中永山園",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 中瓦町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中瓦町1から2丁",
+      "jp": "堺区 中瓦町1から2丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 中向陽町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中向陽町1から2丁",
+      "jp": "堺区 中向陽町1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 中三国ヶ丘町1から7丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中三国ヶ丘町1から7丁",
+      "jp": "堺区 中三国ヶ丘町1から7丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 中田出井町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中田出井町1から3丁",
+      "jp": "堺区 中田出井町1から3丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 中之町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中之町西1から4丁",
+      "jp": "堺区 中之町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 中之町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 中之町東1から4丁",
+      "jp": "堺区 中之町東1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 鉄砲町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 鉄砲町",
+      "jp": "堺区 鉄砲町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 田出井町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 田出井町",
+      "jp": "堺区 田出井町",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 東雲西町1丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 東雲西町1丁",
+      "jp": "堺区 東雲西町1丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 東雲西町2から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 東雲西町2から4丁",
+      "jp": "堺区 東雲西町2から4丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 東永山園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 東永山園",
+      "jp": "堺区 東永山園",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 東上野芝町1丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 東上野芝町1丁",
+      "jp": "堺区 東上野芝町1丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 東湊町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 東湊町1から6丁",
+      "jp": "堺区 東湊町1から6丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 南安井町1丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南安井町1丁",
+      "jp": "堺区 南安井町1丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 南安井町2から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南安井町2から6丁",
+      "jp": "堺区 南安井町2から6丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 南花田口町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南花田口町1から2丁",
+      "jp": "堺区 南花田口町1から2丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 南瓦町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南瓦町",
+      "jp": "堺区 南瓦町",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 南丸保園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南丸保園",
+      "jp": "堺区 南丸保園",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 南向陽町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南向陽町1から2丁",
+      "jp": "堺区 南向陽町1から2丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 南三国ヶ丘町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南三国ヶ丘町1から2丁",
+      "jp": "堺区 南三国ヶ丘町1から2丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 南三国ヶ丘町3から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南三国ヶ丘町3から6丁",
+      "jp": "堺区 南三国ヶ丘町3から6丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 南庄町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南庄町1から2丁",
+      "jp": "堺区 南庄町1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 南清水町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南清水町1から3丁",
+      "jp": "堺区 南清水町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 南田出井町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南田出井町1から4丁",
+      "jp": "堺区 南田出井町1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 南島町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南島町1から5丁",
+      "jp": "堺区 南島町1から5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 南半町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南半町西1から4丁",
+      "jp": "堺区 南半町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 南半町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南半町東1から2丁",
+      "jp": "堺区 南半町東1から2丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 南旅篭町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南旅篭町西1から4丁",
+      "jp": "堺区 南旅篭町西1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 南旅篭町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南旅篭町東1から4丁",
+      "jp": "堺区 南旅篭町東1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 南陵町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 南陵町1から4丁",
+      "jp": "堺区 南陵町1から4丁",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 楠町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 楠町1から4丁",
+      "jp": "堺区 楠町1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 二条通1から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 二条通1から5街区",
+      "jp": "堺区 二条通1から5街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 二条通6から7街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 二条通6から7街区",
+      "jp": "堺区 二条通6から7街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 賑町1丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 賑町1丁",
+      "jp": "堺区 賑町1丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 賑町2から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 賑町2から4丁",
+      "jp": "堺区 賑町2から4丁",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 柏木町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 柏木町1から4丁",
+      "jp": "堺区 柏木町1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 八千代通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 八千代通1から2街区",
+      "jp": "堺区 八千代通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 八千代通3から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 八千代通3から4街区",
+      "jp": "堺区 八千代通3から4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 八幡通1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 八幡通1から3丁",
+      "jp": "堺区 八幡通1から3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 百舌鳥夕雲町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 百舌鳥夕雲町1から3丁",
+      "jp": "堺区 百舌鳥夕雲町1から3丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 文珠橋通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 文珠橋通1から2街区",
+      "jp": "堺区 文珠橋通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 文珠橋通3から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 文珠橋通3から4街区",
+      "jp": "堺区 文珠橋通3から4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 並松町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 並松町",
+      "jp": "堺区 並松町",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 北安井町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北安井町",
+      "jp": "堺区 北安井町",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 北花田口町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北花田口町1から3丁",
+      "jp": "堺区 北花田口町1から3丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 北瓦町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北瓦町1から2丁",
+      "jp": "堺区 北瓦町1から2丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 北丸保園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北丸保園",
+      "jp": "堺区 北丸保園",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 北向陽町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北向陽町1から2丁",
+      "jp": "堺区 北向陽町1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 北三国ヶ丘町1から8丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北三国ヶ丘町1から8丁",
+      "jp": "堺区 北三国ヶ丘町1から8丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 北庄町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北庄町1から3丁",
+      "jp": "堺区 北庄町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 北清水町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北清水町1から3丁",
+      "jp": "堺区 北清水町1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 北田出井町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北田出井町1から3丁",
+      "jp": "堺区 北田出井町1から3丁",
+      "pattern": "7"
+    },
+    {
+      "town": "堺区 北波止町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北波止町",
+      "jp": "堺区 北波止町",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 北半町西",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北半町西",
+      "jp": "堺区 北半町西",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 北半町東",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北半町東",
+      "jp": "堺区 北半町東",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 北旅籠町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北旅籠町西1から3丁",
+      "jp": "堺区 北旅籠町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 北旅籠町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 北旅籠町東1から2丁",
+      "jp": "堺区 北旅籠町東1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 柳之町西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 柳之町西1から3丁",
+      "jp": "堺区 柳之町西1から3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "堺区 柳之町東1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 柳之町東1から2丁",
+      "jp": "堺区 柳之町東1から2丁",
+      "pattern": "4"
+    },
+    {
+      "town": "堺区 竜神橋町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 竜神橋町1から2丁",
+      "jp": "堺区 竜神橋町1から2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 陵西通1街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 陵西通1街区",
+      "jp": "堺区 陵西通1街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 陵西通2から3街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 陵西通2から3街区",
+      "jp": "堺区 陵西通2から3街区",
+      "pattern": "3"
+    },
+    {
+      "town": "堺区 緑ヶ丘中町1丁1街区14､15､17､18､20から25､28､29､33から35号､3､4街区、2丁2､3街区、3丁2､3街区、4丁2から4街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 緑ヶ丘中町1丁1街区14､15､17､18､20から25､28､29､33から35号､3､4街区、2丁2､3街区、3丁2､3街区、4丁2から4街区",
+      "jp": "堺区 緑ヶ丘中町1丁1街区14､15､17､18､20から25､28､29､33から35号､3､4街区、2丁2､3街区、3丁2､3街区、4丁2から4街区",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 緑ヶ丘中町1丁1街区1から13､16､19､26､27､30から32､36から38号､2街区、2丁1街区、3丁1街区、4丁1､5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 緑ヶ丘中町1丁1街区1から13､16､19､26､27､30から32､36から38号､2街区、2丁1街区、3丁1街区、4丁1､5街区",
+      "jp": "堺区 緑ヶ丘中町1丁1街区1から13､16､19､26､27､30から32､36から38号､2街区、2丁1街区、3丁1街区、4丁1､5街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 緑ヶ丘南町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 緑ヶ丘南町1から4丁",
+      "jp": "堺区 緑ヶ丘南町1から4丁",
+      "pattern": "5"
+    },
+    {
+      "town": "堺区 緑ヶ丘北町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 緑ヶ丘北町1から4丁",
+      "jp": "堺区 緑ヶ丘北町1から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 緑町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 緑町1から4丁",
+      "jp": "堺区 緑町1から4丁",
+      "pattern": "6"
+    },
+    {
+      "town": "堺区 老松町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 老松町1から3丁",
+      "jp": "堺区 老松町1から3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "堺区 六条通1から2街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 六条通1から2街区",
+      "jp": "堺区 六条通1から2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "堺区 六条通3から5街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堺区 六条通3から5街区",
+      "jp": "堺区 六条通3から5街区",
+      "pattern": "3"
+    },
+    {
+      "town": "西区 下田町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 下田町",
+      "jp": "西区 下田町",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 家原寺町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 家原寺町1から2丁",
+      "jp": "西区 家原寺町1から2丁",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 宮下町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 宮下町",
+      "jp": "西区 宮下町",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 原田",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 原田",
+      "jp": "西区 原田",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 山田1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 山田1から4丁",
+      "jp": "西区 山田1から4丁",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 小代292番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 小代292番地",
+      "jp": "西区 小代292番地",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 上",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 上",
+      "jp": "西区 上",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 上野芝向ヶ丘町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 上野芝向ヶ丘町1から6丁",
+      "jp": "西区 上野芝向ヶ丘町1から6丁",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 上野芝町1から8丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 上野芝町1から8丁",
+      "jp": "西区 上野芝町1から8丁",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 神野町1丁、2丁2 17 22 24から26街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 神野町1丁、2丁2 17 22 24から26街区",
+      "jp": "西区 神野町1丁、2丁2 17 22 24から26街区",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 神野町2丁1､3から14､16､18から21､23街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 神野町2丁1､3から14､16､18から21､23街区",
+      "jp": "西区 神野町2丁1､3から14､16､18から21､23街区",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 神野町2丁15街区、3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 神野町2丁15街区、3丁",
+      "jp": "西区 神野町2丁15街区、3丁",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 石津ヶ丘",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 石津ヶ丘",
+      "jp": "西区 石津ヶ丘",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 石津西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 石津西町",
+      "jp": "西区 石津西町",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 草部",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 草部",
+      "jp": "西区 草部",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 太平寺（ただし、508の5、696､724から735､786番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 太平寺（ただし、508の5、696､724から735､786番地を除く）",
+      "jp": "西区 太平寺（ただし、508の5、696､724から735､786番地を除く）",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 太平寺696､724から735､786番地（ただし､696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 太平寺696､724から735､786番地（ただし､696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786番地を除く）",
+      "jp": "西区 太平寺696､724から735､786番地（ただし､696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786番地を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "西区 築港新町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 築港新町1から4丁",
+      "jp": "西区 築港新町1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 築港浜寺西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 築港浜寺西町",
+      "jp": "西区 築港浜寺西町",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 築港浜寺町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 築港浜寺町",
+      "jp": "西区 築港浜寺町",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 津久野町1丁（ただし、1街区11から15号を除く）、2丁13街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 津久野町1丁（ただし、1街区11から15号を除く）、2丁13街区",
+      "jp": "西区 津久野町1丁（ただし、1街区11から15号を除く）、2丁13街区",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 津久野町1丁1街区11から15号、2丁1から12､14から39街区、3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 津久野町1丁1街区11から15号、2丁1から12､14から39街区、3丁",
+      "jp": "西区 津久野町1丁1街区11から15号、2丁1から12､14から39街区、3丁",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 鶴田町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鶴田町",
+      "jp": "西区 鶴田町",
+      "pattern": "1"
+    },
+    {
+      "town": "西区 八田寺町40番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 八田寺町40番地",
+      "jp": "西区 八田寺町40番地",
+      "pattern": "12"
+    },
+    {
+      "town": "西区 菱木1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 菱木1から4丁",
+      "jp": "西区 菱木1から4丁",
+      "pattern": "9"
+    },
+    {
+      "town": "西区 浜寺元町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺元町1から6丁",
+      "jp": "西区 浜寺元町1から6丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺公園町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺公園町1から4丁",
+      "jp": "西区 浜寺公園町1から4丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺昭和町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺昭和町1から5丁",
+      "jp": "西区 浜寺昭和町1から5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺諏訪森町西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺諏訪森町西1から4丁",
+      "jp": "西区 浜寺諏訪森町西1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺諏訪森町中1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺諏訪森町中1から3丁",
+      "jp": "西区 浜寺諏訪森町中1から3丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺諏訪森町東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺諏訪森町東1から3丁",
+      "jp": "西区 浜寺諏訪森町東1から3丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺石津町西1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺石津町西1から5丁",
+      "jp": "西区 浜寺石津町西1から5丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺石津町中1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺石津町中1から5丁",
+      "jp": "西区 浜寺石津町中1から5丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺石津町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺石津町東1から4丁",
+      "jp": "西区 浜寺石津町東1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "西区 浜寺石津町東5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺石津町東5丁",
+      "jp": "西区 浜寺石津町東5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺船尾町西1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺船尾町西1から5丁",
+      "jp": "西区 浜寺船尾町西1から5丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺船尾町東1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺船尾町東1から4丁",
+      "jp": "西区 浜寺船尾町東1から4丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 浜寺南町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 浜寺南町1から3丁",
+      "jp": "西区 浜寺南町1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 平岡町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 平岡町",
+      "jp": "西区 平岡町",
+      "pattern": "12"
+    },
+    {
+      "town": "西区 鳳西町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳西町1から3丁",
+      "jp": "西区 鳳西町1から3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "西区 鳳中町1から10丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳中町1から10丁",
+      "jp": "西区 鳳中町1から10丁",
+      "pattern": "11"
+    },
+    {
+      "town": "西区 鳳東町1から4丁、7丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳東町1から4丁、7丁",
+      "jp": "西区 鳳東町1から4丁、7丁",
+      "pattern": "8"
+    },
+    {
+      "town": "西区 鳳東町5から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳東町5から6丁",
+      "jp": "西区 鳳東町5から6丁",
+      "pattern": "11"
+    },
+    {
+      "town": "西区 鳳南町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳南町1から5丁",
+      "jp": "西区 鳳南町1から5丁",
+      "pattern": "8"
+    },
+    {
+      "town": "西区 鳳北町1から8丁、9丁（520､530の1 5番地を除く）、10丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳北町1から8丁、9丁（520､530の1 5番地を除く）、10丁",
+      "jp": "西区 鳳北町1から8丁、9丁（520､530の1 5番地を除く）、10丁",
+      "pattern": "11"
+    },
+    {
+      "town": "西区 鳳北町9丁520､530の1 5番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 鳳北町9丁520､530の1 5番地",
+      "jp": "西区 鳳北町9丁520､530の1 5番地",
+      "pattern": "6"
+    },
+    {
+      "town": "西区 北条町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 北条町1から2丁",
+      "jp": "西区 北条町1から2丁",
+      "pattern": "5"
+    },
+    {
+      "town": "西区 堀上緑町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西区 堀上緑町1から3丁",
+      "jp": "西区 堀上緑町1から3丁",
+      "pattern": "12"
+    },
+    {
+      "town": "中区 学園町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 学園町",
+      "jp": "中区 学園町",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 宮園町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 宮園町",
+      "jp": "中区 宮園町",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 見野山",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 見野山",
+      "jp": "中区 見野山",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 高蔵寺",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 高蔵寺",
+      "jp": "中区 高蔵寺",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 三原台2丁11の7 9から17 21番地、3丁59の2から18 21から25番地、4丁60の1､107の3から12 16から21番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 三原台2丁11の7 9から17 21番地、3丁59の2から18 21から25番地、4丁60の1､107の3から12 16から21番地",
+      "jp": "中区 三原台2丁11の7 9から17 21番地、3丁59の2から18 21から25番地、4丁60の1､107の3から12 16から21番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 小阪（136の1を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 小阪（136の1を除く）",
+      "jp": "中区 小阪（136の1を除く）",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 小阪136の1",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 小阪136の1",
+      "jp": "中区 小阪136の1",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 小阪西町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 小阪西町",
+      "jp": "中区 小阪西町",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 上之",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 上之",
+      "jp": "中区 上之",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 新家町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 新家町",
+      "jp": "中区 新家町",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 深井水池町（ただし､452､459､460、471、472番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井水池町（ただし､452､459､460、471、472番地を除く）",
+      "jp": "中区 深井水池町（ただし､452､459､460、471、472番地を除く）",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 深井水池町452､459､460、471、472番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井水池町452､459､460、471、472番地",
+      "jp": "中区 深井水池町452､459､460、471、472番地",
+      "pattern": "11"
+    },
+    {
+      "town": "中区 深井清水町1284の1､1285から1293､1314から1317の1､1317の3から1326の1､1326の3から1332の1､1332の3か ら1338の2､1338の4､1338の6から1339の3､1339の5から1341の2､1341の5から1342の2､1342の5から 1345､1346の2から1347の2､1347の5 6､1351の1 2､1375の5､1463､1467から1475､1539から1543､ 1546から1551､1570から1574､1575の3から1577の5 7から11 14から16､1578から1581の2､1581の4から 1583､3036から3037､3055､3531から3548､3795から4113番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井清水町1284の1､1285から1293､1314から1317の1､1317の3から1326の1､1326の3から1332の1､1332の3か ら1338の2､1338の4､1338の6から1339の3､1339の5から1341の2､1341の5から1342の2､1342の5から 1345､1346の2から1347の2､1347の5 6､1351の1 2､1375の5､1463､1467から1475､1539から1543､ 1546から1551､1570から1574､1575の3から1577の5 7から11 14から16､1578から1581の2､1581の4から 1583､3036から3037､3055､3531から3548､3795から4113番地",
+      "jp": "中区 深井清水町1284の1､1285から1293､1314から1317の1､1317の3から1326の1､1326の3から1332の1､1332の3か ら1338の2､1338の4､1338の6から1339の3､1339の5から1341の2､1341の5から1342の2､1342の5から 1345､1346の2から1347の2､1347の5 6､1351の1 2､1375の5､1463､1467から1475､1539から1543､ 1546から1551､1570から1574､1575の3から1577の5 7から11 14から16､1578から1581の2､1581の4から 1583､3036から3037､3055､3531から3548､3795から4113番地",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 深井清水町1から1283､1284の2から5､1294から1313､1317の2､1326の2､1332の2､1338の3 5､1339の4､ 1341の3から4､1342の3から4､1346の1､1347の3から4､1348から1350､1351の3から1375の4､1376から 1462､1464から1466､1476から1538､1544から1545､1552から1569､1575の1から2､1577の6 12から 13 17から33､1581の3､1584から3035､3038から3054､3056から3530､3549から3794番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井清水町1から1283､1284の2から5､1294から1313､1317の2､1326の2､1332の2､1338の3 5､1339の4､ 1341の3から4､1342の3から4､1346の1､1347の3から4､1348から1350､1351の3から1375の4､1376から 1462､1464から1466､1476から1538､1544から1545､1552から1569､1575の1から2､1577の6 12から 13 17から33､1581の3､1584から3035､3038から3054､3056から3530､3549から3794番地",
+      "jp": "中区 深井清水町1から1283､1284の2から5､1294から1313､1317の2､1326の2､1332の2､1338の3 5､1339の4､ 1341の3から4､1342の3から4､1346の1､1347の3から4､1348から1350､1351の3から1375の4､1376から 1462､1464から1466､1476から1538､1544から1545､1552から1569､1575の1から2､1577の6 12から 13 17から33､1581の3､1584から3035､3038から3054､3056から3530､3549から3794番地",
+      "pattern": "11"
+    },
+    {
+      "town": "中区 深井沢町1から3100､3125から3459番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井沢町1から3100､3125から3459番地",
+      "jp": "中区 深井沢町1から3100､3125から3459番地",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 深井沢町3101から3124番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井沢町3101から3124番地",
+      "jp": "中区 深井沢町3101から3124番地",
+      "pattern": "11"
+    },
+    {
+      "town": "中区 深井中町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井中町",
+      "jp": "中区 深井中町",
+      "pattern": "11"
+    },
+    {
+      "town": "中区 深井東町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井東町",
+      "jp": "中区 深井東町",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 深井畑山町（ただし、2625番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井畑山町（ただし、2625番地を除く）",
+      "jp": "中区 深井畑山町（ただし、2625番地を除く）",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 深井畑山町2625番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井畑山町2625番地",
+      "jp": "中区 深井畑山町2625番地",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 深井北町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深井北町",
+      "jp": "中区 深井北町",
+      "pattern": "11"
+    },
+    {
+      "town": "中区 深阪",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 深阪",
+      "jp": "中区 深阪",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 大野芝町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 大野芝町",
+      "jp": "中区 大野芝町",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 竹城台1丁1の18､13の5から7 9番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 竹城台1丁1の18､13の5から7 9番地",
+      "jp": "中区 竹城台1丁1の18､13の5から7 9番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 辻之",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 辻之",
+      "jp": "中区 辻之",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 田園",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 田園",
+      "jp": "中区 田園",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 土師町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 土師町1から5丁",
+      "jp": "中区 土師町1から5丁",
+      "pattern": "5"
+    },
+    {
+      "town": "中区 土塔町1931から1959､1979､1982から1994､1995の2から4､2044の48番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 土塔町1931から1959､1979､1982から1994､1995の2から4､2044の48番地",
+      "jp": "中区 土塔町1931から1959､1979､1982から1994､1995の2から4､2044の48番地",
+      "pattern": "5"
+    },
+    {
+      "town": "中区 土塔町1から1930、1960から1978、1980から1981、1995の1、1995の5から2044の47、2044の49から3414番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 土塔町1から1930、1960から1978、1980から1981、1995の1、1995の5から2044の47、2044の49から3414番地",
+      "jp": "中区 土塔町1から1930、1960から1978、1980から1981、1995の1、1995の5から2044の47、2044の49から3414番地",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 東山1から858､1116から1122番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 東山1から858､1116から1122番地",
+      "jp": "中区 東山1から858､1116から1122番地",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 東山859から1115番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 東山859から1115番地",
+      "jp": "中区 東山859から1115番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 東八田",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 東八田",
+      "jp": "中区 東八田",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 陶器北1から22､24から40､42から55の1､55の5から57の1､58の3､66､67の3､87の1 5､87の7から88の1､89の3  6､90の2､90の5､1672から1674の2､1674の4から1679の1､1680の1 4､1681の4から1684の1､1688の1  6､1689の1､1690の3､1696の3 4､1697の3 4､1703､1720から1721､1723から1724番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 陶器北1から22､24から40､42から55の1､55の5から57の1､58の3､66､67の3､87の1 5､87の7から88の1､89の3  6､90の2､90の5､1672から1674の2､1674の4から1679の1､1680の1 4､1681の4から1684の1､1688の1  6､1689の1､1690の3､1696の3 4､1697の3 4､1703､1720から1721､1723から1724番地",
+      "jp": "中区 陶器北1から22､24から40､42から55の1､55の5から57の1､58の3､66､67の3､87の1 5､87の7から88の1､89の3  6､90の2､90の5､1672から1674の2､1674の4から1679の1､1680の1 4､1681の4から1684の1､1688の1  6､1689の1､1690の3､1696の3 4､1697の3 4､1703､1720から1721､1723から1724番地",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 陶器北23､41､55の2から4､57の2から58の2､59から65､67の1 2､67の4から86､87の2から4 6､88の2から89の2､ 89の4 5､89の7から90の1､90の3 4､90の6から1671､1674の3､1679の2から4､1680の2 3､1680の5から 1681の3､1684の2から1687､1688の2から5 7､1689の2から1690の2､1691から1696の2､1697の1 2､ 1697の5から1702､1704から1719､1722､1725から1918番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 陶器北23､41､55の2から4､57の2から58の2､59から65､67の1 2､67の4から86､87の2から4 6､88の2から89の2､ 89の4 5､89の7から90の1､90の3 4､90の6から1671､1674の3､1679の2から4､1680の2 3､1680の5から 1681の3､1684の2から1687､1688の2から5 7､1689の2から1690の2､1691から1696の2､1697の1 2､ 1697の5から1702､1704から1719､1722､1725から1918番地",
+      "jp": "中区 陶器北23､41､55の2から4､57の2から58の2､59から65､67の1 2､67の4から86､87の2から4 6､88の2から89の2､ 89の4 5､89の7から90の1､90の3 4､90の6から1671､1674の3､1679の2から4､1680の2 3､1680の5から 1681の3､1684の2から1687､1688の2から5 7､1689の2から1690の2､1691から1696の2､1697の1 2､ 1697の5から1702､1704から1719､1722､1725から1918番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 楢葉",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 楢葉",
+      "jp": "中区 楢葉",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 八田寺町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 八田寺町",
+      "jp": "中区 八田寺町",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 八田西町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 八田西町1から3丁",
+      "jp": "中区 八田西町1から3丁",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 八田南之町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 八田南之町",
+      "jp": "中区 八田南之町",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 八田北町（ただし、510番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 八田北町（ただし、510番地を除く）",
+      "jp": "中区 八田北町（ただし、510番地を除く）",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 八田北町510番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 八田北町510番地",
+      "jp": "中区 八田北町510番地",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 伏尾",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 伏尾",
+      "jp": "中区 伏尾",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 福田1398の4から13",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 福田1398の4から13",
+      "jp": "中区 福田1398の4から13",
+      "pattern": "2"
+    },
+    {
+      "town": "中区 福田1から538の1､538の6から540の1､541から543､544の2から4､547の1､547の3から549の2､549の4から550､ 551の1 5､552の2､554の1 2 4､555の1 2､557から558､561から564､568から570､575から598､599の 2から4､642の3､644から651､660､665､670から671､676､681､682の1､682の4から7､683の2 3､842の 5から7､845から867､868の3､869の2から4､1054の6 7､1056の6から1079の1､1080､1306の3 4､1407か ら1408､1419から1674番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 福田1から538の1､538の6から540の1､541から543､544の2から4､547の1､547の3から549の2､549の4から550､ 551の1 5､552の2､554の1 2 4､555の1 2､557から558､561から564､568から570､575から598､599の 2から4､642の3､644から651､660､665､670から671､676､681､682の1､682の4から7､683の2 3､842の 5から7､845から867､868の3､869の2から4､1054の6 7､1056の6から1079の1､1080､1306の3 4､1407か ら1408､1419から1674番地",
+      "jp": "中区 福田1から538の1､538の6から540の1､541から543､544の2から4､547の1､547の3から549の2､549の4から550､ 551の1 5､552の2､554の1 2 4､555の1 2､557から558､561から564､568から570､575から598､599の 2から4､642の3､644から651､660､665､670から671､676､681､682の1､682の4から7､683の2 3､842の 5から7､845から867､868の3､869の2から4､1054の6 7､1056の6から1079の1､1080､1306の3 4､1407か ら1408､1419から1674番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 福田538の2から5､540の2から8､544の1､544の5から546､547の2､549の3､551の2から4､552の1 3､553､554 の3､555の3から556､559から560､565から567､571から574､599の1､600から642の2､642の4から643､652 から659､661から664､666から669､672から675､677から680､682の2 3､683の1､683の4から842の4､842 の8から844､868の1 2､868の4から869の1､870から1054の5､1055から1056の5､1079の2から5､1081から 1306の2､1307から1398の3、1399から1406、1409から1418番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 福田538の2から5､540の2から8､544の1､544の5から546､547の2､549の3､551の2から4､552の1 3､553､554 の3､555の3から556､559から560､565から567､571から574､599の1､600から642の2､642の4から643､652 から659､661から664､666から669､672から675､677から680､682の2 3､683の1､683の4から842の4､842 の8から844､868の1 2､868の4から869の1､870から1054の5､1055から1056の5､1079の2から5､1081から 1306の2､1307から1398の3、1399から1406、1409から1418番地",
+      "jp": "中区 福田538の2から5､540の2から8､544の1､544の5から546､547の2､549の3､551の2から4､552の1 3､553､554 の3､555の3から556､559から560､565から567､571から574､599の1､600から642の2､642の4から643､652 から659､661から664､666から669､672から675､677から680､682の2 3､683の1､683の4から842の4､842 の8から844､868の1 2､868の4から869の1､870から1054の5､1055から1056の5､1079の2から5､1081から 1306の2､1307から1398の3、1399から1406、1409から1418番地",
+      "pattern": "9"
+    },
+    {
+      "town": "中区 平井（ただし、623の6 34から47 58から60番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 平井（ただし、623の6 34から47 58から60番地を除く）",
+      "jp": "中区 平井（ただし、623の6 34から47 58から60番地を除く）",
+      "pattern": "10"
+    },
+    {
+      "town": "中区 平井623の6 34から47 58から60番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 平井623の6 34から47 58から60番地",
+      "jp": "中区 平井623の6 34から47 58から60番地",
+      "pattern": "8"
+    },
+    {
+      "town": "中区 堀上町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 堀上町",
+      "jp": "中区 堀上町",
+      "pattern": "4"
+    },
+    {
+      "town": "中区 毛穴町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中区 毛穴町",
+      "jp": "中区 毛穴町",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 引野町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 引野町1から3丁",
+      "jp": "東区 引野町1から3丁",
+      "pattern": "10"
+    },
+    {
+      "town": "東区 関茶屋",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 関茶屋",
+      "jp": "東区 関茶屋",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 高松1から37、39から334、345、347から360、362、366から369、386、389、392、412から414、423から431、433、439から440、457から486、502、504から576番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 高松1から37、39から334、345、347から360、362、366から369、386、389、392、412から414、423から431、433、439から440、457から486、502、504から576番地",
+      "jp": "東区 高松1から37、39から334、345、347から360、362、366から369、386、389、392、412から414、423から431、433、439から440、457から486、502、504から576番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 高松361､363から365番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 高松361､363から365番地",
+      "jp": "東区 高松361､363から365番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 高松38、335から344、346、370から385、387から388、390から391、393から411、415から422、432、434から438、441から456、487から501、503番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 高松38、335から344、346、370から385、387から388、390から391、393から411、415から422、432、434から438、441から456、487から501、503番地",
+      "jp": "東区 高松38、335から344、346、370から385、387から388、390から391、393から411、415から422、432、434から438、441から456、487から501、503番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 丈六1から444､448から453､455から467番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 丈六1から444､448から453､455から467番地",
+      "jp": "東区 丈六1から444､448から453､455から467番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 丈六445から447番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 丈六445から447番地",
+      "jp": "東区 丈六445から447番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 丈六454番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 丈六454番地",
+      "jp": "東区 丈六454番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 西野1から470､483から485､489から580番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 西野1から470､483から485､489から580番地",
+      "jp": "東区 西野1から470､483から485､489から580番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 西野471から482､486から488、581から582番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 西野471から482､486から488、581から582番地",
+      "jp": "東区 西野471から482､486から488、581から582番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 石原町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 石原町",
+      "jp": "東区 石原町",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 草 尾1から309､310の3から311､313の3から4､752､756､764の1から2､765の1から2､766の3､767の2 4､768の 1から2、768の4から1155､1176の2から8､1390から1392､1435､1441から1449､1491から1494番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 草 尾1から309､310の3から311､313の3から4､752､756､764の1から2､765の1から2､766の3､767の2 4､768の 1から2、768の4から1155､1176の2から8､1390から1392､1435､1441から1449､1491から1494番地",
+      "jp": "東区 草 尾1から309､310の3から311､313の3から4､752､756､764の1から2､765の1から2､766の3､767の2 4､768の 1から2、768の4から1155､1176の2から8､1390から1392､1435､1441から1449､1491から1494番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 草 尾310の1から2､312から313の2、313の5から751､753から755､757から763､764の3､765の3から4､766の1から 2､767の3､767の5から6、768の3､1156から1176の1､1176の9から1389､1393から1434､1436から1440､ 1450から1490番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 草 尾310の1から2､312から313の2、313の5から751､753から755､757から763､764の3､765の3から4､766の1から 2､767の3､767の5から6、768の3､1156から1176の1､1176の9から1389､1393から1434､1436から1440､ 1450から1490番地",
+      "jp": "東区 草 尾310の1から2､312から313の2、313の5から751､753から755､757から763､764の3､765の3から4､766の1から 2､767の3､767の5から6、768の3､1156から1176の1､1176の9から1389､1393から1434､1436から1440､ 1450から1490番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 草尾1495番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 草尾1495番地",
+      "jp": "東区 草尾1495番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 大美野（ただし､12の2 3 5 9から12番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大美野（ただし､12の2 3 5 9から12番地を除く）",
+      "jp": "東区 大美野（ただし､12の2 3 5 9から12番地を除く）",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 大美野12の2 3 5 9から12番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 大美野12の2 3 5 9から12番地",
+      "jp": "東区 大美野12の2 3 5 9から12番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 中茶屋1から56､63から1078番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 中茶屋1から56､63から1078番地",
+      "jp": "東区 中茶屋1から56､63から1078番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 中茶屋57から62番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 中茶屋57から62番地",
+      "jp": "東区 中茶屋57から62番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 南野田1から346､350､358から364､366から379､381､402から696の4､697から703番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 南野田1から346､350､358から364､366から379､381､402から696の4､697から703番地",
+      "jp": "東区 南野田1から346､350､358から364､366から379､381､402から696の4､697から703番地",
+      "pattern": "8"
+    },
+    {
+      "town": "東区 南野田347から349､351から357､365､380､382から401､696の5から56番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 南野田347から349､351から357､365､380､382から401､696の5から56番地",
+      "jp": "東区 南野田347から349､351から357､365､380､382から401､696の5から56番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 日置荘原寺町139から142番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘原寺町139から142番地",
+      "jp": "東区 日置荘原寺町139から142番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 日置荘原寺町1から58､65から138､143から581番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘原寺町1から58､65から138､143から581番地",
+      "jp": "東区 日置荘原寺町1から58､65から138､143から581番地",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 日置荘原寺町59から62、63、64の2、64の3番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘原寺町59から62、63、64の2、64の3番地",
+      "jp": "東区 日置荘原寺町59から62、63、64の2、64の3番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 日置荘西町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘西町1から3丁",
+      "jp": "東区 日置荘西町1から3丁",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 日置荘西町4から8丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘西町4から8丁",
+      "jp": "東区 日置荘西町4から8丁",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 日置荘田中町（ただし、187､189番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘田中町（ただし、187､189番地を除く）",
+      "jp": "東区 日置荘田中町（ただし、187､189番地を除く）",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 日置荘田中町187､189番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘田中町187､189番地",
+      "jp": "東区 日置荘田中町187､189番地",
+      "pattern": "3"
+    },
+    {
+      "town": "東区 日置荘北町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 日置荘北町",
+      "jp": "東区 日置荘北町",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 白鷺町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 白鷺町1から3丁",
+      "jp": "東区 白鷺町1から3丁",
+      "pattern": "10"
+    },
+    {
+      "town": "東区 八下町1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 八下町1から3丁",
+      "jp": "東区 八下町1から3丁",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 菩提町1丁1から7､44から51番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 菩提町1丁1から7､44から51番地",
+      "jp": "東区 菩提町1丁1から7､44から51番地",
+      "pattern": "10"
+    },
+    {
+      "town": "東区 菩提町1丁8から43､52から259番地、2から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 菩提町1丁8から43､52から259番地、2から5丁",
+      "jp": "東区 菩提町1丁8から43､52から259番地、2から5丁",
+      "pattern": "11"
+    },
+    {
+      "town": "東区 北野田13､15から51､55から66､90､103から111､237から1039､1041から1073番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 北野田13､15から51､55から66､90､103から111､237から1039､1041から1073番地",
+      "jp": "東区 北野田13､15から51､55から66､90､103から111､237から1039､1041から1073番地",
+      "pattern": "8"
+    },
+    {
+      "town": "東区 北野田1から12､14番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 北野田1から12､14番地",
+      "jp": "東区 北野田1から12､14番地",
+      "pattern": "2"
+    },
+    {
+      "town": "東区 北野田52から54､67から89､91から102､112から236､1040､1074から1092番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 北野田52から54､67から89､91から102､112から236､1040､1074から1092番地",
+      "jp": "東区 北野田52から54､67から89､91から102､112から236､1040､1074から1092番地",
+      "pattern": "4"
+    },
+    {
+      "town": "東区 野尻町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東区 野尻町",
+      "jp": "東区 野尻町",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 稲葉1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 稲葉1から3丁",
+      "jp": "南区 稲葉1から3丁",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 釜 室（ただし､1､3の2から4､188の2 15から18 23から29 31から73､295から297､299､305、306、307の1 9から 77､407の12 14 33 37から46､420､1014の2 3 5から7、1050の1 7から13番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 釜 室（ただし､1､3の2から4､188の2 15から18 23から29 31から73､295から297､299､305、306、307の1 9から 77､407の12 14 33 37から46､420､1014の2 3 5から7、1050の1 7から13番地を除く）",
+      "jp": "南区 釜 室（ただし､1､3の2から4､188の2 15から18 23から29 31から73､295から297､299､305、306、307の1 9から 77､407の12 14 33 37から46､420､1014の2 3 5から7、1050の1 7から13番地を除く）",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 釜室1、3の2から4、188の2 15から18 23から29 31から73、295から297、299、305、306、307の1 9から77、407の12 14 33 37から46、420番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 釜室1、3の2から4、188の2 15から18 23から29 31から73、295から297、299、305、306、307の1 9から77、407の12 14 33 37から46、420番地",
+      "jp": "南区 釜室1、3の2から4、188の2 15から18 23から29 31から73、295から297、299、305、306、307の1 9から77、407の12 14 33 37から46、420番地",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 釜室1014の2 3 5から7、1050の1 7から13番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 釜室1014の2 3 5から7、1050の1 7から13番地",
+      "jp": "南区 釜室1014の2 3 5から7、1050の1 7から13番地",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 鴨谷台1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 鴨谷台1から3丁",
+      "jp": "南区 鴨谷台1から3丁",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 岩室",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 岩室",
+      "jp": "南区 岩室",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 逆瀬川",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 逆瀬川",
+      "jp": "南区 逆瀬川",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 宮山台1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 宮山台1から4丁",
+      "jp": "南区 宮山台1から4丁",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 原山台1丁、2丁1から5街区、5丁2から22街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 原山台1丁、2丁1から5街区、5丁2から22街区",
+      "jp": "南区 原山台1丁、2丁1から5街区、5丁2から22街区",
+      "pattern": "11"
+    },
+    {
+      "town": "南区 原山台2丁6から7街区、3から4丁、5丁1街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 原山台2丁6から7街区、3から4丁、5丁1街区",
+      "jp": "南区 原山台2丁6から7街区、3から4丁、5丁1街区",
+      "pattern": "9"
+    },
+    {
+      "town": "南区 御池台1丁から5丁（ただし12の52から66を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 御池台1丁から5丁（ただし12の52から66を除く）",
+      "jp": "南区 御池台1丁から5丁（ただし12の52から66を除く）",
+      "pattern": "7"
+    },
+    {
+      "town": "南区 御池台2丁12の52から66",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 御池台2丁12の52から66",
+      "jp": "南区 御池台2丁12の52から66",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 高倉台",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 高倉台",
+      "jp": "南区 高倉台",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 高尾1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 高尾1から3丁",
+      "jp": "南区 高尾1から3丁",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 三原台1丁、2丁1街区から13街区、3丁1街区から40街区、4丁1街区から48街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 三原台1丁、2丁1街区から13街区、3丁1街区から40街区、4丁1街区から48街区",
+      "jp": "南区 三原台1丁、2丁1街区から13街区、3丁1街区から40街区、4丁1街区から48街区",
+      "pattern": "1"
+    },
+    {
+      "town": "南区 三原台4丁5の8番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 三原台4丁5の8番地",
+      "jp": "南区 三原台4丁5の8番地",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 三木閉",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 三木閉",
+      "jp": "南区 三木閉",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 若松台1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 若松台1から3丁",
+      "jp": "南区 若松台1から3丁",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 小代1から291、293から432、434から509、511から519、551から556、559から564、567から1181番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 小代1から291、293から432、434から509、511から519、551から556、559から564、567から1181番地",
+      "jp": "南区 小代1から291、293から432、434から509、511から519、551から556、559から564、567から1181番地",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 小代433､510､520から550､557から558､565から566番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 小代433､510､520から550､557から558､565から566番地",
+      "jp": "南区 小代433､510､520から550､557から558､565から566番地",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 城山台1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 城山台1から5丁",
+      "jp": "南区 城山台1から5丁",
+      "pattern": "9"
+    },
+    {
+      "town": "南区 新檜尾台1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 新檜尾台1から4丁",
+      "jp": "南区 新檜尾台1から4丁",
+      "pattern": "7"
+    },
+    {
+      "town": "南区 深阪南",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 深阪南",
+      "jp": "南区 深阪南",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 晴美台1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 晴美台1から4丁",
+      "jp": "南区 晴美台1から4丁",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 赤坂台1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 赤坂台1から6丁",
+      "jp": "南区 赤坂台1から6丁",
+      "pattern": "5"
+    },
+    {
+      "town": "南区 泉田中",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 泉田中",
+      "jp": "南区 泉田中",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 太平寺508の5",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 太平寺508の5",
+      "jp": "南区 太平寺508の5",
+      "pattern": "9"
+    },
+    {
+      "town": "南区 太平寺696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786の3番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 太平寺696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786の3番地",
+      "jp": "南区 太平寺696の2から5､724の1 3､725の1､726の1､727､728､728の1､729から733の1 2､735､786の3番地",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 大森",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大森",
+      "jp": "南区 大森",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 大庭寺",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 大庭寺",
+      "jp": "南区 大庭寺",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 竹城台1丁1から12街区",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 竹城台1丁1から12街区",
+      "jp": "南区 竹城台1丁1から12街区",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 竹城台2から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 竹城台2から4丁",
+      "jp": "南区 竹城台2から4丁",
+      "pattern": "4"
+    },
+    {
+      "town": "南区 茶山台1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 茶山台1から3丁",
+      "jp": "南区 茶山台1から3丁",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 栂",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 栂",
+      "jp": "南区 栂",
+      "pattern": "11"
+    },
+    {
+      "town": "南区 庭代台1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 庭代台1から4丁",
+      "jp": "南区 庭代台1から4丁",
+      "pattern": "5"
+    },
+    {
+      "town": "南区 土佐屋台",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 土佐屋台",
+      "jp": "南区 土佐屋台",
+      "pattern": "8"
+    },
+    {
+      "town": "南区 桃山台1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 桃山台1から2丁",
+      "jp": "南区 桃山台1から2丁",
+      "pattern": "11"
+    },
+    {
+      "town": "南区 桃山台3から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 桃山台3から4丁",
+      "jp": "南区 桃山台3から4丁",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 畑（ただし、1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 畑（ただし、1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地を除く）",
+      "jp": "南区 畑（ただし、1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地を除く）",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 畑1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 畑1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地",
+      "jp": "南区 畑1799の3 36 40から89、1813、1818の1 4から22、1834の4 14、1838の5から7、1840番地",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 鉢ヶ峯寺",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 鉢ヶ峯寺",
+      "jp": "南区 鉢ヶ峯寺",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 美木多上（ただし､1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 美木多上（ただし､1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地を除く）",
+      "jp": "南区 美木多上（ただし､1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地を除く）",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 美木多上1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 美木多上1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地",
+      "jp": "南区 美木多上1995の1 9から13 24から28、2018の2 8 19から29、2021の1､2022の1 3 10､2023の2､2024の1 4 15､2026の1 3から5 9から14 18から28、2027番地",
+      "pattern": "7"
+    },
+    {
+      "town": "南区 富蔵",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 富蔵",
+      "jp": "南区 富蔵",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 別所",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 別所",
+      "jp": "南区 別所",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 片蔵（ただし､434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 片蔵（ただし､434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地を除く）",
+      "jp": "南区 片蔵（ただし､434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地を除く）",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 片蔵434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 片蔵434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地",
+      "jp": "南区 片蔵434 442 449 456 460の1 2 12 13 16 18から44 46から49 51から55 61 63から65 68から97､462 1389番地",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 豊田（ただし、15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 豊田（ただし、15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2を除く）",
+      "jp": "南区 豊田（ただし、15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2を除く）",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 豊田15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 豊田15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2",
+      "jp": "南区 豊田15の2から50、17の2 4、27の2から7、45の1から6、570の2 3、571の2",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 野々井",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 野々井",
+      "jp": "南区 野々井",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 和田1から38､118から122､156から218､228から1041､1043から3458番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 和田1から38､118から122､156から218､228から1041､1043から3458番地",
+      "jp": "南区 和田1から38､118から122､156から218､228から1041､1043から3458番地",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 和田39から117、123から155、219から227、1042番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 和田39から117、123から155、219から227、1042番地",
+      "jp": "南区 和田39から117、123から155、219から227、1042番地",
+      "pattern": "2"
+    },
+    {
+      "town": "南区 和田東",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 和田東",
+      "jp": "南区 和田東",
+      "pattern": "6"
+    },
+    {
+      "town": "南区 檜尾1から3064番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 檜尾1から3064番地",
+      "jp": "南区 檜尾1から3064番地",
+      "pattern": "12"
+    },
+    {
+      "town": "南区 檜尾3065から9006番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 檜尾3065から9006番地",
+      "jp": "南区 檜尾3065から9006番地",
+      "pattern": "5"
+    },
+    {
+      "town": "南区 槇塚台1丁から2丁（ただし､17街区94から102号及び17の3 24から26 43から45番地を除く）、3から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 槇塚台1丁から2丁（ただし､17街区94から102号及び17の3 24から26 43から45番地を除く）、3から4丁",
+      "jp": "南区 槇塚台1丁から2丁（ただし､17街区94から102号及び17の3 24から26 43から45番地を除く）、3から4丁",
+      "pattern": "10"
+    },
+    {
+      "town": "南区 槇塚台2丁17街区94から102号、及び17の3 24から26 43から45番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南区 槇塚台2丁17街区94から102号、及び17の3 24から26 43から45番地",
+      "jp": "南区 槇塚台2丁17街区94から102号、及び17の3 24から26 43から45番地",
+      "pattern": "6"
+    },
+    {
+      "town": "美原区 さつき野西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 さつき野西1から3丁",
+      "jp": "美原区 さつき野西1から3丁",
+      "pattern": "18"
+    },
+    {
+      "town": "美原区 さつき野東1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 さつき野東1から3丁",
+      "jp": "美原区 さつき野東1から3丁",
+      "pattern": "18"
+    },
+    {
+      "town": "美原区 阿弥",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 阿弥",
+      "jp": "美原区 阿弥",
+      "pattern": "13"
+    },
+    {
+      "town": "美原区 黒山（72から78、263から267、269から310、512から613、643から728番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 黒山（72から78、263から267、269から310、512から613、643から728番地を除く）",
+      "jp": "美原区 黒山（72から78、263から267、269から310、512から613、643から728番地を除く）",
+      "pattern": "13"
+    },
+    {
+      "town": "美原区 黒山72から78、263から267、269から310、512から613、643から728番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 黒山72から78、263から267、269から310、512から613、643から728番地",
+      "jp": "美原区 黒山72から78、263から267、269から310、512から613、643から728番地",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 今井",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 今井",
+      "jp": "美原区 今井",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 小寺",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 小寺",
+      "jp": "美原区 小寺",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 小平尾",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 小平尾",
+      "jp": "美原区 小平尾",
+      "pattern": "17"
+    },
+    {
+      "town": "美原区 真福寺",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 真福寺",
+      "jp": "美原区 真福寺",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 菅生",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 菅生",
+      "jp": "美原区 菅生",
+      "pattern": "17"
+    },
+    {
+      "town": "美原区 青南台1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 青南台1から2丁",
+      "jp": "美原区 青南台1から2丁",
+      "pattern": "17"
+    },
+    {
+      "town": "美原区 石原",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 石原",
+      "jp": "美原区 石原",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 多治井",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 多治井",
+      "jp": "美原区 多治井",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 太井",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 太井",
+      "jp": "美原区 太井",
+      "pattern": "16"
+    },
+    {
+      "town": "美原区 大饗",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 大饗",
+      "jp": "美原区 大饗",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 大保",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 大保",
+      "jp": "美原区 大保",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 丹上",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 丹上",
+      "jp": "美原区 丹上",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 丹南",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 丹南",
+      "jp": "美原区 丹南",
+      "pattern": "15"
+    },
+    {
+      "town": "美原区 南余部",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 南余部",
+      "jp": "美原区 南余部",
+      "pattern": "13"
+    },
+    {
+      "town": "美原区 南余部西1から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 南余部西1から3丁",
+      "jp": "美原区 南余部西1から3丁",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 平尾",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 平尾",
+      "jp": "美原区 平尾",
+      "pattern": "17"
+    },
+    {
+      "town": "美原区 菩提",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 菩提",
+      "jp": "美原区 菩提",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 北余部（23から47、52から53番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 北余部（23から47、52から53番地を除く）",
+      "jp": "美原区 北余部（23から47、52から53番地を除く）",
+      "pattern": "16"
+    },
+    {
+      "town": "美原区 北余部23から47、52から53番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 北余部23から47、52から53番地",
+      "jp": "美原区 北余部23から47、52から53番地",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 北余部西1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 北余部西1から4丁",
+      "jp": "美原区 北余部西1から4丁",
+      "pattern": "14"
+    },
+    {
+      "town": "美原区 木材通1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "美原区 木材通1から4丁",
+      "jp": "美原区 木材通1から4丁",
+      "pattern": "17"
+    },
+    {
+      "town": "北区 奥本町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 奥本町1から2丁",
+      "jp": "北区 奥本町1から2丁",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 宮本町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 宮本町",
+      "jp": "北区 宮本町",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 金岡町1133の1 2 4 5から1229の1 6から9 14 15､1237から1239､1303の1 2､1304から1312､1317から 1770､1819から2028､2031から2048、2050から2051､2272、2275の8 9 19から26、3027の1から10､ 3033､3037から3050番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 金岡町1133の1 2 4 5から1229の1 6から9 14 15､1237から1239､1303の1 2､1304から1312､1317から 1770､1819から2028､2031から2048、2050から2051､2272、2275の8 9 19から26、3027の1から10､ 3033､3037から3050番地",
+      "jp": "北区 金岡町1133の1 2 4 5から1229の1 6から9 14 15､1237から1239､1303の1 2､1304から1312､1317から 1770､1819から2028､2031から2048、2050から2051､2272、2275の8 9 19から26、3027の1から10､ 3033､3037から3050番地",
+      "pattern": "8"
+    },
+    {
+      "town": "北区 金岡町1から1132､1133の3､1229の2から5 10から13､1230から1236､1240から1302､1303の5､1313から 1316､1771から1818､2029から2030､2049、2052から2271､2273から2275の7 10から18、2276から 2896、3000から3026、3027の11から3032、3034から3036番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 金岡町1から1132､1133の3､1229の2から5 10から13､1230から1236､1240から1302､1303の5､1313から 1316､1771から1818､2029から2030､2049、2052から2271､2273から2275の7 10から18、2276から 2896、3000から3026、3027の11から3032、3034から3036番地",
+      "jp": "北区 金岡町1から1132､1133の3､1229の2から5 10から13､1230から1236､1240から1302､1303の5､1313から 1316､1771から1818､2029から2030､2049、2052から2271､2273から2275の7 10から18、2276から 2896、3000から3026、3027の11から3032、3034から3036番地",
+      "pattern": "6"
+    },
+    {
+      "town": "北区 黒土町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 黒土町",
+      "jp": "北区 黒土町",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 常磐町1から3丁(ただし、1丁1から24番地を除く)",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 常磐町1から3丁(ただし、1丁1から24番地を除く)",
+      "jp": "北区 常磐町1から3丁(ただし、1丁1から24番地を除く)",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 常磐町1丁1から24番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 常磐町1丁1から24番地",
+      "jp": "北区 常磐町1丁1から24番地",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 新金岡町1丁3から6街区、2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 新金岡町1丁3から6街区、2丁",
+      "jp": "北区 新金岡町1丁3から6街区、2丁",
+      "pattern": "6"
+    },
+    {
+      "town": "北区 新金岡町1丁から5丁(ただし、1丁3から6街区、2丁を除く)",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 新金岡町1丁から5丁(ただし、1丁3から6街区、2丁を除く)",
+      "jp": "北区 新金岡町1丁から5丁(ただし、1丁3から6街区、2丁を除く)",
+      "pattern": "7"
+    },
+    {
+      "town": "北区 新堀町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 新堀町1から2丁",
+      "jp": "北区 新堀町1から2丁",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 船堂町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 船堂町",
+      "jp": "北区 船堂町",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 蔵前町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 蔵前町",
+      "jp": "北区 蔵前町",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 大豆塚町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 大豆塚町1から2丁",
+      "jp": "北区 大豆塚町1から2丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 中村町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 中村町",
+      "jp": "北区 中村町",
+      "pattern": "7"
+    },
+    {
+      "town": "北区 中長尾町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 中長尾町1から4丁",
+      "jp": "北区 中長尾町1から4丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 中百舌鳥町1から6丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 中百舌鳥町1から6丁",
+      "jp": "北区 中百舌鳥町1から6丁",
+      "pattern": "8"
+    },
+    {
+      "town": "北区 長曾根町119から129､130の1から5 9から11 24 33 38､152の1 4から11､153から171の1から7 9から20､172の 1 4から6､173の1 4から6､175の3 4､235の1 3 4､236の22から24､239の3 4 6から8､240から297､389 の3から7､399の8から12､402から1179の3､1179の6から15、1181から1578、1581から1586、1659から1679、 1690から1692､1928の1から3 5から7､2212から2371､2373から2872、3000から3018、3019の2から3023、 3026から3031､3032の1から6 9から13、3033から3078番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 長曾根町119から129､130の1から5 9から11 24 33 38､152の1 4から11､153から171の1から7 9から20､172の 1 4から6､173の1 4から6､175の3 4､235の1 3 4､236の22から24､239の3 4 6から8､240から297､389 の3から7､399の8から12､402から1179の3､1179の6から15、1181から1578、1581から1586、1659から1679、 1690から1692､1928の1から3 5から7､2212から2371､2373から2872、3000から3018、3019の2から3023、 3026から3031､3032の1から6 9から13、3033から3078番地",
+      "jp": "北区 長曾根町119から129､130の1から5 9から11 24 33 38､152の1 4から11､153から171の1から7 9から20､172の 1 4から6､173の1 4から6､175の3 4､235の1 3 4､236の22から24､239の3 4 6から8､240から297､389 の3から7､399の8から12､402から1179の3､1179の6から15、1181から1578、1581から1586、1659から1679、 1690から1692､1928の1から3 5から7､2212から2371､2373から2872、3000から3018、3019の2から3023、 3026から3031､3032の1から6 9から13、3033から3078番地",
+      "pattern": "6"
+    },
+    {
+      "town": "北区 長曾根町1から62､130の6から8 12から16 23 27 28 37､147の2､149から151､152の2､171の8 21､172の 2､173の2､175の2､177､183から187､204から206､217から231､234の2､235の2､236の2 20 21､239 の2 5､312､317から389の2､390から391､394から395､397､400から401､2372、3024から3025、3032の 7 8 14、3079から3084番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 長曾根町1から62､130の6から8 12から16 23 27 28 37､147の2､149から151､152の2､171の8 21､172の 2､173の2､175の2､177､183から187､204から206､217から231､234の2､235の2､236の2 20 21､239 の2 5､312､317から389の2､390から391､394から395､397､400から401､2372、3024から3025、3032の 7 8 14、3079から3084番地",
+      "jp": "北区 長曾根町1から62､130の6から8 12から16 23 27 28 37､147の2､149から151､152の2､171の8 21､172の 2､173の2､175の2､177､183から187､204から206､217から231､234の2､235の2､236の2 20 21､239 の2 5､312､317から389の2､390から391､394から395､397､400から401､2372、3024から3025、3032の 7 8 14、3079から3084番地",
+      "pattern": "8"
+    },
+    {
+      "town": "北区 長曾根町63から118､1179の4､1180､1579から1580､1587から1658､1680から1689､1693から1927､1928の4､1929から2211､3019の1番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 長曾根町63から118､1179の4､1180､1579から1580､1587から1658､1680から1689､1693から1927､1928の4､1929から2211､3019の1番地",
+      "jp": "北区 長曾根町63から118､1179の4､1180､1579から1580､1587から1658､1680から1689､1693から1927､1928の4､1929から2211､3019の1番地",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 東雲東町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 東雲東町1から4丁",
+      "jp": "北区 東雲東町1から4丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 東三国ヶ丘町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 東三国ヶ丘町1から5丁",
+      "jp": "北区 東三国ヶ丘町1から5丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 東上野芝町2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 東上野芝町2丁",
+      "jp": "北区 東上野芝町2丁",
+      "pattern": "2"
+    },
+    {
+      "town": "北区 東浅香山町1から2丁、3丁73から79番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 東浅香山町1から2丁、3丁73から79番地",
+      "jp": "北区 東浅香山町1から2丁、3丁73から79番地",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 東浅香山町3丁1から72､80から167番地、4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 東浅香山町3丁1から72､80から167番地、4丁",
+      "jp": "北区 東浅香山町3丁1から72､80から167番地、4丁",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 南花田町 233の3 20から23、235から275番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 南花田町 233の3 20から23、235から275番地",
+      "jp": "北区 南花田町 233の3 20から23、235から275番地",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 南花田町（ただし、233の3 20から23、235から275番地を除く）",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 南花田町（ただし、233の3 20から23、235から275番地を除く）",
+      "jp": "北区 南花田町（ただし、233の3 20から23、235から275番地を除く）",
+      "pattern": "7"
+    },
+    {
+      "town": "北区 南長尾町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 南長尾町1から5丁",
+      "jp": "北区 南長尾町1から5丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 八下北",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 八下北",
+      "jp": "北区 八下北",
+      "pattern": "7"
+    },
+    {
+      "town": "北区 百舌鳥西之町1丁（ただし､75から150番地を除く）、2から3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥西之町1丁（ただし､75から150番地を除く）、2から3丁",
+      "jp": "北区 百舌鳥西之町1丁（ただし､75から150番地を除く）、2から3丁",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 百舌鳥西之町1丁75から150番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥西之町1丁75から150番地",
+      "jp": "北区 百舌鳥西之町1丁75から150番地",
+      "pattern": "2"
+    },
+    {
+      "town": "北区 百舌鳥赤畑町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥赤畑町1から5丁",
+      "jp": "北区 百舌鳥赤畑町1から5丁",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 百舌鳥梅町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥梅町1から2丁",
+      "jp": "北区 百舌鳥梅町1から2丁",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 百舌鳥梅町3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥梅町3丁",
+      "jp": "北区 百舌鳥梅町3丁",
+      "pattern": "8"
+    },
+    {
+      "town": "北区 百舌鳥梅北町1から5丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥梅北町1から5丁",
+      "jp": "北区 百舌鳥梅北町1から5丁",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 百舌鳥本町1丁、2丁（ただし、524から528番地を除く）、3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥本町1丁、2丁（ただし、524から528番地を除く）、3丁",
+      "jp": "北区 百舌鳥本町1丁、2丁（ただし、524から528番地を除く）、3丁",
+      "pattern": "2"
+    },
+    {
+      "town": "北区 百舌鳥本町2丁524から528番地",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥本町2丁524から528番地",
+      "jp": "北区 百舌鳥本町2丁524から528番地",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 百舌鳥陵南町1から2丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥陵南町1から2丁",
+      "jp": "北区 百舌鳥陵南町1から2丁",
+      "pattern": "2"
+    },
+    {
+      "town": "北区 百舌鳥陵南町3丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 百舌鳥陵南町3丁",
+      "jp": "北区 百舌鳥陵南町3丁",
+      "pattern": "5"
+    },
+    {
+      "town": "北区 北花田町1から4丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 北花田町1から4丁",
+      "jp": "北区 北花田町1から4丁",
+      "pattern": "11"
+    },
+    {
+      "town": "北区 北長尾町1から8丁",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 北長尾町1から8丁",
+      "jp": "北区 北長尾町1から8丁",
+      "pattern": "9"
+    },
+    {
+      "town": "北区 野遠町",
+      "townEn": "Sakai",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北区 野遠町",
+      "jp": "北区 野遠町",
+      "pattern": "7"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://sakai.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

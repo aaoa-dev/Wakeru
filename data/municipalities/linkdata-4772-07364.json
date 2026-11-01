@@ -1,0 +1,149 @@
+{
+  "id": "linkdata-4772-07364",
+  "code": "07364",
+  "pref": "07",
+  "jp": "檜枝岐村",
+  "en": "Hinoemata",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4772i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4772i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": [
+          1,
+          5
+        ],
+        "res": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "res": [
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "福島県 檜枝岐村(夏期:4-11)",
+      "townEn": "Hinoemata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島県 檜枝岐村(夏期:4-11)",
+      "jp": "福島県 檜枝岐村(夏期:4-11)",
+      "pattern": "1"
+    },
+    {
+      "town": "福島県 檜枝岐村(冬期:12-3)",
+      "townEn": "Hinoemata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島県 檜枝岐村(冬期:12-3)",
+      "jp": "福島県 檜枝岐村(冬期:12-3)",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4772i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

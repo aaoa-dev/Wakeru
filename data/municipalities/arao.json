@@ -1,0 +1,144 @@
+{
+  "id": "arao",
+  "code": "43204",
+  "pref": "43",
+  "jp": "荒尾市",
+  "en": "Arao",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.arao.lg.jp/kurashi/gomi/12382.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「マスク」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙パック(500ｍｌ以上の飲料用)」 under 「燃えるごみヘ」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「保温のみのポットは燃えないごみヘ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Burnable weekdays from Arao City FY2026 district calendars (two recycle zones). Other bins follow the city's PDF calendar.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "荒尾・万田・井手川・有明・平井・緑ケ丘地区",
+      "townEn": "Arao zone A",
+      "kana": "荒尾・万田・井手川・有明・平井・緑ケ丘地区",
+      "chome": null,
+      "detail": null,
+      "en": "Arao zone A",
+      "jp": "荒尾・万田・井手川・有明・平井・緑ケ丘地区",
+      "pattern": "1"
+    },
+    {
+      "town": "中央・八幡・万田中央・清里・府本・桜山地区",
+      "townEn": "Arao zone B",
+      "kana": "中央・八幡・万田中央・清里・府本・桜山地区",
+      "chome": null,
+      "detail": null,
+      "en": "Arao zone B",
+      "jp": "中央・八幡・万田中央・清里・府本・桜山地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Arao City garbage and recycling calendar (FY2026)",
+      "url": "https://www.city.arao.lg.jp/kurashi/gomi/12382.html",
+      "license": "Arao City open data"
+    }
+  },
+  "updated": "2026-10-31"
+}

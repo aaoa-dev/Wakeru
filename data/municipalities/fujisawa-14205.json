@@ -1,0 +1,4067 @@
+{
+  "id": "fujisawa-14205",
+  "code": "14205",
+  "pref": "14",
+  "jp": "藤沢市",
+  "en": "Fujisawa",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://fujisawa.5374.jp/data/area_days.csv",
+    "http://fujisawa.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          4
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ]
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "朝日町",
+      "townEn": "Asahicho",
+      "kana": "アサヒチョウ",
+      "chome": null,
+      "detail": "朝日町全域",
+      "en": "朝日町全域",
+      "jp": "朝日町全域",
+      "pattern": "3"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）1735番地〜2936番地",
+      "en": "石川（番地地区）1735番地〜2936番地",
+      "jp": "石川（番地地区）1735番地〜2936番地",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）3053番地〜4894番地",
+      "en": "石川（番地地区）3053番地〜4894番地",
+      "jp": "石川（番地地区）3053番地〜4894番地",
+      "pattern": "1"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）516番地〜654番地",
+      "en": "石川（番地地区）516番地〜654番地",
+      "jp": "石川（番地地区）516番地〜654番地",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）5番地〜397番地",
+      "en": "石川（番地地区）5番地〜397番地",
+      "jp": "石川（番地地区）5番地〜397番地",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）655番地",
+      "en": "石川（番地地区）655番地",
+      "jp": "石川（番地地区）655番地",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川（番地地区）656番地〜700番地",
+      "en": "石川（番地地区）656番地〜700番地",
+      "jp": "石川（番地地区）656番地〜700番地",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川1・2丁目全域",
+      "en": "石川1・2丁目全域",
+      "jp": "石川1・2丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目1番〜31番",
+      "en": "石川3丁目1番〜31番",
+      "jp": "石川3丁目1番〜31番",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目32番15号〜20号",
+      "en": "石川3丁目32番15号〜20号",
+      "jp": "石川3丁目32番15号〜20号",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目32番1号",
+      "en": "石川3丁目32番1号",
+      "jp": "石川3丁目32番1号",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目32番2号〜13号",
+      "en": "石川3丁目32番2号〜13号",
+      "jp": "石川3丁目32番2号〜13号",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目33番",
+      "en": "石川3丁目33番",
+      "jp": "石川3丁目33番",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目34番",
+      "en": "石川3丁目34番",
+      "jp": "石川3丁目34番",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目35番",
+      "en": "石川3丁目35番",
+      "jp": "石川3丁目35番",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川3丁目36番",
+      "en": "石川3丁目36番",
+      "jp": "石川3丁目36番",
+      "pattern": "6"
+    },
+    {
+      "town": "石川",
+      "townEn": "Ishikawa",
+      "kana": "イシカワ",
+      "chome": null,
+      "detail": "石川4〜6丁目全域",
+      "en": "石川4〜6丁目全域",
+      "jp": "石川4〜6丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "今田",
+      "townEn": "Imada",
+      "kana": "イタ",
+      "chome": null,
+      "detail": "今田全域",
+      "en": "今田全域",
+      "jp": "今田全域",
+      "pattern": "1"
+    },
+    {
+      "town": "稲荷",
+      "townEn": "Inari",
+      "kana": "イナリ",
+      "chome": null,
+      "detail": "稲荷（番地地区）1190-5番地",
+      "en": "稲荷（番地地区）1190-5番地",
+      "jp": "稲荷（番地地区）1190-5番地",
+      "pattern": "6"
+    },
+    {
+      "town": "稲荷",
+      "townEn": "Inari",
+      "kana": "イナリ",
+      "chome": null,
+      "detail": "稲荷（番地地区）327番地〜586番地",
+      "en": "稲荷（番地地区）327番地〜586番地",
+      "jp": "稲荷（番地地区）327番地〜586番地",
+      "pattern": "1"
+    },
+    {
+      "town": "稲荷",
+      "townEn": "Inari",
+      "kana": "イナリ",
+      "chome": null,
+      "detail": "稲荷（番地地区）991番地",
+      "en": "稲荷（番地地区）991番地",
+      "jp": "稲荷（番地地区）991番地",
+      "pattern": "1"
+    },
+    {
+      "town": "稲荷",
+      "townEn": "Inari",
+      "kana": "イナリ",
+      "chome": null,
+      "detail": "稲荷1丁目全域",
+      "en": "稲荷1丁目全域",
+      "jp": "稲荷1丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "打戻",
+      "townEn": "Uchimodori",
+      "kana": "ウモ",
+      "chome": null,
+      "detail": "打戻全域",
+      "en": "打戻全域",
+      "jp": "打戻全域",
+      "pattern": "6"
+    },
+    {
+      "town": "遠藤",
+      "townEn": "Endo",
+      "kana": "エト",
+      "chome": null,
+      "detail": "遠藤1277番地〜6706番地",
+      "en": "遠藤1277番地〜6706番地",
+      "jp": "遠藤1277番地〜6706番地",
+      "pattern": "6"
+    },
+    {
+      "town": "遠藤",
+      "townEn": "Endo",
+      "kana": "エト",
+      "chome": null,
+      "detail": "遠藤20番地〜447番地",
+      "en": "遠藤20番地〜447番地",
+      "jp": "遠藤20番地〜447番地",
+      "pattern": "6"
+    },
+    {
+      "town": "遠藤",
+      "townEn": "Endo",
+      "kana": "エト",
+      "chome": null,
+      "detail": "遠藤621番地〜789番地",
+      "en": "遠藤621番地〜789番地",
+      "jp": "遠藤621番地〜789番地",
+      "pattern": "6"
+    },
+    {
+      "town": "遠藤",
+      "townEn": "Endo",
+      "kana": "エト",
+      "chome": null,
+      "detail": "遠藤790番地〜809番地",
+      "en": "遠藤790番地〜809番地",
+      "jp": "遠藤790番地〜809番地",
+      "pattern": "6"
+    },
+    {
+      "town": "遠藤",
+      "townEn": "Endo",
+      "kana": "エト",
+      "chome": null,
+      "detail": "遠藤810番地〜954番地",
+      "en": "遠藤810番地〜954番地",
+      "jp": "遠藤810番地〜954番地",
+      "pattern": "6"
+    },
+    {
+      "town": "江の島",
+      "townEn": "Enoshima",
+      "kana": "エノシマ",
+      "chome": null,
+      "detail": "江の島1・2丁目全域",
+      "en": "江の島1・2丁目全域",
+      "jp": "江の島1・2丁目全域",
+      "pattern": "3"
+    },
+    {
+      "town": "円行",
+      "townEn": "Engyo",
+      "kana": "エンギョウ",
+      "chome": null,
+      "detail": "円行（番地地区）1180番地",
+      "en": "円行（番地地区）1180番地",
+      "jp": "円行（番地地区）1180番地",
+      "pattern": "1"
+    },
+    {
+      "town": "円行",
+      "townEn": "Engyo",
+      "kana": "エンギョウ",
+      "chome": null,
+      "detail": "円行（番地地区）1775番地〜2019番地",
+      "en": "円行（番地地区）1775番地〜2019番地",
+      "jp": "円行（番地地区）1775番地〜2019番地",
+      "pattern": "6"
+    },
+    {
+      "town": "円行",
+      "townEn": "Engyo",
+      "kana": "エンギョウ",
+      "chome": null,
+      "detail": "円行（番地地区）747番地〜980番地",
+      "en": "円行（番地地区）747番地〜980番地",
+      "jp": "円行（番地地区）747番地〜980番地",
+      "pattern": "1"
+    },
+    {
+      "town": "円行",
+      "townEn": "Engyo",
+      "kana": "エンギョウ",
+      "chome": null,
+      "detail": "円行（番地地区）991番地〜1125番地",
+      "en": "円行（番地地区）991番地〜1125番地",
+      "jp": "円行（番地地区）991番地〜1125番地",
+      "pattern": "6"
+    },
+    {
+      "town": "円行",
+      "townEn": "Engyo",
+      "kana": "エンギョウ",
+      "chome": null,
+      "detail": "円行1・2丁目全域",
+      "en": "円行1・2丁目全域",
+      "jp": "円行1・2丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "獺郷",
+      "townEn": "Osogo",
+      "kana": "オコ",
+      "chome": null,
+      "detail": "獺郷全域",
+      "en": "獺郷全域",
+      "jp": "獺郷全域",
+      "pattern": "6"
+    },
+    {
+      "town": "大庭",
+      "townEn": "Oba",
+      "kana": "オハ",
+      "chome": null,
+      "detail": "大庭592番地〜6785番地",
+      "en": "大庭592番地〜6785番地",
+      "jp": "大庭592番地〜6785番地",
+      "pattern": "6"
+    },
+    {
+      "town": "大庭",
+      "townEn": "Oba",
+      "kana": "オハ",
+      "chome": null,
+      "detail": "大庭6921番地〜8364番地",
+      "en": "大庭6921番地〜8364番地",
+      "jp": "大庭6921番地〜8364番地",
+      "pattern": "1"
+    },
+    {
+      "town": "片瀬",
+      "townEn": "Katase",
+      "kana": "カタセ",
+      "chome": null,
+      "detail": "片瀬（番地地区）全域",
+      "en": "片瀬（番地地区）全域",
+      "jp": "片瀬（番地地区）全域",
+      "pattern": "4"
+    },
+    {
+      "town": "片瀬",
+      "townEn": "Katase",
+      "kana": "カタセ",
+      "chome": null,
+      "detail": "片瀬1〜5丁目全域",
+      "en": "片瀬1〜5丁目全域",
+      "jp": "片瀬1〜5丁目全域",
+      "pattern": "3"
+    },
+    {
+      "town": "片瀬海岸",
+      "townEn": "Katase Kaigan",
+      "kana": "カタセカイガン",
+      "chome": null,
+      "detail": "片瀬海岸1丁目全域",
+      "en": "片瀬海岸1丁目全域",
+      "jp": "片瀬海岸1丁目全域",
+      "pattern": "3"
+    },
+    {
+      "town": "片瀬海岸",
+      "townEn": "Katase Kaigan",
+      "kana": "カタセカイガン",
+      "chome": null,
+      "detail": "片瀬海岸2・3丁目全域",
+      "en": "片瀬海岸2・3丁目全域",
+      "jp": "片瀬海岸2・3丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "片瀬山",
+      "townEn": "Kataseyama",
+      "kana": "カタセヤマ",
+      "chome": null,
+      "detail": "片瀬山1〜5丁目全域",
+      "en": "片瀬山1〜5丁目全域",
+      "jp": "片瀬山1〜5丁目全域",
+      "pattern": "3"
+    },
+    {
+      "town": "片瀬目白山",
+      "townEn": "Katase Mejiroyama",
+      "kana": "カメ",
+      "chome": null,
+      "detail": "片瀬目白山全域",
+      "en": "片瀬目白山全域",
+      "jp": "片瀬目白山全域",
+      "pattern": "3"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）191番地〜2778番地",
+      "en": "亀井野（番地地区）191番地〜2778番地",
+      "jp": "亀井野（番地地区）191番地〜2778番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）2780番地",
+      "en": "亀井野（番地地区）2780番地",
+      "jp": "亀井野（番地地区）2780番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）2782番地〜3222番地",
+      "en": "亀井野（番地地区）2782番地〜3222番地",
+      "jp": "亀井野（番地地区）2782番地〜3222番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3224番地〜3229番地",
+      "en": "亀井野（番地地区）3224番地〜3229番地",
+      "jp": "亀井野（番地地区）3224番地〜3229番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3232番地〜3304番地",
+      "en": "亀井野（番地地区）3232番地〜3304番地",
+      "jp": "亀井野（番地地区）3232番地〜3304番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3310番地(一部2ブロック)",
+      "en": "亀井野（番地地区）3310番地(一部2ブロック)",
+      "jp": "亀井野（番地地区）3310番地(一部2ブロック)",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3310番地(一部3ブロック)",
+      "en": "亀井野（番地地区）3310番地(一部3ブロック)",
+      "jp": "亀井野（番地地区）3310番地(一部3ブロック)",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3310番地26〜87",
+      "en": "亀井野（番地地区）3310番地26〜87",
+      "jp": "亀井野（番地地区）3310番地26〜87",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野（番地地区）3312番地〜3596番地",
+      "en": "亀井野（番地地区）3312番地〜3596番地",
+      "jp": "亀井野（番地地区）3312番地〜3596番地",
+      "pattern": "1"
+    },
+    {
+      "town": "亀井野",
+      "townEn": "Kameino",
+      "kana": "カメイノ",
+      "chome": null,
+      "detail": "亀井野1〜4丁目全域",
+      "en": "亀井野1〜4丁目全域",
+      "jp": "亀井野1〜4丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "柄沢",
+      "townEn": "Karasawa",
+      "kana": "カラサワ",
+      "chome": null,
+      "detail": "柄沢全域",
+      "en": "柄沢全域",
+      "jp": "柄沢全域",
+      "pattern": "2"
+    },
+    {
+      "town": "川名",
+      "townEn": "Kawana",
+      "kana": "カワナ",
+      "chome": null,
+      "detail": "川名（番地地区）全域",
+      "en": "川名（番地地区）全域",
+      "jp": "川名（番地地区）全域",
+      "pattern": "2"
+    },
+    {
+      "town": "川名",
+      "townEn": "Kawana",
+      "kana": "カワナ",
+      "chome": null,
+      "detail": "川名1〜2丁目全域",
+      "en": "川名1〜2丁目全域",
+      "jp": "川名1〜2丁目全域",
+      "pattern": "2"
+    },
+    {
+      "town": "桐原町",
+      "townEn": "Kiriharacho",
+      "kana": "キリハラチョウ",
+      "chome": null,
+      "detail": "桐原町全域",
+      "en": "桐原町全域",
+      "jp": "桐原町全域",
+      "pattern": "6"
+    },
+    {
+      "town": "鵠沼石上",
+      "townEn": "Kugenuma Ishigami",
+      "kana": "クゲヌマイシガミ",
+      "chome": null,
+      "detail": "鵠沼石上1〜3丁目全域",
+      "en": "鵠沼石上1〜3丁目全域",
+      "jp": "鵠沼石上1〜3丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼海岸",
+      "townEn": "Kugenuma Kaigan",
+      "kana": "クゲヌマカイガン",
+      "chome": null,
+      "detail": "鵠沼海岸1〜7丁目全域",
+      "en": "鵠沼海岸1〜7丁目全域",
+      "jp": "鵠沼海岸1〜7丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡1・2丁目全域",
+      "en": "鵠沼桜が岡1・2丁目全域",
+      "jp": "鵠沼桜が岡1・2丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡3丁目全域",
+      "en": "鵠沼桜が岡3丁目全域",
+      "jp": "鵠沼桜が岡3丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目1番",
+      "en": "鵠沼桜が岡4丁目1番",
+      "jp": "鵠沼桜が岡4丁目1番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目2番〜4番",
+      "en": "鵠沼桜が岡4丁目2番〜4番",
+      "jp": "鵠沼桜が岡4丁目2番〜4番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目5番",
+      "en": "鵠沼桜が岡4丁目5番",
+      "jp": "鵠沼桜が岡4丁目5番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目6番",
+      "en": "鵠沼桜が岡4丁目6番",
+      "jp": "鵠沼桜が岡4丁目6番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番13号(一部6ブロック)",
+      "en": "鵠沼桜が岡4丁目7番13号(一部6ブロック)",
+      "jp": "鵠沼桜が岡4丁目7番13号(一部6ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番13号(一部7ブロック)",
+      "en": "鵠沼桜が岡4丁目7番13号(一部7ブロック)",
+      "jp": "鵠沼桜が岡4丁目7番13号(一部7ブロック)",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番14号〜32号",
+      "en": "鵠沼桜が岡4丁目7番14号〜32号",
+      "jp": "鵠沼桜が岡4丁目7番14号〜32号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番1号",
+      "en": "鵠沼桜が岡4丁目7番1号",
+      "jp": "鵠沼桜が岡4丁目7番1号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番3号(一部6ブロック)",
+      "en": "鵠沼桜が岡4丁目7番3号(一部6ブロック)",
+      "jp": "鵠沼桜が岡4丁目7番3号(一部6ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番3号(一部7ブロック)",
+      "en": "鵠沼桜が岡4丁目7番3号(一部7ブロック)",
+      "jp": "鵠沼桜が岡4丁目7番3号(一部7ブロック)",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目7番4号〜12号",
+      "en": "鵠沼桜が岡4丁目7番4号〜12号",
+      "jp": "鵠沼桜が岡4丁目7番4号〜12号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼桜が岡",
+      "townEn": "Kugenuma Sakuragaoka",
+      "kana": "クゲヌマサクラガオカ",
+      "chome": null,
+      "detail": "鵠沼桜が岡4丁目8番〜16番",
+      "en": "鵠沼桜が岡4丁目8番〜16番",
+      "jp": "鵠沼桜が岡4丁目8番〜16番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼神明",
+      "townEn": "Kugenuma Shimmei",
+      "kana": "クゲヌマシンメイ",
+      "chome": null,
+      "detail": "鵠沼神明1丁目1番〜4番",
+      "en": "鵠沼神明1丁目1番〜4番",
+      "jp": "鵠沼神明1丁目1番〜4番",
+      "pattern": "3"
+    },
+    {
+      "town": "鵠沼神明",
+      "townEn": "Kugenuma Shimmei",
+      "kana": "クゲヌマシンメイ",
+      "chome": null,
+      "detail": "鵠沼神明1丁目5番",
+      "en": "鵠沼神明1丁目5番",
+      "jp": "鵠沼神明1丁目5番",
+      "pattern": "1"
+    },
+    {
+      "town": "鵠沼神明",
+      "townEn": "Kugenuma Shimmei",
+      "kana": "クゲヌマシンメイ",
+      "chome": null,
+      "detail": "鵠沼神明2〜5丁目全域",
+      "en": "鵠沼神明2〜5丁目全域",
+      "jp": "鵠沼神明2〜5丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "鵠沼橘",
+      "townEn": "Kugenuma Tachibana",
+      "kana": "クゲヌマタチバナ",
+      "chome": null,
+      "detail": "鵠沼橘1・2丁目全域",
+      "en": "鵠沼橘1・2丁目全域",
+      "jp": "鵠沼橘1・2丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼花沢町",
+      "townEn": "Kugenuma Hanazawacho",
+      "kana": "クゲヌマハナザワチョウ",
+      "chome": null,
+      "detail": "鵠沼花沢町全域",
+      "en": "鵠沼花沢町全域",
+      "jp": "鵠沼花沢町全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼藤が谷",
+      "townEn": "Kugenuma Fujigaya",
+      "kana": "クゲヌマフジガヤ",
+      "chome": null,
+      "detail": "鵠沼藤が谷1〜4丁目全域",
+      "en": "鵠沼藤が谷1〜4丁目全域",
+      "jp": "鵠沼藤が谷1〜4丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡1〜3丁目全域",
+      "en": "鵠沼松が岡1〜3丁目全域",
+      "jp": "鵠沼松が岡1〜3丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目10番〜12番",
+      "en": "鵠沼松が岡4丁目10番〜12番",
+      "jp": "鵠沼松が岡4丁目10番〜12番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目13番15号〜23号",
+      "en": "鵠沼松が岡4丁目13番15号〜23号",
+      "jp": "鵠沼松が岡4丁目13番15号〜23号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目13番2号〜5号",
+      "en": "鵠沼松が岡4丁目13番2号〜5号",
+      "jp": "鵠沼松が岡4丁目13番2号〜5号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目13番6号〜11号",
+      "en": "鵠沼松が岡4丁目13番6号〜11号",
+      "jp": "鵠沼松が岡4丁目13番6号〜11号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目14番",
+      "en": "鵠沼松が岡4丁目14番",
+      "jp": "鵠沼松が岡4丁目14番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目15番25号〜29号",
+      "en": "鵠沼松が岡4丁目15番25号〜29号",
+      "jp": "鵠沼松が岡4丁目15番25号〜29号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目15番2号〜3号",
+      "en": "鵠沼松が岡4丁目15番2号〜3号",
+      "jp": "鵠沼松が岡4丁目15番2号〜3号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目15番7号〜22号",
+      "en": "鵠沼松が岡4丁目15番7号〜22号",
+      "jp": "鵠沼松が岡4丁目15番7号〜22号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目16番1号〜3号",
+      "en": "鵠沼松が岡4丁目16番1号〜3号",
+      "jp": "鵠沼松が岡4丁目16番1号〜3号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目16番29号〜33号",
+      "en": "鵠沼松が岡4丁目16番29号〜33号",
+      "jp": "鵠沼松が岡4丁目16番29号〜33号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目16番34号(一部6ブロック)",
+      "en": "鵠沼松が岡4丁目16番34号(一部6ブロック)",
+      "jp": "鵠沼松が岡4丁目16番34号(一部6ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目16番34号(一部7ブロック)",
+      "en": "鵠沼松が岡4丁目16番34号(一部7ブロック)",
+      "jp": "鵠沼松が岡4丁目16番34号(一部7ブロック)",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目16番4号〜27号",
+      "en": "鵠沼松が岡4丁目16番4号〜27号",
+      "jp": "鵠沼松が岡4丁目16番4号〜27号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目17番〜19番",
+      "en": "鵠沼松が岡4丁目17番〜19番",
+      "jp": "鵠沼松が岡4丁目17番〜19番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目1番",
+      "en": "鵠沼松が岡4丁目1番",
+      "jp": "鵠沼松が岡4丁目1番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目20番",
+      "en": "鵠沼松が岡4丁目20番",
+      "jp": "鵠沼松が岡4丁目20番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目2番23号〜25号",
+      "en": "鵠沼松が岡4丁目2番23号〜25号",
+      "jp": "鵠沼松が岡4丁目2番23号〜25号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目2番2号〜11号",
+      "en": "鵠沼松が岡4丁目2番2号〜11号",
+      "jp": "鵠沼松が岡4丁目2番2号〜11号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目3番",
+      "en": "鵠沼松が岡4丁目3番",
+      "jp": "鵠沼松が岡4丁目3番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目4番",
+      "en": "鵠沼松が岡4丁目4番",
+      "jp": "鵠沼松が岡4丁目4番",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目5番10号〜21号",
+      "en": "鵠沼松が岡4丁目5番10号〜21号",
+      "jp": "鵠沼松が岡4丁目5番10号〜21号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目5番23号〜27号",
+      "en": "鵠沼松が岡4丁目5番23号〜27号",
+      "jp": "鵠沼松が岡4丁目5番23号〜27号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目5番28号(一部6ブロック)",
+      "en": "鵠沼松が岡4丁目5番28号(一部6ブロック)",
+      "jp": "鵠沼松が岡4丁目5番28号(一部6ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目5番28号(一部7ブロック)",
+      "en": "鵠沼松が岡4丁目5番28号(一部7ブロック)",
+      "jp": "鵠沼松が岡4丁目5番28号(一部7ブロック)",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目5番29号〜35号",
+      "en": "鵠沼松が岡4丁目5番29号〜35号",
+      "jp": "鵠沼松が岡4丁目5番29号〜35号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目6番〜8番",
+      "en": "鵠沼松が岡4丁目6番〜8番",
+      "jp": "鵠沼松が岡4丁目6番〜8番",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目9番1号〜3号",
+      "en": "鵠沼松が岡4丁目9番1号〜3号",
+      "jp": "鵠沼松が岡4丁目9番1号〜3号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目9番20号〜33号",
+      "en": "鵠沼松が岡4丁目9番20号〜33号",
+      "jp": "鵠沼松が岡4丁目9番20号〜33号",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡4丁目9番5号〜18号",
+      "en": "鵠沼松が岡4丁目9番5号〜18号",
+      "jp": "鵠沼松が岡4丁目9番5号〜18号",
+      "pattern": "4"
+    },
+    {
+      "town": "鵠沼松が岡",
+      "townEn": "Kugenuma Matsugaoka",
+      "kana": "クゲヌママツガオカ",
+      "chome": null,
+      "detail": "鵠沼松が岡5丁目全域",
+      "en": "鵠沼松が岡5丁目全域",
+      "jp": "鵠沼松が岡5丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "鵠沼",
+      "townEn": "Kugenuma",
+      "kana": "クヌ",
+      "chome": null,
+      "detail": "鵠沼（番地地区）1556番地〜1750番地",
+      "en": "鵠沼（番地地区）1556番地〜1750番地",
+      "jp": "鵠沼（番地地区）1556番地〜1750番地",
+      "pattern": "3"
+    },
+    {
+      "town": "鵠沼",
+      "townEn": "Kugenuma",
+      "kana": "クヌ",
+      "chome": null,
+      "detail": "鵠沼（番地地区）2276番地",
+      "en": "鵠沼（番地地区）2276番地",
+      "jp": "鵠沼（番地地区）2276番地",
+      "pattern": "4"
+    },
+    {
+      "town": "葛原",
+      "townEn": "Kuzuhara",
+      "kana": "クハラ",
+      "chome": null,
+      "detail": "葛原全域",
+      "en": "葛原全域",
+      "jp": "葛原全域",
+      "pattern": "6"
+    },
+    {
+      "town": "鵠沼東",
+      "townEn": "Kugenuma Higashi",
+      "kana": "クヒ",
+      "chome": null,
+      "detail": "鵠沼東全域",
+      "en": "鵠沼東全域",
+      "jp": "鵠沼東全域",
+      "pattern": "4"
+    },
+    {
+      "town": "小塚",
+      "townEn": "Kotsuka",
+      "kana": "コツ",
+      "chome": null,
+      "detail": "小塚全域",
+      "en": "小塚全域",
+      "jp": "小塚全域",
+      "pattern": "2"
+    },
+    {
+      "town": "下土棚",
+      "townEn": "Shimotsuchidana",
+      "kana": "シツタ",
+      "chome": null,
+      "detail": "下土棚1274番地〜2439番地",
+      "en": "下土棚1274番地〜2439番地",
+      "jp": "下土棚1274番地〜2439番地",
+      "pattern": "6"
+    },
+    {
+      "town": "下土棚",
+      "townEn": "Shimotsuchidana",
+      "kana": "シツタ",
+      "chome": null,
+      "detail": "下土棚196番地〜1255番地",
+      "en": "下土棚196番地〜1255番地",
+      "jp": "下土棚196番地〜1255番地",
+      "pattern": "1"
+    },
+    {
+      "town": "城南",
+      "townEn": "Jonan",
+      "kana": "ジョウナン",
+      "chome": null,
+      "detail": "城南1〜5丁目全域（ただし、4丁目10番30号から38号の引地町内会の方は3ブロックの日程）",
+      "en": "城南1〜5丁目全域（ただし、4丁目10番30号から38号の引地町内会の方は3ブロックの日程）",
+      "jp": "城南1〜5丁目全域（ただし、4丁目10番30号から38号の引地町内会の方は3ブロックの日程）",
+      "pattern": "6"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台1丁目1番〜8番",
+      "en": "湘南台1丁目1番〜8番",
+      "jp": "湘南台1丁目1番〜8番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台1丁目9番〜42番",
+      "en": "湘南台1丁目9番〜42番",
+      "jp": "湘南台1丁目9番〜42番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台2・3丁目全域",
+      "en": "湘南台2・3丁目全域",
+      "jp": "湘南台2・3丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台4〜6丁目全域",
+      "en": "湘南台4〜6丁目全域",
+      "jp": "湘南台4〜6丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目1338番地",
+      "en": "湘南台7丁目1338番地",
+      "jp": "湘南台7丁目1338番地",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目1339番地",
+      "en": "湘南台7丁目1339番地",
+      "jp": "湘南台7丁目1339番地",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目15番1号",
+      "en": "湘南台7丁目15番1号",
+      "jp": "湘南台7丁目15番1号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目15番2号",
+      "en": "湘南台7丁目15番2号",
+      "jp": "湘南台7丁目15番2号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目15番3号〜14号",
+      "en": "湘南台7丁目15番3号〜14号",
+      "jp": "湘南台7丁目15番3号〜14号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目16番〜53番",
+      "en": "湘南台7丁目16番〜53番",
+      "jp": "湘南台7丁目16番〜53番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目189番地〜236番地",
+      "en": "湘南台7丁目189番地〜236番地",
+      "jp": "湘南台7丁目189番地〜236番地",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目1番",
+      "en": "湘南台7丁目1番",
+      "jp": "湘南台7丁目1番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目2番",
+      "en": "湘南台7丁目2番",
+      "jp": "湘南台7丁目2番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目3番1号〜5号",
+      "en": "湘南台7丁目3番1号〜5号",
+      "jp": "湘南台7丁目3番1号〜5号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目3番20号〜22号",
+      "en": "湘南台7丁目3番20号〜22号",
+      "jp": "湘南台7丁目3番20号〜22号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目3番6号〜17号",
+      "en": "湘南台7丁目3番6号〜17号",
+      "jp": "湘南台7丁目3番6号〜17号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目4番",
+      "en": "湘南台7丁目4番",
+      "jp": "湘南台7丁目4番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目5番〜7番",
+      "en": "湘南台7丁目5番〜7番",
+      "jp": "湘南台7丁目5番〜7番",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目8番1号〜27号",
+      "en": "湘南台7丁目8番1号〜27号",
+      "jp": "湘南台7丁目8番1号〜27号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目8番28号",
+      "en": "湘南台7丁目8番28号",
+      "jp": "湘南台7丁目8番28号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目8番29号〜32号",
+      "en": "湘南台7丁目8番29号〜32号",
+      "jp": "湘南台7丁目8番29号〜32号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目8番36号",
+      "en": "湘南台7丁目8番36号",
+      "jp": "湘南台7丁目8番36号",
+      "pattern": "1"
+    },
+    {
+      "town": "湘南台",
+      "townEn": "Shonandai",
+      "kana": "ショウナンダイ",
+      "chome": null,
+      "detail": "湘南台7丁目9番〜14番",
+      "en": "湘南台7丁目9番〜14番",
+      "jp": "湘南台7丁目9番〜14番",
+      "pattern": "1"
+    },
+    {
+      "town": "菖蒲沢",
+      "townEn": "Shobusawa",
+      "kana": "ショウブザワ",
+      "chome": null,
+      "detail": "菖蒲沢全域",
+      "en": "菖蒲沢全域",
+      "jp": "菖蒲沢全域",
+      "pattern": "6"
+    },
+    {
+      "town": "白旗",
+      "townEn": "Shirahata",
+      "kana": "シラハタ",
+      "chome": null,
+      "detail": "白旗1〜4丁目全域",
+      "en": "白旗1〜4丁目全域",
+      "jp": "白旗1〜4丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "善行",
+      "townEn": "Zengyo",
+      "kana": "ゼンギョウ",
+      "chome": null,
+      "detail": "善行1〜3丁目全域",
+      "en": "善行1〜3丁目全域",
+      "jp": "善行1〜3丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "善行",
+      "townEn": "Zengyo",
+      "kana": "ゼンギョウ",
+      "chome": null,
+      "detail": "善行4丁目2755番地3652番地",
+      "en": "善行4丁目2755番地3652番地",
+      "jp": "善行4丁目2755番地3652番地",
+      "pattern": "1"
+    },
+    {
+      "town": "善行",
+      "townEn": "Zengyo",
+      "kana": "ゼンギョウ",
+      "chome": null,
+      "detail": "善行4丁目2762番地3653番地",
+      "en": "善行4丁目2762番地3653番地",
+      "jp": "善行4丁目2762番地3653番地",
+      "pattern": "1"
+    },
+    {
+      "town": "善行",
+      "townEn": "Zengyo",
+      "kana": "ゼンギョウ",
+      "chome": null,
+      "detail": "善行4丁目3663番地〜3782番地",
+      "en": "善行4丁目3663番地〜3782番地",
+      "jp": "善行4丁目3663番地〜3782番地",
+      "pattern": "1"
+    },
+    {
+      "town": "善行",
+      "townEn": "Zengyo",
+      "kana": "ゼンギョウ",
+      "chome": null,
+      "detail": "善行5〜7丁目全域",
+      "en": "善行5〜7丁目全域",
+      "jp": "善行5〜7丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "善行坂",
+      "townEn": "Zengyozaka",
+      "kana": "ゼンギョウザカ",
+      "chome": null,
+      "detail": "善行坂1・2丁目全域",
+      "en": "善行坂1・2丁目全域",
+      "jp": "善行坂1・2丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "善行団地",
+      "townEn": "Zengyodanchi",
+      "kana": "ゼンギョウダンチ",
+      "chome": null,
+      "detail": "善行団地全域",
+      "en": "善行団地全域",
+      "jp": "善行団地全域",
+      "pattern": "1"
+    },
+    {
+      "town": "大鋸",
+      "townEn": "Daigiri",
+      "kana": "ダイギリ",
+      "chome": null,
+      "detail": "大鋸（番地地区）全域",
+      "en": "大鋸（番地地区）全域",
+      "jp": "大鋸（番地地区）全域",
+      "pattern": "2"
+    },
+    {
+      "town": "高谷",
+      "townEn": "Takaya",
+      "kana": "タカヤ",
+      "chome": null,
+      "detail": "高谷全域",
+      "en": "高谷全域",
+      "jp": "高谷全域",
+      "pattern": "2"
+    },
+    {
+      "town": "高倉",
+      "townEn": "Takakura",
+      "kana": "タク",
+      "chome": null,
+      "detail": "高倉全域",
+      "en": "高倉全域",
+      "jp": "高倉全域",
+      "pattern": "1"
+    },
+    {
+      "town": "立石",
+      "townEn": "Tateishi",
+      "kana": "タテイシ",
+      "chome": null,
+      "detail": "立石1〜4丁目全域",
+      "en": "立石1〜4丁目全域",
+      "jp": "立石1〜4丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "長後",
+      "townEn": "Chogo",
+      "kana": "チョウゴ",
+      "chome": null,
+      "detail": "長後全域",
+      "en": "長後全域",
+      "jp": "長後全域",
+      "pattern": "1"
+    },
+    {
+      "town": "辻堂",
+      "townEn": "Tsujido",
+      "kana": "ツジドウ",
+      "chome": null,
+      "detail": "辻堂1〜6丁目全域",
+      "en": "辻堂1〜6丁目全域",
+      "jp": "辻堂1〜6丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台1丁目全域",
+      "en": "辻堂神台1丁目全域",
+      "jp": "辻堂神台1丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目1番",
+      "en": "辻堂神台2丁目1番",
+      "jp": "辻堂神台2丁目1番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目2番20号",
+      "en": "辻堂神台2丁目2番20号",
+      "jp": "辻堂神台2丁目2番20号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目2番21号",
+      "en": "辻堂神台2丁目2番21号",
+      "jp": "辻堂神台2丁目2番21号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目2番26号〜40号",
+      "en": "辻堂神台2丁目2番26号〜40号",
+      "jp": "辻堂神台2丁目2番26号〜40号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目2番43号〜51号",
+      "en": "辻堂神台2丁目2番43号〜51号",
+      "jp": "辻堂神台2丁目2番43号〜51号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目3番",
+      "en": "辻堂神台2丁目3番",
+      "jp": "辻堂神台2丁目3番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番26号〜4番39号",
+      "en": "辻堂神台2丁目4番26号〜4番39号",
+      "jp": "辻堂神台2丁目4番26号〜4番39号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番3号〜11号",
+      "en": "辻堂神台2丁目4番3号〜11号",
+      "jp": "辻堂神台2丁目4番3号〜11号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番40号",
+      "en": "辻堂神台2丁目4番40号",
+      "jp": "辻堂神台2丁目4番40号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番41号",
+      "en": "辻堂神台2丁目4番41号",
+      "jp": "辻堂神台2丁目4番41号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番42号",
+      "en": "辻堂神台2丁目4番42号",
+      "jp": "辻堂神台2丁目4番42号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目4番43号〜46号",
+      "en": "辻堂神台2丁目4番43号〜46号",
+      "jp": "辻堂神台2丁目4番43号〜46号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂神台",
+      "townEn": "Tsujido Kandai",
+      "kana": "ツジドウカンダイ",
+      "chome": null,
+      "detail": "辻堂神台2丁目5番〜13番",
+      "en": "辻堂神台2丁目5番〜13番",
+      "jp": "辻堂神台2丁目5番〜13番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂新町",
+      "townEn": "Tsujido Shimmachi",
+      "kana": "ツジドウシンマチ",
+      "chome": null,
+      "detail": "辻堂新町1〜4丁目全域（ただし、辻駅前ハイツ自治会の方は除く）",
+      "en": "辻堂新町1〜4丁目全域（ただし、辻駅前ハイツ自治会の方は除く）",
+      "jp": "辻堂新町1〜4丁目全域（ただし、辻駅前ハイツ自治会の方は除く）",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂太平台",
+      "townEn": "Tsujido Taiheidai",
+      "kana": "ツジドウタイヘイダイ",
+      "chome": null,
+      "detail": "辻堂太平台1〜2丁目全域",
+      "en": "辻堂太平台1〜2丁目全域",
+      "jp": "辻堂太平台1〜2丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂西海岸",
+      "townEn": "Tsujido Nishikaigan",
+      "kana": "ツジドウニシカイガン",
+      "chome": null,
+      "detail": "辻堂西海岸1〜3丁目全域",
+      "en": "辻堂西海岸1〜3丁目全域",
+      "jp": "辻堂西海岸1〜3丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂東海岸",
+      "townEn": "Tsujido Higashikaigan",
+      "kana": "ツジドウヒガシカイガン",
+      "chome": null,
+      "detail": "辻堂東海岸1〜4丁目全域",
+      "en": "辻堂東海岸1〜4丁目全域",
+      "jp": "辻堂東海岸1〜4丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町1丁目全域",
+      "en": "辻堂元町1丁目全域",
+      "jp": "辻堂元町1丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番14号〜21号",
+      "en": "辻堂元町2丁目18番14号〜21号",
+      "jp": "辻堂元町2丁目18番14号〜21号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番1号〜12号",
+      "en": "辻堂元町2丁目18番1号〜12号",
+      "jp": "辻堂元町2丁目18番1号〜12号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番22号（一部7ブロック）",
+      "en": "辻堂元町2丁目18番22号（一部7ブロック）",
+      "jp": "辻堂元町2丁目18番22号（一部7ブロック）",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番22号(一部8ブロック)",
+      "en": "辻堂元町2丁目18番22号(一部8ブロック)",
+      "jp": "辻堂元町2丁目18番22号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番23号",
+      "en": "辻堂元町2丁目18番23号",
+      "jp": "辻堂元町2丁目18番23号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目18番24号",
+      "en": "辻堂元町2丁目18番24号",
+      "jp": "辻堂元町2丁目18番24号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目19番〜21番",
+      "en": "辻堂元町2丁目19番〜21番",
+      "jp": "辻堂元町2丁目19番〜21番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町2丁目1番〜17番",
+      "en": "辻堂元町2丁目1番〜17番",
+      "jp": "辻堂元町2丁目1番〜17番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目17番19号〜31号",
+      "en": "辻堂元町3丁目17番19号〜31号",
+      "jp": "辻堂元町3丁目17番19号〜31号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目17番1号",
+      "en": "辻堂元町3丁目17番1号",
+      "jp": "辻堂元町3丁目17番1号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目17番2号(一部8ブロック)",
+      "en": "辻堂元町3丁目17番2号(一部8ブロック)",
+      "jp": "辻堂元町3丁目17番2号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目17番4号〜14号",
+      "en": "辻堂元町3丁目17番4号〜14号",
+      "jp": "辻堂元町3丁目17番4号〜14号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目18番",
+      "en": "辻堂元町3丁目18番",
+      "jp": "辻堂元町3丁目18番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目19番",
+      "en": "辻堂元町3丁目19番",
+      "jp": "辻堂元町3丁目19番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目1番〜5番",
+      "en": "辻堂元町3丁目1番〜5番",
+      "jp": "辻堂元町3丁目1番〜5番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番22号",
+      "en": "辻堂元町3丁目6番22号",
+      "jp": "辻堂元町3丁目6番22号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番23号",
+      "en": "辻堂元町3丁目6番23号",
+      "jp": "辻堂元町3丁目6番23号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番24号（一部7ブロック）",
+      "en": "辻堂元町3丁目6番24号（一部7ブロック）",
+      "jp": "辻堂元町3丁目6番24号（一部7ブロック）",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番24号(一部8ブロック)",
+      "en": "辻堂元町3丁目6番24号(一部8ブロック)",
+      "jp": "辻堂元町3丁目6番24号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番25号",
+      "en": "辻堂元町3丁目6番25号",
+      "jp": "辻堂元町3丁目6番25号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目6番2号〜16号",
+      "en": "辻堂元町3丁目6番2号〜16号",
+      "jp": "辻堂元町3丁目6番2号〜16号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番11号",
+      "en": "辻堂元町3丁目7番11号",
+      "jp": "辻堂元町3丁目7番11号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番12号〜17号",
+      "en": "辻堂元町3丁目7番12号〜17号",
+      "jp": "辻堂元町3丁目7番12号〜17号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番18号(一部7ブロック)",
+      "en": "辻堂元町3丁目7番18号(一部7ブロック)",
+      "jp": "辻堂元町3丁目7番18号(一部7ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番18号(一部8ブロック)",
+      "en": "辻堂元町3丁目7番18号(一部8ブロック)",
+      "jp": "辻堂元町3丁目7番18号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番19号〜31号",
+      "en": "辻堂元町3丁目7番19号〜31号",
+      "jp": "辻堂元町3丁目7番19号〜31号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番2号",
+      "en": "辻堂元町3丁目7番2号",
+      "jp": "辻堂元町3丁目7番2号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番3号",
+      "en": "辻堂元町3丁目7番3号",
+      "jp": "辻堂元町3丁目7番3号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番5号（一部7ブロック）",
+      "en": "辻堂元町3丁目7番5号（一部7ブロック）",
+      "jp": "辻堂元町3丁目7番5号（一部7ブロック）",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目7番5号(一部8ブロック)",
+      "en": "辻堂元町3丁目7番5号(一部8ブロック)",
+      "jp": "辻堂元町3丁目7番5号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目8番15号",
+      "en": "辻堂元町3丁目8番15号",
+      "jp": "辻堂元町3丁目8番15号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目8番16号",
+      "en": "辻堂元町3丁目8番16号",
+      "jp": "辻堂元町3丁目8番16号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目8番18号〜25号",
+      "en": "辻堂元町3丁目8番18号〜25号",
+      "jp": "辻堂元町3丁目8番18号〜25号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目8番2号〜14号",
+      "en": "辻堂元町3丁目8番2号〜14号",
+      "jp": "辻堂元町3丁目8番2号〜14号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町3丁目9番〜16番",
+      "en": "辻堂元町3丁目9番〜16番",
+      "jp": "辻堂元町3丁目9番〜16番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目1番",
+      "en": "辻堂元町4丁目1番",
+      "jp": "辻堂元町4丁目1番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目2番",
+      "en": "辻堂元町4丁目2番",
+      "jp": "辻堂元町4丁目2番",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目3番",
+      "en": "辻堂元町4丁目3番",
+      "jp": "辻堂元町4丁目3番",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目4番1号〜6号",
+      "en": "辻堂元町4丁目4番1号〜6号",
+      "jp": "辻堂元町4丁目4番1号〜6号",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目4番31号(一部7ブロック)",
+      "en": "辻堂元町4丁目4番31号(一部7ブロック)",
+      "jp": "辻堂元町4丁目4番31号(一部7ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目4番31号(一部8ブロック)",
+      "en": "辻堂元町4丁目4番31号(一部8ブロック)",
+      "jp": "辻堂元町4丁目4番31号(一部8ブロック)",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目4番8号〜30号",
+      "en": "辻堂元町4丁目4番8号〜30号",
+      "jp": "辻堂元町4丁目4番8号〜30号",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町4丁目5番〜17番",
+      "en": "辻堂元町4丁目5番〜17番",
+      "jp": "辻堂元町4丁目5番〜17番",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町5丁目全域",
+      "en": "辻堂元町5丁目全域",
+      "jp": "辻堂元町5丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目11番",
+      "en": "辻堂元町6丁目11番",
+      "jp": "辻堂元町6丁目11番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目12番",
+      "en": "辻堂元町6丁目12番",
+      "jp": "辻堂元町6丁目12番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目18番",
+      "en": "辻堂元町6丁目18番",
+      "jp": "辻堂元町6丁目18番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目19番",
+      "en": "辻堂元町6丁目19番",
+      "jp": "辻堂元町6丁目19番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目1番〜4番",
+      "en": "辻堂元町6丁目1番〜4番",
+      "jp": "辻堂元町6丁目1番〜4番",
+      "pattern": "6"
+    },
+    {
+      "town": "辻堂元町",
+      "townEn": "Tsujido Motomachi",
+      "kana": "ツジドウモトマチ",
+      "chome": null,
+      "detail": "辻堂元町6丁目5番〜7番",
+      "en": "辻堂元町6丁目5番〜7番",
+      "jp": "辻堂元町6丁目5番〜7番",
+      "pattern": "5"
+    },
+    {
+      "town": "土棚",
+      "townEn": "Tsuchidana",
+      "kana": "ツチダナ",
+      "chome": null,
+      "detail": "土棚全域",
+      "en": "土棚全域",
+      "jp": "土棚全域",
+      "pattern": "6"
+    },
+    {
+      "town": "天神町",
+      "townEn": "Tenjincho",
+      "kana": "テンジンチョウ",
+      "chome": null,
+      "detail": "天神町1〜3丁目全域",
+      "en": "天神町1〜3丁目全域",
+      "jp": "天神町1〜3丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "西富",
+      "townEn": "Nishitomi",
+      "kana": "ニシトミ",
+      "chome": null,
+      "detail": "西富（番地地区）全域",
+      "en": "西富（番地地区）全域",
+      "jp": "西富（番地地区）全域",
+      "pattern": "2"
+    },
+    {
+      "town": "西富",
+      "townEn": "Nishitomi",
+      "kana": "ニシトミ",
+      "chome": null,
+      "detail": "西富1・2丁目全域",
+      "en": "西富1・2丁目全域",
+      "jp": "西富1・2丁目全域",
+      "pattern": "2"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2667番地",
+      "en": "西俣野2667番地",
+      "jp": "西俣野2667番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2668番地",
+      "en": "西俣野2668番地",
+      "jp": "西俣野2668番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2679番地",
+      "en": "西俣野2679番地",
+      "jp": "西俣野2679番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2681番地",
+      "en": "西俣野2681番地",
+      "jp": "西俣野2681番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2682番地",
+      "en": "西俣野2682番地",
+      "jp": "西俣野2682番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2684番地",
+      "en": "西俣野2684番地",
+      "jp": "西俣野2684番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2685番地",
+      "en": "西俣野2685番地",
+      "jp": "西俣野2685番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2688番地",
+      "en": "西俣野2688番地",
+      "jp": "西俣野2688番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野2694番地〜2702番地",
+      "en": "西俣野2694番地〜2702番地",
+      "jp": "西俣野2694番地〜2702番地",
+      "pattern": "1"
+    },
+    {
+      "town": "西俣野",
+      "townEn": "Nishimatano",
+      "kana": "ニマノ",
+      "chome": null,
+      "detail": "西俣野52番地〜2657番地",
+      "en": "西俣野52番地〜2657番地",
+      "jp": "西俣野52番地〜2657番地",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目1番",
+      "en": "羽鳥1丁目1番",
+      "jp": "羽鳥1丁目1番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目2番4号〜23号",
+      "en": "羽鳥1丁目2番4号〜23号",
+      "jp": "羽鳥1丁目2番4号〜23号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目3番1号",
+      "en": "羽鳥1丁目3番1号",
+      "jp": "羽鳥1丁目3番1号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目3番47号〜52号",
+      "en": "羽鳥1丁目3番47号〜52号",
+      "jp": "羽鳥1丁目3番47号〜52号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目3番7号(一部8ブロック)",
+      "en": "羽鳥1丁目3番7号(一部8ブロック)",
+      "jp": "羽鳥1丁目3番7号(一部8ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目3番7号(一部9ブロック)",
+      "en": "羽鳥1丁目3番7号(一部9ブロック)",
+      "jp": "羽鳥1丁目3番7号(一部9ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目3番8号〜41号",
+      "en": "羽鳥1丁目3番8号〜41号",
+      "jp": "羽鳥1丁目3番8号〜41号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥1丁目4番〜6番",
+      "en": "羽鳥1丁目4番〜6番",
+      "jp": "羽鳥1丁目4番〜6番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥2丁目全域",
+      "en": "羽鳥2丁目全域",
+      "jp": "羽鳥2丁目全域",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目10番〜12番",
+      "en": "羽鳥3丁目10番〜12番",
+      "jp": "羽鳥3丁目10番〜12番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目13番",
+      "en": "羽鳥3丁目13番",
+      "jp": "羽鳥3丁目13番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目14番24号〜28号",
+      "en": "羽鳥3丁目14番24号〜28号",
+      "jp": "羽鳥3丁目14番24号〜28号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目14番2号",
+      "en": "羽鳥3丁目14番2号",
+      "jp": "羽鳥3丁目14番2号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目14番3号",
+      "en": "羽鳥3丁目14番3号",
+      "jp": "羽鳥3丁目14番3号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目14番5号",
+      "en": "羽鳥3丁目14番5号",
+      "jp": "羽鳥3丁目14番5号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目14番8号〜20号",
+      "en": "羽鳥3丁目14番8号〜20号",
+      "jp": "羽鳥3丁目14番8号〜20号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目15番〜21番",
+      "en": "羽鳥3丁目15番〜21番",
+      "jp": "羽鳥3丁目15番〜21番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目1番〜5番",
+      "en": "羽鳥3丁目1番〜5番",
+      "jp": "羽鳥3丁目1番〜5番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番10号",
+      "en": "羽鳥3丁目6番10号",
+      "jp": "羽鳥3丁目6番10号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番11号",
+      "en": "羽鳥3丁目6番11号",
+      "jp": "羽鳥3丁目6番11号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番15号〜28号",
+      "en": "羽鳥3丁目6番15号〜28号",
+      "jp": "羽鳥3丁目6番15号〜28号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番1号",
+      "en": "羽鳥3丁目6番1号",
+      "jp": "羽鳥3丁目6番1号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番3号(一部8ブロック)",
+      "en": "羽鳥3丁目6番3号(一部8ブロック)",
+      "jp": "羽鳥3丁目6番3号(一部8ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番3号(一部9ブロック)",
+      "en": "羽鳥3丁目6番3号(一部9ブロック)",
+      "jp": "羽鳥3丁目6番3号(一部9ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目6番4号〜5号",
+      "en": "羽鳥3丁目6番4号〜5号",
+      "jp": "羽鳥3丁目6番4号〜5号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目7番13号〜16号",
+      "en": "羽鳥3丁目7番13号〜16号",
+      "jp": "羽鳥3丁目7番13号〜16号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目7番17号",
+      "en": "羽鳥3丁目7番17号",
+      "jp": "羽鳥3丁目7番17号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目7番4号",
+      "en": "羽鳥3丁目7番4号",
+      "jp": "羽鳥3丁目7番4号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目7番7号〜10号",
+      "en": "羽鳥3丁目7番7号〜10号",
+      "jp": "羽鳥3丁目7番7号〜10号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番12号〜19号",
+      "en": "羽鳥3丁目8番12号〜19号",
+      "jp": "羽鳥3丁目8番12号〜19号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番1号〜3号",
+      "en": "羽鳥3丁目8番1号〜3号",
+      "jp": "羽鳥3丁目8番1号〜3号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番5号",
+      "en": "羽鳥3丁目8番5号",
+      "jp": "羽鳥3丁目8番5号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番6号(一部8ブロック)",
+      "en": "羽鳥3丁目8番6号(一部8ブロック)",
+      "jp": "羽鳥3丁目8番6号(一部8ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番6号(一部9ブロック)",
+      "en": "羽鳥3丁目8番6号(一部9ブロック)",
+      "jp": "羽鳥3丁目8番6号(一部9ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目8番7号",
+      "en": "羽鳥3丁目8番7号",
+      "jp": "羽鳥3丁目8番7号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥3丁目9番",
+      "en": "羽鳥3丁目9番",
+      "jp": "羽鳥3丁目9番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目13番14号〜36号",
+      "en": "羽鳥4丁目13番14号〜36号",
+      "jp": "羽鳥4丁目13番14号〜36号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目13番1号〜9号",
+      "en": "羽鳥4丁目13番1号〜9号",
+      "jp": "羽鳥4丁目13番1号〜9号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目13番37号〜51号",
+      "en": "羽鳥4丁目13番37号〜51号",
+      "jp": "羽鳥4丁目13番37号〜51号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目1番〜2番",
+      "en": "羽鳥4丁目1番〜2番",
+      "jp": "羽鳥4丁目1番〜2番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目3番10号",
+      "en": "羽鳥4丁目3番10号",
+      "jp": "羽鳥4丁目3番10号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目3番11号",
+      "en": "羽鳥4丁目3番11号",
+      "jp": "羽鳥4丁目3番11号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目3番16号〜20号",
+      "en": "羽鳥4丁目3番16号〜20号",
+      "jp": "羽鳥4丁目3番16号〜20号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目3番29号〜34号",
+      "en": "羽鳥4丁目3番29号〜34号",
+      "jp": "羽鳥4丁目3番29号〜34号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目3番2号〜8号",
+      "en": "羽鳥4丁目3番2号〜8号",
+      "jp": "羽鳥4丁目3番2号〜8号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番17号（一部8ブロック）",
+      "en": "羽鳥4丁目4番17号（一部8ブロック）",
+      "jp": "羽鳥4丁目4番17号（一部8ブロック）",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番17号(一部9ブロック)",
+      "en": "羽鳥4丁目4番17号(一部9ブロック)",
+      "jp": "羽鳥4丁目4番17号(一部9ブロック)",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番18号",
+      "en": "羽鳥4丁目4番18号",
+      "jp": "羽鳥4丁目4番18号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番22号",
+      "en": "羽鳥4丁目4番22号",
+      "jp": "羽鳥4丁目4番22号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番27号〜33号",
+      "en": "羽鳥4丁目4番27号〜33号",
+      "jp": "羽鳥4丁目4番27号〜33号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番2号",
+      "en": "羽鳥4丁目4番2号",
+      "jp": "羽鳥4丁目4番2号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目4番4号〜16号",
+      "en": "羽鳥4丁目4番4号〜16号",
+      "jp": "羽鳥4丁目4番4号〜16号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目5番",
+      "en": "羽鳥4丁目5番",
+      "jp": "羽鳥4丁目5番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目6番2号〜3号",
+      "en": "羽鳥4丁目6番2号〜3号",
+      "jp": "羽鳥4丁目6番2号〜3号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目6番37号",
+      "en": "羽鳥4丁目6番37号",
+      "jp": "羽鳥4丁目6番37号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目6番39号〜47号",
+      "en": "羽鳥4丁目6番39号〜47号",
+      "jp": "羽鳥4丁目6番39号〜47号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目6番5号〜30号",
+      "en": "羽鳥4丁目6番5号〜30号",
+      "jp": "羽鳥4丁目6番5号〜30号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥4丁目7番〜12番",
+      "en": "羽鳥4丁目7番〜12番",
+      "jp": "羽鳥4丁目7番〜12番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番18号",
+      "en": "羽鳥5丁目10番18号",
+      "jp": "羽鳥5丁目10番18号",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番19号",
+      "en": "羽鳥5丁目10番19号",
+      "jp": "羽鳥5丁目10番19号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番1号〜17号",
+      "en": "羽鳥5丁目10番1号〜17号",
+      "jp": "羽鳥5丁目10番1号〜17号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番20号（一部3ブロック）",
+      "en": "羽鳥5丁目10番20号（一部3ブロック）",
+      "jp": "羽鳥5丁目10番20号（一部3ブロック）",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番20号（一部8ブロック）",
+      "en": "羽鳥5丁目10番20号（一部8ブロック）",
+      "jp": "羽鳥5丁目10番20号（一部8ブロック）",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番24号",
+      "en": "羽鳥5丁目10番24号",
+      "jp": "羽鳥5丁目10番24号",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目10番25号〜41号",
+      "en": "羽鳥5丁目10番25号〜41号",
+      "jp": "羽鳥5丁目10番25号〜41号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目11番",
+      "en": "羽鳥5丁目11番",
+      "jp": "羽鳥5丁目11番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目12番",
+      "en": "羽鳥5丁目12番",
+      "jp": "羽鳥5丁目12番",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番16号",
+      "en": "羽鳥5丁目13番16号",
+      "jp": "羽鳥5丁目13番16号",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番17号",
+      "en": "羽鳥5丁目13番17号",
+      "jp": "羽鳥5丁目13番17号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番18号",
+      "en": "羽鳥5丁目13番18号",
+      "jp": "羽鳥5丁目13番18号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番19号",
+      "en": "羽鳥5丁目13番19号",
+      "jp": "羽鳥5丁目13番19号",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番1号〜15号",
+      "en": "羽鳥5丁目13番1号〜15号",
+      "jp": "羽鳥5丁目13番1号〜15号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番20号〜24号",
+      "en": "羽鳥5丁目13番20号〜24号",
+      "jp": "羽鳥5丁目13番20号〜24号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番25号",
+      "en": "羽鳥5丁目13番25号",
+      "jp": "羽鳥5丁目13番25号",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目13番26号〜36号",
+      "en": "羽鳥5丁目13番26号〜36号",
+      "jp": "羽鳥5丁目13番26号〜36号",
+      "pattern": "6"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目14番",
+      "en": "羽鳥5丁目14番",
+      "jp": "羽鳥5丁目14番",
+      "pattern": "1"
+    },
+    {
+      "town": "羽鳥",
+      "townEn": "Hatori",
+      "kana": "ハトリ",
+      "chome": null,
+      "detail": "羽鳥5丁目1番〜9番",
+      "en": "羽鳥5丁目1番〜9番",
+      "jp": "羽鳥5丁目1番〜9番",
+      "pattern": "6"
+    },
+    {
+      "town": "花の木",
+      "townEn": "Hananoki",
+      "kana": "ハノキ",
+      "chome": null,
+      "detail": "花の木全域",
+      "en": "花の木全域",
+      "jp": "花の木全域",
+      "pattern": "1"
+    },
+    {
+      "town": "藤が岡",
+      "townEn": "Fujigaoka",
+      "kana": "フジガオカ",
+      "chome": null,
+      "detail": "藤が岡1〜3丁目全域",
+      "en": "藤が岡1〜3丁目全域",
+      "jp": "藤が岡1〜3丁目全域",
+      "pattern": "2"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢（番地地区）全域（3800は3ブロック）",
+      "en": "藤沢（番地地区）全域（3800は3ブロック）",
+      "jp": "藤沢（番地地区）全域（3800は3ブロック）",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目1番22号〜23号",
+      "en": "藤沢1丁目1番22号〜23号",
+      "jp": "藤沢1丁目1番22号〜23号",
+      "pattern": "1"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目1番35号",
+      "en": "藤沢1丁目1番35号",
+      "jp": "藤沢1丁目1番35号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目1番4号〜19号",
+      "en": "藤沢1丁目1番4号〜19号",
+      "jp": "藤沢1丁目1番4号〜19号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目2番14号〜22号",
+      "en": "藤沢1丁目2番14号〜22号",
+      "jp": "藤沢1丁目2番14号〜22号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目2番1号〜5号",
+      "en": "藤沢1丁目2番1号〜5号",
+      "jp": "藤沢1丁目2番1号〜5号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目2番6号〜13号",
+      "en": "藤沢1丁目2番6号〜13号",
+      "jp": "藤沢1丁目2番6号〜13号",
+      "pattern": "1"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目3番1号〜3号",
+      "en": "藤沢1丁目3番1号〜3号",
+      "jp": "藤沢1丁目3番1号〜3号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目3番26号",
+      "en": "藤沢1丁目3番26号",
+      "jp": "藤沢1丁目3番26号",
+      "pattern": "3"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目3番4号〜25号",
+      "en": "藤沢1丁目3番4号〜25号",
+      "jp": "藤沢1丁目3番4号〜25号",
+      "pattern": "1"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢1丁目4番〜13番",
+      "en": "藤沢1丁目4番〜13番",
+      "jp": "藤沢1丁目4番〜13番",
+      "pattern": "1"
+    },
+    {
+      "town": "藤沢",
+      "townEn": "Fujisawa",
+      "kana": "フジサワ",
+      "chome": null,
+      "detail": "藤沢2〜5丁目全域",
+      "en": "藤沢2〜5丁目全域",
+      "jp": "藤沢2〜5丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼1丁目全域",
+      "en": "本鵠沼1丁目全域",
+      "jp": "本鵠沼1丁目全域",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目1番",
+      "en": "本鵠沼2丁目1番",
+      "jp": "本鵠沼2丁目1番",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目2番",
+      "en": "本鵠沼2丁目2番",
+      "jp": "本鵠沼2丁目2番",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目3番1号〜7号",
+      "en": "本鵠沼2丁目3番1号〜7号",
+      "jp": "本鵠沼2丁目3番1号〜7号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目3番8号(一部6ブロック）",
+      "en": "本鵠沼2丁目3番8号(一部6ブロック）",
+      "jp": "本鵠沼2丁目3番8号(一部6ブロック）",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目3番8号(一部7ブロック)",
+      "en": "本鵠沼2丁目3番8号(一部7ブロック)",
+      "jp": "本鵠沼2丁目3番8号(一部7ブロック)",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目3番9号〜26号",
+      "en": "本鵠沼2丁目3番9号〜26号",
+      "jp": "本鵠沼2丁目3番9号〜26号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目4番15号〜33号",
+      "en": "本鵠沼2丁目4番15号〜33号",
+      "jp": "本鵠沼2丁目4番15号〜33号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目4番35号",
+      "en": "本鵠沼2丁目4番35号",
+      "jp": "本鵠沼2丁目4番35号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目4番36号",
+      "en": "本鵠沼2丁目4番36号",
+      "jp": "本鵠沼2丁目4番36号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目4番3号〜9号",
+      "en": "本鵠沼2丁目4番3号〜9号",
+      "jp": "本鵠沼2丁目4番3号〜9号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目5番19号",
+      "en": "本鵠沼2丁目5番19号",
+      "jp": "本鵠沼2丁目5番19号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目5番2号〜7号",
+      "en": "本鵠沼2丁目5番2号〜7号",
+      "jp": "本鵠沼2丁目5番2号〜7号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼2丁目6番〜20番",
+      "en": "本鵠沼2丁目6番〜20番",
+      "jp": "本鵠沼2丁目6番〜20番",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼3〜4丁目全域",
+      "en": "本鵠沼3〜4丁目全域",
+      "jp": "本鵠沼3〜4丁目全域",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目1番24号〜26号",
+      "en": "本鵠沼5丁目1番24号〜26号",
+      "jp": "本鵠沼5丁目1番24号〜26号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目1番28号〜32号",
+      "en": "本鵠沼5丁目1番28号〜32号",
+      "jp": "本鵠沼5丁目1番28号〜32号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目1番8号",
+      "en": "本鵠沼5丁目1番8号",
+      "jp": "本鵠沼5丁目1番8号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目1番9号〜18号",
+      "en": "本鵠沼5丁目1番9号〜18号",
+      "jp": "本鵠沼5丁目1番9号〜18号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目2番",
+      "en": "本鵠沼5丁目2番",
+      "jp": "本鵠沼5丁目2番",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目3番15号〜19号",
+      "en": "本鵠沼5丁目3番15号〜19号",
+      "jp": "本鵠沼5丁目3番15号〜19号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目3番1号",
+      "en": "本鵠沼5丁目3番1号",
+      "jp": "本鵠沼5丁目3番1号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目3番20号〜23号",
+      "en": "本鵠沼5丁目3番20号〜23号",
+      "jp": "本鵠沼5丁目3番20号〜23号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目3番24号〜30号",
+      "en": "本鵠沼5丁目3番24号〜30号",
+      "jp": "本鵠沼5丁目3番24号〜30号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目3番2号〜14号",
+      "en": "本鵠沼5丁目3番2号〜14号",
+      "jp": "本鵠沼5丁目3番2号〜14号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目4番12号〜16号",
+      "en": "本鵠沼5丁目4番12号〜16号",
+      "jp": "本鵠沼5丁目4番12号〜16号",
+      "pattern": "4"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目4番18号〜23号",
+      "en": "本鵠沼5丁目4番18号〜23号",
+      "jp": "本鵠沼5丁目4番18号〜23号",
+      "pattern": "5"
+    },
+    {
+      "town": "本鵠沼",
+      "townEn": "Honkugenuma",
+      "kana": "ホンクゲヌマ",
+      "chome": null,
+      "detail": "本鵠沼5丁目5番〜15番",
+      "en": "本鵠沼5丁目5番〜15番",
+      "jp": "本鵠沼5丁目5番〜15番",
+      "pattern": "5"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目12番1号〜27号",
+      "en": "本町1丁目12番1号〜27号",
+      "jp": "本町1丁目12番1号〜27号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目12番28号〜34号",
+      "en": "本町1丁目12番28号〜34号",
+      "jp": "本町1丁目12番28号〜34号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目12番37号〜41号",
+      "en": "本町1丁目12番37号〜41号",
+      "jp": "本町1丁目12番37号〜41号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目1番〜3番",
+      "en": "本町1丁目1番〜3番",
+      "jp": "本町1丁目1番〜3番",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目4番12号〜21号",
+      "en": "本町1丁目4番12号〜21号",
+      "jp": "本町1丁目4番12号〜21号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目4番22号〜26号",
+      "en": "本町1丁目4番22号〜26号",
+      "jp": "本町1丁目4番22号〜26号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目4番2号",
+      "en": "本町1丁目4番2号",
+      "jp": "本町1丁目4番2号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目4番7号〜11号",
+      "en": "本町1丁目4番7号〜11号",
+      "jp": "本町1丁目4番7号〜11号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番1号〜19号",
+      "en": "本町1丁目5番1号〜19号",
+      "jp": "本町1丁目5番1号〜19号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番20号",
+      "en": "本町1丁目5番20号",
+      "jp": "本町1丁目5番20号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番21号",
+      "en": "本町1丁目5番21号",
+      "jp": "本町1丁目5番21号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番23号",
+      "en": "本町1丁目5番23号",
+      "jp": "本町1丁目5番23号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番25号",
+      "en": "本町1丁目5番25号",
+      "jp": "本町1丁目5番25号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目5番29号〜34号",
+      "en": "本町1丁目5番29号〜34号",
+      "jp": "本町1丁目5番29号〜34号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町1丁目6番〜11番",
+      "en": "本町1丁目6番〜11番",
+      "jp": "本町1丁目6番〜11番",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目1番〜5番",
+      "en": "本町2丁目1番〜5番",
+      "jp": "本町2丁目1番〜5番",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目6番14号",
+      "en": "本町2丁目6番14号",
+      "jp": "本町2丁目6番14号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目6番17号",
+      "en": "本町2丁目6番17号",
+      "jp": "本町2丁目6番17号",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目6番9号〜11号",
+      "en": "本町2丁目6番9号〜11号",
+      "jp": "本町2丁目6番9号〜11号",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目7番〜8番",
+      "en": "本町2丁目7番〜8番",
+      "jp": "本町2丁目7番〜8番",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町2丁目9番〜14番",
+      "en": "本町2丁目9番〜14番",
+      "jp": "本町2丁目9番〜14番",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": "本町3〜4丁目全域",
+      "en": "本町3〜4丁目全域",
+      "jp": "本町3〜4丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "本藤沢",
+      "townEn": "Honfujisawa",
+      "kana": "ホンフジサワ",
+      "chome": null,
+      "detail": "本藤沢1〜7丁目全域",
+      "en": "本藤沢1〜7丁目全域",
+      "jp": "本藤沢1〜7丁目全域",
+      "pattern": "1"
+    },
+    {
+      "town": "みその台",
+      "townEn": "Misonodai",
+      "kana": "ミタイ",
+      "chome": null,
+      "detail": "みその台全域",
+      "en": "みその台全域",
+      "jp": "みその台全域",
+      "pattern": "1"
+    },
+    {
+      "town": "宮原",
+      "townEn": "Miyabara",
+      "kana": "ミハ",
+      "chome": null,
+      "detail": "宮原全域",
+      "en": "宮原全域",
+      "jp": "宮原全域",
+      "pattern": "6"
+    },
+    {
+      "town": "南藤沢",
+      "townEn": "Minamifujisawa",
+      "kana": "ミフサ",
+      "chome": null,
+      "detail": "南藤沢全域",
+      "en": "南藤沢全域",
+      "jp": "南藤沢全域",
+      "pattern": "4"
+    },
+    {
+      "town": "宮前",
+      "townEn": "Miyamae",
+      "kana": "ミマ",
+      "chome": null,
+      "detail": "宮前全域",
+      "en": "宮前全域",
+      "jp": "宮前全域",
+      "pattern": "2"
+    },
+    {
+      "town": "弥勒寺",
+      "townEn": "Mirokuji",
+      "kana": "ミロクジ",
+      "chome": null,
+      "detail": "弥勒寺（番地地区）全域",
+      "en": "弥勒寺（番地地区）全域",
+      "jp": "弥勒寺（番地地区）全域",
+      "pattern": "2"
+    },
+    {
+      "town": "弥勒寺",
+      "townEn": "Mirokuji",
+      "kana": "ミロクジ",
+      "chome": null,
+      "detail": "弥勒寺1〜4丁目全域",
+      "en": "弥勒寺1〜4丁目全域",
+      "jp": "弥勒寺1〜4丁目全域",
+      "pattern": "2"
+    },
+    {
+      "town": "村岡東",
+      "townEn": "Muraokahigashi",
+      "kana": "ムラオカヒガシ",
+      "chome": null,
+      "detail": "村岡東1〜4丁目全域",
+      "en": "村岡東1〜4丁目全域",
+      "jp": "村岡東1〜4丁目全域",
+      "pattern": "2"
+    },
+    {
+      "town": "用田",
+      "townEn": "Yoda",
+      "kana": "ヨタ",
+      "chome": null,
+      "detail": "用田全域",
+      "en": "用田全域",
+      "jp": "用田全域",
+      "pattern": "6"
+    },
+    {
+      "town": "渡内",
+      "townEn": "Watauchi",
+      "kana": "ワタウチ",
+      "chome": null,
+      "detail": "渡内（番地地区）全域",
+      "en": "渡内（番地地区）全域",
+      "jp": "渡内（番地地区）全域",
+      "pattern": "2"
+    },
+    {
+      "town": "渡内",
+      "townEn": "Watauchi",
+      "kana": "ワタウチ",
+      "chome": null,
+      "detail": "渡内1〜4丁目全域",
+      "en": "渡内1〜4丁目全域",
+      "jp": "渡内1〜4丁目全域",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://fujisawa.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

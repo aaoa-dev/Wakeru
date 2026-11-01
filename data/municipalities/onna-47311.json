@@ -1,0 +1,294 @@
+{
+  "id": "onna-47311",
+  "code": "47311",
+  "pref": "47",
+  "jp": "恩納村",
+  "en": "Onna",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://onna.5374.jp/data/area_days.csv",
+    "http://onna.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              3,
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        "glass_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "oversized": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "安富祖",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "安富祖",
+      "jp": "安富祖",
+      "pattern": "1"
+    },
+    {
+      "town": "宇加地",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宇加地",
+      "jp": "宇加地",
+      "pattern": "1"
+    },
+    {
+      "town": "塩屋",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩屋",
+      "jp": "塩屋",
+      "pattern": "1"
+    },
+    {
+      "town": "恩納",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "恩納",
+      "jp": "恩納",
+      "pattern": "1"
+    },
+    {
+      "town": "喜瀬武原",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "喜瀬武原",
+      "jp": "喜瀬武原",
+      "pattern": "1"
+    },
+    {
+      "town": "山田",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山田",
+      "jp": "山田",
+      "pattern": "1"
+    },
+    {
+      "town": "真栄田",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真栄田",
+      "jp": "真栄田",
+      "pattern": "1"
+    },
+    {
+      "town": "瀬良垣",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "瀬良垣",
+      "jp": "瀬良垣",
+      "pattern": "1"
+    },
+    {
+      "town": "前兼久",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "前兼久",
+      "jp": "前兼久",
+      "pattern": "1"
+    },
+    {
+      "town": "太田",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太田",
+      "jp": "太田",
+      "pattern": "1"
+    },
+    {
+      "town": "谷茶",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "谷茶",
+      "jp": "谷茶",
+      "pattern": "1"
+    },
+    {
+      "town": "仲泊(ニュータウン含)",
+      "townEn": "Nyutaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仲泊(ニュータウン含)",
+      "jp": "仲泊(ニュータウン含)",
+      "pattern": "1"
+    },
+    {
+      "town": "南恩納",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南恩納",
+      "jp": "南恩納",
+      "pattern": "1"
+    },
+    {
+      "town": "富着",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富着",
+      "jp": "富着",
+      "pattern": "1"
+    },
+    {
+      "town": "名嘉真(希望丘含)",
+      "townEn": "Onna",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "名嘉真(希望丘含)",
+      "jp": "名嘉真(希望丘含)",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://onna.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

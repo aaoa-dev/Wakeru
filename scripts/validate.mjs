@@ -63,10 +63,8 @@ for(const entry of index.municipalities){
   for(const [id, p] of Object.entries(cal.patterns)) for(const [bin, rule] of Object.entries(p)){
     check(bins.includes(bin), `${file} pattern ${id}`, `unknown bin "${bin}"`);
     checkRule(rule, `${file} pattern ${id} ${bin}`);
-    for(const d of [...(rule?.dates ?? []), ...(rule?.add ?? [])]){
-      const off = nc.weekdays.includes(new Date(d + "T00:00").getDay()) || nc.dates.includes(d.slice(5)) || nc.bins?.[bin]?.includes(d.slice(5));
-      check(!off, `${file} pattern ${id} ${bin}`, `${d} falls on a no-collection day, so the app would hide it`);
-    }
+    for(const d of [...(rule?.dates ?? []), ...(rule?.add ?? [])])
+      check(!nc.bins?.[bin]?.includes(d.slice(5)), `${file} pattern ${id} ${bin}`, `${d} is both an explicit pickup and a bin-specific no-collection day`);
   }
   check(m.areas.length, file, "has no areas");
   for(const a of m.areas){
@@ -84,5 +82,27 @@ for(const entry of index.municipalities){
   }
 }
 
-if(errors.length){ console.error(errors.slice(0, 50).join("\n")); console.error(`\n${errors.length} problem(s)`); process.exitCode = 1 }
-else console.log(`ok: ${index.municipalities.length} municipalities, ${Object.keys(types).length} types`);
+/* onboarding map: every shipped pref is shaded and each city code has an SVG path */
+const coverage = read("data/coverage.json");
+const japan = read("data/map/japan.json");
+const indexPrefs = [...new Set(index.municipalities.map(m => String(m.pref).padStart(2, "0")))].sort();
+check(JSON.stringify(coverage.prefectures) === JSON.stringify(indexPrefs), "coverage.json", "prefectures must match municipalities.json");
+for(const pref of coverage.prefectures){
+  check(japan.prefs.some(p => p.code === pref), "data/map/japan.json", `missing prefecture outline for ${pref}`);
+  const mapFile = `data/map/${pref}.json`;
+  check(fs.existsSync(path.join(ROOT, mapFile)), "coverage.json", `${mapFile} is missing`);
+  const mapCodes = new Set(read(mapFile).munis.map(m => m.code));
+  for(const code of coverage.municipalitiesByPref[pref] ?? [])
+    check(mapCodes.has(code), mapFile, `no map path for municipality ${code}`);
+}
+
+let mapMunis = 0;
+for(const pref of coverage.prefectures){
+  const mapFile = `data/map/${pref}.json`;
+  if(fs.existsSync(path.join(ROOT, mapFile))) mapMunis += read(mapFile).munis.length;
+}
+const pct = mapMunis ? (100 * index.municipalities.length / mapMunis).toFixed(1) : "?";
+if(errors.length){ console.error(errors.slice(0, 50).join("\n")); console.error(`\n${errors.length} problem(s)`) }
+console.log(`coverage: ${index.municipalities.length}/${mapMunis} municipalities (${pct}%), ${coverage.prefectures.length}/47 prefectures`);
+if(!errors.length) console.log(`ok: ${Object.keys(types).length} item types`);
+else process.exitCode = 1;

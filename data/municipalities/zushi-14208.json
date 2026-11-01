@@ -1,0 +1,252 @@
+{
+  "id": "zushi-14208",
+  "code": "14208",
+  "pref": "14",
+  "jp": "逗子市",
+  "en": "Zushi",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://zushi.5374.jp/data/area_days.csv",
+    "http://zushi.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「ごみと資源物の分別一覧表(な)」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「布類」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「ごみと資源物の分別一覧表(こ)」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「ごみと資源物の分別一覧表(さ)」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「ごみと資源物の分別一覧表(た)」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「紙パック（牛乳・ジュースなどの内側が白いもの）」 under 「ごみと資源物の分別一覧表(か)」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ごみと資源物の分別一覧表(へ)」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶」 under 「ごみと資源物の分別一覧表(あ)」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「ごみと資源物の分別一覧表(い)」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「陶磁器（せともの）」 under 「ごみと資源物の分別一覧表(と)」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「フライパン」 under 「ごみと資源物の分別一覧表(ふ)」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「ごみと資源物の分別一覧表(は)」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「トレイ（金属製）」 under 「ごみと資源物の分別一覧表(と)」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「乾電池（アルカリ・マンガン）」 under 「ごみと資源物の分別一覧表(か)」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「拠点回収」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「ごみと資源物の分別一覧表(す)」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「ごみと資源物の分別一覧表(ら)」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「蛍光管（蛍光灯）」 under 「ごみと資源物の分別一覧表(け)」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「てんぷら油」 under 「ごみと資源物の分別一覧表(て)」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「ごみと資源物の分別一覧表(し)」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「ごみと資源物の分別一覧表(せ)」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「パソコン」 under 「ごみと資源物の分別一覧表(は)」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「ごみと資源物の分別一覧表(し)」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          5
+        ],
+        "non_burnable": [
+          2
+        ],
+        "pet_bottle": [
+          2
+        ],
+        "beverage_can": [
+          4
+        ],
+        "plastic": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "逗子",
+      "townEn": "Zushi",
+      "kana": "ズシ",
+      "chome": null,
+      "detail": "逗子全域",
+      "en": "逗子全域",
+      "jp": "逗子全域",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://zushi.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

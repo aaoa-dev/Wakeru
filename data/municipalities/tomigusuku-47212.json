@@ -1,0 +1,492 @@
+{
+  "id": "tomigusuku-47212",
+  "code": "47212",
+  "pref": "47",
+  "jp": "豊見城市",
+  "en": "Tomigusuku",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tomigusuku.5374.jp/data/area_days.csv",
+    "http://tomigusuku.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "glass_bottle": [
+          2
+        ],
+        "pet_bottle": [
+          5
+        ]
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "glass_bottle": [
+          3
+        ],
+        "pet_bottle": [
+          6
+        ]
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              3,
+              6
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "glass_bottle": [
+          1
+        ],
+        "pet_bottle": [
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "伊良波",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "伊良波",
+      "jp": "伊良波",
+      "pattern": "3"
+    },
+    {
+      "town": "翁長",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "翁長",
+      "jp": "翁長",
+      "pattern": "2"
+    },
+    {
+      "town": "嘉数",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "嘉数",
+      "jp": "嘉数",
+      "pattern": "1"
+    },
+    {
+      "town": "我那覇",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "我那覇",
+      "jp": "我那覇",
+      "pattern": "3"
+    },
+    {
+      "town": "金良",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金良",
+      "jp": "金良",
+      "pattern": "1"
+    },
+    {
+      "town": "県営豊見城団地",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "県営豊見城団地",
+      "jp": "県営豊見城団地",
+      "pattern": "2"
+    },
+    {
+      "town": "高安の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高安の一部",
+      "jp": "高安の一部",
+      "pattern": "1"
+    },
+    {
+      "town": "高安の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高安の一部",
+      "jp": "高安の一部",
+      "pattern": "2"
+    },
+    {
+      "town": "高嶺",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高嶺",
+      "jp": "高嶺",
+      "pattern": "2"
+    },
+    {
+      "town": "根差部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "根差部",
+      "jp": "根差部",
+      "pattern": "1"
+    },
+    {
+      "town": "座安",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "座安",
+      "jp": "座安",
+      "pattern": "3"
+    },
+    {
+      "town": "上田(市道25号線西側)",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上田(市道25号線西側)",
+      "jp": "上田(市道25号線西側)",
+      "pattern": "3"
+    },
+    {
+      "town": "上田(市道25号線東側)",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上田(市道25号線東側)",
+      "jp": "上田(市道25号線東側)",
+      "pattern": "2"
+    },
+    {
+      "town": "真玉橋",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真玉橋",
+      "jp": "真玉橋",
+      "pattern": "1"
+    },
+    {
+      "town": "瀬長",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "瀬長",
+      "jp": "瀬長",
+      "pattern": "3"
+    },
+    {
+      "town": "長堂",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長堂",
+      "jp": "長堂",
+      "pattern": "1"
+    },
+    {
+      "town": "田頭",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田頭",
+      "jp": "田頭",
+      "pattern": "3"
+    },
+    {
+      "town": "渡嘉敷",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渡嘉敷",
+      "jp": "渡嘉敷",
+      "pattern": "2"
+    },
+    {
+      "town": "渡橋名の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渡橋名の一部",
+      "jp": "渡橋名の一部",
+      "pattern": "2"
+    },
+    {
+      "town": "渡橋名の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "渡橋名の一部",
+      "jp": "渡橋名の一部",
+      "pattern": "3"
+    },
+    {
+      "town": "平良",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平良",
+      "jp": "平良",
+      "pattern": "2"
+    },
+    {
+      "town": "保栄茂",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "保栄茂",
+      "jp": "保栄茂",
+      "pattern": "2"
+    },
+    {
+      "town": "豊見城(県道7号線西側)",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊見城(県道7号線西側)",
+      "jp": "豊見城(県道7号線西側)",
+      "pattern": "3"
+    },
+    {
+      "town": "豊見城(県道7号線東側)",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊見城(県道7号線東側)",
+      "jp": "豊見城(県道7号線東側)",
+      "pattern": "1"
+    },
+    {
+      "town": "豊見城ニュータウン",
+      "townEn": "Nyutaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊見城ニュータウン",
+      "jp": "豊見城ニュータウン",
+      "pattern": "1"
+    },
+    {
+      "town": "豊見城団地",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊見城団地",
+      "jp": "豊見城団地",
+      "pattern": "2"
+    },
+    {
+      "town": "豊崎",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊崎",
+      "jp": "豊崎",
+      "pattern": "2"
+    },
+    {
+      "town": "名嘉地",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "名嘉地",
+      "jp": "名嘉地",
+      "pattern": "3"
+    },
+    {
+      "town": "与根",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "与根",
+      "jp": "与根",
+      "pattern": "3"
+    },
+    {
+      "town": "饒波の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "饒波の一部",
+      "jp": "饒波の一部",
+      "pattern": "1"
+    },
+    {
+      "town": "饒波の一部",
+      "townEn": "Tomigusuku",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "饒波の一部",
+      "jp": "饒波の一部",
+      "pattern": "2"
+    },
+    {
+      "town": "宜保",
+      "townEn": "Gibo",
+      "kana": "ギボ",
+      "chome": null,
+      "detail": null,
+      "en": "宜保",
+      "jp": "宜保",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tomigusuku.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

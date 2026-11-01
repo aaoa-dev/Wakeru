@@ -1,0 +1,3705 @@
+{
+  "id": "fukuchiyama",
+  "code": "26201",
+  "pref": "26",
+  "jp": "福知山市",
+  "en": "Fukuchiyama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://fukuchiyama.5374.jp/data/area_days.csv",
+    "http://fukuchiyama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "beverage_can": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "plastic": [
+          3
+        ],
+        "beverage_can": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "庵我地区-安井",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-安井",
+      "jp": "庵我地区-安井",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-下猪崎",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-下猪崎",
+      "jp": "庵我地区-下猪崎",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-城山",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-城山",
+      "jp": "庵我地区-城山",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-池部",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-池部",
+      "jp": "庵我地区-池部",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-中",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-中",
+      "jp": "庵我地区-中",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-中村団地",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-中村団地",
+      "jp": "庵我地区-中村団地",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-猪崎",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-猪崎",
+      "jp": "庵我地区-猪崎",
+      "pattern": "5"
+    },
+    {
+      "town": "庵我地区-筈巻",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "庵我地区-筈巻",
+      "jp": "庵我地区-筈巻",
+      "pattern": "5"
+    },
+    {
+      "town": "雲原地区-雲原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雲原地区-雲原",
+      "jp": "雲原地区-雲原",
+      "pattern": "6"
+    },
+    {
+      "town": "下川口地区-一尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-一尾",
+      "jp": "下川口地区-一尾",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-下天津",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-下天津",
+      "jp": "下川口地区-下天津",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-漆端",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-漆端",
+      "jp": "下川口地区-漆端",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-石本",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-石本",
+      "jp": "下川口地区-石本",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-勅使",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-勅使",
+      "jp": "下川口地区-勅使",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-波江",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-波江",
+      "jp": "下川口地区-波江",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-牧",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-牧",
+      "jp": "下川口地区-牧",
+      "pattern": "5"
+    },
+    {
+      "town": "下川口地区-瘤木",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川口地区-瘤木",
+      "jp": "下川口地区-瘤木",
+      "pattern": "5"
+    },
+    {
+      "town": "下豊富地区-かしの木台",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-かしの木台",
+      "jp": "下豊富地区-かしの木台",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-さつきケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-さつきケ丘",
+      "jp": "下豊富地区-さつきケ丘",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-奥野部",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-奥野部",
+      "jp": "下豊富地区-奥野部",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-下荒河",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-下荒河",
+      "jp": "下豊富地区-下荒河",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-額塚",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-額塚",
+      "jp": "下豊富地区-額塚",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-岩井",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-岩井",
+      "jp": "下豊富地区-岩井",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-岩井新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-岩井新町",
+      "jp": "下豊富地区-岩井新町",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-厚",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-厚",
+      "jp": "下豊富地区-厚",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-荒河ヒルズ",
+      "townEn": "Hiruzu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-荒河ヒルズ",
+      "jp": "下豊富地区-荒河ヒルズ",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-今安",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-今安",
+      "jp": "下豊富地区-今安",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-山崎",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-山崎",
+      "jp": "下豊富地区-山崎",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-市寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-市寺",
+      "jp": "下豊富地区-市寺",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-室",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-室",
+      "jp": "下豊富地区-室",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-上荒河",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-上荒河",
+      "jp": "下豊富地区-上荒河",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-新庄",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-新庄",
+      "jp": "下豊富地区-新庄",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-正明寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-正明寺",
+      "jp": "下豊富地区-正明寺",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-大門",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-大門",
+      "jp": "下豊富地区-大門",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-拝師",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-拝師",
+      "jp": "下豊富地区-拝師",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-半田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-半田",
+      "jp": "下豊富地区-半田",
+      "pattern": "3"
+    },
+    {
+      "town": "下豊富地区-和久寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下豊富地区-和久寺",
+      "jp": "下豊富地区-和久寺",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-岩間",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-岩間",
+      "jp": "下六人部地区-岩間",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-駒場新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-駒場新町",
+      "jp": "下六人部地区-駒場新町",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-市の谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-市の谷",
+      "jp": "下六人部地区-市の谷",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-上松",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-上松",
+      "jp": "下六人部地区-上松",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-多保市",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-多保市",
+      "jp": "下六人部地区-多保市",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-大野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-大野",
+      "jp": "下六人部地区-大野",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-長田段",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-長田段",
+      "jp": "下六人部地区-長田段",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-長田南",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-長田南",
+      "jp": "下六人部地区-長田南",
+      "pattern": "3"
+    },
+    {
+      "town": "下六人部地区-長田北",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下六人部地区-長田北",
+      "jp": "下六人部地区-長田北",
+      "pattern": "3"
+    },
+    {
+      "town": "金山地区-下野条",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-下野条",
+      "jp": "金山地区-下野条",
+      "pattern": "6"
+    },
+    {
+      "town": "金山地区-行積",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-行積",
+      "jp": "金山地区-行積",
+      "pattern": "6"
+    },
+    {
+      "town": "金山地区-坂浦",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-坂浦",
+      "jp": "金山地区-坂浦",
+      "pattern": "6"
+    },
+    {
+      "town": "金山地区-上野条",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-上野条",
+      "jp": "金山地区-上野条",
+      "pattern": "6"
+    },
+    {
+      "town": "金山地区-長尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-長尾",
+      "jp": "金山地区-長尾",
+      "pattern": "6"
+    },
+    {
+      "town": "金山地区-天座",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金山地区-天座",
+      "jp": "金山地区-天座",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-鴨野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-鴨野町",
+      "jp": "金谷地区-鴨野町",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-宮垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-宮垣",
+      "jp": "金谷地区-宮垣",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-大見長祖",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-大見長祖",
+      "jp": "金谷地区-大見長祖",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-猪野々",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-猪野々",
+      "jp": "金谷地区-猪野々",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-田和",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-田和",
+      "jp": "金谷地区-田和",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-梅谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-梅谷",
+      "jp": "金谷地区-梅谷",
+      "pattern": "6"
+    },
+    {
+      "town": "金谷地区-野笹",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金谷地区-野笹",
+      "jp": "金谷地区-野笹",
+      "pattern": "6"
+    },
+    {
+      "town": "佐賀地区-印内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐賀地区-印内",
+      "jp": "佐賀地区-印内",
+      "pattern": "5"
+    },
+    {
+      "town": "佐賀地区-山野口",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐賀地区-山野口",
+      "jp": "佐賀地区-山野口",
+      "pattern": "5"
+    },
+    {
+      "town": "佐賀地区-私市",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐賀地区-私市",
+      "jp": "佐賀地区-私市",
+      "pattern": "5"
+    },
+    {
+      "town": "佐賀地区-報恩寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐賀地区-報恩寺",
+      "jp": "佐賀地区-報恩寺",
+      "pattern": "5"
+    },
+    {
+      "town": "三岳地区-一ノ宮",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-一ノ宮",
+      "jp": "三岳地区-一ノ宮",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-下佐々木",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-下佐々木",
+      "jp": "三岳地区-下佐々木",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-喜多",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-喜多",
+      "jp": "三岳地区-喜多",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-上佐々木",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-上佐々木",
+      "jp": "三岳地区-上佐々木",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-常願寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-常願寺",
+      "jp": "三岳地区-常願寺",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-新宮",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-新宮",
+      "jp": "三岳地区-新宮",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-中佐々木",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-中佐々木",
+      "jp": "三岳地区-中佐々木",
+      "pattern": "6"
+    },
+    {
+      "town": "三岳地区-日尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三岳地区-日尾",
+      "jp": "三岳地区-日尾",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-芦渕",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-芦渕",
+      "jp": "三和地区-芦渕",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-下川合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-下川合",
+      "jp": "三和地区-下川合",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-加用",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-加用",
+      "jp": "三和地区-加用",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-高杉",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-高杉",
+      "jp": "三和地区-高杉",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-寺尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-寺尾",
+      "jp": "三和地区-寺尾",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-上川合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-上川合",
+      "jp": "三和地区-上川合",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-西松",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-西松",
+      "jp": "三和地区-西松",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-千束",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-千束",
+      "jp": "三和地区-千束",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-草山",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-草山",
+      "jp": "三和地区-草山",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-台頭",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-台頭",
+      "jp": "三和地区-台頭",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-大原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-大原",
+      "jp": "三和地区-大原",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-大身",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-大身",
+      "jp": "三和地区-大身",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-中出",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-中出",
+      "jp": "三和地区-中出",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-辻",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-辻",
+      "jp": "三和地区-辻",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-田ノ谷",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-田ノ谷",
+      "jp": "三和地区-田ノ谷",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-菟原下一",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-菟原下一",
+      "jp": "三和地区-菟原下一",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-菟原下二",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-菟原下二",
+      "jp": "三和地区-菟原下二",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-菟原中",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-菟原中",
+      "jp": "三和地区-菟原中",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-梅原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-梅原",
+      "jp": "三和地区-梅原",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-友渕",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-友渕",
+      "jp": "三和地区-友渕",
+      "pattern": "6"
+    },
+    {
+      "town": "三和地区-岼",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三和地区-岼",
+      "jp": "三和地区-岼",
+      "pattern": "6"
+    },
+    {
+      "town": "昭和地区-下紺屋町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-下紺屋町",
+      "jp": "昭和地区-下紺屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-下篠尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-下篠尾",
+      "jp": "昭和地区-下篠尾",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-下柳町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-下柳町",
+      "jp": "昭和地区-下柳町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-厚中問屋町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-厚中問屋町",
+      "jp": "昭和地区-厚中問屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-厚東町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-厚東町",
+      "jp": "昭和地区-厚東町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-向野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-向野",
+      "jp": "昭和地区-向野",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-寺町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-寺町",
+      "jp": "昭和地区-寺町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-篠尾新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-篠尾新町",
+      "jp": "昭和地区-篠尾新町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-昭和新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-昭和新町",
+      "jp": "昭和地区-昭和新町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-上篠尾一区",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-上篠尾一区",
+      "jp": "昭和地区-上篠尾一区",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-上篠尾二区",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-上篠尾二区",
+      "jp": "昭和地区-上篠尾二区",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-西羽合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-西羽合",
+      "jp": "昭和地区-西羽合",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-西町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-西町",
+      "jp": "昭和地区-西町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-西本町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-西本町",
+      "jp": "昭和地区-西本町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-鋳物師町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-鋳物師町",
+      "jp": "昭和地区-鋳物師町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-東羽合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-東羽合",
+      "jp": "昭和地区-東羽合",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-東本町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-東本町",
+      "jp": "昭和地区-東本町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-南羽合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-南羽合",
+      "jp": "昭和地区-南羽合",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-南本町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-南本町",
+      "jp": "昭和地区-南本町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-菱屋町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-菱屋町",
+      "jp": "昭和地区-菱屋町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-北羽合",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-北羽合",
+      "jp": "昭和地区-北羽合",
+      "pattern": "3"
+    },
+    {
+      "town": "昭和地区-北本町一区",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-北本町一区",
+      "jp": "昭和地区-北本町一区",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-北本町二区",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-北本町二区",
+      "jp": "昭和地区-北本町二区",
+      "pattern": "2"
+    },
+    {
+      "town": "昭和地区-和久市町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "昭和地区-和久市町",
+      "jp": "昭和地区-和久市町",
+      "pattern": "2"
+    },
+    {
+      "town": "上川口地区-夷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-夷",
+      "jp": "上川口地区-夷",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-下小田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-下小田",
+      "jp": "上川口地区-下小田",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-住所大山",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-住所大山",
+      "jp": "上川口地区-住所大山",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-十三丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-十三丘",
+      "jp": "上川口地区-十三丘",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-十二",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-十二",
+      "jp": "上川口地区-十二",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-小田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-小田",
+      "jp": "上川口地区-小田",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-上下大内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-上下大内",
+      "jp": "上川口地区-上下大内",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-大呂",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-大呂",
+      "jp": "上川口地区-大呂",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-野花",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-野花",
+      "jp": "上川口地区-野花",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-立原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-立原",
+      "jp": "上川口地区-立原",
+      "pattern": "6"
+    },
+    {
+      "town": "上川口地区-六十内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川口地区-六十内",
+      "jp": "上川口地区-六十内",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-奥榎原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-奥榎原",
+      "jp": "上豊富地区-奥榎原",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-下戸",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-下戸",
+      "jp": "上豊富地区-下戸",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-茅ノ台",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-茅ノ台",
+      "jp": "上豊富地区-茅ノ台",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-甘栗",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-甘栗",
+      "jp": "上豊富地区-甘栗",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-口榎原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-口榎原",
+      "jp": "上豊富地区-口榎原",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-小牧",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-小牧",
+      "jp": "上豊富地区-小牧",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-石場",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-石場",
+      "jp": "上豊富地区-石場",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-樽水",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-樽水",
+      "jp": "上豊富地区-樽水",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-談",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-談",
+      "jp": "上豊富地区-談",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-辻",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-辻",
+      "jp": "上豊富地区-辻",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-畑中",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-畑中",
+      "jp": "上豊富地区-畑中",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-法用",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-法用",
+      "jp": "上豊富地区-法用",
+      "pattern": "6"
+    },
+    {
+      "town": "上豊富地区-北山",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上豊富地区-北山",
+      "jp": "上豊富地区-北山",
+      "pattern": "6"
+    },
+    {
+      "town": "上六人部地区-岩崎",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-岩崎",
+      "jp": "上六人部地区-岩崎",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-坂室",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-坂室",
+      "jp": "上六人部地区-坂室",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-三俣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-三俣",
+      "jp": "上六人部地区-三俣",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-上野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-上野",
+      "jp": "上六人部地区-上野",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-正後寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-正後寺",
+      "jp": "上六人部地区-正後寺",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-生野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-生野",
+      "jp": "上六人部地区-生野",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-池田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-池田",
+      "jp": "上六人部地区-池田",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-萩原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-萩原",
+      "jp": "上六人部地区-萩原",
+      "pattern": "1"
+    },
+    {
+      "town": "上六人部地区-堀越",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上六人部地区-堀越",
+      "jp": "上六人部地区-堀越",
+      "pattern": "1"
+    },
+    {
+      "town": "雀部地区-秋津が丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-秋津が丘",
+      "jp": "雀部地区-秋津が丘",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-小松ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-小松ケ丘",
+      "jp": "雀部地区-小松ケ丘",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-西佳屋野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-西佳屋野町",
+      "jp": "雀部地区-西佳屋野町",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-川北",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-川北",
+      "jp": "雀部地区-川北",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-前田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-前田",
+      "jp": "雀部地区-前田",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-土師宮町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-土師宮町",
+      "jp": "雀部地区-土師宮町",
+      "pattern": "6"
+    },
+    {
+      "town": "雀部地区-土師新町東",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-土師新町東",
+      "jp": "雀部地区-土師新町東",
+      "pattern": "6"
+    },
+    {
+      "town": "雀部地区-土師新町南",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-土師新町南",
+      "jp": "雀部地区-土師新町南",
+      "pattern": "6"
+    },
+    {
+      "town": "雀部地区-土師町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-土師町",
+      "jp": "雀部地区-土師町",
+      "pattern": "6"
+    },
+    {
+      "town": "雀部地区-東佳屋野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-東佳屋野町",
+      "jp": "雀部地区-東佳屋野町",
+      "pattern": "4"
+    },
+    {
+      "town": "雀部地区-南佳屋野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "雀部地区-南佳屋野町",
+      "jp": "雀部地区-南佳屋野町",
+      "pattern": "4"
+    },
+    {
+      "town": "成仁地区-桔梗が丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成仁地区-桔梗が丘",
+      "jp": "成仁地区-桔梗が丘",
+      "pattern": "4"
+    },
+    {
+      "town": "成仁地区-大池坂町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成仁地区-大池坂町",
+      "jp": "成仁地区-大池坂町",
+      "pattern": "4"
+    },
+    {
+      "town": "成仁地区-中坂町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成仁地区-中坂町",
+      "jp": "成仁地区-中坂町",
+      "pattern": "4"
+    },
+    {
+      "town": "成仁地区-長山町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成仁地区-長山町",
+      "jp": "成仁地区-長山町",
+      "pattern": "4"
+    },
+    {
+      "town": "成仁地区-平野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成仁地区-平野町",
+      "jp": "成仁地区-平野町",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-観音寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-観音寺",
+      "jp": "遷喬地区-観音寺",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-興",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-興",
+      "jp": "遷喬地区-興",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-戸田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-戸田",
+      "jp": "遷喬地区-戸田",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-聖佳町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-聖佳町",
+      "jp": "遷喬地区-聖佳町",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-石原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-石原",
+      "jp": "遷喬地区-石原",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-土",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-土",
+      "jp": "遷喬地区-土",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-東野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-東野町",
+      "jp": "遷喬地区-東野町",
+      "pattern": "4"
+    },
+    {
+      "town": "遷喬地区-南土野町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "遷喬地区-南土野町",
+      "jp": "遷喬地区-南土野町",
+      "pattern": "4"
+    },
+    {
+      "town": "大江地区-下町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-下町",
+      "jp": "大江地区-下町",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-夏間",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-夏間",
+      "jp": "大江地区-夏間",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-夏間グリーンヒル",
+      "townEn": "Gurinhiru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-夏間グリーンヒル",
+      "jp": "大江地区-夏間グリーンヒル",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-関",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-関",
+      "jp": "大江地区-関",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-橋谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-橋谷",
+      "jp": "大江地区-橋谷",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-金屋",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-金屋",
+      "jp": "大江地区-金屋",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-公庄",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-公庄",
+      "jp": "大江地区-公庄",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-高津江",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-高津江",
+      "jp": "大江地区-高津江",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-在田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-在田",
+      "jp": "大江地区-在田",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-三河",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-三河",
+      "jp": "大江地区-三河",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-市原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-市原",
+      "jp": "大江地区-市原",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-小原田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-小原田",
+      "jp": "大江地区-小原田",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-小谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-小谷",
+      "jp": "大江地区-小谷",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-上野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-上野",
+      "jp": "大江地区-上野",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-常津",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-常津",
+      "jp": "大江地区-常津",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-新町",
+      "jp": "大江地区-新町",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-清水",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-清水",
+      "jp": "大江地区-清水",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-西部",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-西部",
+      "jp": "大江地区-西部",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-千原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-千原",
+      "jp": "大江地区-千原",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-中央",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-中央",
+      "jp": "大江地区-中央",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-天田内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-天田内",
+      "jp": "大江地区-天田内",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-東部",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-東部",
+      "jp": "大江地区-東部",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-内宮",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-内宮",
+      "jp": "大江地区-内宮",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-南一",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-南一",
+      "jp": "大江地区-南一",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-南三",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-南三",
+      "jp": "大江地区-南三",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-南四",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-南四",
+      "jp": "大江地区-南四",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-南二",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-南二",
+      "jp": "大江地区-南二",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-二箇下",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-二箇下",
+      "jp": "大江地区-二箇下",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-二箇上",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-二箇上",
+      "jp": "大江地区-二箇上",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-二俣一",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-二俣一",
+      "jp": "大江地区-二俣一",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-二俣三",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-二俣三",
+      "jp": "大江地区-二俣三",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-二俣二",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-二俣二",
+      "jp": "大江地区-二俣二",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-日藤",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-日藤",
+      "jp": "大江地区-日藤",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-波美",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-波美",
+      "jp": "大江地区-波美",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-尾藤奥",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-尾藤奥",
+      "jp": "大江地区-尾藤奥",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-尾藤口",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-尾藤口",
+      "jp": "大江地区-尾藤口",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-美鈴新",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-美鈴新",
+      "jp": "大江地区-美鈴新",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-北一",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-北一",
+      "jp": "大江地区-北一",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-北原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-北原",
+      "jp": "大江地区-北原",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-北三",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-北三",
+      "jp": "大江地区-北三",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-北四",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-北四",
+      "jp": "大江地区-北四",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-北二",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-北二",
+      "jp": "大江地区-北二",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-毛原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-毛原",
+      "jp": "大江地区-毛原",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-佛性寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-佛性寺",
+      "jp": "大江地区-佛性寺",
+      "pattern": "3"
+    },
+    {
+      "town": "大江地区-蓼原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大江地区-蓼原",
+      "jp": "大江地区-蓼原",
+      "pattern": "3"
+    },
+    {
+      "town": "大正地区-荒木",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-荒木",
+      "jp": "大正地区-荒木",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-高畑",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-高畑",
+      "jp": "大正地区-高畑",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-蛇ケ端",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-蛇ケ端",
+      "jp": "大正地区-蛇ケ端",
+      "pattern": "6"
+    },
+    {
+      "town": "大正地区-森垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-森垣",
+      "jp": "大正地区-森垣",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-水内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-水内",
+      "jp": "大正地区-水内",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-西小谷ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-西小谷ケ丘",
+      "jp": "大正地区-西小谷ケ丘",
+      "pattern": "5"
+    },
+    {
+      "town": "大正地区-東小谷ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-東小谷ケ丘",
+      "jp": "大正地区-東小谷ケ丘",
+      "pattern": "5"
+    },
+    {
+      "town": "大正地区-東堀",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-東堀",
+      "jp": "大正地区-東堀",
+      "pattern": "6"
+    },
+    {
+      "town": "大正地区-内田町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-内田町",
+      "jp": "大正地区-内田町",
+      "pattern": "6"
+    },
+    {
+      "town": "大正地区-南小谷ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-南小谷ケ丘",
+      "jp": "大正地区-南小谷ケ丘",
+      "pattern": "5"
+    },
+    {
+      "town": "大正地区-南本堀",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-南本堀",
+      "jp": "大正地区-南本堀",
+      "pattern": "5"
+    },
+    {
+      "town": "大正地区-日吉ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-日吉ケ丘",
+      "jp": "大正地区-日吉ケ丘",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-北小谷ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-北小谷ケ丘",
+      "jp": "大正地区-北小谷ケ丘",
+      "pattern": "5"
+    },
+    {
+      "town": "大正地区-堀口",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-堀口",
+      "jp": "大正地区-堀口",
+      "pattern": "6"
+    },
+    {
+      "town": "大正地区-本堀",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-本堀",
+      "jp": "大正地区-本堀",
+      "pattern": "4"
+    },
+    {
+      "town": "大正地区-野家",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大正地区-野家",
+      "jp": "大正地区-野家",
+      "pattern": "4"
+    },
+    {
+      "town": "中六人部地区-下地",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-下地",
+      "jp": "中六人部地区-下地",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-後正寺",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-後正寺",
+      "jp": "中六人部地区-後正寺",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-口田野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-口田野",
+      "jp": "中六人部地区-口田野",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-笹場",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-笹場",
+      "jp": "中六人部地区-笹場",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-大内山田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-大内山田",
+      "jp": "中六人部地区-大内山田",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-中地",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-中地",
+      "jp": "中六人部地区-中地",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-田野山田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-田野山田",
+      "jp": "中六人部地区-田野山田",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-島田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-島田",
+      "jp": "中六人部地区-島田",
+      "pattern": "2"
+    },
+    {
+      "town": "中六人部地区-野間仁田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中六人部地区-野間仁田",
+      "jp": "中六人部地区-野間仁田",
+      "pattern": "2"
+    },
+    {
+      "town": "惇明地区-つつじが丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-つつじが丘",
+      "jp": "惇明地区-つつじが丘",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-旭が丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-旭が丘",
+      "jp": "惇明地区-旭が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-駅前町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-駅前町",
+      "jp": "惇明地区-駅前町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-岡ノ一町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-岡ノ一町",
+      "jp": "惇明地区-岡ノ一町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-岡ノ三町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-岡ノ三町",
+      "jp": "惇明地区-岡ノ三町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-岡ノ上町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-岡ノ上町",
+      "jp": "惇明地区-岡ノ上町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-岡ノ二町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-岡ノ二町",
+      "jp": "惇明地区-岡ノ二町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-下新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-下新町",
+      "jp": "惇明地区-下新町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-丸田ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-丸田ケ丘",
+      "jp": "惇明地区-丸田ケ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-京町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-京町",
+      "jp": "惇明地区-京町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-呉服町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-呉服町",
+      "jp": "惇明地区-呉服町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-広峯町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-広峯町",
+      "jp": "惇明地区-広峯町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-上紺屋町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-上紺屋町",
+      "jp": "惇明地区-上紺屋町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-上新町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-上新町",
+      "jp": "惇明地区-上新町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-西岡町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-西岡町",
+      "jp": "惇明地区-西岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-西中ノ町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-西中ノ町",
+      "jp": "惇明地区-西中ノ町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-鍛冶町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-鍛冶町",
+      "jp": "惇明地区-鍛冶町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-中ノ町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-中ノ町",
+      "jp": "惇明地区-中ノ町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-長町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-長町",
+      "jp": "惇明地区-長町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-東岡町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-東岡町",
+      "jp": "惇明地区-東岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-東中ノ町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-東中ノ町",
+      "jp": "惇明地区-東中ノ町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記一丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記一丁目",
+      "jp": "惇明地区-内記一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記五丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記五丁目",
+      "jp": "惇明地区-内記五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記三丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記三丁目",
+      "jp": "惇明地区-内記三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記四丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記四丁目",
+      "jp": "惇明地区-内記四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記二丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記二丁目",
+      "jp": "惇明地区-内記二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記六丁目",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記六丁目",
+      "jp": "惇明地区-内記六丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-内記六丁目北",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-内記六丁目北",
+      "jp": "惇明地区-内記六丁目北",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-南栄町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-南栄町",
+      "jp": "惇明地区-南栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-南岡町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-南岡町",
+      "jp": "惇明地区-南岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-南天田自衛隊宿舎",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-南天田自衛隊宿舎",
+      "jp": "惇明地区-南天田自衛隊宿舎",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-南天田町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-南天田町",
+      "jp": "惇明地区-南天田町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-北栄町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-北栄町",
+      "jp": "惇明地区-北栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-北岡町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-北岡町",
+      "jp": "惇明地区-北岡町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-夕陽が丘",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-夕陽が丘",
+      "jp": "惇明地区-夕陽が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-陵北町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-陵北町",
+      "jp": "惇明地区-陵北町",
+      "pattern": "1"
+    },
+    {
+      "town": "惇明地区-緑ケ丘町",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惇明地区-緑ケ丘町",
+      "jp": "惇明地区-緑ケ丘町",
+      "pattern": "1"
+    },
+    {
+      "town": "夜久野地区-井田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-井田",
+      "jp": "夜久野地区-井田",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-稲垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-稲垣",
+      "jp": "夜久野地区-稲垣",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-羽白",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-羽白",
+      "jp": "夜久野地区-羽白",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-駅前",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-駅前",
+      "jp": "夜久野地区-駅前",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-奥",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-奥",
+      "jp": "夜久野地区-奥",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-奥水坂",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-奥水坂",
+      "jp": "夜久野地区-奥水坂",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-下千原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-下千原",
+      "jp": "夜久野地区-下千原",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-下町",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-下町",
+      "jp": "夜久野地区-下町",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-柿本",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-柿本",
+      "jp": "夜久野地区-柿本",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-且",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-且",
+      "jp": "夜久野地区-且",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-宮垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-宮垣",
+      "jp": "夜久野地区-宮垣",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-金谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-金谷",
+      "jp": "夜久野地区-金谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-金尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-金尾",
+      "jp": "夜久野地区-金尾",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-栗尾",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-栗尾",
+      "jp": "夜久野地区-栗尾",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-桑村",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-桑村",
+      "jp": "夜久野地区-桑村",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-桑谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-桑谷",
+      "jp": "夜久野地区-桑谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-現世",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-現世",
+      "jp": "夜久野地区-現世",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-向",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-向",
+      "jp": "夜久野地区-向",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-高内",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-高内",
+      "jp": "夜久野地区-高内",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-今西",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-今西",
+      "jp": "夜久野地区-今西",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-今西中",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-今西中",
+      "jp": "夜久野地区-今西中",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-今里",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-今里",
+      "jp": "夜久野地区-今里",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-才谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-才谷",
+      "jp": "夜久野地区-才谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-三谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-三谷",
+      "jp": "夜久野地区-三谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-山中",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-山中",
+      "jp": "夜久野地区-山中",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-小倉",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-小倉",
+      "jp": "夜久野地区-小倉",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-小畑",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-小畑",
+      "jp": "夜久野地区-小畑",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-上千原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-上千原",
+      "jp": "夜久野地区-上千原",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-上町（額田）",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-上町（額田）",
+      "jp": "夜久野地区-上町（額田）",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-上町（板生）",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-上町（板生）",
+      "jp": "夜久野地区-上町（板生）",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-水坂",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-水坂",
+      "jp": "夜久野地区-水坂",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-水上",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-水上",
+      "jp": "夜久野地区-水上",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-西垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-西垣",
+      "jp": "夜久野地区-西垣",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-西谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-西谷",
+      "jp": "夜久野地区-西谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-大油子",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-大油子",
+      "jp": "夜久野地区-大油子",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-大岶",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-大岶",
+      "jp": "夜久野地区-大岶",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-中千原",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-中千原",
+      "jp": "夜久野地区-中千原",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-中田",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-中田",
+      "jp": "夜久野地区-中田",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-田谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-田谷",
+      "jp": "夜久野地区-田谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-田谷垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-田谷垣",
+      "jp": "夜久野地区-田谷垣",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-日置",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-日置",
+      "jp": "夜久野地区-日置",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-副谷",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-副谷",
+      "jp": "夜久野地区-副谷",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-平野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-平野",
+      "jp": "夜久野地区-平野",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-末",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-末",
+      "jp": "夜久野地区-末",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-門垣",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-門垣",
+      "jp": "夜久野地区-門垣",
+      "pattern": "2"
+    },
+    {
+      "town": "夜久野地区-夜久野",
+      "townEn": "Fukuchiyama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夜久野地区-夜久野",
+      "jp": "夜久野地区-夜久野",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://fukuchiyama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

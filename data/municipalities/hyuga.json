@@ -1,0 +1,210 @@
+{
+  "id": "hyuga",
+  "code": "45206",
+  "pref": "45",
+  "jp": "日向市",
+  "en": "Hyuga",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.hyugacity.jp/display.php?cont=210319104646"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割りばし」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「古布類」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「レシート」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「古紙類」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「本」 under 「古紙類」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「古紙類」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「アルミ缶（飲食用）」 under 「飲食用缶」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「あきびん」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「カセットボンベ・スプレー缶」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせるごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Burnable and plastic weekdays from Hyuga City published schedules (two main burnable zones). Non-burnable uses nth-Wednesday rules — see city calendar PDFs for your district number.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "月・木燃やせるごみ区域",
+      "townEn": "Mon & Thu burnable zone",
+      "kana": "月・木燃やせるごみ区域",
+      "chome": null,
+      "detail": null,
+      "en": "Mon & Thu burnable zone",
+      "jp": "月・木燃やせるごみ区域",
+      "pattern": "1"
+    },
+    {
+      "town": "火・金燃やせるごみ区域",
+      "townEn": "Tue & Fri burnable zone",
+      "kana": "火・金燃やせるごみ区域",
+      "chome": null,
+      "detail": null,
+      "en": "Tue & Fri burnable zone",
+      "jp": "火・金燃やせるごみ区域",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Hyuga City garbage handling plan / FY2026 guide",
+      "url": "https://www.hyugacity.jp/display.php?cont=210319104646",
+      "license": "Hyuga City open data"
+    }
+  },
+  "updated": "2026-10-31"
+}

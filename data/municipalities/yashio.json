@@ -1,0 +1,1602 @@
+{
+  "id": "yashio",
+  "code": "11234",
+  "pref": "11",
+  "jp": "八潮市",
+  "en": "Yashio",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.yashio.lg.jp/kurashi/gomi_kankyo/shushubi/ichiran/index.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "資源燃えないごみ",
+      "en": "Non-burnable recyclables",
+      "kind": "non"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割りばし」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「フライパン」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「包丁」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ドライヤー」 under 「燃えないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油（植物性）」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「家電リサイクル法対象品」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules merged from each neighborhood page on the city's collection-day index. Other recyclables use the linked PDF calendar for your カレンダー番号.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          3
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "7": {
+        "burnable": [
+          4
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "9": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "10": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "11": {
+        "burnable": [
+          1
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "12": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "13": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "14": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "15": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "八條 全域（八潮団地を除く）",
+      "townEn": "八條 全域（八潮団地を除く）",
+      "kana": "八條 全域（八潮団地を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "八條 全域（八潮団地を除く）",
+      "jp": "八條 全域（八潮団地を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "1567（八潮団地） 月曜日・木曜日",
+      "townEn": "1567（八潮団地） 月曜日・木曜日",
+      "kana": "1567（八潮団地） 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1567（八潮団地） 月曜日・木曜日",
+      "jp": "1567（八潮団地） 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴ヶ曽根 1～23",
+      "townEn": "鶴ヶ曽根 1～23",
+      "kana": "鶴ヶ曽根 1～23",
+      "chome": null,
+      "detail": null,
+      "en": "鶴ヶ曽根 1～23",
+      "jp": "鶴ヶ曽根 1～23",
+      "pattern": "1"
+    },
+    {
+      "town": "51～52 月曜日・木曜日",
+      "townEn": "51～52 月曜日・木曜日",
+      "kana": "51～52 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "51～52 月曜日・木曜日",
+      "jp": "51～52 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "53～61 月曜日・木曜日",
+      "townEn": "53～61 月曜日・木曜日",
+      "kana": "53～61 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "53～61 月曜日・木曜日",
+      "jp": "53～61 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "63～98 月曜日・木曜日",
+      "townEn": "63～98 月曜日・木曜日",
+      "kana": "63～98 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "63～98 月曜日・木曜日",
+      "jp": "63～98 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "99～102 月曜日・木曜日",
+      "townEn": "99～102 月曜日・木曜日",
+      "kana": "99～102 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "99～102 月曜日・木曜日",
+      "jp": "99～102 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "113～691 月曜日・木曜日",
+      "townEn": "113～691 月曜日・木曜日",
+      "kana": "113～691 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "113～691 月曜日・木曜日",
+      "jp": "113～691 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "705～973 月曜日・木曜日",
+      "townEn": "705～973 月曜日・木曜日",
+      "kana": "705～973 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "705～973 月曜日・木曜日",
+      "jp": "705～973 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "1089～2021 月曜日・木曜日",
+      "townEn": "1089～2021 月曜日・木曜日",
+      "kana": "1089～2021 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1089～2021 月曜日・木曜日",
+      "jp": "1089～2021 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "2025～2134 月曜日・木曜日",
+      "townEn": "2025～2134 月曜日・木曜日",
+      "kana": "2025～2134 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "2025～2134 月曜日・木曜日",
+      "jp": "2025～2134 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "小作田 44～68",
+      "townEn": "小作田 44～68",
+      "kana": "小作田 44～68",
+      "chome": null,
+      "detail": null,
+      "en": "小作田 44～68",
+      "jp": "小作田 44～68",
+      "pattern": "4"
+    },
+    {
+      "town": "松之木 246",
+      "townEn": "松之木 246",
+      "kana": "松之木 246",
+      "chome": null,
+      "detail": null,
+      "en": "松之木 246",
+      "jp": "松之木 246",
+      "pattern": "4"
+    },
+    {
+      "town": "261 月曜日・木曜日",
+      "townEn": "261 月曜日・木曜日",
+      "kana": "261 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "261 月曜日・木曜日",
+      "jp": "261 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "伊草",
+      "townEn": "伊草",
+      "kana": "伊草",
+      "chome": null,
+      "detail": null,
+      "en": "伊草",
+      "jp": "伊草",
+      "pattern": "5"
+    },
+    {
+      "town": "新町",
+      "townEn": "新町",
+      "kana": "新町",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "1"
+    },
+    {
+      "town": "二丁目 1～535",
+      "townEn": "二丁目 1～535",
+      "kana": "二丁目 1～535",
+      "chome": null,
+      "detail": null,
+      "en": "二丁目 1～535",
+      "jp": "二丁目 1～535",
+      "pattern": "4"
+    },
+    {
+      "town": "640～1000 月曜日・木曜日",
+      "townEn": "640～1000 月曜日・木曜日",
+      "kana": "640～1000 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "640～1000 月曜日・木曜日",
+      "jp": "640～1000 月曜日・木曜日",
+      "pattern": "3"
+    },
+    {
+      "town": "1001～1004 月曜日・木曜日",
+      "townEn": "1001～1004 月曜日・木曜日",
+      "kana": "1001～1004 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1001～1004 月曜日・木曜日",
+      "jp": "1001～1004 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1005 水曜日・土曜日",
+      "townEn": "1005 水曜日・土曜日",
+      "kana": "1005 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1005 水曜日・土曜日",
+      "jp": "1005 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "1006～1008 月曜日・木曜日",
+      "townEn": "1006～1008 月曜日・木曜日",
+      "kana": "1006～1008 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1006～1008 月曜日・木曜日",
+      "jp": "1006～1008 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1009～1010 水曜日・土曜日",
+      "townEn": "1009～1010 水曜日・土曜日",
+      "kana": "1009～1010 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1009～1010 水曜日・土曜日",
+      "jp": "1009～1010 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1011～1033 月曜日・木曜日",
+      "townEn": "1011～1033 月曜日・木曜日",
+      "kana": "1011～1033 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1011～1033 月曜日・木曜日",
+      "jp": "1011～1033 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1034～1037 水曜日・土曜日",
+      "townEn": "1034～1037 水曜日・土曜日",
+      "kana": "1034～1037 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1034～1037 水曜日・土曜日",
+      "jp": "1034～1037 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1038～1041 月曜日・木曜日",
+      "townEn": "1038～1041 月曜日・木曜日",
+      "kana": "1038～1041 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1038～1041 月曜日・木曜日",
+      "jp": "1038～1041 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1042～1045 水曜日・土曜日",
+      "townEn": "1042～1045 水曜日・土曜日",
+      "kana": "1042～1045 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1042～1045 水曜日・土曜日",
+      "jp": "1042～1045 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1046～1049 月曜日・木曜日",
+      "townEn": "1046～1049 月曜日・木曜日",
+      "kana": "1046～1049 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1046～1049 月曜日・木曜日",
+      "jp": "1046～1049 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1050～1053 水曜日・土曜日",
+      "townEn": "1050～1053 水曜日・土曜日",
+      "kana": "1050～1053 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1050～1053 水曜日・土曜日",
+      "jp": "1050～1053 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1054～1057 月曜日・木曜日",
+      "townEn": "1054～1057 月曜日・木曜日",
+      "kana": "1054～1057 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1054～1057 月曜日・木曜日",
+      "jp": "1054～1057 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1058～1061 水曜日・土曜日",
+      "townEn": "1058～1061 水曜日・土曜日",
+      "kana": "1058～1061 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1058～1061 水曜日・土曜日",
+      "jp": "1058～1061 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1062～1065 月曜日・木曜日",
+      "townEn": "1062～1065 月曜日・木曜日",
+      "kana": "1062～1065 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1062～1065 月曜日・木曜日",
+      "jp": "1062～1065 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1066～1069 水曜日・土曜日",
+      "townEn": "1066～1069 水曜日・土曜日",
+      "kana": "1066～1069 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1066～1069 水曜日・土曜日",
+      "jp": "1066～1069 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1070～1133 月曜日・木曜日",
+      "townEn": "1070～1133 月曜日・木曜日",
+      "kana": "1070～1133 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1070～1133 月曜日・木曜日",
+      "jp": "1070～1133 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1134～1135 水曜日・土曜日",
+      "townEn": "1134～1135 水曜日・土曜日",
+      "kana": "1134～1135 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1134～1135 水曜日・土曜日",
+      "jp": "1134～1135 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1136～1153 月曜日・木曜日",
+      "townEn": "1136～1153 月曜日・木曜日",
+      "kana": "1136～1153 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1136～1153 月曜日・木曜日",
+      "jp": "1136～1153 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1154～1157 水曜日・土曜日",
+      "townEn": "1154～1157 水曜日・土曜日",
+      "kana": "1154～1157 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1154～1157 水曜日・土曜日",
+      "jp": "1154～1157 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1158～1166 月曜日・木曜日",
+      "townEn": "1158～1166 月曜日・木曜日",
+      "kana": "1158～1166 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1158～1166 月曜日・木曜日",
+      "jp": "1158～1166 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1167～1169 水曜日・土曜日",
+      "townEn": "1167～1169 水曜日・土曜日",
+      "kana": "1167～1169 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1167～1169 水曜日・土曜日",
+      "jp": "1167～1169 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1170～1245 月曜日・木曜日",
+      "townEn": "1170～1245 月曜日・木曜日",
+      "kana": "1170～1245 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1170～1245 月曜日・木曜日",
+      "jp": "1170～1245 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1246～1257 水曜日・土曜日",
+      "townEn": "1246～1257 水曜日・土曜日",
+      "kana": "1246～1257 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1246～1257 水曜日・土曜日",
+      "jp": "1246～1257 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1472～1605 月曜日・木曜日",
+      "townEn": "1472～1605 月曜日・木曜日",
+      "kana": "1472～1605 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1472～1605 月曜日・木曜日",
+      "jp": "1472～1605 月曜日・木曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1606～1646 水曜日・土曜日",
+      "townEn": "1606～1646 水曜日・土曜日",
+      "kana": "1606～1646 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1606～1646 水曜日・土曜日",
+      "jp": "1606～1646 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "木曽根 304～502",
+      "townEn": "木曽根 304～502",
+      "kana": "木曽根 304～502",
+      "chome": null,
+      "detail": null,
+      "en": "木曽根 304～502",
+      "jp": "木曽根 304～502",
+      "pattern": "8"
+    },
+    {
+      "town": "503～1103 月曜日・木曜日",
+      "townEn": "503～1103 月曜日・木曜日",
+      "kana": "503～1103 月曜日・木曜日",
+      "chome": null,
+      "detail": null,
+      "en": "503～1103 月曜日・木曜日",
+      "jp": "503～1103 月曜日・木曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "1104～1168 水曜日・土曜日",
+      "townEn": "1104～1168 水曜日・土曜日",
+      "kana": "1104～1168 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1104～1168 水曜日・土曜日",
+      "jp": "1104～1168 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "1173～2135 水曜日・土曜日",
+      "townEn": "1173～2135 水曜日・土曜日",
+      "kana": "1173～2135 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1173～2135 水曜日・土曜日",
+      "jp": "1173～2135 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "南川崎 1～47",
+      "townEn": "南川崎 1～47",
+      "kana": "南川崎 1～47",
+      "chome": null,
+      "detail": null,
+      "en": "南川崎 1～47",
+      "jp": "南川崎 1～47",
+      "pattern": "9"
+    },
+    {
+      "town": "48～421 水曜日・土曜日",
+      "townEn": "48～421 水曜日・土曜日",
+      "kana": "48～421 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "48～421 水曜日・土曜日",
+      "jp": "48～421 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "422～431 水曜日・土曜日",
+      "townEn": "422～431 水曜日・土曜日",
+      "kana": "422～431 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "422～431 水曜日・土曜日",
+      "jp": "422～431 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "432～775 水曜日・土曜日",
+      "townEn": "432～775 水曜日・土曜日",
+      "kana": "432～775 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "432～775 水曜日・土曜日",
+      "jp": "432～775 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "778～797 水曜日・土曜日",
+      "townEn": "778～797 水曜日・土曜日",
+      "kana": "778～797 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "778～797 水曜日・土曜日",
+      "jp": "778～797 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "798～1053 水曜日・土曜日",
+      "townEn": "798～1053 水曜日・土曜日",
+      "kana": "798～1053 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "798～1053 水曜日・土曜日",
+      "jp": "798～1053 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "伊勢野 32～426",
+      "townEn": "伊勢野 32～426",
+      "kana": "伊勢野 32～426",
+      "chome": null,
+      "detail": null,
+      "en": "伊勢野 32～426",
+      "jp": "伊勢野 32～426",
+      "pattern": "10"
+    },
+    {
+      "town": "557～583 火曜日・金曜日",
+      "townEn": "557～583 火曜日・金曜日",
+      "kana": "557～583 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "557～583 火曜日・金曜日",
+      "jp": "557～583 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "584～614 水曜日・土曜日",
+      "townEn": "584～614 水曜日・土曜日",
+      "kana": "584～614 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "584～614 水曜日・土曜日",
+      "jp": "584～614 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "大瀬 2～55",
+      "townEn": "大瀬 2～55",
+      "kana": "大瀬 2～55",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬 2～55",
+      "jp": "大瀬 2～55",
+      "pattern": "9"
+    },
+    {
+      "town": "100～983 火曜日・金曜日",
+      "townEn": "100～983 火曜日・金曜日",
+      "kana": "100～983 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "100～983 火曜日・金曜日",
+      "jp": "100～983 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "1373～1527 水曜日・土曜日",
+      "townEn": "1373～1527 水曜日・土曜日",
+      "kana": "1373～1527 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1373～1527 水曜日・土曜日",
+      "jp": "1373～1527 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1529～1532 水曜日・土曜日",
+      "townEn": "1529～1532 水曜日・土曜日",
+      "kana": "1529～1532 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1529～1532 水曜日・土曜日",
+      "jp": "1529～1532 水曜日・土曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "1540～1672-3 水曜日・土曜日",
+      "townEn": "1540～1672-3 水曜日・土曜日",
+      "kana": "1540～1672-3 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1540～1672-3 水曜日・土曜日",
+      "jp": "1540～1672-3 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1672-5～1695 水曜日・土曜日",
+      "townEn": "1672-5～1695 水曜日・土曜日",
+      "kana": "1672-5～1695 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1672-5～1695 水曜日・土曜日",
+      "jp": "1672-5～1695 水曜日・土曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "1696～1709 水曜日・土曜日",
+      "townEn": "1696～1709 水曜日・土曜日",
+      "kana": "1696～1709 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1696～1709 水曜日・土曜日",
+      "jp": "1696～1709 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "1710～1714,1791 水曜日・土曜日",
+      "townEn": "1710～1714,1791 水曜日・土曜日",
+      "kana": "1710～1714,1791 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1710～1714,1791 水曜日・土曜日",
+      "jp": "1710～1714,1791 水曜日・土曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "1749～1847 水曜日・土曜日",
+      "townEn": "1749～1847 水曜日・土曜日",
+      "kana": "1749～1847 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1749～1847 水曜日・土曜日",
+      "jp": "1749～1847 水曜日・土曜日",
+      "pattern": "6"
+    },
+    {
+      "town": "大瀬一丁目",
+      "townEn": "大瀬一丁目",
+      "kana": "大瀬一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬一丁目",
+      "jp": "大瀬一丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "大瀬二丁目",
+      "townEn": "大瀬二丁目",
+      "kana": "大瀬二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬二丁目",
+      "jp": "大瀬二丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "大瀬三丁目",
+      "townEn": "大瀬三丁目",
+      "kana": "大瀬三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬三丁目",
+      "jp": "大瀬三丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "大瀬四丁目 全域 （シティーテラス八潮を除く）",
+      "townEn": "大瀬四丁目 全域 （シティーテラス八潮を除く）",
+      "kana": "大瀬四丁目 全域 （シティーテラス八潮を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬四丁目 全域 （シティーテラス八潮を除く）",
+      "jp": "大瀬四丁目 全域 （シティーテラス八潮を除く）",
+      "pattern": "8"
+    },
+    {
+      "town": "シティーテラス八潮 &nbsp;",
+      "townEn": "シティーテラス八潮 &nbsp;",
+      "kana": "シティーテラス八潮 &nbsp;",
+      "chome": null,
+      "detail": null,
+      "en": "シティーテラス八潮 &nbsp;",
+      "jp": "シティーテラス八潮 &nbsp;",
+      "pattern": "4"
+    },
+    {
+      "town": "大瀬五丁目 1番地～10番地6",
+      "townEn": "大瀬五丁目 1番地～10番地6",
+      "kana": "大瀬五丁目 1番地～10番地6",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬五丁目 1番地～10番地6",
+      "jp": "大瀬五丁目 1番地～10番地6",
+      "pattern": "8"
+    },
+    {
+      "town": "10番地7～10番地13 火曜日・金曜日",
+      "townEn": "10番地7～10番地13 火曜日・金曜日",
+      "kana": "10番地7～10番地13 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "10番地7～10番地13 火曜日・金曜日",
+      "jp": "10番地7～10番地13 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "11番地以降 火曜日・金曜日",
+      "townEn": "11番地以降 火曜日・金曜日",
+      "kana": "11番地以降 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "11番地以降 火曜日・金曜日",
+      "jp": "11番地以降 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "大瀬六丁目",
+      "townEn": "大瀬六丁目",
+      "kana": "大瀬六丁目",
+      "chome": null,
+      "detail": null,
+      "en": "大瀬六丁目",
+      "jp": "大瀬六丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "古新田 1～284",
+      "townEn": "古新田 1～284",
+      "kana": "古新田 1～284",
+      "chome": null,
+      "detail": null,
+      "en": "古新田 1～284",
+      "jp": "古新田 1～284",
+      "pattern": "12"
+    },
+    {
+      "town": "308～608 火曜日・金曜日",
+      "townEn": "308～608 火曜日・金曜日",
+      "kana": "308～608 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "308～608 火曜日・金曜日",
+      "jp": "308～608 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "786～1149 水曜日・土曜日",
+      "townEn": "786～1149 水曜日・土曜日",
+      "kana": "786～1149 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "786～1149 水曜日・土曜日",
+      "jp": "786～1149 水曜日・土曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "垳 1～21",
+      "townEn": "垳 1～21",
+      "kana": "垳 1～21",
+      "chome": null,
+      "detail": null,
+      "en": "垳 1～21",
+      "jp": "垳 1～21",
+      "pattern": "12"
+    },
+    {
+      "town": "22～544 火曜日・金曜日",
+      "townEn": "22～544 火曜日・金曜日",
+      "kana": "22～544 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "22～544 火曜日・金曜日",
+      "jp": "22～544 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "上馬場 1～11",
+      "townEn": "上馬場 1～11",
+      "kana": "上馬場 1～11",
+      "chome": null,
+      "detail": null,
+      "en": "上馬場 1～11",
+      "jp": "上馬場 1～11",
+      "pattern": "4"
+    },
+    {
+      "town": "363～610 水曜日・土曜日",
+      "townEn": "363～610 水曜日・土曜日",
+      "kana": "363～610 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "363～610 水曜日・土曜日",
+      "jp": "363～610 水曜日・土曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "中馬場",
+      "townEn": "中馬場",
+      "kana": "中馬場",
+      "chome": null,
+      "detail": null,
+      "en": "中馬場",
+      "jp": "中馬場",
+      "pattern": "4"
+    },
+    {
+      "town": "大原",
+      "townEn": "大原",
+      "kana": "大原",
+      "chome": null,
+      "detail": null,
+      "en": "大原",
+      "jp": "大原",
+      "pattern": "5"
+    },
+    {
+      "town": "浮塚",
+      "townEn": "浮塚",
+      "kana": "浮塚",
+      "chome": null,
+      "detail": null,
+      "en": "浮塚",
+      "jp": "浮塚",
+      "pattern": "9"
+    },
+    {
+      "town": "南後谷",
+      "townEn": "南後谷",
+      "kana": "南後谷",
+      "chome": null,
+      "detail": null,
+      "en": "南後谷",
+      "jp": "南後谷",
+      "pattern": "5"
+    },
+    {
+      "town": "大曽根 1～281",
+      "townEn": "大曽根 1～281",
+      "kana": "大曽根 1～281",
+      "chome": null,
+      "detail": null,
+      "en": "大曽根 1～281",
+      "jp": "大曽根 1～281",
+      "pattern": "5"
+    },
+    {
+      "town": "282～396 火曜日・金曜日",
+      "townEn": "282～396 火曜日・金曜日",
+      "kana": "282～396 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "282～396 火曜日・金曜日",
+      "jp": "282～396 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "397～482 水曜日・土曜日",
+      "townEn": "397～482 水曜日・土曜日",
+      "kana": "397～482 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "397～482 水曜日・土曜日",
+      "jp": "397～482 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "483～523 火曜日・金曜日",
+      "townEn": "483～523 火曜日・金曜日",
+      "kana": "483～523 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "483～523 火曜日・金曜日",
+      "jp": "483～523 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "524～675 火曜日・金曜日",
+      "townEn": "524～675 火曜日・金曜日",
+      "kana": "524～675 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "524～675 火曜日・金曜日",
+      "jp": "524～675 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "676～885 火曜日・金曜日",
+      "townEn": "676～885 火曜日・金曜日",
+      "kana": "676～885 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "676～885 火曜日・金曜日",
+      "jp": "676～885 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "886～1416 水曜日・土曜日",
+      "townEn": "886～1416 水曜日・土曜日",
+      "kana": "886～1416 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "886～1416 水曜日・土曜日",
+      "jp": "886～1416 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "1417～1582 火曜日・金曜日",
+      "townEn": "1417～1582 火曜日・金曜日",
+      "kana": "1417～1582 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1417～1582 火曜日・金曜日",
+      "jp": "1417～1582 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "1583～1673 火曜日・金曜日",
+      "townEn": "1583～1673 火曜日・金曜日",
+      "kana": "1583～1673 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1583～1673 火曜日・金曜日",
+      "jp": "1583～1673 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "1674～2238 水曜日・土曜日",
+      "townEn": "1674～2238 水曜日・土曜日",
+      "kana": "1674～2238 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1674～2238 水曜日・土曜日",
+      "jp": "1674～2238 水曜日・土曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "西袋 1～847",
+      "townEn": "西袋 1～847",
+      "kana": "西袋 1～847",
+      "chome": null,
+      "detail": null,
+      "en": "西袋 1～847",
+      "jp": "西袋 1～847",
+      "pattern": "10"
+    },
+    {
+      "town": "848～1580 水曜日・土曜日",
+      "townEn": "848～1580 水曜日・土曜日",
+      "kana": "848～1580 水曜日・土曜日",
+      "chome": null,
+      "detail": null,
+      "en": "848～1580 水曜日・土曜日",
+      "jp": "848～1580 水曜日・土曜日",
+      "pattern": "2"
+    },
+    {
+      "town": "1264・1266 火曜日・金曜日",
+      "townEn": "1264・1266 火曜日・金曜日",
+      "kana": "1264・1266 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "1264・1266 火曜日・金曜日",
+      "jp": "1264・1266 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "柳之宮 1～66",
+      "townEn": "柳之宮 1～66",
+      "kana": "柳之宮 1～66",
+      "chome": null,
+      "detail": null,
+      "en": "柳之宮 1～66",
+      "jp": "柳之宮 1～66",
+      "pattern": "10"
+    },
+    {
+      "town": "67～373 火曜日・金曜日",
+      "townEn": "67～373 火曜日・金曜日",
+      "kana": "67～373 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "67～373 火曜日・金曜日",
+      "jp": "67～373 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "374～397 火曜日・金曜日",
+      "townEn": "374～397 火曜日・金曜日",
+      "kana": "374～397 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "374～397 火曜日・金曜日",
+      "jp": "374～397 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "中央一丁目",
+      "townEn": "中央一丁目",
+      "kana": "中央一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央一丁目",
+      "jp": "中央一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央二丁目",
+      "townEn": "中央二丁目",
+      "kana": "中央二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央二丁目",
+      "jp": "中央二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央三丁目",
+      "townEn": "中央三丁目",
+      "kana": "中央三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央三丁目",
+      "jp": "中央三丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "中央四丁目",
+      "townEn": "中央四丁目",
+      "kana": "中央四丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央四丁目",
+      "jp": "中央四丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "八潮一丁目",
+      "townEn": "八潮一丁目",
+      "kana": "八潮一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮一丁目",
+      "jp": "八潮一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "八潮二丁目",
+      "townEn": "八潮二丁目",
+      "kana": "八潮二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮二丁目",
+      "jp": "八潮二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "八潮三丁目",
+      "townEn": "八潮三丁目",
+      "kana": "八潮三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮三丁目",
+      "jp": "八潮三丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "八潮四丁目",
+      "townEn": "八潮四丁目",
+      "kana": "八潮四丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮四丁目",
+      "jp": "八潮四丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "八潮五丁目",
+      "townEn": "八潮五丁目",
+      "kana": "八潮五丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮五丁目",
+      "jp": "八潮五丁目",
+      "pattern": "8"
+    },
+    {
+      "town": "八潮六丁目",
+      "townEn": "八潮六丁目",
+      "kana": "八潮六丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮六丁目",
+      "jp": "八潮六丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "八潮七丁目",
+      "townEn": "八潮七丁目",
+      "kana": "八潮七丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮七丁目",
+      "jp": "八潮七丁目",
+      "pattern": "13"
+    },
+    {
+      "town": "八潮八丁目",
+      "townEn": "八潮八丁目",
+      "kana": "八潮八丁目",
+      "chome": null,
+      "detail": null,
+      "en": "八潮八丁目",
+      "jp": "八潮八丁目",
+      "pattern": "14"
+    },
+    {
+      "town": "緑町一丁目",
+      "townEn": "緑町一丁目",
+      "kana": "緑町一丁目",
+      "chome": null,
+      "detail": null,
+      "en": "緑町一丁目",
+      "jp": "緑町一丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "緑町二丁目",
+      "townEn": "緑町二丁目",
+      "kana": "緑町二丁目",
+      "chome": null,
+      "detail": null,
+      "en": "緑町二丁目",
+      "jp": "緑町二丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "緑町三丁目",
+      "townEn": "緑町三丁目",
+      "kana": "緑町三丁目",
+      "chome": null,
+      "detail": null,
+      "en": "緑町三丁目",
+      "jp": "緑町三丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "緑町四丁目",
+      "townEn": "緑町四丁目",
+      "kana": "緑町四丁目",
+      "chome": null,
+      "detail": null,
+      "en": "緑町四丁目",
+      "jp": "緑町四丁目",
+      "pattern": "15"
+    },
+    {
+      "town": "緑町五丁目",
+      "townEn": "緑町五丁目",
+      "kana": "緑町五丁目",
+      "chome": null,
+      "detail": null,
+      "en": "緑町五丁目",
+      "jp": "緑町五丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "茜町一丁目 1番地",
+      "townEn": "茜町一丁目 1番地",
+      "kana": "茜町一丁目 1番地",
+      "chome": null,
+      "detail": null,
+      "en": "茜町一丁目 1番地",
+      "jp": "茜町一丁目 1番地",
+      "pattern": "8"
+    },
+    {
+      "town": "2番地～9番地 火曜日・金曜日",
+      "townEn": "2番地～9番地 火曜日・金曜日",
+      "kana": "2番地～9番地 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "2番地～9番地 火曜日・金曜日",
+      "jp": "2番地～9番地 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "10番地～11番 火曜日・金曜日",
+      "townEn": "10番地～11番 火曜日・金曜日",
+      "kana": "10番地～11番 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "10番地～11番 火曜日・金曜日",
+      "jp": "10番地～11番 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "12番地 火曜日・金曜日",
+      "townEn": "12番地 火曜日・金曜日",
+      "kana": "12番地 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "12番地 火曜日・金曜日",
+      "jp": "12番地 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "13番地～13番地4 火曜日・金曜日",
+      "townEn": "13番地～13番地4 火曜日・金曜日",
+      "kana": "13番地～13番地4 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "13番地～13番地4 火曜日・金曜日",
+      "jp": "13番地～13番地4 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "13番地5～13番地24 火曜日・金曜日",
+      "townEn": "13番地5～13番地24 火曜日・金曜日",
+      "kana": "13番地5～13番地24 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "13番地5～13番地24 火曜日・金曜日",
+      "jp": "13番地5～13番地24 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "13番地25～14番地1 火曜日・金曜日",
+      "townEn": "13番地25～14番地1 火曜日・金曜日",
+      "kana": "13番地25～14番地1 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "13番地25～14番地1 火曜日・金曜日",
+      "jp": "13番地25～14番地1 火曜日・金曜日",
+      "pattern": "7"
+    },
+    {
+      "town": "14番地2～14番地8 火曜日・金曜日",
+      "townEn": "14番地2～14番地8 火曜日・金曜日",
+      "kana": "14番地2～14番地8 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "14番地2～14番地8 火曜日・金曜日",
+      "jp": "14番地2～14番地8 火曜日・金曜日",
+      "pattern": "11"
+    },
+    {
+      "town": "14番地9以降 火曜日・金曜日",
+      "townEn": "14番地9以降 火曜日・金曜日",
+      "kana": "14番地9以降 火曜日・金曜日",
+      "chome": null,
+      "detail": null,
+      "en": "14番地9以降 火曜日・金曜日",
+      "jp": "14番地9以降 火曜日・金曜日",
+      "pattern": "7"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Yashio City neighborhood collection schedule tables",
+      "url": "https://www.city.yashio.lg.jp/kurashi/gomi_kankyo/shushubi/ichiran/index.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

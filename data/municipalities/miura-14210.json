@@ -1,0 +1,217 @@
+{
+  "id": "miura-14210",
+  "code": "14210",
+  "pref": "14",
+  "jp": "三浦市",
+  "en": "Miura",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://miura.5374.jp/data/area_days.csv",
+    "http://miura.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "paper": {
+          "any": [
+            [
+              4
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "res": [
+          4
+        ],
+        "pet_bottle": [
+          3
+        ],
+        "plastic": [
+          1
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "paper": {
+          "any": [
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        "res": [
+          2
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "paper": {
+          "any": [
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        "res": [
+          2
+        ],
+        "pet_bottle": [
+          4
+        ],
+        "plastic": [
+          5
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "初声地区",
+      "townEn": "Miura",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "初声地区",
+      "jp": "初声地区",
+      "pattern": "3"
+    },
+    {
+      "town": "南下浦地区",
+      "townEn": "Miura",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南下浦地区",
+      "jp": "南下浦地区",
+      "pattern": "2"
+    },
+    {
+      "town": "三崎",
+      "townEn": "Misaki",
+      "kana": "ミサキ",
+      "chome": null,
+      "detail": "三崎地区",
+      "en": "三崎地区",
+      "jp": "三崎地区",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://miura.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,507 @@
+{
+  "id": "matsumae-01331",
+  "code": "01331",
+  "pref": "01",
+  "jp": "松前町",
+  "en": "Matsumae",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://matsumae.5374.jp/data/area_days.csv",
+    "http://matsumae.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせる」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせる」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせる」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴムホース」 under 「燃える粗大」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせる」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「紙」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「紙」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール（610㎜×690㎜）」 under 「資源ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ペットボトル（ソース・食用油等)」 under 「燃やせる」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃えない」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「燃えない」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレイ（色つき含む）」 under 「プラスチック」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「燃えない」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター(使い捨て・プラスチック等)」 under 「燃えない」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「燃えない」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせる」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「収集不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              3,
+              6
+            ],
+            {
+              "dates": [
+                "2026-04-08",
+                "2026-05-13",
+                "2026-06-10",
+                "2026-07-08",
+                "2026-08-10",
+                "2026-09-09",
+                "2026-10-13",
+                "2026-11-11",
+                "2026-12-09",
+                "2027-01-12",
+                "2027-02-10",
+                "2027-03-10"
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "dates": [
+            "2026-04-09",
+            "2026-04-23",
+            "2026-05-14",
+            "2026-05-28",
+            "2026-06-11",
+            "2026-06-25",
+            "2026-07-09",
+            "2026-07-30",
+            "2026-08-17",
+            "2026-08-27",
+            "2026-09-10",
+            "2026-09-28",
+            "2026-10-08",
+            "2026-10-22",
+            "2026-11-12",
+            "2026-11-26",
+            "2026-12-10",
+            "2026-12-24",
+            "2027-01-18",
+            "2027-01-28",
+            "2027-02-08",
+            "2027-02-25",
+            "2027-03-11",
+            "2027-03-29"
+          ]
+        },
+        "plastic": {
+          "dates": [
+            "2026-04-10",
+            "2026-04-24",
+            "2026-05-15",
+            "2026-05-29",
+            "2026-06-12",
+            "2026-06-26",
+            "2026-07-10",
+            "2026-07-31",
+            "2026-08-18",
+            "2026-08-28",
+            "2026-09-11",
+            "2026-09-29",
+            "2026-10-09",
+            "2026-10-23",
+            "2026-11-13",
+            "2026-11-27",
+            "2026-12-11",
+            "2026-12-25",
+            "2027-01-19",
+            "2027-01-29",
+            "2027-02-09",
+            "2027-02-26",
+            "2027-03-12",
+            "2027-03-30"
+          ]
+        },
+        "non_burnable": {
+          "dates": [
+            "2026-04-27",
+            "2026-05-27",
+            "2026-06-29",
+            "2026-07-29",
+            "2026-08-26",
+            "2026-09-30",
+            "2026-10-28",
+            "2026-11-30",
+            "2026-12-28",
+            "2027-01-27",
+            "2027-02-24",
+            "2027-03-31"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "館浜（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "館浜（午前）",
+      "jp": "館浜（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "月島（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "月島（午後）",
+      "jp": "月島（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "建石（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "建石（午前）",
+      "jp": "建石（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "原口（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "原口（午前）",
+      "jp": "原口（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "江良（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江良（午前）",
+      "jp": "江良（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "荒谷（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "荒谷（午後）",
+      "jp": "荒谷（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "札前（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "札前（午前）",
+      "jp": "札前（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "松城（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松城（午前）",
+      "jp": "松城（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "上川（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上川（午後）",
+      "jp": "上川（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "清部（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "清部（午前）",
+      "jp": "清部（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "静浦（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "静浦（午前）",
+      "jp": "静浦（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "赤神（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤神（午前）",
+      "jp": "赤神（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "大磯（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大磯（午後）",
+      "jp": "大磯（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "大沢（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大沢（午後）",
+      "jp": "大沢（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝日（午後）",
+      "jp": "朝日（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "唐津（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "唐津（午後）",
+      "jp": "唐津（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "博多（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "博多（午後）",
+      "jp": "博多（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "白神（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白神（午後）",
+      "jp": "白神（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "福山（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福山（午前）",
+      "jp": "福山（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "弁天（午後）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "弁天（午後）",
+      "jp": "弁天（午後）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊岡（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊岡（午前）",
+      "jp": "豊岡（午前）",
+      "pattern": "1"
+    },
+    {
+      "town": "茂草（午前）",
+      "townEn": "Matsumae",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "茂草（午前）",
+      "jp": "茂草（午前）",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://matsumae.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

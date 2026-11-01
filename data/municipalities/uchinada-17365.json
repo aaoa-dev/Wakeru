@@ -1,0 +1,443 @@
+{
+  "id": "uchinada-17365",
+  "code": "17365",
+  "pref": "17",
+  "jp": "内灘町",
+  "en": "Uchinada",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://uchinada.5374.jp/data/area_days.csv",
+    "http://uchinada.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": {
+          "dates": [
+            "2026-04-27",
+            "2026-05-25",
+            "2026-06-22",
+            "2026-07-27",
+            "2026-08-24",
+            "2026-09-28",
+            "2026-10-26",
+            "2026-11-23",
+            "2026-12-28",
+            "2027-03-22"
+          ]
+        },
+        "oversized": {
+          "dates": [
+            "2026-04-13",
+            "2026-05-18",
+            "2026-06-08",
+            "2026-07-13",
+            "2026-08-10",
+            "2026-09-14",
+            "2026-10-12",
+            "2026-11-09",
+            "2026-12-14",
+            "2027-01-11",
+            "2027-02-08",
+            "2027-03-08"
+          ]
+        },
+        "res": {
+          "dates": [
+            "2026-04-14",
+            "2026-05-19",
+            "2026-06-16",
+            "2026-07-14",
+            "2026-08-18",
+            "2026-09-15",
+            "2026-10-20",
+            "2026-11-17",
+            "2026-12-15",
+            "2027-01-19",
+            "2027-02-16",
+            "2027-03-16"
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": {
+          "dates": [
+            "2026-04-21",
+            "2026-05-26",
+            "2026-06-23",
+            "2026-07-21",
+            "2026-08-25",
+            "2026-09-22",
+            "2026-10-27",
+            "2026-11-24",
+            "2026-12-22",
+            "2027-03-23"
+          ]
+        },
+        "oversized": {
+          "dates": [
+            "2026-04-14",
+            "2026-05-19",
+            "2026-06-09",
+            "2026-07-14",
+            "2026-08-11",
+            "2026-09-08",
+            "2026-10-13",
+            "2026-11-10",
+            "2026-12-08",
+            "2027-01-12",
+            "2027-02-09",
+            "2027-03-09"
+          ]
+        },
+        "res": {
+          "dates": [
+            "2026-04-14",
+            "2026-05-19",
+            "2026-06-16",
+            "2026-07-14",
+            "2026-08-18",
+            "2026-09-15",
+            "2026-10-20",
+            "2026-11-17",
+            "2026-12-15",
+            "2027-01-19",
+            "2027-02-16",
+            "2027-03-16"
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": {
+          "dates": [
+            "2026-04-22",
+            "2026-05-27",
+            "2026-06-24",
+            "2026-07-22",
+            "2026-08-26",
+            "2026-09-23",
+            "2026-10-28",
+            "2026-11-25",
+            "2026-12-23",
+            "2027-03-24"
+          ]
+        },
+        "oversized": {
+          "dates": [
+            "2026-04-07",
+            "2026-05-12",
+            "2026-06-02",
+            "2026-07-07",
+            "2026-08-04",
+            "2026-09-01",
+            "2026-10-06",
+            "2026-11-03",
+            "2026-12-01",
+            "2027-01-05",
+            "2027-02-02",
+            "2027-03-02"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "アカシア",
+      "townEn": "Akashia",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "アカシア",
+      "jp": "アカシア",
+      "pattern": "2"
+    },
+    {
+      "town": "ハマナス",
+      "townEn": "Hamanasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ハマナス",
+      "jp": "ハマナス",
+      "pattern": "2"
+    },
+    {
+      "town": "旭ケ丘",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭ケ丘",
+      "jp": "旭ケ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "宮坂",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮坂",
+      "jp": "宮坂",
+      "pattern": "1"
+    },
+    {
+      "town": "湖西",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "湖西",
+      "jp": "湖西",
+      "pattern": "1"
+    },
+    {
+      "town": "向粟崎１・３・４丁目",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向粟崎１・３・４丁目",
+      "jp": "向粟崎１・３・４丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "向粟崎２・５丁目",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向粟崎２・５丁目",
+      "jp": "向粟崎２・５丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "向陽台",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向陽台",
+      "jp": "向陽台",
+      "pattern": "2"
+    },
+    {
+      "town": "室",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "室",
+      "jp": "室",
+      "pattern": "1"
+    },
+    {
+      "town": "西荒屋",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西荒屋",
+      "jp": "西荒屋",
+      "pattern": "1"
+    },
+    {
+      "town": "千鳥台",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千鳥台",
+      "jp": "千鳥台",
+      "pattern": "1"
+    },
+    {
+      "town": "大学１丁目",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大学１丁目",
+      "jp": "大学１丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "大学２丁目",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大学２丁目",
+      "jp": "大学２丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "大根布",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大根布",
+      "jp": "大根布",
+      "pattern": "1"
+    },
+    {
+      "town": "大清台",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大清台",
+      "jp": "大清台",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴ケ丘１・２・３丁目",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴ケ丘１・２・３丁目",
+      "jp": "鶴ケ丘１・２・３丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴ケ丘４丁目",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴ケ丘４丁目",
+      "jp": "鶴ケ丘４丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鶴ケ丘５丁目",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鶴ケ丘５丁目",
+      "jp": "鶴ケ丘５丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "緑台",
+      "townEn": "Uchinada",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑台",
+      "jp": "緑台",
+      "pattern": "1"
+    },
+    {
+      "town": "白帆台",
+      "townEn": "Shirahodai",
+      "kana": "シラホダイ",
+      "chome": null,
+      "detail": null,
+      "en": "白帆台",
+      "jp": "白帆台",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://uchinada.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

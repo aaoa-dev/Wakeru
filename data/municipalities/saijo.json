@@ -1,0 +1,423 @@
+{
+  "id": "saijo",
+  "code": "38207",
+  "pref": "38",
+  "jp": "西条市",
+  "en": "Saijo",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.saijo.ehime.jp/uploaded/attachment/62453.pdf"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from Saijo City's district table (burnable + non-burnable columns). Paper/resources use nth-week rules — see the city's FY2026 district PDF calendar.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          2
+        ]
+      },
+      "8": {
+        "burnable": [
+          4
+        ],
+        "non_burnable": [
+          4
+        ]
+      },
+      "9": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          5
+        ]
+      },
+      "10": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          1
+        ]
+      },
+      "11": {
+        "burnable": [
+          5
+        ],
+        "non_burnable": [
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "玉津・飯岡",
+      "townEn": "玉津・飯岡",
+      "kana": "玉津・飯岡",
+      "chome": null,
+      "detail": null,
+      "en": "玉津・飯岡",
+      "jp": "玉津・飯岡",
+      "pattern": "1"
+    },
+    {
+      "town": "西条",
+      "townEn": "西条",
+      "kana": "西条",
+      "chome": null,
+      "detail": null,
+      "en": "西条",
+      "jp": "西条",
+      "pattern": "2"
+    },
+    {
+      "town": "神拝",
+      "townEn": "神拝",
+      "kana": "神拝",
+      "chome": null,
+      "detail": null,
+      "en": "神拝",
+      "jp": "神拝",
+      "pattern": "3"
+    },
+    {
+      "town": "大町",
+      "townEn": "大町",
+      "kana": "大町",
+      "chome": null,
+      "detail": null,
+      "en": "大町",
+      "jp": "大町",
+      "pattern": "4"
+    },
+    {
+      "town": "神戸",
+      "townEn": "神戸",
+      "kana": "神戸",
+      "chome": null,
+      "detail": null,
+      "en": "神戸",
+      "jp": "神戸",
+      "pattern": "4"
+    },
+    {
+      "town": "舟形・津越・長瀬",
+      "townEn": "舟形・津越・長瀬",
+      "kana": "舟形・津越・長瀬",
+      "chome": null,
+      "detail": null,
+      "en": "舟形・津越・長瀬",
+      "jp": "舟形・津越・長瀬",
+      "pattern": "5"
+    },
+    {
+      "town": "兎之山・中寺",
+      "townEn": "兎之山・中寺",
+      "kana": "兎之山・中寺",
+      "chome": null,
+      "detail": null,
+      "en": "兎之山・中寺",
+      "jp": "兎之山・中寺",
+      "pattern": "1"
+    },
+    {
+      "town": "大久保",
+      "townEn": "大久保",
+      "kana": "大久保",
+      "chome": null,
+      "detail": null,
+      "en": "大久保",
+      "jp": "大久保",
+      "pattern": "6"
+    },
+    {
+      "town": "禎瑞",
+      "townEn": "禎瑞",
+      "kana": "禎瑞",
+      "chome": null,
+      "detail": null,
+      "en": "禎瑞",
+      "jp": "禎瑞",
+      "pattern": "3"
+    },
+    {
+      "town": "橘",
+      "townEn": "橘",
+      "kana": "橘",
+      "chome": null,
+      "detail": null,
+      "en": "橘",
+      "jp": "橘",
+      "pattern": "1"
+    },
+    {
+      "town": "氷見",
+      "townEn": "氷見",
+      "kana": "氷見",
+      "chome": null,
+      "detail": null,
+      "en": "氷見",
+      "jp": "氷見",
+      "pattern": "2"
+    },
+    {
+      "town": "加茂",
+      "townEn": "加茂",
+      "kana": "加茂",
+      "chome": null,
+      "detail": null,
+      "en": "加茂",
+      "jp": "加茂",
+      "pattern": "7"
+    },
+    {
+      "town": "大保木・市之川",
+      "townEn": "大保木・市之川",
+      "kana": "大保木・市之川",
+      "chome": null,
+      "detail": null,
+      "en": "大保木・市之川",
+      "jp": "大保木・市之川",
+      "pattern": "1"
+    },
+    {
+      "town": "吉井・多賀",
+      "townEn": "吉井・多賀",
+      "kana": "吉井・多賀",
+      "chome": null,
+      "detail": null,
+      "en": "吉井・多賀",
+      "jp": "吉井・多賀",
+      "pattern": "5"
+    },
+    {
+      "town": "国安",
+      "townEn": "国安",
+      "kana": "国安",
+      "chome": null,
+      "detail": null,
+      "en": "国安",
+      "jp": "国安",
+      "pattern": "6"
+    },
+    {
+      "town": "吉岡",
+      "townEn": "吉岡",
+      "kana": "吉岡",
+      "chome": null,
+      "detail": null,
+      "en": "吉岡",
+      "jp": "吉岡",
+      "pattern": "1"
+    },
+    {
+      "town": "周布・壬生川",
+      "townEn": "周布・壬生川",
+      "kana": "周布・壬生川",
+      "chome": null,
+      "detail": null,
+      "en": "周布・壬生川",
+      "jp": "周布・壬生川",
+      "pattern": "2"
+    },
+    {
+      "town": "三芳・楠河・庄内",
+      "townEn": "三芳・楠河・庄内",
+      "kana": "三芳・楠河・庄内",
+      "chome": null,
+      "detail": null,
+      "en": "三芳・楠河・庄内",
+      "jp": "三芳・楠河・庄内",
+      "pattern": "4"
+    },
+    {
+      "town": "黒谷",
+      "townEn": "黒谷",
+      "kana": "黒谷",
+      "chome": null,
+      "detail": null,
+      "en": "黒谷",
+      "jp": "黒谷",
+      "pattern": "8"
+    },
+    {
+      "town": "久妙寺・徳田",
+      "townEn": "久妙寺・徳田",
+      "kana": "久妙寺・徳田",
+      "chome": null,
+      "detail": null,
+      "en": "久妙寺・徳田",
+      "jp": "久妙寺・徳田",
+      "pattern": "2"
+    },
+    {
+      "town": "田野・田滝",
+      "townEn": "田野・田滝",
+      "kana": "田野・田滝",
+      "chome": null,
+      "detail": null,
+      "en": "田野・田滝",
+      "jp": "田野・田滝",
+      "pattern": "9"
+    },
+    {
+      "town": "丹原・古田新出",
+      "townEn": "丹原・古田新出",
+      "kana": "丹原・古田新出",
+      "chome": null,
+      "detail": null,
+      "en": "丹原・古田新出",
+      "jp": "丹原・古田新出",
+      "pattern": "10"
+    },
+    {
+      "town": "中川・桜樹",
+      "townEn": "中川・桜樹",
+      "kana": "中川・桜樹",
+      "chome": null,
+      "detail": null,
+      "en": "中川・桜樹",
+      "jp": "中川・桜樹",
+      "pattern": "5"
+    },
+    {
+      "town": "相之谷",
+      "townEn": "相之谷",
+      "kana": "相之谷",
+      "chome": null,
+      "detail": null,
+      "en": "相之谷",
+      "jp": "相之谷",
+      "pattern": "11"
+    },
+    {
+      "town": "小松・石根",
+      "townEn": "小松・石根",
+      "kana": "小松・石根",
+      "chome": null,
+      "detail": null,
+      "en": "小松・石根",
+      "jp": "小松・石根",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Saijo City garbage separation guide (district weekday table)",
+      "url": "https://www.city.saijo.ehime.jp/uploaded/attachment/62453.pdf",
+      "license": "Saijo City (CC BY)"
+    }
+  },
+  "updated": "2026-10-31"
+}

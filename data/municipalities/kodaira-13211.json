@@ -1,0 +1,414 @@
+{
+  "id": "kodaira-13211",
+  "code": "13211",
+  "pref": "13",
+  "jp": "小平市",
+  "en": "Kodaira",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kodaira.5374.jp/data/area_days.csv",
+    "http://kodaira.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「果物の皮」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「古着」 under 「古布類」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「お菓子の箱（ガラス・陶磁器製）」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かさ(雨傘・日傘)」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "paper": [
+          2
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          4
+        ],
+        "plastic": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "大沼町",
+      "townEn": "Onumacho",
+      "kana": "オオヌマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "大沼町",
+      "jp": "大沼町",
+      "pattern": "1"
+    },
+    {
+      "town": "小川町",
+      "townEn": "Ogawacho",
+      "kana": "オガワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小川町",
+      "jp": "小川町",
+      "pattern": "2"
+    },
+    {
+      "town": "小川西町",
+      "townEn": "Ogawa Nishimachi",
+      "kana": "オガワニシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "小川西町",
+      "jp": "小川西町",
+      "pattern": "2"
+    },
+    {
+      "town": "小川東町",
+      "townEn": "Ogawa Higashicho",
+      "kana": "オガワヒガシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小川東町",
+      "jp": "小川東町",
+      "pattern": "2"
+    },
+    {
+      "town": "学園西町",
+      "townEn": "Gakuen Nishimachi",
+      "kana": "ガクエンニシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "学園西町",
+      "jp": "学園西町",
+      "pattern": "2"
+    },
+    {
+      "town": "学園東町",
+      "townEn": "Gakuen Higashicho",
+      "kana": "ガクエンヒガシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "学園東町",
+      "jp": "学園東町",
+      "pattern": "1"
+    },
+    {
+      "town": "喜平町",
+      "townEn": "Kiheicho",
+      "kana": "キヘイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "喜平町",
+      "jp": "喜平町",
+      "pattern": "1"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaecho",
+      "kana": "サカエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "上水新町",
+      "townEn": "Josuishimmachi",
+      "kana": "ジョウスイシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "上水新町",
+      "jp": "上水新町",
+      "pattern": "2"
+    },
+    {
+      "town": "上水本町",
+      "townEn": "Josuihoncho",
+      "kana": "ジョウスイホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "上水本町",
+      "jp": "上水本町",
+      "pattern": "2"
+    },
+    {
+      "town": "上水南町",
+      "townEn": "Josuiminamicho",
+      "kana": "ジョウスイミナミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "上水南町",
+      "jp": "上水南町",
+      "pattern": "2"
+    },
+    {
+      "town": "鈴木町",
+      "townEn": "Suzukicho",
+      "kana": "スズキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鈴木町",
+      "jp": "鈴木町",
+      "pattern": "1"
+    },
+    {
+      "town": "たかの台",
+      "townEn": "Takanodai",
+      "kana": "タカノダイ",
+      "chome": null,
+      "detail": null,
+      "en": "たかの台",
+      "jp": "たかの台",
+      "pattern": "2"
+    },
+    {
+      "town": "津田町",
+      "townEn": "Tsudamachi",
+      "kana": "ツダマチ",
+      "chome": null,
+      "detail": null,
+      "en": "津田町",
+      "jp": "津田町",
+      "pattern": "2"
+    },
+    {
+      "town": "天神町",
+      "townEn": "Tenjincho",
+      "kana": "テンジンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "天神町",
+      "jp": "天神町",
+      "pattern": "1"
+    },
+    {
+      "town": "中島町",
+      "townEn": "Nakajimacho",
+      "kana": "ナカジマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "中島町",
+      "jp": "中島町",
+      "pattern": "2"
+    },
+    {
+      "town": "仲町",
+      "townEn": "Nakamachi",
+      "kana": "ナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "仲町",
+      "jp": "仲町",
+      "pattern": "1"
+    },
+    {
+      "town": "花小金井",
+      "townEn": "Hanakoganei",
+      "kana": "ハナコガネイ",
+      "chome": null,
+      "detail": null,
+      "en": "花小金井",
+      "jp": "花小金井",
+      "pattern": "1"
+    },
+    {
+      "town": "花小金井南町",
+      "townEn": "Hanakoganeiminamicho",
+      "kana": "ハナコガネイミナミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "花小金井南町",
+      "jp": "花小金井南町",
+      "pattern": "1"
+    },
+    {
+      "town": "美園町",
+      "townEn": "Misonocho",
+      "kana": "ミソノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "美園町",
+      "jp": "美園町",
+      "pattern": "1"
+    },
+    {
+      "town": "御幸町",
+      "townEn": "Miyukicho",
+      "kana": "ミユキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "御幸町",
+      "jp": "御幸町",
+      "pattern": "1"
+    },
+    {
+      "town": "回田町",
+      "townEn": "Meguritacho",
+      "kana": "メグリタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "回田町",
+      "jp": "回田町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kodaira.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

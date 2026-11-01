@@ -1,0 +1,976 @@
+{
+  "id": "miyazu-26205",
+  "code": "26205",
+  "pref": "26",
+  "jp": "宮津市",
+  "en": "Miyazu",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://miyazu.5374.jp/data/area_days.csv",
+    "http://miyazu.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "res": [
+          5
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ],
+        "res": [
+          3
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          4
+        ],
+        "res": [
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          2
+        ],
+        "res": [
+          2
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          5
+        ],
+        "res": [
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "6": {
+        "burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          4
+        ],
+        "res": [
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "res": [
+          3
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "9": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          2
+        ],
+        "res": [
+          2
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "10": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          1
+        ],
+        "res": [
+          1
+        ],
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "11": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "グンゼ",
+      "townEn": "Gunze",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "グンゼ",
+      "jp": "グンゼ",
+      "pattern": "9"
+    },
+    {
+      "town": "つつじが丘",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つつじが丘",
+      "jp": "つつじが丘",
+      "pattern": "1"
+    },
+    {
+      "town": "旭が丘",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭が丘",
+      "jp": "旭が丘",
+      "pattern": "9"
+    },
+    {
+      "town": "亀ヶ丘",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀ヶ丘",
+      "jp": "亀ヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "吉津(文珠を除く)",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉津(文珠を除く)",
+      "jp": "吉津(文珠を除く)",
+      "pattern": "7"
+    },
+    {
+      "town": "栗田",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "栗田",
+      "jp": "栗田",
+      "pattern": "1"
+    },
+    {
+      "town": "松ヶ岡",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松ヶ岡",
+      "jp": "松ヶ岡",
+      "pattern": "2"
+    },
+    {
+      "town": "上宮津(小田1、２区を除く)",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上宮津(小田1、２区を除く)",
+      "jp": "上宮津(小田1、２区を除く)",
+      "pattern": "4"
+    },
+    {
+      "town": "城東(駅前)",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城東(駅前)",
+      "jp": "城東(駅前)",
+      "pattern": "8"
+    },
+    {
+      "town": "城東(駅裏)",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城東(駅裏)",
+      "jp": "城東(駅裏)",
+      "pattern": "9"
+    },
+    {
+      "town": "城内",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城内",
+      "jp": "城内",
+      "pattern": "8"
+    },
+    {
+      "town": "城南",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "城南",
+      "jp": "城南",
+      "pattern": "7"
+    },
+    {
+      "town": "西波路",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西波路",
+      "jp": "西波路",
+      "pattern": "1"
+    },
+    {
+      "town": "第２旭が丘",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "第２旭が丘",
+      "jp": "第２旭が丘",
+      "pattern": "9"
+    },
+    {
+      "town": "辻町",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "辻町",
+      "jp": "辻町",
+      "pattern": "9"
+    },
+    {
+      "town": "東国名賀",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東国名賀",
+      "jp": "東国名賀",
+      "pattern": "9"
+    },
+    {
+      "town": "東波路",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東波路",
+      "jp": "東波路",
+      "pattern": "1"
+    },
+    {
+      "town": "日ヶ谷",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日ヶ谷",
+      "jp": "日ヶ谷",
+      "pattern": "10"
+    },
+    {
+      "town": "日吉",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日吉",
+      "jp": "日吉",
+      "pattern": "2"
+    },
+    {
+      "town": "百合が丘",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "百合が丘",
+      "jp": "百合が丘",
+      "pattern": "4"
+    },
+    {
+      "town": "府中",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "府中",
+      "jp": "府中",
+      "pattern": "2"
+    },
+    {
+      "town": "福田",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福田",
+      "jp": "福田",
+      "pattern": "4"
+    },
+    {
+      "town": "問屋町",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "問屋町",
+      "jp": "問屋町",
+      "pattern": "5"
+    },
+    {
+      "town": "養老",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "養老",
+      "jp": "養老",
+      "pattern": "10"
+    },
+    {
+      "town": "浪花",
+      "townEn": "Miyazu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "浪花",
+      "jp": "浪花",
+      "pattern": "2"
+    },
+    {
+      "town": "池ノ谷",
+      "townEn": "Ikenotani",
+      "kana": "イケノタニ",
+      "chome": null,
+      "detail": null,
+      "en": "池ノ谷",
+      "jp": "池ノ谷",
+      "pattern": "2"
+    },
+    {
+      "town": "魚屋",
+      "townEn": "Uoya",
+      "kana": "ウオヤ",
+      "chome": null,
+      "detail": null,
+      "en": "魚屋",
+      "jp": "魚屋",
+      "pattern": "1"
+    },
+    {
+      "town": "大久保",
+      "townEn": "Okubo",
+      "kana": "オオクボ",
+      "chome": null,
+      "detail": null,
+      "en": "大久保",
+      "jp": "大久保",
+      "pattern": "7"
+    },
+    {
+      "town": "小田",
+      "townEn": "Oda",
+      "kana": "オダ",
+      "chome": null,
+      "detail": "小田1区",
+      "en": "小田1区",
+      "jp": "小田1区",
+      "pattern": "6"
+    },
+    {
+      "town": "小田",
+      "townEn": "Oda",
+      "kana": "オダ",
+      "chome": null,
+      "detail": "小田２区",
+      "en": "小田２区",
+      "jp": "小田２区",
+      "pattern": "6"
+    },
+    {
+      "town": "皆原",
+      "townEn": "Kaibara",
+      "kana": "カイバラ",
+      "chome": null,
+      "detail": null,
+      "en": "皆原",
+      "jp": "皆原",
+      "pattern": "9"
+    },
+    {
+      "town": "金屋谷",
+      "townEn": "Kanayadani",
+      "kana": "カナヤダニ",
+      "chome": null,
+      "detail": null,
+      "en": "金屋谷",
+      "jp": "金屋谷",
+      "pattern": "3"
+    },
+    {
+      "town": "上世屋",
+      "townEn": "Kamiseya",
+      "kana": "カミセヤ",
+      "chome": null,
+      "detail": null,
+      "en": "上世屋",
+      "jp": "上世屋",
+      "pattern": "6"
+    },
+    {
+      "town": "木子",
+      "townEn": "Kigo",
+      "kana": "キゴ",
+      "chome": null,
+      "detail": null,
+      "en": "木子",
+      "jp": "木子",
+      "pattern": "6"
+    },
+    {
+      "town": "京街道",
+      "townEn": "Kyokaido",
+      "kana": "キョウカイドウ",
+      "chome": null,
+      "detail": null,
+      "en": "京街道",
+      "jp": "京街道",
+      "pattern": "7"
+    },
+    {
+      "town": "獅子崎",
+      "townEn": "Shiizaki",
+      "kana": "シイザキ",
+      "chome": null,
+      "detail": null,
+      "en": "獅子崎",
+      "jp": "獅子崎",
+      "pattern": "1"
+    },
+    {
+      "town": "島崎",
+      "townEn": "Shimasaki",
+      "kana": "シマサキ",
+      "chome": null,
+      "detail": null,
+      "en": "島崎",
+      "jp": "島崎",
+      "pattern": "1"
+    },
+    {
+      "town": "下世屋",
+      "townEn": "Shimoseya",
+      "kana": "シモセヤ",
+      "chome": null,
+      "detail": null,
+      "en": "下世屋",
+      "jp": "下世屋",
+      "pattern": "11"
+    },
+    {
+      "town": "白柏",
+      "townEn": "Shirakase",
+      "kana": "シラカセ",
+      "chome": null,
+      "detail": null,
+      "en": "白柏",
+      "jp": "白柏",
+      "pattern": "2"
+    },
+    {
+      "town": "新浜",
+      "townEn": "Shinhama",
+      "kana": "シンハマ",
+      "chome": null,
+      "detail": null,
+      "en": "新浜",
+      "jp": "新浜",
+      "pattern": "2"
+    },
+    {
+      "town": "杉末",
+      "townEn": "Suginosue",
+      "kana": "スギノスエ",
+      "chome": null,
+      "detail": null,
+      "en": "杉末",
+      "jp": "杉末",
+      "pattern": "2"
+    },
+    {
+      "town": "惣",
+      "townEn": "So",
+      "kana": "ソウ",
+      "chome": null,
+      "detail": null,
+      "en": "惣",
+      "jp": "惣",
+      "pattern": "4"
+    },
+    {
+      "town": "滝馬",
+      "townEn": "Takiba",
+      "kana": "タキバ",
+      "chome": null,
+      "detail": null,
+      "en": "滝馬",
+      "jp": "滝馬",
+      "pattern": "7"
+    },
+    {
+      "town": "鶴賀",
+      "townEn": "Tsuruga",
+      "kana": "ツルガ",
+      "chome": null,
+      "detail": null,
+      "en": "鶴賀",
+      "jp": "鶴賀",
+      "pattern": "8"
+    },
+    {
+      "town": "波路",
+      "townEn": "Haji",
+      "kana": "ハジ",
+      "chome": null,
+      "detail": null,
+      "en": "波路",
+      "jp": "波路",
+      "pattern": "1"
+    },
+    {
+      "town": "波路町",
+      "townEn": "Hajimachi",
+      "kana": "ハジマチ",
+      "chome": null,
+      "detail": null,
+      "en": "波路町",
+      "jp": "波路町",
+      "pattern": "1"
+    },
+    {
+      "town": "畑",
+      "townEn": "Hata",
+      "kana": "ハタ",
+      "chome": null,
+      "detail": null,
+      "en": "畑",
+      "jp": "畑",
+      "pattern": "6"
+    },
+    {
+      "town": "日置",
+      "townEn": "Hioki",
+      "kana": "ヒオキ",
+      "chome": null,
+      "detail": null,
+      "en": "日置",
+      "jp": "日置",
+      "pattern": "10"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "1"
+    },
+    {
+      "town": "松尾",
+      "townEn": "Matsuo",
+      "kana": "マツオ",
+      "chome": null,
+      "detail": null,
+      "en": "松尾",
+      "jp": "松尾",
+      "pattern": "6"
+    },
+    {
+      "town": "宮村",
+      "townEn": "Miyamura",
+      "kana": "ミヤムラ",
+      "chome": null,
+      "detail": null,
+      "en": "宮村",
+      "jp": "宮村",
+      "pattern": "7"
+    },
+    {
+      "town": "宮村",
+      "townEn": "Miyamura",
+      "kana": "ミヤムラ",
+      "chome": null,
+      "detail": "宮村上",
+      "en": "宮村上",
+      "jp": "宮村上",
+      "pattern": "4"
+    },
+    {
+      "town": "宮本",
+      "townEn": "Miyamoto",
+      "kana": "ミヤモト",
+      "chome": null,
+      "detail": null,
+      "en": "宮本",
+      "jp": "宮本",
+      "pattern": "7"
+    },
+    {
+      "town": "文珠",
+      "townEn": "Monju",
+      "kana": "モンジュ",
+      "chome": null,
+      "detail": null,
+      "en": "文珠",
+      "jp": "文珠",
+      "pattern": "3"
+    },
+    {
+      "town": "柳縄手",
+      "townEn": "Yanaginawate",
+      "kana": "ヤナギナワテ",
+      "chome": null,
+      "detail": null,
+      "en": "柳縄手",
+      "jp": "柳縄手",
+      "pattern": "7"
+    },
+    {
+      "town": "山中",
+      "townEn": "Yamanaka",
+      "kana": "ヤマナカ",
+      "chome": null,
+      "detail": null,
+      "en": "山中",
+      "jp": "山中",
+      "pattern": "9"
+    },
+    {
+      "town": "由良",
+      "townEn": "Yura",
+      "kana": "ユラ",
+      "chome": null,
+      "detail": null,
+      "en": "由良",
+      "jp": "由良",
+      "pattern": "8"
+    },
+    {
+      "town": "万町",
+      "townEn": "Yorozumachi",
+      "kana": "ヨロズマチ",
+      "chome": null,
+      "detail": null,
+      "en": "万町",
+      "jp": "万町",
+      "pattern": "3"
+    },
+    {
+      "town": "漁師",
+      "townEn": "Ryoshi",
+      "kana": "リョウシ",
+      "chome": null,
+      "detail": "漁師町",
+      "en": "漁師町",
+      "jp": "漁師町",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://miyazu.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

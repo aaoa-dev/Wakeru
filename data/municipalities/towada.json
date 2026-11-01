@@ -1,0 +1,1318 @@
+{
+  "id": "towada",
+  "code": "02203",
+  "pref": "02",
+  "jp": "十和田市",
+  "en": "Towada",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://opendata.pref.aomori.lg.jp/dataset/1481.html",
+    "https://opendata.pref.aomori.lg.jp/fs/2/7/5/7/1/_/022063_gomishushuyobi.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Towada City Environment Division",
+      "tel": "0176-51-1111"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from Towada's ごみ地域別収集曜日一覧 (Aomori Prefecture open data). Confirm holidays on the city page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "beverage_can": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "plastic": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "beverage_can": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "赤沼",
+      "townEn": "赤沼",
+      "kana": "あかぬま",
+      "chome": null,
+      "detail": null,
+      "en": "赤沼",
+      "jp": "赤沼",
+      "pattern": "2"
+    },
+    {
+      "town": "芦名沢",
+      "townEn": "芦名沢",
+      "kana": "あしなざわ",
+      "chome": null,
+      "detail": null,
+      "en": "芦名沢",
+      "jp": "芦名沢",
+      "pattern": "1"
+    },
+    {
+      "town": "一本木沢",
+      "townEn": "Ippongisawa",
+      "kana": "イッポンギサワ",
+      "chome": null,
+      "detail": "一本木沢一・二丁目",
+      "en": "一本木沢一・二丁目",
+      "jp": "一本木沢一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "稲生町",
+      "townEn": "Inaoicho",
+      "kana": "イナオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "稲生町",
+      "jp": "稲生町",
+      "pattern": "2"
+    },
+    {
+      "town": "上川目",
+      "townEn": "上川目",
+      "kana": "うえかわめ",
+      "chome": null,
+      "detail": null,
+      "en": "上川目",
+      "jp": "上川目",
+      "pattern": "1"
+    },
+    {
+      "town": "馬洗場",
+      "townEn": "馬洗場",
+      "kana": "うまあらいば",
+      "chome": null,
+      "detail": null,
+      "en": "馬洗場",
+      "jp": "馬洗場",
+      "pattern": "2"
+    },
+    {
+      "town": "漆畑",
+      "townEn": "漆畑",
+      "kana": "うるしはた",
+      "chome": null,
+      "detail": null,
+      "en": "漆畑",
+      "jp": "漆畑",
+      "pattern": "2"
+    },
+    {
+      "town": "相坂（字高清水を除く）",
+      "townEn": "相坂（字高清水を除く）",
+      "kana": "おおさか",
+      "chome": null,
+      "detail": null,
+      "en": "相坂（字高清水を除く）",
+      "jp": "相坂（字高清水を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "相坂字高清水",
+      "townEn": "相坂字高清水",
+      "kana": "おおさかあざ たかしみず",
+      "chome": null,
+      "detail": null,
+      "en": "相坂字高清水",
+      "jp": "相坂字高清水",
+      "pattern": "2"
+    },
+    {
+      "town": "大沢田",
+      "townEn": "大沢田",
+      "kana": "おおさわだ",
+      "chome": null,
+      "detail": null,
+      "en": "大沢田",
+      "jp": "大沢田",
+      "pattern": "2"
+    },
+    {
+      "town": "太田",
+      "townEn": "太田",
+      "kana": "おおた",
+      "chome": null,
+      "detail": null,
+      "en": "太田",
+      "jp": "太田",
+      "pattern": "1"
+    },
+    {
+      "town": "太田川原",
+      "townEn": "太田川原",
+      "kana": "おおたがわら",
+      "chome": null,
+      "detail": null,
+      "en": "太田川原",
+      "jp": "太田川原",
+      "pattern": "1"
+    },
+    {
+      "town": "大畑野",
+      "townEn": "大畑野",
+      "kana": "おおはたの",
+      "chome": null,
+      "detail": null,
+      "en": "大畑野",
+      "jp": "大畑野",
+      "pattern": "1"
+    },
+    {
+      "town": "大不動",
+      "townEn": "大不動",
+      "kana": "おおふどう",
+      "chome": null,
+      "detail": null,
+      "en": "大不動",
+      "jp": "大不動",
+      "pattern": "1"
+    },
+    {
+      "town": "生内",
+      "townEn": "生内",
+      "kana": "おもない",
+      "chome": null,
+      "detail": null,
+      "en": "生内",
+      "jp": "生内",
+      "pattern": "1"
+    },
+    {
+      "town": "片貝沢",
+      "townEn": "片貝沢",
+      "kana": "かたかいざわ",
+      "chome": null,
+      "detail": null,
+      "en": "片貝沢",
+      "jp": "片貝沢",
+      "pattern": "2"
+    },
+    {
+      "town": "川口",
+      "townEn": "川口",
+      "kana": "かわぐち",
+      "chome": null,
+      "detail": null,
+      "en": "川口",
+      "jp": "川口",
+      "pattern": "2"
+    },
+    {
+      "town": "川代",
+      "townEn": "川代",
+      "kana": "かわだい",
+      "chome": null,
+      "detail": null,
+      "en": "川代",
+      "jp": "川代",
+      "pattern": "2"
+    },
+    {
+      "town": "切田",
+      "townEn": "切田",
+      "kana": "きりだ",
+      "chome": null,
+      "detail": null,
+      "en": "切田",
+      "jp": "切田",
+      "pattern": "2"
+    },
+    {
+      "town": "小沢口",
+      "townEn": "小沢口",
+      "kana": "こざわぐち",
+      "chome": null,
+      "detail": null,
+      "en": "小沢口",
+      "jp": "小沢口",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字一本木沢",
+      "townEn": "三本木字一本木沢",
+      "kana": "さんぼんぎあざ いっぽんぎさわ",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字一本木沢",
+      "jp": "三本木字一本木沢",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字稲吉",
+      "townEn": "三本木字稲吉",
+      "kana": "さんぼんぎあざ いなよし",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字稲吉",
+      "jp": "三本木字稲吉",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字牛泊",
+      "townEn": "三本木字牛泊",
+      "kana": "さんぼんぎあざ うしどまり",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字牛泊",
+      "jp": "三本木字牛泊",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字上平",
+      "townEn": "三本木字上平",
+      "kana": "さんぼんぎあざ かみたい",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字上平",
+      "jp": "三本木字上平",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字北平",
+      "townEn": "三本木字北平",
+      "kana": "さんぼんぎあざ きたたい",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字北平",
+      "jp": "三本木字北平",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字佐井幅",
+      "townEn": "三本木字佐井幅",
+      "kana": "さんぼんぎあざ さいはば",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字佐井幅",
+      "jp": "三本木字佐井幅",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字里ノ沢",
+      "townEn": "三本木字里ノ沢",
+      "kana": "さんぼんぎあざ さとのさわ",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字里ノ沢",
+      "jp": "三本木字里ノ沢",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字沢幅",
+      "townEn": "三本木字沢幅",
+      "kana": "さんぼんぎあざ さわはば",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字沢幅",
+      "jp": "三本木字沢幅",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字下平の一部（稲生団地）",
+      "townEn": "三本木字下平の一部（稲生団地）",
+      "kana": "さんぼんぎあざ しもたいのいちぶ",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字下平の一部（稲生団地）",
+      "jp": "三本木字下平の一部（稲生団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字千歳森",
+      "townEn": "三本木字千歳森",
+      "kana": "さんぼんぎあざ せんざいもり",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字千歳森",
+      "jp": "三本木字千歳森",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字中掫",
+      "townEn": "三本木字中掫",
+      "kana": "さんぼんぎあざ ちゅうせり",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字中掫",
+      "jp": "三本木字中掫",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字並木西",
+      "townEn": "三本木字並木西",
+      "kana": "さんぼんぎあざ なみきにし",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字並木西",
+      "jp": "三本木字並木西",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字西金崎",
+      "townEn": "三本木字西金崎",
+      "kana": "さんぼんぎあざ にしかねざき",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字西金崎",
+      "jp": "三本木字西金崎",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字西小稲",
+      "townEn": "三本木字西小稲",
+      "kana": "さんぼんぎあざ にしこいな",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字西小稲",
+      "jp": "三本木字西小稲",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字野崎",
+      "townEn": "三本木字野崎",
+      "kana": "さんぼんぎあざ のざき",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字野崎",
+      "jp": "三本木字野崎",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字東小稲",
+      "townEn": "三本木字東小稲",
+      "kana": "さんぼんぎあざ ひがしこいな",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字東小稲",
+      "jp": "三本木字東小稲",
+      "pattern": "1"
+    },
+    {
+      "town": "三本木字本金崎",
+      "townEn": "三本木字本金崎",
+      "kana": "さんぼんぎあざ ほんかねざき",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字本金崎",
+      "jp": "三本木字本金崎",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字間遠地",
+      "townEn": "三本木字間遠地",
+      "kana": "さんぼんぎあざ まとち",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字間遠地",
+      "jp": "三本木字間遠地",
+      "pattern": "2"
+    },
+    {
+      "town": "三本木字矢神",
+      "townEn": "三本木字矢神",
+      "kana": "さんぼんぎあざ やがみ",
+      "chome": null,
+      "detail": null,
+      "en": "三本木字矢神",
+      "jp": "三本木字矢神",
+      "pattern": "2"
+    },
+    {
+      "town": "下川目",
+      "townEn": "下川目",
+      "kana": "したかわめ",
+      "chome": null,
+      "detail": null,
+      "en": "下川目",
+      "jp": "下川目",
+      "pattern": "1"
+    },
+    {
+      "town": "篠沢山開拓",
+      "townEn": "篠沢山開拓",
+      "kana": "しのざわやまかいたく",
+      "chome": null,
+      "detail": null,
+      "en": "篠沢山開拓",
+      "jp": "篠沢山開拓",
+      "pattern": "1"
+    },
+    {
+      "town": "下洗",
+      "townEn": "下洗",
+      "kana": "しもあらい",
+      "chome": null,
+      "detail": null,
+      "en": "下洗",
+      "jp": "下洗",
+      "pattern": "1"
+    },
+    {
+      "town": "下平（稲生団地を除く）",
+      "townEn": "下平（稲生団地を除く）",
+      "kana": "しもたい",
+      "chome": null,
+      "detail": null,
+      "en": "下平（稲生団地を除く）",
+      "jp": "下平（稲生団地を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "新川原",
+      "townEn": "新川原",
+      "kana": "しんかわら",
+      "chome": null,
+      "detail": null,
+      "en": "新川原",
+      "jp": "新川原",
+      "pattern": "1"
+    },
+    {
+      "town": "新田",
+      "townEn": "新田",
+      "kana": "しんでん",
+      "chome": null,
+      "detail": null,
+      "en": "新田",
+      "jp": "新田",
+      "pattern": "2"
+    },
+    {
+      "town": "仙ノ沢",
+      "townEn": "仙ノ沢",
+      "kana": "せんのさわ",
+      "chome": null,
+      "detail": null,
+      "en": "仙ノ沢",
+      "jp": "仙ノ沢",
+      "pattern": "1"
+    },
+    {
+      "town": "仙ノ沢開拓",
+      "townEn": "仙ノ沢開拓",
+      "kana": "せんのさわかいたく",
+      "chome": null,
+      "detail": null,
+      "en": "仙ノ沢開拓",
+      "jp": "仙ノ沢開拓",
+      "pattern": "1"
+    },
+    {
+      "town": "第二温泉郷",
+      "townEn": "第二温泉郷",
+      "kana": "だいにおんせんきょう",
+      "chome": null,
+      "detail": null,
+      "en": "第二温泉郷",
+      "jp": "第二温泉郷",
+      "pattern": "2"
+    },
+    {
+      "town": "高田",
+      "townEn": "高田",
+      "kana": "たかだ",
+      "chome": null,
+      "detail": null,
+      "en": "高田",
+      "jp": "高田",
+      "pattern": "1"
+    },
+    {
+      "town": "滝沢",
+      "townEn": "滝沢",
+      "kana": "たきさわ",
+      "chome": null,
+      "detail": null,
+      "en": "滝沢",
+      "jp": "滝沢",
+      "pattern": "1"
+    },
+    {
+      "town": "立崎",
+      "townEn": "立崎",
+      "kana": "たちざき",
+      "chome": null,
+      "detail": null,
+      "en": "立崎",
+      "jp": "立崎",
+      "pattern": "2"
+    },
+    {
+      "town": "舘",
+      "townEn": "舘",
+      "kana": "たて",
+      "chome": null,
+      "detail": null,
+      "en": "舘",
+      "jp": "舘",
+      "pattern": "1"
+    },
+    {
+      "town": "立石",
+      "townEn": "立石",
+      "kana": "たていし",
+      "chome": null,
+      "detail": null,
+      "en": "立石",
+      "jp": "立石",
+      "pattern": "1"
+    },
+    {
+      "town": "田屋",
+      "townEn": "田屋",
+      "kana": "たや",
+      "chome": null,
+      "detail": null,
+      "en": "田屋",
+      "jp": "田屋",
+      "pattern": "1"
+    },
+    {
+      "town": "段ノ台",
+      "townEn": "段ノ台",
+      "kana": "だんのだい",
+      "chome": null,
+      "detail": null,
+      "en": "段ノ台",
+      "jp": "段ノ台",
+      "pattern": "2"
+    },
+    {
+      "town": "伝法寺",
+      "townEn": "伝法寺",
+      "kana": "でんぽうじ",
+      "chome": null,
+      "detail": null,
+      "en": "伝法寺",
+      "jp": "伝法寺",
+      "pattern": "1"
+    },
+    {
+      "town": "栃久保",
+      "townEn": "栃久保",
+      "kana": "とちくぼ",
+      "chome": null,
+      "detail": null,
+      "en": "栃久保",
+      "jp": "栃久保",
+      "pattern": "1"
+    },
+    {
+      "town": "百目木",
+      "townEn": "百目木",
+      "kana": "どめき",
+      "chome": null,
+      "detail": null,
+      "en": "百目木",
+      "jp": "百目木",
+      "pattern": "2"
+    },
+    {
+      "town": "豊ヶ岡",
+      "townEn": "豊ヶ岡",
+      "kana": "とよがおか",
+      "chome": null,
+      "detail": null,
+      "en": "豊ヶ岡",
+      "jp": "豊ヶ岡",
+      "pattern": "2"
+    },
+    {
+      "town": "鳥谷附",
+      "townEn": "鳥谷附",
+      "kana": "とりやづく",
+      "chome": null,
+      "detail": null,
+      "en": "鳥谷附",
+      "jp": "鳥谷附",
+      "pattern": "2"
+    },
+    {
+      "town": "十和田湖温泉郷",
+      "townEn": "十和田湖温泉郷",
+      "kana": "とわだこおんせんきょう",
+      "chome": null,
+      "detail": null,
+      "en": "十和田湖温泉郷",
+      "jp": "十和田湖温泉郷",
+      "pattern": "2"
+    },
+    {
+      "town": "中川原",
+      "townEn": "中川原",
+      "kana": "なかがわら",
+      "chome": null,
+      "detail": null,
+      "en": "中川原",
+      "jp": "中川原",
+      "pattern": "1"
+    },
+    {
+      "town": "中里",
+      "townEn": "中里",
+      "kana": "なかさと",
+      "chome": null,
+      "detail": null,
+      "en": "中里",
+      "jp": "中里",
+      "pattern": "2"
+    },
+    {
+      "town": "長沢",
+      "townEn": "長沢",
+      "kana": "ながさわ",
+      "chome": null,
+      "detail": null,
+      "en": "長沢",
+      "jp": "長沢",
+      "pattern": "2"
+    },
+    {
+      "town": "中ノ渡",
+      "townEn": "中ノ渡",
+      "kana": "なかのわたり",
+      "chome": null,
+      "detail": null,
+      "en": "中ノ渡",
+      "jp": "中ノ渡",
+      "pattern": "1"
+    },
+    {
+      "town": "西十一番町",
+      "townEn": "Nishi11-Bancho",
+      "kana": "ニシ１１バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西十一番町",
+      "jp": "西十一番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西十二番町",
+      "townEn": "Nishi12-Bancho",
+      "kana": "ニシ１２バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西十二番町",
+      "jp": "西十二番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西十三番町",
+      "townEn": "Nishi13-Bancho",
+      "kana": "ニシ１３バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西十三番町",
+      "jp": "西十三番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西一番町",
+      "townEn": "Nishi1-Bancho",
+      "kana": "ニシ１バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西一番町",
+      "jp": "西一番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西二十一番町",
+      "townEn": "Nishi21-Bancho",
+      "kana": "ニシ２１バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西二十一番町",
+      "jp": "西二十一番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西二十二番町",
+      "townEn": "Nishi22-Bancho",
+      "kana": "ニシ２２バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西二十二番町",
+      "jp": "西二十二番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西二十三番町",
+      "townEn": "Nishi23-Bancho",
+      "kana": "ニシ２３バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西二十三番町",
+      "jp": "西二十三番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西二番町",
+      "townEn": "Nishi2-Bancho",
+      "kana": "ニシ２バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西二番町",
+      "jp": "西二番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西三番町",
+      "townEn": "Nishi3-Bancho",
+      "kana": "ニシ３バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西三番町",
+      "jp": "西三番町",
+      "pattern": "2"
+    },
+    {
+      "town": "西十四～十六番町",
+      "townEn": "西十四～十六番町",
+      "kana": "にしじゅうよん～じゅうろくばんちょう",
+      "chome": null,
+      "detail": null,
+      "en": "西十四～十六番町",
+      "jp": "西十四～十六番町",
+      "pattern": "1"
+    },
+    {
+      "town": "西四～六番町",
+      "townEn": "西四～六番町",
+      "kana": "にしよん～ろくばんちょう",
+      "chome": null,
+      "detail": null,
+      "en": "西四～六番町",
+      "jp": "西四～六番町",
+      "pattern": "1"
+    },
+    {
+      "town": "八斗沢",
+      "townEn": "八斗沢",
+      "kana": "はっとざわ",
+      "chome": null,
+      "detail": null,
+      "en": "八斗沢",
+      "jp": "八斗沢",
+      "pattern": "2"
+    },
+    {
+      "town": "東十一番町",
+      "townEn": "Higashi11-Bancho",
+      "kana": "ヒガシ１１バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十一番町",
+      "jp": "東十一番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東十二番町",
+      "townEn": "Higashi12-Bancho",
+      "kana": "ヒガシ１２バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十二番町",
+      "jp": "東十二番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東十三番町",
+      "townEn": "Higashi13-Bancho",
+      "kana": "ヒガシ１３バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十三番町",
+      "jp": "東十三番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東十四番町",
+      "townEn": "Higashi14-Bancho",
+      "kana": "ヒガシ１４バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十四番町",
+      "jp": "東十四番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東十五番町",
+      "townEn": "Higashi15-Bancho",
+      "kana": "ヒガシ１５バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十五番町",
+      "jp": "東十五番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東十六番町",
+      "townEn": "Higashi16-Bancho",
+      "kana": "ヒガシ１６バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東十六番町",
+      "jp": "東十六番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東一番町",
+      "townEn": "Higashi1-Bancho",
+      "kana": "ヒガシ１バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東一番町",
+      "jp": "東一番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東二番町",
+      "townEn": "Higashi2-Bancho",
+      "kana": "ヒガシ２バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東二番町",
+      "jp": "東二番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東三番町",
+      "townEn": "Higashi3-Bancho",
+      "kana": "ヒガシ３バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東三番町",
+      "jp": "東三番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東四番町",
+      "townEn": "Higashi4-Bancho",
+      "kana": "ヒガシ４バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東四番町",
+      "jp": "東四番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東五番町",
+      "townEn": "Higashi5-Bancho",
+      "kana": "ヒガシ５バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東五番町",
+      "jp": "東五番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東六番町",
+      "townEn": "Higashi6-Bancho",
+      "kana": "ヒガシ６バンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東六番町",
+      "jp": "東六番町",
+      "pattern": "1"
+    },
+    {
+      "town": "東二十一～二十四番町",
+      "townEn": "東二十一～二十四番町",
+      "kana": "ひがしにじゅういち～にじゅうよんばんちょう",
+      "chome": null,
+      "detail": null,
+      "en": "東二十一～二十四番町",
+      "jp": "東二十一～二十四番町",
+      "pattern": "1"
+    },
+    {
+      "town": "ひがしの",
+      "townEn": "Higashino",
+      "kana": "ヒガシノ",
+      "chome": null,
+      "detail": "ひがしの一・二丁目",
+      "en": "ひがしの一・二丁目",
+      "jp": "ひがしの一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "冷水",
+      "townEn": "冷水",
+      "kana": "ひやみず",
+      "chome": null,
+      "detail": null,
+      "en": "冷水",
+      "jp": "冷水",
+      "pattern": "1"
+    },
+    {
+      "town": "府金",
+      "townEn": "府金",
+      "kana": "ふがね",
+      "chome": null,
+      "detail": null,
+      "en": "府金",
+      "jp": "府金",
+      "pattern": "2"
+    },
+    {
+      "town": "深堀",
+      "townEn": "深堀",
+      "kana": "ふかぼり",
+      "chome": null,
+      "detail": null,
+      "en": "深堀",
+      "jp": "深堀",
+      "pattern": "1"
+    },
+    {
+      "town": "深持",
+      "townEn": "深持",
+      "kana": "ふかもち",
+      "chome": null,
+      "detail": null,
+      "en": "深持",
+      "jp": "深持",
+      "pattern": "2"
+    },
+    {
+      "town": "藤島",
+      "townEn": "藤島",
+      "kana": "ふじしま",
+      "chome": null,
+      "detail": null,
+      "en": "藤島",
+      "jp": "藤島",
+      "pattern": "1"
+    },
+    {
+      "town": "ニツ家",
+      "townEn": "ニツ家",
+      "kana": "ふたつや",
+      "chome": null,
+      "detail": null,
+      "en": "ニツ家",
+      "jp": "ニツ家",
+      "pattern": "1"
+    },
+    {
+      "town": "渕沢",
+      "townEn": "渕沢",
+      "kana": "ふちさわ",
+      "chome": null,
+      "detail": null,
+      "en": "渕沢",
+      "jp": "渕沢",
+      "pattern": "2"
+    },
+    {
+      "town": "法量",
+      "townEn": "法量",
+      "kana": "ほうりょう",
+      "chome": null,
+      "detail": null,
+      "en": "法量",
+      "jp": "法量",
+      "pattern": "2"
+    },
+    {
+      "town": "穂並町",
+      "townEn": "Honamicho",
+      "kana": "ホナミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "穂並町",
+      "jp": "穂並町",
+      "pattern": "1"
+    },
+    {
+      "town": "洞内",
+      "townEn": "洞内",
+      "kana": "ほらない",
+      "chome": null,
+      "detail": null,
+      "en": "洞内",
+      "jp": "洞内",
+      "pattern": "2"
+    },
+    {
+      "town": "洞内の一部（字千刈田・樺沢・樋口）",
+      "townEn": "洞内の一部（字千刈田・樺沢・樋口）",
+      "kana": "ほらないのいちぶ",
+      "chome": null,
+      "detail": null,
+      "en": "洞内の一部（字千刈田・樺沢・樋口）",
+      "jp": "洞内の一部（字千刈田・樺沢・樋口）",
+      "pattern": "2"
+    },
+    {
+      "town": "洞内の一部（字芦沢・樽石・深沢平・上羽立・下羽立・小田・森田野・豊良・五十貫田・希望ヶ丘）",
+      "townEn": "洞内の一部（字芦沢・樽石・深沢平・上羽立・下羽立・小田・森田野・豊良・五十貫田・希望ヶ丘）",
+      "kana": "ほらないのいちぶ",
+      "chome": null,
+      "detail": null,
+      "en": "洞内の一部（字芦沢・樽石・深沢平・上羽立・下羽立・小田・森田野・豊良・五十貫田・希望ヶ丘）",
+      "jp": "洞内の一部（字芦沢・樽石・深沢平・上羽立・下羽立・小田・森田野・豊良・五十貫田・希望ヶ丘）",
+      "pattern": "2"
+    },
+    {
+      "town": "米田",
+      "townEn": "米田",
+      "kana": "まいた",
+      "chome": null,
+      "detail": null,
+      "en": "米田",
+      "jp": "米田",
+      "pattern": "1"
+    },
+    {
+      "town": "水尻",
+      "townEn": "水尻",
+      "kana": "みずしり",
+      "chome": null,
+      "detail": null,
+      "en": "水尻",
+      "jp": "水尻",
+      "pattern": "1"
+    },
+    {
+      "town": "道交",
+      "townEn": "道交",
+      "kana": "みちちがい",
+      "chome": null,
+      "detail": null,
+      "en": "道交",
+      "jp": "道交",
+      "pattern": "1"
+    },
+    {
+      "town": "三日市",
+      "townEn": "三日市",
+      "kana": "みっかいち",
+      "chome": null,
+      "detail": null,
+      "en": "三日市",
+      "jp": "三日市",
+      "pattern": "1"
+    },
+    {
+      "town": "向村",
+      "townEn": "向村",
+      "kana": "むかいむら",
+      "chome": null,
+      "detail": null,
+      "en": "向村",
+      "jp": "向村",
+      "pattern": "1"
+    },
+    {
+      "town": "元町西",
+      "townEn": "Motomachinishi",
+      "kana": "モトマチニシ",
+      "chome": null,
+      "detail": "元町西一～六丁目",
+      "en": "元町西一～六丁目",
+      "jp": "元町西一～六丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "元町東",
+      "townEn": "Motomachihigashi",
+      "kana": "モトマチヒガシ",
+      "chome": null,
+      "detail": "元町東一～五丁目",
+      "en": "元町東一～五丁目",
+      "jp": "元町東一～五丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "焼山",
+      "townEn": "焼山",
+      "kana": "やけやま",
+      "chome": null,
+      "detail": null,
+      "en": "焼山",
+      "jp": "焼山",
+      "pattern": "2"
+    },
+    {
+      "town": "山口",
+      "townEn": "山口",
+      "kana": "やまぐち",
+      "chome": null,
+      "detail": null,
+      "en": "山口",
+      "jp": "山口",
+      "pattern": "2"
+    },
+    {
+      "town": "山屋",
+      "townEn": "山屋",
+      "kana": "やまや",
+      "chome": null,
+      "detail": null,
+      "en": "山屋",
+      "jp": "山屋",
+      "pattern": "2"
+    },
+    {
+      "town": "蓬畑",
+      "townEn": "蓬畑",
+      "kana": "よもぎはた",
+      "chome": null,
+      "detail": null,
+      "en": "蓬畑",
+      "jp": "蓬畑",
+      "pattern": "2"
+    },
+    {
+      "town": "両泉寺",
+      "townEn": "両泉寺",
+      "kana": "りょうせんじ",
+      "chome": null,
+      "detail": null,
+      "en": "両泉寺",
+      "jp": "両泉寺",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Aomori Prefecture open data (Towada collection weekdays)",
+      "url": "https://opendata.pref.aomori.lg.jp/dataset/1481.html",
+      "license": "Aomori Prefecture open data (CC BY)",
+      "commit": "022063_gomishushuyobi"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "skippedRows": 0
+}

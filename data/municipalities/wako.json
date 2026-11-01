@@ -1,0 +1,372 @@
+{
+  "id": "wako",
+  "code": "11229",
+  "pref": "11",
+  "jp": "和光市",
+  "en": "Wako",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.wako.lg.jp/kurashi/gomi/1002742/1010170/1002746.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass": {
+      "label": "ガラス類",
+      "en": "Glass",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's district table (bottles/cans/paper and non-burnable share the same collection day column).",
+    "patterns": {
+      "1": {
+        "plastic": [
+          3
+        ],
+        "res": [
+          2
+        ],
+        "non_burnable": [
+          2
+        ],
+        "hazardous": [
+          2
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "2": {
+        "plastic": [
+          4
+        ],
+        "res": [
+          3
+        ],
+        "non_burnable": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "3": {
+        "plastic": [
+          4
+        ],
+        "res": [
+          1
+        ],
+        "non_burnable": [
+          1
+        ],
+        "hazardous": [
+          1
+        ],
+        "burnable": [
+          2,
+          5
+        ]
+      },
+      "4": {
+        "plastic": [
+          3
+        ],
+        "res": [
+          5
+        ],
+        "non_burnable": [
+          5
+        ],
+        "hazardous": [
+          5
+        ],
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "5": {
+        "plastic": [
+          5
+        ],
+        "res": [
+          1
+        ],
+        "non_burnable": [
+          1
+        ],
+        "hazardous": [
+          1
+        ],
+        "burnable": [
+          3,
+          6
+        ]
+      },
+      "6": {
+        "plastic": [
+          5
+        ],
+        "res": [
+          4
+        ],
+        "non_burnable": [
+          4
+        ],
+        "hazardous": [
+          4
+        ],
+        "burnable": [
+          3,
+          6
+        ]
+      },
+      "7": {
+        "plastic": [
+          5
+        ],
+        "res": [
+          2
+        ],
+        "non_burnable": [
+          2
+        ],
+        "hazardous": [
+          2
+        ],
+        "burnable": [
+          3,
+          6
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "白子1・2丁目",
+      "townEn": "白子1・2丁目",
+      "kana": "白子1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "白子1・2丁目",
+      "jp": "白子1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "白子3丁目",
+      "townEn": "白子3丁目",
+      "kana": "白子3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "白子3丁目",
+      "jp": "白子3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "白子4丁目",
+      "townEn": "白子4丁目",
+      "kana": "白子4丁目",
+      "chome": null,
+      "detail": null,
+      "en": "白子4丁目",
+      "jp": "白子4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "南1・2丁目",
+      "townEn": "南1・2丁目",
+      "kana": "南1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "南1・2丁目",
+      "jp": "南1・2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "中央1・2丁目",
+      "townEn": "中央1・2丁目",
+      "kana": "中央1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央1・2丁目",
+      "jp": "中央1・2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "新倉1丁目",
+      "townEn": "新倉1丁目",
+      "kana": "新倉1丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新倉1丁目",
+      "jp": "新倉1丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "新倉2丁目",
+      "townEn": "新倉2丁目",
+      "kana": "新倉2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新倉2丁目",
+      "jp": "新倉2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "新倉3～8丁目",
+      "townEn": "新倉3～8丁目",
+      "kana": "新倉3～8丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新倉3～8丁目",
+      "jp": "新倉3～8丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "本町",
+      "townEn": "本町",
+      "kana": "本町",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "6"
+    },
+    {
+      "town": "諏訪",
+      "townEn": "諏訪",
+      "kana": "諏訪",
+      "chome": null,
+      "detail": null,
+      "en": "諏訪",
+      "jp": "諏訪",
+      "pattern": "4"
+    },
+    {
+      "town": "広沢",
+      "townEn": "広沢",
+      "kana": "広沢",
+      "chome": null,
+      "detail": null,
+      "en": "広沢",
+      "jp": "広沢",
+      "pattern": "4"
+    },
+    {
+      "town": "西大和団地",
+      "townEn": "西大和団地",
+      "kana": "西大和団地",
+      "chome": null,
+      "detail": null,
+      "en": "西大和団地",
+      "jp": "西大和団地",
+      "pattern": "4"
+    },
+    {
+      "town": "諏訪原団地",
+      "townEn": "諏訪原団地",
+      "kana": "諏訪原団地",
+      "chome": null,
+      "detail": null,
+      "en": "諏訪原団地",
+      "jp": "諏訪原団地",
+      "pattern": "4"
+    },
+    {
+      "town": "下新倉1～6丁目",
+      "townEn": "下新倉1～6丁目",
+      "kana": "下新倉1～6丁目",
+      "chome": null,
+      "detail": null,
+      "en": "下新倉1～6丁目",
+      "jp": "下新倉1～6丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "丸山台1～3丁目",
+      "townEn": "丸山台1～3丁目",
+      "kana": "丸山台1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "丸山台1～3丁目",
+      "jp": "丸山台1～3丁目",
+      "pattern": "7"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Wako City district collection day table",
+      "url": "https://www.city.wako.lg.jp/kurashi/gomi/1002742/1010170/1002746.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

@@ -1,0 +1,200 @@
+{
+  "id": "okegawa",
+  "code": "11231",
+  "pref": "11",
+  "jp": "桶川市",
+  "en": "Okegawa",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.okegawa.lg.jp/kurashi/gomi_kankyo/gomi_recycle/shushubi/2360.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass": {
+      "label": "ガラス類",
+      "en": "Glass",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「果物の皮」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「紙製の容器と包装紙」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古着・新聞紙・雑誌・段ボール・紙パック」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「古着・新聞紙・雑誌・段ボール・紙パック」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「古着・新聞紙・雑誌・段ボール・紙パック」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「古着・新聞紙・雑誌・段ボール・紙パック」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「プラスチック」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「プラスチック」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「プラスチック」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせるごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "East/west weekday rules for burnable and plastic only; other bins use the city's monthly calendar PDF.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "西地区",
+      "townEn": "西地区",
+      "kana": "西地区",
+      "chome": null,
+      "detail": null,
+      "en": "西地区",
+      "jp": "西地区",
+      "pattern": "1"
+    },
+    {
+      "town": "東地区",
+      "townEn": "東地区",
+      "kana": "東地区",
+      "chome": null,
+      "detail": null,
+      "en": "東地区",
+      "jp": "東地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Okegawa City east/west district schedule table",
+      "url": "https://www.city.okegawa.lg.jp/kurashi/gomi_kankyo/gomi_recycle/shushubi/2360.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

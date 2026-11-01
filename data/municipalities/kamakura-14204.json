@@ -1,0 +1,1044 @@
+{
+  "id": "kamakura-14204",
+  "code": "14204",
+  "pref": "14",
+  "jp": "鎌倉市",
+  "en": "Kamakura",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kamakura.5374.jp/data/area_days.csv",
+    "http://kamakura.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やす」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「燃やす」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割りばし」 under 「燃やす」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「布類」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「レシート」 under 「紙類」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「紙類」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「紙類」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「紙類」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「紙類」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「紙類」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「アルミ缶（飲食用）」 under 「飲食用カン・ビン」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「危険・有害」.",
+      "auto": true
+    },
+    "plastic-pack": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「容器包装プラスチック」 under 「危険・有害ごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「トレー」 under 「プラスチック製でおも」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「危険・有害」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「危険・有害 で膨張している場合は 24」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「危険・有害」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター（金属製・使い捨て）」 under 「危険・有害」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯（蛍光管）」 under 「危険・有害 買い替えの際のケース 23」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「燃えない」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 5,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "paper": [
+          1
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            [
+              5
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "paper": [
+          5
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            [
+              4
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "paper": [
+          3
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            [
+              5
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "paper": [
+          2
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            [
+              2
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "paper": [
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "paper": [
+          4
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": {
+          "any": [
+            [
+              2
+            ],
+            {
+              "day": 5,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "paper": [
+          3
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                2
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          3
+        ],
+        "glass_bottle": [
+          3
+        ],
+        "paper": [
+          1
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "稲村ケ崎",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "稲村ケ崎",
+      "jp": "稲村ケ崎",
+      "pattern": "1"
+    },
+    {
+      "town": "七里ケ浜",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "七里ケ浜",
+      "jp": "七里ケ浜",
+      "pattern": "6"
+    },
+    {
+      "town": "七里ケ浜東",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "七里ケ浜東",
+      "jp": "七里ケ浜東",
+      "pattern": "1"
+    },
+    {
+      "town": "常磐",
+      "townEn": "Kamakura",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常磐",
+      "jp": "常磐",
+      "pattern": "1"
+    },
+    {
+      "town": "由比ケ浜",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "由比ケ浜",
+      "jp": "由比ケ浜",
+      "pattern": "2"
+    },
+    {
+      "town": "今泉",
+      "townEn": "Imaizumi",
+      "kana": "イマイズミ",
+      "chome": null,
+      "detail": null,
+      "en": "今泉",
+      "jp": "今泉",
+      "pattern": "2"
+    },
+    {
+      "town": "今泉台",
+      "townEn": "Imaizumidai",
+      "kana": "イマイズミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "今泉台",
+      "jp": "今泉台",
+      "pattern": "2"
+    },
+    {
+      "town": "岩瀬",
+      "townEn": "Iwase",
+      "kana": "イワセ",
+      "chome": null,
+      "detail": null,
+      "en": "岩瀬",
+      "jp": "岩瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "植木",
+      "townEn": "Ueki",
+      "kana": "ウエキ",
+      "chome": null,
+      "detail": null,
+      "en": "植木",
+      "jp": "植木",
+      "pattern": "3"
+    },
+    {
+      "town": "扇ガ谷",
+      "townEn": "Ogigayatsu",
+      "kana": "オウギガヤツ",
+      "chome": null,
+      "detail": null,
+      "en": "扇ガ谷",
+      "jp": "扇ガ谷",
+      "pattern": "4"
+    },
+    {
+      "town": "大船",
+      "townEn": "Ofuna",
+      "kana": "オオフナ",
+      "chome": null,
+      "detail": "大船（一丁目?五丁目）",
+      "en": "大船（一丁目?五丁目）",
+      "jp": "大船（一丁目?五丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "大船",
+      "townEn": "Ofuna",
+      "kana": "オオフナ",
+      "chome": null,
+      "detail": "大船（未表示地区）",
+      "en": "大船（未表示地区）",
+      "jp": "大船（未表示地区）",
+      "pattern": "2"
+    },
+    {
+      "town": "大船",
+      "townEn": "Ofuna",
+      "kana": "オオフナ",
+      "chome": null,
+      "detail": "大船（六丁目）",
+      "en": "大船（六丁目）",
+      "jp": "大船（六丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "大町",
+      "townEn": "Omachi",
+      "kana": "オオマチ",
+      "chome": null,
+      "detail": null,
+      "en": "大町",
+      "jp": "大町",
+      "pattern": "4"
+    },
+    {
+      "town": "岡本",
+      "townEn": "Okamoto",
+      "kana": "オカモト",
+      "chome": null,
+      "detail": null,
+      "en": "岡本",
+      "jp": "岡本",
+      "pattern": "3"
+    },
+    {
+      "town": "御成町",
+      "townEn": "Onarimachi",
+      "kana": "オナリマチ",
+      "chome": null,
+      "detail": null,
+      "en": "御成町",
+      "jp": "御成町",
+      "pattern": "4"
+    },
+    {
+      "town": "梶原",
+      "townEn": "Kajiwara",
+      "kana": "カジワラ",
+      "chome": null,
+      "detail": "梶原（一丁目?五丁目）",
+      "en": "梶原（一丁目?五丁目）",
+      "jp": "梶原（一丁目?五丁目）",
+      "pattern": "5"
+    },
+    {
+      "town": "梶原",
+      "townEn": "Kajiwara",
+      "kana": "カジワラ",
+      "chome": null,
+      "detail": "梶原（未表示地区）",
+      "en": "梶原（未表示地区）",
+      "jp": "梶原（未表示地区）",
+      "pattern": "5"
+    },
+    {
+      "town": "鎌倉山",
+      "townEn": "Kamakurayama",
+      "kana": "カマクラヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "鎌倉山",
+      "jp": "鎌倉山",
+      "pattern": "1"
+    },
+    {
+      "town": "上町屋",
+      "townEn": "Kamimachiya",
+      "kana": "カミマチヤ",
+      "chome": null,
+      "detail": null,
+      "en": "上町屋",
+      "jp": "上町屋",
+      "pattern": "1"
+    },
+    {
+      "town": "極楽寺",
+      "townEn": "Gokurakuji",
+      "kana": "ゴクラクジ",
+      "chome": null,
+      "detail": null,
+      "en": "極楽寺",
+      "jp": "極楽寺",
+      "pattern": "1"
+    },
+    {
+      "town": "腰越",
+      "townEn": "Koshigoe",
+      "kana": "コシゴエ",
+      "chome": null,
+      "detail": "腰越（一丁目?五丁目）",
+      "en": "腰越（一丁目?五丁目）",
+      "jp": "腰越（一丁目?五丁目）",
+      "pattern": "6"
+    },
+    {
+      "town": "腰越",
+      "townEn": "Koshigoe",
+      "kana": "コシゴエ",
+      "chome": null,
+      "detail": "腰越（未表示地区）",
+      "en": "腰越（未表示地区）",
+      "jp": "腰越（未表示地区）",
+      "pattern": "6"
+    },
+    {
+      "town": "小袋谷",
+      "townEn": "Kobukuroya",
+      "kana": "コブクロヤ",
+      "chome": null,
+      "detail": null,
+      "en": "小袋谷",
+      "jp": "小袋谷",
+      "pattern": "7"
+    },
+    {
+      "town": "小町",
+      "townEn": "Komachi",
+      "kana": "コマチ",
+      "chome": null,
+      "detail": null,
+      "en": "小町",
+      "jp": "小町",
+      "pattern": "4"
+    },
+    {
+      "town": "材木座",
+      "townEn": "Zaimokuza",
+      "kana": "ザイモクザ",
+      "chome": null,
+      "detail": null,
+      "en": "材木座",
+      "jp": "材木座",
+      "pattern": "4"
+    },
+    {
+      "town": "坂ノ下",
+      "townEn": "Sakanoshita",
+      "kana": "サカノシタ",
+      "chome": null,
+      "detail": null,
+      "en": "坂ノ下",
+      "jp": "坂ノ下",
+      "pattern": "1"
+    },
+    {
+      "town": "笹目町",
+      "townEn": "Sasamemachi",
+      "kana": "ササメマチ",
+      "chome": null,
+      "detail": null,
+      "en": "笹目町",
+      "jp": "笹目町",
+      "pattern": "2"
+    },
+    {
+      "town": "佐助",
+      "townEn": "Sasuke",
+      "kana": "サスケ",
+      "chome": null,
+      "detail": null,
+      "en": "佐助",
+      "jp": "佐助",
+      "pattern": "4"
+    },
+    {
+      "town": "十二所",
+      "townEn": "Juniso",
+      "kana": "ジュウニソ",
+      "chome": null,
+      "detail": null,
+      "en": "十二所",
+      "jp": "十二所",
+      "pattern": "4"
+    },
+    {
+      "town": "浄明寺",
+      "townEn": "Jomyoji",
+      "kana": "ジョウミョウジ",
+      "chome": null,
+      "detail": null,
+      "en": "浄明寺",
+      "jp": "浄明寺",
+      "pattern": "4"
+    },
+    {
+      "town": "城廻",
+      "townEn": "Shiromeguri",
+      "kana": "シロメグリ",
+      "chome": null,
+      "detail": null,
+      "en": "城廻",
+      "jp": "城廻",
+      "pattern": "3"
+    },
+    {
+      "town": "関谷",
+      "townEn": "Sekiya",
+      "kana": "セキヤ",
+      "chome": null,
+      "detail": null,
+      "en": "関谷",
+      "jp": "関谷",
+      "pattern": "3"
+    },
+    {
+      "town": "台",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": "台（一丁目?五丁目）",
+      "en": "台（一丁目?五丁目）",
+      "jp": "台（一丁目?五丁目）",
+      "pattern": "8"
+    },
+    {
+      "town": "台",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": "台(未表示地区)",
+      "en": "台(未表示地区)",
+      "jp": "台(未表示地区)",
+      "pattern": "8"
+    },
+    {
+      "town": "高野",
+      "townEn": "Takano",
+      "kana": "タカノ",
+      "chome": null,
+      "detail": null,
+      "en": "高野",
+      "jp": "高野",
+      "pattern": "2"
+    },
+    {
+      "town": "玉縄",
+      "townEn": "Tamanawa",
+      "kana": "タマナワ",
+      "chome": null,
+      "detail": null,
+      "en": "玉縄",
+      "jp": "玉縄",
+      "pattern": "3"
+    },
+    {
+      "town": "津",
+      "townEn": "Tsu",
+      "kana": "ツ",
+      "chome": null,
+      "detail": null,
+      "en": "津",
+      "jp": "津",
+      "pattern": "6"
+    },
+    {
+      "town": "津西",
+      "townEn": "Tsunishi",
+      "kana": "ツニシ",
+      "chome": null,
+      "detail": null,
+      "en": "津西",
+      "jp": "津西",
+      "pattern": "6"
+    },
+    {
+      "town": "手広",
+      "townEn": "Tebiro",
+      "kana": "テビロ",
+      "chome": null,
+      "detail": null,
+      "en": "手広",
+      "jp": "手広",
+      "pattern": "1"
+    },
+    {
+      "town": "寺分",
+      "townEn": "Terabun",
+      "kana": "テラブン",
+      "chome": null,
+      "detail": "寺分（一丁目?三丁目）",
+      "en": "寺分（一丁目?三丁目）",
+      "jp": "寺分（一丁目?三丁目）",
+      "pattern": "5"
+    },
+    {
+      "town": "寺分",
+      "townEn": "Terabun",
+      "kana": "テラブン",
+      "chome": null,
+      "detail": "寺分（未表示地区）",
+      "en": "寺分（未表示地区）",
+      "jp": "寺分（未表示地区）",
+      "pattern": "5"
+    },
+    {
+      "town": "二階堂",
+      "townEn": "Nikaido",
+      "kana": "ニカイドウ",
+      "chome": null,
+      "detail": null,
+      "en": "二階堂",
+      "jp": "二階堂",
+      "pattern": "4"
+    },
+    {
+      "town": "西鎌倉",
+      "townEn": "Nishikamakura",
+      "kana": "ニシカマクラ",
+      "chome": null,
+      "detail": null,
+      "en": "西鎌倉",
+      "jp": "西鎌倉",
+      "pattern": "1"
+    },
+    {
+      "town": "西御門",
+      "townEn": "Nishimikado",
+      "kana": "ニシミカド",
+      "chome": null,
+      "detail": null,
+      "en": "西御門",
+      "jp": "西御門",
+      "pattern": "4"
+    },
+    {
+      "town": "長谷",
+      "townEn": "Hase",
+      "kana": "ハセ",
+      "chome": null,
+      "detail": null,
+      "en": "長谷",
+      "jp": "長谷",
+      "pattern": "1"
+    },
+    {
+      "town": "笛田",
+      "townEn": "Fueda",
+      "kana": "フエダ",
+      "chome": null,
+      "detail": null,
+      "en": "笛田",
+      "jp": "笛田",
+      "pattern": "1"
+    },
+    {
+      "town": "山崎",
+      "townEn": "Yamasaki",
+      "kana": "ヤマサキ",
+      "chome": null,
+      "detail": "山崎(うぐいす山)",
+      "en": "山崎(うぐいす山)",
+      "jp": "山崎(うぐいす山)",
+      "pattern": "5"
+    },
+    {
+      "town": "山崎",
+      "townEn": "Yamasaki",
+      "kana": "ヤマサキ",
+      "chome": null,
+      "detail": "山崎(うぐいす山除く)",
+      "en": "山崎(うぐいす山除く)",
+      "jp": "山崎(うぐいす山除く)",
+      "pattern": "8"
+    },
+    {
+      "town": "山ノ内",
+      "townEn": "Yamanochi",
+      "kana": "ヤマノウチ",
+      "chome": null,
+      "detail": null,
+      "en": "山ノ内",
+      "jp": "山ノ内",
+      "pattern": "7"
+    },
+    {
+      "town": "雪ノ下",
+      "townEn": "Yukinoshita",
+      "kana": "ユキノシタ",
+      "chome": null,
+      "detail": null,
+      "en": "雪ノ下",
+      "jp": "雪ノ下",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kamakura.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

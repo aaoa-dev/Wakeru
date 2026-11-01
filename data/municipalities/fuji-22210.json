@@ -1,0 +1,398 @@
+{
+  "id": "fuji-22210",
+  "code": "22210",
+  "pref": "22",
+  "jp": "富士市",
+  "en": "Fuji",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://fuji.5374.jp/data/area_days.csv",
+    "http://fuji.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          4
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A-1",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-1",
+      "jp": "A-1",
+      "pattern": "1"
+    },
+    {
+      "town": "A-3",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-3",
+      "jp": "A-3",
+      "pattern": "1"
+    },
+    {
+      "town": "A-5",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-5",
+      "jp": "A-5",
+      "pattern": "1"
+    },
+    {
+      "town": "A-7",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-7",
+      "jp": "A-7",
+      "pattern": "1"
+    },
+    {
+      "town": "B-1",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-1",
+      "jp": "B-1",
+      "pattern": "2"
+    },
+    {
+      "town": "B-2",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-2",
+      "jp": "B-2",
+      "pattern": "2"
+    },
+    {
+      "town": "B-4",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-4",
+      "jp": "B-4",
+      "pattern": "2"
+    },
+    {
+      "town": "B-5",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-5",
+      "jp": "B-5",
+      "pattern": "2"
+    },
+    {
+      "town": "B-6",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-6",
+      "jp": "B-6",
+      "pattern": "2"
+    },
+    {
+      "town": "B-8",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-8",
+      "jp": "B-8",
+      "pattern": "2"
+    },
+    {
+      "town": "C-2",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C-2",
+      "jp": "C-2",
+      "pattern": "3"
+    },
+    {
+      "town": "C-4",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C-4",
+      "jp": "C-4",
+      "pattern": "3"
+    },
+    {
+      "town": "C-6",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C-6",
+      "jp": "C-6",
+      "pattern": "3"
+    },
+    {
+      "town": "C-8",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "C-8",
+      "jp": "C-8",
+      "pattern": "3"
+    },
+    {
+      "town": "D-1",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-1",
+      "jp": "D-1",
+      "pattern": "4"
+    },
+    {
+      "town": "D-2",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-2",
+      "jp": "D-2",
+      "pattern": "4"
+    },
+    {
+      "town": "D-3",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-3",
+      "jp": "D-3",
+      "pattern": "4"
+    },
+    {
+      "town": "D-5",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-5",
+      "jp": "D-5",
+      "pattern": "4"
+    },
+    {
+      "town": "D-6",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-6",
+      "jp": "D-6",
+      "pattern": "4"
+    },
+    {
+      "town": "D-7",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "D-7",
+      "jp": "D-7",
+      "pattern": "4"
+    },
+    {
+      "town": "E-1",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E-1",
+      "jp": "E-1",
+      "pattern": "5"
+    },
+    {
+      "town": "E-3",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E-3",
+      "jp": "E-3",
+      "pattern": "5"
+    },
+    {
+      "town": "E-5",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "E-5",
+      "jp": "E-5",
+      "pattern": "5"
+    },
+    {
+      "town": "F-1",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F-1",
+      "jp": "F-1",
+      "pattern": "2"
+    },
+    {
+      "town": "F-4",
+      "townEn": "Fuji",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "F-4",
+      "jp": "F-4",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://fuji.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

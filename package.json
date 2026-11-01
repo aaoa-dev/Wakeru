@@ -3,8 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 8000 --bind 127.0.0.1",
     "import": "node scripts/import/index.mjs",
+    "discover:5374": "node scripts/import/discover-5374.mjs",
+    "discover:linkdata": "node scripts/import/discover-linkdata.mjs",
+    "discover": "node scripts/import/discover-5374.mjs && node scripts/import/discover-linkdata.mjs",
     "map": "node scripts/import/map.mjs",
+    "test": "node scripts/test-schedule.mjs",
     "validate": "node scripts/validate.mjs",
     "serve": "python3 -m http.server 8000"
   },

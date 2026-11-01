@@ -1,0 +1,933 @@
+{
+  "id": "ikoma",
+  "code": "29209",
+  "pref": "29",
+  "jp": "生駒市",
+  "en": "Ikoma",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ikoma.5374.jp/data/area_days.csv",
+    "http://ikoma.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "dates": [
+            "2026-04-02",
+            "2026-04-06",
+            "2026-04-09",
+            "2026-04-13",
+            "2026-04-16",
+            "2026-04-20",
+            "2026-04-23",
+            "2026-04-27",
+            "2026-04-30",
+            "2026-05-07",
+            "2026-05-11",
+            "2026-05-14",
+            "2026-05-18",
+            "2026-05-21",
+            "2026-05-25",
+            "2026-05-28",
+            "2026-06-01",
+            "2026-06-04",
+            "2026-06-08",
+            "2026-06-11",
+            "2026-06-15",
+            "2026-06-18",
+            "2026-06-22",
+            "2026-06-25",
+            "2026-06-29",
+            "2026-07-02",
+            "2026-07-06",
+            "2026-07-09",
+            "2026-07-13",
+            "2026-07-16",
+            "2026-07-20",
+            "2026-07-23",
+            "2026-07-27",
+            "2026-07-30",
+            "2026-08-03",
+            "2026-08-06",
+            "2026-08-10",
+            "2026-08-13",
+            "2026-08-17",
+            "2026-08-20",
+            "2026-08-24",
+            "2026-08-27",
+            "2026-08-31",
+            "2026-09-03",
+            "2026-09-07",
+            "2026-09-10",
+            "2026-09-14",
+            "2026-09-17",
+            "2026-09-21",
+            "2026-09-24",
+            "2026-09-28",
+            "2026-10-01",
+            "2026-10-05",
+            "2026-10-08",
+            "2026-10-12",
+            "2026-10-15",
+            "2026-10-19",
+            "2026-10-22",
+            "2026-10-26",
+            "2026-10-29",
+            "2026-11-02",
+            "2026-11-05",
+            "2026-11-09",
+            "2026-11-12",
+            "2026-11-16",
+            "2026-11-19",
+            "2026-11-23",
+            "2026-11-26",
+            "2026-11-30",
+            "2026-12-03",
+            "2026-12-07",
+            "2026-12-10",
+            "2026-12-14",
+            "2026-12-17",
+            "2026-12-21",
+            "2026-12-24",
+            "2026-12-28",
+            "2027-01-04",
+            "2027-01-07",
+            "2027-01-11",
+            "2027-01-14",
+            "2027-01-18",
+            "2027-01-21",
+            "2027-01-25",
+            "2027-01-28",
+            "2027-02-01",
+            "2027-02-04",
+            "2027-02-08",
+            "2027-02-11",
+            "2027-02-15",
+            "2027-02-18",
+            "2027-02-22",
+            "2027-02-25",
+            "2027-03-01",
+            "2027-03-04",
+            "2027-03-08",
+            "2027-03-11",
+            "2027-03-15",
+            "2027-03-18",
+            "2027-03-25",
+            "2027-03-29"
+          ]
+        },
+        "plastic": {
+          "dates": [
+            "2026-04-07",
+            "2026-04-14",
+            "2026-04-21",
+            "2026-04-28",
+            "2026-05-05",
+            "2026-05-12",
+            "2026-05-19",
+            "2026-05-26",
+            "2026-06-02",
+            "2026-06-09",
+            "2026-06-16",
+            "2026-06-23",
+            "2026-06-30",
+            "2026-07-07",
+            "2026-07-14",
+            "2026-07-21",
+            "2026-07-28",
+            "2026-08-04",
+            "2026-08-11",
+            "2026-08-18",
+            "2026-08-25",
+            "2026-09-01",
+            "2026-09-08",
+            "2026-09-15",
+            "2026-09-22",
+            "2026-09-29",
+            "2026-10-06",
+            "2026-10-13",
+            "2026-10-20",
+            "2026-10-27",
+            "2026-11-03",
+            "2026-11-10",
+            "2026-11-17",
+            "2026-11-24",
+            "2026-12-01",
+            "2026-12-08",
+            "2026-12-15",
+            "2026-12-22",
+            "2027-01-05",
+            "2027-01-12",
+            "2027-01-19",
+            "2027-01-26",
+            "2027-02-02",
+            "2027-02-09",
+            "2027-02-16",
+            "2027-02-23",
+            "2027-03-02",
+            "2027-03-09",
+            "2027-03-16",
+            "2027-03-23",
+            "2027-03-30"
+          ]
+        },
+        "res": {
+          "dates": [
+            "2026-04-01",
+            "2026-04-15",
+            "2026-05-06",
+            "2026-05-20",
+            "2026-06-03",
+            "2026-06-17",
+            "2026-07-01",
+            "2026-07-15",
+            "2026-08-05",
+            "2026-08-19",
+            "2026-09-02",
+            "2026-09-16",
+            "2026-10-07",
+            "2026-10-21",
+            "2026-11-04",
+            "2026-11-18",
+            "2026-12-02",
+            "2026-12-16",
+            "2027-01-06",
+            "2027-01-20",
+            "2027-02-03",
+            "2027-02-17",
+            "2027-03-03",
+            "2027-03-17"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "あすか野",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "あすか野",
+      "jp": "あすか野",
+      "pattern": "1"
+    },
+    {
+      "town": "桜ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜ヶ丘",
+      "jp": "桜ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿ノ台",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鹿ノ台",
+      "jp": "鹿ノ台",
+      "pattern": "1"
+    },
+    {
+      "town": "新旭ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新旭ヶ丘",
+      "jp": "新旭ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "西旭ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西旭ヶ丘",
+      "jp": "西旭ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "西松ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西松ヶ丘",
+      "jp": "西松ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "東旭ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東旭ヶ丘",
+      "jp": "東旭ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "東松ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東松ヶ丘",
+      "jp": "東松ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "緑ヶ丘",
+      "townEn": "Ikoma",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "緑ヶ丘",
+      "jp": "緑ヶ丘",
+      "pattern": "1"
+    },
+    {
+      "town": "青山台",
+      "townEn": "Aoyamadai",
+      "kana": "アオヤマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "青山台",
+      "jp": "青山台",
+      "pattern": "1"
+    },
+    {
+      "town": "あすか台",
+      "townEn": "Asukadai",
+      "kana": "アスカダイ",
+      "chome": null,
+      "detail": null,
+      "en": "あすか台",
+      "jp": "あすか台",
+      "pattern": "1"
+    },
+    {
+      "town": "有里町",
+      "townEn": "Arisatocho",
+      "kana": "アリサトチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "有里町",
+      "jp": "有里町",
+      "pattern": "1"
+    },
+    {
+      "town": "生駒台北",
+      "townEn": "Ikomadai Kita",
+      "kana": "イコマダイキタ",
+      "chome": null,
+      "detail": null,
+      "en": "生駒台北",
+      "jp": "生駒台北",
+      "pattern": "1"
+    },
+    {
+      "town": "生駒台南",
+      "townEn": "Ikomadai Minami",
+      "kana": "イコマダイミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "生駒台南",
+      "jp": "生駒台南",
+      "pattern": "1"
+    },
+    {
+      "town": "壱分町",
+      "townEn": "Ichibucho",
+      "kana": "イチブチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "壱分町",
+      "jp": "壱分町",
+      "pattern": "1"
+    },
+    {
+      "town": "小倉寺町",
+      "townEn": "Ogurajicho",
+      "kana": "オグラジチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小倉寺町",
+      "jp": "小倉寺町",
+      "pattern": "1"
+    },
+    {
+      "town": "小瀬町",
+      "townEn": "Ozecho",
+      "kana": "オゼチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小瀬町",
+      "jp": "小瀬町",
+      "pattern": "1"
+    },
+    {
+      "town": "鬼取町",
+      "townEn": "Onitoricho",
+      "kana": "オニトリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鬼取町",
+      "jp": "鬼取町",
+      "pattern": "1"
+    },
+    {
+      "town": "上町",
+      "townEn": "Kamimachi",
+      "kana": "カミマチ",
+      "chome": null,
+      "detail": null,
+      "en": "上町",
+      "jp": "上町",
+      "pattern": "1"
+    },
+    {
+      "town": "上町台",
+      "townEn": "Kamimachidai",
+      "kana": "カミマチダイ",
+      "chome": null,
+      "detail": null,
+      "en": "上町台",
+      "jp": "上町台",
+      "pattern": "1"
+    },
+    {
+      "town": "軽井沢町",
+      "townEn": "Karuizawacho",
+      "kana": "カルイザワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "軽井沢町",
+      "jp": "軽井沢町",
+      "pattern": "1"
+    },
+    {
+      "town": "北新町",
+      "townEn": "Kitashimmachi",
+      "kana": "キタシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "北新町",
+      "jp": "北新町",
+      "pattern": "1"
+    },
+    {
+      "town": "北田原町",
+      "townEn": "Kitataharacho",
+      "kana": "キタタハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "北田原町",
+      "jp": "北田原町",
+      "pattern": "1"
+    },
+    {
+      "town": "北大和",
+      "townEn": "Kitayamato",
+      "kana": "キタヤマト",
+      "chome": null,
+      "detail": null,
+      "en": "北大和",
+      "jp": "北大和",
+      "pattern": "1"
+    },
+    {
+      "town": "喜里が丘",
+      "townEn": "Kirigaoka",
+      "kana": "キリガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "喜里が丘",
+      "jp": "喜里が丘",
+      "pattern": "1"
+    },
+    {
+      "town": "小明町",
+      "townEn": "Komyocho",
+      "kana": "コウミョウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小明町",
+      "jp": "小明町",
+      "pattern": "1"
+    },
+    {
+      "town": "光陽台",
+      "townEn": "Koyodai",
+      "kana": "コウヨウダイ",
+      "chome": null,
+      "detail": null,
+      "en": "光陽台",
+      "jp": "光陽台",
+      "pattern": "1"
+    },
+    {
+      "town": "小平尾町",
+      "townEn": "Kobiraocho",
+      "kana": "コビラオチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "小平尾町",
+      "jp": "小平尾町",
+      "pattern": "1"
+    },
+    {
+      "town": "さつき台",
+      "townEn": "Satsukidai",
+      "kana": "サツキダイ",
+      "chome": null,
+      "detail": null,
+      "en": "さつき台",
+      "jp": "さつき台",
+      "pattern": "1"
+    },
+    {
+      "town": "鹿畑町",
+      "townEn": "Shikahatacho",
+      "kana": "シカノハタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鹿畑町",
+      "jp": "鹿畑町",
+      "pattern": "1"
+    },
+    {
+      "town": "白庭台",
+      "townEn": "Shiraniwadai",
+      "kana": "シラニワダイ",
+      "chome": null,
+      "detail": null,
+      "en": "白庭台",
+      "jp": "白庭台",
+      "pattern": "1"
+    },
+    {
+      "town": "新生駒台",
+      "townEn": "Shinikomadai",
+      "kana": "シンイコマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "新生駒台",
+      "jp": "新生駒台",
+      "pattern": "1"
+    },
+    {
+      "town": "翠光台",
+      "townEn": "Suikodai",
+      "kana": "スイコウダイ",
+      "chome": null,
+      "detail": null,
+      "en": "翠光台",
+      "jp": "翠光台",
+      "pattern": "1"
+    },
+    {
+      "town": "大門町",
+      "townEn": "Daimoncho",
+      "kana": "ダイモンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "大門町",
+      "jp": "大門町",
+      "pattern": "1"
+    },
+    {
+      "town": "高山町",
+      "townEn": "Takayamacho",
+      "kana": "タカヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "高山町",
+      "jp": "高山町",
+      "pattern": "1"
+    },
+    {
+      "town": "谷田町",
+      "townEn": "Tanidacho",
+      "kana": "タニダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "谷田町",
+      "jp": "谷田町",
+      "pattern": "1"
+    },
+    {
+      "town": "俵口町",
+      "townEn": "Tawaraguchicho",
+      "kana": "タワラグチチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "俵口町",
+      "jp": "俵口町",
+      "pattern": "1"
+    },
+    {
+      "town": "辻町",
+      "townEn": "Tsujimachi",
+      "kana": "ツジマチ",
+      "chome": null,
+      "detail": null,
+      "en": "辻町",
+      "jp": "辻町",
+      "pattern": "1"
+    },
+    {
+      "town": "中菜畑",
+      "townEn": "Nakanabata",
+      "kana": "ナカナバタ",
+      "chome": null,
+      "detail": null,
+      "en": "中菜畑",
+      "jp": "中菜畑",
+      "pattern": "1"
+    },
+    {
+      "town": "仲之町",
+      "townEn": "Nakanocho",
+      "kana": "ナカノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "仲之町",
+      "jp": "仲之町",
+      "pattern": "1"
+    },
+    {
+      "town": "菜畑町",
+      "townEn": "Nabatacho",
+      "kana": "ナバタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "菜畑町",
+      "jp": "菜畑町",
+      "pattern": "1"
+    },
+    {
+      "town": "西白庭台",
+      "townEn": "Nishishiraniwadai",
+      "kana": "ニシシラニワダイ",
+      "chome": null,
+      "detail": null,
+      "en": "西白庭台",
+      "jp": "西白庭台",
+      "pattern": "1"
+    },
+    {
+      "town": "西菜畑町",
+      "townEn": "Nishinabatacho",
+      "kana": "ニシナバタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西菜畑町",
+      "jp": "西菜畑町",
+      "pattern": "1"
+    },
+    {
+      "town": "西畑町",
+      "townEn": "Nishihatacho",
+      "kana": "ニシハタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西畑町",
+      "jp": "西畑町",
+      "pattern": "1"
+    },
+    {
+      "town": "萩の台",
+      "townEn": "Haginodai",
+      "kana": "ハギノダイ",
+      "chome": null,
+      "detail": null,
+      "en": "萩の台",
+      "jp": "萩の台",
+      "pattern": "1"
+    },
+    {
+      "town": "萩原町",
+      "townEn": "Hagiharacho",
+      "kana": "ハギハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "萩原町",
+      "jp": "萩原町",
+      "pattern": "1"
+    },
+    {
+      "town": "東生駒",
+      "townEn": "Higashiikoma",
+      "kana": "ヒガシイコマ",
+      "chome": null,
+      "detail": null,
+      "en": "東生駒",
+      "jp": "東生駒",
+      "pattern": "1"
+    },
+    {
+      "town": "東生駒月見町",
+      "townEn": "Higashiikomatsukimicho",
+      "kana": "ヒガシイコマツキミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東生駒月見町",
+      "jp": "東生駒月見町",
+      "pattern": "1"
+    },
+    {
+      "town": "東新町",
+      "townEn": "Higashishimmachi",
+      "kana": "ヒガシシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "東新町",
+      "jp": "東新町",
+      "pattern": "1"
+    },
+    {
+      "town": "東菜畑",
+      "townEn": "Higashinabata",
+      "kana": "ヒガシナバタ",
+      "chome": null,
+      "detail": null,
+      "en": "東菜畑",
+      "jp": "東菜畑",
+      "pattern": "1"
+    },
+    {
+      "town": "東山町",
+      "townEn": "Higashiyamacho",
+      "kana": "ヒガシヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東山町",
+      "jp": "東山町",
+      "pattern": "1"
+    },
+    {
+      "town": "ひかりが丘",
+      "townEn": "Hikarigaoka",
+      "kana": "ヒカリガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "ひかりが丘",
+      "jp": "ひかりが丘",
+      "pattern": "1"
+    },
+    {
+      "town": "藤尾町",
+      "townEn": "Fujiocho",
+      "kana": "フジオチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "藤尾町",
+      "jp": "藤尾町",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "1"
+    },
+    {
+      "town": "松美台",
+      "townEn": "Matsumidai",
+      "kana": "マツミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "松美台",
+      "jp": "松美台",
+      "pattern": "1"
+    },
+    {
+      "town": "真弓",
+      "townEn": "Mayumi",
+      "kana": "マユミ",
+      "chome": null,
+      "detail": null,
+      "en": "真弓",
+      "jp": "真弓",
+      "pattern": "1"
+    },
+    {
+      "town": "真弓南",
+      "townEn": "Mayumiminami",
+      "kana": "マユミミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "真弓南",
+      "jp": "真弓南",
+      "pattern": "1"
+    },
+    {
+      "town": "美鹿の台",
+      "townEn": "Mikanodai",
+      "kana": "ミカノダイ",
+      "chome": null,
+      "detail": null,
+      "en": "美鹿の台",
+      "jp": "美鹿の台",
+      "pattern": "1"
+    },
+    {
+      "town": "南田原町",
+      "townEn": "Minamitawaracho",
+      "kana": "ミナミタハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "南田原町",
+      "jp": "南田原町",
+      "pattern": "1"
+    },
+    {
+      "town": "南山手台",
+      "townEn": "Minamiyamatedai",
+      "kana": "ミナミヤマテダイ",
+      "chome": null,
+      "detail": null,
+      "en": "南山手台",
+      "jp": "南山手台",
+      "pattern": "1"
+    },
+    {
+      "town": "元町",
+      "townEn": "Motomachi",
+      "kana": "モトマチ",
+      "chome": null,
+      "detail": null,
+      "en": "元町",
+      "jp": "元町",
+      "pattern": "1"
+    },
+    {
+      "town": "門前町",
+      "townEn": "Monzencho",
+      "kana": "モンゼンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "門前町",
+      "jp": "門前町",
+      "pattern": "1"
+    },
+    {
+      "town": "山崎新町",
+      "townEn": "Yamasakishimmachi",
+      "kana": "ヤマサキシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "山崎新町",
+      "jp": "山崎新町",
+      "pattern": "1"
+    },
+    {
+      "town": "山崎町",
+      "townEn": "Yamasakicho",
+      "kana": "ヤマサキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "山崎町",
+      "jp": "山崎町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ikoma.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -14,10 +14,10 @@ export function writeJSON(file, data){
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
 }
 /* downloads are cached in .cache/sources so re-running an importer doesn't hit ward sites; pass --refresh to re-download */
-export async function download(group, url){
+export async function download(group, url, {headers: extra = {}} = {}){
   const file = path.join(CACHE, group, decodeURIComponent(new URL(url).pathname.split("/").pop()) || "index.html");
   if(!REFRESH && fs.existsSync(file)) return fs.readFileSync(file);
-  const res = await fetch(url, {headers:{"User-Agent":UA}});
+  const res = await fetch(url, {headers:{"User-Agent":UA, ...extra}});
   if(!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
   fs.mkdirSync(path.dirname(file), {recursive:true});
@@ -29,8 +29,11 @@ export function decode(buf, encoding = "UTF-8"){
   return new TextDecoder(label).decode(buf).replace(/^\uFEFF/, "");
 }
 export const unzipFirst = buf => {
-  const tmp = path.join(CACHE, "tmp.zip"); fs.mkdirSync(CACHE, {recursive:true}); fs.writeFileSync(tmp, buf);
-  try { return execFileSync("unzip", ["-p", tmp], {maxBuffer:64 << 20}) } finally { fs.rmSync(tmp) }
+  const tmp = path.join(CACHE, `abr-${process.pid}-${Date.now()}.zip`);
+  fs.mkdirSync(CACHE, {recursive:true});
+  fs.writeFileSync(tmp, buf);
+  try { return execFileSync("unzip", ["-p", tmp], {maxBuffer:64 << 20}) }
+  finally { fs.rmSync(tmp, {force:true}) }
 };
 
 /* ---------- CSV and HTML tables ---------- */

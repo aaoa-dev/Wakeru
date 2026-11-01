@@ -1,0 +1,568 @@
+{
+  "id": "katano-27230",
+  "code": "27230",
+  "pref": "27",
+  "jp": "交野市",
+  "en": "Katano",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://katano.5374.jp/data/area_days.csv",
+    "http://katano.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "plastic": [
+          5
+        ],
+        "burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "2": {
+        "plastic": [
+          3
+        ],
+        "burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "plastic": [
+          2
+        ],
+        "burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "4": {
+        "plastic": [
+          4
+        ],
+        "burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "5": {
+        "plastic": [
+          1
+        ],
+        "burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "駅前住宅(私部4丁目・私部長砂町)",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駅前住宅(私部4丁目・私部長砂町)",
+      "jp": "駅前住宅(私部4丁目・私部長砂町)",
+      "pattern": "2"
+    },
+    {
+      "town": "行殿",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "行殿",
+      "jp": "行殿",
+      "pattern": "2"
+    },
+    {
+      "town": "森",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "森",
+      "jp": "森",
+      "pattern": "2"
+    },
+    {
+      "town": "天野が原",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "天野が原",
+      "jp": "天野が原",
+      "pattern": "2"
+    },
+    {
+      "town": "浜の池",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "浜の池",
+      "jp": "浜の池",
+      "pattern": "1"
+    },
+    {
+      "town": "傍示",
+      "townEn": "Katano",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "傍示",
+      "jp": "傍示",
+      "pattern": "4"
+    },
+    {
+      "town": "青山",
+      "townEn": "Aoyama",
+      "kana": "アオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "青山",
+      "jp": "青山",
+      "pattern": "1"
+    },
+    {
+      "town": "幾野",
+      "townEn": "Ikuno",
+      "kana": "イクノ",
+      "chome": null,
+      "detail": null,
+      "en": "幾野",
+      "jp": "幾野",
+      "pattern": "3"
+    },
+    {
+      "town": "梅が枝",
+      "townEn": "Umegae",
+      "kana": "ウメガエ",
+      "chome": null,
+      "detail": null,
+      "en": "梅が枝",
+      "jp": "梅が枝",
+      "pattern": "3"
+    },
+    {
+      "town": "私市",
+      "townEn": "Kisaichi",
+      "kana": "キサイチ",
+      "chome": null,
+      "detail": null,
+      "en": "私市",
+      "jp": "私市",
+      "pattern": "5"
+    },
+    {
+      "town": "私市山手",
+      "townEn": "Kisaichiyamate",
+      "kana": "キサイチヤマテ",
+      "chome": null,
+      "detail": null,
+      "en": "私市山手",
+      "jp": "私市山手",
+      "pattern": "5"
+    },
+    {
+      "town": "私部",
+      "townEn": "Kisabe",
+      "kana": "キサベ",
+      "chome": null,
+      "detail": "私部（一部を除く）",
+      "en": "私部（一部を除く）",
+      "jp": "私部（一部を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "私部西",
+      "townEn": "Kisabenishi",
+      "kana": "キサベニシ",
+      "chome": null,
+      "detail": null,
+      "en": "私部西",
+      "jp": "私部西",
+      "pattern": "3"
+    },
+    {
+      "town": "私部南",
+      "townEn": "Kisabeminami",
+      "kana": "キサベミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "私部南",
+      "jp": "私部南",
+      "pattern": "2"
+    },
+    {
+      "town": "倉治",
+      "townEn": "Kuraji",
+      "kana": "クラジ",
+      "chome": null,
+      "detail": null,
+      "en": "倉治",
+      "jp": "倉治",
+      "pattern": "1"
+    },
+    {
+      "town": "郡津",
+      "townEn": "Kozu",
+      "kana": "コウヅ",
+      "chome": null,
+      "detail": null,
+      "en": "郡津",
+      "jp": "郡津",
+      "pattern": "3"
+    },
+    {
+      "town": "神宮寺",
+      "townEn": "Jinguji",
+      "kana": "ジングウジ",
+      "chome": null,
+      "detail": null,
+      "en": "神宮寺",
+      "jp": "神宮寺",
+      "pattern": "1"
+    },
+    {
+      "town": "寺",
+      "townEn": "Tera",
+      "kana": "テラ",
+      "chome": null,
+      "detail": null,
+      "en": "寺",
+      "jp": "寺",
+      "pattern": "2"
+    },
+    {
+      "town": "寺南野",
+      "townEn": "Teraminamino",
+      "kana": "テラミナミノ",
+      "chome": null,
+      "detail": null,
+      "en": "寺南野",
+      "jp": "寺南野",
+      "pattern": "3"
+    },
+    {
+      "town": "南星台",
+      "townEn": "Nanseidai",
+      "kana": "ナンセイダイ",
+      "chome": null,
+      "detail": null,
+      "en": "南星台",
+      "jp": "南星台",
+      "pattern": "4"
+    },
+    {
+      "town": "東倉治",
+      "townEn": "Higashikuraji",
+      "kana": "ヒガシクラジ",
+      "chome": null,
+      "detail": null,
+      "en": "東倉治",
+      "jp": "東倉治",
+      "pattern": "1"
+    },
+    {
+      "town": "藤が尾",
+      "townEn": "Fujigao",
+      "kana": "フジガオ",
+      "chome": null,
+      "detail": null,
+      "en": "藤が尾",
+      "jp": "藤が尾",
+      "pattern": "5"
+    },
+    {
+      "town": "星田",
+      "townEn": "Hoshida",
+      "kana": "ホシダ",
+      "chome": null,
+      "detail": null,
+      "en": "星田",
+      "jp": "星田",
+      "pattern": "2"
+    },
+    {
+      "town": "星田北",
+      "townEn": "Hoshidakita",
+      "kana": "ホシダキタ",
+      "chome": null,
+      "detail": null,
+      "en": "星田北",
+      "jp": "星田北",
+      "pattern": "4"
+    },
+    {
+      "town": "星田西",
+      "townEn": "Hoshidanishi",
+      "kana": "ホシダニシ",
+      "chome": null,
+      "detail": null,
+      "en": "星田西",
+      "jp": "星田西",
+      "pattern": "4"
+    },
+    {
+      "town": "星田山手",
+      "townEn": "Hoshidayamate",
+      "kana": "ホシダヤマテ",
+      "chome": null,
+      "detail": null,
+      "en": "星田山手",
+      "jp": "星田山手",
+      "pattern": "4"
+    },
+    {
+      "town": "松塚",
+      "townEn": "Matsuzuka",
+      "kana": "マツヅカ",
+      "chome": null,
+      "detail": null,
+      "en": "松塚",
+      "jp": "松塚",
+      "pattern": "3"
+    },
+    {
+      "town": "妙見坂",
+      "townEn": "Myokenzaka",
+      "kana": "ミョウケンザカ",
+      "chome": null,
+      "detail": null,
+      "en": "妙見坂",
+      "jp": "妙見坂",
+      "pattern": "5"
+    },
+    {
+      "town": "妙見東",
+      "townEn": "Myokenhigashi",
+      "kana": "ミョウケンヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "妙見東",
+      "jp": "妙見東",
+      "pattern": "5"
+    },
+    {
+      "town": "向井田",
+      "townEn": "Mukaida",
+      "kana": "ムカイダ",
+      "chome": null,
+      "detail": null,
+      "en": "向井田",
+      "jp": "向井田",
+      "pattern": "1"
+    },
+    {
+      "town": "森北",
+      "townEn": "Mori Kita",
+      "kana": "モリキタ",
+      "chome": null,
+      "detail": null,
+      "en": "森北",
+      "jp": "森北",
+      "pattern": "2"
+    },
+    {
+      "town": "森南",
+      "townEn": "Mori Minami",
+      "kana": "モリミナミ",
+      "chome": null,
+      "detail": "森南（私市の一部含む）",
+      "en": "森南（私市の一部含む）",
+      "jp": "森南（私市の一部含む）",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://katano.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

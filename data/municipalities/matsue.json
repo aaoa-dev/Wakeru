@@ -1,0 +1,2181 @@
+{
+  "id": "matsue",
+  "code": "32201",
+  "pref": "32",
+  "jp": "松江市",
+  "en": "Matsue",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://matsue.5374.jp/data/area_days.csv",
+    "http://matsue.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          2
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          1
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          3
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "plastic": [
+          5
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "plastic": [
+          4
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "橋南地区 伊勢宮町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 伊勢宮町",
+      "jp": "橋南地区 伊勢宮町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 意宇町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 意宇町",
+      "jp": "橋南地区 意宇町",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 一の谷町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 一の谷町",
+      "jp": "橋南地区 一の谷町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 栄町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 栄町",
+      "jp": "橋南地区 栄町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 横浜町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 横浜町",
+      "jp": "橋南地区 横浜町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 嫁島町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 嫁島町",
+      "jp": "橋南地区 嫁島町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 魚町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 魚町",
+      "jp": "橋南地区 魚町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 玉湯町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 玉湯町",
+      "jp": "橋南地区 玉湯町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 古志原一・二丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 古志原一・二丁目",
+      "jp": "橋南地区 古志原一・二丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 古志原三～七丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 古志原三～七丁目",
+      "jp": "橋南地区 古志原三～七丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 御手船場町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 御手船場町",
+      "jp": "橋南地区 御手船場町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 幸町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 幸町",
+      "jp": "橋南地区 幸町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 佐草町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 佐草町",
+      "jp": "橋南地区 佐草町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 雑賀町（国道４３２号線から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 雑賀町（国道４３２号線から西側）",
+      "jp": "橋南地区 雑賀町（国道４３２号線から西側）",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 雑賀町（国道４３２号線から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 雑賀町（国道４３２号線から東側）",
+      "jp": "橋南地区 雑賀町（国道４３２号線から東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 山代町（国道４３２号線から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 山代町（国道４３２号線から西側）",
+      "jp": "橋南地区 山代町（国道４３２号線から西側）",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 山代町（国道４３２号線から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 山代町（国道４３２号線から東側）",
+      "jp": "橋南地区 山代町（国道４３２号線から東側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 寺町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 寺町",
+      "jp": "橋南地区 寺町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 宍道町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 宍道町",
+      "jp": "橋南地区 宍道町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 松尾町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 松尾町",
+      "jp": "橋南地区 松尾町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 上乃木一～三丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 上乃木一～三丁目",
+      "jp": "橋南地区 上乃木一～三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 上乃木四～七丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 上乃木四～七丁目",
+      "jp": "橋南地区 上乃木四～七丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 上乃木八～十丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 上乃木八～十丁目",
+      "jp": "橋南地区 上乃木八～十丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 新雑賀町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 新雑賀町",
+      "jp": "橋南地区 新雑賀町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 新町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 新町",
+      "jp": "橋南地区 新町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 西嫁島一～三丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 西嫁島一～三丁目",
+      "jp": "橋南地区 西嫁島一～三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 西忌部町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 西忌部町",
+      "jp": "橋南地区 西忌部町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 西津田一・二・七・八丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 西津田一・二・七・八丁目",
+      "jp": "橋南地区 西津田一・二・七・八丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 西津田三～六・九・十丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 西津田三～六・九・十丁目",
+      "jp": "橋南地区 西津田三～六・九・十丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 青葉台",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 青葉台",
+      "jp": "橋南地区 青葉台",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 袖師町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 袖師町",
+      "jp": "橋南地区 袖師町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 大正町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 大正町",
+      "jp": "橋南地区 大正町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 大草町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 大草町",
+      "jp": "橋南地区 大草町",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 大庭町（国道４３２号線から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 大庭町（国道４３２号線から西側）",
+      "jp": "橋南地区 大庭町（国道４３２号線から西側）",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 大庭町（国道４３２号線から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 大庭町（国道４３２号線から東側）",
+      "jp": "橋南地区 大庭町（国道４３２号線から東側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 竪町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 竪町",
+      "jp": "橋南地区 竪町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 竹矢町（国道９号バイパスから南側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 竹矢町（国道９号バイパスから南側）",
+      "jp": "橋南地区 竹矢町（国道９号バイパスから南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 竹矢町（国道９号バイパスから北側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 竹矢町（国道９号バイパスから北側）",
+      "jp": "橋南地区 竹矢町（国道９号バイパスから北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 朝日町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 朝日町",
+      "jp": "橋南地区 朝日町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 津田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 津田町",
+      "jp": "橋南地区 津田町",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 天神町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 天神町",
+      "jp": "橋南地区 天神町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 田和山町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 田和山町",
+      "jp": "橋南地区 田和山町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 東忌部町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東忌部町",
+      "jp": "橋南地区 東忌部町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 東出雲町-意宇東１～３丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-意宇東１～３丁目",
+      "jp": "橋南地区 東出雲町-意宇東１～３丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-意宇南１～６丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-意宇南１～６丁目",
+      "jp": "橋南地区 東出雲町-意宇南１～６丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-錦新町１～８丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-錦新町１～８丁目",
+      "jp": "橋南地区 東出雲町-錦新町１～８丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-錦浜",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-錦浜",
+      "jp": "橋南地区 東出雲町-錦浜",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-今宮",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-今宮",
+      "jp": "橋南地区 東出雲町-今宮",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-出雲郷",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-出雲郷",
+      "jp": "橋南地区 東出雲町-出雲郷",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-春日",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-春日",
+      "jp": "橋南地区 東出雲町-春日",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-須田",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-須田",
+      "jp": "橋南地区 東出雲町-須田",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町-内馬",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町-内馬",
+      "jp": "橋南地区 東出雲町-内馬",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 東出雲町（下意東、上意東）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町（下意東、上意東）",
+      "jp": "橋南地区 東出雲町（下意東、上意東）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 東出雲町（国道９号線から南側の揖屋）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町（国道９号線から南側の揖屋）",
+      "jp": "橋南地区 東出雲町（国道９号線から南側の揖屋）",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 東出雲町（国道９号線から北側の揖屋）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東出雲町（国道９号線から北側の揖屋）",
+      "jp": "橋南地区 東出雲町（国道９号線から北側の揖屋）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 東朝日町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東朝日町",
+      "jp": "橋南地区 東朝日町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 東津田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 東津田町",
+      "jp": "橋南地区 東津田町",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 灘町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 灘町",
+      "jp": "橋南地区 灘町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 乃白町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 乃白町",
+      "jp": "橋南地区 乃白町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 乃木福富町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 乃木福富町",
+      "jp": "橋南地区 乃木福富町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 馬潟町（国道９号バイパスから南側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 馬潟町（国道９号バイパスから南側）",
+      "jp": "橋南地区 馬潟町（国道９号バイパスから南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 馬潟町（国道９号バイパスから北側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 馬潟町（国道９号バイパスから北側）",
+      "jp": "橋南地区 馬潟町（国道９号バイパスから北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 白潟本町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 白潟本町",
+      "jp": "橋南地区 白潟本町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 八雲台一・二丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 八雲台一・二丁目",
+      "jp": "橋南地区 八雲台一・二丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 八雲町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 八雲町",
+      "jp": "橋南地区 八雲町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 八軒屋町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 八軒屋町",
+      "jp": "橋南地区 八軒屋町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋南地区 八幡町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 八幡町",
+      "jp": "橋南地区 八幡町",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 浜乃木一･二丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 浜乃木一･二丁目",
+      "jp": "橋南地区 浜乃木一･二丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 浜乃木三～八丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 浜乃木三～八丁目",
+      "jp": "橋南地区 浜乃木三～八丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 浜乃木町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 浜乃木町",
+      "jp": "橋南地区 浜乃木町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 富士見町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 富士見町",
+      "jp": "橋南地区 富士見町",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 平成町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 平成町",
+      "jp": "橋南地区 平成町",
+      "pattern": "6"
+    },
+    {
+      "town": "橋南地区 本郷町（国道４３２号線から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 本郷町（国道４３２号線から西側）",
+      "jp": "橋南地区 本郷町（国道４３２号線から西側）",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 本郷町（国道４３２号線から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 本郷町（国道４３２号線から東側）",
+      "jp": "橋南地区 本郷町（国道４３２号線から東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "橋南地区 矢田町（国道９号バイパスから南側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 矢田町（国道９号バイパスから南側）",
+      "jp": "橋南地区 矢田町（国道９号バイパスから南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 矢田町（国道９号バイパスから北側）",
+      "townEn": "Baipasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 矢田町（国道９号バイパスから北側）",
+      "jp": "橋南地区 矢田町（国道９号バイパスから北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "橋南地区 和多見町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋南地区 和多見町",
+      "jp": "橋南地区 和多見町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 うぐいす台",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 うぐいす台",
+      "jp": "橋北地区 うぐいす台",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 奥谷町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 奥谷町",
+      "jp": "橋北地区 奥谷町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 岡本町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 岡本町",
+      "jp": "橋北地区 岡本町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 下佐陀町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 下佐陀町",
+      "jp": "橋北地区 下佐陀町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 下東川津町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 下東川津町",
+      "jp": "橋北地区 下東川津町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 外中原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 外中原町",
+      "jp": "橋北地区 外中原町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 学園一丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 学園一丁目",
+      "jp": "橋北地区 学園一丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 学園南一･二丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 学園南一･二丁目",
+      "jp": "橋北地区 学園南一･二丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 学園二丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 学園二丁目",
+      "jp": "橋北地区 学園二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 魚瀬町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 魚瀬町",
+      "jp": "橋北地区 魚瀬町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 古志町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 古志町",
+      "jp": "橋北地区 古志町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 古曽志町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 古曽志町",
+      "jp": "橋北地区 古曽志町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 向島町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 向島町",
+      "jp": "橋北地区 向島町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 国屋町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 国屋町",
+      "jp": "橋北地区 国屋町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 黒田町（城山西通りから西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 黒田町（城山西通りから西側）",
+      "jp": "橋北地区 黒田町（城山西通りから西側）",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 黒田町（城山西通りから東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 黒田町（城山西通りから東側）",
+      "jp": "橋北地区 黒田町（城山西通りから東側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 砂子町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 砂子町",
+      "jp": "橋北地区 砂子町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 坂本町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 坂本町",
+      "jp": "橋北地区 坂本町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 鹿島町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 鹿島町",
+      "jp": "橋北地区 鹿島町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 手角町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 手角町",
+      "jp": "橋北地区 手角町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 秋鹿町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 秋鹿町",
+      "jp": "橋北地区 秋鹿町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 春日町（松江恵曇線から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 春日町（松江恵曇線から西側）",
+      "jp": "橋北地区 春日町（松江恵曇線から西側）",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 春日町（松江恵曇線から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 春日町（松江恵曇線から東側）",
+      "jp": "橋北地区 春日町（松江恵曇線から東側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 上宇部尾町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 上宇部尾町",
+      "jp": "橋北地区 上宇部尾町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 上佐陀町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 上佐陀町",
+      "jp": "橋北地区 上佐陀町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 上大野町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 上大野町",
+      "jp": "橋北地区 上大野町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 上東川津町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 上東川津町",
+      "jp": "橋北地区 上東川津町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 上本庄町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 上本庄町",
+      "jp": "橋北地区 上本庄町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 新庄町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 新庄町",
+      "jp": "橋北地区 新庄町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 菅田町（北循環線から南側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 菅田町（北循環線から南側）",
+      "jp": "橋北地区 菅田町（北循環線から南側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 菅田町（北循環線から北側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 菅田町（北循環線から北側）",
+      "jp": "橋北地区 菅田町（北循環線から北側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 西持田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西持田町",
+      "jp": "橋北地区 西持田町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 西生馬町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西生馬町",
+      "jp": "橋北地区 西生馬町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 西川津町（朝酌川から西側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西川津町（朝酌川から西側）",
+      "jp": "橋北地区 西川津町（朝酌川から西側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 西川津町（朝酌川から東側）",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西川津町（朝酌川から東側）",
+      "jp": "橋北地区 西川津町（朝酌川から東側）",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 西谷町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西谷町",
+      "jp": "橋北地区 西谷町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 西茶町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西茶町",
+      "jp": "橋北地区 西茶町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 西長江町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西長江町",
+      "jp": "橋北地区 西長江町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 西尾町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西尾町",
+      "jp": "橋北地区 西尾町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 西浜佐陀町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西浜佐陀町",
+      "jp": "橋北地区 西浜佐陀町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 西法吉町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 西法吉町",
+      "jp": "橋北地区 西法吉町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 石橋町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 石橋町",
+      "jp": "橋北地区 石橋町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 千鳥町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 千鳥町",
+      "jp": "橋北地区 千鳥町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 川原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 川原町",
+      "jp": "橋北地区 川原町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 薦津町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 薦津町",
+      "jp": "橋北地区 薦津町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 荘成町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 荘成町",
+      "jp": "橋北地区 荘成町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 打出町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 打出町",
+      "jp": "橋北地区 打出町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 大井町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 大井町",
+      "jp": "橋北地区 大井町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 大海崎町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 大海崎町",
+      "jp": "橋北地区 大海崎町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 大垣町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 大垣町",
+      "jp": "橋北地区 大垣町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 大野町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 大野町",
+      "jp": "橋北地区 大野町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 大輪町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 大輪町",
+      "jp": "橋北地区 大輪町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 中原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 中原町",
+      "jp": "橋北地区 中原町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 苧町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 苧町",
+      "jp": "橋北地区 苧町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 朝酌町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 朝酌町",
+      "jp": "橋北地区 朝酌町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 長海町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 長海町",
+      "jp": "橋北地区 長海町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 殿町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 殿町",
+      "jp": "橋北地区 殿町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 島根町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 島根町",
+      "jp": "橋北地区 島根町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 東奥谷町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東奥谷町",
+      "jp": "橋北地区 東奥谷町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 東持田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東持田町",
+      "jp": "橋北地区 東持田町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 東生馬町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東生馬町",
+      "jp": "橋北地区 東生馬町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 東茶町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東茶町",
+      "jp": "橋北地区 東茶町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 東長江町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東長江町",
+      "jp": "橋北地区 東長江町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 東本町一～五丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 東本町一～五丁目",
+      "jp": "橋北地区 東本町一～五丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 堂形町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 堂形町",
+      "jp": "橋北地区 堂形町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 内中原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 内中原町",
+      "jp": "橋北地区 内中原町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 南田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 南田町",
+      "jp": "橋北地区 南田町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 南平台",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 南平台",
+      "jp": "橋北地区 南平台",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 八束町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 八束町",
+      "jp": "橋北地区 八束町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 比津が丘一～五丁目",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 比津が丘一～五丁目",
+      "jp": "橋北地区 比津が丘一～五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 比津町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 比津町",
+      "jp": "橋北地区 比津町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-稲積",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-稲積",
+      "jp": "橋北地区 美保関町-稲積",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-宇井",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-宇井",
+      "jp": "橋北地区 美保関町-宇井",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 美保関町-雲津",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-雲津",
+      "jp": "橋北地区 美保関町-雲津",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-下宇部尾",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-下宇部尾",
+      "jp": "橋北地区 美保関町-下宇部尾",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 美保関町-海崎",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-海崎",
+      "jp": "橋北地区 美保関町-海崎",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-笠浦",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-笠浦",
+      "jp": "橋北地区 美保関町-笠浦",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-軽尾",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-軽尾",
+      "jp": "橋北地区 美保関町-軽尾",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-才浦",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-才浦",
+      "jp": "橋北地区 美保関町-才浦",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-笹子",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-笹子",
+      "jp": "橋北地区 美保関町-笹子",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-七類",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-七類",
+      "jp": "橋北地区 美保関町-七類",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-諸喰",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-諸喰",
+      "jp": "橋北地区 美保関町-諸喰",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-森山",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-森山",
+      "jp": "橋北地区 美保関町-森山",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 美保関町-菅浦",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-菅浦",
+      "jp": "橋北地区 美保関町-菅浦",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-千酌",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-千酌",
+      "jp": "橋北地区 美保関町-千酌",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-惣津",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-惣津",
+      "jp": "橋北地区 美保関町-惣津",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-男鹿",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-男鹿",
+      "jp": "橋北地区 美保関町-男鹿",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-長浜",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-長浜",
+      "jp": "橋北地区 美保関町-長浜",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-美保関",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-美保関",
+      "jp": "橋北地区 美保関町-美保関",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-福浦",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-福浦",
+      "jp": "橋北地区 美保関町-福浦",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-片江",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-片江",
+      "jp": "橋北地区 美保関町-片江",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-法田",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-法田",
+      "jp": "橋北地区 美保関町-法田",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-北浦",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-北浦",
+      "jp": "橋北地区 美保関町-北浦",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 美保関町-万原",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 美保関町-万原",
+      "jp": "橋北地区 美保関町-万原",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 浜佐田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 浜佐田町",
+      "jp": "橋北地区 浜佐田町",
+      "pattern": "1"
+    },
+    {
+      "town": "橋北地区 福原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 福原町",
+      "jp": "橋北地区 福原町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 福富町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 福富町",
+      "jp": "橋北地区 福富町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 米子町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 米子町",
+      "jp": "橋北地区 米子町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 片原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 片原町",
+      "jp": "橋北地区 片原町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 母衣町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 母衣町",
+      "jp": "橋北地区 母衣町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 法吉町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 法吉町",
+      "jp": "橋北地区 法吉町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 北田町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 北田町",
+      "jp": "橋北地区 北田町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 北堀町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 北堀町",
+      "jp": "橋北地区 北堀町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 北陵町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 北陵町",
+      "jp": "橋北地区 北陵町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 本庄町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 本庄町",
+      "jp": "橋北地区 本庄町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 枕木町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 枕木町",
+      "jp": "橋北地区 枕木町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 末次町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 末次町",
+      "jp": "橋北地区 末次町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 末次本町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 末次本町",
+      "jp": "橋北地区 末次本町",
+      "pattern": "5"
+    },
+    {
+      "town": "橋北地区 野原町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 野原町",
+      "jp": "橋北地区 野原町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 邑生町",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 邑生町",
+      "jp": "橋北地区 邑生町",
+      "pattern": "4"
+    },
+    {
+      "town": "橋北地区 淞北台",
+      "townEn": "Matsue",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋北地区 淞北台",
+      "jp": "橋北地区 淞北台",
+      "pattern": "5"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://matsue.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

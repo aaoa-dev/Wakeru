@@ -1,0 +1,699 @@
+{
+  "id": "urasoe",
+  "code": "47208",
+  "pref": "47",
+  "jp": "浦添市",
+  "en": "Urasoe",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://urasoe.5374.jp/data/area_days.csv",
+    "http://urasoe.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          2
+        ],
+        "oversized": [
+          4
+        ],
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          1
+        ],
+        "oversized": [
+          5
+        ],
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          6
+        ],
+        "oversized": [
+          3
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          4
+        ],
+        "oversized": [
+          1
+        ],
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          5
+        ],
+        "oversized": [
+          2
+        ],
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          3
+        ],
+        "oversized": [
+          6
+        ],
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "安波茶",
+      "townEn": "Ahacha",
+      "kana": "アハチャ",
+      "chome": null,
+      "detail": "安波茶 1丁目・3丁目",
+      "en": "安波茶 1丁目・3丁目",
+      "jp": "安波茶 1丁目・3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "安波茶",
+      "townEn": "Ahacha",
+      "kana": "アハチャ",
+      "chome": null,
+      "detail": "安波茶 2丁目",
+      "en": "安波茶 2丁目",
+      "jp": "安波茶 2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "伊祖",
+      "townEn": "Iso",
+      "kana": "イソ",
+      "chome": null,
+      "detail": "伊祖 1丁目・2丁目・4丁目",
+      "en": "伊祖 1丁目・2丁目・4丁目",
+      "jp": "伊祖 1丁目・2丁目・4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "伊祖",
+      "townEn": "Iso",
+      "kana": "イソ",
+      "chome": null,
+      "detail": "伊祖 3丁目",
+      "en": "伊祖 3丁目",
+      "jp": "伊祖 3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "伊祖",
+      "townEn": "Iso",
+      "kana": "イソ",
+      "chome": null,
+      "detail": "伊祖 5丁目",
+      "en": "伊祖 5丁目",
+      "jp": "伊祖 5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "内間",
+      "townEn": "Uchima",
+      "kana": "ウチマ",
+      "chome": null,
+      "detail": "内間 1丁目",
+      "en": "内間 1丁目",
+      "jp": "内間 1丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "内間",
+      "townEn": "Uchima",
+      "kana": "ウチマ",
+      "chome": null,
+      "detail": "内間 2丁目・3丁目",
+      "en": "内間 2丁目・3丁目",
+      "jp": "内間 2丁目・3丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "内間",
+      "townEn": "Uchima",
+      "kana": "ウチマ",
+      "chome": null,
+      "detail": "内間 4丁目・5丁目",
+      "en": "内間 4丁目・5丁目",
+      "jp": "内間 4丁目・5丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "大平",
+      "townEn": "Ohira",
+      "kana": "オオヒラ",
+      "chome": null,
+      "detail": "大平 1丁目",
+      "en": "大平 1丁目",
+      "jp": "大平 1丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "大平",
+      "townEn": "Ohira",
+      "kana": "オオヒラ",
+      "chome": null,
+      "detail": "大平 2丁目",
+      "en": "大平 2丁目",
+      "jp": "大平 2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "大平",
+      "townEn": "Ohira",
+      "kana": "オオヒラ",
+      "chome": null,
+      "detail": "大平 字大平・3丁目(ﾊﾞｲﾊﾟｽより東側)",
+      "en": "大平 字大平・3丁目(ﾊﾞｲﾊﾟｽより東側)",
+      "jp": "大平 字大平・3丁目(ﾊﾞｲﾊﾟｽより東側)",
+      "pattern": "1"
+    },
+    {
+      "town": "経塚",
+      "townEn": "Kyozuka",
+      "kana": "キョウヅカ",
+      "chome": null,
+      "detail": "経塚 字経塚・経塚1丁目(県道153号線より西側)★浦添工業高校・ゆいまーるｾﾝﾀｰ側",
+      "en": "経塚 字経塚・経塚1丁目(県道153号線より西側)★浦添工業高校・ゆいまーるｾﾝﾀｰ側",
+      "jp": "経塚 字経塚・経塚1丁目(県道153号線より西側)★浦添工業高校・ゆいまーるｾﾝﾀｰ側",
+      "pattern": "1"
+    },
+    {
+      "town": "経塚",
+      "townEn": "Kyozuka",
+      "kana": "キョウヅカ",
+      "chome": null,
+      "detail": "経塚 字経塚(県道153号線より東側)★経塚郵便局側・県営経塚団地",
+      "en": "経塚 字経塚(県道153号線より東側)★経塚郵便局側・県営経塚団地",
+      "jp": "経塚 字経塚(県道153号線より東側)★経塚郵便局側・県営経塚団地",
+      "pattern": "1"
+    },
+    {
+      "town": "城間",
+      "townEn": "Gusukuma",
+      "kana": "グスクマ",
+      "chome": null,
+      "detail": "城間 1丁目",
+      "en": "城間 1丁目",
+      "jp": "城間 1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城間",
+      "townEn": "Gusukuma",
+      "kana": "グスクマ",
+      "chome": null,
+      "detail": "城間 2丁目",
+      "en": "城間 2丁目",
+      "jp": "城間 2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城間",
+      "townEn": "Gusukuma",
+      "kana": "グスクマ",
+      "chome": null,
+      "detail": "城間 3丁目・4丁目",
+      "en": "城間 3丁目・4丁目",
+      "jp": "城間 3丁目・4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "城間",
+      "townEn": "Gusukuma",
+      "kana": "グスクマ",
+      "chome": null,
+      "detail": "城間 字城間(国道58号線より西側)",
+      "en": "城間 字城間(国道58号線より西側)",
+      "jp": "城間 字城間(国道58号線より西側)",
+      "pattern": "4"
+    },
+    {
+      "town": "勢理客",
+      "townEn": "Jitchaku",
+      "kana": "ジッチャク",
+      "chome": null,
+      "detail": "勢理客 1～4丁目",
+      "en": "勢理客 1～4丁目",
+      "jp": "勢理客 1～4丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "沢岻",
+      "townEn": "Takushi",
+      "kana": "タクシ",
+      "chome": null,
+      "detail": "沢岻 2丁目★ｽﾎﾟｰﾂｸﾗﾌﾞｼﾞｽﾀｽ周辺",
+      "en": "沢岻 2丁目★ｽﾎﾟｰﾂｸﾗﾌﾞｼﾞｽﾀｽ周辺",
+      "jp": "沢岻 2丁目★ｽﾎﾟｰﾂｸﾗﾌﾞｼﾞｽﾀｽ周辺",
+      "pattern": "6"
+    },
+    {
+      "town": "沢岻",
+      "townEn": "Takushi",
+      "kana": "タクシ",
+      "chome": null,
+      "detail": "沢岻 字沢岻・1丁目・2丁目1～17",
+      "en": "沢岻 字沢岻・1丁目・2丁目1～17",
+      "jp": "沢岻 字沢岻・1丁目・2丁目1～17",
+      "pattern": "1"
+    },
+    {
+      "town": "当山",
+      "townEn": "Toyama",
+      "kana": "トウヤマ",
+      "chome": null,
+      "detail": "当山 1～3丁目",
+      "en": "当山 1～3丁目",
+      "jp": "当山 1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "仲西",
+      "townEn": "Nakanishi",
+      "kana": "ナカニシ",
+      "chome": null,
+      "detail": "仲西 1～3丁目",
+      "en": "仲西 1～3丁目",
+      "jp": "仲西 1～3丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "仲間",
+      "townEn": "Nakama",
+      "kana": "ナカマ",
+      "chome": null,
+      "detail": "仲間 1丁目・2丁目",
+      "en": "仲間 1丁目・2丁目",
+      "jp": "仲間 1丁目・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "仲間",
+      "townEn": "Nakama",
+      "kana": "ナカマ",
+      "chome": null,
+      "detail": "仲間 字仲間・3丁目",
+      "en": "仲間 字仲間・3丁目",
+      "jp": "仲間 字仲間・3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西原",
+      "townEn": "Nishihara",
+      "kana": "ニシハラ",
+      "chome": null,
+      "detail": "西原 1～6丁目",
+      "en": "西原 1～6丁目",
+      "jp": "西原 1～6丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "前田",
+      "townEn": "Maeda",
+      "kana": "マエダ",
+      "chome": null,
+      "detail": "前田 2丁目・3丁目(県道38号線以北)★浦添警察署・前田市営住宅側・中央紫雲閣周辺",
+      "en": "前田 2丁目・3丁目(県道38号線以北)★浦添警察署・前田市営住宅側・中央紫雲閣周辺",
+      "jp": "前田 2丁目・3丁目(県道38号線以北)★浦添警察署・前田市営住宅側・中央紫雲閣周辺",
+      "pattern": "2"
+    },
+    {
+      "town": "前田",
+      "townEn": "Maeda",
+      "kana": "マエダ",
+      "chome": null,
+      "detail": "前田 字前田・1丁目・4丁目(県道38号線以南)★前田小学校周辺",
+      "en": "前田 字前田・1丁目・4丁目(県道38号線以南)★前田小学校周辺",
+      "jp": "前田 字前田・1丁目・4丁目(県道38号線以南)★前田小学校周辺",
+      "pattern": "1"
+    },
+    {
+      "town": "牧港",
+      "townEn": "Makiminato",
+      "kana": "マキミナト",
+      "chome": null,
+      "detail": "牧港 1丁目",
+      "en": "牧港 1丁目",
+      "jp": "牧港 1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "牧港",
+      "townEn": "Makiminato",
+      "kana": "マキミナト",
+      "chome": null,
+      "detail": "牧港 2丁目",
+      "en": "牧港 2丁目",
+      "jp": "牧港 2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "牧港",
+      "townEn": "Makiminato",
+      "kana": "マキミナト",
+      "chome": null,
+      "detail": "牧港 3丁目・4丁目",
+      "en": "牧港 3丁目・4丁目",
+      "jp": "牧港 3丁目・4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "牧港",
+      "townEn": "Makiminato",
+      "kana": "マキミナト",
+      "chome": null,
+      "detail": "牧港 5丁目",
+      "en": "牧港 5丁目",
+      "jp": "牧港 5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "牧港",
+      "townEn": "Makiminato",
+      "kana": "マキミナト",
+      "chome": null,
+      "detail": "牧港 字牧港",
+      "en": "牧港 字牧港",
+      "jp": "牧港 字牧港",
+      "pattern": "4"
+    },
+    {
+      "town": "港川",
+      "townEn": "Minatogawa",
+      "kana": "ミナトガワ",
+      "chome": null,
+      "detail": "港川 1丁目・2丁目",
+      "en": "港川 1丁目・2丁目",
+      "jp": "港川 1丁目・2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "港川",
+      "townEn": "Minatogawa",
+      "kana": "ミナトガワ",
+      "chome": null,
+      "detail": "港川 字港川",
+      "en": "港川 字港川",
+      "jp": "港川 字港川",
+      "pattern": "4"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 (例外)宮城2丁目40～41",
+      "en": "宮城 (例外)宮城2丁目40～41",
+      "jp": "宮城 (例外)宮城2丁目40～41",
+      "pattern": "6"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 (例外)宮城3丁目14～18",
+      "en": "宮城 (例外)宮城3丁目14～18",
+      "jp": "宮城 (例外)宮城3丁目14～18",
+      "pattern": "6"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 (例外)宮城4丁目19～23",
+      "en": "宮城 (例外)宮城4丁目19～23",
+      "jp": "宮城 (例外)宮城4丁目19～23",
+      "pattern": "6"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 1丁目",
+      "en": "宮城 1丁目",
+      "jp": "宮城 1丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 2～4丁目(例外あり)",
+      "en": "宮城 2～4丁目(例外あり)",
+      "jp": "宮城 2～4丁目(例外あり)",
+      "pattern": "5"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 5丁目",
+      "en": "宮城 5丁目",
+      "jp": "宮城 5丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagi",
+      "kana": "ミヤギ",
+      "chome": null,
+      "detail": "宮城 6丁目",
+      "en": "宮城 6丁目",
+      "jp": "宮城 6丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "屋富祖",
+      "townEn": "Yafuso",
+      "kana": "ヤフソ",
+      "chome": null,
+      "detail": "屋富祖 1丁目・2丁目",
+      "en": "屋富祖 1丁目・2丁目",
+      "jp": "屋富祖 1丁目・2丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "屋富祖",
+      "townEn": "Yafuso",
+      "kana": "ヤフソ",
+      "chome": null,
+      "detail": "屋富祖 3丁目",
+      "en": "屋富祖 3丁目",
+      "jp": "屋富祖 3丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "屋富祖",
+      "townEn": "Yafuso",
+      "kana": "ヤフソ",
+      "chome": null,
+      "detail": "屋富祖 4丁目",
+      "en": "屋富祖 4丁目",
+      "jp": "屋富祖 4丁目",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://urasoe.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

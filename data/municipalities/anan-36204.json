@@ -1,0 +1,461 @@
+{
+  "id": "anan-36204",
+  "code": "36204",
+  "pref": "36",
+  "jp": "阿南市",
+  "en": "Anan",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://anan.5374.jp/data/area_days.csv",
+    "http://anan.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペットボトルの収集日」.",
+      "auto": true
+    },
+    "plastic-pack": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「プラ容器包装」 under 「プラ容器包装」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「不燃」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油（植物性）」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "横見 南中島",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横見 南中島",
+      "jp": "横見 南中島",
+      "pattern": "2"
+    },
+    {
+      "town": "加茂谷 持井",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "加茂谷 持井",
+      "jp": "加茂谷 持井",
+      "pattern": "1"
+    },
+    {
+      "town": "橘 大浦",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橘 大浦",
+      "jp": "橘 大浦",
+      "pattern": "2"
+    },
+    {
+      "town": "桑野 桑野 山口",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桑野 桑野 山口",
+      "jp": "桑野 桑野 山口",
+      "pattern": "1"
+    },
+    {
+      "town": "見能林 三谷 林崎 打樋",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "見能林 三谷 林崎 打樋",
+      "jp": "見能林 三谷 林崎 打樋",
+      "pattern": "2"
+    },
+    {
+      "town": "上中 西方",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上中 西方",
+      "jp": "上中 西方",
+      "pattern": "2"
+    },
+    {
+      "town": "新町 内町 仲町 トノ町 第住町 共栄町 玉塚",
+      "townEn": "Tono",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町 内町 仲町 トノ町 第住町 共栄町 玉塚",
+      "jp": "新町 内町 仲町 トノ町 第住町 共栄町 玉塚",
+      "pattern": "1"
+    },
+    {
+      "town": "新道路踏切東／西 池田 寿通 井関 おわた",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新道路踏切東／西 池田 寿通 井関 おわた",
+      "jp": "新道路踏切東／西 池田 寿通 井関 おわた",
+      "pattern": "1"
+    },
+    {
+      "town": "新野 藁野",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新野 藁野",
+      "jp": "新野 藁野",
+      "pattern": "1"
+    },
+    {
+      "town": "大潟 新浜",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大潟 新浜",
+      "jp": "大潟 新浜",
+      "pattern": "1"
+    },
+    {
+      "town": "大戸 赤崎 香 小杭 曲",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大戸 赤崎 香 小杭 曲",
+      "jp": "大戸 赤崎 香 小杭 曲",
+      "pattern": "1"
+    },
+    {
+      "town": "大野",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野",
+      "jp": "大野",
+      "pattern": "2"
+    },
+    {
+      "town": "中林 北ノ脇 大浜 南林",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中林 北ノ脇 大浜 南林",
+      "jp": "中林 北ノ脇 大浜 南林",
+      "pattern": "2"
+    },
+    {
+      "town": "長生",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長生",
+      "jp": "長生",
+      "pattern": "2"
+    },
+    {
+      "town": "津乃峰 伊島",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "津乃峰 伊島",
+      "jp": "津乃峰 伊島",
+      "pattern": "1"
+    },
+    {
+      "town": "椿 船頭ヶ谷 長谷川",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "椿 船頭ヶ谷 長谷川",
+      "jp": "椿 船頭ヶ谷 長谷川",
+      "pattern": "1"
+    },
+    {
+      "town": "椿泊(出島・糠塚)",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "椿泊(出島・糠塚)",
+      "jp": "椿泊(出島・糠塚)",
+      "pattern": "1"
+    },
+    {
+      "town": "椿泊(東・寺谷、小吹川原1・小吹川原1・谷ノ浦)",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "椿泊(東・寺谷、小吹川原1・小吹川原1・谷ノ浦)",
+      "jp": "椿泊(東・寺谷、小吹川原1・小吹川原1・谷ノ浦)",
+      "pattern": "1"
+    },
+    {
+      "town": "内原 西分 蛭地 竹ノ内",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内原 西分 蛭地 竹ノ内",
+      "jp": "内原 西分 蛭地 竹ノ内",
+      "pattern": "1"
+    },
+    {
+      "town": "日開野 才見 学原",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "日開野 才見 学原",
+      "jp": "日開野 才見 学原",
+      "pattern": "2"
+    },
+    {
+      "town": "福井 後戸 鵠",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福井 後戸 鵠",
+      "jp": "福井 後戸 鵠",
+      "pattern": "1"
+    },
+    {
+      "town": "宝田",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宝田",
+      "jp": "宝田",
+      "pattern": "2"
+    },
+    {
+      "town": "柳島 大京原",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳島 大京原",
+      "jp": "柳島 大京原",
+      "pattern": "2"
+    },
+    {
+      "town": "領家 西路見 住吉 七見 辰巳団地",
+      "townEn": "Anan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "領家 西路見 住吉 七見 辰巳団地",
+      "jp": "領家 西路見 住吉 七見 辰巳団地",
+      "pattern": "2"
+    },
+    {
+      "town": "畭 福村 豊益 向原 黒津地 出来町 原ケ崎",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "畭 福村 豊益 向原 黒津地 出来町 原ケ崎",
+      "jp": "畭 福村 豊益 向原 黒津地 出来町 原ケ崎",
+      "pattern": "1"
+    },
+    {
+      "town": "那賀川町",
+      "townEn": "Nakagawacho",
+      "kana": "ナカガワチョウ",
+      "chome": null,
+      "detail": "那賀川町(南地区)(大京原・南中島は除く)原 西原 古津 大京原町 三栗 赤池 工地 苅屋 芳崎 中島 北中島 上福井 みどり台",
+      "en": "那賀川町(南地区)(大京原・南中島は除く)原 西原 古津 大京原町 三栗 赤池 工地 苅屋 芳崎 中島 北中島 上福井 みどり台",
+      "jp": "那賀川町(南地区)(大京原・南中島は除く)原 西原 古津 大京原町 三栗 赤池 工地 苅屋 芳崎 中島 北中島 上福井 みどり台",
+      "pattern": "2"
+    },
+    {
+      "town": "那賀川町",
+      "townEn": "Nakagawacho",
+      "kana": "ナカガワチョウ",
+      "chome": null,
+      "detail": "那賀川町(北地区)手島 八幡 日向 今津浦 敷地 豊香野 小延 黒地 色ケ島 江野島 島尻",
+      "en": "那賀川町(北地区)手島 八幡 日向 今津浦 敷地 豊香野 小延 黒地 色ケ島 江野島 島尻",
+      "jp": "那賀川町(北地区)手島 八幡 日向 今津浦 敷地 豊香野 小延 黒地 色ケ島 江野島 島尻",
+      "pattern": "2"
+    },
+    {
+      "town": "羽ノ浦町",
+      "townEn": "Hanoracho",
+      "kana": "ハノウラチョウ",
+      "chome": null,
+      "detail": "羽ノ浦町(南地区)古庄 明見 岩脇 古毛",
+      "en": "羽ノ浦町(南地区)古庄 明見 岩脇 古毛",
+      "jp": "羽ノ浦町(南地区)古庄 明見 岩脇 古毛",
+      "pattern": "1"
+    },
+    {
+      "town": "羽ノ浦町",
+      "townEn": "Hanoracho",
+      "kana": "ハノウラチョウ",
+      "chome": null,
+      "detail": "羽ノ浦町(北地区)中庄 宮倉 春日野 西春日野",
+      "en": "羽ノ浦町(北地区)中庄 宮倉 春日野 西春日野",
+      "jp": "羽ノ浦町(北地区)中庄 宮倉 春日野 西春日野",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://anan.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 1
+}

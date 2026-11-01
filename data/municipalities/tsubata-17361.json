@@ -1,0 +1,219 @@
+{
+  "id": "tsubata-17361",
+  "code": "17361",
+  "pref": "17",
+  "jp": "津幡町",
+  "en": "Tsubata",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://tsubata.5374.jp/data/area_days.csv",
+    "http://tsubata.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "dates": [
+            "2026-04-01",
+            "2026-05-06",
+            "2026-06-03",
+            "2026-07-01",
+            "2026-08-05",
+            "2026-09-02",
+            "2026-10-07",
+            "2026-11-04",
+            "2026-12-02",
+            "2027-01-06",
+            "2027-02-03",
+            "2027-03-03"
+          ]
+        },
+        "oversized": {
+          "dates": [
+            "2026-04-15",
+            "2026-05-20",
+            "2026-06-17",
+            "2026-07-15",
+            "2026-08-19",
+            "2026-09-16",
+            "2026-10-21",
+            "2026-11-18",
+            "2026-12-16",
+            "2027-01-20",
+            "2027-02-17",
+            "2027-03-17"
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "dates": [
+            "2026-04-08",
+            "2026-05-13",
+            "2026-06-10",
+            "2026-07-08",
+            "2026-08-12",
+            "2026-09-09",
+            "2026-10-14",
+            "2026-11-11",
+            "2026-12-09",
+            "2027-01-13",
+            "2027-02-10",
+            "2027-03-10"
+          ]
+        },
+        "oversized": {
+          "dates": [
+            "2026-04-22",
+            "2026-05-27",
+            "2026-06-24",
+            "2026-07-22",
+            "2026-08-26",
+            "2026-09-23",
+            "2026-10-28",
+            "2026-11-25",
+            "2026-12-23",
+            "2027-01-27",
+            "2027-02-24",
+            "2027-03-24"
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "A-1地区",
+      "townEn": "Tsubata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-1地区",
+      "jp": "A-1地区",
+      "pattern": "1"
+    },
+    {
+      "town": "A-2地区",
+      "townEn": "Tsubata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "A-2地区",
+      "jp": "A-2地区",
+      "pattern": "1"
+    },
+    {
+      "town": "B-1地区",
+      "townEn": "Tsubata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-1地区",
+      "jp": "B-1地区",
+      "pattern": "2"
+    },
+    {
+      "town": "B-2地区",
+      "townEn": "Tsubata",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "B-2地区",
+      "jp": "B-2地区",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://tsubata.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

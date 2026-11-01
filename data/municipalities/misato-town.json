@@ -1,0 +1,152 @@
+{
+  "id": "misato-town",
+  "code": "11381",
+  "pref": "11",
+  "jp": "美里町",
+  "en": "Misato",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.town.saitama-misato.lg.jp/0000000045.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass": {
+      "label": "ガラス類",
+      "en": "Glass",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Two collection courses (A/B) from the town's official table. Hazardous waste uses fixed May/November dates — see the town calendar.",
+    "patterns": {
+      "1": {
+        "res": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "2": {
+        "res": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "Aコース 根木・関・阿那志・小茂田・下児玉・北十条・南十条・沼上・広木",
+      "townEn": "Aコース 根木・関・阿那志・小茂田・下児玉・北十条・南十条・沼上・広木",
+      "kana": "Aコース 根木・関・阿那志・小茂田・下児玉・北十条・南十条・沼上・広木",
+      "chome": null,
+      "detail": null,
+      "en": "Aコース 根木・関・阿那志・小茂田・下児玉・北十条・南十条・沼上・広木",
+      "jp": "Aコース 根木・関・阿那志・小茂田・下児玉・北十条・南十条・沼上・広木",
+      "pattern": "1"
+    },
+    {
+      "town": "Bコース 駒衣・木部・古郡・甘粕・中里・猪俣・白石・円良田",
+      "townEn": "Bコース 駒衣・木部・古郡・甘粕・中里・猪俣・白石・円良田",
+      "kana": "Bコース 駒衣・木部・古郡・甘粕・中里・猪俣・白石・円良田",
+      "chome": null,
+      "detail": null,
+      "en": "Bコース 駒衣・木部・古郡・甘粕・中里・猪俣・白石・円良田",
+      "jp": "Bコース 駒衣・木部・古郡・甘粕・中里・猪俣・白石・円良田",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Misato Town A/B course collection schedule table",
+      "url": "https://www.town.saitama-misato.lg.jp/0000000045.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

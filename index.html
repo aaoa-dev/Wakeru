@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <title>Wakeru Gomi Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap">
 <link rel="stylesheet" href="css/styles.css">
 <script type="module" src="js/app.js"></script>
 </head>
@@ -46,7 +48,7 @@
 <section class="view" id="v-sort" hidden>
   <div id="resultsWrap" hidden>
     <button type="button" class="back" id="resBack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back</button>
-    <h2 id="resTitle">Results</h2>
+    <h2 id="resTitle" aria-live="polite">Results</h2>
     <div class="list" id="results"></div>
   </div>
   <div id="dictWrap" hidden>
@@ -55,18 +57,22 @@
     <div class="list" id="dict"></div>
   </div>
 
-  <div id="homeWeek"></div>
   <div id="home">
-    <div class="test card">
-      <h2>The plastic test</h2>
-      <p class="lede">Most takeout and konbini packaging comes down to a few questions. <span id="plasticSummary"></span></p>
-      <ol id="plasticSteps"></ol>
-      <div class="verdict" id="verdict"></div>
+    <div id="sortGuidesWrap">
+      <p class="sort-guides-lede fine" id="sortGuidesLede" hidden></p>
+      <div class="guide-viewport" id="guideViewport" tabindex="0" aria-label="Sorting guides carousel">
+        <div class="guide-track" id="sortGuides"></div>
+      </div>
+      <div class="guide-nav" id="guideNav" hidden>
+        <button type="button" class="guide-arrow" data-guide-prev aria-label="Previous category"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="guide-dots" id="guideDots"></div>
+        <button type="button" class="guide-arrow" data-guide-next aria-label="Next category"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
     </div>
   </div>
 
   <div id="quickWrap">
-    <h2>Konbini, takeout & kitchen</h2>
+    <h2>Konbini, takeout &amp; kitchen</h2>
     <div class="quick" id="quick"></div>
   </div>
 
@@ -86,7 +92,7 @@
     <div class="mini">
       <div><b>月 火 水</b>Mon · Tue · Wed</div>
       <div><b>木 金 土</b>Thu · Fri · Sat</div>
-      <div><b>第1・3 月</b>1st & 3rd Monday of the month</div>
+      <div><b>第1・3 月</b>1st &amp; 3rd Monday of the month</div>
       <div><b>隔週</b>Every other week</div>
       <div><b>丁目 · 番地</b>Chome (block group) · banchi (block number) in an address</div>
       <div><b>キケン</b>"Danger": write it on bags of blades, glass, batteries</div>
@@ -102,7 +108,8 @@
 <!-- ONBOARDING -->
 <div class="onboard" id="onboard" role="dialog" aria-modal="true" aria-labelledby="obTitle" hidden>
   <div class="ob-map">
-    <svg id="obMap" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Japan"><g id="obPrefs"></g><g id="obMunis"></g><g id="obPin"></g></svg>
+    <svg id="obMap" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Japan"><g id="obPrefs"></g><g id="obMunis"></g><g id="obWards"></g><g id="obPin"></g></svg>
+    <div id="obMapTip" class="ob-map-tip" hidden></div>
     <p class="ob-credit">出典：国土数値情報（行政区域データ）（国土交通省）を加工して作成</p>
   </div>
   <div class="ob-panel">

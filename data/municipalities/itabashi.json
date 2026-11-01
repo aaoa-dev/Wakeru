@@ -59,7 +59,78 @@
     }
   },
   "plasticTest": null,
-  "sorting": {},
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「果物の皮」 under 「可燃」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「可燃」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「長靴」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「可燃」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「不燃」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「不燃」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「リチウムイオン電池（充電式）」 under 「不可」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「不燃」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「不燃」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「布団」 under 「粗大」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「洗濯機」 under 「不可」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「ノートパソコン」 under 「不可」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「不可」.",
+      "auto": true
+    }
+  },
   "calendar": {
     "noCollection": {
       "weekdays": [],
@@ -2334,5 +2405,5 @@
       "path": "municipalities/tokyo/itabashi"
     }
   },
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }

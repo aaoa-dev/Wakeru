@@ -1,0 +1,579 @@
+{
+  "id": "linkdata-4781-06210",
+  "code": "06210",
+  "pref": "06",
+  "jp": "天童市",
+  "en": "Tendo",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4781i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4781i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 5,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "温泉",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "温泉",
+      "jp": "温泉",
+      "pattern": "1"
+    },
+    {
+      "town": "久野森(10区を除く)",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久野森(10区を除く)",
+      "jp": "久野森(10区を除く)",
+      "pattern": "1"
+    },
+    {
+      "town": "向原",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "向原",
+      "jp": "向原",
+      "pattern": "1"
+    },
+    {
+      "town": "広小路(天童中)",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広小路(天童中)",
+      "jp": "広小路(天童中)",
+      "pattern": "1"
+    },
+    {
+      "town": "高擶",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高擶",
+      "jp": "高擶",
+      "pattern": "1"
+    },
+    {
+      "town": "山口",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山口",
+      "jp": "山口",
+      "pattern": "1"
+    },
+    {
+      "town": "寺津",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寺津",
+      "jp": "寺津",
+      "pattern": "1"
+    },
+    {
+      "town": "成生",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成生",
+      "jp": "成生",
+      "pattern": "1"
+    },
+    {
+      "town": "蔵増",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蔵増",
+      "jp": "蔵増",
+      "pattern": "1"
+    },
+    {
+      "town": "長岡",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長岡",
+      "jp": "長岡",
+      "pattern": "1"
+    },
+    {
+      "town": "天童原",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "天童原",
+      "jp": "天童原",
+      "pattern": "1"
+    },
+    {
+      "town": "田麦野",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田麦野",
+      "jp": "田麦野",
+      "pattern": "1"
+    },
+    {
+      "town": "芳賀土地区画整理事業地内",
+      "townEn": "Tendo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "芳賀土地区画整理事業地内",
+      "jp": "芳賀土地区画整理事業地内",
+      "pattern": "1"
+    },
+    {
+      "town": "石鳥居",
+      "townEn": "Ishidorii",
+      "kana": "イシドリイ",
+      "chome": null,
+      "detail": null,
+      "en": "石鳥居",
+      "jp": "石鳥居",
+      "pattern": "1"
+    },
+    {
+      "town": "泉町",
+      "townEn": "Izumicho",
+      "kana": "イズミチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "泉町",
+      "jp": "泉町",
+      "pattern": "1"
+    },
+    {
+      "town": "五日町",
+      "townEn": "Itsukamachi",
+      "kana": "イツカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "五日町",
+      "jp": "五日町",
+      "pattern": "1"
+    },
+    {
+      "town": "駅西",
+      "townEn": "Ekinishi",
+      "kana": "エキニシ",
+      "chome": null,
+      "detail": null,
+      "en": "駅西",
+      "jp": "駅西",
+      "pattern": "1"
+    },
+    {
+      "town": "老野森",
+      "townEn": "Oinomori",
+      "kana": "オイノモリ",
+      "chome": null,
+      "detail": "老野森10区",
+      "en": "老野森10区",
+      "jp": "老野森10区",
+      "pattern": "1"
+    },
+    {
+      "town": "大字清池",
+      "townEn": "Shoge",
+      "kana": "オオアザショウゲ",
+      "chome": null,
+      "detail": null,
+      "en": "大字清池",
+      "jp": "大字清池",
+      "pattern": "1"
+    },
+    {
+      "town": "大字長岡",
+      "townEn": "Nagaoka",
+      "kana": "オオアザナガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "大字長岡",
+      "jp": "大字長岡",
+      "pattern": "1"
+    },
+    {
+      "town": "大字芳賀",
+      "townEn": "Haga",
+      "kana": "オオアザハガ",
+      "chome": null,
+      "detail": null,
+      "en": "大字芳賀",
+      "jp": "大字芳賀",
+      "pattern": "1"
+    },
+    {
+      "town": "柏木町",
+      "townEn": "Kashiwagicho",
+      "kana": "カシワギチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "柏木町",
+      "jp": "柏木町",
+      "pattern": "1"
+    },
+    {
+      "town": "北久野本",
+      "townEn": "Kitakunomoto",
+      "kana": "キタクノモト",
+      "chome": null,
+      "detail": null,
+      "en": "北久野本",
+      "jp": "北久野本",
+      "pattern": "1"
+    },
+    {
+      "town": "北目",
+      "townEn": "Kitame",
+      "kana": "キタメ",
+      "chome": null,
+      "detail": null,
+      "en": "北目",
+      "jp": "北目",
+      "pattern": "1"
+    },
+    {
+      "town": "久野本",
+      "townEn": "Kunomoto",
+      "kana": "クノモト",
+      "chome": null,
+      "detail": "久野本大通り",
+      "en": "久野本大通り",
+      "jp": "久野本大通り",
+      "pattern": "1"
+    },
+    {
+      "town": "久野本",
+      "townEn": "Kunomoto",
+      "kana": "クノモト",
+      "chome": null,
+      "detail": "久野本東",
+      "en": "久野本東",
+      "jp": "久野本東",
+      "pattern": "1"
+    },
+    {
+      "town": "小路",
+      "townEn": "Koji",
+      "kana": "コウジ",
+      "chome": null,
+      "detail": null,
+      "en": "小路",
+      "jp": "小路",
+      "pattern": "1"
+    },
+    {
+      "town": "小関",
+      "townEn": "Koseki",
+      "kana": "コセキ",
+      "chome": null,
+      "detail": null,
+      "en": "小関",
+      "jp": "小関",
+      "pattern": "1"
+    },
+    {
+      "town": "桜町",
+      "townEn": "Sakuramachi",
+      "kana": "サクラマチ",
+      "chome": null,
+      "detail": null,
+      "en": "桜町",
+      "jp": "桜町",
+      "pattern": "1"
+    },
+    {
+      "town": "田鶴町",
+      "townEn": "Tazurucho",
+      "kana": "タヅルチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "田鶴町",
+      "jp": "田鶴町",
+      "pattern": "1"
+    },
+    {
+      "town": "長岡北",
+      "townEn": "Nagaoka Kita",
+      "kana": "ナガオカキタ",
+      "chome": null,
+      "detail": null,
+      "en": "長岡北",
+      "jp": "長岡北",
+      "pattern": "1"
+    },
+    {
+      "town": "中里",
+      "townEn": "Nakazato",
+      "kana": "ナカザト",
+      "chome": null,
+      "detail": null,
+      "en": "中里",
+      "jp": "中里",
+      "pattern": "1"
+    },
+    {
+      "town": "仲町",
+      "townEn": "Nakamachi",
+      "kana": "ナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "仲町",
+      "jp": "仲町",
+      "pattern": "1"
+    },
+    {
+      "town": "糠塚",
+      "townEn": "Nukazuka",
+      "kana": "ヌカヅカ",
+      "chome": null,
+      "detail": null,
+      "en": "糠塚",
+      "jp": "糠塚",
+      "pattern": "1"
+    },
+    {
+      "town": "東長岡",
+      "townEn": "Higashinagaoka",
+      "kana": "ヒガシナガオカ",
+      "chome": null,
+      "detail": null,
+      "en": "東長岡",
+      "jp": "東長岡",
+      "pattern": "1"
+    },
+    {
+      "town": "東芳賀",
+      "townEn": "Higashihaga",
+      "kana": "ヒガシハガ",
+      "chome": null,
+      "detail": null,
+      "en": "東芳賀",
+      "jp": "東芳賀",
+      "pattern": "1"
+    },
+    {
+      "town": "東本町",
+      "townEn": "Higashihoncho",
+      "kana": "ヒガシホンチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "東本町",
+      "jp": "東本町",
+      "pattern": "1"
+    },
+    {
+      "town": "一日町",
+      "townEn": "Hitoichimachi",
+      "kana": "ヒトイチマチ",
+      "chome": null,
+      "detail": null,
+      "en": "一日町",
+      "jp": "一日町",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "1"
+    },
+    {
+      "town": "交り江",
+      "townEn": "Majirie",
+      "kana": "マジリエ",
+      "chome": null,
+      "detail": null,
+      "en": "交り江",
+      "jp": "交り江",
+      "pattern": "1"
+    },
+    {
+      "town": "乱川",
+      "townEn": "Midaregawa",
+      "kana": "ミダレカワ",
+      "chome": null,
+      "detail": null,
+      "en": "乱川",
+      "jp": "乱川",
+      "pattern": "1"
+    },
+    {
+      "town": "三日町",
+      "townEn": "Mikkamachi",
+      "kana": "ミツカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "三日町",
+      "jp": "三日町",
+      "pattern": "1"
+    },
+    {
+      "town": "南小畑",
+      "townEn": "Minamiobata",
+      "kana": "ミナミオバタ",
+      "chome": null,
+      "detail": null,
+      "en": "南小畑",
+      "jp": "南小畑",
+      "pattern": "1"
+    },
+    {
+      "town": "南町",
+      "townEn": "Minamimachi",
+      "kana": "ミナミマチ",
+      "chome": null,
+      "detail": null,
+      "en": "南町",
+      "jp": "南町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4781i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

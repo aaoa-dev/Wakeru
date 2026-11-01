@@ -1,0 +1,3715 @@
+{
+  "id": "saga-city",
+  "code": "41201",
+  "pref": "41",
+  "jp": "佐賀市",
+  "en": "Saga",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://saga.5374.jp/data/area_days.csv",
+    "http://saga.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "non_burnable": {
+          "dates": [
+            "2026-12-29"
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "クローバータウン",
+      "townEn": "Kurobataun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "クローバータウン",
+      "jp": "クローバータウン",
+      "pattern": "2"
+    },
+    {
+      "town": "サングリーン大和",
+      "townEn": "Sangurin",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "サングリーン大和",
+      "jp": "サングリーン大和",
+      "pattern": "2"
+    },
+    {
+      "town": "みどり団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "みどり団地",
+      "jp": "みどり団地",
+      "pattern": "1"
+    },
+    {
+      "town": "為重",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "為重",
+      "jp": "為重",
+      "pattern": "1"
+    },
+    {
+      "town": "永理",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "永理",
+      "jp": "永理",
+      "pattern": "2"
+    },
+    {
+      "town": "榎団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "榎団地",
+      "jp": "榎団地",
+      "pattern": "1"
+    },
+    {
+      "town": "於保",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "於保",
+      "jp": "於保",
+      "pattern": "2"
+    },
+    {
+      "town": "横江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横江",
+      "jp": "横江",
+      "pattern": "2"
+    },
+    {
+      "town": "横馬場",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横馬場",
+      "jp": "横馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "下関屋",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下関屋",
+      "jp": "下関屋",
+      "pattern": "2"
+    },
+    {
+      "town": "下古賀",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下古賀",
+      "jp": "下古賀",
+      "pattern": "1"
+    },
+    {
+      "town": "下戸田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下戸田",
+      "jp": "下戸田",
+      "pattern": "2"
+    },
+    {
+      "town": "下合瀬",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下合瀬",
+      "jp": "下合瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "下小副川",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下小副川",
+      "jp": "下小副川",
+      "pattern": "1"
+    },
+    {
+      "town": "下新ヶ江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下新ヶ江",
+      "jp": "下新ヶ江",
+      "pattern": "2"
+    },
+    {
+      "town": "下早",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下早",
+      "jp": "下早",
+      "pattern": "2"
+    },
+    {
+      "town": "下村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下村",
+      "jp": "下村",
+      "pattern": "1"
+    },
+    {
+      "town": "下大津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下大津",
+      "jp": "下大津",
+      "pattern": "2"
+    },
+    {
+      "town": "下都渡城",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下都渡城",
+      "jp": "下都渡城",
+      "pattern": "1"
+    },
+    {
+      "town": "下飯盛南",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下飯盛南",
+      "jp": "下飯盛南",
+      "pattern": "1"
+    },
+    {
+      "town": "下飯盛北",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下飯盛北",
+      "jp": "下飯盛北",
+      "pattern": "1"
+    },
+    {
+      "town": "下満",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下満",
+      "jp": "下満",
+      "pattern": "1"
+    },
+    {
+      "town": "下無津呂",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下無津呂",
+      "jp": "下無津呂",
+      "pattern": "2"
+    },
+    {
+      "town": "加仁町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "加仁町",
+      "jp": "加仁町",
+      "pattern": "2"
+    },
+    {
+      "town": "加与丁下",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "加与丁下",
+      "jp": "加与丁下",
+      "pattern": "2"
+    },
+    {
+      "town": "加与丁上",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "加与丁上",
+      "jp": "加与丁上",
+      "pattern": "2"
+    },
+    {
+      "town": "嘉瀬町（大字十五1555・2876・2918番地の4軒を除く）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "嘉瀬町（大字十五1555・2876・2918番地の4軒を除く）",
+      "jp": "嘉瀬町（大字十五1555・2876・2918番地の4軒を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "花久保",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花久保",
+      "jp": "花久保",
+      "pattern": "2"
+    },
+    {
+      "town": "快万",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "快万",
+      "jp": "快万",
+      "pattern": "1"
+    },
+    {
+      "town": "貝野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "貝野",
+      "jp": "貝野",
+      "pattern": "1"
+    },
+    {
+      "town": "鎌原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鎌原",
+      "jp": "鎌原",
+      "pattern": "1"
+    },
+    {
+      "town": "吉村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉村",
+      "jp": "吉村",
+      "pattern": "2"
+    },
+    {
+      "town": "吉富",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉富",
+      "jp": "吉富",
+      "pattern": "1"
+    },
+    {
+      "town": "久池井",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久池井",
+      "jp": "久池井",
+      "pattern": "1"
+    },
+    {
+      "town": "久町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久町",
+      "jp": "久町",
+      "pattern": "2"
+    },
+    {
+      "town": "久富西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久富西",
+      "jp": "久富西",
+      "pattern": "2"
+    },
+    {
+      "town": "久富東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久富東",
+      "jp": "久富東",
+      "pattern": "2"
+    },
+    {
+      "town": "久保泉町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久保泉町",
+      "jp": "久保泉町",
+      "pattern": "1"
+    },
+    {
+      "town": "久保田みどり橋以南（中副はH24.4月から全てN）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久保田みどり橋以南（中副はH24.4月から全てN）",
+      "jp": "久保田みどり橋以南（中副はH24.4月から全てN）",
+      "pattern": "2"
+    },
+    {
+      "town": "久保田みどり橋以北",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久保田みどり橋以北",
+      "jp": "久保田みどり橋以北",
+      "pattern": "1"
+    },
+    {
+      "town": "久保田宿",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久保田宿",
+      "jp": "久保田宿",
+      "pattern": "1"
+    },
+    {
+      "town": "久留間",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久留間",
+      "jp": "久留間",
+      "pattern": "1"
+    },
+    {
+      "town": "巨勢町（大字東西（東巨勢）を除く）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "巨勢町（大字東西（東巨勢）を除く）",
+      "jp": "巨勢町（大字東西（東巨勢）を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "橋津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋津",
+      "jp": "橋津",
+      "pattern": "2"
+    },
+    {
+      "town": "金丸",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金丸",
+      "jp": "金丸",
+      "pattern": "2"
+    },
+    {
+      "town": "金立町上記以外",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "金立町上記以外",
+      "jp": "金立町上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "栗並",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "栗並",
+      "jp": "栗並",
+      "pattern": "2"
+    },
+    {
+      "town": "古場",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古場",
+      "jp": "古場",
+      "pattern": "2"
+    },
+    {
+      "town": "古湯",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "古湯",
+      "jp": "古湯",
+      "pattern": "1"
+    },
+    {
+      "town": "五領",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五領",
+      "jp": "五領",
+      "pattern": "1"
+    },
+    {
+      "town": "広江西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広江西",
+      "jp": "広江西",
+      "pattern": "2"
+    },
+    {
+      "town": "広江東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広江東",
+      "jp": "広江東",
+      "pattern": "2"
+    },
+    {
+      "town": "広江南",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広江南",
+      "jp": "広江南",
+      "pattern": "2"
+    },
+    {
+      "town": "広江北",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広江北",
+      "jp": "広江北",
+      "pattern": "2"
+    },
+    {
+      "town": "広溜",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "広溜",
+      "jp": "広溜",
+      "pattern": "1"
+    },
+    {
+      "town": "江熊野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江熊野",
+      "jp": "江熊野",
+      "pattern": "1"
+    },
+    {
+      "town": "江戸",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "江戸",
+      "jp": "江戸",
+      "pattern": "2"
+    },
+    {
+      "town": "国府団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "国府団地",
+      "jp": "国府団地",
+      "pattern": "2"
+    },
+    {
+      "town": "国分南一区・二区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "国分南一区・二区",
+      "jp": "国分南一区・二区",
+      "pattern": "2"
+    },
+    {
+      "town": "国分北一区・二区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "国分北一区・二区",
+      "jp": "国分北一区・二区",
+      "pattern": "2"
+    },
+    {
+      "town": "今古賀",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今古賀",
+      "jp": "今古賀",
+      "pattern": "1"
+    },
+    {
+      "town": "今山",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今山",
+      "jp": "今山",
+      "pattern": "1"
+    },
+    {
+      "town": "今町西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今町西",
+      "jp": "今町西",
+      "pattern": "2"
+    },
+    {
+      "town": "今町東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "今町東",
+      "jp": "今町東",
+      "pattern": "2"
+    },
+    {
+      "town": "佐熊",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐熊",
+      "jp": "佐熊",
+      "pattern": "1"
+    },
+    {
+      "town": "佐保",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐保",
+      "jp": "佐保",
+      "pattern": "2"
+    },
+    {
+      "town": "佐房",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐房",
+      "jp": "佐房",
+      "pattern": "2"
+    },
+    {
+      "town": "坂井",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "坂井",
+      "jp": "坂井",
+      "pattern": "2"
+    },
+    {
+      "town": "崎ヶ江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "崎ヶ江",
+      "jp": "崎ヶ江",
+      "pattern": "2"
+    },
+    {
+      "town": "作出1区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "作出1区",
+      "jp": "作出1区",
+      "pattern": "1"
+    },
+    {
+      "town": "作出2区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "作出2区",
+      "jp": "作出2区",
+      "pattern": "1"
+    },
+    {
+      "town": "桜木",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜木",
+      "jp": "桜木",
+      "pattern": "1"
+    },
+    {
+      "town": "三重",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三重",
+      "jp": "三重",
+      "pattern": "1"
+    },
+    {
+      "town": "三瀬",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三瀬",
+      "jp": "三瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "山王",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山王",
+      "jp": "山王",
+      "pattern": "1"
+    },
+    {
+      "town": "山領（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山領（208号南側）",
+      "jp": "山領（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "山領（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山領（208号北側）",
+      "jp": "山領（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "市川",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "市川",
+      "jp": "市川",
+      "pattern": "1"
+    },
+    {
+      "town": "実久",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "実久",
+      "jp": "実久",
+      "pattern": "1"
+    },
+    {
+      "town": "舟津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "舟津",
+      "jp": "舟津",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住吉西",
+      "jp": "住吉西",
+      "pattern": "2"
+    },
+    {
+      "town": "住吉東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "住吉東",
+      "jp": "住吉東",
+      "pattern": "2"
+    },
+    {
+      "town": "重久",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "重久",
+      "jp": "重久",
+      "pattern": "2"
+    },
+    {
+      "town": "出羽",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "出羽",
+      "jp": "出羽",
+      "pattern": "1"
+    },
+    {
+      "town": "春日",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "春日",
+      "jp": "春日",
+      "pattern": "1"
+    },
+    {
+      "town": "春日丘",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "春日丘",
+      "jp": "春日丘",
+      "pattern": "2"
+    },
+    {
+      "town": "諸富（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "諸富（208号南側）",
+      "jp": "諸富（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "諸富（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "諸富（208号北側）",
+      "jp": "諸富（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "諸富新村（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "諸富新村（208号南側）",
+      "jp": "諸富新村（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "諸富新村（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "諸富新村（208号北側）",
+      "jp": "諸富新村（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "小々森",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小々森",
+      "jp": "小々森",
+      "pattern": "1"
+    },
+    {
+      "town": "小隈",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小隈",
+      "jp": "小隈",
+      "pattern": "1"
+    },
+    {
+      "town": "小杭（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小杭（208号南側）",
+      "jp": "小杭（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "小杭（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小杭（208号北側）",
+      "jp": "小杭（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "小川一区(北・東・西)",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小川一区(北・東・西)",
+      "jp": "小川一区(北・東・西)",
+      "pattern": "2"
+    },
+    {
+      "town": "小川団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小川団地",
+      "jp": "小川団地",
+      "pattern": "2"
+    },
+    {
+      "town": "小川内",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小川内",
+      "jp": "小川内",
+      "pattern": "1"
+    },
+    {
+      "town": "小川二区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小川二区",
+      "jp": "小川二区",
+      "pattern": "2"
+    },
+    {
+      "town": "小路",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小路",
+      "jp": "小路",
+      "pattern": "1"
+    },
+    {
+      "town": "松梅地区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松梅地区",
+      "jp": "松梅地区",
+      "pattern": "1"
+    },
+    {
+      "town": "菖蒲",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "菖蒲",
+      "jp": "菖蒲",
+      "pattern": "2"
+    },
+    {
+      "town": "上下",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上下",
+      "jp": "上下",
+      "pattern": "1"
+    },
+    {
+      "town": "上関屋",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上関屋",
+      "jp": "上関屋",
+      "pattern": "2"
+    },
+    {
+      "town": "上熊川",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上熊川",
+      "jp": "上熊川",
+      "pattern": "1"
+    },
+    {
+      "town": "上古賀",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上古賀",
+      "jp": "上古賀",
+      "pattern": "1"
+    },
+    {
+      "town": "上戸田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上戸田",
+      "jp": "上戸田",
+      "pattern": "2"
+    },
+    {
+      "town": "上恒安",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上恒安",
+      "jp": "上恒安",
+      "pattern": "1"
+    },
+    {
+      "town": "上合瀬",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上合瀬",
+      "jp": "上合瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "上小副川",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上小副川",
+      "jp": "上小副川",
+      "pattern": "2"
+    },
+    {
+      "town": "上新ヶ江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上新ヶ江",
+      "jp": "上新ヶ江",
+      "pattern": "2"
+    },
+    {
+      "town": "上早",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上早",
+      "jp": "上早",
+      "pattern": "2"
+    },
+    {
+      "town": "上大津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上大津",
+      "jp": "上大津",
+      "pattern": "2"
+    },
+    {
+      "town": "上町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町",
+      "jp": "上町",
+      "pattern": "2"
+    },
+    {
+      "town": "上町A・B",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町A・B",
+      "jp": "上町A・B",
+      "pattern": "1"
+    },
+    {
+      "town": "上都渡城",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上都渡城",
+      "jp": "上都渡城",
+      "pattern": "1"
+    },
+    {
+      "town": "上無津呂",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上無津呂",
+      "jp": "上無津呂",
+      "pattern": "2"
+    },
+    {
+      "town": "新村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新村",
+      "jp": "新村",
+      "pattern": "2"
+    },
+    {
+      "town": "新村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新村",
+      "jp": "新村",
+      "pattern": "2"
+    },
+    {
+      "town": "新村・開拓",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新村・開拓",
+      "jp": "新村・開拓",
+      "pattern": "2"
+    },
+    {
+      "town": "新町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "2"
+    },
+    {
+      "town": "新田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新田",
+      "jp": "新田",
+      "pattern": "2"
+    },
+    {
+      "town": "新道",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新道",
+      "jp": "新道",
+      "pattern": "1"
+    },
+    {
+      "town": "陣内",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "陣内",
+      "jp": "陣内",
+      "pattern": "2"
+    },
+    {
+      "town": "須田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "須田",
+      "jp": "須田",
+      "pattern": "1"
+    },
+    {
+      "town": "水上",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "水上",
+      "jp": "水上",
+      "pattern": "1"
+    },
+    {
+      "town": "杉山",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "杉山",
+      "jp": "杉山",
+      "pattern": "1"
+    },
+    {
+      "town": "精町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "精町",
+      "jp": "精町",
+      "pattern": "2"
+    },
+    {
+      "town": "西干拓",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西干拓",
+      "jp": "西干拓",
+      "pattern": "2"
+    },
+    {
+      "town": "西古賀",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西古賀",
+      "jp": "西古賀",
+      "pattern": "1"
+    },
+    {
+      "town": "西古賀団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西古賀団地",
+      "jp": "西古賀団地",
+      "pattern": "1"
+    },
+    {
+      "town": "西山田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西山田",
+      "jp": "西山田",
+      "pattern": "1"
+    },
+    {
+      "town": "西寺井",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西寺井",
+      "jp": "西寺井",
+      "pattern": "1"
+    },
+    {
+      "town": "西船津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西船津",
+      "jp": "西船津",
+      "pattern": "2"
+    },
+    {
+      "town": "西町A・B",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西町A・B",
+      "jp": "西町A・B",
+      "pattern": "1"
+    },
+    {
+      "town": "西南里",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西南里",
+      "jp": "西南里",
+      "pattern": "2"
+    },
+    {
+      "town": "西畑瀬",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西畑瀬",
+      "jp": "西畑瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "西野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西野",
+      "jp": "西野",
+      "pattern": "1"
+    },
+    {
+      "town": "西与賀町(厘外729番1号、730番8号、730番10号)",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西与賀町(厘外729番1号、730番8号、730番10号)",
+      "jp": "西与賀町(厘外729番1号、730番8号、730番10号)",
+      "pattern": "2"
+    },
+    {
+      "town": "西与賀町(厘外729番1号、730番8号、730番10号)以外",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西与賀町(厘外729番1号、730番8号、730番10号)以外",
+      "jp": "西与賀町(厘外729番1号、730番8号、730番10号)以外",
+      "pattern": "2"
+    },
+    {
+      "town": "西搦",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西搦",
+      "jp": "西搦",
+      "pattern": "1"
+    },
+    {
+      "town": "石塚",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石塚",
+      "jp": "石塚",
+      "pattern": "1"
+    },
+    {
+      "town": "千歳",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千歳",
+      "jp": "千歳",
+      "pattern": "2"
+    },
+    {
+      "town": "川上",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "川上",
+      "jp": "川上",
+      "pattern": "1"
+    },
+    {
+      "town": "船津南",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船津南",
+      "jp": "船津南",
+      "pattern": "2"
+    },
+    {
+      "town": "船津北",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "船津北",
+      "jp": "船津北",
+      "pattern": "2"
+    },
+    {
+      "town": "惣座",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惣座",
+      "jp": "惣座",
+      "pattern": "1"
+    },
+    {
+      "town": "草木田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "草木田",
+      "jp": "草木田",
+      "pattern": "1"
+    },
+    {
+      "town": "太田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太田",
+      "jp": "太田",
+      "pattern": "2"
+    },
+    {
+      "town": "駄市川原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駄市川原",
+      "jp": "駄市川原",
+      "pattern": "1"
+    },
+    {
+      "town": "大1～大10区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大1～大10区",
+      "jp": "大1～大10区",
+      "pattern": "2"
+    },
+    {
+      "town": "大願寺",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大願寺",
+      "jp": "大願寺",
+      "pattern": "2"
+    },
+    {
+      "town": "大久保",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大久保",
+      "jp": "大久保",
+      "pattern": "2"
+    },
+    {
+      "town": "大串",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大串",
+      "jp": "大串",
+      "pattern": "2"
+    },
+    {
+      "town": "大授全区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大授全区",
+      "jp": "大授全区",
+      "pattern": "2"
+    },
+    {
+      "town": "大中島",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大中島",
+      "jp": "大中島",
+      "pattern": "1"
+    },
+    {
+      "town": "大津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大津",
+      "jp": "大津",
+      "pattern": "2"
+    },
+    {
+      "town": "大堂村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大堂村",
+      "jp": "大堂村",
+      "pattern": "2"
+    },
+    {
+      "town": "大堂津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大堂津",
+      "jp": "大堂津",
+      "pattern": "2"
+    },
+    {
+      "town": "大堂渡端",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大堂渡端",
+      "jp": "大堂渡端",
+      "pattern": "2"
+    },
+    {
+      "town": "大野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野",
+      "jp": "大野",
+      "pattern": "2"
+    },
+    {
+      "town": "大野原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野原",
+      "jp": "大野原",
+      "pattern": "2"
+    },
+    {
+      "town": "大野全区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大野全区",
+      "jp": "大野全区",
+      "pattern": "2"
+    },
+    {
+      "town": "大立野東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大立野東",
+      "jp": "大立野東",
+      "pattern": "2"
+    },
+    {
+      "town": "大立野北",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大立野北",
+      "jp": "大立野北",
+      "pattern": "2"
+    },
+    {
+      "town": "大和団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大和団地",
+      "jp": "大和団地",
+      "pattern": "2"
+    },
+    {
+      "town": "鍛冶屋",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鍛冶屋",
+      "jp": "鍛冶屋",
+      "pattern": "1"
+    },
+    {
+      "town": "池上",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "池上",
+      "jp": "池上",
+      "pattern": "2"
+    },
+    {
+      "town": "中の原・山留",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中の原・山留",
+      "jp": "中の原・山留",
+      "pattern": "1"
+    },
+    {
+      "town": "中割",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中割",
+      "jp": "中割",
+      "pattern": "1"
+    },
+    {
+      "town": "中原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中原",
+      "jp": "中原",
+      "pattern": "2"
+    },
+    {
+      "town": "中早",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中早",
+      "jp": "中早",
+      "pattern": "2"
+    },
+    {
+      "town": "中村",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中村",
+      "jp": "中村",
+      "pattern": "2"
+    },
+    {
+      "town": "中町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中町",
+      "jp": "中町",
+      "pattern": "1"
+    },
+    {
+      "town": "中津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中津",
+      "jp": "中津",
+      "pattern": "2"
+    },
+    {
+      "town": "中飯盛",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中飯盛",
+      "jp": "中飯盛",
+      "pattern": "1"
+    },
+    {
+      "town": "中副",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中副",
+      "jp": "中副",
+      "pattern": "2"
+    },
+    {
+      "town": "町西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "町西",
+      "jp": "町西",
+      "pattern": "1"
+    },
+    {
+      "town": "町東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "町東",
+      "jp": "町東",
+      "pattern": "1"
+    },
+    {
+      "town": "町南",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "町南",
+      "jp": "町南",
+      "pattern": "1"
+    },
+    {
+      "town": "田中",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田中",
+      "jp": "田中",
+      "pattern": "1"
+    },
+    {
+      "town": "土師",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "土師",
+      "jp": "土師",
+      "pattern": "2"
+    },
+    {
+      "town": "東古賀1～3区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東古賀1～3区",
+      "jp": "東古賀1～3区",
+      "pattern": "2"
+    },
+    {
+      "town": "東山田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東山田",
+      "jp": "東山田",
+      "pattern": "2"
+    },
+    {
+      "town": "東寺井",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東寺井",
+      "jp": "東寺井",
+      "pattern": "1"
+    },
+    {
+      "town": "東小路",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東小路",
+      "jp": "東小路",
+      "pattern": "1"
+    },
+    {
+      "town": "東町A・B・C",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東町A・B・C",
+      "jp": "東町A・B・C",
+      "pattern": "1"
+    },
+    {
+      "town": "東南里",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東南里",
+      "jp": "東南里",
+      "pattern": "2"
+    },
+    {
+      "town": "東搦一区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東搦一区",
+      "jp": "東搦一区",
+      "pattern": "1"
+    },
+    {
+      "town": "東搦二区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東搦二区",
+      "jp": "東搦二区",
+      "pattern": "1"
+    },
+    {
+      "town": "湯の原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "湯の原",
+      "jp": "湯の原",
+      "pattern": "1"
+    },
+    {
+      "town": "藤瀬",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "藤瀬",
+      "jp": "藤瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "道免",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道免",
+      "jp": "道免",
+      "pattern": "1"
+    },
+    {
+      "town": "徳間",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "徳間",
+      "jp": "徳間",
+      "pattern": "1"
+    },
+    {
+      "town": "徳富一区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "徳富一区",
+      "jp": "徳富一区",
+      "pattern": "2"
+    },
+    {
+      "town": "徳富二区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "徳富二区",
+      "jp": "徳富二区",
+      "pattern": "2"
+    },
+    {
+      "town": "内野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内野",
+      "jp": "内野",
+      "pattern": "1"
+    },
+    {
+      "town": "楢田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "楢田",
+      "jp": "楢田",
+      "pattern": "2"
+    },
+    {
+      "town": "南1～26区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南1～26区",
+      "jp": "南1～26区",
+      "pattern": "1"
+    },
+    {
+      "town": "南小路A・B・C",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南小路A・B・C",
+      "jp": "南小路A・B・C",
+      "pattern": "1"
+    },
+    {
+      "town": "南小路団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南小路団地",
+      "jp": "南小路団地",
+      "pattern": "1"
+    },
+    {
+      "town": "南早",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南早",
+      "jp": "南早",
+      "pattern": "2"
+    },
+    {
+      "town": "尼寺団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "尼寺団地",
+      "jp": "尼寺団地",
+      "pattern": "1"
+    },
+    {
+      "town": "梅田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "梅田",
+      "jp": "梅田",
+      "pattern": "2"
+    },
+    {
+      "town": "麦新ヶ江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "麦新ヶ江",
+      "jp": "麦新ヶ江",
+      "pattern": "2"
+    },
+    {
+      "town": "八反原",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八反原",
+      "jp": "八反原",
+      "pattern": "1"
+    },
+    {
+      "town": "浮盃",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "浮盃",
+      "jp": "浮盃",
+      "pattern": "1"
+    },
+    {
+      "town": "福所",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福所",
+      "jp": "福所",
+      "pattern": "1"
+    },
+    {
+      "town": "福田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福田",
+      "jp": "福田",
+      "pattern": "1"
+    },
+    {
+      "town": "福田（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福田（208号南側）",
+      "jp": "福田（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "福田（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福田（208号北側）",
+      "jp": "福田（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "福島",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島",
+      "jp": "福島",
+      "pattern": "2"
+    },
+    {
+      "town": "福島",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島",
+      "jp": "福島",
+      "pattern": "2"
+    },
+    {
+      "town": "福富",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福富",
+      "jp": "福富",
+      "pattern": "2"
+    },
+    {
+      "town": "福富",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福富",
+      "jp": "福富",
+      "pattern": "2"
+    },
+    {
+      "town": "兵庫町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "兵庫町",
+      "jp": "兵庫町",
+      "pattern": "1"
+    },
+    {
+      "town": "平田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平田",
+      "jp": "平田",
+      "pattern": "2"
+    },
+    {
+      "town": "平野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平野",
+      "jp": "平野",
+      "pattern": "2"
+    },
+    {
+      "town": "米納津",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米納津",
+      "jp": "米納津",
+      "pattern": "2"
+    },
+    {
+      "town": "北原一区・二区・三区・四区",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北原一区・二区・三区・四区",
+      "jp": "北原一区・二区・三区・四区",
+      "pattern": "2"
+    },
+    {
+      "town": "北原団地",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北原団地",
+      "jp": "北原団地",
+      "pattern": "2"
+    },
+    {
+      "town": "北川副町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北川副町",
+      "jp": "北川副町",
+      "pattern": "1"
+    },
+    {
+      "town": "北早",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北早",
+      "jp": "北早",
+      "pattern": "2"
+    },
+    {
+      "town": "北田",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北田",
+      "jp": "北田",
+      "pattern": "1"
+    },
+    {
+      "town": "本庄町鹿子・本庄・正里（本庄町本庄カルム日新を除く）",
+      "townEn": "Karumu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町鹿子・本庄・正里（本庄町本庄カルム日新を除く）",
+      "jp": "本庄町鹿子・本庄・正里（本庄町本庄カルム日新を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "本庄町袋（97～136番・290～355番台（空港道路以西、以東の一部）を除く）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町袋（97～136番・290～355番台（空港道路以西、以東の一部）を除く）",
+      "jp": "本庄町袋（97～136番・290～355番台（空港道路以西、以東の一部）を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "本庄町袋97～136番・290～355番台（空港道路以西、以東の一部）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町袋97～136番・290～355番台（空港道路以西、以東の一部）",
+      "jp": "本庄町袋97～136番・290～355番台（空港道路以西、以東の一部）",
+      "pattern": "2"
+    },
+    {
+      "town": "本庄町本庄カルム日新",
+      "townEn": "Karumu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町本庄カルム日新",
+      "jp": "本庄町本庄カルム日新",
+      "pattern": "2"
+    },
+    {
+      "town": "本庄町末次（101～333番を除く）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町末次（101～333番を除く）",
+      "jp": "本庄町末次（101～333番を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "本庄町末次101～333番",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本庄町末次101～333番",
+      "jp": "本庄町末次101～333番",
+      "pattern": "1"
+    },
+    {
+      "town": "麻那古",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "麻那古",
+      "jp": "麻那古",
+      "pattern": "2"
+    },
+    {
+      "town": "野々古賀",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野々古賀",
+      "jp": "野々古賀",
+      "pattern": "2"
+    },
+    {
+      "town": "野口",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野口",
+      "jp": "野口",
+      "pattern": "1"
+    },
+    {
+      "town": "野町（208号南側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野町（208号南側）",
+      "jp": "野町（208号南側）",
+      "pattern": "1"
+    },
+    {
+      "town": "野町（208号北側）",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野町（208号北側）",
+      "jp": "野町（208号北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "柚木",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柚木",
+      "jp": "柚木",
+      "pattern": "1"
+    },
+    {
+      "town": "立石",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立石",
+      "jp": "立石",
+      "pattern": "2"
+    },
+    {
+      "town": "立野",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立野",
+      "jp": "立野",
+      "pattern": "1"
+    },
+    {
+      "town": "蓮池町",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蓮池町",
+      "jp": "蓮池町",
+      "pattern": "1"
+    },
+    {
+      "town": "和崎",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "和崎",
+      "jp": "和崎",
+      "pattern": "2"
+    },
+    {
+      "town": "搦西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "搦西",
+      "jp": "搦西",
+      "pattern": "2"
+    },
+    {
+      "town": "搦西",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "搦西",
+      "jp": "搦西",
+      "pattern": "2"
+    },
+    {
+      "town": "搦東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "搦東",
+      "jp": "搦東",
+      "pattern": "2"
+    },
+    {
+      "town": "搦東",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "搦東",
+      "jp": "搦東",
+      "pattern": "2"
+    },
+    {
+      "town": "苣木",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "苣木",
+      "jp": "苣木",
+      "pattern": "1"
+    },
+    {
+      "town": "鰡江",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鰡江",
+      "jp": "鰡江",
+      "pattern": "1"
+    },
+    {
+      "town": "德久",
+      "townEn": "Saga",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "德久",
+      "jp": "德久",
+      "pattern": "1"
+    },
+    {
+      "town": "愛敬町",
+      "townEn": "Aikeicho",
+      "kana": "アイケイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "愛敬町",
+      "jp": "愛敬町",
+      "pattern": "1"
+    },
+    {
+      "town": "赤松町",
+      "townEn": "Akamatsumachi",
+      "kana": "アカマツマチ",
+      "chome": null,
+      "detail": "赤松町（9番37号・12番の南側を除く）",
+      "en": "赤松町（9番37号・12番の南側を除く）",
+      "jp": "赤松町（9番37号・12番の南側を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "赤松町",
+      "townEn": "Akamatsumachi",
+      "kana": "アカマツマチ",
+      "chome": null,
+      "detail": "赤松町9番37号・12番の南側",
+      "en": "赤松町9番37号・12番の南側",
+      "jp": "赤松町9番37号・12番の南側",
+      "pattern": "2"
+    },
+    {
+      "town": "朝日町",
+      "townEn": "Asahimachi",
+      "kana": "アサヒマチ",
+      "chome": null,
+      "detail": null,
+      "en": "朝日町",
+      "jp": "朝日町",
+      "pattern": "1"
+    },
+    {
+      "town": "伊勢町",
+      "townEn": "Isemachi",
+      "kana": "イセマチ",
+      "chome": null,
+      "detail": null,
+      "en": "伊勢町",
+      "jp": "伊勢町",
+      "pattern": "2"
+    },
+    {
+      "town": "今宿町",
+      "townEn": "Imashukumachi",
+      "kana": "イマシュクマチ",
+      "chome": null,
+      "detail": null,
+      "en": "今宿町",
+      "jp": "今宿町",
+      "pattern": "1"
+    },
+    {
+      "town": "駅前中央",
+      "townEn": "Ekimaechuo",
+      "kana": "エキマエチュウオウ",
+      "chome": null,
+      "detail": "駅前中央一丁目（1番を除く）",
+      "en": "駅前中央一丁目（1番を除く）",
+      "jp": "駅前中央一丁目（1番を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "駅前中央",
+      "townEn": "Ekimaechuo",
+      "kana": "エキマエチュウオウ",
+      "chome": null,
+      "detail": "駅前中央一丁目1番",
+      "en": "駅前中央一丁目1番",
+      "jp": "駅前中央一丁目1番",
+      "pattern": "1"
+    },
+    {
+      "town": "駅前中央",
+      "townEn": "Ekimaechuo",
+      "kana": "エキマエチュウオウ",
+      "chome": null,
+      "detail": "駅前中央二・三丁目",
+      "en": "駅前中央二・三丁目",
+      "jp": "駅前中央二・三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "駅南本町",
+      "townEn": "Ekiminamihommachi",
+      "kana": "エキミナミホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "駅南本町",
+      "jp": "駅南本町",
+      "pattern": "1"
+    },
+    {
+      "town": "大財",
+      "townEn": "Otakara",
+      "kana": "オオタカラ",
+      "chome": null,
+      "detail": "大財一丁目",
+      "en": "大財一丁目",
+      "jp": "大財一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大財",
+      "townEn": "Otakara",
+      "kana": "オオタカラ",
+      "chome": null,
+      "detail": "大財三丁目",
+      "en": "大財三丁目",
+      "jp": "大財三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大財",
+      "townEn": "Otakara",
+      "kana": "オオタカラ",
+      "chome": null,
+      "detail": "大財四～六丁目（六丁目1番26～30号を除く）",
+      "en": "大財四～六丁目（六丁目1番26～30号を除く）",
+      "jp": "大財四～六丁目（六丁目1番26～30号を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "大財",
+      "townEn": "Otakara",
+      "kana": "オオタカラ",
+      "chome": null,
+      "detail": "大財二丁目",
+      "en": "大財二丁目",
+      "jp": "大財二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大財",
+      "townEn": "Otakara",
+      "kana": "オオタカラ",
+      "chome": null,
+      "detail": "大財六丁目1番26～30号",
+      "en": "大財六丁目1番26～30号",
+      "jp": "大財六丁目1番26～30号",
+      "pattern": "1"
+    },
+    {
+      "town": "大財北町",
+      "townEn": "Otakarakitamachi",
+      "kana": "オオタカラキタマチ",
+      "chome": null,
+      "detail": null,
+      "en": "大財北町",
+      "jp": "大財北町",
+      "pattern": "1"
+    },
+    {
+      "town": "鬼丸町",
+      "townEn": "Onimarucho",
+      "kana": "オニマルチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鬼丸町",
+      "jp": "鬼丸町",
+      "pattern": "2"
+    },
+    {
+      "town": "卸本町",
+      "townEn": "Oroshihommachi",
+      "kana": "オロシホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "卸本町",
+      "jp": "卸本町",
+      "pattern": "2"
+    },
+    {
+      "town": "開成",
+      "townEn": "Kaisei",
+      "kana": "カイセイ",
+      "chome": null,
+      "detail": "開成一～六丁目",
+      "en": "開成一～六丁目",
+      "jp": "開成一～六丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "嘉瀬町大字十五",
+      "townEn": "Kasemachioazajugo",
+      "kana": "カセマチオオアザジュウゴ",
+      "chome": null,
+      "detail": "嘉瀬町大字十五1555・2876・2918・2928番地",
+      "en": "嘉瀬町大字十五1555・2876・2918・2928番地",
+      "jp": "嘉瀬町大字十五1555・2876・2918・2928番地",
+      "pattern": "2"
+    },
+    {
+      "town": "神園",
+      "townEn": "Kamizono",
+      "kana": "カミゾノ",
+      "chome": null,
+      "detail": "神園一～六丁目",
+      "en": "神園一～六丁目",
+      "jp": "神園一～六丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "川原町",
+      "townEn": "Kawaharamachi",
+      "kana": "カワハラマチ",
+      "chome": null,
+      "detail": null,
+      "en": "川原町",
+      "jp": "川原町",
+      "pattern": "2"
+    },
+    {
+      "town": "木原",
+      "townEn": "Kihara",
+      "kana": "キハラ",
+      "chome": null,
+      "detail": "木原一～三丁目",
+      "en": "木原一～三丁目",
+      "jp": "木原一～三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "金立町大字金立",
+      "townEn": "Kinryumachioazakinryu",
+      "kana": "キンリュウマチオオアザキンリュウ",
+      "chome": null,
+      "detail": "金立町大字金立3493・3494・3506（大小野）",
+      "en": "金立町大字金立3493・3494・3506（大小野）",
+      "jp": "金立町大字金立3493・3494・3506（大小野）",
+      "pattern": "1"
+    },
+    {
+      "town": "金立町大字千布",
+      "townEn": "Kinryumachioazachifu",
+      "kana": "キンリュウマチオオアザチフ",
+      "chome": null,
+      "detail": "金立町大字千布4073-11ボスコ高木瀬東",
+      "en": "金立町大字千布4073-11ボスコ高木瀬東",
+      "jp": "金立町大字千布4073-11ボスコ高木瀬東",
+      "pattern": "1"
+    },
+    {
+      "town": "金立町大字薬師丸",
+      "townEn": "Kinryumachioazayakushimaru",
+      "kana": "キンリュウマチオオアザヤクシマル",
+      "chome": null,
+      "detail": "金立町大字薬師丸117・1575・1616番地",
+      "en": "金立町大字薬師丸117・1575・1616番地",
+      "jp": "金立町大字薬師丸117・1575・1616番地",
+      "pattern": "1"
+    },
+    {
+      "town": "神野西",
+      "townEn": "Kononishi",
+      "kana": "コウノニシ",
+      "chome": null,
+      "detail": "神野西一～四丁目（神野西一丁目5番を除く）",
+      "en": "神野西一～四丁目（神野西一丁目5番を除く）",
+      "jp": "神野西一～四丁目（神野西一丁目5番を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "神野西",
+      "townEn": "Kononishi",
+      "kana": "コウノニシ",
+      "chome": null,
+      "detail": "神野西一丁目5番",
+      "en": "神野西一丁目5番",
+      "jp": "神野西一丁目5番",
+      "pattern": "2"
+    },
+    {
+      "town": "神野東",
+      "townEn": "Konohigashi",
+      "kana": "コウノヒガシ",
+      "chome": null,
+      "detail": "神野東一～四丁目",
+      "en": "神野東一～四丁目",
+      "jp": "神野東一～四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "巨勢町大字東西",
+      "townEn": "Kosemachioazatosai",
+      "kana": "コセマチオオアザトウサイ",
+      "chome": null,
+      "detail": "巨勢町大字東西（東巨勢）",
+      "en": "巨勢町大字東西（東巨勢）",
+      "jp": "巨勢町大字東西（東巨勢）",
+      "pattern": "1"
+    },
+    {
+      "town": "呉服元町",
+      "townEn": "Gofukumotomachi",
+      "kana": "ゴフクモトマチ",
+      "chome": null,
+      "detail": null,
+      "en": "呉服元町",
+      "jp": "呉服元町",
+      "pattern": "1"
+    },
+    {
+      "town": "紺屋町",
+      "townEn": "Konyamachi",
+      "kana": "コンヤマチ",
+      "chome": null,
+      "detail": null,
+      "en": "紺屋町",
+      "jp": "紺屋町",
+      "pattern": "1"
+    },
+    {
+      "town": "材木",
+      "townEn": "Zaimoku",
+      "kana": "ザイモク",
+      "chome": null,
+      "detail": "材木一・二丁目",
+      "en": "材木一・二丁目",
+      "jp": "材木一・二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaemachi",
+      "kana": "サカエマチ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "1"
+    },
+    {
+      "town": "道祖元町",
+      "townEn": "Sayanomotomachi",
+      "kana": "サヤノモトマチ",
+      "chome": null,
+      "detail": null,
+      "en": "道祖元町",
+      "jp": "道祖元町",
+      "pattern": "2"
+    },
+    {
+      "town": "下田町",
+      "townEn": "Shimodamachi",
+      "kana": "シモダマチ",
+      "chome": null,
+      "detail": null,
+      "en": "下田町",
+      "jp": "下田町",
+      "pattern": "2"
+    },
+    {
+      "town": "昭栄町",
+      "townEn": "Shoeimachi",
+      "kana": "ショウエイマチ",
+      "chome": null,
+      "detail": "昭栄町（1番・3番2～4号・6～11号・4番1～13号を除く）",
+      "en": "昭栄町（1番・3番2～4号・6～11号・4番1～13号を除く）",
+      "jp": "昭栄町（1番・3番2～4号・6～11号・4番1～13号を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "昭栄町",
+      "townEn": "Shoeimachi",
+      "kana": "ショウエイマチ",
+      "chome": null,
+      "detail": "昭栄町1番・3番2～4号・6～11号・4番1～13号",
+      "en": "昭栄町1番・3番2～4号・6～11号・4番1～13号",
+      "jp": "昭栄町1番・3番2～4号・6～11号・4番1～13号",
+      "pattern": "2"
+    },
+    {
+      "town": "城内",
+      "townEn": "Jonai",
+      "kana": "ジョウナイ",
+      "chome": null,
+      "detail": "城内一・二丁目",
+      "en": "城内一・二丁目",
+      "jp": "城内一・二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "白山",
+      "townEn": "Shirayama",
+      "kana": "シラヤマ",
+      "chome": null,
+      "detail": "白山一・二丁目",
+      "en": "白山一・二丁目",
+      "jp": "白山一・二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "新栄西",
+      "townEn": "Shineinishi",
+      "kana": "シンエイニシ",
+      "chome": null,
+      "detail": "新栄西一・二丁目",
+      "en": "新栄西一・二丁目",
+      "jp": "新栄西一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "新栄東",
+      "townEn": "Shineihigashi",
+      "kana": "シンエイヒガシ",
+      "chome": null,
+      "detail": "新栄東一～四丁目",
+      "en": "新栄東一～四丁目",
+      "jp": "新栄東一～四丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "新郷本町",
+      "townEn": "Shingohommachi",
+      "kana": "シンゴウホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "新郷本町",
+      "jp": "新郷本町",
+      "pattern": "1"
+    },
+    {
+      "town": "新生町",
+      "townEn": "Shinseimachi",
+      "kana": "シンセイマチ",
+      "chome": null,
+      "detail": "新生町1・2番",
+      "en": "新生町1・2番",
+      "jp": "新生町1・2番",
+      "pattern": "2"
+    },
+    {
+      "town": "新生町",
+      "townEn": "Shinseimachi",
+      "kana": "シンセイマチ",
+      "chome": null,
+      "detail": "新生町5番",
+      "en": "新生町5番",
+      "jp": "新生町5番",
+      "pattern": "2"
+    },
+    {
+      "town": "新生町",
+      "townEn": "Shinseimachi",
+      "kana": "シンセイマチ",
+      "chome": null,
+      "detail": "新生町上記以外",
+      "en": "新生町上記以外",
+      "jp": "新生町上記以外",
+      "pattern": "2"
+    },
+    {
+      "town": "新中町",
+      "townEn": "Shinnakamachi",
+      "kana": "シンナカマチ",
+      "chome": null,
+      "detail": null,
+      "en": "新中町",
+      "jp": "新中町",
+      "pattern": "1"
+    },
+    {
+      "town": "末広",
+      "townEn": "Suehiro",
+      "kana": "スエヒロ",
+      "chome": null,
+      "detail": "末広一・二丁目",
+      "en": "末広一・二丁目",
+      "jp": "末広一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "成章町",
+      "townEn": "Seishomachi",
+      "kana": "セイショウマチ",
+      "chome": null,
+      "detail": null,
+      "en": "成章町",
+      "jp": "成章町",
+      "pattern": "1"
+    },
+    {
+      "town": "高木瀬団地",
+      "townEn": "Takakisedanchi",
+      "kana": "タカキセダンチ",
+      "chome": null,
+      "detail": null,
+      "en": "高木瀬団地",
+      "jp": "高木瀬団地",
+      "pattern": "2"
+    },
+    {
+      "town": "高木瀬西",
+      "townEn": "Takakisenishi",
+      "kana": "タカキセニシ",
+      "chome": null,
+      "detail": "高木瀬西一～六丁目",
+      "en": "高木瀬西一～六丁目",
+      "jp": "高木瀬西一～六丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "高木瀬東",
+      "townEn": "Takakisehigashi",
+      "kana": "タカキセヒガシ",
+      "chome": null,
+      "detail": "高木瀬東一～六丁目",
+      "en": "高木瀬東一～六丁目",
+      "jp": "高木瀬東一～六丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "高木瀬町大字長瀬",
+      "townEn": "Takakisemachioazanagase",
+      "kana": "タカキセマチオオアザナガセ",
+      "chome": null,
+      "detail": "高木瀬町大字長瀬新263号線バイパス以西",
+      "en": "高木瀬町大字長瀬新263号線バイパス以西",
+      "jp": "高木瀬町大字長瀬新263号線バイパス以西",
+      "pattern": "2"
+    },
+    {
+      "town": "高木瀬町大字長瀬",
+      "townEn": "Takakisemachioazanagase",
+      "kana": "タカキセマチオオアザナガセ",
+      "chome": null,
+      "detail": "高木瀬町大字長瀬新263号線バイパス以東",
+      "en": "高木瀬町大字長瀬新263号線バイパス以東",
+      "jp": "高木瀬町大字長瀬新263号線バイパス以東",
+      "pattern": "1"
+    },
+    {
+      "town": "高木瀬町大字東高木",
+      "townEn": "Takakisemachioazahigashitakagi",
+      "kana": "タカキセマチオオアザヒガシタカギ",
+      "chome": null,
+      "detail": "高木瀬町大字東高木 231番○○号、223-8（サーパス夢咲公園）、221-1（オービジョン夢咲公園）、221-3（オービジョン夢咲公園Ⅱ）※34号線以南にも東高木がある",
+      "en": "高木瀬町大字東高木 231番○○号、223-8（サーパス夢咲公園）、221-1（オービジョン夢咲公園）、221-3（オービジョン夢咲公園Ⅱ）※34号線以南にも東高木がある",
+      "jp": "高木瀬町大字東高木 231番○○号、223-8（サーパス夢咲公園）、221-1（オービジョン夢咲公園）、221-3（オービジョン夢咲公園Ⅱ）※34号線以南にも東高木がある",
+      "pattern": "1"
+    },
+    {
+      "town": "高木瀬町大字東高木",
+      "townEn": "Takakisemachioazahigashitakagi",
+      "kana": "タカキセマチオオアザヒガシタカギ",
+      "chome": null,
+      "detail": "高木瀬町大字東高木 上記以外",
+      "en": "高木瀬町大字東高木 上記以外",
+      "jp": "高木瀬町大字東高木 上記以外",
+      "pattern": "1"
+    },
+    {
+      "town": "高木町",
+      "townEn": "Takagimachi",
+      "kana": "タカギマチ",
+      "chome": null,
+      "detail": null,
+      "en": "高木町",
+      "jp": "高木町",
+      "pattern": "1"
+    },
+    {
+      "town": "田代",
+      "townEn": "Tashiro",
+      "kana": "タシロ",
+      "chome": null,
+      "detail": "田代一・二丁目",
+      "en": "田代一・二丁目",
+      "jp": "田代一・二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "多布施",
+      "townEn": "Tafuse",
+      "kana": "タフセ",
+      "chome": null,
+      "detail": "多布施一・二丁目",
+      "en": "多布施一・二丁目",
+      "jp": "多布施一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "多布施",
+      "townEn": "Tafuse",
+      "kana": "タフセ",
+      "chome": null,
+      "detail": "多布施三丁目",
+      "en": "多布施三丁目",
+      "jp": "多布施三丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "多布施",
+      "townEn": "Tafuse",
+      "kana": "タフセ",
+      "chome": null,
+      "detail": "多布施四丁目",
+      "en": "多布施四丁目",
+      "jp": "多布施四丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "中央本町",
+      "townEn": "Chuohommachi",
+      "kana": "チュウオウホンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "中央本町",
+      "jp": "中央本町",
+      "pattern": "1"
+    },
+    {
+      "town": "天神",
+      "townEn": "Tenjin",
+      "kana": "テンジン",
+      "chome": null,
+      "detail": "天神一～三丁目",
+      "en": "天神一～三丁目",
+      "jp": "天神一～三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "天祐",
+      "townEn": "Tenyu",
+      "kana": "テンユウ",
+      "chome": null,
+      "detail": "天祐一・二丁目",
+      "en": "天祐一・二丁目",
+      "jp": "天祐一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "天祐団地",
+      "townEn": "Tenyudanchi",
+      "kana": "テンユウダンチ",
+      "chome": null,
+      "detail": null,
+      "en": "天祐団地",
+      "jp": "天祐団地",
+      "pattern": "2"
+    },
+    {
+      "town": "唐人",
+      "townEn": "Tojin",
+      "kana": "トウジン",
+      "chome": null,
+      "detail": "唐人一・二丁目",
+      "en": "唐人一・二丁目",
+      "jp": "唐人一・二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中折町",
+      "townEn": "Nakaoremachi",
+      "kana": "ナカオレマチ",
+      "chome": null,
+      "detail": "中折町（7～12番を除く）",
+      "en": "中折町（7～12番を除く）",
+      "jp": "中折町（7～12番を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "中折町",
+      "townEn": "Nakaoremachi",
+      "kana": "ナカオレマチ",
+      "chome": null,
+      "detail": "中折町7～12番",
+      "en": "中折町7～12番",
+      "jp": "中折町7～12番",
+      "pattern": "2"
+    },
+    {
+      "town": "長瀬町",
+      "townEn": "Nagasemachi",
+      "kana": "ナガセマチ",
+      "chome": null,
+      "detail": "長瀬町(7番12号 ~ 25号)",
+      "en": "長瀬町(7番12号 ~ 25号)",
+      "jp": "長瀬町(7番12号 ~ 25号)",
+      "pattern": "2"
+    },
+    {
+      "town": "長瀬町",
+      "townEn": "Nagasemachi",
+      "kana": "ナガセマチ",
+      "chome": null,
+      "detail": "長瀬町(7番12号 ~ 25号以外)",
+      "en": "長瀬町(7番12号 ~ 25号以外)",
+      "jp": "長瀬町(7番12号 ~ 25号以外)",
+      "pattern": "2"
+    },
+    {
+      "town": "中の小路",
+      "townEn": "Nakanokoji",
+      "kana": "ナカノコウジ",
+      "chome": null,
+      "detail": null,
+      "en": "中の小路",
+      "jp": "中の小路",
+      "pattern": "1"
+    },
+    {
+      "town": "中の館町",
+      "townEn": "Nakanotatemachi",
+      "kana": "ナカノタテマチ",
+      "chome": null,
+      "detail": null,
+      "en": "中の館町",
+      "jp": "中の館町",
+      "pattern": "1"
+    },
+    {
+      "town": "鍋島",
+      "townEn": "Nabeshima",
+      "kana": "ナベシマ",
+      "chome": null,
+      "detail": "鍋島一丁目～六丁目",
+      "en": "鍋島一丁目～六丁目",
+      "jp": "鍋島一丁目～六丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字蛎久",
+      "townEn": "Nabeshimamachioazakakihisa",
+      "kana": "ナベシママチオオアザカキヒサ",
+      "chome": null,
+      "detail": "鍋島町大字蛎久（647-22を除く）",
+      "en": "鍋島町大字蛎久（647-22を除く）",
+      "jp": "鍋島町大字蛎久（647-22を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字蛎久",
+      "townEn": "Nabeshimamachioazakakihisa",
+      "kana": "ナベシママチオオアザカキヒサ",
+      "chome": null,
+      "detail": "鍋島町大字蛎久644-22",
+      "en": "鍋島町大字蛎久644-22",
+      "jp": "鍋島町大字蛎久644-22",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字鍋島",
+      "townEn": "Nabeshimamachioazanabeshima",
+      "kana": "ナベシママチオオアザナベシマ",
+      "chome": null,
+      "detail": "鍋島町大字鍋島　331番地、704番地周辺、1780～1795（木ノ角自治会）",
+      "en": "鍋島町大字鍋島　331番地、704番地周辺、1780～1795（木ノ角自治会）",
+      "jp": "鍋島町大字鍋島　331番地、704番地周辺、1780～1795（木ノ角自治会）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字鍋島",
+      "townEn": "Nabeshimamachioazanabeshima",
+      "kana": "ナベシママチオオアザナベシマ",
+      "chome": null,
+      "detail": "鍋島町大字鍋島（331番地、704番地周辺、1780～1795（木ノ角自治会）を除く）",
+      "en": "鍋島町大字鍋島（331番地、704番地周辺、1780～1795（木ノ角自治会）を除く）",
+      "jp": "鍋島町大字鍋島（331番地、704番地周辺、1780～1795（木ノ角自治会）を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字森田",
+      "townEn": "Nabeshimamachioazamorita",
+      "kana": "ナベシママチオオアザモリタ",
+      "chome": null,
+      "detail": "鍋島町大字森田（27-4付近、27-5付近、360～394番地（江頭自治会）を除く）",
+      "en": "鍋島町大字森田（27-4付近、27-5付近、360～394番地（江頭自治会）を除く）",
+      "jp": "鍋島町大字森田（27-4付近、27-5付近、360～394番地（江頭自治会）を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字森田",
+      "townEn": "Nabeshimamachioazamorita",
+      "kana": "ナベシママチオオアザモリタ",
+      "chome": null,
+      "detail": "鍋島町大字森田27-4付近、27-5付近、360～394番地（江頭自治会）",
+      "en": "鍋島町大字森田27-4付近、27-5付近、360～394番地（江頭自治会）",
+      "jp": "鍋島町大字森田27-4付近、27-5付近、360～394番地（江頭自治会）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字八戸",
+      "townEn": "Nabeshimamachioazayae",
+      "kana": "ナベシママチオオアザヤエ",
+      "chome": null,
+      "detail": "鍋島町大字八戸（1610番8～13号・1614番8～9号・1620番1号・1623番1号を除く）",
+      "en": "鍋島町大字八戸（1610番8～13号・1614番8～9号・1620番1号・1623番1号を除く）",
+      "jp": "鍋島町大字八戸（1610番8～13号・1614番8～9号・1620番1号・1623番1号を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字八戸",
+      "townEn": "Nabeshimamachioazayae",
+      "kana": "ナベシママチオオアザヤエ",
+      "chome": null,
+      "detail": "鍋島町大字八戸1610番8～13号・1614番8～9号・1620番1号・1623番1号",
+      "en": "鍋島町大字八戸1610番8～13号・1614番8～9号・1620番1号・1623番1号",
+      "jp": "鍋島町大字八戸1610番8～13号・1614番8～9号・1620番1号・1623番1号",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字八戸溝",
+      "townEn": "Nabeshimamachioazayaemizo",
+      "kana": "ナベシママチオオアザヤエミゾ",
+      "chome": null,
+      "detail": "鍋島町大字八戸溝 国道34号線以南（番地が4桁）",
+      "en": "鍋島町大字八戸溝 国道34号線以南（番地が4桁）",
+      "jp": "鍋島町大字八戸溝 国道34号線以南（番地が4桁）",
+      "pattern": "2"
+    },
+    {
+      "town": "鍋島町大字八戸溝",
+      "townEn": "Nabeshimamachioazayaemizo",
+      "kana": "ナベシママチオオアザヤエミゾ",
+      "chome": null,
+      "detail": "鍋島町大字八戸溝 国道34号線以北（番地が3桁）",
+      "en": "鍋島町大字八戸溝 国道34号線以北（番地が3桁）",
+      "jp": "鍋島町大字八戸溝 国道34号線以北（番地が3桁）",
+      "pattern": "2"
+    },
+    {
+      "town": "西魚町",
+      "townEn": "Nishiuomachi",
+      "kana": "ニシウオマチ",
+      "chome": null,
+      "detail": null,
+      "en": "西魚町",
+      "jp": "西魚町",
+      "pattern": "2"
+    },
+    {
+      "town": "西田代",
+      "townEn": "Nishitashiro",
+      "kana": "ニシタシロ",
+      "chome": null,
+      "detail": "西田代一・二丁目",
+      "en": "西田代一・二丁目",
+      "jp": "西田代一・二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "八幡小路",
+      "townEn": "Hachimankoji",
+      "kana": "ハチマンコウジ",
+      "chome": null,
+      "detail": null,
+      "en": "八幡小路",
+      "jp": "八幡小路",
+      "pattern": "1"
+    },
+    {
+      "town": "八丁畷町",
+      "townEn": "Hatchonawatemachi",
+      "kana": "ハッチョウナワテマチ",
+      "chome": null,
+      "detail": null,
+      "en": "八丁畷町",
+      "jp": "八丁畷町",
+      "pattern": "1"
+    },
+    {
+      "town": "東佐賀町",
+      "townEn": "Higashisagamachi",
+      "kana": "ヒガシサガマチ",
+      "chome": null,
+      "detail": null,
+      "en": "東佐賀町",
+      "jp": "東佐賀町",
+      "pattern": "1"
+    },
+    {
+      "town": "光",
+      "townEn": "Hikari",
+      "kana": "ヒカリ",
+      "chome": null,
+      "detail": "光一～三丁目",
+      "en": "光一～三丁目",
+      "jp": "光一～三丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "日の出",
+      "townEn": "Hinode",
+      "kana": "ヒノデ",
+      "chome": null,
+      "detail": "日の出一・二丁目（一丁目6番・9番～15番を除く）",
+      "en": "日の出一・二丁目（一丁目6番・9番～15番を除く）",
+      "jp": "日の出一・二丁目（一丁目6番・9番～15番を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "日の出",
+      "townEn": "Hinode",
+      "kana": "ヒノデ",
+      "chome": null,
+      "detail": "日の出一丁目6番・9番～15番",
+      "en": "日の出一丁目6番・9番～15番",
+      "jp": "日の出一丁目6番・9番～15番",
+      "pattern": "1"
+    },
+    {
+      "town": "兵庫北",
+      "townEn": "Hyogokita",
+      "kana": "ヒョウゴキタ",
+      "chome": null,
+      "detail": "兵庫北一～七丁目（一丁目1～4番を除く）",
+      "en": "兵庫北一～七丁目（一丁目1～4番を除く）",
+      "jp": "兵庫北一～七丁目（一丁目1～4番を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "兵庫北",
+      "townEn": "Hyogokita",
+      "kana": "ヒョウゴキタ",
+      "chome": null,
+      "detail": "兵庫北一丁目1～4番",
+      "en": "兵庫北一丁目1～4番",
+      "jp": "兵庫北一丁目1～4番",
+      "pattern": "1"
+    },
+    {
+      "town": "兵庫南",
+      "townEn": "Hyogominami",
+      "kana": "ヒョウゴミナミ",
+      "chome": null,
+      "detail": "兵庫南一～四丁目",
+      "en": "兵庫南一～四丁目",
+      "jp": "兵庫南一～四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "堀川町",
+      "townEn": "Horikawacho",
+      "kana": "ホリカワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "堀川町",
+      "jp": "堀川町",
+      "pattern": "1"
+    },
+    {
+      "town": "松原",
+      "townEn": "Matsubara",
+      "kana": "マツバラ",
+      "chome": null,
+      "detail": "松原一～三丁目",
+      "en": "松原一～三丁目",
+      "jp": "松原一～三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "松原",
+      "townEn": "Matsubara",
+      "kana": "マツバラ",
+      "chome": null,
+      "detail": "松原四丁目",
+      "en": "松原四丁目",
+      "jp": "松原四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "水ヶ江",
+      "townEn": "Mizugae",
+      "kana": "ミズガエ",
+      "chome": null,
+      "detail": "水ヶ江一～六丁目（五丁目6番28～40号を除く）",
+      "en": "水ヶ江一～六丁目（五丁目6番28～40号を除く）",
+      "jp": "水ヶ江一～六丁目（五丁目6番28～40号を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "水ヶ江",
+      "townEn": "Mizugae",
+      "kana": "ミズガエ",
+      "chome": null,
+      "detail": "水ヶ江五丁目6番28～40号、5番30号付近",
+      "en": "水ヶ江五丁目6番28～40号、5番30号付近",
+      "jp": "水ヶ江五丁目6番28～40号、5番30号付近",
+      "pattern": "1"
+    },
+    {
+      "town": "緑小路",
+      "townEn": "Midorikoji",
+      "kana": "ミドリコウジ",
+      "chome": null,
+      "detail": null,
+      "en": "緑小路",
+      "jp": "緑小路",
+      "pattern": "2"
+    },
+    {
+      "town": "南佐賀",
+      "townEn": "Minamisaga",
+      "kana": "ミナミサガ",
+      "chome": null,
+      "detail": "南佐賀一～三丁目",
+      "en": "南佐賀一～三丁目",
+      "jp": "南佐賀一～三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "八戸",
+      "townEn": "Yae",
+      "kana": "ヤエ",
+      "chome": null,
+      "detail": "八戸一・二丁目（一丁目6番1・2号を除く）",
+      "en": "八戸一・二丁目（一丁目6番1・2号を除く）",
+      "jp": "八戸一・二丁目（一丁目6番1・2号を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "八戸",
+      "townEn": "Yae",
+      "kana": "ヤエ",
+      "chome": null,
+      "detail": "八戸一丁目6番1・2号",
+      "en": "八戸一丁目6番1・2号",
+      "jp": "八戸一丁目6番1・2号",
+      "pattern": "2"
+    },
+    {
+      "town": "八戸溝",
+      "townEn": "Yaemizo",
+      "kana": "ヤエミゾ",
+      "chome": null,
+      "detail": "八戸溝一～三丁目",
+      "en": "八戸溝一～三丁目",
+      "jp": "八戸溝一～三丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "柳町",
+      "townEn": "Yanagimachi",
+      "kana": "ヤナギマチ",
+      "chome": null,
+      "detail": null,
+      "en": "柳町",
+      "jp": "柳町",
+      "pattern": "1"
+    },
+    {
+      "town": "与賀町",
+      "townEn": "Yokamachi",
+      "kana": "ヨカマチ",
+      "chome": null,
+      "detail": "与賀町（1番13～31号・2番64～102号を除く）",
+      "en": "与賀町（1番13～31号・2番64～102号を除く）",
+      "jp": "与賀町（1番13～31号・2番64～102号を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "与賀町",
+      "townEn": "Yokamachi",
+      "kana": "ヨカマチ",
+      "chome": null,
+      "detail": "与賀町1番13～31号・2番64～102号",
+      "en": "与賀町1番13～31号・2番64～102号",
+      "jp": "与賀町1番13～31号・2番64～102号",
+      "pattern": "1"
+    },
+    {
+      "town": "六座町",
+      "townEn": "Rokuzamachi",
+      "kana": "ロクザマチ",
+      "chome": null,
+      "detail": null,
+      "en": "六座町",
+      "jp": "六座町",
+      "pattern": "2"
+    },
+    {
+      "town": "若楠",
+      "townEn": "Wakakusu",
+      "kana": "ワカクス",
+      "chome": null,
+      "detail": "若楠一～三丁目",
+      "en": "若楠一～三丁目",
+      "jp": "若楠一～三丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Wakamiya",
+      "kana": "ワカミヤ",
+      "chome": null,
+      "detail": "若宮一～三丁目",
+      "en": "若宮一～三丁目",
+      "jp": "若宮一～三丁目",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://saga.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,2177 @@
+{
+  "id": "kumagaya-11202",
+  "code": "11202",
+  "pref": "11",
+  "jp": "熊谷市",
+  "en": "Kumagaya",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kumagaya.5374.jp/data/area_days.csv",
+    "http://kumagaya.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「木の枝」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「本」 under 「資源物（紙類）」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源物（紙類）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル（PETボトル識別マーク有）」 under 「ペットボトルの日」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「鍋」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かみそり」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食品トレイ」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「その他」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「ビンの日」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光管（直管形・丸形・電球形）」 under 「有害ごみ（拠点回収）」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「天ぷら油」 under 「燃えるごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「布団」 under 「燃えるごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          5
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          1
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          5
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          1
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          2
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          4
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          4
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          3
+        ],
+        "paper": [
+          3
+        ]
+      },
+      "9": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          2
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "10": {
+        "burnable": [
+          2,
+          5
+        ],
+        "oversized": [
+          1
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "11": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          3
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "12": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          2
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "13": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          2
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "14": {
+        "burnable": [
+          1,
+          4
+        ],
+        "oversized": [
+          3
+        ],
+        "paper": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "善ケ島",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "善ケ島",
+      "jp": "善ケ島",
+      "pattern": "11"
+    },
+    {
+      "town": "道ケ谷戸",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "道ケ谷戸",
+      "jp": "道ケ谷戸",
+      "pattern": "5"
+    },
+    {
+      "town": "相上",
+      "townEn": "Aiage",
+      "kana": "アイアゲ",
+      "chome": null,
+      "detail": null,
+      "en": "相上",
+      "jp": "相上",
+      "pattern": "1"
+    },
+    {
+      "town": "赤城町",
+      "townEn": "Akagicho",
+      "kana": "アカギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "赤城町",
+      "jp": "赤城町",
+      "pattern": "2"
+    },
+    {
+      "town": "曙町",
+      "townEn": "Akebonocho",
+      "kana": "アケボノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "曙町",
+      "jp": "曙町",
+      "pattern": "3"
+    },
+    {
+      "town": "飯塚",
+      "townEn": "Iizuka",
+      "kana": "イイヅカ",
+      "chome": null,
+      "detail": "飯塚（県道127号線西）",
+      "en": "飯塚（県道127号線西）",
+      "jp": "飯塚（県道127号線西）",
+      "pattern": "4"
+    },
+    {
+      "town": "飯塚",
+      "townEn": "Iizuka",
+      "kana": "イイヅカ",
+      "chome": null,
+      "detail": "飯塚（県道127号線東）",
+      "en": "飯塚（県道127号線東）",
+      "jp": "飯塚（県道127号線東）",
+      "pattern": "5"
+    },
+    {
+      "town": "池上",
+      "townEn": "Ikegami",
+      "kana": "イケガミ",
+      "chome": null,
+      "detail": null,
+      "en": "池上",
+      "jp": "池上",
+      "pattern": "6"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原（高崎線南，旧秩父街道北）",
+      "en": "石原（高崎線南，旧秩父街道北）",
+      "jp": "石原（高崎線南，旧秩父街道北）",
+      "pattern": "2"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原（高崎線北，旧秩父街道北）",
+      "en": "石原（高崎線北，旧秩父街道北）",
+      "jp": "石原（高崎線北，旧秩父街道北）",
+      "pattern": "8"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原（高崎線北，国道140号・407号線西）",
+      "en": "石原（高崎線北，国道140号・407号線西）",
+      "jp": "石原（高崎線北，国道140号・407号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原（上越新幹線南）",
+      "en": "石原（上越新幹線南）",
+      "jp": "石原（上越新幹線南）",
+      "pattern": "2"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原（上越新幹線北，旧秩父街道南）",
+      "en": "石原（上越新幹線北，旧秩父街道南）",
+      "jp": "石原（上越新幹線北，旧秩父街道南）",
+      "pattern": "9"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原1丁目（国道17号線南）",
+      "en": "石原1丁目（国道17号線南）",
+      "jp": "石原1丁目（国道17号線南）",
+      "pattern": "9"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原1丁目（国道17号線北）",
+      "en": "石原1丁目（国道17号線北）",
+      "jp": "石原1丁目（国道17号線北）",
+      "pattern": "8"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原2丁目",
+      "en": "石原2丁目",
+      "jp": "石原2丁目",
+      "pattern": "9"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原3丁目（北大通り南）",
+      "en": "石原3丁目（北大通り南）",
+      "jp": "石原3丁目（北大通り南）",
+      "pattern": "9"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishihara",
+      "kana": "イシハラ",
+      "chome": null,
+      "detail": "石原3丁目（北大通り北）",
+      "en": "石原3丁目（北大通り北）",
+      "jp": "石原3丁目（北大通り北）",
+      "pattern": "8"
+    },
+    {
+      "town": "伊勢町",
+      "townEn": "Isecho",
+      "kana": "イセチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "伊勢町",
+      "jp": "伊勢町",
+      "pattern": "2"
+    },
+    {
+      "town": "板井",
+      "townEn": "Itai",
+      "kana": "イタイ",
+      "chome": null,
+      "detail": null,
+      "en": "板井",
+      "jp": "板井",
+      "pattern": "10"
+    },
+    {
+      "town": "市ノ坪",
+      "townEn": "Ichinotsubo",
+      "kana": "イチノツボ",
+      "chome": null,
+      "detail": "市ノ坪（県道127号線南）",
+      "en": "市ノ坪（県道127号線南）",
+      "jp": "市ノ坪（県道127号線南）",
+      "pattern": "5"
+    },
+    {
+      "town": "市ノ坪",
+      "townEn": "Ichinotsubo",
+      "kana": "イチノツボ",
+      "chome": null,
+      "detail": "市ノ坪（県道127号線北）",
+      "en": "市ノ坪（県道127号線北）",
+      "jp": "市ノ坪（県道127号線北）",
+      "pattern": "4"
+    },
+    {
+      "town": "今井",
+      "townEn": "Imai",
+      "kana": "イマイ",
+      "chome": null,
+      "detail": null,
+      "en": "今井",
+      "jp": "今井",
+      "pattern": "6"
+    },
+    {
+      "town": "江波",
+      "townEn": "Enami",
+      "kana": "エナミ",
+      "chome": null,
+      "detail": "江波（県道303号線西）",
+      "en": "江波（県道303号線西）",
+      "jp": "江波（県道303号線西）",
+      "pattern": "12"
+    },
+    {
+      "town": "江波",
+      "townEn": "Enami",
+      "kana": "エナミ",
+      "chome": null,
+      "detail": "江波（県道303号線東）",
+      "en": "江波（県道303号線東）",
+      "jp": "江波（県道303号線東）",
+      "pattern": "11"
+    },
+    {
+      "town": "榎町",
+      "townEn": "Enokicho",
+      "kana": "エノキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "榎町",
+      "jp": "榎町",
+      "pattern": "2"
+    },
+    {
+      "town": "円光",
+      "townEn": "Enko",
+      "kana": "エンコウ",
+      "chome": null,
+      "detail": null,
+      "en": "円光",
+      "jp": "円光",
+      "pattern": "8"
+    },
+    {
+      "town": "小江川",
+      "townEn": "Oegawa",
+      "kana": "オエガワ",
+      "chome": null,
+      "detail": null,
+      "en": "小江川",
+      "jp": "小江川",
+      "pattern": "10"
+    },
+    {
+      "town": "大麻生",
+      "townEn": "Oaso",
+      "kana": "オオアソウ",
+      "chome": null,
+      "detail": null,
+      "en": "大麻生",
+      "jp": "大麻生",
+      "pattern": "2"
+    },
+    {
+      "town": "太井",
+      "townEn": "Oi",
+      "kana": "オオイ",
+      "chome": null,
+      "detail": null,
+      "en": "太井",
+      "jp": "太井",
+      "pattern": "3"
+    },
+    {
+      "town": "大塚",
+      "townEn": "Otsuka",
+      "kana": "オオツカ",
+      "chome": null,
+      "detail": null,
+      "en": "大塚",
+      "jp": "大塚",
+      "pattern": "6"
+    },
+    {
+      "town": "大野",
+      "townEn": "Ono",
+      "kana": "オオノ",
+      "chome": null,
+      "detail": null,
+      "en": "大野",
+      "jp": "大野",
+      "pattern": "11"
+    },
+    {
+      "town": "大原",
+      "townEn": "Ohara",
+      "kana": "オオハラ",
+      "chome": null,
+      "detail": null,
+      "en": "大原",
+      "jp": "大原",
+      "pattern": "8"
+    },
+    {
+      "town": "押切",
+      "townEn": "Oshikiri",
+      "kana": "オシキリ",
+      "chome": null,
+      "detail": null,
+      "en": "押切",
+      "jp": "押切",
+      "pattern": "10"
+    },
+    {
+      "town": "小曽根",
+      "townEn": "Ozone",
+      "kana": "オゾネ",
+      "chome": null,
+      "detail": null,
+      "en": "小曽根",
+      "jp": "小曽根",
+      "pattern": "6"
+    },
+    {
+      "town": "男沼",
+      "townEn": "Onuma",
+      "kana": "オヌマ",
+      "chome": null,
+      "detail": null,
+      "en": "男沼",
+      "jp": "男沼",
+      "pattern": "4"
+    },
+    {
+      "town": "柿沼",
+      "townEn": "Kakinuma",
+      "kana": "カキヌマ",
+      "chome": null,
+      "detail": "柿沼（熊谷バイパス南）",
+      "en": "柿沼（熊谷バイパス南）",
+      "jp": "柿沼（熊谷バイパス南）",
+      "pattern": "8"
+    },
+    {
+      "town": "柿沼",
+      "townEn": "Kakinuma",
+      "kana": "カキヌマ",
+      "chome": null,
+      "detail": "柿沼（熊谷バイパス北，県道341号線西）",
+      "en": "柿沼（熊谷バイパス北，県道341号線西）",
+      "jp": "柿沼（熊谷バイパス北，県道341号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "柿沼",
+      "townEn": "Kakinuma",
+      "kana": "カキヌマ",
+      "chome": null,
+      "detail": "柿沼（熊谷バイパス北，県道341号線東）",
+      "en": "柿沼（熊谷バイパス北，県道341号線東）",
+      "jp": "柿沼（熊谷バイパス北，県道341号線東）",
+      "pattern": "6"
+    },
+    {
+      "town": "籠原南",
+      "townEn": "Kagoharaminami",
+      "kana": "カゴハラミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "籠原南",
+      "jp": "籠原南",
+      "pattern": "2"
+    },
+    {
+      "town": "冑山",
+      "townEn": "Kabutoyama",
+      "kana": "カブトヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "冑山",
+      "jp": "冑山",
+      "pattern": "1"
+    },
+    {
+      "town": "鎌倉町",
+      "townEn": "Kamakuracho",
+      "kana": "カマクラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鎌倉町",
+      "jp": "鎌倉町",
+      "pattern": "13"
+    },
+    {
+      "town": "上江袋",
+      "townEn": "Kamiebukuro",
+      "kana": "カミエブクロ",
+      "chome": null,
+      "detail": null,
+      "en": "上江袋",
+      "jp": "上江袋",
+      "pattern": "5"
+    },
+    {
+      "town": "上恩田",
+      "townEn": "Kamionda",
+      "kana": "カミオンダ",
+      "chome": null,
+      "detail": null,
+      "en": "上恩田",
+      "jp": "上恩田",
+      "pattern": "1"
+    },
+    {
+      "town": "上川上",
+      "townEn": "Kamikawakami",
+      "kana": "カミカワカミ",
+      "chome": null,
+      "detail": "上川上（熊谷バイパス南）",
+      "en": "上川上（熊谷バイパス南）",
+      "jp": "上川上（熊谷バイパス南）",
+      "pattern": "14"
+    },
+    {
+      "town": "上川上",
+      "townEn": "Kamikawakami",
+      "kana": "カミカワカミ",
+      "chome": null,
+      "detail": "上川上（熊谷バイパス北）",
+      "en": "上川上（熊谷バイパス北）",
+      "jp": "上川上（熊谷バイパス北）",
+      "pattern": "6"
+    },
+    {
+      "town": "上新田",
+      "townEn": "Kamishinden",
+      "kana": "カミシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "上新田",
+      "jp": "上新田",
+      "pattern": "10"
+    },
+    {
+      "town": "上須戸",
+      "townEn": "Kamisudo",
+      "kana": "カミスド",
+      "chome": null,
+      "detail": "上須戸（県道303号線南・西）",
+      "en": "上須戸（県道303号線南・西）",
+      "jp": "上須戸（県道303号線南・西）",
+      "pattern": "12"
+    },
+    {
+      "town": "上須戸",
+      "townEn": "Kamisudo",
+      "kana": "カミスド",
+      "chome": null,
+      "detail": "上須戸（県道303号線北・東）",
+      "en": "上須戸（県道303号線北・東）",
+      "jp": "上須戸（県道303号線北・東）",
+      "pattern": "11"
+    },
+    {
+      "town": "上中条",
+      "townEn": "Kamichujo",
+      "kana": "カミチュウジョウ",
+      "chome": null,
+      "detail": null,
+      "en": "上中条",
+      "jp": "上中条",
+      "pattern": "6"
+    },
+    {
+      "town": "上奈良",
+      "townEn": "Kaminara",
+      "kana": "カミナラ",
+      "chome": null,
+      "detail": null,
+      "en": "上奈良",
+      "jp": "上奈良",
+      "pattern": "7"
+    },
+    {
+      "town": "上根",
+      "townEn": "Kamine",
+      "kana": "カミネ",
+      "chome": null,
+      "detail": "上根（県道341号線西）",
+      "en": "上根（県道341号線西）",
+      "jp": "上根（県道341号線西）",
+      "pattern": "5"
+    },
+    {
+      "town": "上根",
+      "townEn": "Kamine",
+      "kana": "カミネ",
+      "chome": null,
+      "detail": "上根（県道341号線東）",
+      "en": "上根（県道341号線東）",
+      "jp": "上根（県道341号線東）",
+      "pattern": "12"
+    },
+    {
+      "town": "上之",
+      "townEn": "Kamino",
+      "kana": "カミノ",
+      "chome": null,
+      "detail": "上之（熊谷バイパス南，熊谷東中南）",
+      "en": "上之（熊谷バイパス南，熊谷東中南）",
+      "jp": "上之（熊谷バイパス南，熊谷東中南）",
+      "pattern": "3"
+    },
+    {
+      "town": "上之",
+      "townEn": "Kamino",
+      "kana": "カミノ",
+      "chome": null,
+      "detail": "上之（熊谷バイパス南，熊谷東中北）",
+      "en": "上之（熊谷バイパス南，熊谷東中北）",
+      "jp": "上之（熊谷バイパス南，熊谷東中北）",
+      "pattern": "14"
+    },
+    {
+      "town": "上之",
+      "townEn": "Kamino",
+      "kana": "カミノ",
+      "chome": null,
+      "detail": "上之（熊谷バイパス北）",
+      "en": "上之（熊谷バイパス北）",
+      "jp": "上之（熊谷バイパス北）",
+      "pattern": "6"
+    },
+    {
+      "town": "川原明戸",
+      "townEn": "Kawaharaaketo",
+      "kana": "カワラアケト",
+      "chome": null,
+      "detail": null,
+      "en": "川原明戸",
+      "jp": "川原明戸",
+      "pattern": "2"
+    },
+    {
+      "town": "河原町",
+      "townEn": "Kawaracho",
+      "kana": "カワラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "河原町",
+      "jp": "河原町",
+      "pattern": "3"
+    },
+    {
+      "town": "吉所敷",
+      "townEn": "Kishoshiki",
+      "kana": "キショシキ",
+      "chome": null,
+      "detail": null,
+      "en": "吉所敷",
+      "jp": "吉所敷",
+      "pattern": "1"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": null,
+      "detail": "銀座（国道17号線南）",
+      "en": "銀座（国道17号線南）",
+      "jp": "銀座（国道17号線南）",
+      "pattern": "13"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": null,
+      "detail": "銀座（国道17号線北，北大通り東）",
+      "en": "銀座（国道17号線北，北大通り東）",
+      "jp": "銀座（国道17号線北，北大通り東）",
+      "pattern": "3"
+    },
+    {
+      "town": "銀座",
+      "townEn": "Ginza",
+      "kana": "ギンザ",
+      "chome": null,
+      "detail": "銀座（北大通り西）",
+      "en": "銀座（北大通り西）",
+      "jp": "銀座（北大通り西）",
+      "pattern": "13"
+    },
+    {
+      "town": "久下",
+      "townEn": "Kuge",
+      "kana": "クゲ",
+      "chome": null,
+      "detail": null,
+      "en": "久下",
+      "jp": "久下",
+      "pattern": "3"
+    },
+    {
+      "town": "葛和田",
+      "townEn": "Kuzuwada",
+      "kana": "クズワダ",
+      "chome": null,
+      "detail": null,
+      "en": "葛和田",
+      "jp": "葛和田",
+      "pattern": "11"
+    },
+    {
+      "town": "屈戸",
+      "townEn": "Kutto",
+      "kana": "クット",
+      "chome": null,
+      "detail": null,
+      "en": "屈戸",
+      "jp": "屈戸",
+      "pattern": "1"
+    },
+    {
+      "town": "久保島",
+      "townEn": "Kubojima",
+      "kana": "クボジマ",
+      "chome": null,
+      "detail": "久保島（高崎線南）",
+      "en": "久保島（高崎線南）",
+      "jp": "久保島（高崎線南）",
+      "pattern": "2"
+    },
+    {
+      "town": "久保島",
+      "townEn": "Kubojima",
+      "kana": "クボジマ",
+      "chome": null,
+      "detail": "久保島（高崎線北）",
+      "en": "久保島（高崎線北）",
+      "jp": "久保島（高崎線北）",
+      "pattern": "7"
+    },
+    {
+      "town": "小泉",
+      "townEn": "Koizumi",
+      "kana": "コイズミ",
+      "chome": null,
+      "detail": null,
+      "en": "小泉",
+      "jp": "小泉",
+      "pattern": "1"
+    },
+    {
+      "town": "肥塚",
+      "townEn": "Koizuka",
+      "kana": "コイヅカ",
+      "chome": null,
+      "detail": "肥塚（熊谷バイパス南）",
+      "en": "肥塚（熊谷バイパス南）",
+      "jp": "肥塚（熊谷バイパス南）",
+      "pattern": "14"
+    },
+    {
+      "town": "肥塚",
+      "townEn": "Koizuka",
+      "kana": "コイヅカ",
+      "chome": null,
+      "detail": "肥塚（熊谷バイパス北）",
+      "en": "肥塚（熊谷バイパス北）",
+      "jp": "肥塚（熊谷バイパス北）",
+      "pattern": "6"
+    },
+    {
+      "town": "江南中央",
+      "townEn": "Konanchuo",
+      "kana": "コウナンチュウオウ",
+      "chome": null,
+      "detail": null,
+      "en": "江南中央",
+      "jp": "江南中央",
+      "pattern": "10"
+    },
+    {
+      "town": "小島",
+      "townEn": "Kojima",
+      "kana": "コジマ",
+      "chome": null,
+      "detail": null,
+      "en": "小島",
+      "jp": "小島",
+      "pattern": "2"
+    },
+    {
+      "town": "小八林",
+      "townEn": "Koyatsubayashi",
+      "kana": "コヤツバヤシ",
+      "chome": null,
+      "detail": null,
+      "en": "小八林",
+      "jp": "小八林",
+      "pattern": "1"
+    },
+    {
+      "town": "桜木町",
+      "townEn": "Sakuragicho",
+      "kana": "サクラギチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "桜木町",
+      "jp": "桜木町",
+      "pattern": "3"
+    },
+    {
+      "town": "桜町",
+      "townEn": "Sakuracho",
+      "kana": "サクラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "桜町",
+      "jp": "桜町",
+      "pattern": "8"
+    },
+    {
+      "town": "佐谷田",
+      "townEn": "Sayada",
+      "kana": "サヤダ",
+      "chome": null,
+      "detail": null,
+      "en": "佐谷田",
+      "jp": "佐谷田",
+      "pattern": "3"
+    },
+    {
+      "town": "塩",
+      "townEn": "Shio",
+      "kana": "シオ",
+      "chome": null,
+      "detail": null,
+      "en": "塩",
+      "jp": "塩",
+      "pattern": "10"
+    },
+    {
+      "town": "柴",
+      "townEn": "Shiba",
+      "kana": "シバ",
+      "chome": null,
+      "detail": null,
+      "en": "柴",
+      "jp": "柴",
+      "pattern": "10"
+    },
+    {
+      "town": "四方寺",
+      "townEn": "Shihoji",
+      "kana": "シホウジ",
+      "chome": null,
+      "detail": null,
+      "en": "四方寺",
+      "jp": "四方寺",
+      "pattern": "6"
+    },
+    {
+      "town": "下恩田",
+      "townEn": "Shimonda",
+      "kana": "シモオンダ",
+      "chome": null,
+      "detail": null,
+      "en": "下恩田",
+      "jp": "下恩田",
+      "pattern": "1"
+    },
+    {
+      "town": "下川上",
+      "townEn": "Shimokawakami",
+      "kana": "シモカワカミ",
+      "chome": null,
+      "detail": null,
+      "en": "下川上",
+      "jp": "下川上",
+      "pattern": "6"
+    },
+    {
+      "town": "下奈良",
+      "townEn": "Shimonara",
+      "kana": "シモナラ",
+      "chome": null,
+      "detail": "下奈良（県道341号線西）",
+      "en": "下奈良（県道341号線西）",
+      "jp": "下奈良（県道341号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "下奈良",
+      "townEn": "Shimonara",
+      "kana": "シモナラ",
+      "chome": null,
+      "detail": "下奈良（県道341号線東）",
+      "en": "下奈良（県道341号線東）",
+      "jp": "下奈良（県道341号線東）",
+      "pattern": "6"
+    },
+    {
+      "town": "下増田",
+      "townEn": "Shimomasuda",
+      "kana": "シモマスダ",
+      "chome": null,
+      "detail": null,
+      "en": "下増田",
+      "jp": "下増田",
+      "pattern": "7"
+    },
+    {
+      "town": "拾六間",
+      "townEn": "Jurokken",
+      "kana": "ジュウロッケン",
+      "chome": null,
+      "detail": null,
+      "en": "拾六間",
+      "jp": "拾六間",
+      "pattern": "2"
+    },
+    {
+      "town": "新川",
+      "townEn": "Shinkawa",
+      "kana": "シンカワ",
+      "chome": null,
+      "detail": null,
+      "en": "新川",
+      "jp": "新川",
+      "pattern": "3"
+    },
+    {
+      "town": "末広",
+      "townEn": "Suehiro",
+      "kana": "スエヒロ",
+      "chome": null,
+      "detail": "末広（県道83号線西，北大通り北）",
+      "en": "末広（県道83号線西，北大通り北）",
+      "jp": "末広（県道83号線西，北大通り北）",
+      "pattern": "14"
+    },
+    {
+      "town": "末広",
+      "townEn": "Suehiro",
+      "kana": "スエヒロ",
+      "chome": null,
+      "detail": "末広（県道83号線東，北大通り北）",
+      "en": "末広（県道83号線東，北大通り北）",
+      "jp": "末広（県道83号線東，北大通り北）",
+      "pattern": "3"
+    },
+    {
+      "town": "末広",
+      "townEn": "Suehiro",
+      "kana": "スエヒロ",
+      "chome": null,
+      "detail": "末広（北大通り南）",
+      "en": "末広（北大通り南）",
+      "jp": "末広（北大通り南）",
+      "pattern": "13"
+    },
+    {
+      "town": "須賀広",
+      "townEn": "Sugahiro",
+      "kana": "スガヒロ",
+      "chome": null,
+      "detail": null,
+      "en": "須賀広",
+      "jp": "須賀広",
+      "pattern": "10"
+    },
+    {
+      "town": "瀬南",
+      "townEn": "Senami",
+      "kana": "セナミ",
+      "chome": null,
+      "detail": null,
+      "en": "瀬南",
+      "jp": "瀬南",
+      "pattern": "2"
+    },
+    {
+      "town": "千代",
+      "townEn": "Sendai",
+      "kana": "センダイ",
+      "chome": null,
+      "detail": null,
+      "en": "千代",
+      "jp": "千代",
+      "pattern": "10"
+    },
+    {
+      "town": "代",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": "代（熊谷バイパス南，国道407号線西）",
+      "en": "代（熊谷バイパス南，国道407号線西）",
+      "jp": "代（熊谷バイパス南，国道407号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "代",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": "代（熊谷バイパス南，国道407号線東）",
+      "en": "代（熊谷バイパス南，国道407号線東）",
+      "jp": "代（熊谷バイパス南，国道407号線東）",
+      "pattern": "8"
+    },
+    {
+      "town": "代",
+      "townEn": "Dai",
+      "kana": "ダイ",
+      "chome": null,
+      "detail": "代（熊谷バイパス北）",
+      "en": "代（熊谷バイパス北）",
+      "jp": "代（熊谷バイパス北）",
+      "pattern": "7"
+    },
+    {
+      "town": "高本",
+      "townEn": "Takamoto",
+      "kana": "タカモト",
+      "chome": null,
+      "detail": null,
+      "en": "高本",
+      "jp": "高本",
+      "pattern": "1"
+    },
+    {
+      "town": "高柳",
+      "townEn": "Takayanagi",
+      "kana": "タカヤナギ",
+      "chome": null,
+      "detail": null,
+      "en": "高柳",
+      "jp": "高柳",
+      "pattern": "7"
+    },
+    {
+      "town": "田島",
+      "townEn": "Tajima",
+      "kana": "タジマ",
+      "chome": null,
+      "detail": null,
+      "en": "田島",
+      "jp": "田島",
+      "pattern": "12"
+    },
+    {
+      "town": "玉井",
+      "townEn": "Tamai",
+      "kana": "タマイ",
+      "chome": null,
+      "detail": null,
+      "en": "玉井",
+      "jp": "玉井",
+      "pattern": "7"
+    },
+    {
+      "town": "玉井南",
+      "townEn": "Tamaiminami",
+      "kana": "タマイミナミ",
+      "chome": null,
+      "detail": null,
+      "en": "玉井南",
+      "jp": "玉井南",
+      "pattern": "7"
+    },
+    {
+      "town": "玉作",
+      "townEn": "Tamatsukuri",
+      "kana": "タマツクリ",
+      "chome": null,
+      "detail": null,
+      "en": "玉作",
+      "jp": "玉作",
+      "pattern": "1"
+    },
+    {
+      "town": "俵瀬",
+      "townEn": "Tawarase",
+      "kana": "タワラセ",
+      "chome": null,
+      "detail": null,
+      "en": "俵瀬",
+      "jp": "俵瀬",
+      "pattern": "11"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": null,
+      "en": "中央",
+      "jp": "中央",
+      "pattern": "14"
+    },
+    {
+      "town": "月見町",
+      "townEn": "Tsukimicho",
+      "kana": "ツキミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "月見町",
+      "jp": "月見町",
+      "pattern": "2"
+    },
+    {
+      "town": "筑波",
+      "townEn": "Tsukuba",
+      "kana": "ツクバ",
+      "chome": null,
+      "detail": null,
+      "en": "筑波",
+      "jp": "筑波",
+      "pattern": "13"
+    },
+    {
+      "town": "津田",
+      "townEn": "Tsuda",
+      "kana": "ツダ",
+      "chome": null,
+      "detail": null,
+      "en": "津田",
+      "jp": "津田",
+      "pattern": "1"
+    },
+    {
+      "town": "津田新田",
+      "townEn": "Tsudashinden",
+      "kana": "ツダシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "津田新田",
+      "jp": "津田新田",
+      "pattern": "1"
+    },
+    {
+      "town": "出来島",
+      "townEn": "Dekijima",
+      "kana": "デキジマ",
+      "chome": null,
+      "detail": null,
+      "en": "出来島",
+      "jp": "出来島",
+      "pattern": "4"
+    },
+    {
+      "town": "手島",
+      "townEn": "Teshima",
+      "kana": "テシマ",
+      "chome": null,
+      "detail": null,
+      "en": "手島",
+      "jp": "手島",
+      "pattern": "1"
+    },
+    {
+      "town": "戸出",
+      "townEn": "Tode",
+      "kana": "トデ",
+      "chome": null,
+      "detail": null,
+      "en": "戸出",
+      "jp": "戸出",
+      "pattern": "3"
+    },
+    {
+      "town": "問屋町",
+      "townEn": "Tonyacho",
+      "kana": "トンヤチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "問屋町",
+      "jp": "問屋町",
+      "pattern": "3"
+    },
+    {
+      "town": "永井太田",
+      "townEn": "Nagaiota",
+      "kana": "ナガイオオタ",
+      "chome": null,
+      "detail": null,
+      "en": "永井太田",
+      "jp": "永井太田",
+      "pattern": "4"
+    },
+    {
+      "town": "中恩田",
+      "townEn": "Nakaonda",
+      "kana": "ナカオンダ",
+      "chome": null,
+      "detail": null,
+      "en": "中恩田",
+      "jp": "中恩田",
+      "pattern": "1"
+    },
+    {
+      "town": "中曽根",
+      "townEn": "Nakazone",
+      "kana": "ナカゾネ",
+      "chome": null,
+      "detail": null,
+      "en": "中曽根",
+      "jp": "中曽根",
+      "pattern": "1"
+    },
+    {
+      "town": "仲町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "仲町",
+      "jp": "仲町",
+      "pattern": "13"
+    },
+    {
+      "town": "中奈良",
+      "townEn": "Nakanara",
+      "kana": "ナカナラ",
+      "chome": null,
+      "detail": "中奈良（県道341号線西）",
+      "en": "中奈良（県道341号線西）",
+      "jp": "中奈良（県道341号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "中奈良",
+      "townEn": "Nakanara",
+      "kana": "ナカナラ",
+      "chome": null,
+      "detail": "中奈良（県道341号線東）",
+      "en": "中奈良（県道341号線東）",
+      "jp": "中奈良（県道341号線東）",
+      "pattern": "6"
+    },
+    {
+      "town": "中西",
+      "townEn": "Nakanishi",
+      "kana": "ナカニシ",
+      "chome": null,
+      "detail": null,
+      "en": "中西",
+      "jp": "中西",
+      "pattern": "14"
+    },
+    {
+      "town": "奈良新田",
+      "townEn": "Narashinden",
+      "kana": "ナラシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "奈良新田",
+      "jp": "奈良新田",
+      "pattern": "7"
+    },
+    {
+      "town": "成沢",
+      "townEn": "Narisawa",
+      "kana": "ナリサワ",
+      "chome": null,
+      "detail": null,
+      "en": "成沢",
+      "jp": "成沢",
+      "pattern": "10"
+    },
+    {
+      "town": "新島",
+      "townEn": "Niijima",
+      "kana": "ニイジマ",
+      "chome": null,
+      "detail": null,
+      "en": "新島",
+      "jp": "新島",
+      "pattern": "7"
+    },
+    {
+      "town": "新堀",
+      "townEn": "Niibori",
+      "kana": "ニイボリ",
+      "chome": null,
+      "detail": "新堀（高崎線南）",
+      "en": "新堀（高崎線南）",
+      "jp": "新堀（高崎線南）",
+      "pattern": "2"
+    },
+    {
+      "town": "新堀",
+      "townEn": "Niibori",
+      "kana": "ニイボリ",
+      "chome": null,
+      "detail": "新堀（高崎線北）",
+      "en": "新堀（高崎線北）",
+      "jp": "新堀（高崎線北）",
+      "pattern": "7"
+    },
+    {
+      "town": "新堀新田",
+      "townEn": "Niiborishinden",
+      "kana": "ニイボリシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "新堀新田",
+      "jp": "新堀新田",
+      "pattern": "2"
+    },
+    {
+      "town": "西城",
+      "townEn": "Nishijo",
+      "kana": "ニシジョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西城",
+      "jp": "西城",
+      "pattern": "12"
+    },
+    {
+      "town": "西野",
+      "townEn": "Nishino",
+      "kana": "ニシノ",
+      "chome": null,
+      "detail": "西野（県道341号線西）",
+      "en": "西野（県道341号線西）",
+      "jp": "西野（県道341号線西）",
+      "pattern": "5"
+    },
+    {
+      "town": "西野",
+      "townEn": "Nishino",
+      "kana": "ニシノ",
+      "chome": null,
+      "detail": "西野（県道341号線東）",
+      "en": "西野（県道341号線東）",
+      "jp": "西野（県道341号線東）",
+      "pattern": "12"
+    },
+    {
+      "town": "西別府",
+      "townEn": "Nishibeppu",
+      "kana": "ニシベップ",
+      "chome": null,
+      "detail": null,
+      "en": "西別府",
+      "jp": "西別府",
+      "pattern": "7"
+    },
+    {
+      "town": "沼黒",
+      "townEn": "Numaguro",
+      "kana": "ヌマグロ",
+      "chome": null,
+      "detail": null,
+      "en": "沼黒",
+      "jp": "沼黒",
+      "pattern": "1"
+    },
+    {
+      "town": "野原",
+      "townEn": "Nohara",
+      "kana": "ノハラ",
+      "chome": null,
+      "detail": null,
+      "en": "野原",
+      "jp": "野原",
+      "pattern": "10"
+    },
+    {
+      "town": "箱田",
+      "townEn": "Hakoda",
+      "kana": "ハコダ",
+      "chome": null,
+      "detail": null,
+      "en": "箱田",
+      "jp": "箱田",
+      "pattern": "14"
+    },
+    {
+      "town": "原井",
+      "townEn": "Barai",
+      "kana": "バライ",
+      "chome": null,
+      "detail": null,
+      "en": "原井",
+      "jp": "原井",
+      "pattern": "5"
+    },
+    {
+      "town": "原島",
+      "townEn": "Harajima",
+      "kana": "ハラジマ",
+      "chome": null,
+      "detail": "原島（国道407号線西）",
+      "en": "原島（国道407号線西）",
+      "jp": "原島（国道407号線西）",
+      "pattern": "7"
+    },
+    {
+      "town": "原島",
+      "townEn": "Harajima",
+      "kana": "ハラジマ",
+      "chome": null,
+      "detail": "原島（国道407号線東）",
+      "en": "原島（国道407号線東）",
+      "jp": "原島（国道407号線東）",
+      "pattern": "8"
+    },
+    {
+      "town": "東別府",
+      "townEn": "Higashibeppu",
+      "kana": "ヒガシベップ",
+      "chome": null,
+      "detail": null,
+      "en": "東別府",
+      "jp": "東別府",
+      "pattern": "7"
+    },
+    {
+      "town": "日向",
+      "townEn": "Hinata",
+      "kana": "ヒナタ",
+      "chome": null,
+      "detail": null,
+      "en": "日向",
+      "jp": "日向",
+      "pattern": "11"
+    },
+    {
+      "town": "樋春",
+      "townEn": "Hiharu",
+      "kana": "ヒハル",
+      "chome": null,
+      "detail": null,
+      "en": "樋春",
+      "jp": "樋春",
+      "pattern": "10"
+    },
+    {
+      "town": "平塚新田",
+      "townEn": "Hiratsukashinden",
+      "kana": "ヒラツカシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "平塚新田",
+      "jp": "平塚新田",
+      "pattern": "9"
+    },
+    {
+      "town": "平戸",
+      "townEn": "Hirato",
+      "kana": "ヒラト",
+      "chome": null,
+      "detail": null,
+      "en": "平戸",
+      "jp": "平戸",
+      "pattern": "3"
+    },
+    {
+      "town": "広瀬",
+      "townEn": "Hirose",
+      "kana": "ヒロセ",
+      "chome": null,
+      "detail": null,
+      "en": "広瀬",
+      "jp": "広瀬",
+      "pattern": "2"
+    },
+    {
+      "town": "武体",
+      "townEn": "Butai",
+      "kana": "ブタイ",
+      "chome": null,
+      "detail": null,
+      "en": "武体",
+      "jp": "武体",
+      "pattern": "2"
+    },
+    {
+      "town": "船木台",
+      "townEn": "Funakidai",
+      "kana": "フナキダイ",
+      "chome": null,
+      "detail": null,
+      "en": "船木台",
+      "jp": "船木台",
+      "pattern": "1"
+    },
+    {
+      "town": "別府",
+      "townEn": "Beppu",
+      "kana": "ベップ",
+      "chome": null,
+      "detail": null,
+      "en": "別府",
+      "jp": "別府",
+      "pattern": "7"
+    },
+    {
+      "town": "弁財",
+      "townEn": "Benzai",
+      "kana": "ベンザイ",
+      "chome": null,
+      "detail": null,
+      "en": "弁財",
+      "jp": "弁財",
+      "pattern": "11"
+    },
+    {
+      "town": "星川",
+      "townEn": "Hoshikawa",
+      "kana": "ホシカワ",
+      "chome": null,
+      "detail": null,
+      "en": "星川",
+      "jp": "星川",
+      "pattern": "13"
+    },
+    {
+      "town": "本石",
+      "townEn": "Hongoku",
+      "kana": "ホンゴク",
+      "chome": null,
+      "detail": null,
+      "en": "本石",
+      "jp": "本石",
+      "pattern": "9"
+    },
+    {
+      "town": "本町",
+      "townEn": "Honcho",
+      "kana": "ホンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "13"
+    },
+    {
+      "town": "万吉",
+      "townEn": "Magechi",
+      "kana": "マゲチ",
+      "chome": null,
+      "detail": null,
+      "en": "万吉",
+      "jp": "万吉",
+      "pattern": "9"
+    },
+    {
+      "town": "間々田",
+      "townEn": "Mamada",
+      "kana": "ママダ",
+      "chome": null,
+      "detail": null,
+      "en": "間々田",
+      "jp": "間々田",
+      "pattern": "4"
+    },
+    {
+      "town": "万平町",
+      "townEn": "Mampeicho",
+      "kana": "マンペイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "万平町",
+      "jp": "万平町",
+      "pattern": "3"
+    },
+    {
+      "town": "御稜威ケ原",
+      "townEn": "Miizugahara",
+      "kana": "ミイズガハラ",
+      "chome": null,
+      "detail": null,
+      "en": "御稜威ケ原",
+      "jp": "御稜威ケ原",
+      "pattern": "2"
+    },
+    {
+      "town": "三ケ尻",
+      "townEn": "Mikajiri",
+      "kana": "ミカジリ",
+      "chome": null,
+      "detail": null,
+      "en": "三ケ尻",
+      "jp": "三ケ尻",
+      "pattern": "2"
+    },
+    {
+      "town": "御正新田",
+      "townEn": "Mishoshinden",
+      "kana": "ミショウシンデン",
+      "chome": null,
+      "detail": null,
+      "en": "御正新田",
+      "jp": "御正新田",
+      "pattern": "10"
+    },
+    {
+      "town": "三本",
+      "townEn": "Mitsumoto",
+      "kana": "ミツモト",
+      "chome": null,
+      "detail": null,
+      "en": "三本",
+      "jp": "三本",
+      "pattern": "10"
+    },
+    {
+      "town": "美土里町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "美土里町",
+      "jp": "美土里町",
+      "pattern": "2"
+    },
+    {
+      "town": "箕輪",
+      "townEn": "Minowa",
+      "kana": "ミノワ",
+      "chome": null,
+      "detail": null,
+      "en": "箕輪",
+      "jp": "箕輪",
+      "pattern": "1"
+    },
+    {
+      "town": "見晴町",
+      "townEn": "Miharashicho",
+      "kana": "ミハラシチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "見晴町",
+      "jp": "見晴町",
+      "pattern": "2"
+    },
+    {
+      "town": "宮町",
+      "townEn": "Miyacho",
+      "kana": "ミヤチョウ",
+      "chome": null,
+      "detail": "宮町（北大通り南）",
+      "en": "宮町（北大通り南）",
+      "jp": "宮町（北大通り南）",
+      "pattern": "13"
+    },
+    {
+      "town": "宮町",
+      "townEn": "Miyacho",
+      "kana": "ミヤチョウ",
+      "chome": null,
+      "detail": "宮町（北大通り北）",
+      "en": "宮町（北大通り北）",
+      "jp": "宮町（北大通り北）",
+      "pattern": "14"
+    },
+    {
+      "town": "宮前町",
+      "townEn": "Miyamaecho",
+      "kana": "ミヤマエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "宮前町",
+      "jp": "宮前町",
+      "pattern": "3"
+    },
+    {
+      "town": "宮本町",
+      "townEn": "Miyamotocho",
+      "kana": "ミヤモトチョウ",
+      "chome": null,
+      "detail": "宮本町（国道407号線西）",
+      "en": "宮本町（国道407号線西）",
+      "jp": "宮本町（国道407号線西）",
+      "pattern": "2"
+    },
+    {
+      "town": "宮本町",
+      "townEn": "Miyamotocho",
+      "kana": "ミヤモトチョウ",
+      "chome": null,
+      "detail": "宮本町（国道407号線東）",
+      "en": "宮本町（国道407号線東）",
+      "jp": "宮本町（国道407号線東）",
+      "pattern": "3"
+    },
+    {
+      "town": "向谷",
+      "townEn": "Mukoya",
+      "kana": "ムコウヤ",
+      "chome": null,
+      "detail": null,
+      "en": "向谷",
+      "jp": "向谷",
+      "pattern": "1"
+    },
+    {
+      "town": "村岡",
+      "townEn": "Muraoka",
+      "kana": "ムラオカ",
+      "chome": null,
+      "detail": null,
+      "en": "村岡",
+      "jp": "村岡",
+      "pattern": "9"
+    },
+    {
+      "town": "妻沼",
+      "townEn": "Menuma",
+      "kana": "メヌマ",
+      "chome": null,
+      "detail": "妻沼（県道341号線西）",
+      "en": "妻沼（県道341号線西）",
+      "jp": "妻沼（県道341号線西）",
+      "pattern": "4"
+    },
+    {
+      "town": "妻沼",
+      "townEn": "Menuma",
+      "kana": "メヌマ",
+      "chome": null,
+      "detail": "妻沼（県道341号線東）",
+      "en": "妻沼（県道341号線東）",
+      "jp": "妻沼（県道341号線東）",
+      "pattern": "11"
+    },
+    {
+      "town": "妻沼小島",
+      "townEn": "Menumakojima",
+      "kana": "メヌマコジマ",
+      "chome": null,
+      "detail": null,
+      "en": "妻沼小島",
+      "jp": "妻沼小島",
+      "pattern": "4"
+    },
+    {
+      "town": "妻沼台",
+      "townEn": "Menumadai",
+      "kana": "メヌマダイ",
+      "chome": null,
+      "detail": null,
+      "en": "妻沼台",
+      "jp": "妻沼台",
+      "pattern": "4"
+    },
+    {
+      "town": "妻沼中央",
+      "townEn": "Menumachuo",
+      "kana": "メヌマチュウオウ",
+      "chome": null,
+      "detail": null,
+      "en": "妻沼中央",
+      "jp": "妻沼中央",
+      "pattern": "4"
+    },
+    {
+      "town": "妻沼西",
+      "townEn": "Menumanishi",
+      "kana": "メヌマニシ",
+      "chome": null,
+      "detail": null,
+      "en": "妻沼西",
+      "jp": "妻沼西",
+      "pattern": "4"
+    },
+    {
+      "town": "妻沼東",
+      "townEn": "Menumahigashi",
+      "kana": "メヌマヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "妻沼東",
+      "jp": "妻沼東",
+      "pattern": "11"
+    },
+    {
+      "town": "楊井",
+      "townEn": "Yagii",
+      "kana": "ヤギイ",
+      "chome": null,
+      "detail": null,
+      "en": "楊井",
+      "jp": "楊井",
+      "pattern": "9"
+    },
+    {
+      "town": "八木田",
+      "townEn": "Yagita",
+      "kana": "ヤギタ",
+      "chome": null,
+      "detail": "八木田（国道407号線西）",
+      "en": "八木田（国道407号線西）",
+      "jp": "八木田（国道407号線西）",
+      "pattern": "5"
+    },
+    {
+      "town": "八木田",
+      "townEn": "Yagita",
+      "kana": "ヤギタ",
+      "chome": null,
+      "detail": "八木田（国道407号線東）",
+      "en": "八木田（国道407号線東）",
+      "jp": "八木田（国道407号線東）",
+      "pattern": "4"
+    },
+    {
+      "town": "八ツ口",
+      "townEn": "Yatsukuchi",
+      "kana": "ヤツクチ",
+      "chome": null,
+      "detail": null,
+      "en": "八ツ口",
+      "jp": "八ツ口",
+      "pattern": "11"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾 （国道407号線西，妻沼行政センター南）",
+      "en": "弥藤吾 （国道407号線西，妻沼行政センター南）",
+      "jp": "弥藤吾 （国道407号線西，妻沼行政センター南）",
+      "pattern": "5"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾 （国道407号線西，妻沼行政センター北）",
+      "en": "弥藤吾 （国道407号線西，妻沼行政センター北）",
+      "jp": "弥藤吾 （国道407号線西，妻沼行政センター北）",
+      "pattern": "4"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾（県道341号線東，県道303号線南）",
+      "en": "弥藤吾（県道341号線東，県道303号線南）",
+      "jp": "弥藤吾（県道341号線東，県道303号線南）",
+      "pattern": "12"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾（県道341号線東，県道303号線北）",
+      "en": "弥藤吾（県道341号線東，県道303号線北）",
+      "jp": "弥藤吾（県道341号線東，県道303号線北）",
+      "pattern": "11"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾（国道407号線東，県道341号線西，南小学校南）",
+      "en": "弥藤吾（国道407号線東，県道341号線西，南小学校南）",
+      "jp": "弥藤吾（国道407号線東，県道341号線西，南小学校南）",
+      "pattern": "5"
+    },
+    {
+      "town": "弥藤吾",
+      "townEn": "Yatogo",
+      "kana": "ヤトウゴ",
+      "chome": null,
+      "detail": "弥藤吾（国道407号線東，県道341号線西，南小学校北）",
+      "en": "弥藤吾（国道407号線東，県道341号線西，南小学校北）",
+      "jp": "弥藤吾（国道407号線東，県道341号線西，南小学校北）",
+      "pattern": "4"
+    },
+    {
+      "town": "弥生",
+      "townEn": "Yayoi",
+      "kana": "ヤヨイ",
+      "chome": null,
+      "detail": null,
+      "en": "弥生",
+      "jp": "弥生",
+      "pattern": "13"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kumagaya.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

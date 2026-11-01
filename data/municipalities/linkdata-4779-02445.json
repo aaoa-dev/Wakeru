@@ -1,0 +1,779 @@
+{
+  "id": "linkdata-4779-02445",
+  "code": "02445",
+  "pref": "02",
+  "jp": "南部町",
+  "en": "Nambu",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://linkdata.org/api/1/rdf1s4779i/area_days.csv",
+    "http://linkdata.org/api/1/rdf1s4779i/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              5
+            ],
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "南部町南部Ａ地区１０区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区１０区",
+      "jp": "南部町南部Ａ地区１０区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区１１区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区１１区",
+      "jp": "南部町南部Ａ地区１１区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区５区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区５区",
+      "jp": "南部町南部Ａ地区５区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区６区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区６区",
+      "jp": "南部町南部Ａ地区６区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区７区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区７区",
+      "jp": "南部町南部Ａ地区７区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区８区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区８区",
+      "jp": "南部町南部Ａ地区８区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区９区",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区９区",
+      "jp": "南部町南部Ａ地区９区",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区小波田第１",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区小波田第１",
+      "jp": "南部町南部Ａ地区小波田第１",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ａ地区小波田第２",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ａ地区小波田第２",
+      "jp": "南部町南部Ａ地区小波田第２",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区沖田面",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区沖田面",
+      "jp": "南部町南部Ｂ地区沖田面",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区玉掛",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区玉掛",
+      "jp": "南部町南部Ｂ地区玉掛",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区古町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区古町",
+      "jp": "南部町南部Ｂ地区古町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区小向",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区小向",
+      "jp": "南部町南部Ｂ地区小向",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区諏訪ノ平",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区諏訪ノ平",
+      "jp": "南部町南部Ｂ地区諏訪ノ平",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区正寿寺",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区正寿寺",
+      "jp": "南部町南部Ｂ地区正寿寺",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区赤石",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区赤石",
+      "jp": "南部町南部Ｂ地区赤石",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区相内",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区相内",
+      "jp": "南部町南部Ｂ地区相内",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区二又",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区二又",
+      "jp": "南部町南部Ｂ地区二又",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区馬場",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区馬場",
+      "jp": "南部町南部Ｂ地区馬場",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町南部Ｂ地区門前",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町南部Ｂ地区門前",
+      "jp": "南部町南部Ｂ地区門前",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区あかね",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区あかね",
+      "jp": "南部町福地Ａ地区あかね",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区あけぼの",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区あけぼの",
+      "jp": "南部町福地Ａ地区あけぼの",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区椛木",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区椛木",
+      "jp": "南部町福地Ａ地区椛木",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区杉沢",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区杉沢",
+      "jp": "南部町福地Ａ地区杉沢",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区中央",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区中央",
+      "jp": "南部町福地Ａ地区中央",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区東あかね",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区東あかね",
+      "jp": "南部町福地Ａ地区東あかね",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区板橋",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区板橋",
+      "jp": "南部町福地Ａ地区板橋",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区法師岡",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区法師岡",
+      "jp": "南部町福地Ａ地区法師岡",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ａ地区埖渡",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ａ地区埖渡",
+      "jp": "南部町福地Ａ地区埖渡",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ｂ地区高橋",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ｂ地区高橋",
+      "jp": "南部町福地Ｂ地区高橋",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ｂ地区小泉",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ｂ地区小泉",
+      "jp": "南部町福地Ｂ地区小泉",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ｂ地区麦沢",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ｂ地区麦沢",
+      "jp": "南部町福地Ｂ地区麦沢",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ｂ地区福田",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ｂ地区福田",
+      "jp": "南部町福地Ｂ地区福田",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町福地Ｂ地区片岸",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町福地Ｂ地区片岸",
+      "jp": "南部町福地Ｂ地区片岸",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区卯月沢",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区卯月沢",
+      "jp": "南部町名川Ａ地区卯月沢",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区下斗賀",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区下斗賀",
+      "jp": "南部町名川Ａ地区下斗賀",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区剣吉山",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区剣吉山",
+      "jp": "南部町名川Ａ地区剣吉山",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区虎渡",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区虎渡",
+      "jp": "南部町名川Ａ地区虎渡",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区向山団地",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区向山団地",
+      "jp": "南部町名川Ａ地区向山団地",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区荒町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区荒町",
+      "jp": "南部町名川Ａ地区荒町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区桜町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区桜町",
+      "jp": "南部町名川Ａ地区桜町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区桜本町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区桜本町",
+      "jp": "南部町名川Ａ地区桜本町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区上中町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区上中町",
+      "jp": "南部町名川Ａ地区上中町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区上斗賀",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区上斗賀",
+      "jp": "南部町名川Ａ地区上斗賀",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区新開地",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区新開地",
+      "jp": "南部町名川Ａ地区新開地",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区森越",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区森越",
+      "jp": "南部町名川Ａ地区森越",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ａ地区森林",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ａ地区森林",
+      "jp": "南部町名川Ａ地区森林",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区横沢",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区横沢",
+      "jp": "南部町名川Ｂ地区横沢",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区下名久井",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区下名久井",
+      "jp": "南部町名川Ｂ地区下名久井",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区五日市",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区五日市",
+      "jp": "南部町名川Ｂ地区五日市",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区五日市団地",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区五日市団地",
+      "jp": "南部町名川Ｂ地区五日市団地",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区広場",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区広場",
+      "jp": "南部町名川Ｂ地区広場",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区高瀬",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区高瀬",
+      "jp": "南部町名川Ｂ地区高瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区上川町",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区上川町",
+      "jp": "南部町名川Ｂ地区上川町",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区上名久井(下)",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区上名久井(下)",
+      "jp": "南部町名川Ｂ地区上名久井(下)",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区上名久井(上)",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区上名久井(上)",
+      "jp": "南部町名川Ｂ地区上名久井(上)",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区水沢",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区水沢",
+      "jp": "南部町名川Ｂ地区水沢",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区沢田",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区沢田",
+      "jp": "南部町名川Ｂ地区沢田",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区鳥舌内",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区鳥舌内",
+      "jp": "南部町名川Ｂ地区鳥舌内",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区鳥谷",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区鳥谷",
+      "jp": "南部町名川Ｂ地区鳥谷",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区平",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区平",
+      "jp": "南部町名川Ｂ地区平",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区法光寺",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区法光寺",
+      "jp": "南部町名川Ｂ地区法光寺",
+      "pattern": "1"
+    },
+    {
+      "town": "南部町名川Ｂ地区野場",
+      "townEn": "Nambu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部町名川Ｂ地区野場",
+      "jp": "南部町名川Ｂ地区野場",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://linkdata.org/api/1/rdf1s4779i/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

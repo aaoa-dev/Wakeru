@@ -1,0 +1,425 @@
+{
+  "id": "mori-22461",
+  "code": "22461",
+  "pref": "22",
+  "jp": "森町",
+  "en": "Mori",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://mori.5374.jp/data/area_days.csv",
+    "http://mori.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "non_burnable": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "beverage_can": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "plastic": {
+          "day": 2,
+          "weeks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "駒ヶ岳",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "駒ヶ岳",
+      "jp": "駒ヶ岳",
+      "pattern": "1"
+    },
+    {
+      "town": "御幸町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "御幸町",
+      "jp": "御幸町",
+      "pattern": "1"
+    },
+    {
+      "town": "港町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "港町",
+      "jp": "港町",
+      "pattern": "1"
+    },
+    {
+      "town": "砂原",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "砂原",
+      "jp": "砂原",
+      "pattern": "1"
+    },
+    {
+      "town": "砂原西",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "砂原西",
+      "jp": "砂原西",
+      "pattern": "1"
+    },
+    {
+      "town": "砂原東",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "砂原東",
+      "jp": "砂原東",
+      "pattern": "1"
+    },
+    {
+      "town": "上台町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上台町",
+      "jp": "上台町",
+      "pattern": "1"
+    },
+    {
+      "town": "常盤町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤町",
+      "jp": "常盤町",
+      "pattern": "1"
+    },
+    {
+      "town": "新川町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新川町",
+      "jp": "新川町",
+      "pattern": "1"
+    },
+    {
+      "town": "清澄町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "清澄町",
+      "jp": "清澄町",
+      "pattern": "1"
+    },
+    {
+      "town": "石倉町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石倉町",
+      "jp": "石倉町",
+      "pattern": "1"
+    },
+    {
+      "town": "赤井川",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤井川",
+      "jp": "赤井川",
+      "pattern": "1"
+    },
+    {
+      "town": "濁川",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "濁川",
+      "jp": "濁川",
+      "pattern": "1"
+    },
+    {
+      "town": "鳥崎町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鳥崎町",
+      "jp": "鳥崎町",
+      "pattern": "1"
+    },
+    {
+      "town": "東森町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東森町",
+      "jp": "東森町",
+      "pattern": "1"
+    },
+    {
+      "town": "白川",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白川",
+      "jp": "白川",
+      "pattern": "1"
+    },
+    {
+      "town": "尾白内町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "尾白内町",
+      "jp": "尾白内町",
+      "pattern": "1"
+    },
+    {
+      "town": "姫川",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "姫川",
+      "jp": "姫川",
+      "pattern": "1"
+    },
+    {
+      "town": "富士見町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見町",
+      "jp": "富士見町",
+      "pattern": "1"
+    },
+    {
+      "town": "本茅部町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本茅部町",
+      "jp": "本茅部町",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本町",
+      "jp": "本町",
+      "pattern": "1"
+    },
+    {
+      "town": "鷲ノ木町",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鷲ノ木町",
+      "jp": "鷲ノ木町",
+      "pattern": "1"
+    },
+    {
+      "town": "蛯谷町",
+      "townEn": "Mori",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蛯谷町",
+      "jp": "蛯谷町",
+      "pattern": "1"
+    },
+    {
+      "town": "森",
+      "townEn": "Mori",
+      "kana": "モリ",
+      "chome": null,
+      "detail": "森川町",
+      "en": "森川町",
+      "jp": "森川町",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://mori.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

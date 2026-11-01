@@ -1,0 +1,396 @@
+{
+  "id": "shiki",
+  "code": "11228",
+  "pref": "11",
+  "jp": "志木市",
+  "en": "Shiki",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.shiki.lg.jp/soshiki/16/1201.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "古紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "glass": {
+      "label": "ガラス類",
+      "en": "Glass",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「長靴（金属入り）」 under 「不燃」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「リサイクル資源」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「CD」 under 「不燃」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「ガスボンベ（プロパン用）」 under 「受入不可」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「危険ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「不燃」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「パソコン」 under 「資源有効利用」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「受入不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's official 収集日程表. Confirm year-end changes on the city website.",
+    "patterns": {
+      "1": {
+        "res": [
+          1
+        ],
+        "plastic": [
+          3
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "2": {
+        "res": [
+          1
+        ],
+        "plastic": [
+          3
+        ],
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "3": {
+        "res": [
+          2
+        ],
+        "plastic": [
+          5
+        ],
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "res": [
+          5
+        ],
+        "plastic": [
+          2
+        ],
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "5": {
+        "res": [
+          4
+        ],
+        "plastic": [
+          1
+        ],
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "6": {
+        "res": [
+          4
+        ],
+        "plastic": [
+          1
+        ],
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "7": {
+        "res": [
+          4
+        ],
+        "plastic": [
+          1
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "8": {
+        "res": [
+          3
+        ],
+        "plastic": [
+          4
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "上宗岡全域※下記除く",
+      "townEn": "上宗岡全域※下記除く",
+      "kana": "上宗岡全域※下記除く",
+      "chome": null,
+      "detail": null,
+      "en": "上宗岡全域※下記除く",
+      "jp": "上宗岡全域※下記除く",
+      "pattern": "1"
+    },
+    {
+      "town": "上宗岡4-6-27 上宗岡4-6-47",
+      "townEn": "上宗岡4-6-27 上宗岡4-6-47",
+      "kana": "上宗岡4-6-27 上宗岡4-6-47",
+      "chome": null,
+      "detail": null,
+      "en": "上宗岡4-6-27 上宗岡4-6-47",
+      "jp": "上宗岡4-6-27 上宗岡4-6-47",
+      "pattern": "2"
+    },
+    {
+      "town": "中宗岡1丁目 中宗岡2丁目",
+      "townEn": "中宗岡1丁目 中宗岡2丁目",
+      "kana": "中宗岡1丁目 中宗岡2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中宗岡1丁目 中宗岡2丁目",
+      "jp": "中宗岡1丁目 中宗岡2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中宗岡3丁目 中宗岡4丁目 中宗岡5丁目",
+      "townEn": "中宗岡3丁目 中宗岡4丁目 中宗岡5丁目",
+      "kana": "中宗岡3丁目 中宗岡4丁目 中宗岡5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中宗岡3丁目 中宗岡4丁目 中宗岡5丁目",
+      "jp": "中宗岡3丁目 中宗岡4丁目 中宗岡5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "下宗岡全域",
+      "townEn": "下宗岡全域",
+      "kana": "下宗岡全域",
+      "chome": null,
+      "detail": null,
+      "en": "下宗岡全域",
+      "jp": "下宗岡全域",
+      "pattern": "3"
+    },
+    {
+      "town": "本町全域",
+      "townEn": "本町全域",
+      "kana": "本町全域",
+      "chome": null,
+      "detail": null,
+      "en": "本町全域",
+      "jp": "本町全域",
+      "pattern": "4"
+    },
+    {
+      "town": "幸町全域",
+      "townEn": "幸町全域",
+      "kana": "幸町全域",
+      "chome": null,
+      "detail": null,
+      "en": "幸町全域",
+      "jp": "幸町全域",
+      "pattern": "5"
+    },
+    {
+      "town": "館1-5 館1-6 館2-1 館2-3 館2-4-5 館2-8",
+      "townEn": "館1-5 館1-6 館2-1 館2-3 館2-4-5 館2-8",
+      "kana": "館1-5 館1-6 館2-1 館2-3 館2-4-5 館2-8",
+      "chome": null,
+      "detail": null,
+      "en": "館1-5 館1-6 館2-1 館2-3 館2-4-5 館2-8",
+      "jp": "館1-5 館1-6 館2-1 館2-3 館2-4-5 館2-8",
+      "pattern": "6"
+    },
+    {
+      "town": "館1-1 館2-4※2-4-5を除く 館2-6 館2-2-3 館2-2-4",
+      "townEn": "館1-1 館2-4※2-4-5を除く 館2-6 館2-2-3 館2-2-4",
+      "kana": "館1-1 館2-4※2-4-5を除く 館2-6 館2-2-3 館2-2-4",
+      "chome": null,
+      "detail": null,
+      "en": "館1-1 館2-4※2-4-5を除く 館2-6 館2-2-3 館2-2-4",
+      "jp": "館1-1 館2-4※2-4-5を除く 館2-6 館2-2-3 館2-2-4",
+      "pattern": "7"
+    },
+    {
+      "town": "柏町全域",
+      "townEn": "柏町全域",
+      "kana": "柏町全域",
+      "chome": null,
+      "detail": null,
+      "en": "柏町全域",
+      "jp": "柏町全域",
+      "pattern": "8"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Shiki City collection schedule table",
+      "url": "https://www.city.shiki.lg.jp/soshiki/16/1201.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

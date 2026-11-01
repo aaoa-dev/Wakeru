@@ -1,0 +1,442 @@
+{
+  "id": "obama",
+  "code": "18204",
+  "pref": "18",
+  "jp": "小浜市",
+  "en": "Obama",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/obamashisyusyubi.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Fukui Prefecture DX Promotion Division",
+      "tel": "0776-20-0270"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル類",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん・電池類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "ダンボール・紙製容器・紙パック",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "蛍光灯",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「古着」 under 「資源回収／燃やすごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「革靴」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「古紙類」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「本」 under 「古紙類」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「古紙類」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「その他紙」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「アルミ缶」 under 「アルミ缶」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「びん」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ＤＶＤ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "beverage_can",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「アルミ缶／スチール缶」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光管（蛍光灯）」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「持ち込みごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「収集不可」.",
+      "auto": true
+    },
+    "pc": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「パソコン（家庭用）」 under 「収集不可」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「収集不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from Fukui Prefecture's open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "dates": [
+                "2026-04-24",
+                "2026-05-29",
+                "2026-06-26",
+                "2026-07-31",
+                "2026-08-28",
+                "2026-09-25",
+                "2026-10-30",
+                "2026-11-27",
+                "2026-12-25",
+                "2027-01-29",
+                "2027-02-26",
+                "2027-03-26"
+              ]
+            }
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "any": [
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "dates": [
+                "2026-04-30",
+                "2026-05-28",
+                "2026-06-25",
+                "2026-07-30",
+                "2026-08-27",
+                "2026-09-24",
+                "2026-10-29",
+                "2026-11-26",
+                "2027-01-28",
+                "2027-02-25",
+                "2027-03-25"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "今富",
+      "townEn": "今富",
+      "kana": "いまとみ",
+      "chome": null,
+      "detail": null,
+      "en": "今富",
+      "jp": "今富",
+      "pattern": "1",
+      "note": "今富,いまとみ"
+    },
+    {
+      "town": "内外海",
+      "townEn": "内外海",
+      "kana": "うちとみ",
+      "chome": null,
+      "detail": null,
+      "en": "内外海",
+      "jp": "内外海",
+      "pattern": "2",
+      "note": "内外海,うちとみ"
+    },
+    {
+      "town": "雲浜",
+      "townEn": "Umpin",
+      "kana": "ウンピン",
+      "chome": null,
+      "detail": null,
+      "en": "雲浜",
+      "jp": "雲浜",
+      "pattern": "2",
+      "note": "雲浜,うんぴん"
+    },
+    {
+      "town": "遠敷",
+      "townEn": "Onyu",
+      "kana": "オニュウ",
+      "chome": null,
+      "detail": null,
+      "en": "遠敷",
+      "jp": "遠敷",
+      "pattern": "2",
+      "note": "遠敷,おにゅう"
+    },
+    {
+      "town": "小浜",
+      "townEn": "Obama",
+      "kana": "オバマ",
+      "chome": null,
+      "detail": null,
+      "en": "小浜",
+      "jp": "小浜",
+      "pattern": "1",
+      "note": "小浜,おばま"
+    },
+    {
+      "town": "加斗",
+      "townEn": "Kado",
+      "kana": "カド",
+      "chome": null,
+      "detail": null,
+      "en": "加斗",
+      "jp": "加斗",
+      "pattern": "1",
+      "note": "加斗,かと"
+    },
+    {
+      "town": "口名田",
+      "townEn": "口名田",
+      "kana": "くちなた",
+      "chome": null,
+      "detail": null,
+      "en": "口名田",
+      "jp": "口名田",
+      "pattern": "1",
+      "note": "口名田,くちなた"
+    },
+    {
+      "town": "国富",
+      "townEn": "国富",
+      "kana": "くにとみ",
+      "chome": null,
+      "detail": null,
+      "en": "国富",
+      "jp": "国富",
+      "pattern": "1",
+      "note": "国富,くにとみ"
+    },
+    {
+      "town": "中名田",
+      "townEn": "中名田",
+      "kana": "なかなた",
+      "chome": null,
+      "detail": null,
+      "en": "中名田",
+      "jp": "中名田",
+      "pattern": "1",
+      "note": "中名田,なかなた"
+    },
+    {
+      "town": "西津",
+      "townEn": "Nishizu",
+      "kana": "ニシヅ",
+      "chome": null,
+      "detail": null,
+      "en": "西津",
+      "jp": "西津",
+      "pattern": "2",
+      "note": "西津,にしづ"
+    },
+    {
+      "town": "松永",
+      "townEn": "松永",
+      "kana": "まつなが",
+      "chome": null,
+      "detail": null,
+      "en": "松永",
+      "jp": "松永",
+      "pattern": "2",
+      "note": "松永,まつなが"
+    },
+    {
+      "town": "宮川",
+      "townEn": "宮川",
+      "kana": "みやがわ",
+      "chome": null,
+      "detail": null,
+      "en": "宮川",
+      "jp": "宮川",
+      "pattern": "2",
+      "note": "宮川,みやがわ"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukui Prefecture garbage collection schedule open data",
+      "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+      "license": "Fukui Prefecture open data (attribution required)",
+      "commit": "pref-portal"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "updated": "2026-10-31"
+}

@@ -1,0 +1,357 @@
+{
+  "id": "hayama-14301",
+  "code": "14301",
+  "pref": "14",
+  "jp": "葉山町",
+  "en": "Hayama",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://hayama.5374.jp/data/area_days.csv",
+    "http://hayama.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "paper",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「紙パック」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「空き缶」 under 「資源物」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「空きびん（飲料・食品・化粧品用）」 under 「びん」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「びん」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "plastic",
+      "note": "Auto-matched: the official list puts 「ポリバケツ」 under 「プラスチックごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池（充電式）」 under 「乾電池」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「リサイクルボックス 資源」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「乾電池」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「たんす」 under 「粗大ごみ（有料）」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                1
+              ]
+            },
+            [
+              4
+            ]
+          ]
+        },
+        "paper": [
+          6
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          5
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                4
+              ]
+            },
+            [
+              2
+            ]
+          ]
+        },
+        "paper": [
+          6
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2
+              ]
+            },
+            [
+              5
+            ]
+          ]
+        },
+        "paper": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          4
+        ],
+        "plastic": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                3
+              ]
+            },
+            [
+              1
+            ]
+          ]
+        },
+        "paper": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": [
+          3
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "一色",
+      "townEn": "Isshiki",
+      "kana": "イッシキ",
+      "chome": null,
+      "detail": null,
+      "en": "一色",
+      "jp": "一色",
+      "pattern": "1"
+    },
+    {
+      "town": "一色",
+      "townEn": "Isshiki",
+      "kana": "イッシキ",
+      "chome": null,
+      "detail": "一色第二町内会（つつじヶ丘側）",
+      "en": "一色第二町内会（つつじヶ丘側）",
+      "jp": "一色第二町内会（つつじヶ丘側）",
+      "pattern": "2"
+    },
+    {
+      "town": "木古庭",
+      "townEn": "Kikoba",
+      "kana": "キコバ",
+      "chome": null,
+      "detail": "木古庭・上山口・下山口",
+      "en": "木古庭・上山口・下山口",
+      "jp": "木古庭・上山口・下山口",
+      "pattern": "4"
+    },
+    {
+      "town": "長柄",
+      "townEn": "Nagae",
+      "kana": "ナガエ",
+      "chome": null,
+      "detail": null,
+      "en": "長柄",
+      "jp": "長柄",
+      "pattern": "3"
+    },
+    {
+      "town": "堀内",
+      "townEn": "Horiuchi",
+      "kana": "ホリウチ",
+      "chome": null,
+      "detail": null,
+      "en": "堀内",
+      "jp": "堀内",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://hayama.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

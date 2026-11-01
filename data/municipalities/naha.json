@@ -1,0 +1,1371 @@
+{
+  "id": "naha",
+  "code": "47201",
+  "pref": "47",
+  "jp": "那覇市",
+  "en": "Naha",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://naha.5374.jp/data/area_days.csv",
+    "http://naha.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "wood": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「枝」 under 「資源化物（草木）」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源化物（紙）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源化物（紙）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌(週刊誌、漫画など)」 under 「資源化物（紙）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「資源化物（紙）」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「紙パック(内側が白色)」 under 「資源化物（紙）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源化物（ペットボトル）」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ハサミ」 under 「有害・危険ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「エアゾール缶」 under 「資源化物（かん）」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「有害・危険ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「有害・危険ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          3
+        ],
+        "beverage_can": [
+          4
+        ],
+        "glass_bottle": [
+          4
+        ],
+        "pet_bottle": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          4
+        ],
+        "beverage_can": [
+          3
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "pet_bottle": [
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          3
+        ],
+        "beverage_can": [
+          5
+        ],
+        "glass_bottle": [
+          5
+        ],
+        "pet_bottle": [
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          5
+        ],
+        "beverage_can": [
+          3
+        ],
+        "glass_bottle": [
+          2
+        ],
+        "pet_bottle": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "安次嶺",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "安次嶺",
+      "jp": "安次嶺",
+      "pattern": "4"
+    },
+    {
+      "town": "寒川町1〜2丁目(県道241号線より城北小学校側)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "寒川町1〜2丁目(県道241号線より城北小学校側)",
+      "jp": "寒川町1〜2丁目(県道241号線より城北小学校側)",
+      "pattern": "1"
+    },
+    {
+      "town": "儀保町1丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町1丁目",
+      "jp": "儀保町1丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "儀保町2丁目(1〜6番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町2丁目(1〜6番地)",
+      "jp": "儀保町2丁目(1〜6番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "儀保町2丁目(1〜6番地を除く)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町2丁目(1〜6番地を除く)",
+      "jp": "儀保町2丁目(1〜6番地を除く)",
+      "pattern": "2"
+    },
+    {
+      "town": "儀保町3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町3丁目",
+      "jp": "儀保町3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "儀保町4丁目(19〜24、79-7・10・11・14番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町4丁目(19〜24、79-7・10・11・14番地)",
+      "jp": "儀保町4丁目(19〜24、79-7・10・11・14番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "儀保町4丁目(19〜24、79-7・10・11・14番地を除く)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "儀保町4丁目(19〜24、79-7・10・11・14番地を除く)",
+      "jp": "儀保町4丁目(19〜24、79-7・10・11・14番地を除く)",
+      "pattern": "2"
+    },
+    {
+      "town": "久場川町1〜2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久場川町1〜2丁目",
+      "jp": "久場川町1〜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "崎山町1〜4丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "崎山町1〜4丁目",
+      "jp": "崎山町1〜4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "山川町1丁目(1〜63番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町1丁目(1〜63番地)",
+      "jp": "山川町1丁目(1〜63番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "山川町1丁目(64番地以上)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町1丁目(64番地以上)",
+      "jp": "山川町1丁目(64番地以上)",
+      "pattern": "2"
+    },
+    {
+      "town": "山川町2丁目(1、6、7-1・5・10番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町2丁目(1、6、7-1・5・10番地)",
+      "jp": "山川町2丁目(1、6、7-1・5・10番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "山川町2丁目(1、6、7-1・5・10番地を除く)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町2丁目(1、6、7-1・5・10番地を除く)",
+      "jp": "山川町2丁目(1、6、7-1・5・10番地を除く)",
+      "pattern": "2"
+    },
+    {
+      "town": "山川町3丁目(1、4、7、56、57、61番地を除く)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町3丁目(1、4、7、56、57、61番地を除く)",
+      "jp": "山川町3丁目(1、4、7、56、57、61番地を除く)",
+      "pattern": "2"
+    },
+    {
+      "town": "山川町3丁目(1、4、7、57、57、61番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山川町3丁目(1、4、7、57、57、61番地)",
+      "jp": "山川町3丁目(1、4、7、57、57、61番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "真和志町1〜2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真和志町1〜2丁目",
+      "jp": "真和志町1〜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "石嶺町1〜4丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "石嶺町1〜4丁目",
+      "jp": "石嶺町1〜4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "赤田町1〜3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤田町1〜3丁目",
+      "jp": "赤田町1〜3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "赤平町1〜2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "赤平町1〜2丁目",
+      "jp": "赤平町1〜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大中町1〜2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大中町1〜2丁目",
+      "jp": "大中町1〜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "大名町1〜3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大名町1〜3丁目",
+      "jp": "大名町1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "池端町",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "池端町",
+      "jp": "池端町",
+      "pattern": "1"
+    },
+    {
+      "town": "鳥堀町1〜5丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鳥堀町1〜5丁目",
+      "jp": "鳥堀町1〜5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "壷屋1丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "壷屋1丁目",
+      "jp": "壷屋1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "壷屋2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "壷屋2丁目",
+      "jp": "壷屋2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "壷川1〜3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "壷川1〜3丁目",
+      "jp": "壷川1〜3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "汀良町1〜3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "汀良町1〜3丁目",
+      "jp": "汀良町1〜3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "桃原町1丁目(1〜7番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃原町1丁目(1〜7番地)",
+      "jp": "桃原町1丁目(1〜7番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "桃原町1丁目(10〜25番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃原町1丁目(10〜25番地)",
+      "jp": "桃原町1丁目(10〜25番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "桃原町1丁目(26番地以上)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃原町1丁目(26番地以上)",
+      "jp": "桃原町1丁目(26番地以上)",
+      "pattern": "2"
+    },
+    {
+      "town": "桃原町1丁目(8〜9番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃原町1丁目(8〜9番地)",
+      "jp": "桃原町1丁目(8〜9番地)",
+      "pattern": "2"
+    },
+    {
+      "town": "桃原町2丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桃原町2丁目",
+      "jp": "桃原町2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "当蔵町1〜3丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "当蔵町1〜3丁目",
+      "jp": "当蔵町1〜3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "平良町1丁目(県道241号線より大名側)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平良町1丁目(県道241号線より大名側)",
+      "jp": "平良町1丁目(県道241号線より大名側)",
+      "pattern": "2"
+    },
+    {
+      "town": "平良町2丁目(9〜18番地)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平良町2丁目(9〜18番地)",
+      "jp": "平良町2丁目(9〜18番地)",
+      "pattern": "1"
+    },
+    {
+      "town": "平良町2丁目(9〜18番地を除く)",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平良町2丁目(9〜18番地を除く)",
+      "jp": "平良町2丁目(9〜18番地を除く)",
+      "pattern": "2"
+    },
+    {
+      "town": "末吉町1〜4丁目",
+      "townEn": "Naha",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "末吉町1〜4丁目",
+      "jp": "末吉町1〜4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "赤嶺",
+      "townEn": "Akamine",
+      "kana": "アカミネ",
+      "chome": null,
+      "detail": "赤嶺1〜2丁目",
+      "en": "赤嶺1〜2丁目",
+      "jp": "赤嶺1〜2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "曙",
+      "townEn": "Akebono",
+      "kana": "アケボノ",
+      "chome": null,
+      "detail": "曙1〜3丁目",
+      "en": "曙1〜3丁目",
+      "jp": "曙1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "字安里",
+      "townEn": "Asato",
+      "kana": "アザアサト",
+      "chome": null,
+      "detail": "字安里 県道29号線(崇元寺通り〜大道通りより北側)",
+      "en": "字安里 県道29号線(崇元寺通り〜大道通りより北側)",
+      "jp": "字安里 県道29号線(崇元寺通り〜大道通りより北側)",
+      "pattern": "2"
+    },
+    {
+      "town": "字安里",
+      "townEn": "Asato",
+      "kana": "アザアサト",
+      "chome": null,
+      "detail": "字安里(379〜420番地)、安里交番の北側と大道大通り南側の間",
+      "en": "字安里(379〜420番地)、安里交番の北側と大道大通り南側の間",
+      "jp": "字安里(379〜420番地)、安里交番の北側と大道大通り南側の間",
+      "pattern": "4"
+    },
+    {
+      "town": "字安里",
+      "townEn": "Asato",
+      "kana": "アザアサト",
+      "chome": null,
+      "detail": "字安里388〜410番地(安里交番の南側と安里橋通り北側の間)",
+      "en": "字安里388〜410番地(安里交番の南側と安里橋通り北側の間)",
+      "jp": "字安里388〜410番地(安里交番の南側と安里橋通り北側の間)",
+      "pattern": "1"
+    },
+    {
+      "town": "字安謝",
+      "townEn": "Aja",
+      "kana": "アザアジャ",
+      "chome": null,
+      "detail": null,
+      "en": "字安謝",
+      "jp": "字安謝",
+      "pattern": "2"
+    },
+    {
+      "town": "字天久",
+      "townEn": "Ameku",
+      "kana": "アザアメク",
+      "chome": null,
+      "detail": null,
+      "en": "字天久",
+      "jp": "字天久",
+      "pattern": "2"
+    },
+    {
+      "town": "字上之屋",
+      "townEn": "Uenoya",
+      "kana": "アザウエノヤ",
+      "chome": null,
+      "detail": null,
+      "en": "字上之屋",
+      "jp": "字上之屋",
+      "pattern": "2"
+    },
+    {
+      "town": "字宇栄原",
+      "townEn": "Uebaru",
+      "kana": "アザウエバル",
+      "chome": null,
+      "detail": null,
+      "en": "字宇栄原",
+      "jp": "字宇栄原",
+      "pattern": "4"
+    },
+    {
+      "town": "字上間",
+      "townEn": "Uema",
+      "kana": "アザウエマ",
+      "chome": null,
+      "detail": null,
+      "en": "字上間",
+      "jp": "字上間",
+      "pattern": "3"
+    },
+    {
+      "town": "字小禄",
+      "townEn": "Oroku",
+      "kana": "アザオロク",
+      "chome": null,
+      "detail": null,
+      "en": "字小禄",
+      "jp": "字小禄",
+      "pattern": "4"
+    },
+    {
+      "town": "字国場",
+      "townEn": "Kokuba",
+      "kana": "アザコクバ",
+      "chome": null,
+      "detail": "字国場(与儀国場北線より寄宮側)",
+      "en": "字国場(与儀国場北線より寄宮側)",
+      "jp": "字国場(与儀国場北線より寄宮側)",
+      "pattern": "4"
+    },
+    {
+      "town": "字国場",
+      "townEn": "Kokuba",
+      "kana": "アザコクバ",
+      "chome": null,
+      "detail": "字国場(与儀国場北線より寄宮側を除く)",
+      "en": "字国場(与儀国場北線より寄宮側を除く)",
+      "jp": "字国場(与儀国場北線より寄宮側を除く)",
+      "pattern": "3"
+    },
+    {
+      "town": "字識名",
+      "townEn": "Shikina",
+      "kana": "アザシキナ",
+      "chome": null,
+      "detail": null,
+      "en": "字識名",
+      "jp": "字識名",
+      "pattern": "3"
+    },
+    {
+      "town": "字大道",
+      "townEn": "Daido",
+      "kana": "アザダイドウ",
+      "chome": null,
+      "detail": "字大道 県道29号線(大道通り)より南側(128〜129、172〜172-8、172-10〜173番地を除く)",
+      "en": "字大道 県道29号線(大道通り)より南側(128〜129、172〜172-8、172-10〜173番地を除く)",
+      "jp": "字大道 県道29号線(大道通り)より南側(128〜129、172〜172-8、172-10〜173番地を除く)",
+      "pattern": "1"
+    },
+    {
+      "town": "字大道",
+      "townEn": "Daido",
+      "kana": "アザダイドウ",
+      "chome": null,
+      "detail": "字大道(128〜129、172〜172-8、172-10〜173番地)",
+      "en": "字大道(128〜129、172〜172-8、172-10〜173番地)",
+      "jp": "字大道(128〜129、172〜172-8、172-10〜173番地)",
+      "pattern": "4"
+    },
+    {
+      "town": "字大道",
+      "townEn": "Daido",
+      "kana": "アザダイドウ",
+      "chome": null,
+      "detail": "字大道の県道29号線(大道通り)より北側",
+      "en": "字大道の県道29号線(大道通り)より北側",
+      "jp": "字大道の県道29号線(大道通り)より北側",
+      "pattern": "2"
+    },
+    {
+      "town": "字田原",
+      "townEn": "Tabaru",
+      "kana": "アザタバル",
+      "chome": null,
+      "detail": null,
+      "en": "字田原",
+      "jp": "字田原",
+      "pattern": "4"
+    },
+    {
+      "town": "安里",
+      "townEn": "Asato",
+      "kana": "アサト",
+      "chome": null,
+      "detail": "安里1〜3丁目",
+      "en": "安里1〜3丁目",
+      "jp": "安里1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "字仲井真",
+      "townEn": "Nakaima",
+      "kana": "アザナカイマ",
+      "chome": null,
+      "detail": null,
+      "en": "字仲井真",
+      "jp": "字仲井真",
+      "pattern": "3"
+    },
+    {
+      "town": "旭町",
+      "townEn": "Asahimachi",
+      "kana": "アサヒマチ",
+      "chome": null,
+      "detail": null,
+      "en": "旭町",
+      "jp": "旭町",
+      "pattern": "4"
+    },
+    {
+      "town": "字古島",
+      "townEn": "Furujima",
+      "kana": "アザフルジマ",
+      "chome": null,
+      "detail": null,
+      "en": "字古島",
+      "jp": "字古島",
+      "pattern": "2"
+    },
+    {
+      "town": "字真地",
+      "townEn": "Maaji",
+      "kana": "アザマアジ",
+      "chome": null,
+      "detail": null,
+      "en": "字真地",
+      "jp": "字真地",
+      "pattern": "3"
+    },
+    {
+      "town": "字松川",
+      "townEn": "Matsugawa",
+      "kana": "アザマツガワ",
+      "chome": null,
+      "detail": "字松川(295〜542、600、601、602、700〜800番地)",
+      "en": "字松川(295〜542、600、601、602、700〜800番地)",
+      "jp": "字松川(295〜542、600、601、602、700〜800番地)",
+      "pattern": "2"
+    },
+    {
+      "town": "字松川",
+      "townEn": "Matsugawa",
+      "kana": "アザマツガワ",
+      "chome": null,
+      "detail": "字松川(295〜542、600、601、602、700〜800番地を除く)",
+      "en": "字松川(295〜542、600、601、602、700〜800番地を除く)",
+      "jp": "字松川(295〜542、600、601、602、700〜800番地を除く)",
+      "pattern": "1"
+    },
+    {
+      "town": "字銘苅",
+      "townEn": "Mekaru",
+      "kana": "アザメカル",
+      "chome": null,
+      "detail": null,
+      "en": "字銘苅",
+      "jp": "字銘苅",
+      "pattern": "2"
+    },
+    {
+      "town": "字与儀",
+      "townEn": "Yogi",
+      "kana": "アザヨギ",
+      "chome": null,
+      "detail": "字与儀(1〜371番地)",
+      "en": "字与儀(1〜371番地)",
+      "jp": "字与儀(1〜371番地)",
+      "pattern": "4"
+    },
+    {
+      "town": "字与儀",
+      "townEn": "Yogi",
+      "kana": "アザヨギ",
+      "chome": null,
+      "detail": "字与儀(372番地以上)",
+      "en": "字与儀(372番地以上)",
+      "jp": "字与儀(372番地以上)",
+      "pattern": "3"
+    },
+    {
+      "town": "字寄宮",
+      "townEn": "Yorimiya",
+      "kana": "アザヨリミヤ",
+      "chome": null,
+      "detail": null,
+      "en": "字寄宮",
+      "jp": "字寄宮",
+      "pattern": "4"
+    },
+    {
+      "town": "安謝",
+      "townEn": "Aja",
+      "kana": "アジャ",
+      "chome": null,
+      "detail": "安謝1〜2丁目",
+      "en": "安謝1〜2丁目",
+      "jp": "安謝1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "天久",
+      "townEn": "Ameku",
+      "kana": "アメク",
+      "chome": null,
+      "detail": "天久1〜2丁目",
+      "en": "天久1〜2丁目",
+      "jp": "天久1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "泉崎",
+      "townEn": "Izumizaki",
+      "kana": "イズミザキ",
+      "chome": null,
+      "detail": "泉崎1丁目",
+      "en": "泉崎1丁目",
+      "jp": "泉崎1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "泉崎",
+      "townEn": "Izumizaki",
+      "kana": "イズミザキ",
+      "chome": null,
+      "detail": "泉崎2丁目",
+      "en": "泉崎2丁目",
+      "jp": "泉崎2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "上之屋",
+      "townEn": "Uenoya",
+      "kana": "ウエノヤ",
+      "chome": null,
+      "detail": "上之屋1丁目",
+      "en": "上之屋1丁目",
+      "jp": "上之屋1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "宇栄原",
+      "townEn": "Uebaru",
+      "kana": "ウエバル",
+      "chome": null,
+      "detail": "宇栄原1〜6丁目",
+      "en": "宇栄原1〜6丁目",
+      "jp": "宇栄原1〜6丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "上間",
+      "townEn": "Uema",
+      "kana": "ウエマ",
+      "chome": null,
+      "detail": "上間1丁目",
+      "en": "上間1丁目",
+      "jp": "上間1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "奥武山町",
+      "townEn": "Onoyamacho",
+      "kana": "オオノヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "奥武山町",
+      "jp": "奥武山町",
+      "pattern": "4"
+    },
+    {
+      "town": "おもろまち",
+      "townEn": "Omoromachi",
+      "kana": "オモロマチ",
+      "chome": null,
+      "detail": "おもろまち1〜4丁目",
+      "en": "おもろまち1〜4丁目",
+      "jp": "おもろまち1〜4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "小禄",
+      "townEn": "Oroku",
+      "kana": "オロク",
+      "chome": null,
+      "detail": "小禄1〜5丁目",
+      "en": "小禄1〜5丁目",
+      "jp": "小禄1〜5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "金城",
+      "townEn": "Kanagusuku",
+      "kana": "カナグスク",
+      "chome": null,
+      "detail": "金城1〜5丁目",
+      "en": "金城1〜5丁目",
+      "jp": "金城1〜5丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "金城",
+      "townEn": "Kanagusuku",
+      "kana": "カナグスク",
+      "chome": null,
+      "detail": "金城町1〜4丁目",
+      "en": "金城町1〜4丁目",
+      "jp": "金城町1〜4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "鏡原町",
+      "townEn": "Kyoharacho",
+      "kana": "キョウハラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鏡原町",
+      "jp": "鏡原町",
+      "pattern": "4"
+    },
+    {
+      "town": "具志",
+      "townEn": "Gushi",
+      "kana": "グシ",
+      "chome": null,
+      "detail": "具志1〜3丁目",
+      "en": "具志1〜3丁目",
+      "jp": "具志1〜3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "久米",
+      "townEn": "Kume",
+      "kana": "クメ",
+      "chome": null,
+      "detail": "久米1〜2丁目",
+      "en": "久米1〜2丁目",
+      "jp": "久米1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "久茂地",
+      "townEn": "Kumoji",
+      "kana": "クモジ",
+      "chome": null,
+      "detail": "久茂地1〜3丁目",
+      "en": "久茂地1〜3丁目",
+      "jp": "久茂地1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "古波蔵",
+      "townEn": "Kohagura",
+      "kana": "コハグラ",
+      "chome": null,
+      "detail": "古波蔵1〜4丁目(旧字古波蔵を含む)",
+      "en": "古波蔵1〜4丁目(旧字古波蔵を含む)",
+      "jp": "古波蔵1〜4丁目(旧字古波蔵を含む)",
+      "pattern": "3"
+    },
+    {
+      "town": "識名",
+      "townEn": "Shikina",
+      "kana": "シキナ",
+      "chome": null,
+      "detail": "識名1〜4丁目",
+      "en": "識名1〜4丁目",
+      "jp": "識名1〜4丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "楚辺",
+      "townEn": "Sobe",
+      "kana": "ソベ",
+      "chome": null,
+      "detail": "楚辺1〜3丁目",
+      "en": "楚辺1〜3丁目",
+      "jp": "楚辺1〜3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "高良",
+      "townEn": "Takara",
+      "kana": "タカラ",
+      "chome": null,
+      "detail": "高良1〜3丁目",
+      "en": "高良1〜3丁目",
+      "jp": "高良1〜3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "田原",
+      "townEn": "Tabaru",
+      "kana": "タバル",
+      "chome": null,
+      "detail": "田原1〜4丁目",
+      "en": "田原1〜4丁目",
+      "jp": "田原1〜4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "辻",
+      "townEn": "Tsuji",
+      "kana": "ツジ",
+      "chome": null,
+      "detail": "辻1〜3丁目",
+      "en": "辻1〜3丁目",
+      "jp": "辻1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "泊",
+      "townEn": "Tomari",
+      "kana": "トマリ",
+      "chome": null,
+      "detail": "泊1〜3丁目",
+      "en": "泊1〜3丁目",
+      "jp": "泊1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "長田",
+      "townEn": "Nagata",
+      "kana": "ナガタ",
+      "chome": null,
+      "detail": "長田1〜2丁目",
+      "en": "長田1〜2丁目",
+      "jp": "長田1〜2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "西",
+      "townEn": "Nishi",
+      "kana": "ニシ",
+      "chome": null,
+      "detail": "西1〜3丁目",
+      "en": "西1〜3丁目",
+      "jp": "西1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "繁多川",
+      "townEn": "Hantagawa",
+      "kana": "ハンタガワ",
+      "chome": null,
+      "detail": "繁多川1〜5丁目",
+      "en": "繁多川1〜5丁目",
+      "jp": "繁多川1〜5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東町",
+      "townEn": "Higashimachi",
+      "kana": "ヒガシマチ",
+      "chome": null,
+      "detail": null,
+      "en": "東町",
+      "jp": "東町",
+      "pattern": "2"
+    },
+    {
+      "town": "樋川",
+      "townEn": "Higawa",
+      "kana": "ヒガワ",
+      "chome": null,
+      "detail": "樋川1〜2丁目",
+      "en": "樋川1〜2丁目",
+      "jp": "樋川1〜2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "古島",
+      "townEn": "Furujima",
+      "kana": "フルジマ",
+      "chome": null,
+      "detail": "古島1〜2丁目",
+      "en": "古島1〜2丁目",
+      "jp": "古島1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "前島",
+      "townEn": "Maejima",
+      "kana": "マエジマ",
+      "chome": null,
+      "detail": "前島1〜3丁目",
+      "en": "前島1〜3丁目",
+      "jp": "前島1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "真嘉比",
+      "townEn": "Makabi",
+      "kana": "マカビ",
+      "chome": null,
+      "detail": "真嘉比1〜3丁目(旧字真嘉比を含む)",
+      "en": "真嘉比1〜3丁目(旧字真嘉比を含む)",
+      "jp": "真嘉比1〜3丁目(旧字真嘉比を含む)",
+      "pattern": "2"
+    },
+    {
+      "town": "牧志",
+      "townEn": "Makishi",
+      "kana": "マキシ",
+      "chome": null,
+      "detail": "牧志1〜3丁目",
+      "en": "牧志1〜3丁目",
+      "jp": "牧志1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "松尾",
+      "townEn": "Matsuo",
+      "kana": "マツオ",
+      "chome": null,
+      "detail": "松尾1〜2丁目",
+      "en": "松尾1〜2丁目",
+      "jp": "松尾1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "松川",
+      "townEn": "Matsugawa",
+      "kana": "マツガワ",
+      "chome": null,
+      "detail": "松川1〜3丁目",
+      "en": "松川1〜3丁目",
+      "jp": "松川1〜3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "松島",
+      "townEn": "Matsushima",
+      "kana": "マツシマ",
+      "chome": null,
+      "detail": "松島(1〜2丁目)",
+      "en": "松島(1〜2丁目)",
+      "jp": "松島(1〜2丁目)",
+      "pattern": "2"
+    },
+    {
+      "town": "松山",
+      "townEn": "Matsuyama",
+      "kana": "マツヤマ",
+      "chome": null,
+      "detail": "松山1〜2丁目",
+      "en": "松山1〜2丁目",
+      "jp": "松山1〜2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "港町",
+      "townEn": "Minatomachi",
+      "kana": "ミナトマチ",
+      "chome": null,
+      "detail": "港町1〜4丁目",
+      "en": "港町1〜4丁目",
+      "jp": "港町1〜4丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "三原",
+      "townEn": "Mihara",
+      "kana": "ミハラ",
+      "chome": null,
+      "detail": "三原1〜2丁目",
+      "en": "三原1〜2丁目",
+      "jp": "三原1〜2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "三原",
+      "townEn": "Mihara",
+      "kana": "ミハラ",
+      "chome": null,
+      "detail": "三原3丁目",
+      "en": "三原3丁目",
+      "jp": "三原3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "宮城",
+      "townEn": "Miyagusuku",
+      "kana": "ミヤグスク",
+      "chome": null,
+      "detail": "宮城1丁目",
+      "en": "宮城1丁目",
+      "jp": "宮城1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "銘苅",
+      "townEn": "Mekaru",
+      "kana": "メカル",
+      "chome": null,
+      "detail": "銘苅1〜3丁目",
+      "en": "銘苅1〜3丁目",
+      "jp": "銘苅1〜3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "山下町",
+      "townEn": "Yamashitacho",
+      "kana": "ヤマシタチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "山下町",
+      "jp": "山下町",
+      "pattern": "4"
+    },
+    {
+      "town": "与儀",
+      "townEn": "Yogi",
+      "kana": "ヨギ",
+      "chome": null,
+      "detail": "与儀1丁目",
+      "en": "与儀1丁目",
+      "jp": "与儀1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "与儀",
+      "townEn": "Yogi",
+      "kana": "ヨギ",
+      "chome": null,
+      "detail": "与儀2丁目",
+      "en": "与儀2丁目",
+      "jp": "与儀2丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "寄宮",
+      "townEn": "Yorimiya",
+      "kana": "ヨリミヤ",
+      "chome": null,
+      "detail": "寄宮1〜2丁目",
+      "en": "寄宮1〜2丁目",
+      "jp": "寄宮1〜2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "寄宮",
+      "townEn": "Yorimiya",
+      "kana": "ヨリミヤ",
+      "chome": null,
+      "detail": "寄宮3丁目",
+      "en": "寄宮3丁目",
+      "jp": "寄宮3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "若狭",
+      "townEn": "Wakasa",
+      "kana": "ワカサ",
+      "chome": null,
+      "detail": "若狭1〜3丁目",
+      "en": "若狭1〜3丁目",
+      "jp": "若狭1〜3丁目",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://naha.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,2093 @@
+{
+  "id": "tsuruga",
+  "code": "18202",
+  "pref": "18",
+  "jp": "敦賀市",
+  "en": "Tsuruga",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+    "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi_d/fil/turugashisyusyubi.csv"
+  ],
+  "contacts": [
+    {
+      "en": "Fukui Prefecture DX Promotion Division",
+      "tel": "0776-20-0270"
+    }
+  ],
+  "bins": {
+    "burnable": {
+      "label": "燃やせるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やせないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック資源",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル類",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん・電池類",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "ダンボール・紙製容器・紙パック",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "蛍光灯",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection days from Fukui Prefecture's open-data CSV (weekday rules). Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          3,
+          6
+        ],
+        "paper": [
+          1,
+          4
+        ],
+        "glass_bottle": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-14",
+            "2026-06-09",
+            "2026-08-11",
+            "2026-10-13",
+            "2026-12-08",
+            "2027-02-09"
+          ]
+        },
+        "pet_bottle": [
+          3
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1,
+          4
+        ],
+        "glass_bottle": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-09",
+            "2026-06-11",
+            "2026-08-13",
+            "2026-10-08",
+            "2026-12-10",
+            "2027-02-11"
+          ]
+        },
+        "pet_bottle": [
+          2
+        ]
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "paper": [
+          1,
+          5
+        ],
+        "glass_bottle": [
+          1,
+          5
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-26",
+            "2026-07-28",
+            "2026-09-22",
+            "2026-11-24",
+            "2027-01-26",
+            "2027-03-23"
+          ]
+        },
+        "pet_bottle": [
+          3
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-07",
+            "2026-07-02",
+            "2026-09-03",
+            "2026-11-05",
+            "2027-01-07",
+            "2027-03-04"
+          ]
+        },
+        "pet_bottle": [
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          2
+        ],
+        "glass_bottle": [
+          1,
+          2
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-17",
+            "2026-06-19",
+            "2026-08-21",
+            "2026-10-16",
+            "2026-12-18",
+            "2027-02-19"
+          ]
+        },
+        "pet_bottle": [
+          1
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          4
+        ],
+        "glass_bottle": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-16",
+            "2026-06-18",
+            "2026-08-20",
+            "2026-10-15",
+            "2026-12-17",
+            "2027-02-18"
+          ]
+        },
+        "pet_bottle": [
+          1
+        ]
+      },
+      "7": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1,
+          3
+        ],
+        "glass_bottle": [
+          1,
+          3
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-22",
+            "2026-06-24",
+            "2026-08-26",
+            "2026-10-28",
+            "2026-12-23",
+            "2027-02-24"
+          ]
+        },
+        "pet_bottle": [
+          2
+        ]
+      },
+      "8": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          5
+        ],
+        "glass_bottle": [
+          1,
+          5
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-26",
+            "2026-07-28",
+            "2026-09-22",
+            "2026-11-24",
+            "2027-01-26",
+            "2027-03-23"
+          ]
+        },
+        "pet_bottle": [
+          4
+        ]
+      },
+      "9": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          2
+        ],
+        "glass_bottle": [
+          1,
+          2
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-01",
+            "2026-07-03",
+            "2026-09-04",
+            "2026-11-06",
+            "2027-03-05"
+          ]
+        },
+        "pet_bottle": [
+          4
+        ]
+      },
+      "10": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          3
+        ],
+        "glass_bottle": [
+          1,
+          3
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-06",
+            "2026-07-01",
+            "2026-09-02",
+            "2026-11-04",
+            "2027-01-06",
+            "2027-03-03"
+          ]
+        },
+        "pet_bottle": [
+          4
+        ]
+      },
+      "11": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1
+        ],
+        "glass_bottle": [
+          1
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-28",
+            "2026-07-23",
+            "2026-09-24",
+            "2026-11-26",
+            "2027-01-28",
+            "2027-03-25"
+          ]
+        },
+        "pet_bottle": [
+          2
+        ]
+      },
+      "12": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1,
+          3
+        ],
+        "glass_bottle": [
+          1,
+          3
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-15",
+            "2026-06-17",
+            "2026-08-19",
+            "2026-10-21",
+            "2026-12-16",
+            "2027-02-17"
+          ]
+        },
+        "pet_bottle": [
+          5
+        ]
+      },
+      "13": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          5
+        ],
+        "glass_bottle": [
+          1,
+          5
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-14",
+            "2026-06-09",
+            "2026-08-11",
+            "2026-10-13",
+            "2026-12-08",
+            "2027-02-09"
+          ]
+        },
+        "pet_bottle": [
+          1
+        ]
+      },
+      "14": {
+        "burnable": [
+          2,
+          5
+        ],
+        "paper": [
+          1,
+          4
+        ],
+        "glass_bottle": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-06",
+            "2026-07-01",
+            "2026-09-02",
+            "2026-11-04",
+            "2027-01-06",
+            "2027-03-03"
+          ]
+        },
+        "pet_bottle": [
+          5
+        ]
+      },
+      "15": {
+        "burnable": [
+          3,
+          6
+        ],
+        "paper": [
+          1,
+          2
+        ],
+        "glass_bottle": [
+          1,
+          2
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-05-07",
+            "2026-07-02",
+            "2026-09-03",
+            "2026-11-05",
+            "2027-01-07",
+            "2027-03-04"
+          ]
+        },
+        "pet_bottle": [
+          3
+        ]
+      },
+      "16": {
+        "burnable": [
+          1,
+          4
+        ],
+        "paper": [
+          1,
+          3
+        ],
+        "glass_bottle": [
+          1,
+          3
+        ],
+        "non_burnable": {
+          "dates": [
+            "2026-04-08",
+            "2026-06-10",
+            "2026-08-12",
+            "2026-10-14",
+            "2026-12-09",
+            "2027-02-10"
+          ]
+        },
+        "pet_bottle": [
+          1
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "相生町",
+      "townEn": "Aioicho",
+      "kana": "アイオイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "相生町",
+      "jp": "相生町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 相生町,あいおい"
+    },
+    {
+      "town": "赤崎",
+      "townEn": "Akasaki",
+      "kana": "アカサキ",
+      "chome": null,
+      "detail": null,
+      "en": "赤崎",
+      "jp": "赤崎",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 赤崎,あかさき"
+    },
+    {
+      "town": "挙野",
+      "townEn": "Ageno",
+      "kana": "アゲノ",
+      "chome": null,
+      "detail": null,
+      "en": "挙野",
+      "jp": "挙野",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 挙野,あげの"
+    },
+    {
+      "town": "曙町",
+      "townEn": "Akebonocho",
+      "kana": "アケボノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "曙町",
+      "jp": "曙町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 曙町,あけぼの"
+    },
+    {
+      "town": "阿曽",
+      "townEn": "Azo",
+      "kana": "アゾ",
+      "chome": null,
+      "detail": null,
+      "en": "阿曽",
+      "jp": "阿曽",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 阿曽,あぞ"
+    },
+    {
+      "town": "麻生口",
+      "townEn": "Asoguchi",
+      "kana": "アソウグチ",
+      "chome": null,
+      "detail": null,
+      "en": "麻生口",
+      "jp": "麻生口",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 麻生口,あそうぐち"
+    },
+    {
+      "town": "莇生野",
+      "townEn": "Azono",
+      "kana": "アゾノ",
+      "chome": null,
+      "detail": null,
+      "en": "莇生野",
+      "jp": "莇生野",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 莇生野,あぞの"
+    },
+    {
+      "town": "井川",
+      "townEn": "Igawa",
+      "kana": "イガワ",
+      "chome": null,
+      "detail": null,
+      "en": "井川",
+      "jp": "井川",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 井川,いがわ"
+    },
+    {
+      "town": "池河内",
+      "townEn": "Ikenokochi",
+      "kana": "イケノコウチ",
+      "chome": null,
+      "detail": null,
+      "en": "池河内",
+      "jp": "池河内",
+      "pattern": "6",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 池河内,いけのごうち"
+    },
+    {
+      "town": "泉ケ丘町",
+      "townEn": "Izumigaokacho",
+      "kana": "イズミガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "泉ケ丘町",
+      "jp": "泉ケ丘町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 泉ケ丘町,いずみがおか"
+    },
+    {
+      "town": "市野々町",
+      "townEn": "Ichinonocho",
+      "kana": "イチノノチョウ",
+      "chome": null,
+      "detail": "市野々町1丁目",
+      "en": "市野々町1丁目",
+      "jp": "市野々町1丁目",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 市野々町1丁目,いちのの,1"
+    },
+    {
+      "town": "市野々町",
+      "townEn": "Ichinonocho",
+      "kana": "イチノノチョウ",
+      "chome": null,
+      "detail": "市野々町2丁目",
+      "en": "市野々町2丁目",
+      "jp": "市野々町2丁目",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 市野々町2丁目,いちのの,2"
+    },
+    {
+      "town": "市橋",
+      "townEn": "Ichihashi",
+      "kana": "イチハシ",
+      "chome": null,
+      "detail": null,
+      "en": "市橋",
+      "jp": "市橋",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 市橋,いちはし"
+    },
+    {
+      "town": "五幡",
+      "townEn": "Itsuhata",
+      "kana": "イツハタ",
+      "chome": null,
+      "detail": null,
+      "en": "五幡",
+      "jp": "五幡",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 五幡,いつはた"
+    },
+    {
+      "town": "鋳物師町",
+      "townEn": "Imojicho",
+      "kana": "イモジチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "鋳物師町",
+      "jp": "鋳物師町",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 鋳物師町,いもじ"
+    },
+    {
+      "town": "色浜",
+      "townEn": "Irohama",
+      "kana": "イロハマ",
+      "chome": null,
+      "detail": null,
+      "en": "色浜",
+      "jp": "色浜",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 色浜,いろはま"
+    },
+    {
+      "town": "獺河内",
+      "townEn": "Usogochi",
+      "kana": "ウソゴウチ",
+      "chome": null,
+      "detail": null,
+      "en": "獺河内",
+      "jp": "獺河内",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 獺河内,うそごうち"
+    },
+    {
+      "town": "浦底",
+      "townEn": "Urasoko",
+      "kana": "ウラソコ",
+      "chome": null,
+      "detail": null,
+      "en": "浦底",
+      "jp": "浦底",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 浦底,うらそこ"
+    },
+    {
+      "town": "江良",
+      "townEn": "Era",
+      "kana": "エラ",
+      "chome": null,
+      "detail": null,
+      "en": "江良",
+      "jp": "江良",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 江良,えら"
+    },
+    {
+      "town": "追分",
+      "townEn": "Oiwake",
+      "kana": "オイワケ",
+      "chome": null,
+      "detail": null,
+      "en": "追分",
+      "jp": "追分",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 追分,おいわけ"
+    },
+    {
+      "town": "大蔵",
+      "townEn": "Okura",
+      "kana": "オオクラ",
+      "chome": null,
+      "detail": null,
+      "en": "大蔵",
+      "jp": "大蔵",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 大蔵,おおくら"
+    },
+    {
+      "town": "大比田",
+      "townEn": "Ohida",
+      "kana": "オオヒダ",
+      "chome": null,
+      "detail": null,
+      "en": "大比田",
+      "jp": "大比田",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 大比田,おおひだ"
+    },
+    {
+      "town": "岡山町",
+      "townEn": "Okayamacho",
+      "kana": "オカヤマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "岡山町",
+      "jp": "岡山町",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 岡山町,おかやま"
+    },
+    {
+      "town": "奥麻生",
+      "townEn": "Okuaso",
+      "kana": "オクアソウ",
+      "chome": null,
+      "detail": null,
+      "en": "奥麻生",
+      "jp": "奥麻生",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 奥麻生,おくあそう"
+    },
+    {
+      "town": "奥野",
+      "townEn": "Okuno",
+      "kana": "オクノ",
+      "chome": null,
+      "detail": null,
+      "en": "奥野",
+      "jp": "奥野",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 奥野,おくの"
+    },
+    {
+      "town": "小河",
+      "townEn": "Ogo",
+      "kana": "オゴウ",
+      "chome": null,
+      "detail": null,
+      "en": "小河",
+      "jp": "小河",
+      "pattern": "9",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 小河,おご"
+    },
+    {
+      "town": "小河口",
+      "townEn": "Ogoguchi",
+      "kana": "オゴウグチ",
+      "chome": null,
+      "detail": null,
+      "en": "小河口",
+      "jp": "小河口",
+      "pattern": "9",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 小河口,おごぐち"
+    },
+    {
+      "town": "越坂",
+      "townEn": "Ossaka",
+      "kana": "オッサカ",
+      "chome": null,
+      "detail": null,
+      "en": "越坂",
+      "jp": "越坂",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 越坂,おつさか"
+    },
+    {
+      "town": "神楽町",
+      "townEn": "Kaguracho",
+      "kana": "カグラチョウ",
+      "chome": null,
+      "detail": "神楽町1丁目",
+      "en": "神楽町1丁目",
+      "jp": "神楽町1丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 神楽町1丁目,かぐら,1"
+    },
+    {
+      "town": "神楽町",
+      "townEn": "Kaguracho",
+      "kana": "カグラチョウ",
+      "chome": null,
+      "detail": "神楽町2丁目",
+      "en": "神楽町2丁目",
+      "jp": "神楽町2丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 神楽町2丁目,かぐら,2"
+    },
+    {
+      "town": "樫曲",
+      "townEn": "Kashimagari",
+      "kana": "カシマガリ",
+      "chome": null,
+      "detail": null,
+      "en": "樫曲",
+      "jp": "樫曲",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 樫曲,かしまがり"
+    },
+    {
+      "town": "金山",
+      "townEn": "Kanayama",
+      "kana": "カナヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "金山",
+      "jp": "金山",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 金山,かなやま"
+    },
+    {
+      "town": "鉄輪町",
+      "townEn": "Kanawacho",
+      "kana": "カナワチョウ",
+      "chome": null,
+      "detail": "鉄輪町1丁目",
+      "en": "鉄輪町1丁目",
+      "jp": "鉄輪町1丁目",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 鉄輪町1丁目,かなわ,1"
+    },
+    {
+      "town": "鉄輪町",
+      "townEn": "Kanawacho",
+      "kana": "カナワチョウ",
+      "chome": null,
+      "detail": "鉄輪町2丁目",
+      "en": "鉄輪町2丁目",
+      "jp": "鉄輪町2丁目",
+      "pattern": "11",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 鉄輪町2丁目,かなわ,2"
+    },
+    {
+      "town": "金ケ崎町",
+      "townEn": "Kanegasakicho",
+      "kana": "カネガサキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "金ケ崎町",
+      "jp": "金ケ崎町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 金ケ崎町,かねがさき"
+    },
+    {
+      "town": "川北",
+      "townEn": "川北",
+      "kana": "かわきた",
+      "chome": null,
+      "detail": null,
+      "en": "川北",
+      "jp": "川北",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 川北,かわきた"
+    },
+    {
+      "town": "川崎町",
+      "townEn": "Kawasakicho",
+      "kana": "カワサキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "川崎町",
+      "jp": "川崎町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 川崎町,かわさき"
+    },
+    {
+      "town": "河原町",
+      "townEn": "河原町",
+      "kana": "かわらまち",
+      "chome": null,
+      "detail": null,
+      "en": "河原町",
+      "jp": "河原町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 河原町,かわらまち"
+    },
+    {
+      "town": "木崎",
+      "townEn": "Kizaki",
+      "kana": "キザキ",
+      "chome": null,
+      "detail": null,
+      "en": "木崎",
+      "jp": "木崎",
+      "pattern": "12",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 木崎,きざき"
+    },
+    {
+      "town": "衣掛町",
+      "townEn": "Kinukakecho",
+      "kana": "キヌカケチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "衣掛町",
+      "jp": "衣掛町",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 衣掛町,きぬかけ"
+    },
+    {
+      "town": "木ノ芽町",
+      "townEn": "木ノ芽町",
+      "kana": "きのめちょう",
+      "chome": null,
+      "detail": null,
+      "en": "木ノ芽町",
+      "jp": "木ノ芽町",
+      "pattern": "13",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 木ノ芽町,きのめ"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Kiyomizucho",
+      "kana": "キヨミズチョウ",
+      "chome": null,
+      "detail": "清水町1丁目",
+      "en": "清水町1丁目",
+      "jp": "清水町1丁目",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 清水町1丁目,きよみず,1"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Kiyomizucho",
+      "kana": "キヨミズチョウ",
+      "chome": null,
+      "detail": "清水町2丁目",
+      "en": "清水町2丁目",
+      "jp": "清水町2丁目",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 清水町2丁目,きよみず,2"
+    },
+    {
+      "town": "櫛川",
+      "townEn": "Kushikawa",
+      "kana": "クシカワ",
+      "chome": null,
+      "detail": null,
+      "en": "櫛川",
+      "jp": "櫛川",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 櫛川,くしかわ"
+    },
+    {
+      "town": "櫛川町",
+      "townEn": "Kushikawacho",
+      "kana": "クシカワチョウ",
+      "chome": null,
+      "detail": "櫛川町2丁目",
+      "en": "櫛川町2丁目",
+      "jp": "櫛川町2丁目",
+      "pattern": "12",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 櫛川町2丁目,くしかわ,2"
+    },
+    {
+      "town": "櫛林",
+      "townEn": "Kushibayashi",
+      "kana": "クシバヤシ",
+      "chome": null,
+      "detail": null,
+      "en": "櫛林",
+      "jp": "櫛林",
+      "pattern": "14",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 櫛林,くしばやし"
+    },
+    {
+      "town": "沓",
+      "townEn": "Kutsu",
+      "kana": "クツ",
+      "chome": null,
+      "detail": null,
+      "en": "沓",
+      "jp": "沓",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 沓,くつ"
+    },
+    {
+      "town": "沓見",
+      "townEn": "Kutsumi",
+      "kana": "クツミ",
+      "chome": null,
+      "detail": null,
+      "en": "沓見",
+      "jp": "沓見",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 沓見,くつみ"
+    },
+    {
+      "town": "公文名",
+      "townEn": "Kumommyo",
+      "kana": "クモンミョウ",
+      "chome": null,
+      "detail": null,
+      "en": "公文名",
+      "jp": "公文名",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 公文名,くもんみょう"
+    },
+    {
+      "town": "呉竹町",
+      "townEn": "Kuretakecho",
+      "kana": "クレタケチョウ",
+      "chome": null,
+      "detail": "呉竹町1丁目",
+      "en": "呉竹町1丁目",
+      "jp": "呉竹町1丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 呉竹町1丁目,くれたけ,1"
+    },
+    {
+      "town": "呉竹町",
+      "townEn": "Kuretakecho",
+      "kana": "クレタケチョウ",
+      "chome": null,
+      "detail": "呉竹町2丁目",
+      "en": "呉竹町2丁目",
+      "jp": "呉竹町2丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 呉竹町2丁目,くれたけ,2"
+    },
+    {
+      "town": "古田刈",
+      "townEn": "Kotakari",
+      "kana": "コタカリ",
+      "chome": null,
+      "detail": null,
+      "en": "古田刈",
+      "jp": "古田刈",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 古田刈,こたかり"
+    },
+    {
+      "town": "御名",
+      "townEn": "Gomyo",
+      "kana": "ゴミョウ",
+      "chome": null,
+      "detail": null,
+      "en": "御名",
+      "jp": "御名",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 御名,ごみょう"
+    },
+    {
+      "town": "栄新町",
+      "townEn": "Sakaeshimmachi",
+      "kana": "サカエシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "栄新町",
+      "jp": "栄新町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 栄新町,さかえしんまち"
+    },
+    {
+      "town": "坂下",
+      "townEn": "Sakanoshita",
+      "kana": "サカノシタ",
+      "chome": null,
+      "detail": null,
+      "en": "坂下",
+      "jp": "坂下",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 坂下,さかのした"
+    },
+    {
+      "town": "桜ケ丘町",
+      "townEn": "Sakuragaokacho",
+      "kana": "サクラガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "桜ケ丘町",
+      "jp": "桜ケ丘町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 桜ケ丘町,さくらがおか"
+    },
+    {
+      "town": "桜町",
+      "townEn": "Sakuracho",
+      "kana": "サクラマチ",
+      "chome": null,
+      "detail": null,
+      "en": "桜町",
+      "jp": "桜町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 桜町,さくら"
+    },
+    {
+      "town": "沢",
+      "townEn": "Sawa",
+      "kana": "サワ",
+      "chome": null,
+      "detail": null,
+      "en": "沢",
+      "jp": "沢",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 沢,さわ"
+    },
+    {
+      "town": "常宮",
+      "townEn": "Jogu",
+      "kana": "ジョウグウ",
+      "chome": null,
+      "detail": null,
+      "en": "常宮",
+      "jp": "常宮",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 常宮,じょうぐう"
+    },
+    {
+      "town": "昭和町",
+      "townEn": "Showacho",
+      "kana": "ショウワチョウ",
+      "chome": null,
+      "detail": "昭和町1丁目",
+      "en": "昭和町1丁目",
+      "jp": "昭和町1丁目",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 昭和町1丁目,しょうわ,1"
+    },
+    {
+      "town": "昭和町",
+      "townEn": "Showacho",
+      "kana": "ショウワチョウ",
+      "chome": null,
+      "detail": "昭和町2丁目",
+      "en": "昭和町2丁目",
+      "jp": "昭和町2丁目",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 昭和町2丁目,しょうわ,2"
+    },
+    {
+      "town": "白木",
+      "townEn": "Shiraki",
+      "kana": "シラキ",
+      "chome": null,
+      "detail": "白木1丁目",
+      "en": "白木1丁目",
+      "jp": "白木1丁目",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 白木1丁目,しらき,1"
+    },
+    {
+      "town": "白木",
+      "townEn": "Shiraki",
+      "kana": "シラキ",
+      "chome": null,
+      "detail": "白木2丁目",
+      "en": "白木2丁目",
+      "jp": "白木2丁目",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 白木2丁目,しらき,2"
+    },
+    {
+      "town": "白銀町",
+      "townEn": "Shiroganecho",
+      "kana": "シロガネチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "白銀町",
+      "jp": "白銀町",
+      "pattern": "12",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 白銀町,しろがね"
+    },
+    {
+      "town": "新道",
+      "townEn": "Shindo",
+      "kana": "シンドウ",
+      "chome": null,
+      "detail": null,
+      "en": "新道",
+      "jp": "新道",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 新道,しんどう"
+    },
+    {
+      "town": "新保",
+      "townEn": "Shimbo",
+      "kana": "シンボ",
+      "chome": null,
+      "detail": null,
+      "en": "新保",
+      "jp": "新保",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 新保,しんぼ"
+    },
+    {
+      "town": "新松島町",
+      "townEn": "Shimmatsushimacho",
+      "kana": "シンマツシマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "新松島町",
+      "jp": "新松島町",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 新松島町,しんまつしま"
+    },
+    {
+      "town": "新和町",
+      "townEn": "Shinwacho",
+      "kana": "シンワチョウ",
+      "chome": null,
+      "detail": "新和町1丁目",
+      "en": "新和町1丁目",
+      "jp": "新和町1丁目",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 新和町1丁目,しんわ,1"
+    },
+    {
+      "town": "新和町",
+      "townEn": "Shinwacho",
+      "kana": "シンワチョウ",
+      "chome": null,
+      "detail": "新和町2丁目",
+      "en": "新和町2丁目",
+      "jp": "新和町2丁目",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 新和町2丁目,しんわ,2"
+    },
+    {
+      "town": "杉津",
+      "townEn": "Suizu",
+      "kana": "スイヅ",
+      "chome": null,
+      "detail": null,
+      "en": "杉津",
+      "jp": "杉津",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 杉津,すいず"
+    },
+    {
+      "town": "杉箸",
+      "townEn": "Sugihashi",
+      "kana": "スギハシ",
+      "chome": null,
+      "detail": null,
+      "en": "杉箸",
+      "jp": "杉箸",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 杉箸,すぎはし"
+    },
+    {
+      "town": "砂流",
+      "townEn": "Sunagare",
+      "kana": "スナガレ",
+      "chome": null,
+      "detail": null,
+      "en": "砂流",
+      "jp": "砂流",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 砂流,すながれ"
+    },
+    {
+      "town": "関",
+      "townEn": "Seki",
+      "kana": "セキ",
+      "chome": null,
+      "detail": null,
+      "en": "関",
+      "jp": "関",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 関,せき"
+    },
+    {
+      "town": "曽々木",
+      "townEn": "Sosogi",
+      "kana": "ソソギ",
+      "chome": null,
+      "detail": null,
+      "en": "曽々木",
+      "jp": "曽々木",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 曽々木,そそぎ"
+    },
+    {
+      "town": "田結",
+      "townEn": "Tai",
+      "kana": "タイ",
+      "chome": null,
+      "detail": null,
+      "en": "田結",
+      "jp": "田結",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 田結,たい"
+    },
+    {
+      "town": "高野",
+      "townEn": "Takano",
+      "kana": "タカノ",
+      "chome": null,
+      "detail": null,
+      "en": "高野",
+      "jp": "高野",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 高野,たかの"
+    },
+    {
+      "town": "駄口",
+      "townEn": "Daguchi",
+      "kana": "ダグチ",
+      "chome": null,
+      "detail": null,
+      "en": "駄口",
+      "jp": "駄口",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 駄口,だぐち"
+    },
+    {
+      "town": "田尻",
+      "townEn": "Tajiri",
+      "kana": "タジリ",
+      "chome": null,
+      "detail": null,
+      "en": "田尻",
+      "jp": "田尻",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 田尻,たじり"
+    },
+    {
+      "town": "立石",
+      "townEn": "Tateishi",
+      "kana": "タテイシ",
+      "chome": null,
+      "detail": null,
+      "en": "立石",
+      "jp": "立石",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 立石,たていし"
+    },
+    {
+      "town": "谷",
+      "townEn": "Tani",
+      "kana": "タニ",
+      "chome": null,
+      "detail": null,
+      "en": "谷",
+      "jp": "谷",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 谷,たに"
+    },
+    {
+      "town": "谷口",
+      "townEn": "Taniguchi",
+      "kana": "タニグチ",
+      "chome": null,
+      "detail": null,
+      "en": "谷口",
+      "jp": "谷口",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 谷口,たにぐち"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町1丁目",
+      "en": "中央町1丁目",
+      "jp": "中央町1丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 中央町1丁目,ちゅうおう,1"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町2丁目",
+      "en": "中央町2丁目",
+      "jp": "中央町2丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 中央町2丁目,ちゅうおう,2"
+    },
+    {
+      "town": "津内町",
+      "townEn": "Tsunaicho",
+      "kana": "ツナイチョウ",
+      "chome": null,
+      "detail": "津内町1丁目",
+      "en": "津内町1丁目",
+      "jp": "津内町1丁目",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 津内町1丁目,つない,1"
+    },
+    {
+      "town": "津内町",
+      "townEn": "Tsunaicho",
+      "kana": "ツナイチョウ",
+      "chome": null,
+      "detail": "津内町2丁目",
+      "en": "津内町2丁目",
+      "jp": "津内町2丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 津内町2丁目,つない,2"
+    },
+    {
+      "town": "津内町",
+      "townEn": "Tsunaicho",
+      "kana": "ツナイチョウ",
+      "chome": null,
+      "detail": "津内町3丁目",
+      "en": "津内町3丁目",
+      "jp": "津内町3丁目",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 津内町3丁目,つない,3"
+    },
+    {
+      "town": "角鹿町",
+      "townEn": "Tsunogacho",
+      "kana": "ツノガチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "角鹿町",
+      "jp": "角鹿町",
+      "pattern": "11",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 角鹿町,つのが"
+    },
+    {
+      "town": "手",
+      "townEn": "Te",
+      "kana": "テ",
+      "chome": null,
+      "detail": null,
+      "en": "手",
+      "jp": "手",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 手,て"
+    },
+    {
+      "town": "天筒町",
+      "townEn": "Tezutsucho",
+      "kana": "テヅツチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "天筒町",
+      "jp": "天筒町",
+      "pattern": "11",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 天筒町,てづつ"
+    },
+    {
+      "town": "堂",
+      "townEn": "Do",
+      "kana": "ドウ",
+      "chome": null,
+      "detail": null,
+      "en": "堂",
+      "jp": "堂",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 堂,どう"
+    },
+    {
+      "town": "東洋町",
+      "townEn": "Toyocho",
+      "kana": "トウヨウチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "東洋町",
+      "jp": "東洋町",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 東洋町,とうよう"
+    },
+    {
+      "town": "刀根",
+      "townEn": "Tone",
+      "kana": "トネ",
+      "chome": null,
+      "detail": null,
+      "en": "刀根",
+      "jp": "刀根",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 刀根,とね"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": null,
+      "en": "中",
+      "jp": "中",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 中,なか"
+    },
+    {
+      "town": "長沢",
+      "townEn": "Nagaso",
+      "kana": "ナガソ",
+      "chome": null,
+      "detail": null,
+      "en": "長沢",
+      "jp": "長沢",
+      "pattern": "9",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 長沢,ながそ"
+    },
+    {
+      "town": "長谷",
+      "townEn": "Nagatani",
+      "kana": "ナガタニ",
+      "chome": null,
+      "detail": null,
+      "en": "長谷",
+      "jp": "長谷",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 長谷,ながたに"
+    },
+    {
+      "town": "名子",
+      "townEn": "Nago",
+      "kana": "ナゴ",
+      "chome": null,
+      "detail": null,
+      "en": "名子",
+      "jp": "名子",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 名子,なご"
+    },
+    {
+      "town": "布田町",
+      "townEn": "布田町",
+      "kana": "ぬのたちょう",
+      "chome": null,
+      "detail": null,
+      "en": "布田町",
+      "jp": "布田町",
+      "pattern": "13",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 布田町,ぬのた"
+    },
+    {
+      "town": "縄間",
+      "townEn": "Noma",
+      "kana": "ノウマ",
+      "chome": null,
+      "detail": null,
+      "en": "縄間",
+      "jp": "縄間",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 縄間,のうま"
+    },
+    {
+      "town": "野神",
+      "townEn": "Nogami",
+      "kana": "ノガミ",
+      "chome": null,
+      "detail": null,
+      "en": "野神",
+      "jp": "野神",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 野神,のがみ"
+    },
+    {
+      "town": "野坂",
+      "townEn": "Nosaka",
+      "kana": "ノサカ",
+      "chome": null,
+      "detail": null,
+      "en": "野坂",
+      "jp": "野坂",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 野坂,のさか"
+    },
+    {
+      "town": "萩野町",
+      "townEn": "Haginocho",
+      "kana": "ハギノチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "萩野町",
+      "jp": "萩野町",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 萩野町,はぎの"
+    },
+    {
+      "town": "鳩原",
+      "townEn": "Hatohara",
+      "kana": "ハトハラ",
+      "chome": null,
+      "detail": null,
+      "en": "鳩原",
+      "jp": "鳩原",
+      "pattern": "9",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 鳩原,はとはら"
+    },
+    {
+      "town": "葉原",
+      "townEn": "Habara",
+      "kana": "ハバラ",
+      "chome": null,
+      "detail": null,
+      "en": "葉原",
+      "jp": "葉原",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 葉原,はばら"
+    },
+    {
+      "town": "原",
+      "townEn": "Hara",
+      "kana": "ハラ",
+      "chome": null,
+      "detail": null,
+      "en": "原",
+      "jp": "原",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 原,はら"
+    },
+    {
+      "town": "疋田",
+      "townEn": "Hikida",
+      "kana": "ヒキダ",
+      "chome": null,
+      "detail": null,
+      "en": "疋田",
+      "jp": "疋田",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 疋田,ひきだ"
+    },
+    {
+      "town": "ひばりケ丘町",
+      "townEn": "Hibarigaokacho",
+      "kana": "ヒバリガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "ひばりケ丘町",
+      "jp": "ひばりケ丘町",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · ひばりケ丘町,ひばりがおか"
+    },
+    {
+      "town": "開町",
+      "townEn": "Hirakicho",
+      "kana": "ヒラキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "開町",
+      "jp": "開町",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 開町,ひらき"
+    },
+    {
+      "town": "深坂",
+      "townEn": "深坂",
+      "kana": "ふかさか",
+      "chome": null,
+      "detail": null,
+      "en": "深坂",
+      "jp": "深坂",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 深坂,ふかさか"
+    },
+    {
+      "town": "藤ケ丘町",
+      "townEn": "Fujigaokacho",
+      "kana": "フジガオカチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "藤ケ丘町",
+      "jp": "藤ケ丘町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 藤ケ丘町,ふじがおか"
+    },
+    {
+      "town": "二村",
+      "townEn": "Futamura",
+      "kana": "フタムラ",
+      "chome": null,
+      "detail": null,
+      "en": "二村",
+      "jp": "二村",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 二村,ふたむら"
+    },
+    {
+      "town": "平和町",
+      "townEn": "Heiwacho",
+      "kana": "ヘイワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "平和町",
+      "jp": "平和町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 平和町,へいわ"
+    },
+    {
+      "town": "蓬莱町",
+      "townEn": "蓬莱町",
+      "kana": "ほうらいちょう",
+      "chome": null,
+      "detail": null,
+      "en": "蓬莱町",
+      "jp": "蓬莱町",
+      "pattern": "15",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 蓬莱町,ほうらい"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町1丁目",
+      "en": "本町1丁目",
+      "jp": "本町1丁目",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 本町1丁目,ほんまち,1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Hommachi",
+      "kana": "ホンマチ",
+      "chome": null,
+      "detail": "本町2丁目",
+      "en": "本町2丁目",
+      "jp": "本町2丁目",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 本町2丁目,ほんまち,2"
+    },
+    {
+      "town": "舞崎町",
+      "townEn": "Maizakicho",
+      "kana": "マイザキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "舞崎町",
+      "jp": "舞崎町",
+      "pattern": "11",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 舞崎町,まいざき"
+    },
+    {
+      "town": "舞崎町",
+      "townEn": "Maizakicho",
+      "kana": "マイザキチョウ",
+      "chome": null,
+      "detail": "舞崎町2丁目",
+      "en": "舞崎町2丁目",
+      "jp": "舞崎町2丁目",
+      "pattern": "11",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 舞崎町2丁目,まいざき,2"
+    },
+    {
+      "town": "松栄町",
+      "townEn": "Matsuecho",
+      "kana": "マツエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "松栄町",
+      "jp": "松栄町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 松栄町,まつえ"
+    },
+    {
+      "town": "松島町",
+      "townEn": "Matsushimacho",
+      "kana": "マツシマチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "松島町",
+      "jp": "松島町",
+      "pattern": "12",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 松島町,まつしま"
+    },
+    {
+      "town": "松島町",
+      "townEn": "Matsushimacho",
+      "kana": "マツシマチョウ",
+      "chome": null,
+      "detail": "松島町2丁目",
+      "en": "松島町2丁目",
+      "jp": "松島町2丁目",
+      "pattern": "12",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 松島町2丁目,まつしま,2"
+    },
+    {
+      "town": "松葉町",
+      "townEn": "Matsubacho",
+      "kana": "マツバチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "松葉町",
+      "jp": "松葉町",
+      "pattern": "4",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 松葉町,まつば"
+    },
+    {
+      "town": "松原町",
+      "townEn": "Matsubaracho",
+      "kana": "マツバラチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "松原町",
+      "jp": "松原町",
+      "pattern": "7",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 松原町,まつばら"
+    },
+    {
+      "town": "鞠山",
+      "townEn": "Maruyama",
+      "kana": "マリヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "鞠山",
+      "jp": "鞠山",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 鞠山,まるやま"
+    },
+    {
+      "town": "三島町",
+      "townEn": "Mishimacho",
+      "kana": "ミシマチョウ",
+      "chome": null,
+      "detail": "三島町1丁目",
+      "en": "三島町1丁目",
+      "jp": "三島町1丁目",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 三島町1丁目,みしま,1"
+    },
+    {
+      "town": "三島町",
+      "townEn": "Mishimacho",
+      "kana": "ミシマチョウ",
+      "chome": null,
+      "detail": "三島町2丁目",
+      "en": "三島町2丁目",
+      "jp": "三島町2丁目",
+      "pattern": "8",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 三島町2丁目,みしま,2"
+    },
+    {
+      "town": "三島町",
+      "townEn": "Mishimacho",
+      "kana": "ミシマチョウ",
+      "chome": null,
+      "detail": "三島町3丁目",
+      "en": "三島町3丁目",
+      "jp": "三島町3丁目",
+      "pattern": "10",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 三島町3丁目,みしま,3"
+    },
+    {
+      "town": "道口",
+      "townEn": "Michinokuchi",
+      "kana": "ミチノクチ",
+      "chome": null,
+      "detail": null,
+      "en": "道口",
+      "jp": "道口",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 道口,みちのくち"
+    },
+    {
+      "town": "みどりケ丘町",
+      "townEn": "みどりケ丘町",
+      "kana": "みどりがおかちょう",
+      "chome": null,
+      "detail": null,
+      "en": "みどりケ丘町",
+      "jp": "みどりケ丘町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · みどりケ丘町,みどりがおか"
+    },
+    {
+      "town": "港町",
+      "townEn": "Minatomachi",
+      "kana": "ミナトマチ",
+      "chome": null,
+      "detail": null,
+      "en": "港町",
+      "jp": "港町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 港町,みなとまち"
+    },
+    {
+      "town": "深山寺",
+      "townEn": "深山寺",
+      "kana": "みやまでら",
+      "chome": null,
+      "detail": null,
+      "en": "深山寺",
+      "jp": "深山寺",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 深山寺,みやまでら"
+    },
+    {
+      "town": "元比田",
+      "townEn": "Motohida",
+      "kana": "モトヒダ",
+      "chome": null,
+      "detail": null,
+      "en": "元比田",
+      "jp": "元比田",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 元比田,もとひだ"
+    },
+    {
+      "town": "元町",
+      "townEn": "Motomachi",
+      "kana": "モトマチ",
+      "chome": null,
+      "detail": null,
+      "en": "元町",
+      "jp": "元町",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 元町,もとまち"
+    },
+    {
+      "town": "山",
+      "townEn": "Yama",
+      "kana": "ヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "山",
+      "jp": "山",
+      "pattern": "1",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 山,やま"
+    },
+    {
+      "town": "山泉",
+      "townEn": "Yamashimizu",
+      "kana": "ヤマシミズ",
+      "chome": null,
+      "detail": null,
+      "en": "山泉",
+      "jp": "山泉",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 山泉,やましみず"
+    },
+    {
+      "town": "結城町",
+      "townEn": "Yukicho",
+      "kana": "ユウキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "結城町",
+      "jp": "結城町",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 結城町,ゆうき"
+    },
+    {
+      "town": "横浜",
+      "townEn": "Yokohama",
+      "kana": "ヨコハマ",
+      "chome": null,
+      "detail": null,
+      "en": "横浜",
+      "jp": "横浜",
+      "pattern": "2",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 横浜,よこはま"
+    },
+    {
+      "town": "余座",
+      "townEn": "Yoza",
+      "kana": "ヨザ",
+      "chome": null,
+      "detail": null,
+      "en": "余座",
+      "jp": "余座",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 余座,よざ"
+    },
+    {
+      "town": "吉河",
+      "townEn": "Yoshiko",
+      "kana": "ヨシコ",
+      "chome": null,
+      "detail": null,
+      "en": "吉河",
+      "jp": "吉河",
+      "pattern": "5",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 吉河,よしこ"
+    },
+    {
+      "town": "若泉町",
+      "townEn": "Wakaizumicho",
+      "kana": "ワカイズミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "若泉町",
+      "jp": "若泉町",
+      "pattern": "13",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 若泉町,わかいずみ"
+    },
+    {
+      "town": "若葉町",
+      "townEn": "Wakabacho",
+      "kana": "ワカバチョウ",
+      "chome": null,
+      "detail": "若葉町1丁目",
+      "en": "若葉町1丁目",
+      "jp": "若葉町1丁目",
+      "pattern": "16",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 若葉町1丁目,わかば,1"
+    },
+    {
+      "town": "若葉町",
+      "townEn": "Wakabacho",
+      "kana": "ワカバチョウ",
+      "chome": null,
+      "detail": "若葉町2丁目",
+      "en": "若葉町2丁目",
+      "jp": "若葉町2丁目",
+      "pattern": "16",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 若葉町2丁目,わかば,2"
+    },
+    {
+      "town": "若葉町",
+      "townEn": "Wakabacho",
+      "kana": "ワカバチョウ",
+      "chome": null,
+      "detail": "若葉町3丁目",
+      "en": "若葉町3丁目",
+      "jp": "若葉町3丁目",
+      "pattern": "16",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 若葉町3丁目,わかば,3"
+    },
+    {
+      "town": "和久野",
+      "townEn": "Wakuno",
+      "kana": "ワクノ",
+      "chome": null,
+      "detail": null,
+      "en": "和久野",
+      "jp": "和久野",
+      "pattern": "3",
+      "note": "ごみの収集がない日　5月3日～5日、12月31日～1月3日 · 和久野,わくの"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Fukui Prefecture garbage collection schedule open data",
+      "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/list_ct_gomisyusyubi.html",
+      "license": "Fukui Prefecture open data (attribution required)",
+      "commit": "pref-portal"
+    }
+  },
+  "extractedAt": "2026-10-31",
+  "updated": "2026-10-31"
+}

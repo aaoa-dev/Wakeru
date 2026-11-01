@@ -1,0 +1,612 @@
+{
+  "id": "kasuya-40349",
+  "code": "40349",
+  "pref": "40",
+  "jp": "粕屋町",
+  "en": "Kasuya",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://kasuya.5374.jp/data/area_days.csv",
+    "http://kasuya.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類（古着）」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「菓子箱（紙・木）」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペットボトル（資源化物）」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧びん」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ＣＤ」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「水銀体温計」 under 「別収集（危険物）」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          0,
+          3
+        ],
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          0,
+          3
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "サンライフ",
+      "townEn": "Sanraifu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "サンライフ",
+      "jp": "サンライフ",
+      "pattern": "3"
+    },
+    {
+      "town": "阿恵",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "阿恵",
+      "jp": "阿恵",
+      "pattern": "3"
+    },
+    {
+      "town": "乙仲原西　その他の組合",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "乙仲原西　その他の組合",
+      "jp": "乙仲原西　その他の組合",
+      "pattern": "1"
+    },
+    {
+      "town": "乙仲原西　日守",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "乙仲原西　日守",
+      "jp": "乙仲原西　日守",
+      "pattern": "3"
+    },
+    {
+      "town": "乙仲原東",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "乙仲原東",
+      "jp": "乙仲原東",
+      "pattern": "1"
+    },
+    {
+      "town": "花ケ浦",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花ケ浦",
+      "jp": "花ケ浦",
+      "pattern": "3"
+    },
+    {
+      "town": "戸原　駅前、草場、南の３・５",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戸原　駅前、草場、南の３・５",
+      "jp": "戸原　駅前、草場、南の３・５",
+      "pattern": "1"
+    },
+    {
+      "town": "戸原　戸原",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戸原　戸原",
+      "jp": "戸原　戸原",
+      "pattern": "3"
+    },
+    {
+      "town": "戸原　広田",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戸原　広田",
+      "jp": "戸原　広田",
+      "pattern": "3"
+    },
+    {
+      "town": "戸原　野間、南の６",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戸原　野間、南の６",
+      "jp": "戸原　野間、南の６",
+      "pattern": "1"
+    },
+    {
+      "town": "戸原　薬師、東、南、南の２、堀の内１・２",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "戸原　薬師、東、南、南の２、堀の内１・２",
+      "jp": "戸原　薬師、東、南、南の２、堀の内１・２",
+      "pattern": "2"
+    },
+    {
+      "town": "甲中原　その他の組合",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "甲中原　その他の組合",
+      "jp": "甲中原　その他の組合",
+      "pattern": "3"
+    },
+    {
+      "town": "甲中原　十原",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "甲中原　十原",
+      "jp": "甲中原　十原",
+      "pattern": "3"
+    },
+    {
+      "town": "上大隈",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上大隈",
+      "jp": "上大隈",
+      "pattern": "1"
+    },
+    {
+      "town": "多の津",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "多の津",
+      "jp": "多の津",
+      "pattern": "3"
+    },
+    {
+      "town": "大隈",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大隈",
+      "jp": "大隈",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "朝日",
+      "jp": "朝日",
+      "pattern": "1"
+    },
+    {
+      "town": "長戸",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長戸",
+      "jp": "長戸",
+      "pattern": "2"
+    },
+    {
+      "town": "長者原下",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長者原下",
+      "jp": "長者原下",
+      "pattern": "2"
+    },
+    {
+      "town": "長者原上　その他の組合",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長者原上　その他の組合",
+      "jp": "長者原上　その他の組合",
+      "pattern": "2"
+    },
+    {
+      "town": "長者原上　葛葉",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長者原上　葛葉",
+      "jp": "長者原上　葛葉",
+      "pattern": "1"
+    },
+    {
+      "town": "長者原中",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長者原中",
+      "jp": "長者原中",
+      "pattern": "2"
+    },
+    {
+      "town": "内橋一",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内橋一",
+      "jp": "内橋一",
+      "pattern": "3"
+    },
+    {
+      "town": "内橋三",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内橋三",
+      "jp": "内橋三",
+      "pattern": "3"
+    },
+    {
+      "town": "内橋二",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内橋二",
+      "jp": "内橋二",
+      "pattern": "3"
+    },
+    {
+      "town": "柚須　その他の組合",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柚須　その他の組合",
+      "jp": "柚須　その他の組合",
+      "pattern": "5"
+    },
+    {
+      "town": "柚須　東の１～３、西の２・３、堅町の１～５、駅前",
+      "townEn": "Kasuya",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柚須　東の１～３、西の２・３、堅町の１～５、駅前",
+      "jp": "柚須　東の１～３、西の２・３、堅町の１～５、駅前",
+      "pattern": "4"
+    },
+    {
+      "town": "江辻",
+      "townEn": "Etsuji",
+      "kana": "エツジ",
+      "chome": null,
+      "detail": null,
+      "en": "江辻",
+      "jp": "江辻",
+      "pattern": "1"
+    },
+    {
+      "town": "駕与丁",
+      "townEn": "Kayoicho",
+      "kana": "カヨイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "駕与丁",
+      "jp": "駕与丁",
+      "pattern": "3"
+    },
+    {
+      "town": "酒殿",
+      "townEn": "Sakado",
+      "kana": "サカド",
+      "chome": null,
+      "detail": null,
+      "en": "酒殿",
+      "jp": "酒殿",
+      "pattern": "3"
+    },
+    {
+      "town": "原町",
+      "townEn": "Harumachi",
+      "kana": "ハルマチ",
+      "chome": null,
+      "detail": null,
+      "en": "原町",
+      "jp": "原町",
+      "pattern": "2"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Wakamiya",
+      "kana": "ワカミヤ",
+      "chome": null,
+      "detail": "若宮　その他の組合",
+      "en": "若宮　その他の組合",
+      "jp": "若宮　その他の組合",
+      "pattern": "2"
+    },
+    {
+      "town": "若宮",
+      "townEn": "Wakamiya",
+      "kana": "ワカミヤ",
+      "chome": null,
+      "detail": "若宮７組",
+      "en": "若宮７組",
+      "jp": "若宮７組",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://kasuya.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}

@@ -1,0 +1,992 @@
+{
+  "id": "misato-city",
+  "code": "11237",
+  "pref": "11",
+  "jp": "三郷市",
+  "en": "Misato",
+  "verified": "2026-10-31",
+  "sources": [
+    "https://www.city.misato.lg.jp/soshiki/shiminseikatsu/kurinraifu/2/9739.html"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "もえるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "res": {
+      "label": "びん・かん",
+      "en": "Bottles & cans",
+      "kind": "res"
+    },
+    "non_burnable": {
+      "label": "燃やせない資源",
+      "en": "Non-burnable recyclables",
+      "kind": "non"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's official 地区別収集日 table. Bottles/cans are weeks 1 and 3; non-burnable recyclables weeks 2 and 4 on the same weekday column. PET collection uses the 月2回 column.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "res": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          3,
+          6
+        ],
+        "res": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "res": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "東町",
+      "townEn": "東町",
+      "kana": "東町",
+      "chome": null,
+      "detail": null,
+      "en": "東町",
+      "jp": "東町",
+      "pattern": "1"
+    },
+    {
+      "town": "泉1～3丁目",
+      "townEn": "泉1～3丁目",
+      "kana": "泉1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "泉1～3丁目",
+      "jp": "泉1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "市助（市助66～130を除く）",
+      "townEn": "市助（市助66～130を除く）",
+      "kana": "市助（市助66～130を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "市助（市助66～130を除く）",
+      "jp": "市助（市助66～130を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "市助66～130",
+      "townEn": "市助66～130",
+      "kana": "市助66～130",
+      "chome": null,
+      "detail": null,
+      "en": "市助66～130",
+      "jp": "市助66～130",
+      "pattern": "2"
+    },
+    {
+      "town": "岩野木",
+      "townEn": "岩野木",
+      "kana": "岩野木",
+      "chome": null,
+      "detail": null,
+      "en": "岩野木",
+      "jp": "岩野木",
+      "pattern": "2"
+    },
+    {
+      "town": "インター南1～3丁目",
+      "townEn": "インター南1～3丁目",
+      "kana": "インター南1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "インター南1～3丁目",
+      "jp": "インター南1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "後谷（大場川の東側）",
+      "townEn": "後谷（大場川の東側）",
+      "kana": "後谷（大場川の東側）",
+      "chome": null,
+      "detail": null,
+      "en": "後谷（大場川の東側）",
+      "jp": "後谷（大場川の東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "後谷（大場川の西側）",
+      "townEn": "後谷（大場川の西側）",
+      "kana": "後谷（大場川の西側）",
+      "chome": null,
+      "detail": null,
+      "en": "後谷（大場川の西側）",
+      "jp": "後谷（大場川の西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "采女1丁目",
+      "townEn": "采女1丁目",
+      "kana": "采女1丁目",
+      "chome": null,
+      "detail": null,
+      "en": "采女1丁目",
+      "jp": "采女1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "大広戸（常磐道の東側）",
+      "townEn": "大広戸（常磐道の東側）",
+      "kana": "大広戸（常磐道の東側）",
+      "chome": null,
+      "detail": null,
+      "en": "大広戸（常磐道の東側）",
+      "jp": "大広戸（常磐道の東側）",
+      "pattern": "2"
+    },
+    {
+      "town": "大広戸（常磐道の西側）",
+      "townEn": "大広戸（常磐道の西側）",
+      "kana": "大広戸（常磐道の西側）",
+      "chome": null,
+      "detail": null,
+      "en": "大広戸（常磐道の西側）",
+      "jp": "大広戸（常磐道の西側）",
+      "pattern": "1"
+    },
+    {
+      "town": "鎌倉",
+      "townEn": "鎌倉",
+      "kana": "鎌倉",
+      "chome": null,
+      "detail": null,
+      "en": "鎌倉",
+      "jp": "鎌倉",
+      "pattern": "3"
+    },
+    {
+      "town": "上口1～3丁目",
+      "townEn": "上口1～3丁目",
+      "kana": "上口1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "上口1～3丁目",
+      "jp": "上口1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "上彦川戸（県道草加・流山線の北側",
+      "townEn": "上彦川戸（県道草加・流山線の北側",
+      "kana": "上彦川戸（県道草加・流山線の北側",
+      "chome": null,
+      "detail": null,
+      "en": "上彦川戸（県道草加・流山線の北側",
+      "jp": "上彦川戸（県道草加・流山線の北側",
+      "pattern": "1"
+    },
+    {
+      "town": "上彦川戸（県道草加・流山線の南側）",
+      "townEn": "上彦川戸（県道草加・流山線の南側）",
+      "kana": "上彦川戸（県道草加・流山線の南側）",
+      "chome": null,
+      "detail": null,
+      "en": "上彦川戸（県道草加・流山線の南側）",
+      "jp": "上彦川戸（県道草加・流山線の南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "上彦名（みさと団地やなぎ通りの東側）",
+      "townEn": "上彦名（みさと団地やなぎ通りの東側）",
+      "kana": "上彦名（みさと団地やなぎ通りの東側）",
+      "chome": null,
+      "detail": null,
+      "en": "上彦名（みさと団地やなぎ通りの東側）",
+      "jp": "上彦名（みさと団地やなぎ通りの東側）",
+      "pattern": "1"
+    },
+    {
+      "town": "上彦名（県道草加・流山線の北側）",
+      "townEn": "上彦名（県道草加・流山線の北側）",
+      "kana": "上彦名（県道草加・流山線の北側）",
+      "chome": null,
+      "detail": null,
+      "en": "上彦名（県道草加・流山線の北側）",
+      "jp": "上彦名（県道草加・流山線の北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "上彦名（県道草加・流山線の南側）",
+      "townEn": "上彦名（県道草加・流山線の南側）",
+      "kana": "上彦名（県道草加・流山線の南側）",
+      "chome": null,
+      "detail": null,
+      "en": "上彦名（県道草加・流山線の南側）",
+      "jp": "上彦名（県道草加・流山線の南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "幸房",
+      "townEn": "幸房",
+      "kana": "幸房",
+      "chome": null,
+      "detail": null,
+      "en": "幸房",
+      "jp": "幸房",
+      "pattern": "2"
+    },
+    {
+      "town": "駒形",
+      "townEn": "駒形",
+      "kana": "駒形",
+      "chome": null,
+      "detail": null,
+      "en": "駒形",
+      "jp": "駒形",
+      "pattern": "2"
+    },
+    {
+      "town": "小谷堀（大場川の東側）",
+      "townEn": "小谷堀（大場川の東側）",
+      "kana": "小谷堀（大場川の東側）",
+      "chome": null,
+      "detail": null,
+      "en": "小谷堀（大場川の東側）",
+      "jp": "小谷堀（大場川の東側）",
+      "pattern": "3"
+    },
+    {
+      "town": "小谷堀（大場川の西側）",
+      "townEn": "小谷堀（大場川の西側）",
+      "kana": "小谷堀（大場川の西側）",
+      "chome": null,
+      "detail": null,
+      "en": "小谷堀（大場川の西側）",
+      "jp": "小谷堀（大場川の西側）",
+      "pattern": "2"
+    },
+    {
+      "town": "栄1～5丁目",
+      "townEn": "栄1～5丁目",
+      "kana": "栄1～5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "栄1～5丁目",
+      "jp": "栄1～5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "笹塚",
+      "townEn": "笹塚",
+      "kana": "笹塚",
+      "chome": null,
+      "detail": null,
+      "en": "笹塚",
+      "jp": "笹塚",
+      "pattern": "2"
+    },
+    {
+      "town": "さつき平1・2丁目",
+      "townEn": "さつき平1・2丁目",
+      "kana": "さつき平1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "さつき平1・2丁目",
+      "jp": "さつき平1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "下彦川戸（県道草加・流山線の北側）",
+      "townEn": "下彦川戸（県道草加・流山線の北側）",
+      "kana": "下彦川戸（県道草加・流山線の北側）",
+      "chome": null,
+      "detail": null,
+      "en": "下彦川戸（県道草加・流山線の北側）",
+      "jp": "下彦川戸（県道草加・流山線の北側）",
+      "pattern": "1"
+    },
+    {
+      "town": "下彦川戸（県道草加・流山線の南側）",
+      "townEn": "下彦川戸（県道草加・流山線の南側）",
+      "kana": "下彦川戸（県道草加・流山線の南側）",
+      "chome": null,
+      "detail": null,
+      "en": "下彦川戸（県道草加・流山線の南側）",
+      "jp": "下彦川戸（県道草加・流山線の南側）",
+      "pattern": "2"
+    },
+    {
+      "town": "新和1・2丁目",
+      "townEn": "新和1・2丁目",
+      "kana": "新和1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新和1・2丁目",
+      "jp": "新和1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "新和3～5丁目",
+      "townEn": "新和3～5丁目",
+      "kana": "新和3～5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新和3～5丁目",
+      "jp": "新和3～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "新三郷ららシティ1～3丁目",
+      "townEn": "新三郷ららシティ1～3丁目",
+      "kana": "新三郷ららシティ1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "新三郷ららシティ1～3丁目",
+      "jp": "新三郷ららシティ1～3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "前間",
+      "townEn": "前間",
+      "kana": "前間",
+      "chome": null,
+      "detail": null,
+      "en": "前間",
+      "jp": "前間",
+      "pattern": "3"
+    },
+    {
+      "town": "高州1・2・4丁目",
+      "townEn": "高州1・2・4丁目",
+      "kana": "高州1・2・4丁目",
+      "chome": null,
+      "detail": null,
+      "en": "高州1・2・4丁目",
+      "jp": "高州1・2・4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "高州3丁目",
+      "townEn": "高州3丁目",
+      "kana": "高州3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "高州3丁目",
+      "jp": "高州3丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "鷹野1～5丁目",
+      "townEn": "鷹野1～5丁目",
+      "kana": "鷹野1～5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "鷹野1～5丁目",
+      "jp": "鷹野1～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "田中新田",
+      "townEn": "田中新田",
+      "kana": "田中新田",
+      "chome": null,
+      "detail": null,
+      "en": "田中新田",
+      "jp": "田中新田",
+      "pattern": "3"
+    },
+    {
+      "town": "丹後",
+      "townEn": "丹後",
+      "kana": "丹後",
+      "chome": null,
+      "detail": null,
+      "en": "丹後",
+      "jp": "丹後",
+      "pattern": "3"
+    },
+    {
+      "town": "中央1・2丁目",
+      "townEn": "中央1・2丁目",
+      "kana": "中央1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央1・2丁目",
+      "jp": "中央1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中央3～5丁目",
+      "townEn": "中央3～5丁目",
+      "kana": "中央3～5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "中央3～5丁目",
+      "jp": "中央3～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "天神1丁目",
+      "townEn": "天神1丁目",
+      "kana": "天神1丁目",
+      "chome": null,
+      "detail": null,
+      "en": "天神1丁目",
+      "jp": "天神1丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "戸ヶ崎1・2丁目",
+      "townEn": "戸ヶ崎1・2丁目",
+      "kana": "戸ヶ崎1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎1・2丁目",
+      "jp": "戸ヶ崎1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "戸ヶ崎3～5丁目",
+      "townEn": "戸ヶ崎3～5丁目",
+      "kana": "戸ヶ崎3～5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎3～5丁目",
+      "jp": "戸ヶ崎3～5丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "戸ヶ崎（4丁目町会・5丁目町会・美郷町会）",
+      "townEn": "戸ヶ崎（4丁目町会・5丁目町会・美郷町会）",
+      "kana": "戸ヶ崎（4丁目町会・5丁目町会・美郷町会）",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎（4丁目町会・5丁目町会・美郷町会）",
+      "jp": "戸ヶ崎（4丁目町会・5丁目町会・美郷町会）",
+      "pattern": "3"
+    },
+    {
+      "town": "戸ヶ崎（戸ヶ崎8丁目上・下町会）",
+      "townEn": "戸ヶ崎（戸ヶ崎8丁目上・下町会）",
+      "kana": "戸ヶ崎（戸ヶ崎8丁目上・下町会）",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎（戸ヶ崎8丁目上・下町会）",
+      "jp": "戸ヶ崎（戸ヶ崎8丁目上・下町会）",
+      "pattern": "1"
+    },
+    {
+      "town": "戸ヶ崎（7丁目東・西町会）",
+      "townEn": "戸ヶ崎（7丁目東・西町会）",
+      "kana": "戸ヶ崎（7丁目東・西町会）",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎（7丁目東・西町会）",
+      "jp": "戸ヶ崎（7丁目東・西町会）",
+      "pattern": "3"
+    },
+    {
+      "town": "戸ヶ崎（6丁目町会・角町町会）",
+      "townEn": "戸ヶ崎（6丁目町会・角町町会）",
+      "kana": "戸ヶ崎（6丁目町会・角町町会）",
+      "chome": null,
+      "detail": null,
+      "en": "戸ヶ崎（6丁目町会・角町町会）",
+      "jp": "戸ヶ崎（6丁目町会・角町町会）",
+      "pattern": "3"
+    },
+    {
+      "town": "仁蔵（武蔵野線の北側）",
+      "townEn": "仁蔵（武蔵野線の北側）",
+      "kana": "仁蔵（武蔵野線の北側）",
+      "chome": null,
+      "detail": null,
+      "en": "仁蔵（武蔵野線の北側）",
+      "jp": "仁蔵（武蔵野線の北側）",
+      "pattern": "2"
+    },
+    {
+      "town": "仁蔵（常磐道の東側）",
+      "townEn": "仁蔵（常磐道の東側）",
+      "kana": "仁蔵（常磐道の東側）",
+      "chome": null,
+      "detail": null,
+      "en": "仁蔵（常磐道の東側）",
+      "jp": "仁蔵（常磐道の東側）",
+      "pattern": "2"
+    },
+    {
+      "town": "仁蔵（常磐道の西側）",
+      "townEn": "仁蔵（常磐道の西側）",
+      "kana": "仁蔵（常磐道の西側）",
+      "chome": null,
+      "detail": null,
+      "en": "仁蔵（常磐道の西側）",
+      "jp": "仁蔵（常磐道の西側）",
+      "pattern": "1"
+    },
+    {
+      "town": "花和田",
+      "townEn": "花和田",
+      "kana": "花和田",
+      "chome": null,
+      "detail": null,
+      "en": "花和田",
+      "jp": "花和田",
+      "pattern": "1"
+    },
+    {
+      "town": "番匠免1～3丁目",
+      "townEn": "番匠免1～3丁目",
+      "kana": "番匠免1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "番匠免1～3丁目",
+      "jp": "番匠免1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "半田",
+      "townEn": "半田",
+      "kana": "半田",
+      "chome": null,
+      "detail": null,
+      "en": "半田",
+      "jp": "半田",
+      "pattern": "2"
+    },
+    {
+      "town": "ピアラシティ1・2丁目",
+      "townEn": "ピアラシティ1・2丁目",
+      "kana": "ピアラシティ1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "ピアラシティ1・2丁目",
+      "jp": "ピアラシティ1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "彦糸1・2丁目",
+      "townEn": "彦糸1・2丁目",
+      "kana": "彦糸1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦糸1・2丁目",
+      "jp": "彦糸1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "彦江1～3丁目",
+      "townEn": "彦江1～3丁目",
+      "kana": "彦江1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦江1～3丁目",
+      "jp": "彦江1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "彦江（丁目なし）",
+      "townEn": "彦江（丁目なし）",
+      "kana": "彦江（丁目なし）",
+      "chome": null,
+      "detail": null,
+      "en": "彦江（丁目なし）",
+      "jp": "彦江（丁目なし）",
+      "pattern": "2"
+    },
+    {
+      "town": "彦音1・2丁目",
+      "townEn": "彦音1・2丁目",
+      "kana": "彦音1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦音1・2丁目",
+      "jp": "彦音1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "彦川戸1・2丁目",
+      "townEn": "彦川戸1・2丁目",
+      "kana": "彦川戸1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦川戸1・2丁目",
+      "jp": "彦川戸1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "彦倉1・2丁目",
+      "townEn": "彦倉1・2丁目",
+      "kana": "彦倉1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦倉1・2丁目",
+      "jp": "彦倉1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "彦倉（丁目なし）",
+      "townEn": "彦倉（丁目なし）",
+      "kana": "彦倉（丁目なし）",
+      "chome": null,
+      "detail": null,
+      "en": "彦倉（丁目なし）",
+      "jp": "彦倉（丁目なし）",
+      "pattern": "2"
+    },
+    {
+      "town": "彦郷1・2丁目",
+      "townEn": "彦郷1・2丁目",
+      "kana": "彦郷1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦郷1・2丁目",
+      "jp": "彦郷1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "彦沢1～3丁目",
+      "townEn": "彦沢1～3丁目",
+      "kana": "彦沢1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦沢1～3丁目",
+      "jp": "彦沢1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "彦沢（丁目なし）",
+      "townEn": "彦沢（丁目なし）",
+      "kana": "彦沢（丁目なし）",
+      "chome": null,
+      "detail": null,
+      "en": "彦沢（丁目なし）",
+      "jp": "彦沢（丁目なし）",
+      "pattern": "2"
+    },
+    {
+      "town": "彦成1～3丁目（みさと団地地区を除く）",
+      "townEn": "彦成1～3丁目（みさと団地地区を除く）",
+      "kana": "彦成1～3丁目（みさと団地地区を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "彦成1～3丁目（みさと団地地区を除く）",
+      "jp": "彦成1～3丁目（みさと団地地区を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "彦成4丁目（みさと団地地区を除く）",
+      "townEn": "彦成4丁目（みさと団地地区を除く）",
+      "kana": "彦成4丁目（みさと団地地区を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "彦成4丁目（みさと団地地区を除く）",
+      "jp": "彦成4丁目（みさと団地地区を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "みさと団地地区 1・2街区",
+      "townEn": "みさと団地地区 1・2街区",
+      "kana": "みさと団地地区 1・2街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 1・2街区",
+      "jp": "みさと団地地区 1・2街区",
+      "pattern": "2"
+    },
+    {
+      "town": "みさと団地地区 3・4街区",
+      "townEn": "みさと団地地区 3・4街区",
+      "kana": "みさと団地地区 3・4街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 3・4街区",
+      "jp": "みさと団地地区 3・4街区",
+      "pattern": "3"
+    },
+    {
+      "town": "みさと団地地区 5～7街区",
+      "townEn": "みさと団地地区 5～7街区",
+      "kana": "みさと団地地区 5～7街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 5～7街区",
+      "jp": "みさと団地地区 5～7街区",
+      "pattern": "1"
+    },
+    {
+      "town": "みさと団地地区 8・9街区",
+      "townEn": "みさと団地地区 8・9街区",
+      "kana": "みさと団地地区 8・9街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 8・9街区",
+      "jp": "みさと団地地区 8・9街区",
+      "pattern": "2"
+    },
+    {
+      "town": "みさと団地地区 10街区",
+      "townEn": "みさと団地地区 10街区",
+      "kana": "みさと団地地区 10街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 10街区",
+      "jp": "みさと団地地区 10街区",
+      "pattern": "3"
+    },
+    {
+      "town": "みさと団地地区 11街区",
+      "townEn": "みさと団地地区 11街区",
+      "kana": "みさと団地地区 11街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 11街区",
+      "jp": "みさと団地地区 11街区",
+      "pattern": "2"
+    },
+    {
+      "town": "みさと団地地区 12～14街区",
+      "townEn": "みさと団地地区 12～14街区",
+      "kana": "みさと団地地区 12～14街区",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 12～14街区",
+      "jp": "みさと団地地区 12～14街区",
+      "pattern": "1"
+    },
+    {
+      "town": "みさと団地地区 彦成3丁目12-22～37",
+      "townEn": "みさと団地地区 彦成3丁目12-22～37",
+      "kana": "みさと団地地区 彦成3丁目12-22～37",
+      "chome": null,
+      "detail": null,
+      "en": "みさと団地地区 彦成3丁目12-22～37",
+      "jp": "みさと団地地区 彦成3丁目12-22～37",
+      "pattern": "1"
+    },
+    {
+      "town": "彦成5丁目",
+      "townEn": "彦成5丁目",
+      "kana": "彦成5丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦成5丁目",
+      "jp": "彦成5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "彦野1・2丁目",
+      "townEn": "彦野1・2丁目",
+      "kana": "彦野1・2丁目",
+      "chome": null,
+      "detail": null,
+      "en": "彦野1・2丁目",
+      "jp": "彦野1・2丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "三郷1～3丁目",
+      "townEn": "三郷1～3丁目",
+      "kana": "三郷1～3丁目",
+      "chome": null,
+      "detail": null,
+      "en": "三郷1～3丁目",
+      "jp": "三郷1～3丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "南蓮沼",
+      "townEn": "南蓮沼",
+      "kana": "南蓮沼",
+      "chome": null,
+      "detail": null,
+      "en": "南蓮沼",
+      "jp": "南蓮沼",
+      "pattern": "2"
+    },
+    {
+      "town": "茂田井",
+      "townEn": "茂田井",
+      "kana": "茂田井",
+      "chome": null,
+      "detail": null,
+      "en": "茂田井",
+      "jp": "茂田井",
+      "pattern": "2"
+    },
+    {
+      "town": "谷口（谷口901～956を除く）",
+      "townEn": "谷口（谷口901～956を除く）",
+      "kana": "谷口（谷口901～956を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "谷口（谷口901～956を除く）",
+      "jp": "谷口（谷口901～956を除く）",
+      "pattern": "1"
+    },
+    {
+      "town": "谷口901～956",
+      "townEn": "谷口901～956",
+      "kana": "谷口901～956",
+      "chome": null,
+      "detail": null,
+      "en": "谷口901～956",
+      "jp": "谷口901～956",
+      "pattern": "2"
+    },
+    {
+      "town": "谷中",
+      "townEn": "谷中",
+      "kana": "谷中",
+      "chome": null,
+      "detail": null,
+      "en": "谷中",
+      "jp": "谷中",
+      "pattern": "2"
+    },
+    {
+      "town": "寄巻",
+      "townEn": "寄巻",
+      "kana": "寄巻",
+      "chome": null,
+      "detail": null,
+      "en": "寄巻",
+      "jp": "寄巻",
+      "pattern": "3"
+    },
+    {
+      "town": "早稲田1・3・6～8丁目（早稲田団地地区を除く）",
+      "townEn": "早稲田1・3・6～8丁目（早稲田団地地区を除く）",
+      "kana": "早稲田1・3・6～8丁目（早稲田団地地区を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "早稲田1・3・6～8丁目（早稲田団地地区を除く）",
+      "jp": "早稲田1・3・6～8丁目（早稲田団地地区を除く）",
+      "pattern": "3"
+    },
+    {
+      "town": "早稲田2・4・5丁目（早稲田団地地区を除く）",
+      "townEn": "早稲田2・4・5丁目（早稲田団地地区を除く）",
+      "kana": "早稲田2・4・5丁目（早稲田団地地区を除く）",
+      "chome": null,
+      "detail": null,
+      "en": "早稲田2・4・5丁目（早稲田団地地区を除く）",
+      "jp": "早稲田2・4・5丁目（早稲田団地地区を除く）",
+      "pattern": "2"
+    },
+    {
+      "town": "早稲田団地地区",
+      "townEn": "早稲田団地地区",
+      "kana": "早稲田団地地区",
+      "chome": null,
+      "detail": null,
+      "en": "早稲田団地地区",
+      "jp": "早稲田団地地区",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Misato City (Saitama) district collection schedule table",
+      "url": "https://www.city.misato.lg.jp/soshiki/shiminseikatsu/kurinraifu/2/9739.html",
+      "license": "Municipality website"
+    }
+  },
+  "updated": "2026-10-31"
+}

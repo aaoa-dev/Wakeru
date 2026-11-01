@@ -1,0 +1,1862 @@
+{
+  "id": "ayabe-26203",
+  "code": "26203",
+  "pref": "26",
+  "jp": "綾部市",
+  "en": "Ayabe",
+  "verified": "2026-10-31",
+  "sources": [
+    "http://ayabe.5374.jp/data/area_days.csv",
+    "http://ayabe.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "res": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hazardous": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "2": {
+        "burnable": [
+          1,
+          3
+        ]
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "res": [
+          2,
+          4,
+          5
+        ],
+        "hazardous": [
+          2,
+          4,
+          5
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "res": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hazardous": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "res": [
+          2,
+          4,
+          5
+        ],
+        "hazardous": [
+          2,
+          4,
+          5
+        ]
+      },
+      "6": {
+        "burnable": [
+          2
+        ],
+        "non_burnable": [
+          3
+        ],
+        "paper": [
+          3
+        ],
+        "res": [
+          2,
+          4,
+          5
+        ],
+        "hazardous": [
+          2,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "プレシアス",
+      "townEn": "Pureshiasu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "プレシアス",
+      "jp": "プレシアス",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（グランブルー）",
+      "townEn": "Guramburu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（グランブルー）",
+      "jp": "綾部地区（グランブルー）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（綾中町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（綾中町）",
+      "jp": "綾部地区（綾中町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（井倉町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（井倉町）",
+      "jp": "綾部地区（井倉町）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（駅前通）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（駅前通）",
+      "jp": "綾部地区（駅前通）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（宮代町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（宮代町）",
+      "jp": "綾部地区（宮代町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（月見町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（月見町）",
+      "jp": "綾部地区（月見町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（幸通町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（幸通町）",
+      "jp": "綾部地区（幸通町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（広小路）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（広小路）",
+      "jp": "綾部地区（広小路）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（紫水ヶ丘）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（紫水ヶ丘）",
+      "jp": "綾部地区（紫水ヶ丘）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（寺町西）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（寺町西）",
+      "jp": "綾部地区（寺町西）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（寺町東）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（寺町東）",
+      "jp": "綾部地区（寺町東）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（若松町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（若松町）",
+      "jp": "綾部地区（若松町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（上町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（上町）",
+      "jp": "綾部地区（上町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（上野町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（上野町）",
+      "jp": "綾部地区（上野町）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（新宮町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（新宮町）",
+      "jp": "綾部地区（新宮町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（新広小路）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（新広小路）",
+      "jp": "綾部地区（新広小路）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（新町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（新町）",
+      "jp": "綾部地区（新町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（西新町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（西新町）",
+      "jp": "綾部地区（西新町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（西神宮寺）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（西神宮寺）",
+      "jp": "綾部地区（西神宮寺）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（西町団地）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（西町団地）",
+      "jp": "綾部地区（西町団地）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（西本町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（西本町）",
+      "jp": "綾部地区（西本町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（青野町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（青野町）",
+      "jp": "綾部地区（青野町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（川糸町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（川糸町）",
+      "jp": "綾部地区（川糸町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（相生町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（相生町）",
+      "jp": "綾部地区（相生町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（中ノ町）",
+      "townEn": "No",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（中ノ町）",
+      "jp": "綾部地区（中ノ町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（中神宮寺）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（中神宮寺）",
+      "jp": "綾部地区（中神宮寺）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（天神町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（天神町）",
+      "jp": "綾部地区（天神町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（田町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（田町）",
+      "jp": "綾部地区（田町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（田野町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（田野町）",
+      "jp": "綾部地区（田野町）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（東神宮寺）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（東神宮寺）",
+      "jp": "綾部地区（東神宮寺）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（東本町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（東本町）",
+      "jp": "綾部地区（東本町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（南西町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（南西町）",
+      "jp": "綾部地区（南西町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（並松町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（並松町）",
+      "jp": "綾部地区（並松町）",
+      "pattern": "1"
+    },
+    {
+      "town": "綾部地区（北西町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（北西町）",
+      "jp": "綾部地区（北西町）",
+      "pattern": "5"
+    },
+    {
+      "town": "綾部地区（本町五、六丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（本町五、六丁目）",
+      "jp": "綾部地区（本町五、六丁目）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（本町四丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（本町四丁目）",
+      "jp": "綾部地区（本町四丁目）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（本町七丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（本町七丁目）",
+      "jp": "綾部地区（本町七丁目）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（本町八丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（本町八丁目）",
+      "jp": "綾部地区（本町八丁目）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（味方町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（味方町）",
+      "jp": "綾部地区（味方町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（明知町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（明知町）",
+      "jp": "綾部地区（明知町）",
+      "pattern": "4"
+    },
+    {
+      "town": "綾部地区（野田町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "綾部地区（野田町）",
+      "jp": "綾部地区（野田町）",
+      "pattern": "1"
+    },
+    {
+      "town": "奥上林地区（古屋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奥上林地区（古屋）",
+      "jp": "奥上林地区（古屋）",
+      "pattern": "2"
+    },
+    {
+      "town": "奥上林地区（古屋以外）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "奥上林地区（古屋以外）",
+      "jp": "奥上林地区（古屋以外）",
+      "pattern": "1"
+    },
+    {
+      "town": "吉美地区（桜が丘以外）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉美地区（桜が丘以外）",
+      "jp": "吉美地区（桜が丘以外）",
+      "pattern": "1"
+    },
+    {
+      "town": "吉美地区（桜が丘一丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉美地区（桜が丘一丁目）",
+      "jp": "吉美地区（桜が丘一丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "吉美地区（桜が丘二丁目）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉美地区（桜が丘二丁目）",
+      "jp": "吉美地区（桜が丘二丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "口上林地区",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "口上林地区",
+      "jp": "口上林地区",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（旭町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（旭町）",
+      "jp": "山家地区（旭町）",
+      "pattern": "1"
+    },
+    {
+      "town": "山家地区（下原町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（下原町）",
+      "jp": "山家地区（下原町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（下替地町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（下替地町）",
+      "jp": "山家地区（下替地町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（釜輪町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（釜輪町）",
+      "jp": "山家地区（釜輪町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（橋上町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（橋上町）",
+      "jp": "山家地区（橋上町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（戸奈瀬町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（戸奈瀬町）",
+      "jp": "山家地区（戸奈瀬町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（広瀬町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（広瀬町）",
+      "jp": "山家地区（広瀬町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（上原町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（上原町）",
+      "jp": "山家地区（上原町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（西原町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（西原町）",
+      "jp": "山家地区（西原町）",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（鷹栖町）長瀬",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（鷹栖町）長瀬",
+      "jp": "山家地区（鷹栖町）長瀬",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（鷹栖町）奈留",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（鷹栖町）奈留",
+      "jp": "山家地区（鷹栖町）奈留",
+      "pattern": "1"
+    },
+    {
+      "town": "山家地区（鷹栖町）奈留・長瀬以外",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（鷹栖町）奈留・長瀬以外",
+      "jp": "山家地区（鷹栖町）奈留・長瀬以外",
+      "pattern": "3"
+    },
+    {
+      "town": "山家地区（東山町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（東山町）",
+      "jp": "山家地区（東山町）",
+      "pattern": "1"
+    },
+    {
+      "town": "山家地区（和木町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "山家地区（和木町）",
+      "jp": "山家地区（和木町）",
+      "pattern": "3"
+    },
+    {
+      "town": "志賀郷地区",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "志賀郷地区",
+      "jp": "志賀郷地区",
+      "pattern": "1"
+    },
+    {
+      "town": "西八田（岡安）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（岡安）",
+      "jp": "西八田（岡安）",
+      "pattern": "4"
+    },
+    {
+      "town": "西八田（下八田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（下八田）",
+      "jp": "西八田（下八田）",
+      "pattern": "5"
+    },
+    {
+      "town": "西八田（七百石）大谷・大町",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（七百石）大谷・大町",
+      "jp": "西八田（七百石）大谷・大町",
+      "pattern": "1"
+    },
+    {
+      "town": "西八田（七百石）大日",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（七百石）大日",
+      "jp": "西八田（七百石）大日",
+      "pattern": "4"
+    },
+    {
+      "town": "西八田（七百石）大日・大谷・大町以外",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（七百石）大日・大谷・大町以外",
+      "jp": "西八田（七百石）大日・大谷・大町以外",
+      "pattern": "5"
+    },
+    {
+      "town": "西八田（上八田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（上八田）",
+      "jp": "西八田（上八田）",
+      "pattern": "4"
+    },
+    {
+      "town": "西八田（中筋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（中筋）",
+      "jp": "西八田（中筋）",
+      "pattern": "4"
+    },
+    {
+      "town": "西八田（渕垣）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西八田（渕垣）",
+      "jp": "西八田（渕垣）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（安場町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（安場町）",
+      "jp": "中筋地区（安場町）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（延町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（延町）",
+      "jp": "中筋地区（延町）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（岡町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（岡町）",
+      "jp": "中筋地区（岡町）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（高津町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（高津町）",
+      "jp": "中筋地区（高津町）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（上延町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（上延町）",
+      "jp": "中筋地区（上延町）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（大島町西）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（大島町西）",
+      "jp": "中筋地区（大島町西）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（大島町中）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（大島町中）",
+      "jp": "中筋地区（大島町中）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（大島町東）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（大島町東）",
+      "jp": "中筋地区（大島町東）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（鳥ケ坪）",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（鳥ケ坪）",
+      "jp": "中筋地区（鳥ケ坪）",
+      "pattern": "4"
+    },
+    {
+      "town": "中筋地区（夕陽ケ丘）",
+      "townEn": "Ke",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中筋地区（夕陽ケ丘）",
+      "jp": "中筋地区（夕陽ケ丘）",
+      "pattern": "4"
+    },
+    {
+      "town": "中上林地区（引地）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（引地）",
+      "jp": "中上林地区（引地）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（弓削）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（弓削）",
+      "jp": "中上林地区（弓削）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（山田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（山田）",
+      "jp": "中上林地区（山田）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（市志）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（市志）",
+      "jp": "中上林地区（市志）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（市野瀬）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（市野瀬）",
+      "jp": "中上林地区（市野瀬）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（寺町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（寺町）",
+      "jp": "中上林地区（寺町）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（小田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（小田）",
+      "jp": "中上林地区（小田）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（真野）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（真野）",
+      "jp": "中上林地区（真野）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（神谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（神谷）",
+      "jp": "中上林地区（神谷）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（水梨）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（水梨）",
+      "jp": "中上林地区（水梨）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（瀬尾谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（瀬尾谷）",
+      "jp": "中上林地区（瀬尾谷）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（清水）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（清水）",
+      "jp": "中上林地区（清水）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（西屋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（西屋）",
+      "jp": "中上林地区（西屋）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（石橋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（石橋）",
+      "jp": "中上林地区（石橋）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（浅原）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（浅原）",
+      "jp": "中上林地区（浅原）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（大町）大杉",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（大町）大杉",
+      "jp": "中上林地区（大町）大杉",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（大町）大杉以外",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（大町）大杉以外",
+      "jp": "中上林地区（大町）大杉以外",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（第一区）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（第一区）",
+      "jp": "中上林地区（第一区）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（竹原）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（竹原）",
+      "jp": "中上林地区（竹原）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（辻）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（辻）",
+      "jp": "中上林地区（辻）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（殿）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（殿）",
+      "jp": "中上林地区（殿）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（日置谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（日置谷）",
+      "jp": "中上林地区（日置谷）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（馬場）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（馬場）",
+      "jp": "中上林地区（馬場）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（片山）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（片山）",
+      "jp": "中上林地区（片山）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（睦志）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（睦志）",
+      "jp": "中上林地区（睦志）",
+      "pattern": "1"
+    },
+    {
+      "town": "中上林地区（遊里）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中上林地区（遊里）",
+      "jp": "中上林地区（遊里）",
+      "pattern": "1"
+    },
+    {
+      "town": "東八田（愛宕）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（愛宕）",
+      "jp": "東八田（愛宕）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（安国寺）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（安国寺）",
+      "jp": "東八田（安国寺）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（延近）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（延近）",
+      "jp": "東八田（延近）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（下村）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（下村）",
+      "jp": "東八田（下村）",
+      "pattern": "4"
+    },
+    {
+      "town": "東八田（久保）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（久保）",
+      "jp": "東八田（久保）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（見内）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（見内）",
+      "jp": "東八田（見内）",
+      "pattern": "4"
+    },
+    {
+      "town": "東八田（高槻）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（高槻）",
+      "jp": "東八田（高槻）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（黒谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（黒谷）",
+      "jp": "東八田（黒谷）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（施福寺）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（施福寺）",
+      "jp": "東八田（施福寺）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（小鳩）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（小鳩）",
+      "jp": "東八田（小鳩）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（大石）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（大石）",
+      "jp": "東八田（大石）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（大又）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（大又）",
+      "jp": "東八田（大又）",
+      "pattern": "4"
+    },
+    {
+      "town": "東八田（大野）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（大野）",
+      "jp": "東八田（大野）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（中山）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（中山）",
+      "jp": "東八田（中山）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（中川原）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（中川原）",
+      "jp": "東八田（中川原）",
+      "pattern": "4"
+    },
+    {
+      "town": "東八田（鳥居野）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（鳥居野）",
+      "jp": "東八田（鳥居野）",
+      "pattern": "4"
+    },
+    {
+      "town": "東八田（梅迫）内谷",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（梅迫）内谷",
+      "jp": "東八田（梅迫）内谷",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（梅迫）内谷を除く",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（梅迫）内谷を除く",
+      "jp": "東八田（梅迫）内谷を除く",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（八代）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（八代）",
+      "jp": "東八田（八代）",
+      "pattern": "6"
+    },
+    {
+      "town": "東八田（門）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（門）",
+      "jp": "東八田（門）",
+      "pattern": "5"
+    },
+    {
+      "town": "東八田（野瀬）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東八田（野瀬）",
+      "jp": "東八田（野瀬）",
+      "pattern": "4"
+    },
+    {
+      "town": "非加盟（あやべ台）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "非加盟（あやべ台）",
+      "jp": "非加盟（あやべ台）",
+      "pattern": "5"
+    },
+    {
+      "town": "非加盟（綾部合同宿舎）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "非加盟（綾部合同宿舎）",
+      "jp": "非加盟（綾部合同宿舎）",
+      "pattern": "1"
+    },
+    {
+      "town": "非加盟（井倉新町団地）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "非加盟（井倉新町団地）",
+      "jp": "非加盟（井倉新町団地）",
+      "pattern": "5"
+    },
+    {
+      "town": "非加盟（上野団地）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "非加盟（上野団地）",
+      "jp": "非加盟（上野団地）",
+      "pattern": "1"
+    },
+    {
+      "town": "非加盟（弥生団地）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "非加盟（弥生団地）",
+      "jp": "非加盟（弥生団地）",
+      "pattern": "5"
+    },
+    {
+      "town": "物部（下市）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（下市）",
+      "jp": "物部（下市）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（岸田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（岸田）",
+      "jp": "物部（岸田）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（上市）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（上市）",
+      "jp": "物部（上市）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（新庄）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（新庄）",
+      "jp": "物部（新庄）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（須波伎）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（須波伎）",
+      "jp": "物部（須波伎）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（西坂町）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（西坂町）",
+      "jp": "物部（西坂町）",
+      "pattern": "1"
+    },
+    {
+      "town": "物部（白道路）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "物部（白道路）",
+      "jp": "物部（白道路）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（旭ヶ丘）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（旭ヶ丘）",
+      "jp": "豊里（旭ヶ丘）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（岡倉）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（岡倉）",
+      "jp": "豊里（岡倉）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（下位田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（下位田）",
+      "jp": "豊里（下位田）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（舘）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（舘）",
+      "jp": "豊里（舘）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（栗橋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（栗橋）",
+      "jp": "豊里（栗橋）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（栗上）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（栗上）",
+      "jp": "豊里（栗上）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（栗町）大谷・大野以外",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（栗町）大谷・大野以外",
+      "jp": "豊里（栗町）大谷・大野以外",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（栗揚）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（栗揚）",
+      "jp": "豊里（栗揚）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（高谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（高谷）",
+      "jp": "豊里（高谷）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（今田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（今田）",
+      "jp": "豊里（今田）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（私市）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（私市）",
+      "jp": "豊里（私市）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（私市東）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（私市東）",
+      "jp": "豊里（私市東）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（小貝）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（小貝）",
+      "jp": "豊里（小貝）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（小西）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（小西）",
+      "jp": "豊里（小西）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（小畑）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（小畑）",
+      "jp": "豊里（小畑）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（上位田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（上位田）",
+      "jp": "豊里（上位田）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（石原）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（石原）",
+      "jp": "豊里（石原）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（大谷）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（大谷）",
+      "jp": "豊里（大谷）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（大畠）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（大畠）",
+      "jp": "豊里（大畠）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（大野）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（大野）",
+      "jp": "豊里（大野）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（鍛冶屋）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（鍛冶屋）",
+      "jp": "豊里（鍛冶屋）",
+      "pattern": "1"
+    },
+    {
+      "town": "豊里（中位田）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（中位田）",
+      "jp": "豊里（中位田）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（湯殿）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（湯殿）",
+      "jp": "豊里（湯殿）",
+      "pattern": "3"
+    },
+    {
+      "town": "豊里（豊里）",
+      "townEn": "Ayabe",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊里（豊里）",
+      "jp": "豊里（豊里）",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://ayabe.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-10-31",
+  "skippedRows": 0
+}
