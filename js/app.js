@@ -258,7 +258,7 @@ function renderSortGuides(){
   $("#sortGuides").innerHTML = GUIDE_ORDER.map(k => guideCardHTML(k, nextKinds.has(k))).join("");
   $("#guideTabs").hidden = GUIDE_ORDER.length <= 1;
   $("#guideTabs").innerHTML = GUIDE_ORDER.map((k, i) =>
-    `<button type="button" role="tab" class="guide-tab" id="gtab-${k}" aria-controls="gpanel-${k}" data-guide-tab="${i}" style="--cc:var(${BIN_COLOR[k]})"><i aria-hidden="true"></i>${esc(binOf(firstBin(k)).en)}${nextKinds.has(k) ? `<small>Next</small>` : ""}</button>`).join("");
+    `<button type="button" role="tab" class="guide-tab" id="gtab-${k}" aria-controls="gpanel-${k}" data-guide-tab="${i}" style="--cc:var(${BIN_COLOR[k]})"><i aria-hidden="true"></i><span class="guide-tab-text">${esc(binOf(firstBin(k)).en)}${nextKinds.has(k) ? `<small>Next</small>` : ""}</span></button>`).join("");
   applyGuideSlide();
   wrap.hidden = false;
 }
