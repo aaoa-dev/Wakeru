@@ -6,6 +6,12 @@
 <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <title>Wakeru Gomi Guide</title>
+<meta name="description" content="Pickup days and sorting rules for your exact area in Japan, in English.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Wakeru">
+<script>try{const t=localStorage.getItem("wakeru-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap">
@@ -17,38 +23,51 @@
 <header class="top">
   <div class="brand">
     <h1>分ける <span>Wakeru</span></h1>
-    <button type="button" class="where" id="where" aria-label="Change location">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-      <span id="whereText">Set your area</span><small>Change</small>
-    </button>
+    <div class="brand-actions">
+      <button type="button" class="theme" id="theme" aria-label="Theme: match system"><svg viewBox="0 0 24 24" aria-hidden="true"></svg></button>
+      <button type="button" class="where" id="where" aria-label="Change location">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <span id="whereText">Set your area</span><small>Change</small>
+      </button>
+    </div>
   </div>
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-    <input id="q" type="search" placeholder="What are you throwing away? (bento, 電池, PET…)" autocomplete="off" aria-label="Search items">
+    <input id="q" type="search" placeholder="Search an item: bento, 電池, PET…" autocomplete="off" aria-label="Search items">
   </div>
-  <nav class="tabs" role="tablist">
-    <button role="tab" id="tab-days" aria-selected="true" data-v="days">Pickup days</button>
-    <button role="tab" id="tab-sort" aria-selected="false" data-v="sort">Sort it</button>
-    <button role="tab" id="tab-words" aria-selected="false" data-v="words">What words mean</button>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="tab-days" aria-selected="true" aria-controls="v-days" tabindex="0" data-v="days"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span>Days</span></button>
+    <button role="tab" id="tab-sort" aria-selected="false" aria-controls="v-sort" tabindex="-1" data-v="sort"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.2 12.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9z"/><path d="M3 7h18M9 7V4h6v3"/></svg><span>Sort</span></button>
+    <button role="tab" id="tab-words" aria-selected="false" aria-controls="v-words" tabindex="-1" data-v="words"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 7 8M11 5c0 4-3 8-7 9"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg><span>Words</span></button>
   </nav>
 </header>
 
 <!-- DAYS -->
-<section class="view" id="v-days">
+<section class="view" id="v-days" role="tabpanel" aria-labelledby="tab-days">
   <p class="fine" id="areaNote" hidden></p>
-  <div class="today" id="today"></div>
+  <div class="today" id="today" aria-live="polite"></div>
   <div>
     <h2>Next 7 days</h2>
     <div class="week" id="week"></div>
+  </div>
+  <div>
+    <h2>Your regular days</h2>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="cal-export">
+    <button type="button" class="btn" id="icsBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M12 13v5M9.5 15.5h5"/></svg>Add to calendar</button>
+    <p class="fine" id="icsNote">Downloads the published dates as a calendar file. Download it again if the city updates its calendar.</p>
   </div>
   <p class="fine" id="schedNote"></p>
 </section>
 
 <!-- SORT -->
-<section class="view" id="v-sort" hidden>
+<section class="view" id="v-sort" role="tabpanel" aria-labelledby="tab-sort" hidden>
   <div id="resultsWrap" hidden>
-    <button type="button" class="back" id="resBack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back</button>
-    <h2 id="resTitle" aria-live="polite">Results</h2>
+    <div class="res-head">
+      <button type="button" class="back" id="resBack" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <h2 id="resTitle" aria-live="polite">Results</h2>
+    </div>
     <div class="list" id="results"></div>
   </div>
   <div id="dictWrap" hidden>
@@ -59,7 +78,7 @@
 
   <div id="home">
     <div id="sortGuidesWrap">
-      <p class="sort-guides-lede fine" id="sortGuidesLede" hidden></p>
+      <button type="button" class="next-banner" id="nextBanner" hidden></button>
       <div class="guide-viewport" id="guideViewport" tabindex="0" aria-label="Sorting guides carousel">
         <div class="guide-track" id="sortGuides"></div>
       </div>
@@ -74,6 +93,7 @@
   <div id="quickWrap">
     <h2>Konbini, takeout &amp; kitchen</h2>
     <div class="quick" id="quick"></div>
+    <button type="button" class="more" id="quickMore" hidden></button>
   </div>
 
   <div id="catWrap">
@@ -83,7 +103,7 @@
 </section>
 
 <!-- WORDS -->
-<section class="view" id="v-words" hidden>
+<section class="view" id="v-words" role="tabpanel" aria-labelledby="tab-words" hidden>
   <h2 class="desk-title">What words mean</h2>
   <p class="lede">The same bin goes by different names from city to city. Here is what each word actually means, and what other places call it.</p>
   <div class="terms" id="terms"></div>

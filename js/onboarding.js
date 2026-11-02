@@ -146,11 +146,20 @@ export function runOnboarding({cities, loadCity, describe, current}){
     $("#obMunis").innerHTML = ""; $("#obPin").innerHTML = "";
     document.querySelectorAll("#obPrefs path").forEach(p => p.classList.remove("active", "context"));
     paintPrefCoverage();
-    const list = JAPAN.prefs.filter(p => coveredPrefs.has(normPref(p.code)))
-      .map(p => option(`data-pref="${p.code}"`, p.en, p.jp, plural(cities.filter(c => normPref(c.pref) === normPref(p.code)).length, "city", "cities"))).join("");
+    const prefs = JAPAN.prefs.filter(p => coveredPrefs.has(normPref(p.code)));
+    const perPref = cities.reduce((m, c) => m.set(normPref(c.pref), (m.get(normPref(c.pref)) ?? 0) + 1), new Map());
+    /* typing matches prefectures and, across all of Japan, covered cities (which jump straight to that city) */
+    const render = q => {
+      const nq = norm(q).trim(), hit = x => !nq || norm(x.en + x.jp).includes(nq);
+      const prefHits = prefs.filter(hit).map(p => option(`data-pref="${p.code}"`, p.en, p.jp, plural(perPref.get(normPref(p.code)) ?? 0, "city", "cities")));
+      const cityHits = nq ? cities.filter(hit).slice(0, 20).map(c => option(`data-city="${c.code}" data-city-pref="${c.pref}"`, c.en, c.jp, c.prefEn)) : [];
+      return [...prefHits, ...cityHits].join("") || `<p class="fine">Nothing covered matches. Try the kanji (e.g. 大阪) or tap the map.</p>`;
+    };
     panel("Where do you live?", "Wakeru shows your pickup days and sorting rules for your exact area. It's saved on this device only.",
       `<button type="button" class="ob-locate" data-locate><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>Locate me</button>
-       <p class="fine">Or tap your prefecture on the map. Shaded areas are covered so far.</p><div class="ob-list">${list}</div>`);
+       <p class="fine">Or search, or tap your prefecture on the map. Darker areas are covered so far.</p>
+       ${searchBox("Prefecture or city, e.g. Osaka or 大阪")}<div class="ob-list" id="obList"></div>`);
+    filterList(render);
     await zoomTo(JAPAN.view);
   }
 
@@ -296,6 +305,7 @@ export function runOnboarding({cities, loadCity, describe, current}){
     if(b.hasAttribute("data-locate")) return locate();
     if(b.dataset.pref) return showPref(b.dataset.pref).catch(fail);
     if(b.dataset.code) return chooseMuni(b.dataset.code).catch(fail);
+    if(b.dataset.city) return showPref(b.dataset.cityPref).then(() => chooseMuni(b.dataset.city)).catch(fail);
     if(b.dataset.ward){ S.ward = S.muni.wards.find(w => w.jp === b.dataset.ward); return showTowns() }
     if(b.dataset.town) return showAreas(b.dataset.town);
     if(b.dataset.area) return showDone(S.town, +b.dataset.area);

@@ -8,7 +8,8 @@ Wakeru is a static application with a generated, read-only data catalog:
 - `data/municipalities.json` is the small catalog used by onboarding.
 - `data/municipalities/<prefecture>/<municipality>/municipality.json` is loaded only after a municipality is selected. It contains that municipality's final town/chome level.
 - Large sibling `dictionary.json` sorting dictionaries are loaded only after a search.
-- The browser stores only the selected location in local storage. There is no user database.
+- The browser stores only the selected location (and theme choice) in local storage. There is no user database.
+- `sw.js` makes the app installable and usable offline. Same-origin requests are network-first, so a deploy is live on the next load and the cache is only an offline fallback; data files are cached as they are opened, never the whole catalog. Bump `CACHE` in `sw.js` only if the precached shell list changes.
 
 This is deliberate. GitHub Pages cannot run a database or server-side code, but it can serve these generated files efficiently. Cloudflare Pages can serve the same files at the edge, so moving hosts does not require a data migration.
 

@@ -1,10 +1,10 @@
 /* Data: static JSON under data/ (built by npm run import). At runtime we fetch the index, shared guides, then only the
    user's municipality JSON; sorting dictionaries load when you search. GSI reverse geocoding is optional for "Locate me". */
-import { dayState, binsOn } from "./schedule.js";
+import { dayState, binsOn, iso } from "./schedule.js";
 import { runOnboarding } from "./onboarding.js";
 
 const BIN_COLOR = {burn:"--c-burn",non:"--c-non",res:"--c-res",pla:"--c-pla",haz:"--c-haz",big:"--c-big",no:"--c-no"};
-const DEFAULT_CITY = "chiyoda", DICT_LIMIT = 40;
+const DEFAULT_CITY = "chiyoda", DICT_LIMIT = 40, QUICK_LIMIT = 10;
 const $ = s => document.querySelector(s);
 const DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"], DOWJ = ["日","月","火","水","木","金","土"], ORD = ["","1st","2nd","3rd","4th","5th"];
 const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
@@ -13,7 +13,10 @@ const norm = s => kataToHira((s||"").toLowerCase().normalize("NFKC"));
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 const shortDate = d => `${d.getMonth()+1}/${d.getDate()}`;
 const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
-let DATA, RS, DICT, AREA, ITEMS = [], LOADING = 0, SEARCHING = 0;
+let DATA, RS, DICT, AREA, ITEMS = [], LOADING = 0, SEARCHING = 0, NEXT_BY_BIN = {}, RENDERED_DAY = "";
+const icon = d => `<svg viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+const CLOCK = icon(`<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>`);
+const CHEVRON = icon(`<path d="M9 5l7 7-7 7"/>`);
 
 async function getJSON(path){
   const res = await fetch(path);
@@ -75,7 +78,8 @@ function resolve(it){
 
 /* ---------- sort view ---------- */
 function itemHTML(it){
-  const outs = it.outs.map(o => `<div class="outcome">${chip(o.bin)}<span class="when">${o.when}</span></div>`).join("");
+  const outs = it.outs.map(o => { const next = NEXT_BY_BIN[o.bin];
+    return `<div class="outcome">${chip(o.bin)}${next ? `<span class="next">Next: <b>${esc(whenLabel(next))}</b></span>` : ""}<span class="when">${o.when}</span></div>` }).join("");
   const notes = [it.how, ...it.outs.map(o=>o.note)].filter(Boolean).join(" ");
   const auto = it.outs.some(o => o.auto) ? `<p class="fine">Auto-matched from ${esc(RS.jp)}'s list. Check the official list below.</p>` : "";
   return `<article class="item"><div class="item-name"><b>${it.en}</b><span>${it.jp}</span></div><div class="outcomes">${outs}</div>${notes?`<p class="how">${esc(notes)}</p>`:""}${auto}</article>`;
@@ -179,36 +183,28 @@ function plasticGuideSteps(pt){
   return {steps, pla, dirty, summary: pt?.summary ?? "Clean, empty plastic packaging in a clear bag. Anything dirty or mixed goes to burnable."};
 }
 
-function itemsForKind(kind, limit = 5){
-  const keys = new Set(binKeysForKind(kind));
-  return ITEMS.map((it, i) => [it, i]).filter(([it]) => it.outs.some(o => keys.has(o.bin))).slice(0, limit);
-}
+/* pill label: the name without its "(…)" detail, unless another item would then read the same (Egg carton (paper) / (plastic)) */
+const shortName = it => it.en.replace(/ \(.*\)/, "");
+let SHORT_COUNT = new Map();
+const pillName = it => SHORT_COUNT.get(shortName(it)) > 1 ? it.en : shortName(it);
 
-function nextPickupInfo(rs = RS, area = AREA){
-  if(!rs || !area) return null;
-  const pat = rs.calendar.patterns[area.pattern];
-  const now = new Date(); now.setHours(0, 0, 0, 0);
-  for(let i = 0; i < 40; i++){
+/* the coming days that have a pickup, as {i, d, ps} (i = days from today, ps = [[bin, "by 8:00"]…]) */
+function upcoming(rs = RS, area = AREA, horizon = 60){
+  const pat = rs.calendar.patterns[area.pattern], now = new Date(); now.setHours(0, 0, 0, 0);
+  const out = [];
+  for(let i = 0; i < horizon; i++){
     const d = new Date(now); d.setDate(now.getDate() + i);
     const ps = pickupsOn(d, pat, rs);
-    if(typeof ps === "string" || !Array.isArray(ps) || !ps.length) continue;
-    const label = i === 0 ? "Today" : i === 1 ? "Tomorrow" : `${shortDate(d)} (${DOWJ[d.getDay()]})`;
-    const by = ps.map(([, t]) => t).filter((v, j, a) => v && a.indexOf(v) === j).join("; ");
-    return {label, bins: ps.map(([b]) => b), by: by || null};
+    if(Array.isArray(ps) && ps.length) out.push({i, d, ps});
   }
-  return null;
+  return out;
 }
+const dayLabel = ({i, d}) => i === 0 ? "Today" : i === 1 ? "Tomorrow" : DOW[d.getDay()];
+const whenLabel = u => u.i < 2 ? dayLabel(u) : `${DOW[u.d.getDay()]} ${shortDate(u.d)}`;
+const dateTag = d => `<small>${shortDate(d)} (${DOWJ[d.getDay()]})</small>`;
 
 function guideStepsHTML(steps){
   return `<ol>${steps.map(([q, no]) => `<li><div><b>${esc(q)}</b><span class="no">${esc(no)}</span></div></li>`).join("")}</ol>`;
-}
-
-function guideQuickHTML(kind){
-  const picks = itemsForKind(kind);
-  if(!picks.length) return "";
-  const label = kind === "pla" ? "Common packaging" : "Examples in the guide";
-  return `<p class="fine guide-examples">${esc(label)}</p><div class="quick">${picks.map(([it, i]) =>
-    `<button type="button" data-guide-i="${i}"><span class="pill-text">${esc(it.en.replace(/ \(.*\)/, ""))}</span></button>`).join("")}</div>`;
 }
 
 function guideCardHTML(kind, isNext){
@@ -221,16 +217,14 @@ function guideCardHTML(kind, isNext){
       <h2>The plastic test ${chip(pla)}</h2>
       <p class="lede">Most takeout and konbini packaging comes down to a few questions. ${esc(summary)}</p>
       ${guideStepsHTML(steps)}
-      <div class="verdict"><span>Yes to all ${n === 3 ? "three" : n === 4 ? "four" : "two"} →</span> ${chip(pla)} <span>Any no →</span> ${chip(dirty)}</div>
-      ${guideQuickHTML(kind)}</article>`;
+      <div class="verdict"><span>Yes to all ${n === 3 ? "three" : n === 4 ? "four" : "two"} →</span> ${chip(pla)} <span>Any no →</span> ${chip(dirty)}</div></article>`;
   }
   const g = SORT_GUIDES[kind]; if(!g) return "";
   const bin = firstBin(kind); if(!bin) return "";
   return `<article class="guide-card card test${isNext ? " next" : ""}" style="--guide-accent:var(${color})">${ribbon}
     <h2>${esc(g.title)} ${chip(bin)}</h2>
     <p class="lede">${esc(g.lede)}</p>
-    ${guideStepsHTML(g.steps)}
-    ${guideQuickHTML(kind)}</article>`;
+    ${guideStepsHTML(g.steps)}</article>`;
 }
 
 let GUIDE_ORDER = [], guideSlide = 0, guideDrag = null;
@@ -239,25 +233,32 @@ function applyGuideSlide(){
   const track = $("#sortGuides"); if(!track || !GUIDE_ORDER.length) return;
   guideSlide = ((guideSlide % GUIDE_ORDER.length) + GUIDE_ORDER.length) % GUIDE_ORDER.length;
   track.style.transform = `translate3d(-${guideSlide * 100}%,0,0)`;
+  fitGuideHeight();
   $("#guideDots")?.querySelectorAll(".guide-dot").forEach((b, i) => b.setAttribute("aria-current", i === guideSlide ? "true" : "false"));
 }
+
+/* the viewport follows the active card's height, so short cards don't inherit the tallest card's blank space */
+function fitGuideHeight(){
+  const card = $("#sortGuides").children[guideSlide], h = card?.offsetHeight;
+  $("#guideViewport").style.height = h ? `${h}px` : "";
+}
+const guideResize = new ResizeObserver(fitGuideHeight);
 
 function renderSortGuides(){
   const wrap = $("#sortGuidesWrap");
   if(!RS){ wrap.hidden = true; return }
   const kinds = GUIDE_KINDS.filter(k => binKeysForKind(k).length);
   if(!kinds.length){ wrap.hidden = true; return }
-  const next = nextPickupInfo();
-  const nextKinds = new Set(next ? next.bins.map(b => binOf(b).kind) : []);
-  const lede = $("#sortGuidesLede");
-  if(next){
-    const names = next.bins.map(b => binOf(b).en).join(", ");
-    lede.textContent = `Next pickup: ${next.label} · ${names}${next.by ? ` · ${next.by}` : ""}`;
-    lede.hidden = false;
-  } else lede.hidden = true;
+  const [next] = upcoming(RS, AREA, 40);
+  const nextKinds = new Set(next ? next.ps.map(([b]) => binOf(b).kind) : []);
+  const banner = $("#nextBanner");
+  banner.hidden = !next;
+  if(next) banner.innerHTML = `<span class="nb-when">${next.i === 0 ? "Pickup today" : "Next pickup"}<b>${esc(whenLabel(next))}</b></span>
+    <span class="cs">${next.ps.map(([b]) => chip(b)).join("")}</span><span class="nb-go">${CHEVRON}<span class="sr">See pickup days</span></span>`;
   GUIDE_ORDER = [...kinds].sort((a, b) => Number(nextKinds.has(b)) - Number(nextKinds.has(a)) || GUIDE_KINDS.indexOf(a) - GUIDE_KINDS.indexOf(b));
   guideSlide = 0;
   $("#sortGuides").innerHTML = GUIDE_ORDER.map(k => guideCardHTML(k, nextKinds.has(k))).join("");
+  guideResize.disconnect(); [...$("#sortGuides").children].forEach(c => guideResize.observe(c));
   const nav = $("#guideNav");
   if(GUIDE_ORDER.length <= 1) nav.hidden = true;
   else {
@@ -290,23 +291,34 @@ function ruleText(r){
   }
   return r.weeks.map(n=>ORD[n]).join(" & ") + " " + DOW[r.day];
 }
-const patternText = (p, rs = RS) => Object.entries(p).filter(([,r]) => r).map(([bin,r]) => `${binOf(bin, rs).en} ${ruleText(r)}`).join(" · ");
+/* one row per bin: chip + its regular days */
+const legendHTML = (rs, area) => Object.entries(rs.calendar.patterns[area.pattern]).filter(([, r]) => r)
+  .map(([bin, r]) => `<div class="legend-row">${chip(bin, rs)}<span>${esc(ruleText(r))}</span></div>`).join("");
+/* "Out by 8:30" when the bins share a time, otherwise one time per bin; "(see your sign)"-style asides stay unbolded */
+const timeHTML = t => esc(t.replace(/^by /, "")).replace(/^(.*?)(\s*\(.*\))?$/, (_, a, b = "") => `<b>${a}</b>${b}`);
+function byLine(ps, rs = RS){
+  const timed = ps.filter(([, t]) => t);
+  if(!timed.length) return "";
+  const same = timed.length === ps.length && timed.every(([, t]) => t === timed[0][1]);
+  const body = same ? `Out by ${timeHTML(timed[0][1])}` : timed.map(([b, t]) => `${esc(binOf(b, rs).en)} by ${timeHTML(t)}`).join(" · ");
+  return `<p class="by-line">${CLOCK}<span>${body}</span></p>`;
+}
 const none = text => `<span class="none">${text}</span>`;
 const SHORT = {off:"No collection", unconfirmed:"Not confirmed yet", unpublished:"Not published yet"};
 const LONG = {off:"No collection (Sunday or New Year break)", unconfirmed:"Not confirmed yet: watch for the city's New Year notice", unpublished:"The city hasn't published this date yet"};
-const dayRow = (r, rs = RS) => `<div class="day"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
+const dayRow = (r, rs = RS, nextI = -1) => `<div class="day${r.i === 0 ? " is-today" : ""}${r.i === nextI ? " is-next" : ""}"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
   <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>chip(c, rs)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
 const areaName = a => a.en === "All" ? a.townEn : `${a.townEn} ${a.en}`;
 /* the next days for an area, as {d, ps, label} rows */
 function nextDays(rs, area, count){
   const now = new Date(); now.setHours(0,0,0,0);
   return [...Array(count)].map((_, i) => { const d = new Date(now); d.setDate(now.getDate()+i);
-    return {d, ps:pickupsOn(d, rs.calendar.patterns[area.pattern], rs), label:i===0?"Today":i===1?"Tomorrow":DOW[d.getDay()]} });
+    return {i, d, ps:pickupsOn(d, rs.calendar.patterns[area.pattern], rs), label:dayLabel({i, d})} });
 }
 /* onboarding's last step: where the user is and what's coming up */
 const describe = (rs, area) => `<div class="place">${esc(areaName(area))}<small lang="ja">${esc(area.town + (area.jp === "全域" ? "" : area.jp))} · ${esc(rs.jp)}</small></div>
   <div class="week">${nextDays(rs, area, 3).map(r => dayRow(r, rs)).join("")}</div>
-  <p class="fine">${esc(patternText(rs.calendar.patterns[area.pattern], rs))}</p>`;
+  <div class="legend">${legendHTML(rs, area)}</div>`;
 
 /* the area picked in the onboarding ("town|en"); the city's first area if it's missing or no longer exists */
 function restoreArea(){
@@ -314,19 +326,62 @@ function restoreArea(){
   const list = RS.areas.filter(a => a.town === town);
   AREA = list.find(a => a.en === en) ?? list[0] ?? RS.areas[0];
 }
+/* the card leads with the next pickup; today's own status is a line under it when today has none */
 function renderDays(){
   $("#whereText").textContent = `${areaName(AREA)}, ${RS.en}`;
-  const pat = RS.calendar.patterns[AREA.pattern];
-  const rows = nextDays(RS, AREA, 7);
-  const list = r => Array.isArray(r.ps) && r.ps.length ? `<div class="pickups">${r.ps.map(([c,by])=>`<div class="pickup">${chip(c)}<span class="by">${esc(by)}</span></div>`).join("")}</div>`
-    : none(LONG[r.ps] ?? "Nothing collected");
-  const [t, tm] = rows;
+  const rows = nextDays(RS, AREA, 7), coming = upcoming(), [next, then] = coming, [today] = rows;
+  NEXT_BY_BIN = {}; for(const u of coming) for(const [b] of u.ps) NEXT_BY_BIN[b] ??= u;
+  RENDERED_DAY = iso(today.d);
   $("#areaNote").hidden = !AREA.note; $("#areaNote").textContent = AREA.note || "";
-  $("#today").innerHTML = `<div class="date">Today<small>${shortDate(t.d)} (${DOWJ[t.d.getDay()]})</small></div>${list(t)}
-    <div class="date date--tomorrow">Tomorrow<small>${shortDate(tm.d)} (${DOWJ[tm.d.getDay()]})</small></div>${list(tm)}
-    <p class="fine">${esc(patternText(pat))}</p>`;
-  $("#week").innerHTML = rows.map(r => dayRow(r)).join("");
+  const cs = ps => `<div class="cs">${ps.map(([c]) => chip(c)).join("")}</div>`;
+  const status = text => `<p class="today-status">${text}</p>`;
+  let html;
+  if(!next) html = `<p class="eyebrow">Next pickup</p><div class="date">None published yet</div>
+    ${status(`The city hasn't published upcoming dates for ${esc(areaName(AREA))}. Check the official page linked at the bottom.`)}`;
+  else {
+    html = `<p class="eyebrow">${next.i === 0 ? "Pickup today" : "Next pickup"}</p>
+      <div class="date">${dayLabel(next)}${dateTag(next.d)}</div>${cs(next.ps)}${byLine(next.ps)}`;
+    if(next.i > 0) html += status(`Today: ${esc(LONG[today.ps] ?? "nothing collected")}`);
+    else if(then) html += status(`Then ${esc(whenLabel(then))}: ${then.ps.map(([b]) => esc(binOf(b).en)).join(", ")}`);
+  }
+  $("#today").innerHTML = html;
+  $("#week").innerHTML = rows.map(r => dayRow(r, RS, next?.i ?? -1)).join("");
+  $("#legend").innerHTML = legendHTML(RS, AREA);
+  $("#icsBtn").closest(".cal-export").hidden = !next;
   renderSortGuides();
+}
+
+/* ---------- calendar export (.ics, all-day events for every published pickup in the next year) ---------- */
+const enc = new TextEncoder();
+function fold(line){ /* RFC 5545: lines over 75 octets continue on the next line after a space */
+  let out = "", cur = "", n = 0;
+  for(const ch of line){ const b = enc.encode(ch).length; if(n + b > 74){ out += cur + "\r\n "; cur = ""; n = 1 } cur += ch; n += b }
+  return out + cur;
+}
+function icsText(){
+  const pat = RS.calendar.patterns[AREA.pattern], now = new Date(); now.setHours(0, 0, 0, 0);
+  const text = v => String(v).replace(/[\\;,]/g, m => "\\" + m).replace(/\n/g, "\\n");
+  const ymd = d => iso(d).replace(/-/g, ""), stamp = new Date().toISOString().replace(/[-:]|\.\d+/g, "");
+  const place = `${areaName(AREA)}, ${RS.en}`;
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Wakeru//Gomi calendar//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", `X-WR-CALNAME:${text(`Gomi · ${place}`)}`];
+  for(let i = 0; i < 366; i++){
+    const d = new Date(now); d.setDate(now.getDate() + i);
+    const ps = pickupsOn(d, pat);
+    if(!Array.isArray(ps) || !ps.length) continue;
+    const end = new Date(d); end.setDate(d.getDate() + 1);
+    const by = ps.filter(([, t]) => t).map(([b, t]) => `${binOf(b).en} ${t}`).join("; ");
+    lines.push("BEGIN:VEVENT", `UID:${ymd(d)}-${RS.id}-${AREA.pattern}@wakeru`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${ymd(d)}`, `DTEND;VALUE=DATE:${ymd(end)}`,
+      `SUMMARY:${text(`Gomi: ${ps.map(([b]) => binOf(b).en).join(", ")}`)}`,
+      `DESCRIPTION:${text(`${by ? by + ". " : ""}${place}. Your collection point's sign has the final word.`)}`, "TRANSP:TRANSPARENT", "END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(fold).join("\r\n") + "\r\n";
+}
+function downloadICS(){
+  const url = URL.createObjectURL(new Blob([icsText()], {type:"text/calendar;charset=utf-8"}));
+  const a = Object.assign(document.createElement("a"), {href:url, download:`wakeru-${RS.id}.ics`});
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 /* ---------- municipality ---------- */
@@ -339,9 +394,9 @@ function footerHTML(){
   if(DICT?.provider) parts.push(`Sorting list: ${esc(RS.jp)} (${link(DICT.source, "official page")}), via ${link(DICT.provider.page, DICT.provider.name)}.`);
   if(Object.values(RS.sorting).some(r => r.auto)) parts.push("English guide entries are auto-matched from that list.");
   parts.push(`Rules change, and the city has the final word: ${links.join(" · ")}.`);
-  parts.push(RS.contacts.map(c=>`${esc(c.en)}: <span style="user-select:all">${esc(c.tel)}</span>`).join(" · "));
-  parts.push(`Map: 出典：国土数値情報（行政区域データ）（国土交通省）を加工して作成. "Locate me" sends your position only to the ${link("https://maps.gsi.go.jp/development/api.html", "GSI reverse geocoder")}.`);
-  return parts.filter(Boolean).join(" ");
+  parts.push(RS.contacts.filter(c => c.tel).map(c => `${esc(c.en)}: <a href="tel:${esc(c.tel.replace(/[^\d+]/g, ""))}">${esc(c.tel)}</a>`).join(" · "));
+  parts.push(`"Locate me" sends your position only to the ${link("https://maps.gsi.go.jp/development/api.html", "GSI reverse geocoder")}. Your area is saved on this device only.`);
+  return parts.filter(Boolean).map(p => `<p>${p}</p>`).join("");
 }
 async function setCity(id){
   const entry = DATA.cities.find(w=>w.id===id) || DATA.cities[0];
@@ -352,14 +407,25 @@ async function setCity(id){
   RS = rs; DICT = dict ?? null;
   store.set("wakeru-city", RS.id);
   ITEMS = DATA.items.map(resolve).filter(Boolean);
-  $("#quick").innerHTML = ITEMS.map((i,n)=>i.quick?`<button type="button" data-i="${n}"><span class="pill-text">${esc(i.en.replace(/ \(.*\)/,""))}</span></button>`:"").join("");
-  $("#cats").innerHTML = Object.keys(RS.bins).map(c=>`<button type="button" data-c="${c}"><span class="pill-text">${esc(RS.bins[c].en)} · ${esc(RS.bins[c].label)}</span></button>`).join("");
+  SHORT_COUNT = ITEMS.reduce((m, it) => m.set(shortName(it), (m.get(shortName(it)) ?? 0) + 1), new Map());
+  renderQuick(false);
+  $("#cats").innerHTML = Object.keys(RS.bins).map(c => `<button type="button" class="bin-pill" data-c="${c}" style="--cc:var(${BIN_COLOR[RS.bins[c].kind] || "--c-no"})"><i aria-hidden="true"></i><span class="pill-text">${esc(RS.bins[c].en)} <small>${esc(RS.bins[c].label)}</small></span></button>`).join("");
   restoreArea();
   const validTo = RS.calendar.validTo ? ` Dates are published through ${RS.calendar.validTo}.` : "";
   $("#schedNote").textContent = `${RS.calendar.note || ""}${validTo} Your collection point's sign has the final word.`;
   $("#terms").innerHTML = DATA.glossary.map(t=>`<div class="term"><div class="jp">${t.jp}<small>${t.reading}</small></div>${chipHTML(t.bin, t.en, "")}<p>${t.meaning}</p><div class="aka">Elsewhere: <b>${t.elsewhere}</b></div></div>`).join("");
   $("#footSrc").innerHTML = footerHTML();
   renderDays(); search($("#q").value);
+}
+/* konbini presets: first QUICK_LIMIT shown until "Show all" */
+function renderQuick(expanded){
+  const quick = ITEMS.map((it, n) => [it, n]).filter(([it]) => it.quick);
+  $("#quick").innerHTML = quick.map(([it, n], k) =>
+    `<button type="button" data-i="${n}"${!expanded && k >= QUICK_LIMIT ? " hidden" : ""}><span class="pill-text">${esc(pillName(it))}</span></button>`).join("");
+  const more = $("#quickMore");
+  more.hidden = quick.length <= QUICK_LIMIT;
+  more.textContent = expanded ? "Show fewer" : `Show all ${quick.length}`;
+  more.setAttribute("aria-expanded", expanded);
 }
 /* the onboarding saves city + area; without a saved city it opens on first visit, and "Change" reopens it */
 async function chooseLocation(){
@@ -395,9 +461,12 @@ $("#sortGuidesWrap").addEventListener("click", e => {
   if(e.target.closest("[data-guide-next]")){ guideSlide++; applyGuideSlide(); return }
   const dot = e.target.closest("[data-guide-dot]");
   if(dot){ guideSlide = +dot.dataset.guideDot; applyGuideSlide(); return }
-  const b = e.target.closest("button[data-guide-i]"); if(!b) return;
-  const it = ITEMS[+b.dataset.guideI]; if(it) openPreset([it], it.en);
+  if(e.target.closest("#nextBanner")){ switchView("days"); window.scrollTo({top:0}) }
 });
+$("#quickMore").addEventListener("click", e => renderQuick(e.currentTarget.getAttribute("aria-expanded") !== "true"));
+$("#icsBtn").addEventListener("click", () => { if(RS && AREA) downloadICS() });
+/* the date moves on while a tab sits open: re-render when coming back on a new day */
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && RS && AREA && iso(new Date()) !== RENDERED_DAY){ renderDays(); search($("#q").value) } });
 const guideViewport = $("#guideViewport");
 guideViewport.addEventListener("pointerdown", e => {
   if(GUIDE_ORDER.length <= 1 || e.target.closest("button")) return;
@@ -422,8 +491,38 @@ $("#cats").addEventListener("click", e => { const b = e.target.closest("button")
 $("#resBack").addEventListener("click", () => history.state?.results ? history.back() : closeResults());
 window.addEventListener("popstate", closeResults);
 function switchView(v){
-  document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected", b.dataset.v===v));
+  document.querySelectorAll("nav.tabs button").forEach(b => { const on = b.dataset.v === v; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1 });
   ["sort","days","words"].forEach(x=>$("#v-"+x).hidden = x!==v);
 }
-document.querySelector("nav.tabs").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; switchView(b.dataset.v); if(b.dataset.v==="sort" && !$("#q").value) showHome() });
+const openTab = b => { switchView(b.dataset.v); if(b.dataset.v === "sort" && !$("#q").value) showHome() };
+document.querySelector("nav.tabs").addEventListener("click", e => { const b = e.target.closest("button"); if(b) openTab(b) });
+/* WAI-ARIA tabs: arrows / Home / End move between tabs */
+document.querySelector("nav.tabs").addEventListener("keydown", e => {
+  const tabs = [...document.querySelectorAll("nav.tabs button")], i = tabs.indexOf(document.activeElement);
+  const to = {ArrowRight:i + 1, ArrowLeft:i - 1, Home:0, End:tabs.length - 1}[e.key];
+  if(i < 0 || to === undefined) return;
+  e.preventDefault();
+  const b = tabs[(to + tabs.length) % tabs.length]; openTab(b); b.focus();
+});
+
+/* ---------- theme: system → light → dark ---------- */
+const THEMES = {
+  system:{label:"match system", bg:null, svg:`<circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/>`},
+  light:{label:"light", bg:"#f6f6f4", svg:`<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>`},
+  dark:{label:"dark", bg:"#111111", svg:`<path d="M19.5 14.5A8 8 0 1 1 9.5 4.5a6.5 6.5 0 0 0 10 10z"/>`},
+};
+function applyTheme(t){
+  if(!THEMES[t]) t = "system";
+  if(t === "system") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+  document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.content = THEMES[t].bg ?? (m.media.includes("dark") ? THEMES.dark.bg : THEMES.light.bg));
+  const btn = $("#theme"); btn.querySelector("svg").innerHTML = THEMES[t].svg;
+  btn.dataset.t = t; btn.setAttribute("aria-label", `Theme: ${THEMES[t].label}`); btn.title = `Theme: ${THEMES[t].label}`;
+}
+applyTheme(store.get("wakeru-theme"));
+$("#theme").addEventListener("click", e => {
+  const keys = Object.keys(THEMES), t = keys[(keys.indexOf(e.currentTarget.dataset.t) + 1) % keys.length];
+  store.set("wakeru-theme", t); applyTheme(t);
+});
 init().catch(showError);
+/* offline + installable: the service worker keeps the app shell and the data you've opened */
+if("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(err => console.warn("Offline support unavailable", err)));
