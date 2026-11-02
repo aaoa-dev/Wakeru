@@ -207,13 +207,13 @@ function guideStepsHTML(steps){
   return `<ol>${steps.map(([q, no]) => `<li><div><b>${esc(q)}</b><span class="no">${esc(no)}</span></div></li>`).join("")}</ol>`;
 }
 
+/* every card is a tabpanel; the "next on your schedule" marker lives on its tab, so no card gets an extra line */
+const guidePanel = (kind, isNext) => `class="guide-card card test${isNext ? " next" : ""}" id="gpanel-${kind}" role="tabpanel" aria-labelledby="gtab-${kind}" style="--guide-accent:var(${BIN_COLOR[kind] || "--c-no"})"`;
 function guideCardHTML(kind, isNext){
-  const color = BIN_COLOR[kind] || "--c-no";
-  const ribbon = isNext ? `<p class="guide-ribbon">Next on your schedule</p>` : "";
   if(kind === "pla"){
     const {steps, pla, dirty, summary} = plasticGuideSteps(RS.plasticTest);
     const n = steps.length;
-    return `<article class="guide-card card test${isNext ? " next" : ""}" style="--guide-accent:var(${color})">${ribbon}
+    return `<article ${guidePanel(kind, isNext)}>
       <h2>The plastic test ${chip(pla)}</h2>
       <p class="lede">Most takeout and konbini packaging comes down to a few questions. ${esc(summary)}</p>
       ${guideStepsHTML(steps)}
@@ -221,7 +221,7 @@ function guideCardHTML(kind, isNext){
   }
   const g = SORT_GUIDES[kind]; if(!g) return "";
   const bin = firstBin(kind); if(!bin) return "";
-  return `<article class="guide-card card test${isNext ? " next" : ""}" style="--guide-accent:var(${color})">${ribbon}
+  return `<article ${guidePanel(kind, isNext)}>
     <h2>${esc(g.title)} ${chip(bin)}</h2>
     <p class="lede">${esc(g.lede)}</p>
     ${guideStepsHTML(g.steps)}</article>`;
@@ -229,20 +229,18 @@ function guideCardHTML(kind, isNext){
 
 let GUIDE_ORDER = [], guideSlide = 0, guideDrag = null;
 
-function applyGuideSlide(){
-  const track = $("#sortGuides"); if(!track || !GUIDE_ORDER.length) return;
+/* cards share one grid cell, so the area is always as tall as the tallest card and switching never moves the page */
+function applyGuideSlide(focusTab = false){
+  if(!GUIDE_ORDER.length) return;
   guideSlide = ((guideSlide % GUIDE_ORDER.length) + GUIDE_ORDER.length) % GUIDE_ORDER.length;
-  track.style.transform = `translate3d(-${guideSlide * 100}%,0,0)`;
-  fitGuideHeight();
-  $("#guideDots")?.querySelectorAll(".guide-dot").forEach((b, i) => b.setAttribute("aria-current", i === guideSlide ? "true" : "false"));
+  [...$("#sortGuides").children].forEach((c, i) => c.classList.toggle("active", i === guideSlide));
+  const tabs = [...$("#guideTabs").children];
+  tabs.forEach((t, i) => { const on = i === guideSlide; t.setAttribute("aria-selected", on); t.tabIndex = on ? 0 : -1 });
+  const tab = tabs[guideSlide], row = $("#guideTabs");
+  if(tab && row.scrollWidth > row.clientWidth) /* keep the selected tab in view on narrow screens, without scrolling the page */
+    row.scrollTo({left:tab.offsetLeft - (row.clientWidth - tab.offsetWidth) / 2, behavior:"smooth"});
+  if(focusTab) tab?.focus();
 }
-
-/* the viewport follows the active card's height, so short cards don't inherit the tallest card's blank space */
-function fitGuideHeight(){
-  const card = $("#sortGuides").children[guideSlide], h = card?.offsetHeight;
-  $("#guideViewport").style.height = h ? `${h}px` : "";
-}
-const guideResize = new ResizeObserver(fitGuideHeight);
 
 function renderSortGuides(){
   const wrap = $("#sortGuidesWrap");
@@ -258,16 +256,9 @@ function renderSortGuides(){
   GUIDE_ORDER = [...kinds].sort((a, b) => Number(nextKinds.has(b)) - Number(nextKinds.has(a)) || GUIDE_KINDS.indexOf(a) - GUIDE_KINDS.indexOf(b));
   guideSlide = 0;
   $("#sortGuides").innerHTML = GUIDE_ORDER.map(k => guideCardHTML(k, nextKinds.has(k))).join("");
-  guideResize.disconnect(); [...$("#sortGuides").children].forEach(c => guideResize.observe(c));
-  const nav = $("#guideNav");
-  if(GUIDE_ORDER.length <= 1) nav.hidden = true;
-  else {
-    nav.hidden = false;
-    $("#guideDots").innerHTML = GUIDE_ORDER.map((k, i) => {
-      const b = binOf(firstBin(k));
-      return `<button type="button" class="guide-dot" data-guide-dot="${i}" style="--guide-accent:var(${BIN_COLOR[k]})" aria-label="${esc(b.en)}" aria-current="${i === 0 ? "true" : "false"}"></button>`;
-    }).join("");
-  }
+  $("#guideTabs").hidden = GUIDE_ORDER.length <= 1;
+  $("#guideTabs").innerHTML = GUIDE_ORDER.map((k, i) =>
+    `<button type="button" role="tab" class="guide-tab" id="gtab-${k}" aria-controls="gpanel-${k}" data-guide-tab="${i}" style="--cc:var(${BIN_COLOR[k]})"><i aria-hidden="true"></i>${esc(binOf(firstBin(k)).en)}${nextKinds.has(k) ? `<small>Next</small>` : ""}</button>`).join("");
   applyGuideSlide();
   wrap.hidden = false;
 }
@@ -457,23 +448,21 @@ function openPreset(list, title){
 function closeResults(){ $("#q").value = ""; showHome(); window.scrollTo({top:0}) }
 $("#quick").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const it = ITEMS[+b.dataset.i]; openPreset([it], it.en) });
 $("#sortGuidesWrap").addEventListener("click", e => {
-  if(e.target.closest("[data-guide-prev]")){ guideSlide--; applyGuideSlide(); return }
-  if(e.target.closest("[data-guide-next]")){ guideSlide++; applyGuideSlide(); return }
-  const dot = e.target.closest("[data-guide-dot]");
-  if(dot){ guideSlide = +dot.dataset.guideDot; applyGuideSlide(); return }
+  const tab = e.target.closest("[data-guide-tab]");
+  if(tab){ guideSlide = +tab.dataset.guideTab; applyGuideSlide(); return }
   if(e.target.closest("#nextBanner")){ switchView("days"); window.scrollTo({top:0}) }
 });
 $("#quickMore").addEventListener("click", e => renderQuick(e.currentTarget.getAttribute("aria-expanded") !== "true"));
 $("#icsBtn").addEventListener("click", () => { if(RS && AREA) downloadICS() });
 /* the date moves on while a tab sits open: re-render when coming back on a new day */
 document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && RS && AREA && iso(new Date()) !== RENDERED_DAY){ renderDays(); search($("#q").value) } });
-const guideViewport = $("#guideViewport");
-guideViewport.addEventListener("pointerdown", e => {
-  if(GUIDE_ORDER.length <= 1 || e.target.closest("button")) return;
+/* swipe a card to move between bins (touch only, so text in the cards stays selectable with a mouse) */
+const guideStack = $("#sortGuides");
+guideStack.addEventListener("pointerdown", e => {
+  if(GUIDE_ORDER.length <= 1 || e.pointerType === "mouse" || e.target.closest("button")) return;
   guideDrag = {x: e.clientX, id: e.pointerId};
-  guideViewport.setPointerCapture(e.pointerId);
 });
-guideViewport.addEventListener("pointerup", e => {
+guideStack.addEventListener("pointerup", e => {
   if(!guideDrag || guideDrag.id !== e.pointerId) return;
   const dx = e.clientX - guideDrag.x;
   guideDrag = null;
@@ -481,10 +470,11 @@ guideViewport.addEventListener("pointerup", e => {
   guideSlide += dx < 0 ? 1 : -1;
   applyGuideSlide();
 });
-guideViewport.addEventListener("pointercancel", () => { guideDrag = null });
-guideViewport.addEventListener("keydown", e => {
-  if(e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-  e.preventDefault(); guideSlide += e.key === "ArrowRight" ? 1 : -1; applyGuideSlide();
+guideStack.addEventListener("pointercancel", () => { guideDrag = null });
+$("#guideTabs").addEventListener("keydown", e => {
+  const to = {ArrowRight:guideSlide + 1, ArrowLeft:guideSlide - 1, Home:0, End:GUIDE_ORDER.length - 1}[e.key];
+  if(to === undefined) return;
+  e.preventDefault(); guideSlide = to; applyGuideSlide(true);
 });
 $("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; const c = b.dataset.c;
   openPreset(ITEMS.filter(i=>i.outs.some(o=>o.bin===c)), `Things that can go in ${RS.bins[c].en} (${RS.bins[c].label})`) });
