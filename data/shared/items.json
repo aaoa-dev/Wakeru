@@ -878,5 +878,464 @@
       }
     ],
     "how": "Ask where you bought it."
+  },
+  {
+    "en": "Sanitary pads / tampons",
+    "jp": "生理用品",
+    "keywords": "sanitary pad tampon period product",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ],
+    "how": "Wrap used items in paper or an opaque bag."
+  },
+  {
+    "en": "Wet wipes",
+    "jp": "ウェットティッシュ",
+    "keywords": "wet wipe cleaning wipe flushable",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ],
+    "how": "Even wipes labelled flushable are safer in household trash than in the toilet."
+  },
+  {
+    "en": "Cotton swabs / cotton pads",
+    "jp": "綿棒・コットン",
+    "keywords": "cotton bud q-tip makeup pad",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ]
+  },
+  {
+    "en": "Disposable gloves",
+    "jp": "使い捨て手袋",
+    "keywords": "rubber vinyl nitrile latex glove",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ]
+  },
+  {
+    "en": "Toothbrush",
+    "jp": "歯ブラシ",
+    "keywords": "tooth brush dental",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "The bristles and small metal staples make it a mixed-material item."
+  },
+  {
+    "en": "Medicine blister pack",
+    "jp": "薬のPTPシート",
+    "keywords": "pill tablet medicine blister foil ptp",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "Empty packs only. Ask a pharmacy how to dispose of leftover medicine."
+  },
+  {
+    "en": "Ice pack / gel pack",
+    "jp": "保冷剤",
+    "keywords": "ice gel freezer cold pack",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "Keep it sealed; do not pour the gel down the drain."
+  },
+  {
+    "en": "Silicone kitchenware",
+    "jp": "シリコーン製キッチン用品",
+    "keywords": "silicone spatula baking mould mat",
+    "outcomes": [
+      {
+        "type": "leather-rubber"
+      }
+    ]
+  },
+  {
+    "en": "Baking paper / parchment",
+    "jp": "クッキングシート",
+    "keywords": "baking parchment oven paper wax paper",
+    "outcomes": [
+      {
+        "type": "paper-dirty"
+      }
+    ],
+    "how": "Heat-resistant coated paper is not recyclable paper."
+  },
+  {
+    "en": "Wooden skewers / toothpicks",
+    "jp": "竹串・つまようじ",
+    "keywords": "skewer toothpick bamboo kushiyaki",
+    "outcomes": [
+      {
+        "type": "wood"
+      }
+    ],
+    "how": "Wrap sharp ends in paper so they cannot pierce the bag."
+  },
+  {
+    "en": "Coffee grounds / tea bags",
+    "jp": "コーヒーかす・ティーバッグ",
+    "keywords": "coffee grounds filter tea bag leaves",
+    "outcomes": [
+      {
+        "type": "food"
+      }
+    ],
+    "how": "Drain or dry them first."
+  },
+  {
+    "en": "Coffee capsule",
+    "jp": "コーヒーカプセル",
+    "keywords": "coffee pod nespresso capsule",
+    "outcomes": [
+      {
+        "type": "metal",
+        "when": "Aluminum capsule, emptied"
+      },
+      {
+        "type": "plastic-pack",
+        "when": "Plastic capsule, emptied and rinsed"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Grounds cannot be removed"
+      }
+    ]
+  },
+  {
+    "en": "Bottle pump / dispenser top",
+    "jp": "ボトルのポンプ",
+    "keywords": "pump dispenser shampoo soap bottle top",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "Pumps usually contain a metal spring. Separate them from the rinsed bottle."
+  },
+  {
+    "en": "Plastic straw",
+    "jp": "プラスチックストロー",
+    "keywords": "drinking straw",
+    "outcomes": [
+      {
+        "type": "plastic-product",
+        "when": "Rinsed clean"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Drink residue remains"
+      }
+    ]
+  },
+  {
+    "en": "Wire coat hanger",
+    "jp": "針金ハンガー",
+    "keywords": "wire metal clothes hanger dry cleaning",
+    "outcomes": [
+      {
+        "type": "metal"
+      }
+    ]
+  },
+  {
+    "en": "Mirror",
+    "jp": "鏡",
+    "keywords": "mirror hand mirror broken",
+    "outcomes": [
+      {
+        "type": "glass-other"
+      }
+    ],
+    "how": "Wrap it in thick paper, bag separately, and write キケン if broken."
+  },
+  {
+    "en": "Ceramic flowerpot",
+    "jp": "陶器の植木鉢",
+    "keywords": "ceramic plant flower pot planter",
+    "outcomes": [
+      {
+        "type": "glass-other"
+      }
+    ],
+    "how": "Remove all soil first. Wrap broken pieces."
+  },
+  {
+    "en": "Plastic flowerpot",
+    "jp": "プラスチックの植木鉢",
+    "keywords": "plastic plant flower pot planter",
+    "outcomes": [
+      {
+        "type": "plastic-product",
+        "when": "Small and clean"
+      },
+      {
+        "type": "oversized",
+        "when": "Over the municipality's size limit"
+      }
+    ],
+    "how": "Remove all soil first."
+  },
+  {
+    "en": "Soil / sand / rocks",
+    "jp": "土・砂・石",
+    "keywords": "soil dirt sand gravel rock stone garden",
+    "outcomes": [
+      {
+        "type": "not-collected"
+      }
+    ],
+    "how": "Many municipalities do not collect natural soil or stones. Ask a garden center or disposal contractor."
+  },
+  {
+    "en": "Yoga mat / exercise mat",
+    "jp": "ヨガマット",
+    "keywords": "yoga exercise fitness rubber mat",
+    "outcomes": [
+      {
+        "type": "leather-rubber",
+        "when": "Within the municipality's size limit"
+      },
+      {
+        "type": "oversized",
+        "when": "Too large"
+      }
+    ]
+  },
+  {
+    "en": "Eyeglasses",
+    "jp": "眼鏡",
+    "keywords": "glasses spectacles sunglasses frames lenses",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ]
+  },
+  {
+    "en": "Artificial flowers / greenery",
+    "jp": "造花・人工観葉植物",
+    "keywords": "fake artificial flower plant decoration",
+    "outcomes": [
+      {
+        "type": "plastic-mixed"
+      }
+    ],
+    "how": "Remove batteries or lights from illuminated decorations."
+  },
+  {
+    "en": "USB drive / memory card",
+    "jp": "USBメモリ・メモリーカード",
+    "keywords": "usb flash drive sd microsd memory card electronics",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ],
+    "how": "Erase personal data first."
+  },
+  {
+    "en": "Cables / chargers / adapters",
+    "jp": "ケーブル・充電器・アダプター",
+    "keywords": "cable cord charger adapter usb hdmi electronics",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ]
+  },
+  {
+    "en": "Wireless earbuds / smartwatch",
+    "jp": "ワイヤレスイヤホン・スマートウォッチ",
+    "keywords": "airpods bluetooth earbuds smart watch wearable lithium",
+    "outcomes": [
+      {
+        "type": "battery-li"
+      }
+    ],
+    "how": "Contains a rechargeable battery. Keep the charging case with the earbuds and use the city's rechargeable-device collection route."
+  },
+  {
+    "en": "E-cigarette / vape",
+    "jp": "電子たばこ・加熱式たばこ",
+    "keywords": "e-cigarette vape iqos heated tobacco lithium",
+    "outcomes": [
+      {
+        "type": "battery-li"
+      }
+    ],
+    "how": "Contains a rechargeable battery. Never mix it into regular household trash."
+  },
+  {
+    "en": "Digital thermometer",
+    "jp": "電子体温計",
+    "keywords": "digital electronic thermometer temperature",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ],
+    "how": "Remove the button battery first if it is designed to come out. Mercury thermometers follow the fluorescent/mercury route instead."
+  },
+  {
+    "en": "Incandescent / halogen bulb",
+    "jp": "白熱電球・ハロゲン電球",
+    "keywords": "incandescent halogen light bulb lamp",
+    "outcomes": [
+      {
+        "type": "glass-other"
+      }
+    ],
+    "how": "Keep it separate from fluorescent tubes. Wrap it if broken."
+  },
+  {
+    "en": "Button / coin battery",
+    "jp": "ボタン電池・コイン電池",
+    "keywords": "button coin cell battery watch cr2032 lithium",
+    "outcomes": [
+      {
+        "type": "battery"
+      }
+    ],
+    "how": "Tape both faces to prevent a short circuit. Retailer collection boxes may be the required route."
+  },
+  {
+    "en": "Disposable camera",
+    "jp": "使い捨てカメラ",
+    "keywords": "disposable single-use film camera",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ],
+    "how": "A photo shop may accept it for film processing and recovery. Do not open the camera yourself."
+  },
+  {
+    "en": "Condoms / dental dams",
+    "jp": "コンドーム・デンタルダム",
+    "keywords": "condom prophylactic dental dam sexual health contraception",
+    "outcomes": [
+      {
+        "type": "hygiene"
+      }
+    ],
+    "how": "Tie or wrap used items securely. Never flush them down the toilet."
+  },
+  {
+    "en": "Condom / dental-dam packaging",
+    "jp": "コンドーム・デンタルダムの包装",
+    "keywords": "condom dental dam wrapper foil packet box packaging",
+    "outcomes": [
+      {
+        "type": "plastic-mixed",
+        "when": "Individual foil or plastic wrapper"
+      },
+      {
+        "type": "paper-misc",
+        "when": "Clean outer paper box"
+      }
+    ]
+  },
+  {
+    "en": "Personal lubricant container",
+    "jp": "潤滑ゼリーの容器",
+    "keywords": "personal sexual lubricant lube gel bottle tube sachet",
+    "outcomes": [
+      {
+        "type": "plastic-pack",
+        "when": "Empty bottle, rinsed clean"
+      },
+      {
+        "type": "plastic-dirty",
+        "when": "Tube or sachet with residue"
+      },
+      {
+        "type": "plastic-mixed",
+        "when": "Pump or mixed-material cap"
+      }
+    ]
+  },
+  {
+    "en": "Pregnancy / ovulation test",
+    "jp": "妊娠検査薬・排卵検査薬",
+    "keywords": "pregnancy ovulation fertility test kit sexual health",
+    "outcomes": [
+      {
+        "type": "hygiene",
+        "when": "Standard non-digital test"
+      },
+      {
+        "type": "appliance-small",
+        "when": "Digital test"
+      }
+    ],
+    "how": "Replace the cap and wrap a used test for privacy. Digital tests contain electronics and may contain a battery."
+  },
+  {
+    "en": "Menstrual cup / disc",
+    "jp": "月経カップ・月経ディスク",
+    "keywords": "menstrual period cup disc silicone reusable",
+    "outcomes": [
+      {
+        "type": "leather-rubber"
+      }
+    ],
+    "how": "Clean it before disposal. Most reusable cups and discs are silicone or rubber."
+  },
+  {
+    "en": "Non-electronic sex toy",
+    "jp": "電池を使わない大人のおもちゃ",
+    "keywords": "non-electronic sex toy vibrator dildo silicone adult product",
+    "outcomes": [
+      {
+        "type": "leather-rubber",
+        "when": "Silicone or rubber"
+      },
+      {
+        "type": "plastic-product",
+        "when": "Rigid, 100% plastic"
+      },
+      {
+        "type": "plastic-mixed",
+        "when": "Mixed materials"
+      }
+    ],
+    "how": "Clean it and wrap it for privacy. Oversized products may follow the municipality's size limit."
+  },
+  {
+    "en": "Battery-powered sex toy",
+    "jp": "乾電池式の大人のおもちゃ",
+    "keywords": "battery-powered sex toy vibrator adult product electronics",
+    "outcomes": [
+      {
+        "type": "appliance-small"
+      }
+    ],
+    "how": "Remove disposable batteries and recycle them separately. Clean and wrap the device for privacy."
+  },
+  {
+    "en": "Rechargeable sex toy",
+    "jp": "充電式の大人のおもちゃ",
+    "keywords": "rechargeable sex toy vibrator adult product lithium usb",
+    "outcomes": [
+      {
+        "type": "battery-li"
+      }
+    ],
+    "how": "Contains a rechargeable battery. Do not put it in regular trash or take the sealed battery apart; use the municipality's rechargeable-device collection route."
   }
 ]

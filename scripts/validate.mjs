@@ -14,7 +14,10 @@ const weekdays = list => Array.isArray(list) && list.length && list.every(d => N
 
 /* shared */
 const types = read("data/shared/types.json");
-for(const it of read("data/shared/items.json")){
+const items = read("data/shared/items.json");
+check(new Set(items.map(it => it.en)).size === items.length, "items.json", "duplicate English item names");
+check(new Set(items.map(it => it.jp)).size === items.length, "items.json", "duplicate Japanese item names");
+for(const it of items){
   check(it.en && it.jp && it.outcomes?.length, `items.json "${it.en}"`, "needs en, jp and at least one outcome");
   for(const o of it.outcomes ?? []) check(types[o.type], `items.json "${it.en}"`, `unknown type "${o.type}"`);
 }
