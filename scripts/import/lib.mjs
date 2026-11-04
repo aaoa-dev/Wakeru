@@ -1,9 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
 
 export const ROOT = path.resolve(import.meta.dirname, "../..");
 const CACHE = path.join(ROOT, ".cache/sources");
+const CRAWLER_HTTP = path.join(ROOT, ".cache/crawler/http");
 const UA = "Mozilla/5.0 (Wakeru data importer; +https://github.com/)";
 export const REFRESH = process.argv.includes("--refresh");
 
@@ -13,10 +15,26 @@ export function writeJSON(file, data){
   fs.mkdirSync(path.dirname(file), {recursive:true});
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
 }
-/* downloads are cached in .cache/sources so re-running an importer doesn't hit ward sites; pass --refresh to re-download */
+function readCrawlerHttpCache(url){
+  try {
+    const href = new URL(url).href;
+    const body = path.join(CRAWLER_HTTP, `${crypto.createHash("sha256").update(href).digest("hex")}.body`);
+    return fs.existsSync(body) ? fs.readFileSync(body) : null;
+  } catch { return null }
+}
+
+/* downloads are cached in .cache/sources; bodies from npm run discover:official are reused from .cache/crawler/http */
 export async function download(group, url, {headers: extra = {}} = {}){
   const file = path.join(CACHE, group, decodeURIComponent(new URL(url).pathname.split("/").pop()) || "index.html");
   if(!REFRESH && fs.existsSync(file)) return fs.readFileSync(file);
+  if(!REFRESH){
+    const crawled = readCrawlerHttpCache(url);
+    if(crawled){
+      fs.mkdirSync(path.dirname(file), {recursive:true});
+      fs.writeFileSync(file, crawled);
+      return crawled;
+    }
+  }
   const res = await fetch(url, {headers:{"User-Agent":UA, ...extra}});
   if(!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());

@@ -1,0 +1,1302 @@
+{
+  "id": "ginowan-47205",
+  "code": "47205",
+  "pref": "47",
+  "jp": "宜野湾市",
+  "en": "Ginowan",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.ginowan.lg.jp/material/files/group/15/472051_garbage_collection_calendar_R8.csv",
+    "https://www.city.ginowan.lg.jp/material/files/group/15/472051_garbage_collection_calendar_R8.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やす」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やす」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「枝」 under 「資源ごみ（草木）」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「古着」 under 「燃やす」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「燃やす」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「燃やす」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源ごみ（紙）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源ごみ（紙）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌（週刊誌・漫画など）」 under 「資源ごみ（紙）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源ごみ（紙）」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源ごみ（ペットボトル）」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ビールびん」 under 「資源ごみ（びん）」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「かさ」 under 「燃やさない」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ハサミ」 under 「燃やさない」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「CD（コンパクトディスク）」 under 「燃やす」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食品トレイ（惣菜など）」 under 「燃やす」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「資源ごみ（かん）」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「携帯電話」 under 「燃やさない」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やす」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          3
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "beverage_can": [
+          6
+        ],
+        "pet_bottle": {
+          "day": 6,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "佐真下",
+      "townEn": "Ginowan",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "佐真下",
+      "jp": "佐真下",
+      "pattern": "2"
+    },
+    {
+      "town": "愛知",
+      "townEn": "Aichi",
+      "kana": "アイチ",
+      "chome": null,
+      "detail": null,
+      "en": "愛知",
+      "jp": "愛知",
+      "pattern": "1"
+    },
+    {
+      "town": "愛知",
+      "townEn": "Aichi",
+      "kana": "アイチ",
+      "chome": null,
+      "detail": null,
+      "en": "愛知",
+      "jp": "愛知",
+      "pattern": "1"
+    },
+    {
+      "town": "愛知",
+      "townEn": "Aichi",
+      "kana": "アイチ",
+      "chome": null,
+      "detail": null,
+      "en": "愛知",
+      "jp": "愛知",
+      "pattern": "2"
+    },
+    {
+      "town": "赤道",
+      "townEn": "Akamichi",
+      "kana": "アカミチ",
+      "chome": null,
+      "detail": null,
+      "en": "赤道",
+      "jp": "赤道",
+      "pattern": "1"
+    },
+    {
+      "town": "赤道",
+      "townEn": "Akamichi",
+      "kana": "アカミチ",
+      "chome": null,
+      "detail": null,
+      "en": "赤道",
+      "jp": "赤道",
+      "pattern": "2"
+    },
+    {
+      "town": "字赤道",
+      "townEn": "Akamichi",
+      "kana": "アザアカミチ",
+      "chome": null,
+      "detail": null,
+      "en": "字赤道",
+      "jp": "字赤道",
+      "pattern": "2"
+    },
+    {
+      "town": "字我如古",
+      "townEn": "Ganeko",
+      "kana": "アザガネコ",
+      "chome": null,
+      "detail": null,
+      "en": "字我如古",
+      "jp": "字我如古",
+      "pattern": "2"
+    },
+    {
+      "town": "字真栄原",
+      "townEn": "Maehara",
+      "kana": "アザマエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "字真栄原",
+      "jp": "字真栄原",
+      "pattern": "2"
+    },
+    {
+      "town": "新城",
+      "townEn": "Aragusuku",
+      "kana": "アラグスク",
+      "chome": null,
+      "detail": null,
+      "en": "新城",
+      "jp": "新城",
+      "pattern": "6"
+    },
+    {
+      "town": "伊佐",
+      "townEn": "Isa",
+      "kana": "イサ",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐",
+      "jp": "伊佐",
+      "pattern": "5"
+    },
+    {
+      "town": "伊佐",
+      "townEn": "Isa",
+      "kana": "イサ",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐",
+      "jp": "伊佐",
+      "pattern": "5"
+    },
+    {
+      "town": "伊佐",
+      "townEn": "Isa",
+      "kana": "イサ",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐",
+      "jp": "伊佐",
+      "pattern": "5"
+    },
+    {
+      "town": "伊佐",
+      "townEn": "Isa",
+      "kana": "イサ",
+      "chome": null,
+      "detail": null,
+      "en": "伊佐",
+      "jp": "伊佐",
+      "pattern": "6"
+    },
+    {
+      "town": "上原",
+      "townEn": "Uehara",
+      "kana": "ウエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "上原",
+      "jp": "上原",
+      "pattern": "1"
+    },
+    {
+      "town": "上原",
+      "townEn": "Uehara",
+      "kana": "ウエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "上原",
+      "jp": "上原",
+      "pattern": "2"
+    },
+    {
+      "town": "宇地泊",
+      "townEn": "Uchidomari",
+      "kana": "ウチドマリ",
+      "chome": null,
+      "detail": null,
+      "en": "宇地泊",
+      "jp": "宇地泊",
+      "pattern": "5"
+    },
+    {
+      "town": "大謝名",
+      "townEn": "Ojana",
+      "kana": "オオジャナ",
+      "chome": null,
+      "detail": null,
+      "en": "大謝名",
+      "jp": "大謝名",
+      "pattern": "4"
+    },
+    {
+      "town": "大謝名",
+      "townEn": "Ojana",
+      "kana": "オオジャナ",
+      "chome": null,
+      "detail": null,
+      "en": "大謝名",
+      "jp": "大謝名",
+      "pattern": "4"
+    },
+    {
+      "town": "大謝名",
+      "townEn": "Ojana",
+      "kana": "オオジャナ",
+      "chome": null,
+      "detail": null,
+      "en": "大謝名",
+      "jp": "大謝名",
+      "pattern": "4"
+    },
+    {
+      "town": "大謝名",
+      "townEn": "Ojana",
+      "kana": "オオジャナ",
+      "chome": null,
+      "detail": null,
+      "en": "大謝名",
+      "jp": "大謝名",
+      "pattern": "4"
+    },
+    {
+      "town": "大謝名",
+      "townEn": "Ojana",
+      "kana": "オオジャナ",
+      "chome": null,
+      "detail": null,
+      "en": "大謝名",
+      "jp": "大謝名",
+      "pattern": "4"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "4"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "5"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "5"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "5"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "5"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "5"
+    },
+    {
+      "town": "大山",
+      "townEn": "Oyama",
+      "kana": "オオヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "大山",
+      "jp": "大山",
+      "pattern": "6"
+    },
+    {
+      "town": "嘉数",
+      "townEn": "Kakazu",
+      "kana": "カカズ",
+      "chome": null,
+      "detail": null,
+      "en": "嘉数",
+      "jp": "嘉数",
+      "pattern": "4"
+    },
+    {
+      "town": "嘉数",
+      "townEn": "Kakazu",
+      "kana": "カカズ",
+      "chome": null,
+      "detail": null,
+      "en": "嘉数",
+      "jp": "嘉数",
+      "pattern": "4"
+    },
+    {
+      "town": "嘉数",
+      "townEn": "Kakazu",
+      "kana": "カカズ",
+      "chome": null,
+      "detail": null,
+      "en": "嘉数",
+      "jp": "嘉数",
+      "pattern": "4"
+    },
+    {
+      "town": "嘉数",
+      "townEn": "Kakazu",
+      "kana": "カカズ",
+      "chome": null,
+      "detail": null,
+      "en": "嘉数",
+      "jp": "嘉数",
+      "pattern": "4"
+    },
+    {
+      "town": "我如古",
+      "townEn": "Ganeko",
+      "kana": "ガネコ",
+      "chome": null,
+      "detail": null,
+      "en": "我如古",
+      "jp": "我如古",
+      "pattern": "2"
+    },
+    {
+      "town": "我如古",
+      "townEn": "Ganeko",
+      "kana": "ガネコ",
+      "chome": null,
+      "detail": null,
+      "en": "我如古",
+      "jp": "我如古",
+      "pattern": "3"
+    },
+    {
+      "town": "我如古",
+      "townEn": "Ganeko",
+      "kana": "ガネコ",
+      "chome": null,
+      "detail": null,
+      "en": "我如古",
+      "jp": "我如古",
+      "pattern": "3"
+    },
+    {
+      "town": "我如古",
+      "townEn": "Ganeko",
+      "kana": "ガネコ",
+      "chome": null,
+      "detail": null,
+      "en": "我如古",
+      "jp": "我如古",
+      "pattern": "3"
+    },
+    {
+      "town": "神山",
+      "townEn": "Kamiyama",
+      "kana": "カミヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "神山",
+      "jp": "神山",
+      "pattern": "2"
+    },
+    {
+      "town": "宜野湾",
+      "townEn": "Ginowan",
+      "kana": "ギノワン",
+      "chome": null,
+      "detail": null,
+      "en": "宜野湾",
+      "jp": "宜野湾",
+      "pattern": "2"
+    },
+    {
+      "town": "喜友名",
+      "townEn": "Kiyuna",
+      "kana": "キユウナ",
+      "chome": null,
+      "detail": null,
+      "en": "喜友名",
+      "jp": "喜友名",
+      "pattern": "6"
+    },
+    {
+      "town": "志真志",
+      "townEn": "Shimashi",
+      "kana": "シマシ",
+      "chome": null,
+      "detail": null,
+      "en": "志真志",
+      "jp": "志真志",
+      "pattern": "3"
+    },
+    {
+      "town": "志真志",
+      "townEn": "Shimashi",
+      "kana": "シマシ",
+      "chome": null,
+      "detail": null,
+      "en": "志真志",
+      "jp": "志真志",
+      "pattern": "3"
+    },
+    {
+      "town": "志真志",
+      "townEn": "Shimashi",
+      "kana": "シマシ",
+      "chome": null,
+      "detail": null,
+      "en": "志真志",
+      "jp": "志真志",
+      "pattern": "3"
+    },
+    {
+      "town": "志真志",
+      "townEn": "Shimashi",
+      "kana": "シマシ",
+      "chome": null,
+      "detail": null,
+      "en": "志真志",
+      "jp": "志真志",
+      "pattern": "3"
+    },
+    {
+      "town": "長田",
+      "townEn": "Nagata",
+      "kana": "ナガタ",
+      "chome": null,
+      "detail": null,
+      "en": "長田",
+      "jp": "長田",
+      "pattern": "1"
+    },
+    {
+      "town": "長田",
+      "townEn": "Nagata",
+      "kana": "ナガタ",
+      "chome": null,
+      "detail": null,
+      "en": "長田",
+      "jp": "長田",
+      "pattern": "1"
+    },
+    {
+      "town": "長田",
+      "townEn": "Nagata",
+      "kana": "ナガタ",
+      "chome": null,
+      "detail": null,
+      "en": "長田",
+      "jp": "長田",
+      "pattern": "1"
+    },
+    {
+      "town": "長田",
+      "townEn": "Nagata",
+      "kana": "ナガタ",
+      "chome": null,
+      "detail": null,
+      "en": "長田",
+      "jp": "長田",
+      "pattern": "3"
+    },
+    {
+      "town": "野嵩",
+      "townEn": "Nodake",
+      "kana": "ノダケ",
+      "chome": null,
+      "detail": null,
+      "en": "野嵩",
+      "jp": "野嵩",
+      "pattern": "1"
+    },
+    {
+      "town": "野嵩",
+      "townEn": "Nodake",
+      "kana": "ノダケ",
+      "chome": null,
+      "detail": null,
+      "en": "野嵩",
+      "jp": "野嵩",
+      "pattern": "1"
+    },
+    {
+      "town": "野嵩",
+      "townEn": "Nodake",
+      "kana": "ノダケ",
+      "chome": null,
+      "detail": null,
+      "en": "野嵩",
+      "jp": "野嵩",
+      "pattern": "1"
+    },
+    {
+      "town": "野嵩",
+      "townEn": "Nodake",
+      "kana": "ノダケ",
+      "chome": null,
+      "detail": null,
+      "en": "野嵩",
+      "jp": "野嵩",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "1"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "普天間",
+      "townEn": "Futemma",
+      "kana": "フテンマ",
+      "chome": null,
+      "detail": null,
+      "en": "普天間",
+      "jp": "普天間",
+      "pattern": "6"
+    },
+    {
+      "town": "真栄原",
+      "townEn": "Maehara",
+      "kana": "マエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "真栄原",
+      "jp": "真栄原",
+      "pattern": "3"
+    },
+    {
+      "town": "真栄原",
+      "townEn": "Maehara",
+      "kana": "マエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "真栄原",
+      "jp": "真栄原",
+      "pattern": "4"
+    },
+    {
+      "town": "真栄原",
+      "townEn": "Maehara",
+      "kana": "マエハラ",
+      "chome": null,
+      "detail": null,
+      "en": "真栄原",
+      "jp": "真栄原",
+      "pattern": "4"
+    },
+    {
+      "town": "真志喜",
+      "townEn": "Mashiki",
+      "kana": "マシキ",
+      "chome": null,
+      "detail": null,
+      "en": "真志喜",
+      "jp": "真志喜",
+      "pattern": "4"
+    },
+    {
+      "town": "真志喜",
+      "townEn": "Mashiki",
+      "kana": "マシキ",
+      "chome": null,
+      "detail": null,
+      "en": "真志喜",
+      "jp": "真志喜",
+      "pattern": "5"
+    },
+    {
+      "town": "真志喜",
+      "townEn": "Mashiki",
+      "kana": "マシキ",
+      "chome": null,
+      "detail": null,
+      "en": "真志喜",
+      "jp": "真志喜",
+      "pattern": "5"
+    },
+    {
+      "town": "真志喜",
+      "townEn": "Mashiki",
+      "kana": "マシキ",
+      "chome": null,
+      "detail": null,
+      "en": "真志喜",
+      "jp": "真志喜",
+      "pattern": "5"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official schedule CSV (crawler)",
+      "url": "https://www.city.ginowan.lg.jp/material/files/group/15/472051_garbage_collection_calendar_R8.csv",
+      "license": "CC-BY"
+    }
+  },
+  "updated": "2026-11-04",
+  "skippedRows": 0
+}

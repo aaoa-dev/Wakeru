@@ -1,6 +1,6 @@
 {
   "_readme": "5374 + LinkData area_days.csv. npm run discover:5374 && npm run discover:linkdata",
-  "version": "2026-10-31",
+  "version": "2026-11-04",
   "municipalities": [
     {
       "validFrom": "2026-04-01",
@@ -121,7 +121,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "oshu-03215",
+      "id": "oshu",
       "code": "03215",
       "pref": "03",
       "jp": "奥州市",
@@ -241,7 +241,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "akita-05201",
+      "id": "akita",
       "code": "05201",
       "pref": "05",
       "jp": "秋田市",
@@ -262,7 +262,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "yamagata-06201",
+      "id": "yamagata",
       "code": "06201",
       "pref": "06",
       "jp": "山形市",
@@ -315,7 +315,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "koriyama-07203",
+      "id": "koriyama",
       "code": "07203",
       "pref": "07",
       "jp": "郡山市",
@@ -346,7 +346,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "tsukuba-08220",
+      "id": "tsukuba",
       "code": "08220",
       "pref": "08",
       "jp": "つくば市",
@@ -396,7 +396,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "kanuma-09205",
+      "id": "kanuma",
       "code": "09205",
       "pref": "09",
       "jp": "鹿沼市",
@@ -486,7 +486,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "funabashi-12204",
+      "id": "funabashi",
       "code": "12204",
       "pref": "12",
       "jp": "船橋市",
@@ -717,7 +717,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "toyama-city-16201",
+      "id": "toyama-city",
       "code": "16201",
       "pref": "16",
       "jp": "富山市",
@@ -797,7 +797,17 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "shiojiri-20215",
+      "id": "suzaka-20207",
+      "code": "20207",
+      "pref": "20",
+      "jp": "須坂市",
+      "en": "Suzaka",
+      "url": "http://suzaka.5374.jp/data/area_days.csv"
+    },
+    {
+      "validFrom": "2026-04-01",
+      "validTo": "2027-03-31",
+      "id": "shiojiri",
       "code": "20215",
       "pref": "20",
       "jp": "塩尻市",
@@ -827,7 +837,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "mitake-21521",
+      "id": "mitake",
       "code": "21521",
       "pref": "21",
       "jp": "御嵩町",
@@ -908,7 +918,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "handa-23205",
+      "id": "handa",
       "code": "23205",
       "pref": "23",
       "jp": "半田市",
@@ -948,7 +958,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "iga-24216",
+      "id": "iga",
       "code": "24216",
       "pref": "24",
       "jp": "伊賀市",
@@ -978,7 +988,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "fukuchiyama-26201",
+      "id": "fukuchiyama",
       "code": "26201",
       "pref": "26",
       "jp": "福知山市",
@@ -1048,7 +1058,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "sakai-27140",
+      "id": "sakai",
       "code": "27140",
       "pref": "27",
       "jp": "堺市",
@@ -1078,7 +1088,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "amagasaki-28202",
+      "id": "amagasaki",
       "code": "28202",
       "pref": "28",
       "jp": "尼崎市",
@@ -1098,7 +1108,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "ikoma-29209",
+      "id": "ikoma",
       "code": "29209",
       "pref": "29",
       "jp": "生駒市",
@@ -1118,7 +1128,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "wakayama-city-30201",
+      "id": "wakayama-city",
       "code": "30201",
       "pref": "30",
       "jp": "和歌山市",
@@ -1148,7 +1158,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "tottori-city-31201",
+      "id": "tottori-city",
       "code": "31201",
       "pref": "31",
       "jp": "鳥取市",
@@ -1158,7 +1168,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "matsue-32201",
+      "id": "matsue",
       "code": "32201",
       "pref": "32",
       "jp": "松江市",
@@ -1178,7 +1188,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "hiroshima-city-34100",
+      "id": "hiroshima-city",
       "code": "34100",
       "pref": "34",
       "jp": "広島市",
@@ -1188,7 +1198,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "ube-35202",
+      "id": "ube",
       "code": "35202",
       "pref": "35",
       "jp": "宇部市",
@@ -1198,7 +1208,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "tokushima-city-36201",
+      "id": "tokushima-city",
       "code": "36201",
       "pref": "36",
       "jp": "徳島市",
@@ -1278,7 +1288,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "fukuoka-40130",
+      "id": "fukuoka-city",
       "code": "40130",
       "pref": "40",
       "jp": "福岡市",
@@ -1298,7 +1308,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "saga-city-41201",
+      "id": "saga-city",
       "code": "41201",
       "pref": "41",
       "jp": "佐賀市",
@@ -1318,7 +1328,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "naha-47201",
+      "id": "naha",
       "code": "47201",
       "pref": "47",
       "jp": "那覇市",
@@ -1338,7 +1348,7 @@
     {
       "validFrom": "2026-04-01",
       "validTo": "2027-03-31",
-      "id": "urasoe-47208",
+      "id": "urasoe",
       "code": "47208",
       "pref": "47",
       "jp": "浦添市",

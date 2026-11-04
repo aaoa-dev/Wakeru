@@ -1,7 +1,19 @@
 {
   "_readme": "Municipalities shown in the app. Payloads follow prefecture/municipality/{municipality,dictionary}.json and are generated offline by npm run import; the browser never calls importer APIs.",
-  "version": "2026-10-31",
+  "version": "2026-11-04",
   "municipalities": [
+    {
+      "id": "betsukai-01691",
+      "code": "01691",
+      "pref": "01",
+      "prefEn": "Hokkaido",
+      "en": "Betsukai",
+      "jp": "別海町",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01691-betsukai",
+      "dictionary": false,
+      "source": "Official schedule CSV (crawler probe, district weekly)"
+    },
     {
       "id": "ebetsu-01217",
       "code": "01217",
@@ -9,10 +21,10 @@
       "prefEn": "Hokkaido",
       "en": "Ebetsu",
       "jp": "江別市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01217-ebetsu",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "01-hokkaido/01217-ebetsu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-5467-01332",
@@ -21,10 +33,10 @@
       "prefEn": "Hokkaido",
       "en": "Fukushima",
       "jp": "福島町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01332-fukushima",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "01-hokkaido/01332-fukushima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kamifurano-town",
@@ -34,9 +46,9 @@
       "en": "Kamifurano",
       "jp": "上富良野町",
       "verified": "2026-08-20",
+      "path": "01-hokkaido/01460-kamifurano",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "01-hokkaido/01460-kamifurano"
+      "source": "japan-gomi-data"
     },
     {
       "id": "matsumae-01331",
@@ -45,10 +57,10 @@
       "prefEn": "Hokkaido",
       "en": "Matsumae",
       "jp": "松前町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01331-matsumae",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "01-hokkaido/01331-matsumae"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "mori-01345",
@@ -57,10 +69,10 @@
       "prefEn": "Hokkaido",
       "en": "Mori",
       "jp": "森町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01345-mori",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "01-hokkaido/01345-mori"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "muroran-01205",
@@ -69,10 +81,10 @@
       "prefEn": "Hokkaido",
       "en": "Muroran",
       "jp": "室蘭市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01205-muroran",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "01-hokkaido/01205-muroran"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "otaru",
@@ -81,10 +93,10 @@
       "prefEn": "Hokkaido",
       "en": "Otaru",
       "jp": "小樽市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01203-otaru",
       "dictionary": false,
-      "source": "Otaru City garbage open data",
-      "path": "01-hokkaido/01203-otaru"
+      "source": "Otaru City garbage open data"
     },
     {
       "id": "sapporo",
@@ -93,10 +105,10 @@
       "prefEn": "Hokkaido",
       "en": "Sapporo",
       "jp": "札幌市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "01-hokkaido/01100-sapporo",
       "dictionary": true,
-      "source": "Sapporo City garbage collection calendar open data",
-      "path": "01-hokkaido/01100-sapporo"
+      "source": "Sapporo City garbage collection calendar open data"
     },
     {
       "id": "linkdata-4766-02205",
@@ -105,10 +117,10 @@
       "prefEn": "Aomori",
       "en": "Goshogawara",
       "jp": "五所川原市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "02-aomori/02205-goshogawara",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "02-aomori/02205-goshogawara"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4777-02207",
@@ -117,10 +129,10 @@
       "prefEn": "Aomori",
       "en": "Misawa",
       "jp": "三沢市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "02-aomori/02207-misawa",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "02-aomori/02207-misawa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4779-02445",
@@ -129,10 +141,10 @@
       "prefEn": "Aomori",
       "en": "Nambu",
       "jp": "南部町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "02-aomori/02445-nambu",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "02-aomori/02445-nambu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "towada",
@@ -141,10 +153,10 @@
       "prefEn": "Aomori",
       "en": "Towada",
       "jp": "十和田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "02-aomori/02203-towada",
       "dictionary": false,
-      "source": "Aomori Prefecture open data (Towada collection weekdays)",
-      "path": "02-aomori/02203-towada"
+      "source": "Aomori Prefecture open data (Towada collection weekdays)"
     },
     {
       "id": "linkdata-4768-02206",
@@ -153,10 +165,10 @@
       "prefEn": "Aomori",
       "en": "Towada",
       "jp": "十和田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "02-aomori/02206-towada",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "02-aomori/02206-towada"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-5470-03205",
@@ -165,10 +177,10 @@
       "prefEn": "Iwate",
       "en": "Hanamaki",
       "jp": "花巻市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "03-iwate/03205-hanamaki",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "03-iwate/03205-hanamaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "oshu",
@@ -177,10 +189,10 @@
       "prefEn": "Iwate",
       "en": "Oshu",
       "jp": "奥州市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "03-iwate/03215-oshu",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "03-iwate/03215-oshu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-5465-04214",
@@ -189,10 +201,10 @@
       "prefEn": "Miyagi",
       "en": "Higashimatsushima",
       "jp": "東松島市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04214-higashimatsushima",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04214-higashimatsushima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4769-04202",
@@ -201,10 +213,10 @@
       "prefEn": "Miyagi",
       "en": "Ishinomaki",
       "jp": "石巻市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04202-ishinomaki",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04202-ishinomaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4786-04205",
@@ -213,10 +225,10 @@
       "prefEn": "Miyagi",
       "en": "Kesennuma",
       "jp": "気仙沼市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04205-kesennuma",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04205-kesennuma"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4862-04341",
@@ -225,10 +237,10 @@
       "prefEn": "Miyagi",
       "en": "Marumori",
       "jp": "丸森町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04341-marumori",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04341-marumori"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4785-04505",
@@ -237,10 +249,10 @@
       "prefEn": "Miyagi",
       "en": "Misato",
       "jp": "美里町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04505-misato",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04505-misato"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "onagawa-town",
@@ -250,9 +262,9 @@
       "en": "Onagawa",
       "jp": "女川町",
       "verified": "2026-10-18",
+      "path": "04-miyagi/04581-onagawa",
       "dictionary": false,
-      "source": "gomisute-gps",
-      "path": "04-miyagi/04581-onagawa"
+      "source": "gomisute-gps"
     },
     {
       "id": "linkdata-4765-04100",
@@ -261,10 +273,10 @@
       "prefEn": "Miyagi",
       "en": "Sendai",
       "jp": "仙台市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04100-sendai",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04100-sendai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4767-04323",
@@ -273,10 +285,10 @@
       "prefEn": "Miyagi",
       "en": "Shibata",
       "jp": "柴田町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04323-shibata",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04323-shibata"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-5468-04404",
@@ -285,10 +297,10 @@
       "prefEn": "Miyagi",
       "en": "Shichigahama",
       "jp": "七ヶ浜町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04404-shichigahama",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04404-shichigahama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4782-04203",
@@ -297,10 +309,10 @@
       "prefEn": "Miyagi",
       "en": "Shiogama",
       "jp": "塩竈市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04203-shiogama",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04203-shiogama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4778-04209",
@@ -309,10 +321,10 @@
       "prefEn": "Miyagi",
       "en": "Tagajo",
       "jp": "多賀城市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "04-miyagi/04209-tagajo",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "04-miyagi/04209-tagajo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "akita",
@@ -321,10 +333,10 @@
       "prefEn": "Akita",
       "en": "Akita",
       "jp": "秋田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "05-akita/05201-akita",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "05-akita/05201-akita"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-5469-05215",
@@ -333,10 +345,22 @@
       "prefEn": "Akita",
       "en": "Semboku",
       "jp": "仙北市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "05-akita/05215-semboku",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "05-akita/05215-semboku"
+      "source": "5374.jp area_days.csv"
+    },
+    {
+      "id": "yokote-05203",
+      "code": "05203",
+      "pref": "05",
+      "prefEn": "Akita",
+      "en": "Yokote",
+      "jp": "横手市",
+      "verified": "2026-11-04",
+      "path": "05-akita/05203-yokote",
+      "dictionary": true,
+      "source": "Official schedule CSV (crawler probe, district weekly)"
     },
     {
       "id": "kahoku-06321",
@@ -345,10 +369,10 @@
       "prefEn": "Yamagata",
       "en": "Kahoku",
       "jp": "河北町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "06-yamagata/06321-kahoku",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "06-yamagata/06321-kahoku"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4775-06204",
@@ -357,10 +381,10 @@
       "prefEn": "Yamagata",
       "en": "Sakata",
       "jp": "酒田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "06-yamagata/06204-sakata",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "06-yamagata/06204-sakata"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4781-06210",
@@ -369,10 +393,10 @@
       "prefEn": "Yamagata",
       "en": "Tendo",
       "jp": "天童市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "06-yamagata/06210-tendo",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "06-yamagata/06210-tendo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4762-06203",
@@ -381,10 +405,10 @@
       "prefEn": "Yamagata",
       "en": "Tsuruoka",
       "jp": "鶴岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "06-yamagata/06203-tsuruoka",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "06-yamagata/06203-tsuruoka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yamagata",
@@ -393,10 +417,10 @@
       "prefEn": "Yamagata",
       "en": "Yamagata",
       "jp": "山形市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "06-yamagata/06201-yamagata",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "06-yamagata/06201-yamagata"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4772-07364",
@@ -405,10 +429,10 @@
       "prefEn": "Fukushima",
       "en": "Hinoemata",
       "jp": "檜枝岐村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "07-fukushima/07364-hinoemata",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "07-fukushima/07364-hinoemata"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "koriyama",
@@ -417,10 +441,10 @@
       "prefEn": "Fukushima",
       "en": "Koriyama",
       "jp": "郡山市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "07-fukushima/07203-koriyama",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "07-fukushima/07203-koriyama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tomioka-07543",
@@ -429,10 +453,10 @@
       "prefEn": "Fukushima",
       "en": "Tomioka",
       "jp": "富岡町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "07-fukushima/07543-tomioka",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "07-fukushima/07543-tomioka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "moriya-08224",
@@ -441,10 +465,10 @@
       "prefEn": "Ibaraki",
       "en": "Moriya",
       "jp": "守谷市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "08-ibaraki/08224-moriya",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "08-ibaraki/08224-moriya"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "sakai-08546",
@@ -453,10 +477,10 @@
       "prefEn": "Ibaraki",
       "en": "Sakai",
       "jp": "境町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "08-ibaraki/08546-sakai",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "08-ibaraki/08546-sakai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tokai-08341",
@@ -465,10 +489,10 @@
       "prefEn": "Ibaraki",
       "en": "Tokai",
       "jp": "東海村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "08-ibaraki/08341-tokai",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "08-ibaraki/08341-tokai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tsukuba",
@@ -477,10 +501,10 @@
       "prefEn": "Ibaraki",
       "en": "Tsukuba",
       "jp": "つくば市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "08-ibaraki/08220-tsukuba",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "08-ibaraki/08220-tsukuba"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yachiyo-08521",
@@ -489,10 +513,10 @@
       "prefEn": "Ibaraki",
       "en": "Yachiyo",
       "jp": "八千代町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "08-ibaraki/08521-yachiyo",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "08-ibaraki/08521-yachiyo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kanuma",
@@ -501,10 +525,10 @@
       "prefEn": "Tochigi",
       "en": "Kanuma",
       "jp": "鹿沼市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "09-tochigi/09205-kanuma",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "09-tochigi/09205-kanuma"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kusatsu-10426",
@@ -513,10 +537,10 @@
       "prefEn": "Gunma",
       "en": "Kusatsu",
       "jp": "草津町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "10-gunma/10426-kusatsu",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "10-gunma/10426-kusatsu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "minakami-town",
@@ -526,9 +550,9 @@
       "en": "Minakami",
       "jp": "みなかみ町",
       "verified": "2026-10-22",
+      "path": "10-gunma/10449-minakami",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "10-gunma/10449-minakami"
+      "source": "japan-gomi-data"
     },
     {
       "id": "ota-10205",
@@ -537,10 +561,10 @@
       "prefEn": "Gunma",
       "en": "Ota",
       "jp": "太田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "10-gunma/10205-ota",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "10-gunma/10205-ota"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tomioka-10210",
@@ -549,10 +573,10 @@
       "prefEn": "Gunma",
       "en": "Tomioka",
       "jp": "富岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "10-gunma/10210-tomioka",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "10-gunma/10210-tomioka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "asaka",
@@ -562,9 +586,9 @@
       "en": "Asaka",
       "jp": "朝霞市",
       "verified": "2026-08-01",
+      "path": "11-saitama/11227-asaka",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11227-asaka"
+      "source": "japan-gomi-data"
     },
     {
       "id": "chichibu",
@@ -574,9 +598,9 @@
       "en": "Chichibu",
       "jp": "秩父市",
       "verified": "2026-08-04",
+      "path": "11-saitama/11207-chichibu",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11207-chichibu"
+      "source": "japan-gomi-data"
     },
     {
       "id": "fukaya",
@@ -585,10 +609,22 @@
       "prefEn": "Saitama",
       "en": "Fukaya",
       "jp": "深谷市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11218-fukaya",
       "dictionary": true,
-      "source": "Fukaya City garbage collection rules (official HTML)",
-      "path": "11-saitama/11218-fukaya"
+      "source": "Fukaya City garbage collection rules (official HTML)"
+    },
+    {
+      "id": "gyoda",
+      "code": "11206",
+      "pref": "11",
+      "prefEn": "Saitama",
+      "en": "Gyoda",
+      "jp": "行田市",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11206-gyoda",
+      "dictionary": false,
+      "source": "Gyoda City SMART CMS weekday schedule"
     },
     {
       "id": "hanno",
@@ -598,9 +634,9 @@
       "en": "Hanno",
       "jp": "飯能市",
       "verified": "2026-08-14",
+      "path": "11-saitama/11209-hanno",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11209-hanno"
+      "source": "japan-gomi-data"
     },
     {
       "id": "hasuda",
@@ -609,10 +645,10 @@
       "prefEn": "Saitama",
       "en": "Hasuda",
       "jp": "蓮田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11238-hasuda",
       "dictionary": false,
-      "source": "Hasuda collection schedule (Hasuda–Kasukabe sanitation association)",
-      "path": "11-saitama/11238-hasuda"
+      "source": "Hasuda collection schedule (Hasuda–Kasukabe sanitation association)"
     },
     {
       "id": "hatoyama-town",
@@ -622,9 +658,9 @@
       "en": "Hatoyama",
       "jp": "鳩山町",
       "verified": "2026-08-03",
+      "path": "11-saitama/11348-hatoyama",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11348-hatoyama"
+      "source": "japan-gomi-data"
     },
     {
       "id": "hidaka",
@@ -634,9 +670,9 @@
       "en": "Hidaka",
       "jp": "日高市",
       "verified": "2026-08-14",
+      "path": "11-saitama/11242-hidaka",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11242-hidaka"
+      "source": "japan-gomi-data"
     },
     {
       "id": "higashichichibu-vill",
@@ -646,9 +682,21 @@
       "en": "Higashichichibu",
       "jp": "東秩父村",
       "verified": "2026-08-20",
+      "path": "11-saitama/11369-higashichichibu",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11369-higashichichibu"
+      "source": "japan-gomi-data"
+    },
+    {
+      "id": "honjo-11211",
+      "code": "11211",
+      "pref": "11",
+      "prefEn": "Saitama",
+      "en": "Honjo",
+      "jp": "本庄市",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11211-honjo",
+      "dictionary": true,
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "iruma",
@@ -658,9 +706,9 @@
       "en": "Iruma",
       "jp": "入間市",
       "verified": "2026-07-19",
+      "path": "11-saitama/11225-iruma",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11225-iruma"
+      "source": "japan-gomi-data"
     },
     {
       "id": "kamikawa-town",
@@ -669,10 +717,10 @@
       "prefEn": "Saitama",
       "en": "Kamikawa",
       "jp": "神川町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11383-kamikawa",
       "dictionary": false,
-      "source": "Kamikawa Town garbage collection rules (official HTML)",
-      "path": "11-saitama/11383-kamikawa"
+      "source": "Kamikawa Town garbage collection rules (official HTML)"
     },
     {
       "id": "kamisato-town",
@@ -681,10 +729,10 @@
       "prefEn": "Saitama",
       "en": "Kamisato",
       "jp": "上里町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11385-kamisato",
       "dictionary": false,
-      "source": "Kamisato Town collection schedule table",
-      "path": "11-saitama/11385-kamisato"
+      "source": "Kamisato Town collection schedule table"
     },
     {
       "id": "kawaguchi",
@@ -694,9 +742,21 @@
       "en": "Kawaguchi",
       "jp": "川口市",
       "verified": "2026-07-20",
+      "path": "11-saitama/11203-kawaguchi",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11203-kawaguchi"
+      "source": "japan-gomi-data"
+    },
+    {
+      "id": "kitamoto",
+      "code": "11233",
+      "pref": "11",
+      "prefEn": "Saitama",
+      "en": "Kitamoto",
+      "jp": "北本市",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11233-kitamoto",
+      "dictionary": false,
+      "source": "Kitamoto City SMART CMS weekday schedule"
     },
     {
       "id": "kumagaya-11202",
@@ -705,10 +765,10 @@
       "prefEn": "Saitama",
       "en": "Kumagaya",
       "jp": "熊谷市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11202-kumagaya",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "11-saitama/11202-kumagaya"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "minano-town",
@@ -718,9 +778,9 @@
       "en": "Minano",
       "jp": "皆野町",
       "verified": "2026-08-04",
+      "path": "11-saitama/11362-minano",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11362-minano"
+      "source": "japan-gomi-data"
     },
     {
       "id": "misato-town",
@@ -729,10 +789,10 @@
       "prefEn": "Saitama",
       "en": "Misato",
       "jp": "美里町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11381-misato",
       "dictionary": false,
-      "source": "Misato Town A/B course collection schedule table",
-      "path": "11-saitama/11381-misato"
+      "source": "Misato Town A/B course collection schedule table"
     },
     {
       "id": "misato-city",
@@ -741,10 +801,10 @@
       "prefEn": "Saitama",
       "en": "Misato",
       "jp": "三郷市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11237-misato",
       "dictionary": false,
-      "source": "Misato City (Saitama) district collection schedule table",
-      "path": "11-saitama/11237-misato"
+      "source": "Misato City (Saitama) district collection schedule table"
     },
     {
       "id": "moroyama-town",
@@ -754,9 +814,9 @@
       "en": "Moroyama",
       "jp": "毛呂山町",
       "verified": "2026-08-02",
+      "path": "11-saitama/11326-moroyama",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11326-moroyama"
+      "source": "japan-gomi-data"
     },
     {
       "id": "nagatoro-town",
@@ -766,9 +826,9 @@
       "en": "Nagatoro",
       "jp": "長瀞町",
       "verified": "2026-08-04",
+      "path": "11-saitama/11363-nagatoro",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11363-nagatoro"
+      "source": "japan-gomi-data"
     },
     {
       "id": "niiza",
@@ -777,10 +837,10 @@
       "prefEn": "Saitama",
       "en": "Niiza",
       "jp": "新座市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11230-niiza",
       "dictionary": false,
-      "source": "Niiza City recyclable & burnable collection weekday table",
-      "path": "11-saitama/11230-niiza"
+      "source": "Niiza City recyclable & burnable collection weekday table"
     },
     {
       "id": "ogano-town",
@@ -790,9 +850,9 @@
       "en": "Ogano",
       "jp": "小鹿野町",
       "verified": "2026-08-04",
+      "path": "11-saitama/11365-ogano",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11365-ogano"
+      "source": "japan-gomi-data"
     },
     {
       "id": "ogose-town",
@@ -802,9 +862,9 @@
       "en": "Ogose",
       "jp": "越生町",
       "verified": "2026-08-03",
+      "path": "11-saitama/11327-ogose",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11327-ogose"
+      "source": "japan-gomi-data"
     },
     {
       "id": "okegawa",
@@ -813,10 +873,10 @@
       "prefEn": "Saitama",
       "en": "Okegawa",
       "jp": "桶川市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11231-okegawa",
       "dictionary": true,
-      "source": "Okegawa City east/west district schedule table",
-      "path": "11-saitama/11231-okegawa"
+      "source": "Okegawa City east/west district schedule table"
     },
     {
       "id": "saitama-city",
@@ -825,10 +885,10 @@
       "prefEn": "Saitama",
       "en": "Saitama",
       "jp": "さいたま市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11100-saitama",
       "dictionary": false,
-      "source": "gomisuke (Saitama City embedded calendar API)",
-      "path": "11-saitama/11100-saitama"
+      "source": "gomisuke (Saitama City embedded calendar API)"
     },
     {
       "id": "sakado-11239",
@@ -837,10 +897,22 @@
       "prefEn": "Saitama",
       "en": "Sakado",
       "jp": "坂戸市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11239-sakado",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "11-saitama/11239-sakado"
+      "source": "5374.jp area_days.csv"
+    },
+    {
+      "id": "satte-11240",
+      "code": "11240",
+      "pref": "11",
+      "prefEn": "Saitama",
+      "en": "Satte",
+      "jp": "幸手市",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11240-satte",
+      "dictionary": true,
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "shiki",
@@ -849,10 +921,10 @@
       "prefEn": "Saitama",
       "en": "Shiki",
       "jp": "志木市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11228-shiki",
       "dictionary": true,
-      "source": "Shiki City collection schedule table",
-      "path": "11-saitama/11228-shiki"
+      "source": "Shiki City collection schedule table"
     },
     {
       "id": "shiraoka",
@@ -861,10 +933,10 @@
       "prefEn": "Saitama",
       "en": "Shiraoka",
       "jp": "白岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11246-shiraoka",
       "dictionary": false,
-      "source": "Shiraoka collection schedule (Hasuda–Shiraoka sanitation association)",
-      "path": "11-saitama/11246-shiraoka"
+      "source": "Shiraoka collection schedule (Hasuda–Shiraoka sanitation association)"
     },
     {
       "id": "tokorozawa",
@@ -874,9 +946,9 @@
       "en": "Tokorozawa",
       "jp": "所沢市",
       "verified": "2026-07-19",
+      "path": "11-saitama/11208-tokorozawa",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11208-tokorozawa"
+      "source": "japan-gomi-data"
     },
     {
       "id": "tsurugashima",
@@ -886,9 +958,9 @@
       "en": "Tsurugashima",
       "jp": "鶴ヶ島市",
       "verified": "2026-08-03",
+      "path": "11-saitama/11241-tsurugashima",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11241-tsurugashima"
+      "source": "japan-gomi-data"
     },
     {
       "id": "wako",
@@ -897,10 +969,10 @@
       "prefEn": "Saitama",
       "en": "Wako",
       "jp": "和光市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11229-wako",
       "dictionary": false,
-      "source": "Wako City district collection day table",
-      "path": "11-saitama/11229-wako"
+      "source": "Wako City district collection day table"
     },
     {
       "id": "warabi",
@@ -909,10 +981,10 @@
       "prefEn": "Saitama",
       "en": "Warabi",
       "jp": "蕨市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11223-warabi",
       "dictionary": false,
-      "source": "Warabi City garbage collection day page",
-      "path": "11-saitama/11223-warabi"
+      "source": "Warabi City garbage collection day page"
     },
     {
       "id": "yashio",
@@ -921,10 +993,10 @@
       "prefEn": "Saitama",
       "en": "Yashio",
       "jp": "八潮市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11234-yashio",
       "dictionary": true,
-      "source": "Yashio City neighborhood collection schedule tables",
-      "path": "11-saitama/11234-yashio"
+      "source": "Yashio City neighborhood collection schedule tables"
     },
     {
       "id": "yokoze-town",
@@ -934,9 +1006,21 @@
       "en": "Yokoze",
       "jp": "横瀬町",
       "verified": "2026-08-04",
+      "path": "11-saitama/11361-yokoze",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "11-saitama/11361-yokoze"
+      "source": "japan-gomi-data"
+    },
+    {
+      "id": "yoshimi-11347",
+      "code": "11347",
+      "pref": "11",
+      "prefEn": "Saitama",
+      "en": "Yoshimi",
+      "jp": "吉見町",
+      "verified": "2026-11-04",
+      "path": "11-saitama/11347-yoshimi",
+      "dictionary": true,
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "funabashi",
@@ -945,10 +1029,10 @@
       "prefEn": "Chiba",
       "en": "Funabashi",
       "jp": "船橋市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "12-chiba/12204-funabashi",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "12-chiba/12204-funabashi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ichikawa-12203",
@@ -957,10 +1041,10 @@
       "prefEn": "Chiba",
       "en": "Ichikawa",
       "jp": "市川市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "12-chiba/12203-ichikawa",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "12-chiba/12203-ichikawa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kamagaya-12224",
@@ -969,10 +1053,10 @@
       "prefEn": "Chiba",
       "en": "Kamagaya",
       "jp": "鎌ケ谷市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "12-chiba/12224-kamagaya",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "12-chiba/12224-kamagaya"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yachiyo-12221",
@@ -981,10 +1065,10 @@
       "prefEn": "Chiba",
       "en": "Yachiyo",
       "jp": "八千代市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "12-chiba/12221-yachiyo",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "12-chiba/12221-yachiyo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "adachi-13121",
@@ -993,10 +1077,10 @@
       "prefEn": "Tokyo",
       "en": "Adachi",
       "jp": "足立区",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13121-adachi",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13121-adachi"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "arakawa",
@@ -1006,9 +1090,9 @@
       "en": "Arakawa",
       "jp": "荒川区",
       "verified": "2026-07-20",
+      "path": "13-tokyo/13118-arakawa",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13118-arakawa"
+      "source": "japan-gomi-data"
     },
     {
       "id": "bunkyo",
@@ -1018,9 +1102,9 @@
       "en": "Bunkyo",
       "jp": "文京区",
       "verified": "2026-10-30",
+      "path": "13-tokyo/13105-bunkyo",
       "dictionary": true,
-      "source": "curated",
-      "path": "13-tokyo/13105-bunkyo"
+      "source": "curated"
     },
     {
       "id": "chiyoda",
@@ -1030,9 +1114,9 @@
       "en": "Chiyoda",
       "jp": "千代田区",
       "verified": "2026-10-30",
+      "path": "13-tokyo/13101-chiyoda",
       "dictionary": true,
-      "source": "curated",
-      "path": "13-tokyo/13101-chiyoda"
+      "source": "curated"
     },
     {
       "id": "chofu",
@@ -1042,9 +1126,9 @@
       "en": "Chofu",
       "jp": "調布市",
       "verified": "2026-07-17",
+      "path": "13-tokyo/13208-chofu",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13208-chofu"
+      "source": "japan-gomi-data"
     },
     {
       "id": "chuo",
@@ -1054,9 +1138,9 @@
       "en": "Chuo",
       "jp": "中央区",
       "verified": "2026-10-30",
+      "path": "13-tokyo/13102-chuo",
       "dictionary": true,
-      "source": "curated",
-      "path": "13-tokyo/13102-chuo"
+      "source": "curated"
     },
     {
       "id": "edogawa-13123",
@@ -1065,10 +1149,10 @@
       "prefEn": "Tokyo",
       "en": "Edogawa",
       "jp": "江戸川区",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13123-edogawa",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13123-edogawa"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "hachioji-13201",
@@ -1077,10 +1161,10 @@
       "prefEn": "Tokyo",
       "en": "Hachioji",
       "jp": "八王子市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13201-hachioji",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13201-hachioji"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "higashikurume",
@@ -1089,10 +1173,10 @@
       "prefEn": "Tokyo",
       "en": "Higashikurume",
       "jp": "東久留米市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13222-higashikurume",
       "dictionary": false,
-      "source": "Higashikurume City collection weekday rules (official HTML)",
-      "path": "13-tokyo/13222-higashikurume"
+      "source": "Higashikurume City collection weekday rules (official HTML)"
     },
     {
       "id": "hinode-town",
@@ -1101,10 +1185,10 @@
       "prefEn": "Tokyo",
       "en": "Hinode",
       "jp": "日の出町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13305-hinode",
       "dictionary": true,
-      "source": "Hinode Town garbage separation and collection days",
-      "path": "13-tokyo/13305-hinode"
+      "source": "Hinode Town garbage separation and collection days"
     },
     {
       "id": "itabashi",
@@ -1114,9 +1198,9 @@
       "en": "Itabashi",
       "jp": "板橋区",
       "verified": "2026-09-01",
+      "path": "13-tokyo/13119-itabashi",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13119-itabashi"
+      "source": "japan-gomi-data"
     },
     {
       "id": "kodaira-13211",
@@ -1125,10 +1209,10 @@
       "prefEn": "Tokyo",
       "en": "Kodaira",
       "jp": "小平市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13211-kodaira",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13211-kodaira"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "koganei-13210",
@@ -1137,10 +1221,10 @@
       "prefEn": "Tokyo",
       "en": "Koganei",
       "jp": "小金井市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13210-koganei",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13210-koganei"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "koto",
@@ -1150,9 +1234,33 @@
       "en": "Koto",
       "jp": "江東区",
       "verified": "2026-10-30",
+      "path": "13-tokyo/13108-koto",
       "dictionary": true,
-      "source": "curated",
-      "path": "13-tokyo/13108-koto"
+      "source": "curated"
+    },
+    {
+      "id": "kunitachi-13215",
+      "code": "13215",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Kunitachi",
+      "jp": "国立市",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13215-kunitachi",
+      "dictionary": true,
+      "source": "Official municipal website (crawl + extract)"
+    },
+    {
+      "id": "meguro-metro",
+      "code": "13110",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Meguro",
+      "jp": "目黒区",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13110-meguro",
+      "dictionary": false,
+      "source": "Tokyo Metropolitan Government Open Data Catalog"
     },
     {
       "id": "mikurajima-vill",
@@ -1161,22 +1269,34 @@
       "prefEn": "Tokyo",
       "en": "Mikurajima",
       "jp": "御蔵島村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13382-mikurajima",
       "dictionary": false,
-      "source": "Mikurajima Village garbage collection schedule",
-      "path": "13-tokyo/13382-mikurajima"
+      "source": "Mikurajima Village garbage collection schedule"
     },
     {
-      "id": "mitaka",
+      "id": "minato-metro",
+      "code": "13103",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Minato",
+      "jp": "港区",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13103-minato",
+      "dictionary": false,
+      "source": "Tokyo Metropolitan Government Open Data Catalog"
+    },
+    {
+      "id": "mitaka-13204",
       "code": "13204",
       "pref": "13",
       "prefEn": "Tokyo",
       "en": "Mitaka",
       "jp": "三鷹市",
-      "verified": "2026-08-15",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13204-mitaka",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13204-mitaka"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "miyake-vill",
@@ -1185,10 +1305,10 @@
       "prefEn": "Tokyo",
       "en": "Miyake",
       "jp": "三宅村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13381-miyake",
       "dictionary": false,
-      "source": "Miyake Village garbage collection rules (official HTML)",
-      "path": "13-tokyo/13381-miyake"
+      "source": "Miyake Village garbage collection rules (official HTML)"
     },
     {
       "id": "musashino",
@@ -1198,9 +1318,9 @@
       "en": "Musashino",
       "jp": "武蔵野市",
       "verified": "2026-08-10",
+      "path": "13-tokyo/13203-musashino",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13203-musashino"
+      "source": "japan-gomi-data"
     },
     {
       "id": "nakano",
@@ -1210,9 +1330,9 @@
       "en": "Nakano",
       "jp": "中野区",
       "verified": "2026-10-30",
+      "path": "13-tokyo/13114-nakano",
       "dictionary": true,
-      "source": "curated",
-      "path": "13-tokyo/13114-nakano"
+      "source": "curated"
     },
     {
       "id": "nerima",
@@ -1222,9 +1342,9 @@
       "en": "Nerima",
       "jp": "練馬区",
       "verified": "2026-07-13",
+      "path": "13-tokyo/13120-nerima",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13120-nerima"
+      "source": "japan-gomi-data"
     },
     {
       "id": "nishitokyo",
@@ -1234,9 +1354,21 @@
       "en": "Nishitokyo",
       "jp": "西東京市",
       "verified": "2026-09-21",
+      "path": "13-tokyo/13229-nishitokyo",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13229-nishitokyo"
+      "source": "japan-gomi-data"
+    },
+    {
+      "id": "okutama-13308",
+      "code": "13308",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Okutama",
+      "jp": "奥多摩町",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13308-okutama",
+      "dictionary": false,
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "ome",
@@ -1246,33 +1378,33 @@
       "en": "Ome",
       "jp": "青梅市",
       "verified": "2026-08-10",
+      "path": "13-tokyo/13205-ome",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13205-ome"
+      "source": "japan-gomi-data"
     },
     {
-      "id": "ota",
+      "id": "ota-13111",
       "code": "13111",
       "pref": "13",
       "prefEn": "Tokyo",
       "en": "Ota",
       "jp": "大田区",
-      "verified": "2026-10-30",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13111-ota",
       "dictionary": false,
-      "source": "curated",
-      "path": "13-tokyo/13111-ota"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
-      "id": "setagaya",
+      "id": "setagaya-13112",
       "code": "13112",
       "pref": "13",
       "prefEn": "Tokyo",
       "en": "Setagaya",
       "jp": "世田谷区",
-      "verified": "2026-07-20",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13112-setagaya",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13112-setagaya"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "shibuya-13113",
@@ -1281,10 +1413,10 @@
       "prefEn": "Tokyo",
       "en": "Shibuya",
       "jp": "渋谷区",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13113-shibuya",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13113-shibuya"
+      "source": "Official municipal website (crawl + extract)"
     },
     {
       "id": "shinagawa",
@@ -1294,9 +1426,9 @@
       "en": "Shinagawa",
       "jp": "品川区",
       "verified": "2026-07-20",
+      "path": "13-tokyo/13109-shinagawa",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13109-shinagawa"
+      "source": "japan-gomi-data"
     },
     {
       "id": "shinjuku",
@@ -1305,34 +1437,58 @@
       "prefEn": "Tokyo",
       "en": "Shinjuku",
       "jp": "新宿区",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13104-shinjuku",
       "dictionary": false,
-      "source": "Shinjuku Ward collection weekday table (official HTML)",
-      "path": "13-tokyo/13104-shinjuku"
+      "source": "Shinjuku Ward collection weekday table (official HTML)"
     },
     {
-      "id": "suginami",
+      "id": "suginami-13115",
       "code": "13115",
       "pref": "13",
       "prefEn": "Tokyo",
       "en": "Suginami",
       "jp": "杉並区",
-      "verified": "2026-07-17",
-      "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13115-suginami"
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13115-suginami",
+      "dictionary": false,
+      "source": "Official municipal website (crawl + extract)"
     },
     {
-      "id": "tachikawa",
+      "id": "sumida-metro",
+      "code": "13107",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Sumida",
+      "jp": "墨田区",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13107-sumida",
+      "dictionary": true,
+      "source": "Tokyo Metropolitan Government Open Data Catalog"
+    },
+    {
+      "id": "tachikawa-13202",
       "code": "13202",
       "pref": "13",
       "prefEn": "Tokyo",
       "en": "Tachikawa",
       "jp": "立川市",
-      "verified": "2026-10-31",
-      "dictionary": false,
-      "source": "Tachikawa City district collection rules (official HTML)",
-      "path": "13-tokyo/13202-tachikawa"
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13202-tachikawa",
+      "dictionary": true,
+      "source": "Official municipal website (crawl + extract)"
+    },
+    {
+      "id": "taito-metro",
+      "code": "13106",
+      "pref": "13",
+      "prefEn": "Tokyo",
+      "en": "Taito",
+      "jp": "台東区",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13106-taito",
+      "dictionary": true,
+      "source": "Tokyo Metropolitan Government Open Data Catalog"
     },
     {
       "id": "tama-13224",
@@ -1341,10 +1497,10 @@
       "prefEn": "Tokyo",
       "en": "Tama",
       "jp": "多摩市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "13-tokyo/13224-tama",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "13-tokyo/13224-tama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "toshima",
@@ -1354,9 +1510,9 @@
       "en": "Toshima",
       "jp": "豊島区",
       "verified": "2026-10-23",
+      "path": "13-tokyo/13116-toshima",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "13-tokyo/13116-toshima"
+      "source": "japan-gomi-data"
     },
     {
       "id": "linkdata-4764-14207",
@@ -1365,10 +1521,10 @@
       "prefEn": "Kanagawa",
       "en": "Chigasaki",
       "jp": "茅ヶ崎市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14207-chigasaki",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14207-chigasaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ebina-14215",
@@ -1377,10 +1533,10 @@
       "prefEn": "Kanagawa",
       "en": "Ebina",
       "jp": "海老名市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14215-ebina",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14215-ebina"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "fujisawa-14205",
@@ -1389,10 +1545,10 @@
       "prefEn": "Kanagawa",
       "en": "Fujisawa",
       "jp": "藤沢市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14205-fujisawa",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14205-fujisawa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "hayama-14301",
@@ -1401,10 +1557,10 @@
       "prefEn": "Kanagawa",
       "en": "Hayama",
       "jp": "葉山町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14301-hayama",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14301-hayama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kamakura-14204",
@@ -1413,10 +1569,10 @@
       "prefEn": "Kanagawa",
       "en": "Kamakura",
       "jp": "鎌倉市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14204-kamakura",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14204-kamakura"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kawasaki",
@@ -1426,9 +1582,9 @@
       "en": "Kawasaki",
       "jp": "川崎市",
       "verified": "2026-07-17",
+      "path": "14-kanagawa/14130-kawasaki",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "14-kanagawa/14130-kawasaki"
+      "source": "japan-gomi-data"
     },
     {
       "id": "miura-14210",
@@ -1437,10 +1593,10 @@
       "prefEn": "Kanagawa",
       "en": "Miura",
       "jp": "三浦市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14210-miura",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14210-miura"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yokohama",
@@ -1450,9 +1606,9 @@
       "en": "Yokohama",
       "jp": "横浜市",
       "verified": "2026-07-20",
+      "path": "14-kanagawa/14100-yokohama",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "14-kanagawa/14100-yokohama"
+      "source": "japan-gomi-data"
     },
     {
       "id": "yokosuka-14201",
@@ -1461,10 +1617,10 @@
       "prefEn": "Kanagawa",
       "en": "Yokosuka",
       "jp": "横須賀市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14201-yokosuka",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14201-yokosuka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "zushi-14208",
@@ -1473,10 +1629,10 @@
       "prefEn": "Kanagawa",
       "en": "Zushi",
       "jp": "逗子市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "14-kanagawa/14208-zushi",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "14-kanagawa/14208-zushi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "nagaoka",
@@ -1485,10 +1641,10 @@
       "prefEn": "Niigata",
       "en": "Nagaoka",
       "jp": "長岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "15-niigata/15202-nagaoka",
       "dictionary": true,
-      "source": "Nagaoka City garbage schedule open data",
-      "path": "15-niigata/15202-nagaoka"
+      "source": "Nagaoka City garbage schedule open data"
     },
     {
       "id": "toyama-city",
@@ -1497,10 +1653,10 @@
       "prefEn": "Toyama",
       "en": "Toyama",
       "jp": "富山市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "16-toyama/16201-toyama",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "16-toyama/16201-toyama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kaga",
@@ -1509,10 +1665,10 @@
       "prefEn": "Ishikawa",
       "en": "Kaga",
       "jp": "加賀市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "17-ishikawa/17205-kaga",
       "dictionary": false,
-      "source": "Ishikawa Prefecture open data (garbage collection schedules)",
-      "path": "17-ishikawa/17205-kaga"
+      "source": "Ishikawa Prefecture open data (garbage collection schedules)"
     },
     {
       "id": "kahoku-17209",
@@ -1521,10 +1677,10 @@
       "prefEn": "Ishikawa",
       "en": "Kahoku",
       "jp": "かほく市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "17-ishikawa/17209-kahoku",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "17-ishikawa/17209-kahoku"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kanazawa",
@@ -1534,9 +1690,9 @@
       "en": "Kanazawa",
       "jp": "金沢市",
       "verified": "2026-10-17",
+      "path": "17-ishikawa/17201-kanazawa",
       "dictionary": true,
-      "source": "gomisute-gps",
-      "path": "17-ishikawa/17201-kanazawa"
+      "source": "gomisute-gps"
     },
     {
       "id": "tsubata-17361",
@@ -1545,10 +1701,10 @@
       "prefEn": "Ishikawa",
       "en": "Tsubata",
       "jp": "津幡町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "17-ishikawa/17361-tsubata",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "17-ishikawa/17361-tsubata"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "uchinada-17365",
@@ -1557,10 +1713,10 @@
       "prefEn": "Ishikawa",
       "en": "Uchinada",
       "jp": "内灘町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "17-ishikawa/17365-uchinada",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "17-ishikawa/17365-uchinada"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "wajima-17204",
@@ -1569,10 +1725,10 @@
       "prefEn": "Ishikawa",
       "en": "Wajima",
       "jp": "輪島市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "17-ishikawa/17204-wajima",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "17-ishikawa/17204-wajima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "awara",
@@ -1581,10 +1737,10 @@
       "prefEn": "Fukui",
       "en": "Awara",
       "jp": "あわら市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18208-awara",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18208-awara"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "echizen",
@@ -1593,10 +1749,10 @@
       "prefEn": "Fukui",
       "en": "Echizen",
       "jp": "越前市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18209-echizen",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18209-echizen"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "echizen-town",
@@ -1605,10 +1761,10 @@
       "prefEn": "Fukui",
       "en": "Echizen",
       "jp": "越前町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18423-echizen",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18423-echizen"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "eiheiji",
@@ -1617,10 +1773,10 @@
       "prefEn": "Fukui",
       "en": "Eiheiji",
       "jp": "永平寺町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18322-eiheiji",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18322-eiheiji"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "fukui",
@@ -1629,10 +1785,10 @@
       "prefEn": "Fukui",
       "en": "Fukui",
       "jp": "福井市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18201-fukui",
       "dictionary": false,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18201-fukui"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "ikeda-fukui",
@@ -1641,10 +1797,10 @@
       "prefEn": "Fukui",
       "en": "Ikeda",
       "jp": "池田町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18382-ikeda",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18382-ikeda"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "katsuyama",
@@ -1653,10 +1809,10 @@
       "prefEn": "Fukui",
       "en": "Katsuyama",
       "jp": "勝山市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18206-katsuyama",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18206-katsuyama"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "mihama-fukui",
@@ -1665,10 +1821,10 @@
       "prefEn": "Fukui",
       "en": "Mihama",
       "jp": "美浜町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18442-mihama",
       "dictionary": false,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18442-mihama"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "minamiechizen",
@@ -1677,10 +1833,10 @@
       "prefEn": "Fukui",
       "en": "Minamiechizen",
       "jp": "南越前町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18404-minamiechizen",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18404-minamiechizen"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "obama",
@@ -1689,10 +1845,10 @@
       "prefEn": "Fukui",
       "en": "Obama",
       "jp": "小浜市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18204-obama",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18204-obama"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "oi",
@@ -1701,10 +1857,10 @@
       "prefEn": "Fukui",
       "en": "Oi",
       "jp": "おおい町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18483-oi",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18483-oi"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "ono",
@@ -1713,10 +1869,10 @@
       "prefEn": "Fukui",
       "en": "Ono",
       "jp": "大野市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18205-ono",
       "dictionary": true,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18205-ono"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "sabae",
@@ -1726,9 +1882,9 @@
       "en": "Sabae",
       "jp": "鯖江市",
       "verified": "2026-08-21",
+      "path": "18-fukui/18207-sabae",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "18-fukui/18207-sabae"
+      "source": "japan-gomi-data"
     },
     {
       "id": "sakai-18210",
@@ -1737,10 +1893,10 @@
       "prefEn": "Fukui",
       "en": "Sakai",
       "jp": "坂井市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18210-sakai",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "18-fukui/18210-sakai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "takahama-18481",
@@ -1749,10 +1905,10 @@
       "prefEn": "Fukui",
       "en": "Takahama",
       "jp": "高浜町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18481-takahama",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "18-fukui/18481-takahama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tsuruga",
@@ -1761,10 +1917,10 @@
       "prefEn": "Fukui",
       "en": "Tsuruga",
       "jp": "敦賀市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18202-tsuruga",
       "dictionary": false,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18202-tsuruga"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "wakasa",
@@ -1773,10 +1929,10 @@
       "prefEn": "Fukui",
       "en": "Wakasa",
       "jp": "若狭町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "18-fukui/18501-wakasa",
       "dictionary": false,
-      "source": "Fukui Prefecture garbage collection schedule open data",
-      "path": "18-fukui/18501-wakasa"
+      "source": "Fukui Prefecture garbage collection schedule open data"
     },
     {
       "id": "nanbu",
@@ -1785,10 +1941,10 @@
       "prefEn": "Yamanashi",
       "en": "Nanbu",
       "jp": "南部町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "19-yamanashi/19366-nanbu",
       "dictionary": false,
-      "source": "Nanbu Town garbage calendar open data",
-      "path": "19-yamanashi/19366-nanbu"
+      "source": "Nanbu Town garbage calendar open data"
     },
     {
       "id": "anan-20404",
@@ -1797,10 +1953,10 @@
       "prefEn": "Nagano",
       "en": "Anan",
       "jp": "阿南町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "20-nagano/20404-anan",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "20-nagano/20404-anan"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "shiojiri",
@@ -1809,10 +1965,22 @@
       "prefEn": "Nagano",
       "en": "Shiojiri",
       "jp": "塩尻市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "20-nagano/20215-shiojiri",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "20-nagano/20215-shiojiri"
+      "source": "5374.jp area_days.csv"
+    },
+    {
+      "id": "suzaka-20207",
+      "code": "20207",
+      "pref": "20",
+      "prefEn": "Nagano",
+      "en": "Suzaka",
+      "jp": "須坂市",
+      "verified": "2026-11-04",
+      "path": "20-nagano/20207-suzaka",
+      "dictionary": true,
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ena-21210",
@@ -1821,10 +1989,10 @@
       "prefEn": "Gifu",
       "en": "Ena",
       "jp": "恵那市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "21-gifu/21210-ena",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "21-gifu/21210-ena"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "mitake",
@@ -1833,10 +2001,10 @@
       "prefEn": "Gifu",
       "en": "Mitake",
       "jp": "御嵩町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "21-gifu/21521-mitake",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "21-gifu/21521-mitake"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "fuji-22210",
@@ -1845,10 +2013,10 @@
       "prefEn": "Shizuoka",
       "en": "Fuji",
       "jp": "富士市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22210-fuji",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22210-fuji"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "fukuroi-22216",
@@ -1857,10 +2025,10 @@
       "prefEn": "Shizuoka",
       "en": "Fukuroi",
       "jp": "袋井市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22216-fukuroi",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22216-fukuroi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ito-22208",
@@ -1869,10 +2037,10 @@
       "prefEn": "Shizuoka",
       "en": "Ito",
       "jp": "伊東市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22208-ito",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22208-ito"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kikugawa-22224",
@@ -1881,10 +2049,10 @@
       "prefEn": "Shizuoka",
       "en": "Kikugawa",
       "jp": "菊川市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22224-kikugawa",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22224-kikugawa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "linkdata-4245-22206",
@@ -1893,10 +2061,10 @@
       "prefEn": "Shizuoka",
       "en": "Mishima",
       "jp": "三島市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22206-mishima",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22206-mishima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "mori-22461",
@@ -1905,10 +2073,10 @@
       "prefEn": "Shizuoka",
       "en": "Mori",
       "jp": "森町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22461-mori",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22461-mori"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "omaezakishi-22223",
@@ -1917,10 +2085,10 @@
       "prefEn": "Shizuoka",
       "en": "Omaezaki",
       "jp": "御前崎市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22223-omaezaki",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "22-shizuoka/22223-omaezaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "shizuoka",
@@ -1929,10 +2097,10 @@
       "prefEn": "Shizuoka",
       "en": "Shizuoka",
       "jp": "静岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "22-shizuoka/22100-shizuoka",
       "dictionary": false,
-      "source": "Shizuoka City garbage collection weekdays open data",
-      "path": "22-shizuoka/22100-shizuoka"
+      "source": "Shizuoka City garbage collection weekdays open data"
     },
     {
       "id": "handa",
@@ -1941,10 +2109,22 @@
       "prefEn": "Aichi",
       "en": "Handa",
       "jp": "半田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "23-aichi/23205-handa",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "23-aichi/23205-handa"
+      "source": "5374.jp area_days.csv"
+    },
+    {
+      "id": "kariya-23210",
+      "code": "23210",
+      "pref": "23",
+      "prefEn": "Aichi",
+      "en": "Kariya",
+      "jp": "刈谷市",
+      "verified": "2026-11-04",
+      "path": "23-aichi/23210-kariya",
+      "dictionary": false,
+      "source": "Official schedule CSV (crawler probe, 5374-style)"
     },
     {
       "id": "takahama-23227",
@@ -1953,10 +2133,10 @@
       "prefEn": "Aichi",
       "en": "Takahama",
       "jp": "高浜市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "23-aichi/23227-takahama",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "23-aichi/23227-takahama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tokai-23222",
@@ -1965,10 +2145,10 @@
       "prefEn": "Aichi",
       "en": "Tokai",
       "jp": "東海市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "23-aichi/23222-tokai",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "23-aichi/23222-tokai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yatomi-23235",
@@ -1977,10 +2157,10 @@
       "prefEn": "Aichi",
       "en": "Yatomi",
       "jp": "弥富市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "23-aichi/23235-yatomi",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "23-aichi/23235-yatomi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "iga",
@@ -1989,10 +2169,10 @@
       "prefEn": "Mie",
       "en": "Iga",
       "jp": "伊賀市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "24-mie/24216-iga",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "24-mie/24216-iga"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kusatsu-25206",
@@ -2001,10 +2181,10 @@
       "prefEn": "Shiga",
       "en": "Kusatsu",
       "jp": "草津市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "25-shiga/25206-kusatsu",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "25-shiga/25206-kusatsu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "otsu",
@@ -2013,10 +2193,10 @@
       "prefEn": "Shiga",
       "en": "Otsu",
       "jp": "大津市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "25-shiga/25201-otsu",
       "dictionary": false,
-      "source": "Otsu City garbage collection weekdays open data",
-      "path": "25-shiga/25201-otsu"
+      "source": "Otsu City garbage collection weekdays open data"
     },
     {
       "id": "ritto-25208",
@@ -2025,10 +2205,10 @@
       "prefEn": "Shiga",
       "en": "Ritto",
       "jp": "栗東市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "25-shiga/25208-ritto",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "25-shiga/25208-ritto"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ayabe-26203",
@@ -2037,10 +2217,10 @@
       "prefEn": "Kyoto",
       "en": "Ayabe",
       "jp": "綾部市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26203-ayabe",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26203-ayabe"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "fukuchiyama",
@@ -2049,10 +2229,10 @@
       "prefEn": "Kyoto",
       "en": "Fukuchiyama",
       "jp": "福知山市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26201-fukuchiyama",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26201-fukuchiyama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "joyo-26207",
@@ -2061,10 +2241,10 @@
       "prefEn": "Kyoto",
       "en": "Joyo",
       "jp": "城陽市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26207-joyo",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26207-joyo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kameoka-26206",
@@ -2073,10 +2253,10 @@
       "prefEn": "Kyoto",
       "en": "Kameoka",
       "jp": "亀岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26206-kameoka",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26206-kameoka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "maizuru-26202",
@@ -2085,10 +2265,10 @@
       "prefEn": "Kyoto",
       "en": "Maizuru",
       "jp": "舞鶴市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26202-maizuru",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26202-maizuru"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "miyazu-26205",
@@ -2097,10 +2277,10 @@
       "prefEn": "Kyoto",
       "en": "Miyazu",
       "jp": "宮津市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26205-miyazu",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26205-miyazu"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "nagaokakyo-26209",
@@ -2109,10 +2289,10 @@
       "prefEn": "Kyoto",
       "en": "Nagaokakyo",
       "jp": "長岡京市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "26-kyoto/26209-nagaokakyo",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "26-kyoto/26209-nagaokakyo"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kadoma",
@@ -2122,9 +2302,9 @@
       "en": "Kadoma",
       "jp": "門真市",
       "verified": "2026-10-22",
+      "path": "27-osaka/27223-kadoma",
       "dictionary": false,
-      "source": "japan-gomi-data",
-      "path": "27-osaka/27223-kadoma"
+      "source": "japan-gomi-data"
     },
     {
       "id": "katano-27230",
@@ -2133,10 +2313,10 @@
       "prefEn": "Osaka",
       "en": "Katano",
       "jp": "交野市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "27-osaka/27230-katano",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "27-osaka/27230-katano"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "sakai",
@@ -2145,10 +2325,10 @@
       "prefEn": "Osaka",
       "en": "Sakai",
       "jp": "堺市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "27-osaka/27140-sakai",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "27-osaka/27140-sakai"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "suita-27205",
@@ -2157,10 +2337,10 @@
       "prefEn": "Osaka",
       "en": "Suita",
       "jp": "吹田市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "27-osaka/27205-suita",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "27-osaka/27205-suita"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "toyonaka",
@@ -2170,9 +2350,9 @@
       "en": "Toyonaka",
       "jp": "豊中市",
       "verified": "2026-08-18",
+      "path": "27-osaka/27203-toyonaka",
       "dictionary": false,
-      "source": "toyonaka-gomidashi",
-      "path": "27-osaka/27203-toyonaka"
+      "source": "toyonaka-gomidashi"
     },
     {
       "id": "amagasaki",
@@ -2181,10 +2361,10 @@
       "prefEn": "Hyogo",
       "en": "Amagasaki",
       "jp": "尼崎市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "28-hyogo/28202-amagasaki",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "28-hyogo/28202-amagasaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ichikawa-28442",
@@ -2193,10 +2373,10 @@
       "prefEn": "Hyogo",
       "en": "Ichikawa",
       "jp": "市川町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "28-hyogo/28442-ichikawa",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "28-hyogo/28442-ichikawa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ikoma",
@@ -2205,10 +2385,10 @@
       "prefEn": "Nara",
       "en": "Ikoma",
       "jp": "生駒市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "29-nara/29209-ikoma",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "29-nara/29209-ikoma"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "miyake-29362",
@@ -2217,10 +2397,10 @@
       "prefEn": "Nara",
       "en": "Miyake",
       "jp": "三宅町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "29-nara/29362-miyake",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "29-nara/29362-miyake"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kushimoto-30428",
@@ -2229,10 +2409,10 @@
       "prefEn": "Wakayama",
       "en": "Kushimoto",
       "jp": "串本町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "30-wakayama/30428-kushimoto",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "30-wakayama/30428-kushimoto"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tanabe-30206",
@@ -2241,10 +2421,10 @@
       "prefEn": "Wakayama",
       "en": "Tanabe",
       "jp": "田辺市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "30-wakayama/30206-tanabe",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "30-wakayama/30206-tanabe"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "wakayama-city",
@@ -2253,10 +2433,10 @@
       "prefEn": "Wakayama",
       "en": "Wakayama",
       "jp": "和歌山市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "30-wakayama/30201-wakayama",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "30-wakayama/30201-wakayama"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tottori-city",
@@ -2265,10 +2445,10 @@
       "prefEn": "Tottori",
       "en": "Tottori",
       "jp": "鳥取市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "31-tottori/31201-tottori",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "31-tottori/31201-tottori"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "matsue",
@@ -2277,10 +2457,10 @@
       "prefEn": "Shimane",
       "en": "Matsue",
       "jp": "松江市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "32-shimane/32201-matsue",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "32-shimane/32201-matsue"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yasugi-32206",
@@ -2289,10 +2469,10 @@
       "prefEn": "Shimane",
       "en": "Yasugi",
       "jp": "安来市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "32-shimane/32206-yasugi",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "32-shimane/32206-yasugi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kurashiki",
@@ -2302,9 +2482,9 @@
       "en": "Kurashiki",
       "jp": "倉敷市",
       "verified": "2026-07-24",
+      "path": "33-okayama/33202-kurashiki",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "33-okayama/33202-kurashiki"
+      "source": "japan-gomi-data"
     },
     {
       "id": "okayama",
@@ -2314,9 +2494,9 @@
       "en": "Okayama",
       "jp": "岡山市",
       "verified": "2026-07-22",
+      "path": "33-okayama/33100-okayama",
       "dictionary": true,
-      "source": "japan-gomi-data",
-      "path": "33-okayama/33100-okayama"
+      "source": "japan-gomi-data"
     },
     {
       "id": "hiroshima-city",
@@ -2325,10 +2505,10 @@
       "prefEn": "Hiroshima",
       "en": "Hiroshima",
       "jp": "広島市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "34-hiroshima/34100-hiroshima",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "34-hiroshima/34100-hiroshima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ube",
@@ -2337,10 +2517,10 @@
       "prefEn": "Yamaguchi",
       "en": "Ube",
       "jp": "宇部市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "35-yamaguchi/35202-ube",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "35-yamaguchi/35202-ube"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "aizumi-36403",
@@ -2349,10 +2529,10 @@
       "prefEn": "Tokushima",
       "en": "Aizumi",
       "jp": "藍住町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36403-aizumi",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36403-aizumi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "anan-36204",
@@ -2361,10 +2541,10 @@
       "prefEn": "Tokushima",
       "en": "Anan",
       "jp": "阿南市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36204-anan",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36204-anan"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "awa-36206",
@@ -2373,10 +2553,10 @@
       "prefEn": "Tokushima",
       "en": "Awa",
       "jp": "阿波市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36206-awa",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36206-awa"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kitajima-36402",
@@ -2385,10 +2565,10 @@
       "prefEn": "Tokushima",
       "en": "Kitajima",
       "jp": "北島町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36402-kitajima",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36402-kitajima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "matsushige-36401",
@@ -2397,10 +2577,10 @@
       "prefEn": "Tokushima",
       "en": "Matsushige",
       "jp": "松茂町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36401-matsushige",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36401-matsushige"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "mima-36207",
@@ -2409,10 +2589,10 @@
       "prefEn": "Tokushima",
       "en": "Mima",
       "jp": "美馬市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36207-mima",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36207-mima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "naruto-36202",
@@ -2421,10 +2601,10 @@
       "prefEn": "Tokushima",
       "en": "Naruto",
       "jp": "鳴門市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36202-naruto",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36202-naruto"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tokushima-city",
@@ -2433,10 +2613,10 @@
       "prefEn": "Tokushima",
       "en": "Tokushima",
       "jp": "徳島市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "36-tokushima/36201-tokushima",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "36-tokushima/36201-tokushima"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "takamatsu",
@@ -2445,10 +2625,10 @@
       "prefEn": "Kagawa",
       "en": "Takamatsu",
       "jp": "高松市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "37-kagawa/37201-takamatsu",
       "dictionary": false,
-      "source": "Takamatsu FACT garbage collection open data",
-      "path": "37-kagawa/37201-takamatsu"
+      "source": "Takamatsu FACT garbage collection open data"
     },
     {
       "id": "saijo",
@@ -2457,10 +2637,10 @@
       "prefEn": "Ehime",
       "en": "Saijo",
       "jp": "西条市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "38-ehime/38207-saijo",
       "dictionary": false,
-      "source": "Saijo City garbage separation guide (district weekday table)",
-      "path": "38-ehime/38207-saijo"
+      "source": "Saijo City garbage separation guide (district weekday table)"
     },
     {
       "id": "kochi-city",
@@ -2469,10 +2649,10 @@
       "prefEn": "Kochi",
       "en": "Kochi",
       "jp": "高知市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "39-kochi/39201-kochi",
       "dictionary": true,
-      "source": "Kochi City official garbage collection schedule",
-      "path": "39-kochi/39201-kochi"
+      "source": "Kochi City official garbage collection schedule"
     },
     {
       "id": "fukuoka-city",
@@ -2481,10 +2661,10 @@
       "prefEn": "Fukuoka",
       "en": "Fukuoka",
       "jp": "福岡市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "40-fukuoka/40130-fukuoka",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "40-fukuoka/40130-fukuoka"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "kasuya-40349",
@@ -2493,10 +2673,10 @@
       "prefEn": "Fukuoka",
       "en": "Kasuya",
       "jp": "粕屋町",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "40-fukuoka/40349-kasuya",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "40-fukuoka/40349-kasuya"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "ogi-41208",
@@ -2505,10 +2685,10 @@
       "prefEn": "Saga",
       "en": "Ogi",
       "jp": "小城市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "41-saga/41208-ogi",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "41-saga/41208-ogi"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "saga-city",
@@ -2517,10 +2697,10 @@
       "prefEn": "Saga",
       "en": "Saga",
       "jp": "佐賀市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "41-saga/41201-saga",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "41-saga/41201-saga"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "nagasaki",
@@ -2529,10 +2709,10 @@
       "prefEn": "Nagasaki",
       "en": "Nagasaki",
       "jp": "長崎市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "42-nagasaki/42201-nagasaki",
       "dictionary": false,
-      "source": "Nagasaki City garbage schedule open data",
-      "path": "42-nagasaki/42201-nagasaki"
+      "source": "Nagasaki City garbage schedule open data"
     },
     {
       "id": "arao",
@@ -2541,10 +2721,10 @@
       "prefEn": "Kumamoto",
       "en": "Arao",
       "jp": "荒尾市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "43-kumamoto/43204-arao",
       "dictionary": true,
-      "source": "Arao City garbage and recycling calendar (FY2026)",
-      "path": "43-kumamoto/43204-arao"
+      "source": "Arao City garbage and recycling calendar (FY2026)"
     },
     {
       "id": "oita",
@@ -2553,10 +2733,10 @@
       "prefEn": "Oita",
       "en": "Oita",
       "jp": "大分市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "44-oita/44201-oita",
       "dictionary": false,
-      "source": "Oita City garbage calendar open data",
-      "path": "44-oita/44201-oita"
+      "source": "Oita City garbage calendar open data"
     },
     {
       "id": "hyuga",
@@ -2565,10 +2745,10 @@
       "prefEn": "Miyazaki",
       "en": "Hyuga",
       "jp": "日向市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "45-miyazaki/45206-hyuga",
       "dictionary": true,
-      "source": "Hyuga City garbage handling plan / FY2026 guide",
-      "path": "45-miyazaki/45206-hyuga"
+      "source": "Hyuga City garbage handling plan / FY2026 guide"
     },
     {
       "id": "izumi",
@@ -2577,10 +2757,22 @@
       "prefEn": "Kagoshima",
       "en": "Izumi",
       "jp": "出水市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "46-kagoshima/46208-izumi",
       "dictionary": true,
-      "source": "Izumi City household waste district schedule tables",
-      "path": "46-kagoshima/46208-izumi"
+      "source": "Izumi City household waste district schedule tables"
+    },
+    {
+      "id": "ginowan-47205",
+      "code": "47205",
+      "pref": "47",
+      "prefEn": "Okinawa",
+      "en": "Ginowan",
+      "jp": "宜野湾市",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47205-ginowan",
+      "dictionary": true,
+      "source": "Official schedule CSV (crawler)"
     },
     {
       "id": "ishigaki-47207",
@@ -2589,10 +2781,10 @@
       "prefEn": "Okinawa",
       "en": "Ishigaki",
       "jp": "石垣市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47207-ishigaki",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47207-ishigaki"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "naha",
@@ -2601,10 +2793,10 @@
       "prefEn": "Okinawa",
       "en": "Naha",
       "jp": "那覇市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47201-naha",
       "dictionary": true,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47201-naha"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "onna-47311",
@@ -2613,10 +2805,10 @@
       "prefEn": "Okinawa",
       "en": "Onna",
       "jp": "恩納村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47311-onna",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47311-onna"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "tomigusuku-47212",
@@ -2625,10 +2817,10 @@
       "prefEn": "Okinawa",
       "en": "Tomigusuku",
       "jp": "豊見城市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47212-tomigusuku",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47212-tomigusuku"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "urasoe",
@@ -2637,10 +2829,10 @@
       "prefEn": "Okinawa",
       "en": "Urasoe",
       "jp": "浦添市",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47208-urasoe",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47208-urasoe"
+      "source": "5374.jp area_days.csv"
     },
     {
       "id": "yomitan-47324",
@@ -2649,10 +2841,10 @@
       "prefEn": "Okinawa",
       "en": "Yomitan",
       "jp": "読谷村",
-      "verified": "2026-10-31",
+      "verified": "2026-11-04",
+      "path": "47-okinawa/47324-yomitan",
       "dictionary": false,
-      "source": "5374.jp area_days.csv",
-      "path": "47-okinawa/47324-yomitan"
+      "source": "5374.jp area_days.csv"
     }
   ]
 }

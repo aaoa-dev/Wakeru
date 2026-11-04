@@ -75,7 +75,8 @@ function normalizeCell(raw){
   s = s.replace(/^毎週/, "").replace(/曜日?/g, "");
   if(/^最終([日月火水木金土])$/.test(s)) return s;
   if(/^[日月火水木金土]$/.test(s)) return s;
-  return s.replace(/第/g, "");
+  const ordinalDigits = {一:"1", 二:"2", 三:"3", 四:"4", 五:"5"};
+  return s.replace(/[一二三四五]/g, n => ordinalDigits[n]).replace(/第/g, "");
 }
 
 export function stripOffDays(rule){
@@ -130,6 +131,40 @@ function decodeCsv(buf, hint){
 
 function scheduleKey(schedule){
   return JSON.stringify(schedule, Object.keys(schedule).sort());
+}
+
+export const GENERIC_HEADER_TO_BIN = [
+  [/燃やす|燃える|可燃|もやす|もえる|家庭/i, "burnable"],
+  [/燃やさない|燃えない|不燃|もやさない|もえない/i, "non_burnable"],
+  [/プラスチック|容器包装|プラ/i, "plastic"],
+  [/資源|リサイクル|びん|缶|古紙|紙製|紙類|^紙$/i, "res"],
+  [/有害|危険/i, "hazardous"],
+  [/粗大|大型/i, "oversized"],
+];
+
+/** Probe CSV for Fukui-style district × weekday columns (no town registry). */
+export function probeDistrictWeeklyBuffer(buf, {validFrom = "2026-04-01", validTo = "2027-03-31", headerToBin = GENERIC_HEADER_TO_BIN} = {}){
+  const rows = decodeCsv(buf, /地区名|住所|地域/);
+  if(!rows.length) return {ok:false, reason:"empty"};
+  const headers = Object.keys(rows[0]);
+  const districtCol = districtColumn(headers);
+  const colsByBin = columnsByBin(headers, headerToBin);
+  if(!Object.keys(colsByBin).length) return {ok:false, reason:"no bin columns", headers:headers.slice(0, 12)};
+  let areas = 0, skipped = 0;
+  for(const row of rows){
+    const district = row[districtCol]?.trim();
+    if(!district) continue;
+    const schedule = {};
+    for(const [bin, cols] of Object.entries(colsByBin)){
+      const rules = cols.map(col => weeklyRule(row[col], validFrom, validTo)).filter(Boolean);
+      if(rules.length === 1) schedule[bin] = rules[0];
+      else if(rules.length > 1) schedule[bin] = {any:rules};
+    }
+    if(!Object.keys(schedule).length){ skipped++; continue }
+    areas++;
+  }
+  if(!areas) return {ok:false, reason:`no parseable rows (${skipped} skipped)`, headers:headers.slice(0, 12)};
+  return {ok:true, areas, skipped, bins:Object.keys(colsByBin)};
 }
 
 /** @param {{cacheKey:string, source:object, pref:string, bins:object, headerToBin:[RegExp,string][], entry:object, loadRows:()=>Promise<object[]>, calendarNote?:string, contacts?:object[]}} opts */

@@ -1,19 +1,25 @@
 {
-  "id": "tachikawa",
+  "id": "tachikawa-13202",
   "code": "13202",
   "pref": "13",
   "jp": "立川市",
   "en": "Tachikawa",
-  "verified": "2026-10-31",
+  "verified": "2026-11-04",
   "sources": [
-    "https://www.city.tachikawa.lg.jp/kurashi/gomi/1001712/1001741.html"
+    "http://tachikawa.5374.jp/data/area_days.csv",
+    "http://tachikawa.5374.jp/data/area_days.csv"
   ],
   "contacts": [],
   "bins": {
     "burnable": {
-      "label": "燃やせるごみ",
+      "label": "燃やすごみ",
       "en": "Burnable",
       "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
     },
     "plastic": {
       "label": "プラスチック",
@@ -25,30 +31,35 @@
       "en": "PET bottles",
       "kind": "res"
     },
-    "glass_bottle": {
-      "label": "びん",
-      "en": "Glass bottles",
-      "kind": "res"
-    },
     "beverage_can": {
-      "label": "缶",
+      "label": "空き缶",
       "en": "Cans",
       "kind": "res"
     },
-    "paper": {
-      "label": "古紙・雑がみ",
-      "en": "Paper",
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
       "kind": "res"
     },
-    "non_burnable": {
-      "label": "燃やせないごみ",
-      "en": "Non-burnable",
-      "kind": "non"
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
     },
     "hazardous": {
       "label": "有害ごみ",
       "en": "Hazardous",
       "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
     },
     "no": {
       "label": "収集しないもの",
@@ -57,7 +68,88 @@
     }
   },
   "plasticTest": null,
-  "sorting": {},
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「古布」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "pet_bottle",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「ペットボトル（資源）」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "glass_bottle",
+      "note": "Auto-matched: the official list puts 「一升びん」 under 「びん」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「アルミホイル」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「はさみ」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「使い捨てライター」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「電気ポット」 under 「燃やせないごみ」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせるごみ」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「冷蔵庫」 under 「市での処理不可」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「市での処理不可」.",
+      "auto": true
+    }
+  },
   "calendar": {
     "validFrom": "2026-04-01",
     "validTo": "2027-03-31",
@@ -74,208 +166,570 @@
         "12-31"
       ]
     },
-    "note": "Four collection districts. Biweekly items use nth-weekday rules aligned to the city's R8 monthly calendars; confirm against the published PDF if a month looks off.",
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
     "patterns": {
       "1": {
-        "burnable": [
-          1,
-          4
-        ],
-        "plastic": [
-          2
-        ],
-        "glass_bottle": [
-          3
-        ],
-        "beverage_can": {
-          "day": 5,
-          "weeks": [
-            1,
-            3
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            }
           ]
         },
-        "hazardous": [
-          3
+        "plastic": [
+          5
         ],
-        "paper": {
-          "day": 4,
+        "hazardous": {
+          "day": 3,
           "weeks": [
             2,
             4
           ]
         },
-        "pet_bottle": [
-          5
-        ],
-        "non_burnable": {
-          "day": 5,
+        "glass_bottle": {
+          "day": 3,
           "weeks": [
-            1,
-            3
+            2,
+            4
+          ]
+        },
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          2
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                2,
+                4
+              ]
+            }
           ]
         }
       },
       "2": {
-        "burnable": [
-          1,
-          4
-        ],
-        "pet_bottle": [
+        "burnable": {
+          "any": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "plastic": [
           2
         ],
-        "beverage_can": [
-          2,
-          3
-        ],
-        "non_burnable": {
-          "day": 2,
+        "hazardous": {
+          "day": 3,
           "weeks": [
             1,
             3
           ]
         },
-        "glass_bottle": [
-          3
-        ],
-        "hazardous": [
-          3
-        ],
-        "paper": {
-          "day": 4,
-          "weeks": [
-            2,
-            4
-          ]
-        },
-        "plastic": [
-          5
-        ]
-      },
-      "3": {
-        "plastic": [
-          1
-        ],
-        "burnable": [
-          2,
-          5
-        ],
-        "glass_bottle": [
-          3
-        ],
-        "beverage_can": {
-          "day": 4,
+        "glass_bottle": {
+          "day": 3,
           "weeks": [
             1,
             3
           ]
         },
-        "hazardous": [
-          3
-        ],
-        "paper": {
-          "day": 5,
-          "weeks": [
-            2,
-            4
+        "res": {
+          "any": [
+            {
+              "day": 2,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
           ]
         },
         "pet_bottle": [
+          5
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 5,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "3": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "plastic": [
           4
         ],
-        "non_burnable": {
-          "day": 4,
+        "hazardous": {
+          "day": 3,
           "weeks": [
             1,
             3
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
+          1
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            }
           ]
         }
       },
       "4": {
-        "pet_bottle": [
-          1
-        ],
-        "beverage_can": [
-          1,
-          3
-        ],
-        "non_burnable": {
-          "day": 1,
-          "weeks": [
-            1,
-            3
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                1,
+                3
+              ]
+            }
           ]
         },
-        "burnable": [
-          2,
-          5
+        "plastic": [
+          1
         ],
-        "glass_bottle": [
-          3
-        ],
-        "hazardous": [
-          3
-        ],
-        "paper": {
-          "day": 5,
+        "hazardous": {
+          "day": 3,
           "weeks": [
             2,
             4
           ]
         },
-        "plastic": [
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "any": [
+            {
+              "day": 1,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        "pet_bottle": [
           4
-        ]
+        ],
+        "paper": {
+          "any": [
+            {
+              "day": 3,
+              "weeks": [
+                2,
+                4
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 3,
+              "weeks": [
+                1,
+                3
+              ]
+            },
+            {
+              "day": 4,
+              "weeks": [
+                2,
+                4
+              ]
+            }
+          ]
+        }
       }
     }
   },
   "areas": [
     {
-      "town": "1地区",
-      "townEn": "1地区",
-      "kana": "1地区",
+      "town": "曙町",
+      "townEn": "Akebonocho",
+      "kana": "アケボノチョウ",
       "chome": null,
       "detail": null,
-      "en": "1地区",
-      "jp": "1地区",
-      "pattern": "1"
-    },
-    {
-      "town": "2地区",
-      "townEn": "2地区",
-      "kana": "2地区",
-      "chome": null,
-      "detail": null,
-      "en": "2地区",
-      "jp": "2地区",
+      "en": "曙町",
+      "jp": "曙町",
       "pattern": "2"
     },
     {
-      "town": "3地区",
-      "townEn": "3地区",
-      "kana": "3地区",
+      "town": "泉町",
+      "townEn": "Izumicho",
+      "kana": "イズミチョウ",
       "chome": null,
       "detail": null,
-      "en": "3地区",
-      "jp": "3地区",
+      "en": "泉町",
+      "jp": "泉町",
+      "pattern": "4"
+    },
+    {
+      "town": "一番町",
+      "townEn": "Ichibancho",
+      "kana": "イチバンチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "一番町",
+      "jp": "一番町",
+      "pattern": "4"
+    },
+    {
+      "town": "柏町",
+      "townEn": "Kashiwacho",
+      "kana": "カシワチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "柏町",
+      "jp": "柏町",
       "pattern": "3"
     },
     {
-      "town": "4地区",
-      "townEn": "4地区",
-      "kana": "4地区",
+      "town": "上砂町",
+      "townEn": "Kamisunacho",
+      "kana": "カミスナチョウ",
       "chome": null,
       "detail": null,
-      "en": "4地区",
-      "jp": "4地区",
+      "en": "上砂町",
+      "jp": "上砂町",
       "pattern": "4"
+    },
+    {
+      "town": "幸町",
+      "townEn": "Saiwaicho",
+      "kana": "サイワイチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "幸町",
+      "jp": "幸町",
+      "pattern": "3"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaecho",
+      "kana": "サカエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "柴崎町",
+      "townEn": "Shibasakicho",
+      "kana": "シバサキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "柴崎町",
+      "jp": "柴崎町",
+      "pattern": "1"
+    },
+    {
+      "town": "砂川町",
+      "townEn": "Sunagawacho",
+      "kana": "スナガワチヨウ",
+      "chome": null,
+      "detail": null,
+      "en": "砂川町",
+      "jp": "砂川町",
+      "pattern": "4"
+    },
+    {
+      "town": "高松町",
+      "townEn": "Takamatsucho",
+      "kana": "タカマツチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "高松町",
+      "jp": "高松町",
+      "pattern": "2"
+    },
+    {
+      "town": "錦町",
+      "townEn": "Nishikicho",
+      "kana": "ニシキチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "錦町",
+      "jp": "錦町",
+      "pattern": "1"
+    },
+    {
+      "town": "西砂町",
+      "townEn": "Nishisunacho",
+      "kana": "ニシスナチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "西砂町",
+      "jp": "西砂町",
+      "pattern": "4"
+    },
+    {
+      "town": "羽衣町",
+      "townEn": "Hagoromocho",
+      "kana": "ハゴロモチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "羽衣町",
+      "jp": "羽衣町",
+      "pattern": "1"
+    },
+    {
+      "town": "富士見町",
+      "townEn": "Fujimicho",
+      "kana": "フジミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "富士見町",
+      "jp": "富士見町",
+      "pattern": "1"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "緑町",
+      "jp": "緑町",
+      "pattern": "4"
+    },
+    {
+      "town": "若葉町",
+      "townEn": "Wakabacho",
+      "kana": "ワカバチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "若葉町",
+      "jp": "若葉町",
+      "pattern": "3"
     }
   ],
   "attribution": {
     "schedule": {
-      "name": "Tachikawa City district collection rules (official HTML)",
-      "url": "https://www.city.tachikawa.lg.jp/kurashi/gomi/1001712/1001741.html",
-      "license": "Municipality website"
+      "name": "Official municipal website (crawl + extract)",
+      "url": "http://tachikawa.5374.jp/data/area_days.csv",
+      "license": "Confirm on municipality site"
     }
   },
-  "updated": "2026-10-31"
+  "updated": "2026-11-04"
 }

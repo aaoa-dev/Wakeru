@@ -1,0 +1,774 @@
+{
+  "id": "satte-11240",
+  "code": "11240",
+  "pref": "11",
+  "jp": "幸手市",
+  "en": "Satte",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.satte.lg.jp/",
+    "https://lg-api3rd.smart-lgov.jp/v1/trash/get_general_purpose_data_list.json"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「燃やせる」.",
+      "auto": true
+    },
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やせる」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「枝(直径5㎝以下のもの)」 under 「燃やせる」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「資源（布）」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「感熱紙」 under 「燃やせる」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「包装紙」 under 「資源（紙）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞紙」 under 「資源（紙）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌」 under 「資源（紙）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源（紙）」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「化粧品のびん」 under 「燃やせない」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「燃やせない」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「包丁」 under 「燃やせない」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ＣＤ（ケース含む）」 under 「燃やせない」.",
+      "auto": true
+    },
+    "foam-tray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「発泡スチロールトレイ」 under 「資源（プラ）」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池」 under 「有害」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「蛍光灯」 under 「有害」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「食用油」 under 「燃やせる」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's SMART CMS trash search API. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          3
+        ]
+      },
+      "2": {
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ]
+      },
+      "3": {
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          1
+        ]
+      },
+      "4": {
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "円藤内",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "円藤内",
+      "jp": "円藤内",
+      "pattern": "1"
+    },
+    {
+      "town": "下宇和田",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下宇和田",
+      "jp": "下宇和田",
+      "pattern": "1"
+    },
+    {
+      "town": "下吉羽",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下吉羽",
+      "jp": "下吉羽",
+      "pattern": "1"
+    },
+    {
+      "town": "下川崎",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下川崎",
+      "jp": "下川崎",
+      "pattern": "1"
+    },
+    {
+      "town": "花島",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "花島",
+      "jp": "花島",
+      "pattern": "1"
+    },
+    {
+      "town": "外国府間",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "外国府間",
+      "jp": "外国府間",
+      "pattern": "1"
+    },
+    {
+      "town": "権現堂",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "権現堂",
+      "jp": "権現堂",
+      "pattern": "2"
+    },
+    {
+      "town": "高須賀",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高須賀",
+      "jp": "高須賀",
+      "pattern": "1"
+    },
+    {
+      "town": "細野",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "細野",
+      "jp": "細野",
+      "pattern": "1"
+    },
+    {
+      "town": "松石",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松石",
+      "jp": "松石",
+      "pattern": "1"
+    },
+    {
+      "town": "上宇和田",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上宇和田",
+      "jp": "上宇和田",
+      "pattern": "1"
+    },
+    {
+      "town": "上吉羽",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上吉羽",
+      "jp": "上吉羽",
+      "pattern": "2"
+    },
+    {
+      "town": "神扇",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神扇",
+      "jp": "神扇",
+      "pattern": "4"
+    },
+    {
+      "town": "神明内",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "神明内",
+      "jp": "神明内",
+      "pattern": "2"
+    },
+    {
+      "town": "千塚",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "千塚",
+      "jp": "千塚",
+      "pattern": "1"
+    },
+    {
+      "town": "惣新田",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "惣新田",
+      "jp": "惣新田",
+      "pattern": "1"
+    },
+    {
+      "town": "長間",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長間",
+      "jp": "長間",
+      "pattern": "4"
+    },
+    {
+      "town": "内国府間",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "内国府間",
+      "jp": "内国府間",
+      "pattern": "1"
+    },
+    {
+      "town": "平野",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "平野",
+      "jp": "平野",
+      "pattern": "4"
+    },
+    {
+      "town": "槙野地",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "槙野地",
+      "jp": "槙野地",
+      "pattern": "1"
+    },
+    {
+      "town": "木立",
+      "townEn": "Satte",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "木立",
+      "jp": "木立",
+      "pattern": "2"
+    },
+    {
+      "town": "大字幸手",
+      "townEn": "Satte",
+      "kana": "オオアザサッテ",
+      "chome": null,
+      "detail": "大字幸手（三ツ家・東1区～東5区）",
+      "en": "大字幸手（三ツ家・東1区～東5区）",
+      "jp": "大字幸手（三ツ家・東1区～東5区）",
+      "pattern": "2"
+    },
+    {
+      "town": "大字幸手",
+      "townEn": "Satte",
+      "kana": "オオアザサッテ",
+      "chome": null,
+      "detail": "大字幸手（三ツ家・東1区～東5区）",
+      "en": "大字幸手（三ツ家・東1区～東5区）",
+      "jp": "大字幸手（三ツ家・東1区～東5区）",
+      "pattern": "2"
+    },
+    {
+      "town": "大字幸手",
+      "townEn": "Satte",
+      "kana": "オオアザサッテ",
+      "chome": null,
+      "detail": "大字幸手（長倉・浪寄）",
+      "en": "大字幸手（長倉・浪寄）",
+      "jp": "大字幸手（長倉・浪寄）",
+      "pattern": "1"
+    },
+    {
+      "town": "大字幸手",
+      "townEn": "Satte",
+      "kana": "オオアザサッテ",
+      "chome": null,
+      "detail": "大字幸手（長倉・浪寄）",
+      "en": "大字幸手（長倉・浪寄）",
+      "jp": "大字幸手（長倉・浪寄）",
+      "pattern": "1"
+    },
+    {
+      "town": "香日向",
+      "townEn": "Kahinata",
+      "kana": "カヒナタ",
+      "chome": null,
+      "detail": "香日向1～4丁目",
+      "en": "香日向1～4丁目",
+      "jp": "香日向1～4丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "上高野",
+      "townEn": "Kamitakano",
+      "kana": "カミタカノ",
+      "chome": null,
+      "detail": null,
+      "en": "上高野",
+      "jp": "上高野",
+      "pattern": "3"
+    },
+    {
+      "town": "上高野",
+      "townEn": "Kamitakano",
+      "kana": "カミタカノ",
+      "chome": null,
+      "detail": "上高野1丁目",
+      "en": "上高野1丁目",
+      "jp": "上高野1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "北",
+      "townEn": "Kita",
+      "kana": "キタ",
+      "chome": null,
+      "detail": "北1・2丁目",
+      "en": "北1・2丁目",
+      "jp": "北1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "北",
+      "townEn": "Kita",
+      "kana": "キタ",
+      "chome": null,
+      "detail": "北3丁目",
+      "en": "北3丁目",
+      "jp": "北3丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "栄",
+      "townEn": "Sakae",
+      "kana": "サカエ",
+      "chome": null,
+      "detail": "栄1・2番",
+      "en": "栄1・2番",
+      "jp": "栄1・2番",
+      "pattern": "4"
+    },
+    {
+      "town": "栄",
+      "townEn": "Sakae",
+      "kana": "サカエ",
+      "chome": null,
+      "detail": "栄3・4番",
+      "en": "栄3・4番",
+      "jp": "栄3・4番",
+      "pattern": "1"
+    },
+    {
+      "town": "栄",
+      "townEn": "Sakae",
+      "kana": "サカエ",
+      "chome": null,
+      "detail": "栄5・6・7番",
+      "en": "栄5・6・7番",
+      "jp": "栄5・6・7番",
+      "pattern": "2"
+    },
+    {
+      "town": "天神島",
+      "townEn": "Tenjinshima",
+      "kana": "テンジンシマ",
+      "chome": null,
+      "detail": null,
+      "en": "天神島",
+      "jp": "天神島",
+      "pattern": "4"
+    },
+    {
+      "town": "天神島",
+      "townEn": "Tenjinshima",
+      "kana": "テンジンシマ",
+      "chome": null,
+      "detail": "天神島1丁目",
+      "en": "天神島1丁目",
+      "jp": "天神島1丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "戸島",
+      "townEn": "Toshima",
+      "kana": "トシマ",
+      "chome": null,
+      "detail": null,
+      "en": "戸島",
+      "jp": "戸島",
+      "pattern": "4"
+    },
+    {
+      "town": "戸島",
+      "townEn": "Toshima",
+      "kana": "トシマ",
+      "chome": null,
+      "detail": "戸島1・2丁目",
+      "en": "戸島1・2丁目",
+      "jp": "戸島1・2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": "中1～4丁目",
+      "en": "中1～4丁目",
+      "jp": "中1～4丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": "中5丁目",
+      "en": "中5丁目",
+      "jp": "中5丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": "中川崎",
+      "en": "中川崎",
+      "jp": "中川崎",
+      "pattern": "1"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": "中島",
+      "en": "中島",
+      "jp": "中島",
+      "pattern": "1"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": "中野",
+      "en": "中野",
+      "jp": "中野",
+      "pattern": "4"
+    },
+    {
+      "town": "西",
+      "townEn": "Nishi",
+      "kana": "ニシ",
+      "chome": null,
+      "detail": "西1・2丁目",
+      "en": "西1・2丁目",
+      "jp": "西1・2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "西",
+      "townEn": "Nishi",
+      "kana": "ニシ",
+      "chome": null,
+      "detail": "西関宿",
+      "en": "西関宿",
+      "jp": "西関宿",
+      "pattern": "1"
+    },
+    {
+      "town": "東",
+      "townEn": "Higashi",
+      "kana": "ヒガシ",
+      "chome": null,
+      "detail": "東1～5丁目",
+      "en": "東1～5丁目",
+      "jp": "東1～5丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "平須賀",
+      "townEn": "Hirasuka",
+      "kana": "ヒラスカ",
+      "chome": null,
+      "detail": null,
+      "en": "平須賀",
+      "jp": "平須賀",
+      "pattern": "4"
+    },
+    {
+      "town": "平須賀",
+      "townEn": "Hirasuka",
+      "kana": "ヒラスカ",
+      "chome": null,
+      "detail": "平須賀1・2丁目",
+      "en": "平須賀1・2丁目",
+      "jp": "平須賀1・2丁目",
+      "pattern": "4"
+    },
+    {
+      "town": "緑台",
+      "townEn": "Midoridai",
+      "kana": "ミドリダイ",
+      "chome": null,
+      "detail": "緑台1丁目",
+      "en": "緑台1丁目",
+      "jp": "緑台1丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "緑台",
+      "townEn": "Midoridai",
+      "kana": "ミドリダイ",
+      "chome": null,
+      "detail": "緑台2丁目",
+      "en": "緑台2丁目",
+      "jp": "緑台2丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南1～3丁目",
+      "en": "南1～3丁目",
+      "jp": "南1～3丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "吉野",
+      "townEn": "Yoshino",
+      "kana": "ヨシノ",
+      "chome": null,
+      "detail": null,
+      "en": "吉野",
+      "jp": "吉野",
+      "pattern": "4"
+    },
+    {
+      "town": "吉野",
+      "townEn": "Yoshino",
+      "kana": "ヨシノ",
+      "chome": null,
+      "detail": "吉野1丁目",
+      "en": "吉野1丁目",
+      "jp": "吉野1丁目",
+      "pattern": "4"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official municipal website (crawl + extract)",
+      "url": "https://www.city.satte.lg.jp/",
+      "license": "Municipality website (collection facts via city CMS API)"
+    }
+  },
+  "updated": "2026-11-04"
+}

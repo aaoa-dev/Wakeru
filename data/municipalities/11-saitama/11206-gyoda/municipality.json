@@ -1,0 +1,1607 @@
+{
+  "id": "gyoda",
+  "code": "11206",
+  "pref": "11",
+  "jp": "行田市",
+  "en": "Gyoda",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.gyoda.lg.jp/kurashi/gomi/gomi_search/chikubetsu/search.html",
+    "https://lg-api2nd.smart-lgov.jp/v1/trash/get_general_purpose_data_list.json"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's SMART CMS trash search API. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": [
+          2,
+          5
+        ],
+        "oversized": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 2,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          1,
+          2,
+          3
+        ],
+        "non_burnable": [
+          2,
+          5
+        ],
+        "oversized": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          2,
+          3
+        ],
+        "non_burnable": [
+          1,
+          4
+        ],
+        "oversized": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 1,
+              "weeks": [
+                3
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": [
+          1,
+          4
+        ],
+        "oversized": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "res": {
+          "any": [
+            [
+              1
+            ],
+            {
+              "day": 4,
+              "weeks": [
+                4
+              ]
+            }
+          ]
+        },
+        "paper": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          3,
+          5
+        ],
+        "non_burnable": [
+          1,
+          4
+        ],
+        "oversized": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": {
+          "day": 6,
+          "weeks": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "エクセル行田中央",
+      "townEn": "Ekuseru",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "エクセル行田中央",
+      "jp": "エクセル行田中央",
+      "pattern": "3"
+    },
+    {
+      "town": "つるまき",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "つるまき",
+      "jp": "つるまき",
+      "pattern": "2"
+    },
+    {
+      "town": "一旭",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一旭",
+      "jp": "一旭",
+      "pattern": "3"
+    },
+    {
+      "town": "一佐間",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一佐間",
+      "jp": "一佐間",
+      "pattern": "3"
+    },
+    {
+      "town": "一斎条",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一斎条",
+      "jp": "一斎条",
+      "pattern": "1"
+    },
+    {
+      "town": "一桜",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一桜",
+      "jp": "一桜",
+      "pattern": "2"
+    },
+    {
+      "town": "一持田南",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一持田南",
+      "jp": "一持田南",
+      "pattern": "3"
+    },
+    {
+      "town": "一持田北",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一持田北",
+      "jp": "一持田北",
+      "pattern": "3"
+    },
+    {
+      "town": "一谷郷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一谷郷",
+      "jp": "一谷郷",
+      "pattern": "2"
+    },
+    {
+      "town": "一天満",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一天満",
+      "jp": "一天満",
+      "pattern": "3"
+    },
+    {
+      "town": "一内行田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一内行田",
+      "jp": "一内行田",
+      "pattern": "3"
+    },
+    {
+      "town": "一北谷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一北谷",
+      "jp": "一北谷",
+      "pattern": "3"
+    },
+    {
+      "town": "一北谷東町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一北谷東町",
+      "jp": "一北谷東町",
+      "pattern": "3"
+    },
+    {
+      "town": "一本町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一本町",
+      "jp": "一本町",
+      "pattern": "3"
+    },
+    {
+      "town": "一和田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "一和田",
+      "jp": "一和田",
+      "pattern": "1"
+    },
+    {
+      "town": "壱里山",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "壱里山",
+      "jp": "壱里山",
+      "pattern": "2"
+    },
+    {
+      "town": "下須戸",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下須戸",
+      "jp": "下須戸",
+      "pattern": "1"
+    },
+    {
+      "town": "下町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町",
+      "jp": "下町",
+      "pattern": "3"
+    },
+    {
+      "town": "下忍上分",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下忍上分",
+      "jp": "下忍上分",
+      "pattern": "4"
+    },
+    {
+      "town": "下忍団地",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下忍団地",
+      "jp": "下忍団地",
+      "pattern": "3"
+    },
+    {
+      "town": "関根",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "関根",
+      "jp": "関根",
+      "pattern": "1"
+    },
+    {
+      "town": "菊野台",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "菊野台",
+      "jp": "菊野台",
+      "pattern": "3"
+    },
+    {
+      "town": "橋場",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "橋場",
+      "jp": "橋場",
+      "pattern": "2"
+    },
+    {
+      "town": "県営持田団地",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "県営持田団地",
+      "jp": "県営持田団地",
+      "pattern": "3"
+    },
+    {
+      "town": "元町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元町",
+      "jp": "元町",
+      "pattern": "3"
+    },
+    {
+      "town": "荒木地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "荒木地区",
+      "jp": "荒木地区",
+      "pattern": "1"
+    },
+    {
+      "town": "斎条団地",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "斎条団地",
+      "jp": "斎条団地",
+      "pattern": "2"
+    },
+    {
+      "town": "埼玉地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "埼玉地区",
+      "jp": "埼玉地区",
+      "pattern": "3"
+    },
+    {
+      "town": "桜ヶ丘",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "桜ヶ丘",
+      "jp": "桜ヶ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "三井砂原",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三井砂原",
+      "jp": "三井砂原",
+      "pattern": "3"
+    },
+    {
+      "town": "三桜南部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三桜南部",
+      "jp": "三桜南部",
+      "pattern": "2"
+    },
+    {
+      "town": "三桜北部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三桜北部",
+      "jp": "三桜北部",
+      "pattern": "2"
+    },
+    {
+      "town": "三持田西部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三持田西部",
+      "jp": "三持田西部",
+      "pattern": "3"
+    },
+    {
+      "town": "三持田大宮口",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三持田大宮口",
+      "jp": "三持田大宮口",
+      "pattern": "3"
+    },
+    {
+      "town": "三持田東部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三持田東部",
+      "jp": "三持田東部",
+      "pattern": "3"
+    },
+    {
+      "town": "三谷郷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三谷郷",
+      "jp": "三谷郷",
+      "pattern": "2"
+    },
+    {
+      "town": "三内行田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三内行田",
+      "jp": "三内行田",
+      "pattern": "3"
+    },
+    {
+      "town": "若小玉勝呂",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若小玉勝呂",
+      "jp": "若小玉勝呂",
+      "pattern": "1"
+    },
+    {
+      "town": "若小玉中央",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若小玉中央",
+      "jp": "若小玉中央",
+      "pattern": "1"
+    },
+    {
+      "town": "若小玉南部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若小玉南部",
+      "jp": "若小玉南部",
+      "pattern": "1"
+    },
+    {
+      "town": "若小玉六本木",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "若小玉六本木",
+      "jp": "若小玉六本木",
+      "pattern": "1"
+    },
+    {
+      "town": "春日",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "春日",
+      "jp": "春日",
+      "pattern": "2"
+    },
+    {
+      "town": "小橋団地",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小橋団地",
+      "jp": "小橋団地",
+      "pattern": "2"
+    },
+    {
+      "town": "小針下",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小針下",
+      "jp": "小針下",
+      "pattern": "1"
+    },
+    {
+      "town": "小針上",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小針上",
+      "jp": "小針上",
+      "pattern": "1"
+    },
+    {
+      "town": "小針中組",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小針中組",
+      "jp": "小針中組",
+      "pattern": "1"
+    },
+    {
+      "town": "上荒井",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上荒井",
+      "jp": "上荒井",
+      "pattern": "3"
+    },
+    {
+      "town": "新町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "3"
+    },
+    {
+      "town": "真名板",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真名板",
+      "jp": "真名板",
+      "pattern": "1"
+    },
+    {
+      "town": "真名板東",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "真名板東",
+      "jp": "真名板東",
+      "pattern": "2"
+    },
+    {
+      "town": "須加地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "須加地区",
+      "jp": "須加地区",
+      "pattern": "1"
+    },
+    {
+      "town": "菅谷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "菅谷",
+      "jp": "菅谷",
+      "pattern": "3"
+    },
+    {
+      "town": "成田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "成田",
+      "jp": "成田",
+      "pattern": "3"
+    },
+    {
+      "town": "星宮地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "星宮地区",
+      "jp": "星宮地区",
+      "pattern": "1"
+    },
+    {
+      "town": "西駒形",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西駒形",
+      "jp": "西駒形",
+      "pattern": "3"
+    },
+    {
+      "town": "青葉住宅",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "青葉住宅",
+      "jp": "青葉住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "前谷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "前谷",
+      "jp": "前谷",
+      "pattern": "5"
+    },
+    {
+      "town": "帯廓",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "帯廓",
+      "jp": "帯廓",
+      "pattern": "3"
+    },
+    {
+      "town": "大下",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大下",
+      "jp": "大下",
+      "pattern": "1"
+    },
+    {
+      "town": "大手町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大手町",
+      "jp": "大手町",
+      "pattern": "3"
+    },
+    {
+      "town": "大町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大町",
+      "jp": "大町",
+      "pattern": "3"
+    },
+    {
+      "town": "第三門井",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "第三門井",
+      "jp": "第三門井",
+      "pattern": "2"
+    },
+    {
+      "town": "棚田三丁目",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "棚田三丁目",
+      "jp": "棚田三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "中斎",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中斎",
+      "jp": "中斎",
+      "pattern": "2"
+    },
+    {
+      "town": "堤根",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堤根",
+      "jp": "堤根",
+      "pattern": "4"
+    },
+    {
+      "town": "田町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田町",
+      "jp": "田町",
+      "pattern": "3"
+    },
+    {
+      "town": "田幡",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田幡",
+      "jp": "田幡",
+      "pattern": "2"
+    },
+    {
+      "town": "東栄",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東栄",
+      "jp": "東栄",
+      "pattern": "2"
+    },
+    {
+      "town": "東台",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東台",
+      "jp": "東台",
+      "pattern": "2"
+    },
+    {
+      "town": "藤間",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "藤間",
+      "jp": "藤間",
+      "pattern": "1"
+    },
+    {
+      "town": "南河原地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南河原地区",
+      "jp": "南河原地区",
+      "pattern": "1"
+    },
+    {
+      "town": "南駒形",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南駒形",
+      "jp": "南駒形",
+      "pattern": "3"
+    },
+    {
+      "town": "二旭",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二旭",
+      "jp": "二旭",
+      "pattern": "3"
+    },
+    {
+      "town": "二佐間",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二佐間",
+      "jp": "二佐間",
+      "pattern": "3"
+    },
+    {
+      "town": "二斎条",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二斎条",
+      "jp": "二斎条",
+      "pattern": "1"
+    },
+    {
+      "town": "二桜",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二桜",
+      "jp": "二桜",
+      "pattern": "2"
+    },
+    {
+      "town": "二持田蔵場",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二持田蔵場",
+      "jp": "二持田蔵場",
+      "pattern": "3"
+    },
+    {
+      "town": "二持田第一",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二持田第一",
+      "jp": "二持田第一",
+      "pattern": "3"
+    },
+    {
+      "town": "二持田第二",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二持田第二",
+      "jp": "二持田第二",
+      "pattern": "3"
+    },
+    {
+      "town": "二谷郷新田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二谷郷新田",
+      "jp": "二谷郷新田",
+      "pattern": "2"
+    },
+    {
+      "town": "二谷郷東一区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二谷郷東一区",
+      "jp": "二谷郷東一区",
+      "pattern": "2"
+    },
+    {
+      "town": "二谷郷東二区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二谷郷東二区",
+      "jp": "二谷郷東二区",
+      "pattern": "2"
+    },
+    {
+      "town": "二天満",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二天満",
+      "jp": "二天満",
+      "pattern": "3"
+    },
+    {
+      "town": "二内行田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二内行田",
+      "jp": "二内行田",
+      "pattern": "3"
+    },
+    {
+      "town": "二北谷",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二北谷",
+      "jp": "二北谷",
+      "pattern": "3"
+    },
+    {
+      "town": "二本町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二本町",
+      "jp": "二本町",
+      "pattern": "3"
+    },
+    {
+      "town": "二和田",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二和田",
+      "jp": "二和田",
+      "pattern": "1"
+    },
+    {
+      "town": "白山",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "白山",
+      "jp": "白山",
+      "pattern": "1"
+    },
+    {
+      "town": "八幡町",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡町",
+      "jp": "八幡町",
+      "pattern": "3"
+    },
+    {
+      "town": "飯倉",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "飯倉",
+      "jp": "飯倉",
+      "pattern": "2"
+    },
+    {
+      "town": "樋上",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "樋上",
+      "jp": "樋上",
+      "pattern": "4"
+    },
+    {
+      "town": "富士見西部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見西部",
+      "jp": "富士見西部",
+      "pattern": "2"
+    },
+    {
+      "town": "富士見中央",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見中央",
+      "jp": "富士見中央",
+      "pattern": "2"
+    },
+    {
+      "town": "富士見東部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見東部",
+      "jp": "富士見東部",
+      "pattern": "2"
+    },
+    {
+      "town": "富士見北部",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "富士見北部",
+      "jp": "富士見北部",
+      "pattern": "2"
+    },
+    {
+      "town": "北河原地区",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北河原地区",
+      "jp": "北河原地区",
+      "pattern": "1"
+    },
+    {
+      "town": "堀の内",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "堀の内",
+      "jp": "堀の内",
+      "pattern": "2"
+    },
+    {
+      "town": "満願",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "満願",
+      "jp": "満願",
+      "pattern": "1"
+    },
+    {
+      "town": "門井",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "門井",
+      "jp": "門井",
+      "pattern": "2"
+    },
+    {
+      "town": "門井団地",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "門井団地",
+      "jp": "門井団地",
+      "pattern": "2"
+    },
+    {
+      "town": "門井二丁目",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "門井二丁目",
+      "jp": "門井二丁目",
+      "pattern": "2"
+    },
+    {
+      "town": "柳坪",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "柳坪",
+      "jp": "柳坪",
+      "pattern": "2"
+    },
+    {
+      "town": "林",
+      "townEn": "Gyoda",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "林",
+      "jp": "林",
+      "pattern": "2"
+    },
+    {
+      "town": "六ツ門",
+      "townEn": "Tsu",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "六ツ門",
+      "jp": "六ツ門",
+      "pattern": "3"
+    },
+    {
+      "town": "押上町",
+      "townEn": "Oshiagecho",
+      "kana": "オシアゲチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "押上町",
+      "jp": "押上町",
+      "pattern": "2"
+    },
+    {
+      "town": "駒形",
+      "townEn": "Komagata",
+      "kana": "コマガタ",
+      "chome": null,
+      "detail": null,
+      "en": "駒形",
+      "jp": "駒形",
+      "pattern": "3"
+    },
+    {
+      "town": "栄町",
+      "townEn": "Sakaecho",
+      "kana": "サカエチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "栄町",
+      "jp": "栄町",
+      "pattern": "2"
+    },
+    {
+      "town": "佐間",
+      "townEn": "Sama",
+      "kana": "サマ",
+      "chome": null,
+      "detail": "佐間三間",
+      "en": "佐間三間",
+      "jp": "佐間三間",
+      "pattern": "3"
+    },
+    {
+      "town": "佐間",
+      "townEn": "Sama",
+      "kana": "サマ",
+      "chome": null,
+      "detail": "佐間神明",
+      "en": "佐間神明",
+      "jp": "佐間神明",
+      "pattern": "3"
+    },
+    {
+      "town": "清水町",
+      "townEn": "Shimizucho",
+      "kana": "シミズチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "清水町",
+      "jp": "清水町",
+      "pattern": "2"
+    },
+    {
+      "town": "城西",
+      "townEn": "Josai",
+      "kana": "ジョウサイ",
+      "chome": null,
+      "detail": null,
+      "en": "城西",
+      "jp": "城西",
+      "pattern": "3"
+    },
+    {
+      "town": "城南",
+      "townEn": "Jonan",
+      "kana": "ジョウナン",
+      "chome": null,
+      "detail": null,
+      "en": "城南",
+      "jp": "城南",
+      "pattern": "3"
+    },
+    {
+      "town": "棚田町",
+      "townEn": "Tanadacho",
+      "kana": "タナダチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "棚田町",
+      "jp": "棚田町",
+      "pattern": "2"
+    },
+    {
+      "town": "中央",
+      "townEn": "Chuo",
+      "kana": "チュウオウ",
+      "chome": null,
+      "detail": null,
+      "en": "中央",
+      "jp": "中央",
+      "pattern": "3"
+    },
+    {
+      "town": "長野",
+      "townEn": "Nagano",
+      "kana": "ナガノ",
+      "chome": null,
+      "detail": "長野住宅",
+      "en": "長野住宅",
+      "jp": "長野住宅",
+      "pattern": "2"
+    },
+    {
+      "town": "長野",
+      "townEn": "Nagano",
+      "kana": "ナガノ",
+      "chome": null,
+      "detail": "長野新田",
+      "en": "長野新田",
+      "jp": "長野新田",
+      "pattern": "1"
+    },
+    {
+      "town": "西新町",
+      "townEn": "Nishishimmachi",
+      "kana": "ニシシンマチ",
+      "chome": null,
+      "detail": null,
+      "en": "西新町",
+      "jp": "西新町",
+      "pattern": "2"
+    },
+    {
+      "town": "深水町",
+      "townEn": "Fukamicho",
+      "kana": "フカミチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "深水町",
+      "jp": "深水町",
+      "pattern": "2"
+    },
+    {
+      "town": "藤原町",
+      "townEn": "Fujiwaracho",
+      "kana": "フジワラチョウ",
+      "chome": null,
+      "detail": "藤原町西部",
+      "en": "藤原町西部",
+      "jp": "藤原町西部",
+      "pattern": "2"
+    },
+    {
+      "town": "藤原町",
+      "townEn": "Fujiwaracho",
+      "kana": "フジワラチョウ",
+      "chome": null,
+      "detail": "藤原町中央",
+      "en": "藤原町中央",
+      "jp": "藤原町中央",
+      "pattern": "2"
+    },
+    {
+      "town": "藤原町",
+      "townEn": "Fujiwaracho",
+      "kana": "フジワラチョウ",
+      "chome": null,
+      "detail": "藤原町東部",
+      "en": "藤原町東部",
+      "jp": "藤原町東部",
+      "pattern": "2"
+    },
+    {
+      "town": "藤原町",
+      "townEn": "Fujiwaracho",
+      "kana": "フジワラチョウ",
+      "chome": null,
+      "detail": "藤原町南部",
+      "en": "藤原町南部",
+      "jp": "藤原町南部",
+      "pattern": "2"
+    },
+    {
+      "town": "本丸",
+      "townEn": "Hommaru",
+      "kana": "ホンマル",
+      "chome": null,
+      "detail": null,
+      "en": "本丸",
+      "jp": "本丸",
+      "pattern": "3"
+    },
+    {
+      "town": "緑町",
+      "townEn": "Midoricho",
+      "kana": "ミドリチョウ",
+      "chome": null,
+      "detail": null,
+      "en": "緑町",
+      "jp": "緑町",
+      "pattern": "3"
+    },
+    {
+      "town": "宮本",
+      "townEn": "Miyamoto",
+      "kana": "ミヤモト",
+      "chome": null,
+      "detail": null,
+      "en": "宮本",
+      "jp": "宮本",
+      "pattern": "3"
+    },
+    {
+      "town": "向町",
+      "townEn": "Mukaimachi",
+      "kana": "ムカイマチ",
+      "chome": null,
+      "detail": null,
+      "en": "向町",
+      "jp": "向町",
+      "pattern": "3"
+    },
+    {
+      "town": "持田",
+      "townEn": "Mochida",
+      "kana": "モチダ",
+      "chome": null,
+      "detail": "持田五丁目",
+      "en": "持田五丁目",
+      "jp": "持田五丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "持田",
+      "townEn": "Mochida",
+      "kana": "モチダ",
+      "chome": null,
+      "detail": "持田砂原",
+      "en": "持田砂原",
+      "jp": "持田砂原",
+      "pattern": "3"
+    },
+    {
+      "town": "持田",
+      "townEn": "Mochida",
+      "kana": "モチダ",
+      "chome": null,
+      "detail": "持田西",
+      "en": "持田西",
+      "jp": "持田西",
+      "pattern": "3"
+    },
+    {
+      "town": "持田",
+      "townEn": "Mochida",
+      "kana": "モチダ",
+      "chome": null,
+      "detail": "持田長町",
+      "en": "持田長町",
+      "jp": "持田長町",
+      "pattern": "3"
+    },
+    {
+      "town": "矢場",
+      "townEn": "Yaba",
+      "kana": "ヤバ",
+      "chome": null,
+      "detail": null,
+      "en": "矢場",
+      "jp": "矢場",
+      "pattern": "3"
+    },
+    {
+      "town": "矢場",
+      "townEn": "Yaba",
+      "kana": "ヤバ",
+      "chome": null,
+      "detail": "矢場一丁目",
+      "en": "矢場一丁目",
+      "jp": "矢場一丁目",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Gyoda City SMART CMS weekday schedule",
+      "url": "https://www.city.gyoda.lg.jp/kurashi/gomi/gomi_search/chikubetsu/search.html",
+      "license": "Municipality website (collection facts via city CMS API)"
+    }
+  },
+  "updated": "2026-11-04"
+}

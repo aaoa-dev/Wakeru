@@ -202,6 +202,39 @@ function binsForSpec(spec){
   return bins;
 }
 
+function prepareMeguroRows(rows){
+  const inheritedColumns = ["燃やすごみ", "燃やさないごみ", "水銀を含む製品", "資源"];
+  let previousTown = "";
+  let inherited = {};
+  return rows.map(row => {
+    const town = row["町名"]?.trim() ?? "";
+    if(town !== previousTown){
+      inherited = {};
+      previousTown = town;
+    }
+    for(const column of inheritedColumns){
+      if(row[column]?.trim()) inherited[column] = row[column];
+    }
+    const detail = row["番地・号"]?.trim();
+    return {
+      "地区名": [town, detail].filter(Boolean).join(" "),
+      ...inherited,
+      "古紙回収": row["古紙回収"]?.trim() ?? "",
+    };
+  });
+}
+
+function prepareSumidaRows(rows){
+  return rows.map(row => {
+    const town = row["町名"]?.trim() ?? "";
+    const chome = row["丁目"]?.trim() ?? "";
+    return {
+      "地区名": chome && chome !== "全域" ? `${town}${chome}` : town,
+      ...Object.fromEntries(Object.entries(row).filter(([key]) => key !== "町名" && key !== "丁目")),
+    };
+  });
+}
+
 /** @param {import("../seeds/tokyo-metro.mjs").TokyoMetroSeed} spec */
 export async function convert(spec, extractedAt){
   const validFrom = spec.validFrom ?? FY.validFrom;
@@ -214,7 +247,7 @@ export async function convert(spec, extractedAt){
   const bins = binsForSpec(spec);
   const sources = [SOURCE.url, spec.url];
 
-  if(format === "district-weekly-csv" || format === "date-matrix-csv"){
+  if(format === "district-weekly-csv" || format === "date-matrix-csv" || format === "meguro-csv" || format === "sumida-csv"){
     const headerToBin = spec.headerToBin ?? [
       [/燃やす|可燃/, "burnable"],
       [/燃やさない|不燃|陶器|ガラス|金属/, "non_burnable"],
@@ -231,7 +264,9 @@ export async function convert(spec, extractedAt){
         id: spec.id, code: spec.code, jp: spec.jp, en: spec.en,
         validFrom, validTo, sourceUrls: [spec.url],
       },
-      loadRows: async () => loaded.rows,
+      loadRows: async () => format === "meguro-csv"
+        ? prepareMeguroRows(loaded.rows)
+        : format === "sumida-csv" ? prepareSumidaRows(loaded.rows) : loaded.rows,
       calendarNote: spec.note ?? "Collection days from Tokyo Metro Open Data Catalog (weekday rules). Confirm holidays on the city's official calendar.",
     }, extractedAt);
   }

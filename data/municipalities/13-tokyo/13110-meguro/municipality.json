@@ -1,0 +1,3833 @@
+{
+  "id": "meguro-metro",
+  "code": "13110",
+  "pref": "13",
+  "jp": "目黒区",
+  "en": "Meguro",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.meguro.tokyo.jp/documents/9979/gomi.csv",
+    "https://www.city.meguro.tokyo.jp/documents/9979/gomi.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "burn": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "non": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源（プラスチック、びん、缶、ペットボトル）",
+      "en": "Recyclables (plastic, bottles and cans)",
+      "kind": "res"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pla": {
+      "label": "プラ",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    },
+    "hazardous": {
+      "label": "水銀を含む製品",
+      "en": "Mercury-containing items",
+      "kind": "non"
+    }
+  },
+  "plasticTest": {
+    "products": true,
+    "summary": "Clean plastic packaging goes to Plastic. Other plastic or dirty items: check the city website.",
+    "bin": "plastic",
+    "otherwise": "non_burnable"
+  },
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Collection weekdays from Meguro City's official address search CSV. The resources day includes plastic, bottles, cans and PET bottles; paper days may vary by neighborhood association.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "3": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          5
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "5": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": [
+          6
+        ]
+      },
+      "6": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "7": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "res": [
+          3
+        ],
+        "paper": [
+          3
+        ]
+      },
+      "8": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "paper": [
+          3
+        ]
+      },
+      "9": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "paper": [
+          6
+        ]
+      },
+      "10": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "11": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "12": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          6
+        ]
+      },
+      "13": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "14": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "15": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "res": [
+          1
+        ],
+        "paper": [
+          3
+        ]
+      },
+      "16": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          2
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "17": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          2
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "18": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "res": [
+          5
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "19": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          2
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "20": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          3
+        ],
+        "paper": [
+          1
+        ]
+      },
+      "21": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          3
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "22": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          4
+        ]
+      },
+      "23": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          6
+        ]
+      },
+      "24": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "25": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          6
+        ],
+        "paper": [
+          3
+        ]
+      },
+      "26": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "hazardous": {
+          "day": 6,
+          "weeks": [
+            3
+          ]
+        },
+        "res": [
+          4
+        ],
+        "paper": [
+          5
+        ]
+      },
+      "27": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "res": [
+          5
+        ],
+        "paper": [
+          2
+        ]
+      },
+      "28": {
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "res": [
+          5
+        ],
+        "paper": [
+          3
+        ]
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台一丁目 1番から21番",
+      "en": "青葉台一丁目 1番から21番",
+      "jp": "青葉台一丁目 1番から21番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台一丁目 22番から30番",
+      "en": "青葉台一丁目 22番から30番",
+      "jp": "青葉台一丁目 22番から30番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 1番から6番",
+      "en": "青葉台二丁目 1番から6番",
+      "jp": "青葉台二丁目 1番から6番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 7番から9番",
+      "en": "青葉台二丁目 7番から9番",
+      "jp": "青葉台二丁目 7番から9番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 10番（7号から16号）",
+      "en": "青葉台二丁目 10番（7号から16号）",
+      "jp": "青葉台二丁目 10番（7号から16号）",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 10番（18号から34号）",
+      "en": "青葉台二丁目 10番（18号から34号）",
+      "jp": "青葉台二丁目 10番（18号から34号）",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 11番から13番",
+      "en": "青葉台二丁目 11番から13番",
+      "jp": "青葉台二丁目 11番から13番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 14番から16番",
+      "en": "青葉台二丁目 14番から16番",
+      "jp": "青葉台二丁目 14番から16番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 17番",
+      "en": "青葉台二丁目 17番",
+      "jp": "青葉台二丁目 17番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 18番",
+      "en": "青葉台二丁目 18番",
+      "jp": "青葉台二丁目 18番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台二丁目 19番から21番",
+      "en": "青葉台二丁目 19番から21番",
+      "jp": "青葉台二丁目 19番から21番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 1番",
+      "en": "青葉台三丁目 1番",
+      "jp": "青葉台三丁目 1番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 2番",
+      "en": "青葉台三丁目 2番",
+      "jp": "青葉台三丁目 2番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 3番",
+      "en": "青葉台三丁目 3番",
+      "jp": "青葉台三丁目 3番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 4番",
+      "en": "青葉台三丁目 4番",
+      "jp": "青葉台三丁目 4番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 5番(2号から17号、41号から46号)",
+      "en": "青葉台三丁目 5番(2号から17号、41号から46号)",
+      "jp": "青葉台三丁目 5番(2号から17号、41号から46号)",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 5番(27号から36号)",
+      "en": "青葉台三丁目 5番(27号から36号)",
+      "jp": "青葉台三丁目 5番(27号から36号)",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 6番(8号から16号)",
+      "en": "青葉台三丁目 6番(8号から16号)",
+      "jp": "青葉台三丁目 6番(8号から16号)",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 6番（19号、28号）",
+      "en": "青葉台三丁目 6番（19号、28号）",
+      "jp": "青葉台三丁目 6番（19号、28号）",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 7番から20番",
+      "en": "青葉台三丁目 7番から20番",
+      "jp": "青葉台三丁目 7番から20番",
+      "pattern": "2"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 21番",
+      "en": "青葉台三丁目 21番",
+      "jp": "青葉台三丁目 21番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台三丁目 22番",
+      "en": "青葉台三丁目 22番",
+      "jp": "青葉台三丁目 22番",
+      "pattern": "1"
+    },
+    {
+      "town": "青葉台",
+      "townEn": "Aobadai",
+      "kana": "アオバダイ",
+      "chome": null,
+      "detail": "青葉台四丁目 全て",
+      "en": "青葉台四丁目 全て",
+      "jp": "青葉台四丁目 全て",
+      "pattern": "1"
+    },
+    {
+      "town": "大岡山",
+      "townEn": "Ookayama",
+      "kana": "オオオカヤマ",
+      "chome": null,
+      "detail": "大岡山一丁目 全て",
+      "en": "大岡山一丁目 全て",
+      "jp": "大岡山一丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "大岡山",
+      "townEn": "Ookayama",
+      "kana": "オオオカヤマ",
+      "chome": null,
+      "detail": "大岡山二丁目 全て",
+      "en": "大岡山二丁目 全て",
+      "jp": "大岡山二丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "大橋",
+      "townEn": "Ohashi",
+      "kana": "オオハシ",
+      "chome": null,
+      "detail": "大橋一丁目 全て",
+      "en": "大橋一丁目 全て",
+      "jp": "大橋一丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "大橋",
+      "townEn": "Ohashi",
+      "kana": "オオハシ",
+      "chome": null,
+      "detail": "大橋二丁目 1番から23番",
+      "en": "大橋二丁目 1番から23番",
+      "jp": "大橋二丁目 1番から23番",
+      "pattern": "4"
+    },
+    {
+      "town": "大橋",
+      "townEn": "Ohashi",
+      "kana": "オオハシ",
+      "chome": null,
+      "detail": "大橋二丁目 24番",
+      "en": "大橋二丁目 24番",
+      "jp": "大橋二丁目 24番",
+      "pattern": "5"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂一丁目 1番から27番",
+      "en": "柿の木坂一丁目 1番から27番",
+      "jp": "柿の木坂一丁目 1番から27番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂一丁目 28番から32番",
+      "en": "柿の木坂一丁目 28番から32番",
+      "jp": "柿の木坂一丁目 28番から32番",
+      "pattern": "7"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂一丁目 33番",
+      "en": "柿の木坂一丁目 33番",
+      "jp": "柿の木坂一丁目 33番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂一丁目 34番",
+      "en": "柿の木坂一丁目 34番",
+      "jp": "柿の木坂一丁目 34番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 1番から12番",
+      "en": "柿の木坂二丁目 1番から12番",
+      "jp": "柿の木坂二丁目 1番から12番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 13番から18番",
+      "en": "柿の木坂二丁目 13番から18番",
+      "jp": "柿の木坂二丁目 13番から18番",
+      "pattern": "7"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 19番から22番",
+      "en": "柿の木坂二丁目 19番から22番",
+      "jp": "柿の木坂二丁目 19番から22番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 23番から28番",
+      "en": "柿の木坂二丁目 23番から28番",
+      "jp": "柿の木坂二丁目 23番から28番",
+      "pattern": "7"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 29番",
+      "en": "柿の木坂二丁目 29番",
+      "jp": "柿の木坂二丁目 29番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂二丁目 30番",
+      "en": "柿の木坂二丁目 30番",
+      "jp": "柿の木坂二丁目 30番",
+      "pattern": "6"
+    },
+    {
+      "town": "柿の木坂",
+      "townEn": "Kakinokizaka",
+      "kana": "カキノキザカ",
+      "chome": null,
+      "detail": "柿の木坂三丁目 全て",
+      "en": "柿の木坂三丁目 全て",
+      "jp": "柿の木坂三丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 1番",
+      "en": "上目黒一丁目 1番",
+      "jp": "上目黒一丁目 1番",
+      "pattern": "8"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 2番",
+      "en": "上目黒一丁目 2番",
+      "jp": "上目黒一丁目 2番",
+      "pattern": "8"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 3番",
+      "en": "上目黒一丁目 3番",
+      "jp": "上目黒一丁目 3番",
+      "pattern": "1"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 4番",
+      "en": "上目黒一丁目 4番",
+      "jp": "上目黒一丁目 4番",
+      "pattern": "1"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 5番（1号から10号）",
+      "en": "上目黒一丁目 5番（1号から10号）",
+      "jp": "上目黒一丁目 5番（1号から10号）",
+      "pattern": "1"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 5番（13号から15号）",
+      "en": "上目黒一丁目 5番（13号から15号）",
+      "jp": "上目黒一丁目 5番（13号から15号）",
+      "pattern": "8"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 6番から15番",
+      "en": "上目黒一丁目 6番から15番",
+      "jp": "上目黒一丁目 6番から15番",
+      "pattern": "8"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 16番から23番",
+      "en": "上目黒一丁目 16番から23番",
+      "jp": "上目黒一丁目 16番から23番",
+      "pattern": "9"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒一丁目 24番から26番",
+      "en": "上目黒一丁目 24番から26番",
+      "jp": "上目黒一丁目 24番から26番",
+      "pattern": "1"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒二丁目 1番から48番",
+      "en": "上目黒二丁目 1番から48番",
+      "jp": "上目黒二丁目 1番から48番",
+      "pattern": "10"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒二丁目 49番",
+      "en": "上目黒二丁目 49番",
+      "jp": "上目黒二丁目 49番",
+      "pattern": "11"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒三丁目 全て",
+      "en": "上目黒三丁目 全て",
+      "jp": "上目黒三丁目 全て",
+      "pattern": "12"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒四丁目 全て",
+      "en": "上目黒四丁目 全て",
+      "jp": "上目黒四丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "上目黒",
+      "townEn": "Kamimeguro",
+      "kana": "カミメグロ",
+      "chome": null,
+      "detail": "上目黒五丁目 全て",
+      "en": "上目黒五丁目 全て",
+      "jp": "上目黒五丁目 全て",
+      "pattern": "13"
+    },
+    {
+      "town": "五本木",
+      "townEn": "Gohongi",
+      "kana": "ゴホンギ",
+      "chome": null,
+      "detail": "五本木一丁目 全て",
+      "en": "五本木一丁目 全て",
+      "jp": "五本木一丁目 全て",
+      "pattern": "14"
+    },
+    {
+      "town": "五本木",
+      "townEn": "Gohongi",
+      "kana": "ゴホンギ",
+      "chome": null,
+      "detail": "五本木二丁目 1番から20番",
+      "en": "五本木二丁目 1番から20番",
+      "jp": "五本木二丁目 1番から20番",
+      "pattern": "14"
+    },
+    {
+      "town": "五本木",
+      "townEn": "Gohongi",
+      "kana": "ゴホンギ",
+      "chome": null,
+      "detail": "五本木二丁目 21番から23番",
+      "en": "五本木二丁目 21番から23番",
+      "jp": "五本木二丁目 21番から23番",
+      "pattern": "15"
+    },
+    {
+      "town": "五本木",
+      "townEn": "Gohongi",
+      "kana": "ゴホンギ",
+      "chome": null,
+      "detail": "五本木二丁目 24番から54番",
+      "en": "五本木二丁目 24番から54番",
+      "jp": "五本木二丁目 24番から54番",
+      "pattern": "14"
+    },
+    {
+      "town": "五本木",
+      "townEn": "Gohongi",
+      "kana": "ゴホンギ",
+      "chome": null,
+      "detail": "五本木三丁目 全て",
+      "en": "五本木三丁目 全て",
+      "jp": "五本木三丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "駒場",
+      "townEn": "Komaba",
+      "kana": "コマバ",
+      "chome": null,
+      "detail": "駒場一丁目 全て",
+      "en": "駒場一丁目 全て",
+      "jp": "駒場一丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "駒場",
+      "townEn": "Komaba",
+      "kana": "コマバ",
+      "chome": null,
+      "detail": "駒場二丁目 全て",
+      "en": "駒場二丁目 全て",
+      "jp": "駒場二丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "駒場",
+      "townEn": "Komaba",
+      "kana": "コマバ",
+      "chome": null,
+      "detail": "駒場三丁目 全て",
+      "en": "駒場三丁目 全て",
+      "jp": "駒場三丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "駒場",
+      "townEn": "Komaba",
+      "kana": "コマバ",
+      "chome": null,
+      "detail": "駒場四丁目 全て",
+      "en": "駒場四丁目 全て",
+      "jp": "駒場四丁目 全て",
+      "pattern": "4"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒一丁目 全て",
+      "en": "下目黒一丁目 全て",
+      "jp": "下目黒一丁目 全て",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒二丁目 1番から18番",
+      "en": "下目黒二丁目 1番から18番",
+      "jp": "下目黒二丁目 1番から18番",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒二丁目 19番から21番、22番（16号から22号）",
+      "en": "下目黒二丁目 19番から21番、22番（16号から22号）",
+      "jp": "下目黒二丁目 19番から21番、22番（16号から22号）",
+      "pattern": "8"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒二丁目 22番（1号から11号、23号）",
+      "en": "下目黒二丁目 22番（1号から11号、23号）",
+      "jp": "下目黒二丁目 22番（1号から11号、23号）",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒二丁目 23番",
+      "en": "下目黒二丁目 23番",
+      "jp": "下目黒二丁目 23番",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒二丁目 24番",
+      "en": "下目黒二丁目 24番",
+      "jp": "下目黒二丁目 24番",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 1番から3番",
+      "en": "下目黒三丁目 1番から3番",
+      "jp": "下目黒三丁目 1番から3番",
+      "pattern": "8"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 4番（1号から10号、24号から30号）",
+      "en": "下目黒三丁目 4番（1号から10号、24号から30号）",
+      "jp": "下目黒三丁目 4番（1号から10号、24号から30号）",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 4番（11号から17号）",
+      "en": "下目黒三丁目 4番（11号から17号）",
+      "jp": "下目黒三丁目 4番（11号から17号）",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 5番（1号から6号、24号）",
+      "en": "下目黒三丁目 5番（1号から6号、24号）",
+      "jp": "下目黒三丁目 5番（1号から6号、24号）",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 5番（16号から23号）",
+      "en": "下目黒三丁目 5番（16号から23号）",
+      "jp": "下目黒三丁目 5番（16号から23号）",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 6番から20番",
+      "en": "下目黒三丁目 6番から20番",
+      "jp": "下目黒三丁目 6番から20番",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒三丁目 21番から24番",
+      "en": "下目黒三丁目 21番から24番",
+      "jp": "下目黒三丁目 21番から24番",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒四丁目 全て",
+      "en": "下目黒四丁目 全て",
+      "jp": "下目黒四丁目 全て",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒五丁目 1番から36番",
+      "en": "下目黒五丁目 1番から36番",
+      "jp": "下目黒五丁目 1番から36番",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒五丁目 37番（5号から12号）",
+      "en": "下目黒五丁目 37番（5号から12号）",
+      "jp": "下目黒五丁目 37番（5号から12号）",
+      "pattern": "1"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒五丁目 37番（14号から20号）",
+      "en": "下目黒五丁目 37番（14号から20号）",
+      "jp": "下目黒五丁目 37番（14号から20号）",
+      "pattern": "9"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 1番から5番",
+      "en": "下目黒六丁目 1番から5番",
+      "jp": "下目黒六丁目 1番から5番",
+      "pattern": "16"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 6番",
+      "en": "下目黒六丁目 6番",
+      "jp": "下目黒六丁目 6番",
+      "pattern": "17"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 7番",
+      "en": "下目黒六丁目 7番",
+      "jp": "下目黒六丁目 7番",
+      "pattern": "16"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 8番（18号から23号、24号の一部）",
+      "en": "下目黒六丁目 8番（18号から23号、24号の一部）",
+      "jp": "下目黒六丁目 8番（18号から23号、24号の一部）",
+      "pattern": "16"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 8番（24号の一部、26号）",
+      "en": "下目黒六丁目 8番（24号の一部、26号）",
+      "jp": "下目黒六丁目 8番（24号の一部、26号）",
+      "pattern": "17"
+    },
+    {
+      "town": "下目黒",
+      "townEn": "Shimomeguro",
+      "kana": "シモメグロ",
+      "chome": null,
+      "detail": "下目黒六丁目 9番から22番",
+      "en": "下目黒六丁目 9番から22番",
+      "jp": "下目黒六丁目 9番から22番",
+      "pattern": "16"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 1番",
+      "en": "自由が丘一丁目 1番",
+      "jp": "自由が丘一丁目 1番",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 2番",
+      "en": "自由が丘一丁目 2番",
+      "jp": "自由が丘一丁目 2番",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 3番（1号、3号の一部、13号から29号）",
+      "en": "自由が丘一丁目 3番（1号、3号の一部、13号から29号）",
+      "jp": "自由が丘一丁目 3番（1号、3号の一部、13号から29号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 3番（2号、3号の一部、4号から11号、31号）",
+      "en": "自由が丘一丁目 3番（2号、3号の一部、4号から11号、31号）",
+      "jp": "自由が丘一丁目 3番（2号、3号の一部、4号から11号、31号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 4番（6号、8号）",
+      "en": "自由が丘一丁目 4番（6号、8号）",
+      "jp": "自由が丘一丁目 4番（6号、8号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 4番（10号）",
+      "en": "自由が丘一丁目 4番（10号）",
+      "jp": "自由が丘一丁目 4番（10号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 5番（1号から6号）",
+      "en": "自由が丘一丁目 5番（1号から6号）",
+      "jp": "自由が丘一丁目 5番（1号から6号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 5番（8号から10号）",
+      "en": "自由が丘一丁目 5番（8号から10号）",
+      "jp": "自由が丘一丁目 5番（8号から10号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 6番から14番",
+      "en": "自由が丘一丁目 6番から14番",
+      "jp": "自由が丘一丁目 6番から14番",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 15番から24番",
+      "en": "自由が丘一丁目 15番から24番",
+      "jp": "自由が丘一丁目 15番から24番",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 25番（1号から9号、14号から22号）",
+      "en": "自由が丘一丁目 25番（1号から9号、14号から22号）",
+      "jp": "自由が丘一丁目 25番（1号から9号、14号から22号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 25番（12号、13号）",
+      "en": "自由が丘一丁目 25番（12号、13号）",
+      "jp": "自由が丘一丁目 25番（12号、13号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 26番（1号から13号、15号、18号から20号）",
+      "en": "自由が丘一丁目 26番（1号から13号、15号、18号から20号）",
+      "jp": "自由が丘一丁目 26番（1号から13号、15号、18号から20号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 26番（14号、16号）",
+      "en": "自由が丘一丁目 26番（14号、16号）",
+      "jp": "自由が丘一丁目 26番（14号、16号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘一丁目 27番から31番",
+      "en": "自由が丘一丁目 27番から31番",
+      "jp": "自由が丘一丁目 27番から31番",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘二丁目 1番から8番",
+      "en": "自由が丘二丁目 1番から8番",
+      "jp": "自由が丘二丁目 1番から8番",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘二丁目 9番（2号、3号、6号から14号、17号から24号）",
+      "en": "自由が丘二丁目 9番（2号、3号、6号から14号、17号から24号）",
+      "jp": "自由が丘二丁目 9番（2号、3号、6号から14号、17号から24号）",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘二丁目 9番（4号、5号、15号）",
+      "en": "自由が丘二丁目 9番（4号、5号、15号）",
+      "jp": "自由が丘二丁目 9番（4号、5号、15号）",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘二丁目 10番から13番",
+      "en": "自由が丘二丁目 10番から13番",
+      "jp": "自由が丘二丁目 10番から13番",
+      "pattern": "18"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘二丁目 14番から23番",
+      "en": "自由が丘二丁目 14番から23番",
+      "jp": "自由が丘二丁目 14番から23番",
+      "pattern": "3"
+    },
+    {
+      "town": "自由が丘",
+      "townEn": "Jiyugaoka",
+      "kana": "ジユウガオカ",
+      "chome": null,
+      "detail": "自由が丘三丁目 全て",
+      "en": "自由が丘三丁目 全て",
+      "jp": "自由が丘三丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足一丁目 全て",
+      "en": "洗足一丁目 全て",
+      "jp": "洗足一丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 1番",
+      "en": "洗足二丁目 1番",
+      "jp": "洗足二丁目 1番",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 2番（1号、18号から20号）",
+      "en": "洗足二丁目 2番（1号、18号から20号）",
+      "jp": "洗足二丁目 2番（1号、18号から20号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 2番（2号から17号）",
+      "en": "洗足二丁目 2番（2号から17号）",
+      "jp": "洗足二丁目 2番（2号から17号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 3番",
+      "en": "洗足二丁目 3番",
+      "jp": "洗足二丁目 3番",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 4番",
+      "en": "洗足二丁目 4番",
+      "jp": "洗足二丁目 4番",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 5番（1号、2号、20号から24号）",
+      "en": "洗足二丁目 5番（1号、2号、20号から24号）",
+      "jp": "洗足二丁目 5番（1号、2号、20号から24号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 5番（3号から19号）",
+      "en": "洗足二丁目 5番（3号から19号）",
+      "jp": "洗足二丁目 5番（3号から19号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 6番",
+      "en": "洗足二丁目 6番",
+      "jp": "洗足二丁目 6番",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 7番（1号、2号、23号、24号）",
+      "en": "洗足二丁目 7番（1号、2号、23号、24号）",
+      "jp": "洗足二丁目 7番（1号、2号、23号、24号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 7番（3号から21号）",
+      "en": "洗足二丁目 7番（3号から21号）",
+      "jp": "洗足二丁目 7番（3号から21号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 8番（2号から7号、16号の一部、28号から39号）",
+      "en": "洗足二丁目 8番（2号から7号、16号の一部、28号から39号）",
+      "jp": "洗足二丁目 8番（2号から7号、16号の一部、28号から39号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 8番（8号から15号、16号の一部、19号から27号）",
+      "en": "洗足二丁目 8番（8号から15号、16号の一部、19号から27号）",
+      "jp": "洗足二丁目 8番（8号から15号、16号の一部、19号から27号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 9番",
+      "en": "洗足二丁目 9番",
+      "jp": "洗足二丁目 9番",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 10番（1号、2号、10号から19号）",
+      "en": "洗足二丁目 10番（1号、2号、10号から19号）",
+      "jp": "洗足二丁目 10番（1号、2号、10号から19号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 10番（3号から8号）",
+      "en": "洗足二丁目 10番（3号から8号）",
+      "jp": "洗足二丁目 10番（3号から8号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 11番",
+      "en": "洗足二丁目 11番",
+      "jp": "洗足二丁目 11番",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 12番",
+      "en": "洗足二丁目 12番",
+      "jp": "洗足二丁目 12番",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 13番（1号から10号、19号から22号）",
+      "en": "洗足二丁目 13番（1号から10号、19号から22号）",
+      "jp": "洗足二丁目 13番（1号から10号、19号から22号）",
+      "pattern": "19"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 13番（11号から18号）",
+      "en": "洗足二丁目 13番（11号から18号）",
+      "jp": "洗足二丁目 13番（11号から18号）",
+      "pattern": "16"
+    },
+    {
+      "town": "洗足",
+      "townEn": "Senzoku",
+      "kana": "センゾク",
+      "chome": null,
+      "detail": "洗足二丁目 14番から29番",
+      "en": "洗足二丁目 14番から29番",
+      "jp": "洗足二丁目 14番から29番",
+      "pattern": "19"
+    },
+    {
+      "town": "平町",
+      "townEn": "Tairamachi",
+      "kana": "タイラマチ",
+      "chome": null,
+      "detail": "平町一丁目 全て",
+      "en": "平町一丁目 全て",
+      "jp": "平町一丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "平町",
+      "townEn": "Tairamachi",
+      "kana": "タイラマチ",
+      "chome": null,
+      "detail": "平町二丁目 全て",
+      "en": "平町二丁目 全て",
+      "jp": "平町二丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 1番",
+      "en": "鷹番一丁目 1番",
+      "jp": "鷹番一丁目 1番",
+      "pattern": "20"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 2番",
+      "en": "鷹番一丁目 2番",
+      "jp": "鷹番一丁目 2番",
+      "pattern": "20"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 3番",
+      "en": "鷹番一丁目 3番",
+      "jp": "鷹番一丁目 3番",
+      "pattern": "6"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 4番",
+      "en": "鷹番一丁目 4番",
+      "jp": "鷹番一丁目 4番",
+      "pattern": "20"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 5番",
+      "en": "鷹番一丁目 5番",
+      "jp": "鷹番一丁目 5番",
+      "pattern": "21"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 6番から16番",
+      "en": "鷹番一丁目 6番から16番",
+      "jp": "鷹番一丁目 6番から16番",
+      "pattern": "6"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 17番（1号から3号、17号から22号）",
+      "en": "鷹番一丁目 17番（1号から3号、17号から22号）",
+      "jp": "鷹番一丁目 17番（1号から3号、17号から22号）",
+      "pattern": "6"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 17番（5号から15号）",
+      "en": "鷹番一丁目 17番（5号から15号）",
+      "jp": "鷹番一丁目 17番（5号から15号）",
+      "pattern": "21"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番一丁目 18番",
+      "en": "鷹番一丁目 18番",
+      "jp": "鷹番一丁目 18番",
+      "pattern": "6"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番二丁目 全て",
+      "en": "鷹番二丁目 全て",
+      "jp": "鷹番二丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "鷹番",
+      "townEn": "Takaban",
+      "kana": "タカバン",
+      "chome": null,
+      "detail": "鷹番三丁目 全て",
+      "en": "鷹番三丁目 全て",
+      "jp": "鷹番三丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 1番",
+      "en": "中央町一丁目 1番",
+      "jp": "中央町一丁目 1番",
+      "pattern": "22"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 2番から10番",
+      "en": "中央町一丁目 2番から10番",
+      "jp": "中央町一丁目 2番から10番",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 11番（1号から3号、29号）",
+      "en": "中央町一丁目 11番（1号から3号、29号）",
+      "jp": "中央町一丁目 11番（1号から3号、29号）",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 12番から17番",
+      "en": "中央町一丁目 12番から17番",
+      "jp": "中央町一丁目 12番から17番",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 18番",
+      "en": "中央町一丁目 18番",
+      "jp": "中央町一丁目 18番",
+      "pattern": "24"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 19番（8号から13号）",
+      "en": "中央町一丁目 19番（8号から13号）",
+      "jp": "中央町一丁目 19番（8号から13号）",
+      "pattern": "24"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 19番（14号、15号）",
+      "en": "中央町一丁目 19番（14号、15号）",
+      "jp": "中央町一丁目 19番（14号、15号）",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町一丁目 21番",
+      "en": "中央町一丁目 21番",
+      "jp": "中央町一丁目 21番",
+      "pattern": "24"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 1番から3番",
+      "en": "中央町二丁目 1番から3番",
+      "jp": "中央町二丁目 1番から3番",
+      "pattern": "25"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 4番から11番",
+      "en": "中央町二丁目 4番から11番",
+      "jp": "中央町二丁目 4番から11番",
+      "pattern": "22"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 12番から21番",
+      "en": "中央町二丁目 12番から21番",
+      "jp": "中央町二丁目 12番から21番",
+      "pattern": "25"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 22番から24番",
+      "en": "中央町二丁目 22番から24番",
+      "jp": "中央町二丁目 22番から24番",
+      "pattern": "22"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 25番",
+      "en": "中央町二丁目 25番",
+      "jp": "中央町二丁目 25番",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 26番",
+      "en": "中央町二丁目 26番",
+      "jp": "中央町二丁目 26番",
+      "pattern": "23"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 27番から34番",
+      "en": "中央町二丁目 27番から34番",
+      "jp": "中央町二丁目 27番から34番",
+      "pattern": "25"
+    },
+    {
+      "town": "中央町",
+      "townEn": "Chuocho",
+      "kana": "チュウオウチョウ",
+      "chome": null,
+      "detail": "中央町二丁目 35番から40番",
+      "en": "中央町二丁目 35番から40番",
+      "jp": "中央町二丁目 35番から40番",
+      "pattern": "24"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 1番から14番",
+      "en": "中町一丁目 1番から14番",
+      "jp": "中町一丁目 1番から14番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 15番",
+      "en": "中町一丁目 15番",
+      "jp": "中町一丁目 15番",
+      "pattern": "22"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 16番",
+      "en": "中町一丁目 16番",
+      "jp": "中町一丁目 16番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 17番から23番",
+      "en": "中町一丁目 17番から23番",
+      "jp": "中町一丁目 17番から23番",
+      "pattern": "22"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 24番から29番",
+      "en": "中町一丁目 24番から29番",
+      "jp": "中町一丁目 24番から29番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 30番から39番",
+      "en": "中町一丁目 30番から39番",
+      "jp": "中町一丁目 30番から39番",
+      "pattern": "22"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 40番",
+      "en": "中町一丁目 40番",
+      "jp": "中町一丁目 40番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町一丁目 41番",
+      "en": "中町一丁目 41番",
+      "jp": "中町一丁目 41番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 1番から20番",
+      "en": "中町二丁目 1番から20番",
+      "jp": "中町二丁目 1番から20番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 21番",
+      "en": "中町二丁目 21番",
+      "jp": "中町二丁目 21番",
+      "pattern": "22"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 22番",
+      "en": "中町二丁目 22番",
+      "jp": "中町二丁目 22番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 23番",
+      "en": "中町二丁目 23番",
+      "jp": "中町二丁目 23番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 24番から35番",
+      "en": "中町二丁目 24番から35番",
+      "jp": "中町二丁目 24番から35番",
+      "pattern": "22"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 36番から41番",
+      "en": "中町二丁目 36番から41番",
+      "jp": "中町二丁目 36番から41番",
+      "pattern": "10"
+    },
+    {
+      "town": "中町",
+      "townEn": "Nakacho",
+      "kana": "ナカチョウ",
+      "chome": null,
+      "detail": "中町二丁目 42番から50番",
+      "en": "中町二丁目 42番から50番",
+      "jp": "中町二丁目 42番から50番",
+      "pattern": "22"
+    },
+    {
+      "town": "中根",
+      "townEn": "Nakane",
+      "kana": "ナカネ",
+      "chome": null,
+      "detail": "中根一丁目 全て",
+      "en": "中根一丁目 全て",
+      "jp": "中根一丁目 全て",
+      "pattern": "18"
+    },
+    {
+      "town": "中根",
+      "townEn": "Nakane",
+      "kana": "ナカネ",
+      "chome": null,
+      "detail": "中根二丁目 全て",
+      "en": "中根二丁目 全て",
+      "jp": "中根二丁目 全て",
+      "pattern": "18"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒一丁目 1番から3番",
+      "en": "中目黒一丁目 1番から3番",
+      "jp": "中目黒一丁目 1番から3番",
+      "pattern": "8"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒一丁目 4番から9番",
+      "en": "中目黒一丁目 4番から9番",
+      "jp": "中目黒一丁目 4番から9番",
+      "pattern": "1"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒一丁目 10番",
+      "en": "中目黒一丁目 10番",
+      "jp": "中目黒一丁目 10番",
+      "pattern": "26"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒一丁目 11番",
+      "en": "中目黒一丁目 11番",
+      "jp": "中目黒一丁目 11番",
+      "pattern": "26"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 1番（1号から21号）",
+      "en": "中目黒二丁目 1番（1号から21号）",
+      "jp": "中目黒二丁目 1番（1号から21号）",
+      "pattern": "1"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 1番（23号から27号）",
+      "en": "中目黒二丁目 1番（23号から27号）",
+      "jp": "中目黒二丁目 1番（23号から27号）",
+      "pattern": "8"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 2番から4番",
+      "en": "中目黒二丁目 2番から4番",
+      "jp": "中目黒二丁目 2番から4番",
+      "pattern": "1"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 5番",
+      "en": "中目黒二丁目 5番",
+      "jp": "中目黒二丁目 5番",
+      "pattern": "26"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 6番（23号から25号）",
+      "en": "中目黒二丁目 6番（23号から25号）",
+      "jp": "中目黒二丁目 6番（23号から25号）",
+      "pattern": "26"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 6番（13号、20号）",
+      "en": "中目黒二丁目 6番（13号、20号）",
+      "jp": "中目黒二丁目 6番（13号、20号）",
+      "pattern": "8"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 7番",
+      "en": "中目黒二丁目 7番",
+      "jp": "中目黒二丁目 7番",
+      "pattern": "8"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒二丁目 8番から10番",
+      "en": "中目黒二丁目 8番から10番",
+      "jp": "中目黒二丁目 8番から10番",
+      "pattern": "26"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒三丁目 全て",
+      "en": "中目黒三丁目 全て",
+      "jp": "中目黒三丁目 全て",
+      "pattern": "10"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒四丁目 1番から3番",
+      "en": "中目黒四丁目 1番から3番",
+      "jp": "中目黒四丁目 1番から3番",
+      "pattern": "10"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒四丁目 4番から12番",
+      "en": "中目黒四丁目 4番から12番",
+      "jp": "中目黒四丁目 4番から12番",
+      "pattern": "25"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒四丁目 13番の一部",
+      "en": "中目黒四丁目 13番の一部",
+      "jp": "中目黒四丁目 13番の一部",
+      "pattern": "25"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒四丁目 13番の一部",
+      "en": "中目黒四丁目 13番の一部",
+      "jp": "中目黒四丁目 13番の一部",
+      "pattern": "23"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒四丁目 14番から16番",
+      "en": "中目黒四丁目 14番から16番",
+      "jp": "中目黒四丁目 14番から16番",
+      "pattern": "10"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒五丁目 1番から23番",
+      "en": "中目黒五丁目 1番から23番",
+      "jp": "中目黒五丁目 1番から23番",
+      "pattern": "23"
+    },
+    {
+      "town": "中目黒",
+      "townEn": "Nakameguro",
+      "kana": "ナカメグロ",
+      "chome": null,
+      "detail": "中目黒五丁目 24番から28番",
+      "en": "中目黒五丁目 24番から28番",
+      "jp": "中目黒五丁目 24番から28番",
+      "pattern": "25"
+    },
+    {
+      "town": "原町",
+      "townEn": "Haramachi",
+      "kana": "ハラマチ",
+      "chome": null,
+      "detail": "原町一丁目 全て",
+      "en": "原町一丁目 全て",
+      "jp": "原町一丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "原町",
+      "townEn": "Haramachi",
+      "kana": "ハラマチ",
+      "chome": null,
+      "detail": "原町二丁目 全て",
+      "en": "原町二丁目 全て",
+      "jp": "原町二丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "東が丘",
+      "townEn": "Higashigaoka",
+      "kana": "ヒガシガオカ",
+      "chome": null,
+      "detail": "東が丘一丁目 全て",
+      "en": "東が丘一丁目 全て",
+      "jp": "東が丘一丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "東が丘",
+      "townEn": "Higashigaoka",
+      "kana": "ヒガシガオカ",
+      "chome": null,
+      "detail": "東が丘二丁目 全て",
+      "en": "東が丘二丁目 全て",
+      "jp": "東が丘二丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 1番から11番",
+      "en": "東山一丁目 1番から11番",
+      "jp": "東山一丁目 1番から11番",
+      "pattern": "4"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 12番",
+      "en": "東山一丁目 12番",
+      "jp": "東山一丁目 12番",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 13番",
+      "en": "東山一丁目 13番",
+      "jp": "東山一丁目 13番",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 14番から19番",
+      "en": "東山一丁目 14番から19番",
+      "jp": "東山一丁目 14番から19番",
+      "pattern": "4"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 20番",
+      "en": "東山一丁目 20番",
+      "jp": "東山一丁目 20番",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 21番（1号から11号、20号から26号）",
+      "en": "東山一丁目 21番（1号から11号、20号から26号）",
+      "jp": "東山一丁目 21番（1号から11号、20号から26号）",
+      "pattern": "4"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 21番（13号から16号）",
+      "en": "東山一丁目 21番（13号から16号）",
+      "jp": "東山一丁目 21番（13号から16号）",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 22番",
+      "en": "東山一丁目 22番",
+      "jp": "東山一丁目 22番",
+      "pattern": "4"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 23番",
+      "en": "東山一丁目 23番",
+      "jp": "東山一丁目 23番",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 24番（3号から5号）",
+      "en": "東山一丁目 24番（3号から5号）",
+      "jp": "東山一丁目 24番（3号から5号）",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 24番（21号から28号）",
+      "en": "東山一丁目 24番（21号から28号）",
+      "jp": "東山一丁目 24番（21号から28号）",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山一丁目 25番から35番",
+      "en": "東山一丁目 25番から35番",
+      "jp": "東山一丁目 25番から35番",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山二丁目 1番から20番",
+      "en": "東山二丁目 1番から20番",
+      "jp": "東山二丁目 1番から20番",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山二丁目 21番から23番",
+      "en": "東山二丁目 21番から23番",
+      "jp": "東山二丁目 21番から23番",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山二丁目 24番",
+      "en": "東山二丁目 24番",
+      "jp": "東山二丁目 24番",
+      "pattern": "14"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山二丁目 25番",
+      "en": "東山二丁目 25番",
+      "jp": "東山二丁目 25番",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山二丁目 26番",
+      "en": "東山二丁目 26番",
+      "jp": "東山二丁目 26番",
+      "pattern": "13"
+    },
+    {
+      "town": "東山",
+      "townEn": "Higashiyama",
+      "kana": "ヒガシヤマ",
+      "chome": null,
+      "detail": "東山三丁目 全て",
+      "en": "東山三丁目 全て",
+      "jp": "東山三丁目 全て",
+      "pattern": "5"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷一丁目 全て",
+      "en": "碑文谷一丁目 全て",
+      "jp": "碑文谷一丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷二丁目 全て",
+      "en": "碑文谷二丁目 全て",
+      "jp": "碑文谷二丁目 全て",
+      "pattern": "17"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷三丁目 1番から3番",
+      "en": "碑文谷三丁目 1番から3番",
+      "jp": "碑文谷三丁目 1番から3番",
+      "pattern": "18"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷三丁目 4番から7番",
+      "en": "碑文谷三丁目 4番から7番",
+      "jp": "碑文谷三丁目 4番から7番",
+      "pattern": "27"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷三丁目 8番から19番",
+      "en": "碑文谷三丁目 8番から19番",
+      "jp": "碑文谷三丁目 8番から19番",
+      "pattern": "18"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷四丁目 全て",
+      "en": "碑文谷四丁目 全て",
+      "jp": "碑文谷四丁目 全て",
+      "pattern": "18"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷五丁目 全て",
+      "en": "碑文谷五丁目 全て",
+      "jp": "碑文谷五丁目 全て",
+      "pattern": "6"
+    },
+    {
+      "town": "碑文谷",
+      "townEn": "Himonya",
+      "kana": "ヒモンヤ",
+      "chome": null,
+      "detail": "碑文谷六丁目 全て",
+      "en": "碑文谷六丁目 全て",
+      "jp": "碑文谷六丁目 全て",
+      "pattern": "7"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田一丁目 全て",
+      "en": "三田一丁目 全て",
+      "jp": "三田一丁目 全て",
+      "pattern": "1"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 1番から9番",
+      "en": "三田二丁目 1番から9番",
+      "jp": "三田二丁目 1番から9番",
+      "pattern": "1"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 10番（1号から47号）",
+      "en": "三田二丁目 10番（1号から47号）",
+      "jp": "三田二丁目 10番（1号から47号）",
+      "pattern": "1"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 10番（55号から76号）",
+      "en": "三田二丁目 10番（55号から76号）",
+      "jp": "三田二丁目 10番（55号から76号）",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 11番から14番",
+      "en": "三田二丁目 11番から14番",
+      "jp": "三田二丁目 11番から14番",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 15番（1号から4号）",
+      "en": "三田二丁目 15番（1号から4号）",
+      "jp": "三田二丁目 15番（1号から4号）",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 16番",
+      "en": "三田二丁目 16番",
+      "jp": "三田二丁目 16番",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 17番",
+      "en": "三田二丁目 17番",
+      "jp": "三田二丁目 17番",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 18番（7号から29号）",
+      "en": "三田二丁目 18番（7号から29号）",
+      "jp": "三田二丁目 18番（7号から29号）",
+      "pattern": "2"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 15番(9号から17号)",
+      "en": "三田二丁目 15番(9号から17号)",
+      "jp": "三田二丁目 15番(9号から17号)",
+      "pattern": "8"
+    },
+    {
+      "town": "三田",
+      "townEn": "Mita",
+      "kana": "ミタ",
+      "chome": null,
+      "detail": "三田二丁目 18番(1号から4号)",
+      "en": "三田二丁目 18番(1号から4号)",
+      "jp": "三田二丁目 18番(1号から4号)",
+      "pattern": "8"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘一丁目 全て",
+      "en": "緑が丘一丁目 全て",
+      "jp": "緑が丘一丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘二丁目 全て",
+      "en": "緑が丘二丁目 全て",
+      "jp": "緑が丘二丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "緑が丘",
+      "townEn": "Midorigaoka",
+      "kana": "ミドリガオカ",
+      "chome": null,
+      "detail": "緑が丘三丁目 全て",
+      "en": "緑が丘三丁目 全て",
+      "jp": "緑が丘三丁目 全て",
+      "pattern": "3"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南一丁目 全て",
+      "en": "南一丁目 全て",
+      "jp": "南一丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南二丁目 全て",
+      "en": "南二丁目 全て",
+      "jp": "南二丁目 全て",
+      "pattern": "27"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南三丁目 1番から10番",
+      "en": "南三丁目 1番から10番",
+      "jp": "南三丁目 1番から10番",
+      "pattern": "3"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南三丁目 11番から15番",
+      "en": "南三丁目 11番から15番",
+      "jp": "南三丁目 11番から15番",
+      "pattern": "28"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 1番から11番",
+      "en": "目黒一丁目 1番から11番",
+      "jp": "目黒一丁目 1番から11番",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 12番（1号、2号、21号）",
+      "en": "目黒一丁目 12番（1号、2号、21号）",
+      "jp": "目黒一丁目 12番（1号、2号、21号）",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 12番（3号から19号）",
+      "en": "目黒一丁目 12番（3号から19号）",
+      "jp": "目黒一丁目 12番（3号から19号）",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 13番、",
+      "en": "目黒一丁目 13番、",
+      "jp": "目黒一丁目 13番、",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 14番（1号から4号、10号の一部、12号）",
+      "en": "目黒一丁目 14番（1号から4号、10号の一部、12号）",
+      "jp": "目黒一丁目 14番（1号から4号、10号の一部、12号）",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 14番（5号から8号、10号の一部）",
+      "en": "目黒一丁目 14番（5号から8号、10号の一部）",
+      "jp": "目黒一丁目 14番（5号から8号、10号の一部）",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 15番",
+      "en": "目黒一丁目 15番",
+      "jp": "目黒一丁目 15番",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 16番（3号から10号）",
+      "en": "目黒一丁目 16番（3号から10号）",
+      "jp": "目黒一丁目 16番（3号から10号）",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 16番（14号）",
+      "en": "目黒一丁目 16番（14号）",
+      "jp": "目黒一丁目 16番（14号）",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 17番から24番",
+      "en": "目黒一丁目 17番から24番",
+      "jp": "目黒一丁目 17番から24番",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 25番（8号、26号）",
+      "en": "目黒一丁目 25番（8号、26号）",
+      "jp": "目黒一丁目 25番（8号、26号）",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒一丁目 25番（9号）",
+      "en": "目黒一丁目 25番（9号）",
+      "jp": "目黒一丁目 25番（9号）",
+      "pattern": "1"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒二丁目 全て",
+      "en": "目黒二丁目 全て",
+      "jp": "目黒二丁目 全て",
+      "pattern": "8"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒三丁目 1番から8番",
+      "en": "目黒三丁目 1番から8番",
+      "jp": "目黒三丁目 1番から8番",
+      "pattern": "25"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒三丁目 9番から21番",
+      "en": "目黒三丁目 9番から21番",
+      "jp": "目黒三丁目 9番から21番",
+      "pattern": "23"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒四丁目 1番から5番",
+      "en": "目黒四丁目 1番から5番",
+      "jp": "目黒四丁目 1番から5番",
+      "pattern": "10"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒四丁目 6番から11番",
+      "en": "目黒四丁目 6番から11番",
+      "jp": "目黒四丁目 6番から11番",
+      "pattern": "23"
+    },
+    {
+      "town": "目黒",
+      "townEn": "Meguro",
+      "kana": "メグロ",
+      "chome": null,
+      "detail": "目黒四丁目 12番から26番",
+      "en": "目黒四丁目 12番から26番",
+      "jp": "目黒四丁目 12番から26番",
+      "pattern": "10"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町一丁目 全て",
+      "en": "目黒本町一丁目 全て",
+      "jp": "目黒本町一丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町二丁目 1番から23番",
+      "en": "目黒本町二丁目 1番から23番",
+      "jp": "目黒本町二丁目 1番から23番",
+      "pattern": "16"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町二丁目 24番から28番",
+      "en": "目黒本町二丁目 24番から28番",
+      "jp": "目黒本町二丁目 24番から28番",
+      "pattern": "17"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町三丁目 全て",
+      "en": "目黒本町三丁目 全て",
+      "jp": "目黒本町三丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町四丁目 全て",
+      "en": "目黒本町四丁目 全て",
+      "jp": "目黒本町四丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町五丁目 全て",
+      "en": "目黒本町五丁目 全て",
+      "jp": "目黒本町五丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "目黒本町",
+      "townEn": "Megurohoncho",
+      "kana": "メグロホンチョウ",
+      "chome": null,
+      "detail": "目黒本町六丁目 全て",
+      "en": "目黒本町六丁目 全て",
+      "jp": "目黒本町六丁目 全て",
+      "pattern": "16"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲一丁目 1番から3番",
+      "en": "八雲一丁目 1番から3番",
+      "jp": "八雲一丁目 1番から3番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲一丁目 4番から7番",
+      "en": "八雲一丁目 4番から7番",
+      "jp": "八雲一丁目 4番から7番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲一丁目 8番から10番",
+      "en": "八雲一丁目 8番から10番",
+      "jp": "八雲一丁目 8番から10番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲一丁目 11番",
+      "en": "八雲一丁目 11番",
+      "jp": "八雲一丁目 11番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲一丁目 12番",
+      "en": "八雲一丁目 12番",
+      "jp": "八雲一丁目 12番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲二丁目 1番から5番",
+      "en": "八雲二丁目 1番から5番",
+      "jp": "八雲二丁目 1番から5番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲二丁目 6番から13番",
+      "en": "八雲二丁目 6番から13番",
+      "jp": "八雲二丁目 6番から13番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲二丁目 14番から21番",
+      "en": "八雲二丁目 14番から21番",
+      "jp": "八雲二丁目 14番から21番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲二丁目 22番から25番",
+      "en": "八雲二丁目 22番から25番",
+      "jp": "八雲二丁目 22番から25番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲三丁目 1番から4番",
+      "en": "八雲三丁目 1番から4番",
+      "jp": "八雲三丁目 1番から4番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲三丁目 5番から32番",
+      "en": "八雲三丁目 5番から32番",
+      "jp": "八雲三丁目 5番から32番",
+      "pattern": "7"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 1番",
+      "en": "八雲四丁目 1番",
+      "jp": "八雲四丁目 1番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 2番",
+      "en": "八雲四丁目 2番",
+      "jp": "八雲四丁目 2番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 3番から8番",
+      "en": "八雲四丁目 3番から8番",
+      "jp": "八雲四丁目 3番から8番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 9番から12番",
+      "en": "八雲四丁目 9番から12番",
+      "jp": "八雲四丁目 9番から12番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 13番から18番",
+      "en": "八雲四丁目 13番から18番",
+      "jp": "八雲四丁目 13番から18番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 19番",
+      "en": "八雲四丁目 19番",
+      "jp": "八雲四丁目 19番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲四丁目 20番",
+      "en": "八雲四丁目 20番",
+      "jp": "八雲四丁目 20番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 1番",
+      "en": "八雲五丁目 1番",
+      "jp": "八雲五丁目 1番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 2番（8号から10号）",
+      "en": "八雲五丁目 2番（8号から10号）",
+      "jp": "八雲五丁目 2番（8号から10号）",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 3番から7番",
+      "en": "八雲五丁目 3番から7番",
+      "jp": "八雲五丁目 3番から7番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 8番から11番",
+      "en": "八雲五丁目 8番から11番",
+      "jp": "八雲五丁目 8番から11番",
+      "pattern": "6"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 12番から17番",
+      "en": "八雲五丁目 12番から17番",
+      "jp": "八雲五丁目 12番から17番",
+      "pattern": "20"
+    },
+    {
+      "town": "八雲",
+      "townEn": "Yakumo",
+      "kana": "ヤクモ",
+      "chome": null,
+      "detail": "八雲五丁目 18番から20番",
+      "en": "八雲五丁目 18番から20番",
+      "jp": "八雲五丁目 18番から20番",
+      "pattern": "6"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 1番から8番",
+      "en": "祐天寺一丁目 1番から8番",
+      "jp": "祐天寺一丁目 1番から8番",
+      "pattern": "11"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 9番（1号から11号、23号、24号）",
+      "en": "祐天寺一丁目 9番（1号から11号、23号、24号）",
+      "jp": "祐天寺一丁目 9番（1号から11号、23号、24号）",
+      "pattern": "23"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 9番（12号から22号）",
+      "en": "祐天寺一丁目 9番（12号から22号）",
+      "jp": "祐天寺一丁目 9番（12号から22号）",
+      "pattern": "11"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 10番から21番",
+      "en": "祐天寺一丁目 10番から21番",
+      "jp": "祐天寺一丁目 10番から21番",
+      "pattern": "23"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 22番",
+      "en": "祐天寺一丁目 22番",
+      "jp": "祐天寺一丁目 22番",
+      "pattern": "22"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺一丁目 23番から32番",
+      "en": "祐天寺一丁目 23番から32番",
+      "jp": "祐天寺一丁目 23番から32番",
+      "pattern": "23"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺二丁目 1番",
+      "en": "祐天寺二丁目 1番",
+      "jp": "祐天寺二丁目 1番",
+      "pattern": "22"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺二丁目 2番",
+      "en": "祐天寺二丁目 2番",
+      "jp": "祐天寺二丁目 2番",
+      "pattern": "22"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺二丁目 3番から11番",
+      "en": "祐天寺二丁目 3番から11番",
+      "jp": "祐天寺二丁目 3番から11番",
+      "pattern": "25"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺二丁目 12番から15番",
+      "en": "祐天寺二丁目 12番から15番",
+      "jp": "祐天寺二丁目 12番から15番",
+      "pattern": "22"
+    },
+    {
+      "town": "祐天寺",
+      "townEn": "Yutenji",
+      "kana": "ユウテンジ",
+      "chome": null,
+      "detail": "祐天寺二丁目 16番から20番",
+      "en": "祐天寺二丁目 16番から20番",
+      "jp": "祐天寺二丁目 16番から20番",
+      "pattern": "25"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Tokyo Metropolitan Government Open Data Catalog",
+      "url": "https://www.city.meguro.tokyo.jp/documents/9979/gomi.csv",
+      "license": "CC BY 4.0",
+      "commit": "open-data"
+    }
+  },
+  "updated": "2026-11-04"
+}

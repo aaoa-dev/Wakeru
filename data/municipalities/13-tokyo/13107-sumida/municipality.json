@@ -1,0 +1,823 @@
+{
+  "id": "sumida-metro",
+  "code": "13107",
+  "pref": "13",
+  "jp": "墨田区",
+  "en": "Sumida",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.sumida.lg.jp/kuseijoho/sumida_info/opendata/opendata_ichiran/gomirecycle_data/bunbetu_data.files/bunbetu_20250301.csv",
+    "https://www.city.sumida.lg.jp/kuseijoho/sumida_info/opendata/opendata_ichiran/gomirecycle_data/bunbetu_data.files/bunbetu_20250301.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "burn": {
+      "label": "可燃ごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "non": {
+      "label": "不燃ごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "res": {
+      "label": "資源",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pla": {
+      "label": "プラ",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "びん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": {
+    "products": true,
+    "summary": "Clean plastic packaging goes to Plastic. Other plastic or dirty items: check the city website.",
+    "bin": "plastic",
+    "otherwise": "non_burnable"
+  },
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「紙おむつ」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「割り箸」 under 「燃やすごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「資源（イベント回収）」.",
+      "auto": true
+    },
+    "newspaper": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「新聞」 under 「資源（古紙）」.",
+      "auto": true
+    },
+    "magazine": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「雑誌（月刊誌、週刊誌、漫画本）」 under 「資源（古紙）」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「段ボール」 under 「資源（古紙）」.",
+      "auto": true
+    },
+    "can": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「飲料缶」 under 「資源（缶）」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「なべ（陶器製・土鍋など）」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「資源（拠点回収）」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「燃やさないごみ」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ドライヤー」 under 「資源（拠点回収）」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「自転車」 under 「粗大ごみ」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Town/chome collection weekdays from Sumida City's official open-data CSV, checked against the ward's current 2026 collection calendars. Confirm holidays and year-end changes on the official calendar.",
+    "patterns": {
+      "1": {
+        "res": [
+          6
+        ],
+        "plastic": [
+          4
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "2": {
+        "res": [
+          2
+        ],
+        "plastic": [
+          3
+        ],
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 6,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "3": {
+        "res": [
+          3
+        ],
+        "plastic": [
+          1
+        ],
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "4": {
+        "res": [
+          5
+        ],
+        "plastic": [
+          6
+        ],
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "5": {
+        "res": [
+          4
+        ],
+        "plastic": [
+          5
+        ],
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      },
+      "6": {
+        "res": [
+          1
+        ],
+        "plastic": [
+          2
+        ],
+        "burnable": [
+          3,
+          6
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            1,
+            3
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "吾妻橋",
+      "townEn": "Azumabashi",
+      "kana": "アヅマバシ",
+      "chome": null,
+      "detail": null,
+      "en": "吾妻橋",
+      "jp": "吾妻橋",
+      "pattern": "1"
+    },
+    {
+      "town": "石原",
+      "townEn": "Ishiwara",
+      "kana": "イシワラ",
+      "chome": null,
+      "detail": null,
+      "en": "石原",
+      "jp": "石原",
+      "pattern": "2"
+    },
+    {
+      "town": "押上",
+      "townEn": "Oshiage",
+      "kana": "オシアゲ",
+      "chome": null,
+      "detail": null,
+      "en": "押上",
+      "jp": "押上",
+      "pattern": "3"
+    },
+    {
+      "town": "亀沢",
+      "townEn": "Kamezawa",
+      "kana": "カメザワ",
+      "chome": null,
+      "detail": null,
+      "en": "亀沢",
+      "jp": "亀沢",
+      "pattern": "2"
+    },
+    {
+      "town": "菊川",
+      "townEn": "Kikukawa",
+      "kana": "キクカワ",
+      "chome": null,
+      "detail": null,
+      "en": "菊川",
+      "jp": "菊川",
+      "pattern": "4"
+    },
+    {
+      "town": "京島",
+      "townEn": "Kyojima",
+      "kana": "キョウジマ",
+      "chome": null,
+      "detail": null,
+      "en": "京島",
+      "jp": "京島",
+      "pattern": "3"
+    },
+    {
+      "town": "錦糸",
+      "townEn": "Kinshi",
+      "kana": "キンシ",
+      "chome": null,
+      "detail": null,
+      "en": "錦糸",
+      "jp": "錦糸",
+      "pattern": "4"
+    },
+    {
+      "town": "江東橋",
+      "townEn": "Kotobashi",
+      "kana": "コウトウバシ",
+      "chome": null,
+      "detail": null,
+      "en": "江東橋",
+      "jp": "江東橋",
+      "pattern": "4"
+    },
+    {
+      "town": "墨田",
+      "townEn": "Sumida",
+      "kana": "スミダ",
+      "chome": null,
+      "detail": "墨田一丁目",
+      "en": "墨田一丁目",
+      "jp": "墨田一丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "墨田",
+      "townEn": "Sumida",
+      "kana": "スミダ",
+      "chome": null,
+      "detail": "墨田二丁目",
+      "en": "墨田二丁目",
+      "jp": "墨田二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "墨田",
+      "townEn": "Sumida",
+      "kana": "スミダ",
+      "chome": null,
+      "detail": "墨田三丁目",
+      "en": "墨田三丁目",
+      "jp": "墨田三丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "墨田",
+      "townEn": "Sumida",
+      "kana": "スミダ",
+      "chome": null,
+      "detail": "墨田四丁目",
+      "en": "墨田四丁目",
+      "jp": "墨田四丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "墨田",
+      "townEn": "Sumida",
+      "kana": "スミダ",
+      "chome": null,
+      "detail": "墨田五丁目",
+      "en": "墨田五丁目",
+      "jp": "墨田五丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "太平",
+      "townEn": "Taihei",
+      "kana": "タイヘイ",
+      "chome": null,
+      "detail": null,
+      "en": "太平",
+      "jp": "太平",
+      "pattern": "4"
+    },
+    {
+      "town": "立花",
+      "townEn": "Tachibana",
+      "kana": "タチバナ",
+      "chome": null,
+      "detail": null,
+      "en": "立花",
+      "jp": "立花",
+      "pattern": "6"
+    },
+    {
+      "town": "立川",
+      "townEn": "Tatekawa",
+      "kana": "タテカワ",
+      "chome": null,
+      "detail": null,
+      "en": "立川",
+      "jp": "立川",
+      "pattern": "2"
+    },
+    {
+      "town": "千歳",
+      "townEn": "Chitose",
+      "kana": "チトセ",
+      "chome": null,
+      "detail": null,
+      "en": "千歳",
+      "jp": "千歳",
+      "pattern": "2"
+    },
+    {
+      "town": "堤通",
+      "townEn": "Tsutsumidori",
+      "kana": "ツツミドオリ",
+      "chome": null,
+      "detail": "堤通一丁目",
+      "en": "堤通一丁目",
+      "jp": "堤通一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "堤通",
+      "townEn": "Tsutsumidori",
+      "kana": "ツツミドオリ",
+      "chome": null,
+      "detail": "堤通二丁目",
+      "en": "堤通二丁目",
+      "jp": "堤通二丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "業平",
+      "townEn": "Narihira",
+      "kana": "ナリヒラ",
+      "chome": null,
+      "detail": null,
+      "en": "業平",
+      "jp": "業平",
+      "pattern": "3"
+    },
+    {
+      "town": "東駒形",
+      "townEn": "Higashikomagata",
+      "kana": "ヒガシコマガタ",
+      "chome": null,
+      "detail": "東駒形一丁目",
+      "en": "東駒形一丁目",
+      "jp": "東駒形一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東駒形",
+      "townEn": "Higashikomagata",
+      "kana": "ヒガシコマガタ",
+      "chome": null,
+      "detail": "東駒形二丁目",
+      "en": "東駒形二丁目",
+      "jp": "東駒形二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東駒形",
+      "townEn": "Higashikomagata",
+      "kana": "ヒガシコマガタ",
+      "chome": null,
+      "detail": "東駒形三丁目",
+      "en": "東駒形三丁目",
+      "jp": "東駒形三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東駒形",
+      "townEn": "Higashikomagata",
+      "kana": "ヒガシコマガタ",
+      "chome": null,
+      "detail": "東駒形四丁目",
+      "en": "東駒形四丁目",
+      "jp": "東駒形四丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "東墨田",
+      "townEn": "Higashisumida",
+      "kana": "ヒガシスミダ",
+      "chome": null,
+      "detail": null,
+      "en": "東墨田",
+      "jp": "東墨田",
+      "pattern": "6"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島一丁目",
+      "en": "東向島一丁目",
+      "jp": "東向島一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島二丁目",
+      "en": "東向島二丁目",
+      "jp": "東向島二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島三丁目",
+      "en": "東向島三丁目",
+      "jp": "東向島三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島四丁目",
+      "en": "東向島四丁目",
+      "jp": "東向島四丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島五丁目",
+      "en": "東向島五丁目",
+      "jp": "東向島五丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "東向島",
+      "townEn": "Higashimukojima",
+      "kana": "ヒガシムコウジマ",
+      "chome": null,
+      "detail": "東向島六丁目",
+      "en": "東向島六丁目",
+      "jp": "東向島六丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "文花",
+      "townEn": "Bunka",
+      "kana": "ブンカ",
+      "chome": null,
+      "detail": "文花一丁目",
+      "en": "文花一丁目",
+      "jp": "文花一丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "文花",
+      "townEn": "Bunka",
+      "kana": "ブンカ",
+      "chome": null,
+      "detail": "文花二丁目",
+      "en": "文花二丁目",
+      "jp": "文花二丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "文花",
+      "townEn": "Bunka",
+      "kana": "ブンカ",
+      "chome": null,
+      "detail": "文花三丁目",
+      "en": "文花三丁目",
+      "jp": "文花三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "本所",
+      "townEn": "Honjo",
+      "kana": "ホンジョ",
+      "chome": null,
+      "detail": "本所一丁目",
+      "en": "本所一丁目",
+      "jp": "本所一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "本所",
+      "townEn": "Honjo",
+      "kana": "ホンジョ",
+      "chome": null,
+      "detail": "本所二丁目",
+      "en": "本所二丁目",
+      "jp": "本所二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "本所",
+      "townEn": "Honjo",
+      "kana": "ホンジョ",
+      "chome": null,
+      "detail": "本所三丁目",
+      "en": "本所三丁目",
+      "jp": "本所三丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "本所",
+      "townEn": "Honjo",
+      "kana": "ホンジョ",
+      "chome": null,
+      "detail": "本所四丁目",
+      "en": "本所四丁目",
+      "jp": "本所四丁目",
+      "pattern": "3"
+    },
+    {
+      "town": "緑",
+      "townEn": "Midori",
+      "kana": "ミドリ",
+      "chome": null,
+      "detail": null,
+      "en": "緑",
+      "jp": "緑",
+      "pattern": "2"
+    },
+    {
+      "town": "向島",
+      "townEn": "Mukojima",
+      "kana": "ムコウジマ",
+      "chome": null,
+      "detail": "向島一丁目",
+      "en": "向島一丁目",
+      "jp": "向島一丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "向島",
+      "townEn": "Mukojima",
+      "kana": "ムコウジマ",
+      "chome": null,
+      "detail": "向島二丁目",
+      "en": "向島二丁目",
+      "jp": "向島二丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "向島",
+      "townEn": "Mukojima",
+      "kana": "ムコウジマ",
+      "chome": null,
+      "detail": "向島三丁目",
+      "en": "向島三丁目",
+      "jp": "向島三丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "向島",
+      "townEn": "Mukojima",
+      "kana": "ムコウジマ",
+      "chome": null,
+      "detail": "向島四丁目",
+      "en": "向島四丁目",
+      "jp": "向島四丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "向島",
+      "townEn": "Mukojima",
+      "kana": "ムコウジマ",
+      "chome": null,
+      "detail": "向島五丁目",
+      "en": "向島五丁目",
+      "jp": "向島五丁目",
+      "pattern": "1"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広一丁目",
+      "en": "八広一丁目",
+      "jp": "八広一丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広二丁目",
+      "en": "八広二丁目",
+      "jp": "八広二丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広三丁目",
+      "en": "八広三丁目",
+      "jp": "八広三丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広四丁目",
+      "en": "八広四丁目",
+      "jp": "八広四丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広五丁目",
+      "en": "八広五丁目",
+      "jp": "八広五丁目",
+      "pattern": "6"
+    },
+    {
+      "town": "八広",
+      "townEn": "Yahiro",
+      "kana": "ヤヒロ",
+      "chome": null,
+      "detail": "八広六丁目",
+      "en": "八広六丁目",
+      "jp": "八広六丁目",
+      "pattern": "5"
+    },
+    {
+      "town": "横網",
+      "townEn": "Yokoami",
+      "kana": "ヨコアミ",
+      "chome": null,
+      "detail": null,
+      "en": "横網",
+      "jp": "横網",
+      "pattern": "2"
+    },
+    {
+      "town": "横川",
+      "townEn": "Yokokawa",
+      "kana": "ヨコカワ",
+      "chome": null,
+      "detail": null,
+      "en": "横川",
+      "jp": "横川",
+      "pattern": "4"
+    },
+    {
+      "town": "両国",
+      "townEn": "Ryogoku",
+      "kana": "リョウゴク",
+      "chome": null,
+      "detail": null,
+      "en": "両国",
+      "jp": "両国",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Tokyo Metropolitan Government Open Data Catalog",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/sumida_info/opendata/opendata_ichiran/gomirecycle_data/bunbetu_data.files/bunbetu_20250301.csv",
+      "license": "CC BY 4.0",
+      "commit": "open-data"
+    }
+  },
+  "updated": "2026-11-04"
+}

@@ -1,0 +1,333 @@
+{
+  "id": "kunitachi-13215",
+  "code": "13215",
+  "pref": "13",
+  "jp": "国立市",
+  "en": "Kunitachi",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.kunitachi.tokyo.jp/",
+    "https://api3rd.smart-lgov.jp/v1/trash/get_general_purpose_data_list.json"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "hygiene": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ティッシュペーパー」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「枝」 under 「可燃ごみとしても出せます」.",
+      "auto": true
+    },
+    "leather-rubber": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「ゴム手袋」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "paper-misc": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「お菓子の箱（かん）」 under 「革の衣類」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「危険物」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「アルミホイル」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「カミソリ」 under 「危険物」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「CD」 under 「不燃ごみ」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「モバイルバッテリー」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「カセットボンベ」 under 「危険物」.",
+      "auto": true
+    },
+    "appliance-law": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「エアコン」 under 「市では収集不可」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「市では収集不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's SMART CMS trash search API. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            2,
+            1
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "hazardous": {
+          "day": 2,
+          "weeks": [
+            2,
+            1
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4,
+            1
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            1
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "hazardous": {
+          "day": 1,
+          "weeks": [
+            2,
+            1
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "エー(A)地区(東・中・谷保・泉・青柳・石田・矢川)",
+      "townEn": "E",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "エー(A)地区(東・中・谷保・泉・青柳・石田・矢川)",
+      "jp": "エー(A)地区(東・中・谷保・泉・青柳・石田・矢川)",
+      "pattern": "1"
+    },
+    {
+      "town": "ビー(B)地区(富士見台・西・北)",
+      "townEn": "Bi",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "ビー(B)地区(富士見台・西・北)",
+      "jp": "ビー(B)地区(富士見台・西・北)",
+      "pattern": "2"
+    },
+    {
+      "town": "青柳",
+      "townEn": "Aoyagi",
+      "kana": "アオヤギ",
+      "chome": null,
+      "detail": null,
+      "en": "青柳",
+      "jp": "青柳",
+      "pattern": "1"
+    },
+    {
+      "town": "石田",
+      "townEn": "Ishida",
+      "kana": "イシダ",
+      "chome": null,
+      "detail": null,
+      "en": "石田",
+      "jp": "石田",
+      "pattern": "1"
+    },
+    {
+      "town": "泉",
+      "townEn": "Izumi",
+      "kana": "イズミ",
+      "chome": null,
+      "detail": null,
+      "en": "泉",
+      "jp": "泉",
+      "pattern": "1"
+    },
+    {
+      "town": "北",
+      "townEn": "Kita",
+      "kana": "キタ",
+      "chome": null,
+      "detail": null,
+      "en": "北",
+      "jp": "北",
+      "pattern": "2"
+    },
+    {
+      "town": "中",
+      "townEn": "Naka",
+      "kana": "ナカ",
+      "chome": null,
+      "detail": null,
+      "en": "中",
+      "jp": "中",
+      "pattern": "1"
+    },
+    {
+      "town": "西",
+      "townEn": "Nishi",
+      "kana": "ニシ",
+      "chome": null,
+      "detail": null,
+      "en": "西",
+      "jp": "西",
+      "pattern": "2"
+    },
+    {
+      "town": "東",
+      "townEn": "Higashi",
+      "kana": "ヒガシ",
+      "chome": null,
+      "detail": null,
+      "en": "東",
+      "jp": "東",
+      "pattern": "1"
+    },
+    {
+      "town": "富士見台",
+      "townEn": "Fujimidai",
+      "kana": "フジミダイ",
+      "chome": null,
+      "detail": null,
+      "en": "富士見台",
+      "jp": "富士見台",
+      "pattern": "2"
+    },
+    {
+      "town": "矢川",
+      "townEn": "Yagawa",
+      "kana": "ヤガワ",
+      "chome": null,
+      "detail": null,
+      "en": "矢川",
+      "jp": "矢川",
+      "pattern": "1"
+    },
+    {
+      "town": "谷保",
+      "townEn": "Yaho",
+      "kana": "ヤホ",
+      "chome": null,
+      "detail": null,
+      "en": "谷保",
+      "jp": "谷保",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official municipal website (crawl + extract)",
+      "url": "https://www.city.kunitachi.tokyo.jp/",
+      "license": "Municipality website (collection facts via city CMS API)"
+    }
+  },
+  "updated": "2026-11-04"
+}

@@ -1,0 +1,363 @@
+{
+  "id": "okutama-13308",
+  "code": "13308",
+  "pref": "13",
+  "jp": "奥多摩町",
+  "en": "Okutama",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.town.okutama.tokyo.jp/",
+    "https://api3rd.smart-lgov.jp/v1/trash/get_general_purpose_data_list.json"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's SMART CMS trash search API. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": [
+          2
+        ],
+        "res": [
+          2
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "paper": [
+          1
+        ],
+        "res": [
+          1
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": [
+          5
+        ],
+        "res": [
+          5
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": [
+          4
+        ],
+        "res": [
+          4
+        ],
+        "hazardous": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "小河内",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小河内",
+      "jp": "小河内",
+      "pattern": "3"
+    },
+    {
+      "town": "常磐",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常磐",
+      "jp": "常磐",
+      "pattern": "3"
+    },
+    {
+      "town": "大沢",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大沢",
+      "jp": "大沢",
+      "pattern": "1"
+    },
+    {
+      "town": "大氷川",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大氷川",
+      "jp": "大氷川",
+      "pattern": "1"
+    },
+    {
+      "town": "中山",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中山",
+      "jp": "中山",
+      "pattern": "3"
+    },
+    {
+      "town": "長畑",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長畑",
+      "jp": "長畑",
+      "pattern": "1"
+    },
+    {
+      "town": "栃久保",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "栃久保",
+      "jp": "栃久保",
+      "pattern": "3"
+    },
+    {
+      "town": "南氷川",
+      "townEn": "Okutama",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南氷川",
+      "jp": "南氷川",
+      "pattern": "3"
+    },
+    {
+      "town": "海澤",
+      "townEn": "Unazawa",
+      "kana": "ウナザワ",
+      "chome": null,
+      "detail": null,
+      "en": "海澤",
+      "jp": "海澤",
+      "pattern": "1"
+    },
+    {
+      "town": "梅澤",
+      "townEn": "Umezawa",
+      "kana": "ウメザワ",
+      "chome": null,
+      "detail": null,
+      "en": "梅澤",
+      "jp": "梅澤",
+      "pattern": "2"
+    },
+    {
+      "town": "大丹波",
+      "townEn": "Otaba",
+      "kana": "オオタバ",
+      "chome": null,
+      "detail": null,
+      "en": "大丹波",
+      "jp": "大丹波",
+      "pattern": "2"
+    },
+    {
+      "town": "川井",
+      "townEn": "Kawai",
+      "kana": "カワイ",
+      "chome": null,
+      "detail": null,
+      "en": "川井",
+      "jp": "川井",
+      "pattern": "2"
+    },
+    {
+      "town": "小丹波",
+      "townEn": "Kotaba",
+      "kana": "コタバ",
+      "chome": null,
+      "detail": null,
+      "en": "小丹波",
+      "jp": "小丹波",
+      "pattern": "4"
+    },
+    {
+      "town": "境",
+      "townEn": "Sakai",
+      "kana": "サカイ",
+      "chome": null,
+      "detail": null,
+      "en": "境",
+      "jp": "境",
+      "pattern": "3"
+    },
+    {
+      "town": "白丸",
+      "townEn": "Shiromaru",
+      "kana": "シロマル",
+      "chome": null,
+      "detail": null,
+      "en": "白丸",
+      "jp": "白丸",
+      "pattern": "1"
+    },
+    {
+      "town": "棚澤",
+      "townEn": "Tanazawa",
+      "kana": "タナザワ",
+      "chome": null,
+      "detail": null,
+      "en": "棚澤",
+      "jp": "棚澤",
+      "pattern": "4"
+    },
+    {
+      "town": "丹三郎",
+      "townEn": "Tanzaburo",
+      "kana": "タンザブロウ",
+      "chome": null,
+      "detail": null,
+      "en": "丹三郎",
+      "jp": "丹三郎",
+      "pattern": "2"
+    },
+    {
+      "town": "日原",
+      "townEn": "Nippara",
+      "kana": "ニッパラ",
+      "chome": null,
+      "detail": null,
+      "en": "日原",
+      "jp": "日原",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official municipal website (crawl + extract)",
+      "url": "https://www.town.okutama.tokyo.jp/",
+      "license": "Municipality website (collection facts via city CMS API)"
+    }
+  },
+  "updated": "2026-11-04"
+}

@@ -1,0 +1,1083 @@
+{
+  "id": "suzaka-20207",
+  "code": "20207",
+  "pref": "20",
+  "jp": "須坂市",
+  "en": "Suzaka",
+  "verified": "2026-11-04",
+  "sources": [
+    "http://suzaka.5374.jp/data/area_days.csv",
+    "http://suzaka.5374.jp/data/area_days.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "pet_bottle": {
+      "label": "ペットボトル",
+      "en": "PET bottles",
+      "kind": "res"
+    },
+    "beverage_can": {
+      "label": "空き缶",
+      "en": "Cans",
+      "kind": "res"
+    },
+    "glass_bottle": {
+      "label": "空きびん",
+      "en": "Glass bottles",
+      "kind": "res"
+    },
+    "paper": {
+      "label": "紙・古紙",
+      "en": "Paper",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「残飯」 under 「可燃」.",
+      "auto": true
+    },
+    "wood": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「枝」 under 「可燃」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃」.",
+      "auto": true
+    },
+    "paper-dirty": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「写真」 under 「可燃」.",
+      "auto": true
+    },
+    "cardboard": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ダンボール」 under 「資源」.",
+      "auto": true
+    },
+    "carton": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「牛乳パック」 under 「資源」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「不燃」.",
+      "auto": true
+    },
+    "metal": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「傘」 under 「可燃」.",
+      "auto": true
+    },
+    "blade": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「包丁」 under 「不燃」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「不燃」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「不燃」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ライター」 under 「不燃」.",
+      "auto": true
+    },
+    "fluorescent": {
+      "bin": "oversized",
+      "note": "Auto-matched: the official list puts 「蛍光管」 under 「粗大」.",
+      "auto": true
+    },
+    "appliance-small": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「ドライヤー」 under 「不燃」.",
+      "auto": true
+    },
+    "oil": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「てんぷら油（資源）」 under 「可燃」.",
+      "auto": true
+    },
+    "oversized": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「布団」 under 「可燃」.",
+      "auto": true
+    },
+    "not-collected": {
+      "bin": "no",
+      "note": "Auto-matched: the official list puts 「消火器」 under 「処理不可」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from 5374-style area_days.csv. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          5
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 3,
+          "weeks": [
+            2
+          ]
+        },
+        "glass_bottle": {
+          "day": 3,
+          "weeks": [
+            1
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            3
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            1
+          ]
+        },
+        "plastic": [
+          4
+        ],
+        "pet_bottle": {
+          "day": 1,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 1,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 1,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "3": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "plastic": [
+          1
+        ],
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            1
+          ]
+        },
+        "paper": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        }
+      },
+      "4": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 5,
+          "weeks": [
+            3
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 5,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 5,
+          "weeks": [
+            4
+          ]
+        },
+        "paper": {
+          "day": 5,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "5": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        },
+        "plastic": [
+          5
+        ],
+        "pet_bottle": {
+          "day": 2,
+          "weeks": [
+            1
+          ]
+        },
+        "glass_bottle": {
+          "day": 2,
+          "weeks": [
+            3
+          ]
+        },
+        "paper": {
+          "day": 2,
+          "weeks": [
+            2
+          ]
+        }
+      },
+      "6": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 4,
+          "weeks": [
+            4
+          ]
+        },
+        "plastic": [
+          2
+        ],
+        "pet_bottle": {
+          "day": 4,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "glass_bottle": {
+          "day": 4,
+          "weeks": [
+            2
+          ]
+        },
+        "paper": {
+          "day": 3,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "旭ヶ丘町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "旭ヶ丘町",
+      "jp": "旭ヶ丘町",
+      "pattern": "2"
+    },
+    {
+      "town": "井上町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "井上町",
+      "jp": "井上町",
+      "pattern": "3"
+    },
+    {
+      "town": "塩川町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩川町",
+      "jp": "塩川町",
+      "pattern": "4"
+    },
+    {
+      "town": "塩野町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩野町",
+      "jp": "塩野町",
+      "pattern": "5"
+    },
+    {
+      "town": "横町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "横町",
+      "jp": "横町",
+      "pattern": "5"
+    },
+    {
+      "town": "屋部町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "屋部町",
+      "jp": "屋部町",
+      "pattern": "2"
+    },
+    {
+      "town": "下八町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下八町",
+      "jp": "下八町",
+      "pattern": "3"
+    },
+    {
+      "town": "夏端町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "夏端町",
+      "jp": "夏端町",
+      "pattern": "3"
+    },
+    {
+      "town": "亀倉町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "亀倉町",
+      "jp": "亀倉町",
+      "pattern": "3"
+    },
+    {
+      "town": "境沢町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "境沢町",
+      "jp": "境沢町",
+      "pattern": "2"
+    },
+    {
+      "town": "九反田町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "九反田町",
+      "jp": "九反田町",
+      "pattern": "3"
+    },
+    {
+      "town": "五閑町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "五閑町",
+      "jp": "五閑町",
+      "pattern": "4"
+    },
+    {
+      "town": "光ヶ丘ニュータウン",
+      "townEn": "Nyutaun",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "光ヶ丘ニュータウン",
+      "jp": "光ヶ丘ニュータウン",
+      "pattern": "2"
+    },
+    {
+      "town": "幸高町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "幸高町",
+      "jp": "幸高町",
+      "pattern": "3"
+    },
+    {
+      "town": "高橋町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高橋町",
+      "jp": "高橋町",
+      "pattern": "4"
+    },
+    {
+      "town": "高畑町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高畑町",
+      "jp": "高畑町",
+      "pattern": "2"
+    },
+    {
+      "town": "高梨町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高梨町",
+      "jp": "高梨町",
+      "pattern": "4"
+    },
+    {
+      "town": "穀町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "穀町",
+      "jp": "穀町",
+      "pattern": "5"
+    },
+    {
+      "town": "坂田町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "坂田町",
+      "jp": "坂田町",
+      "pattern": "2"
+    },
+    {
+      "town": "春木町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "春木町",
+      "jp": "春木町",
+      "pattern": "4"
+    },
+    {
+      "town": "小河原町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小河原町",
+      "jp": "小河原町",
+      "pattern": "2"
+    },
+    {
+      "town": "小山町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小山町",
+      "jp": "小山町",
+      "pattern": "4"
+    },
+    {
+      "town": "小島町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "小島町",
+      "jp": "小島町",
+      "pattern": "2"
+    },
+    {
+      "town": "松川町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "松川町",
+      "jp": "松川町",
+      "pattern": "2"
+    },
+    {
+      "town": "沼目町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "沼目町",
+      "jp": "沼目町",
+      "pattern": "5"
+    },
+    {
+      "town": "上中町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上中町",
+      "jp": "上中町",
+      "pattern": "5"
+    },
+    {
+      "town": "上町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町",
+      "jp": "上町",
+      "pattern": "5"
+    },
+    {
+      "town": "上八町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上八町",
+      "jp": "上八町",
+      "pattern": "3"
+    },
+    {
+      "town": "常盤町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "常盤町",
+      "jp": "常盤町",
+      "pattern": "4"
+    },
+    {
+      "town": "新町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町",
+      "jp": "新町",
+      "pattern": "4"
+    },
+    {
+      "town": "新田町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新田町",
+      "jp": "新田町",
+      "pattern": "1"
+    },
+    {
+      "town": "仁礼町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仁礼町",
+      "jp": "仁礼町",
+      "pattern": "4"
+    },
+    {
+      "town": "須坂ハイランド町",
+      "townEn": "Hairando",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "須坂ハイランド町",
+      "jp": "須坂ハイランド町",
+      "pattern": "5"
+    },
+    {
+      "town": "西町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西町",
+      "jp": "西町",
+      "pattern": "5"
+    },
+    {
+      "town": "相森町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "相森町",
+      "jp": "相森町",
+      "pattern": "3"
+    },
+    {
+      "town": "相之島町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "相之島町",
+      "jp": "相之島町",
+      "pattern": "1"
+    },
+    {
+      "town": "村山町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村山町",
+      "jp": "村山町",
+      "pattern": "4"
+    },
+    {
+      "town": "村石町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "村石町",
+      "jp": "村石町",
+      "pattern": "3"
+    },
+    {
+      "town": "太子町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太子町",
+      "jp": "太子町",
+      "pattern": "4"
+    },
+    {
+      "town": "大谷町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大谷町",
+      "jp": "大谷町",
+      "pattern": "4"
+    },
+    {
+      "town": "大日向町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "大日向町",
+      "jp": "大日向町",
+      "pattern": "5"
+    },
+    {
+      "town": "中町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中町",
+      "jp": "中町",
+      "pattern": "4"
+    },
+    {
+      "town": "中島町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中島町",
+      "jp": "中島町",
+      "pattern": "3"
+    },
+    {
+      "town": "東横町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東横町",
+      "jp": "東横町",
+      "pattern": "5"
+    },
+    {
+      "town": "南横町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南横町",
+      "jp": "南横町",
+      "pattern": "5"
+    },
+    {
+      "town": "南原町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南原町",
+      "jp": "南原町",
+      "pattern": "2"
+    },
+    {
+      "town": "南小河原町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南小河原町",
+      "jp": "南小河原町",
+      "pattern": "3"
+    },
+    {
+      "town": "二睦町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "二睦町",
+      "jp": "二睦町",
+      "pattern": "3"
+    },
+    {
+      "town": "馬場町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "馬場町",
+      "jp": "馬場町",
+      "pattern": "5"
+    },
+    {
+      "town": "八重森町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八重森町",
+      "jp": "八重森町",
+      "pattern": "4"
+    },
+    {
+      "town": "八幡町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "八幡町",
+      "jp": "八幡町",
+      "pattern": "3"
+    },
+    {
+      "town": "福島町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "福島町",
+      "jp": "福島町",
+      "pattern": "3"
+    },
+    {
+      "town": "米子町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米子町",
+      "jp": "米子町",
+      "pattern": "3"
+    },
+    {
+      "town": "米持町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "米持町",
+      "jp": "米持町",
+      "pattern": "3"
+    },
+    {
+      "town": "峰の原高原",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "峰の原高原",
+      "jp": "峰の原高原",
+      "pattern": "6"
+    },
+    {
+      "town": "豊丘上町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊丘上町",
+      "jp": "豊丘上町",
+      "pattern": "5"
+    },
+    {
+      "town": "豊丘町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "豊丘町",
+      "jp": "豊丘町",
+      "pattern": "5"
+    },
+    {
+      "town": "北旭ヶ丘町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北旭ヶ丘町",
+      "jp": "北旭ヶ丘町",
+      "pattern": "2"
+    },
+    {
+      "town": "北横町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北横町",
+      "jp": "北横町",
+      "pattern": "5"
+    },
+    {
+      "town": "北原町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北原町",
+      "jp": "北原町",
+      "pattern": "5"
+    },
+    {
+      "town": "本郷町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本郷町",
+      "jp": "本郷町",
+      "pattern": "5"
+    },
+    {
+      "town": "本上町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本上町",
+      "jp": "本上町",
+      "pattern": "5"
+    },
+    {
+      "town": "野辺町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "野辺町",
+      "jp": "野辺町",
+      "pattern": "3"
+    },
+    {
+      "town": "立町",
+      "townEn": "Suzaka",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "立町",
+      "jp": "立町",
+      "pattern": "5"
+    },
+    {
+      "town": "北相之島",
+      "townEn": "Kitaainoshimacho",
+      "kana": "キタアイノシマ",
+      "chome": null,
+      "detail": "北相之島町",
+      "en": "北相之島町",
+      "jp": "北相之島町",
+      "pattern": "5"
+    },
+    {
+      "town": "田の神",
+      "townEn": "Tanokamimachi",
+      "kana": "タノガミ",
+      "chome": null,
+      "detail": "田の神町",
+      "en": "田の神町",
+      "jp": "田の神町",
+      "pattern": "2"
+    },
+    {
+      "town": "豊島",
+      "townEn": "Toyoshimamachi",
+      "kana": "トヨシマ",
+      "chome": null,
+      "detail": "豊島町",
+      "en": "豊島町",
+      "jp": "豊島町",
+      "pattern": "2"
+    },
+    {
+      "town": "望岳台",
+      "townEn": "Bogakudai",
+      "kana": "ボウガクダイ",
+      "chome": null,
+      "detail": null,
+      "en": "望岳台",
+      "jp": "望岳台",
+      "pattern": "5"
+    },
+    {
+      "town": "明徳",
+      "townEn": "Myotokumachi",
+      "kana": "ミョウトク",
+      "chome": null,
+      "detail": "明徳町",
+      "en": "明徳町",
+      "jp": "明徳町",
+      "pattern": "3"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "5374.jp area_days.csv",
+      "url": "http://suzaka.5374.jp/data/area_days.csv",
+      "license": "Municipality open data (5374 format)"
+    }
+  },
+  "updated": "2026-11-04",
+  "skippedRows": 0
+}

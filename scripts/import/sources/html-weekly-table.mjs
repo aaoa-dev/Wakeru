@@ -121,6 +121,16 @@ export function buildFromDistricts(spec, districts, extractedAt){
   };
 }
 
+/** Try parsing an official HTML weekday table without downloading. */
+export function probeHtmlWeeklyTable(html, columnDefs, {validFrom = "2026-04-01", validTo = "2027-03-31", minDistricts = 3} = {}){
+  try {
+    const districts = parseRows(html, columnDefs, validFrom, validTo, minDistricts);
+    return {ok:true, areas:districts.length};
+  } catch(err) {
+    return {ok:false, reason:err.message};
+  }
+}
+
 /** @param {object} spec — see seeds/html-weekly.mjs */
 export async function convertHtmlWeekly(spec, extractedAt){
   const validFrom = spec.validFrom ?? "2026-04-01";

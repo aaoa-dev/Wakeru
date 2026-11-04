@@ -15,7 +15,7 @@ const reducedMotion = () => matchMedia("(prefers-reduced-motion: reduce)").match
 const NUM = {一:1, 二:2, 三:3, 四:4, 五:5, 六:6, 七:7, 八:8, 九:9};
 const kanjiNumber = s => { const [a, b] = s.split("十"); return s.includes("十") ? (NUM[a] ?? 1) * 10 + (NUM[b] ?? 0) : NUM[s] };
 
-let JAPAN, PREFS = {}, view, anim;
+let JAPAN, PREFS = {}, view, anim, mapExtent;
 const mapFile = code => PREFS[code] ??= fetch(`data/map/${code}.json`).then(r => { if(!r.ok) throw new Error(`map ${code}: HTTP ${r.status}`); return r.json() })
   .catch(err => { delete PREFS[code]; throw err });
 
@@ -42,6 +42,27 @@ function zoomTo(box, ms = 750){
     anim = requestAnimationFrame(frame);
   });
 }
+function setView(next){
+  cancelAnimationFrame(anim);
+  view = next;
+  $("#obMap").setAttribute("viewBox", view.join(" "));
+  sizePin();
+}
+function unionBoxes(boxes){
+  const x0 = Math.min(...boxes.map(b => b[0])), y0 = Math.min(...boxes.map(b => b[1]));
+  const x1 = Math.max(...boxes.map(b => b[0] + b[2])), y1 = Math.max(...boxes.map(b => b[1] + b[3]));
+  return [x0, y0, x1 - x0, y1 - y0];
+}
+function zoomAt(clientX, clientY, factor){
+  if(!view) return;
+  const svg = $("#obMap"), rect = svg.getBoundingClientRect();
+  const x = view[0] + (clientX - rect.left) / Math.max(rect.width, 1) * view[2];
+  const y = view[1] + (clientY - rect.top) / Math.max(rect.height, 1) * view[3];
+  const minWidth = Math.max(24, JAPAN.view[2] / 640), maxWidth = JAPAN.view[2] * 3;
+  const width = Math.max(minWidth, Math.min(view[2] * factor, maxWidth));
+  const scale = width / view[2];
+  setView([x - (x - view[0]) * scale, y - (y - view[1]) * scale, width, view[3] * scale]);
+}
 const pause = ms => new Promise(r => setTimeout(r, reducedMotion() ? 0 : ms));
 function sizePin(){
   const pin = $("#obPin circle:not(.halo)"); if(!pin) return;
@@ -55,6 +76,12 @@ function setPin(lon, lat){
   sizePin();
 }
 const mark = (sel, attr, value) => document.querySelectorAll(sel).forEach(p => p.classList.toggle("active", p.dataset[attr] === value));
+function setMapLevel(level){
+  const municipal = level === "municipality", map = $("#obMap");
+  map.dataset.level = level;
+  map.setAttribute("aria-label", municipal ? "Map showing municipality boundaries" : "Map of Japan showing prefecture boundaries");
+  $("#obMapLevel").textContent = municipal ? "Municipality boundaries" : "Prefecture boundaries";
+}
 
 let mapTipKey = "", obState = null;
 
@@ -143,6 +170,8 @@ export function runOnboarding({cities, loadCity, describe, current}){
   /* Japan */
   async function showJapan(){
     S.step = "japan"; S.pref = S.muni = null; S.munisList = null;
+    mapExtent = JAPAN.view;
+    setMapLevel("prefecture");
     $("#obMunis").innerHTML = ""; $("#obPin").innerHTML = "";
     document.querySelectorAll("#obPrefs path").forEach(p => p.classList.remove("active", "context"));
     paintPrefCoverage();
@@ -168,6 +197,8 @@ export function runOnboarding({cities, loadCity, describe, current}){
     const pref = JAPAN.prefs.find(p => p.code === code);
     const {munis} = await mapFile(code);
     S.step = "pref"; S.pref = pref; S.muni = null; S.munisList = munis;
+    mapExtent = unionBoxes([pref.box, ...munis.map(m => m.box)]);
+    setMapLevel("municipality");
     document.querySelectorAll("#obPrefs path").forEach(p => { p.classList.toggle("context", p.dataset.pref !== code); p.classList.remove("active") });
     $("#obMunis").innerHTML = munis.map(m => `<path d="${m.d}" data-code="${m.code}" data-tip-en="${esc(m.en)}" data-tip-jp="${esc(m.jp)}" class="${covered.has(m.code) ? "on" : "off"}"></path>`).join("");
     const render = q => {
@@ -289,15 +320,60 @@ export function runOnboarding({cities, loadCity, describe, current}){
   }
 
   /* events: map taps and panel buttons */
+  const pan = {id:null, x:0, y:0, moved:false};
+  let suppressMapClick = false;
+  const stopPan = e => {
+    if(pan.id !== e.pointerId) return;
+    if(pan.moved) suppressMapClick = true;
+    pan.id = null;
+    $(".ob-map").classList.remove("is-panning");
+  };
+  const onMapDown = e => {
+    if(e.button !== 0 || pan.id !== null) return;
+    cancelAnimationFrame(anim);
+    suppressMapClick = false;
+    pan.id = e.pointerId; pan.x = e.clientX; pan.y = e.clientY; pan.moved = false;
+    $(".ob-map").classList.add("is-panning");
+    hideMapTip();
+  };
   const onMap = e => {
+    if(suppressMapClick){ suppressMapClick = false; e.preventDefault(); return }
     const p = e.target.closest("path"); if(!p) return;
     if(p.dataset.pref && (S.step === "japan" || p.classList.contains("context"))) return showPref(p.dataset.pref).catch(fail);
     if(p.dataset.code) chooseMuni(p.dataset.code).catch(fail);
   };
   const onMapOver = e => showMapTip(mapTipPayload(e.target), e.clientX, e.clientY);
   const onMapMove = e => {
+    if(pan.id === e.pointerId){
+      const svg = $("#obMap"), rect = svg.getBoundingClientRect();
+      const dx = e.clientX - pan.x, dy = e.clientY - pan.y;
+      if(!pan.moved && Math.abs(dx) + Math.abs(dy) > 3){
+        pan.moved = true;
+        svg.setPointerCapture(e.pointerId);
+      }
+      if(pan.moved){
+        setView([view[0] - dx * view[2] / Math.max(rect.width, 1), view[1] - dy * view[3] / Math.max(rect.height, 1), view[2], view[3]]);
+        pan.x = e.clientX; pan.y = e.clientY;
+      }
+      hideMapTip();
+      e.preventDefault();
+      return;
+    }
     const payload = mapTipPayload(e.target);
     if(payload) showMapTip(payload, e.clientX, e.clientY); else hideMapTip();
+  };
+  const onMapWheel = e => {
+    e.preventDefault();
+    const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? $("#obMap").clientHeight : 1;
+    const factor = Math.max(.5, Math.min(2, Math.exp(e.deltaY * unit * .0015)));
+    zoomAt(e.clientX, e.clientY, factor);
+    hideMapTip();
+  };
+  const onMapControl = e => {
+    const action = e.target.closest("button")?.dataset.mapAction; if(!action) return;
+    if(action === "fit") return zoomTo(mapExtent ?? JAPAN.view, 500);
+    const rect = $("#obMap").getBoundingClientRect();
+    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, action === "in" ? .67 : 1.5);
   };
   const onMapLeave = () => hideMapTip();
   const onPanel = e => {
@@ -317,11 +393,15 @@ export function runOnboarding({cities, loadCity, describe, current}){
   const fail = err => message(`Something went wrong (${err.message}). Please try again.`);
   function close(result){
     $("#obMap").removeEventListener("click", onMap);
+    $("#obMap").removeEventListener("pointerdown", onMapDown); $("#obMap").removeEventListener("pointerup", stopPan);
+    $("#obMap").removeEventListener("pointercancel", stopPan); $("#obMap").removeEventListener("wheel", onMapWheel);
     $("#obMap").removeEventListener("pointerover", onMapOver); $("#obMap").removeEventListener("pointermove", onMapMove);
     $("#obMap").removeEventListener("pointerleave", onMapLeave);
+    $(".ob-map-controls").removeEventListener("click", onMapControl);
     $("#obBody").removeEventListener("click", onPanel);
     $("#obBack").removeEventListener("click", onBack); $("#obClose").removeEventListener("click", onClose);
     removeEventListener("resize", onResize);
+    cancelAnimationFrame(anim); $(".ob-map").classList.remove("is-panning");
     hideMapTip(); obState = null;
     $("#onboard").hidden = true; document.body.classList.remove("ob-open");
     finish(result);
@@ -336,8 +416,11 @@ export function runOnboarding({cities, loadCity, describe, current}){
       $("#obPrefs").innerHTML = JAPAN.prefs.map(p => `<path d="${p.d}" data-pref="${p.code}" data-tip-en="${esc(p.en)}" data-tip-jp="${esc(p.jp)}" class="${coveredPrefs.has(normPref(p.code)) ? "on" : "off"}"></path>`).join("");
       paintPrefCoverage();
       $("#obMap").addEventListener("click", onMap);
+      $("#obMap").addEventListener("pointerdown", onMapDown); $("#obMap").addEventListener("pointerup", stopPan);
+      $("#obMap").addEventListener("pointercancel", stopPan); $("#obMap").addEventListener("wheel", onMapWheel, {passive:false});
       $("#obMap").addEventListener("pointerover", onMapOver); $("#obMap").addEventListener("pointermove", onMapMove);
       $("#obMap").addEventListener("pointerleave", onMapLeave);
+      $(".ob-map-controls").addEventListener("click", onMapControl);
       $("#obBody").addEventListener("click", onPanel);
       $("#obBack").addEventListener("click", onBack); $("#obClose").addEventListener("click", onClose);
       addEventListener("resize", onResize);

@@ -123,6 +123,12 @@
 <div class="onboard" id="onboard" role="dialog" aria-modal="true" aria-labelledby="obTitle" hidden>
   <div class="ob-map">
     <svg id="obMap" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Japan"><g id="obPrefs"></g><g id="obMunis"></g><g id="obWards"></g><g id="obPin"></g></svg>
+    <div class="ob-map-level" aria-hidden="true"><span id="obMapLevel">Prefecture boundaries</span><small>Drag to move · scroll to zoom</small></div>
+    <div class="ob-map-controls" role="group" aria-label="Map controls">
+      <button type="button" data-map-action="in" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+      <button type="button" data-map-action="out" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+      <button type="button" data-map-action="fit" aria-label="Show the whole selected area" title="Show the whole selected area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></svg></button>
+    </div>
     <div id="obMapTip" class="ob-map-tip" hidden></div>
     <p class="ob-credit">出典：国土数値情報（行政区域データ）（国土交通省）を加工して作成</p>
   </div>

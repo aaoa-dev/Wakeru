@@ -128,6 +128,30 @@ const DEFAULT_BINS = {
   no:{label:"収集しないもの", en:"Not collected", kind:"no"},
 };
 
+/** Quick check whether a CSV body looks like 5374 area×weekday schedule data (no download). */
+export function probe5374Buffer(buf, {validFrom = "2026-04-01", validTo = "2027-03-31"} = {}){
+  const rows = decodeCsv(buf);
+  if(!rows.length) return {ok:false, reason:"empty"};
+  const headers = Object.keys(rows[0]);
+  const colsByBin = columnsByBin(headers);
+  if(!Object.keys(colsByBin).length) return {ok:false, reason:"no bin columns", headers:headers.slice(0, 12)};
+  let areas = 0, skipped = 0;
+  for(const row of rows){
+    const district = districtLabel(row, headers);
+    if(!district || /^#/.test(district) || /^(地名|name|地区名)$/i.test(district)) continue;
+    const schedule = {};
+    for(const [bin, cols] of Object.entries(colsByBin)){
+      const rules = cols.map(col => parse5374Cell(row[col], validFrom, validTo)).filter(Boolean);
+      if(rules.length === 1) schedule[bin] = rules[0];
+      else if(rules.length > 1) schedule[bin] = {any:rules};
+    }
+    if(!Object.keys(schedule).length){ skipped++; continue }
+    areas++;
+  }
+  if(!areas) return {ok:false, reason:`no parseable rows (${skipped} skipped)`, headers:headers.slice(0, 12)};
+  return {ok:true, areas, skipped, bins:Object.keys(colsByBin)};
+}
+
 /** @param {{id:string, code:string, pref:string, jp:string, en:string, url:string, cacheKey?:string, validFrom?:string, validTo?:string, source?:object}} spec */
 export async function convert5374(spec, extractedAt){
   const cacheKey = spec.cacheKey ?? spec.id;

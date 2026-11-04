@@ -1,0 +1,1037 @@
+{
+  "id": "honjo-11211",
+  "code": "11211",
+  "pref": "11",
+  "jp": "本庄市",
+  "en": "Honjo",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.city.honjo.lg.jp/",
+    "https://lg-api2nd.smart-lgov.jp/v1/trash/get_general_purpose_data_list.json"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃えるごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃えないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "paper": {
+      "label": "紙・布類",
+      "en": "Paper & cloth",
+      "kind": "res"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {
+    "food": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「生ごみ」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "textile": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「衣類」 under 「可燃ごみ」.",
+      "auto": true
+    },
+    "pet": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ペットボトル」 under 「資源物」.",
+      "auto": true
+    },
+    "bottle": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「ビールびん」 under 「資源物」.",
+      "auto": true
+    },
+    "glass-other": {
+      "bin": "non_burnable",
+      "note": "Auto-matched: the official list puts 「陶磁器」 under 「不燃ごみ（燃えないごみ）」.",
+      "auto": true
+    },
+    "plastic-product": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「プラスチック製品」 under 「可燃ごみ（燃えるごみ）」.",
+      "auto": true
+    },
+    "battery": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「乾電池」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "battery-li": {
+      "bin": "hazardous",
+      "note": "Auto-matched: the official list puts 「充電式電池（リチウムイオン電池、ニッケル水素電池、ニカド電池）」 under 「有害ごみ」.",
+      "auto": true
+    },
+    "spray": {
+      "bin": "res",
+      "note": "Auto-matched: the official list puts 「スプレー缶」 under 「資源物」.",
+      "auto": true
+    },
+    "lighter": {
+      "bin": "burnable",
+      "note": "Auto-matched: the official list puts 「使い捨てライター（ガスを全部抜く）」 under 「可燃ごみ（燃えるごみ）」.",
+      "auto": true
+    }
+  },
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from the city's SMART CMS trash search API. Confirm holidays and year-end changes on the city's official page.",
+    "patterns": {
+      "1": {
+        "burnable": [
+          1,
+          4
+        ],
+        "non_burnable": {
+          "day": 3,
+          "weeks": [
+            1,
+            3
+          ]
+        },
+        "res": {
+          "day": 3,
+          "weeks": [
+            2,
+            4
+          ]
+        }
+      },
+      "2": {
+        "burnable": [
+          2,
+          5
+        ],
+        "non_burnable": {
+          "day": 1,
+          "weeks": [
+            2,
+            4
+          ]
+        },
+        "res": {
+          "day": 2,
+          "weeks": [
+            4
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "稲沢",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "稲沢",
+      "jp": "稲沢",
+      "pattern": "1"
+    },
+    {
+      "town": "塩谷",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "塩谷",
+      "jp": "塩谷",
+      "pattern": "1"
+    },
+    {
+      "town": "下真下",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下真下",
+      "jp": "下真下",
+      "pattern": "2"
+    },
+    {
+      "town": "下浅見",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下浅見",
+      "jp": "下浅見",
+      "pattern": "2"
+    },
+    {
+      "town": "下町（児玉町児玉）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "下町（児玉町児玉）",
+      "jp": "下町（児玉町児玉）",
+      "pattern": "2"
+    },
+    {
+      "town": "河内",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "河内",
+      "jp": "河内",
+      "pattern": "1"
+    },
+    {
+      "town": "吉田林",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "吉田林",
+      "jp": "吉田林",
+      "pattern": "2"
+    },
+    {
+      "town": "久下塚（北堀、早稲田の杜1･2･3丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "久下塚（北堀、早稲田の杜1･2･3丁目）",
+      "jp": "久下塚（北堀、早稲田の杜1･2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "宮内",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮内",
+      "jp": "宮内",
+      "pattern": "1"
+    },
+    {
+      "town": "宮本町（千代田1･2･3･4丁目、南2丁目、前原1･2丁目、柏1丁目、栄1･2丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "宮本町（千代田1･2･3･4丁目、南2丁目、前原1･2丁目、柏1丁目、栄1･2丁目）",
+      "jp": "宮本町（千代田1･2･3･4丁目、南2丁目、前原1･2丁目、柏1丁目、栄1･2丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "元田",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "元田",
+      "jp": "元田",
+      "pattern": "1"
+    },
+    {
+      "town": "高関",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高関",
+      "jp": "高関",
+      "pattern": "2"
+    },
+    {
+      "town": "高柳",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "高柳",
+      "jp": "高柳",
+      "pattern": "1"
+    },
+    {
+      "town": "三友",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "三友",
+      "jp": "三友",
+      "pattern": "1"
+    },
+    {
+      "town": "七軒町（銀座1･3丁目、南1･2丁目、駅南1丁目、見福1丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "七軒町（銀座1･3丁目、南1･2丁目、駅南1丁目、見福1丁目）",
+      "jp": "七軒町（銀座1･3丁目、南1･2丁目、駅南1丁目、見福1丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "秋山（児玉町秋山）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "秋山（児玉町秋山）",
+      "jp": "秋山（児玉町秋山）",
+      "pattern": "1"
+    },
+    {
+      "town": "曙（柏1･2丁目、栄2･3丁目、見福5丁目、緑2･3丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "曙（柏1･2丁目、栄2･3丁目、見福5丁目、緑2･3丁目）",
+      "jp": "曙（柏1･2丁目、栄2･3丁目、見福5丁目、緑2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "上真下",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上真下",
+      "jp": "上真下",
+      "pattern": "2"
+    },
+    {
+      "town": "上町（児玉町児玉）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町（児玉町児玉）",
+      "jp": "上町（児玉町児玉）",
+      "pattern": "2"
+    },
+    {
+      "town": "上町（千代田1丁目、中央1･3丁目、銀座1丁目、南1丁目、前原1丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "上町（千代田1丁目、中央1･3丁目、銀座1丁目、南1丁目、前原1丁目）",
+      "jp": "上町（千代田1丁目、中央1･3丁目、銀座1丁目、南1丁目、前原1丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "新町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "jp": "新町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "新田原（北堀、早稲田の杜1･2･4･5丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "新田原（北堀、早稲田の杜1･2･4･5丁目）",
+      "jp": "新田原（北堀、早稲田の杜1･2･4･5丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "西今井",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西今井",
+      "jp": "西今井",
+      "pattern": "1"
+    },
+    {
+      "town": "西小平（児玉町小平）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西小平（児玉町小平）",
+      "jp": "西小平（児玉町小平）",
+      "pattern": "1"
+    },
+    {
+      "town": "泉町（千代田1･4丁目、中央3丁目、前原1丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "泉町（千代田1･4丁目、中央3丁目、前原1丁目）",
+      "jp": "泉町（千代田1･4丁目、中央3丁目、前原1丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "太駄下（児玉町太駄）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太駄下（児玉町太駄）",
+      "jp": "太駄下（児玉町太駄）",
+      "pattern": "1"
+    },
+    {
+      "town": "太駄上（児玉町太駄）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太駄上（児玉町太駄）",
+      "jp": "太駄上（児玉町太駄）",
+      "pattern": "1"
+    },
+    {
+      "town": "太駄中（児玉町太駄）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "太駄中（児玉町太駄）",
+      "jp": "太駄中（児玉町太駄）",
+      "pattern": "1"
+    },
+    {
+      "town": "第一金屋（児玉町金屋、児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "第一金屋（児玉町金屋、児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "jp": "第一金屋（児玉町金屋、児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "第三金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "第三金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "jp": "第三金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "pattern": "1"
+    },
+    {
+      "town": "第二金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "第二金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "jp": "第二金屋（児玉町長沖、児玉町児玉南1･2丁目)",
+      "pattern": "1"
+    },
+    {
+      "town": "鍛冶町（児玉町八幡山）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "鍛冶町（児玉町八幡山）",
+      "jp": "鍛冶町（児玉町八幡山）",
+      "pattern": "2"
+    },
+    {
+      "town": "仲町（児玉町児玉）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仲町（児玉町児玉）",
+      "jp": "仲町（児玉町児玉）",
+      "pattern": "2"
+    },
+    {
+      "town": "仲町（中央1･2丁目、銀座1･2丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "仲町（中央1･2丁目、銀座1･2丁目）",
+      "jp": "仲町（中央1･2丁目、銀座1･2丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "長沖（児玉町長沖、児玉町児玉南1･2丁目)",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長沖（児玉町長沖、児玉町児玉南1･2丁目)",
+      "jp": "長沖（児玉町長沖、児玉町児玉南1･2丁目)",
+      "pattern": "1"
+    },
+    {
+      "town": "長浜町（児玉町八幡山）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "長浜町（児玉町八幡山）",
+      "jp": "長浜町（児玉町八幡山）",
+      "pattern": "2"
+    },
+    {
+      "town": "田端",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "田端",
+      "jp": "田端",
+      "pattern": "1"
+    },
+    {
+      "town": "東今井",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東今井",
+      "jp": "東今井",
+      "pattern": "1"
+    },
+    {
+      "town": "東小平（児玉町小平）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東小平（児玉町小平）",
+      "jp": "東小平（児玉町小平）",
+      "pattern": "1"
+    },
+    {
+      "town": "入浅見",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "入浅見",
+      "jp": "入浅見",
+      "pattern": "2"
+    },
+    {
+      "town": "飯倉",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "飯倉",
+      "jp": "飯倉",
+      "pattern": "1"
+    },
+    {
+      "town": "蛭川",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "蛭川",
+      "jp": "蛭川",
+      "pattern": "2"
+    },
+    {
+      "town": "風洞（児玉町秋山）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "風洞（児玉町秋山）",
+      "jp": "風洞（児玉町秋山）",
+      "pattern": "1"
+    },
+    {
+      "town": "保木野",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "保木野",
+      "jp": "保木野",
+      "pattern": "1"
+    },
+    {
+      "town": "本田（北堀、早稲田の杜5丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "本田（北堀、早稲田の杜5丁目）",
+      "jp": "本田（北堀、早稲田の杜5丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "末広町（南2丁目、柏2丁目、駅南1丁目、見福1･2･3･4･5丁目、緑1･2丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "末広町（南2丁目、柏2丁目、駅南1丁目、見福1･2･3･4･5丁目、緑1･2丁目）",
+      "jp": "末広町（南2丁目、柏2丁目、駅南1丁目、見福1･2･3･4･5丁目、緑1･2丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "連雀町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "townEn": "Honjo",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "連雀町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "jp": "連雀町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "朝日町",
+      "townEn": "Asahicho",
+      "kana": "アサヒチョウ",
+      "chome": null,
+      "detail": "朝日町（本庄2丁目、東台1丁目、日の出1丁目、寿1丁目、駅南2丁目、朝日町1･2･3丁目）",
+      "en": "朝日町（本庄2丁目、東台1丁目、日の出1丁目、寿1丁目、駅南2丁目、朝日町1･2･3丁目）",
+      "jp": "朝日町（本庄2丁目、東台1丁目、日の出1丁目、寿1丁目、駅南2丁目、朝日町1･2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "新井",
+      "townEn": "Arai",
+      "kana": "アライ",
+      "chome": null,
+      "detail": null,
+      "en": "新井",
+      "jp": "新井",
+      "pattern": "1"
+    },
+    {
+      "town": "鵜森",
+      "townEn": "Unomori",
+      "kana": "ウノモリ",
+      "chome": null,
+      "detail": "鵜森（寿3丁目の一部を含む）",
+      "en": "鵜森（寿3丁目の一部を含む）",
+      "jp": "鵜森（寿3丁目の一部を含む）",
+      "pattern": "1"
+    },
+    {
+      "town": "小島",
+      "townEn": "Ojima",
+      "kana": "オジマ",
+      "chome": null,
+      "detail": "小島（小島○○番地、千代田2丁目の一部、小島1･2･3･4･5･6丁目(小島県営住宅は除く)）",
+      "en": "小島（小島○○番地、千代田2丁目の一部、小島1･2･3･4･5･6丁目(小島県営住宅は除く)）",
+      "jp": "小島（小島○○番地、千代田2丁目の一部、小島1･2･3･4･5･6丁目(小島県営住宅は除く)）",
+      "pattern": "2"
+    },
+    {
+      "town": "小島",
+      "townEn": "Ojima",
+      "kana": "オジマ",
+      "chome": null,
+      "detail": "小島県営住宅",
+      "en": "小島県営住宅",
+      "jp": "小島県営住宅",
+      "pattern": "1"
+    },
+    {
+      "town": "小島南",
+      "townEn": "Ojimaminami",
+      "kana": "オジマミナミ",
+      "chome": null,
+      "detail": "小島南（小島南1･2･3･4丁目）",
+      "en": "小島南（小島南1･2･3･4丁目）",
+      "jp": "小島南（小島南1･2･3･4丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "上仁手",
+      "townEn": "Kaminitte",
+      "kana": "カミニッテ",
+      "chome": null,
+      "detail": null,
+      "en": "上仁手",
+      "jp": "上仁手",
+      "pattern": "1"
+    },
+    {
+      "town": "共栄",
+      "townEn": "Kyoei",
+      "kana": "キョウエイ",
+      "chome": null,
+      "detail": null,
+      "en": "共栄",
+      "jp": "共栄",
+      "pattern": "1"
+    },
+    {
+      "town": "久々宇",
+      "townEn": "Kugu",
+      "kana": "クグウ",
+      "chome": null,
+      "detail": null,
+      "en": "久々宇",
+      "jp": "久々宇",
+      "pattern": "1"
+    },
+    {
+      "town": "栗崎",
+      "townEn": "Kurizaki",
+      "kana": "クリザキ",
+      "chome": null,
+      "detail": "栗崎（栗崎、早稲田の杜5丁目）",
+      "en": "栗崎（栗崎、早稲田の杜5丁目）",
+      "jp": "栗崎（栗崎、早稲田の杜5丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "けや木",
+      "townEn": "Keyaki",
+      "kana": "ケヤキ",
+      "chome": null,
+      "detail": "けや木（けや木1･2･3丁目、緑1丁目）",
+      "en": "けや木（けや木1･2･3丁目、緑1丁目）",
+      "jp": "けや木（けや木1･2･3丁目、緑1丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "児玉町共栄",
+      "townEn": "Kodamacho Kyoei",
+      "kana": "コダマチョウキョウエイ",
+      "chome": null,
+      "detail": null,
+      "en": "児玉町共栄",
+      "jp": "児玉町共栄",
+      "pattern": "2"
+    },
+    {
+      "town": "小和瀬",
+      "townEn": "Kowaze",
+      "kana": "コワゼ",
+      "chome": null,
+      "detail": null,
+      "en": "小和瀬",
+      "jp": "小和瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "山王堂",
+      "townEn": "Sannodo",
+      "kana": "サンノウドウ",
+      "chome": null,
+      "detail": null,
+      "en": "山王堂",
+      "jp": "山王堂",
+      "pattern": "1"
+    },
+    {
+      "town": "四季の里",
+      "townEn": "Shikinosato",
+      "kana": "シキノサト",
+      "chome": null,
+      "detail": "四季の里（四季の里1･2･3丁目）",
+      "en": "四季の里（四季の里1･2･3丁目）",
+      "jp": "四季の里（四季の里1･2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "四方田",
+      "townEn": "Shihoden",
+      "kana": "シホウデン",
+      "chome": null,
+      "detail": null,
+      "en": "四方田",
+      "jp": "四方田",
+      "pattern": "1"
+    },
+    {
+      "town": "下仁手",
+      "townEn": "Shimonitsute",
+      "kana": "シモニッテ",
+      "chome": null,
+      "detail": null,
+      "en": "下仁手",
+      "jp": "下仁手",
+      "pattern": "1"
+    },
+    {
+      "town": "下野堂",
+      "townEn": "Shimonodo",
+      "kana": "シモノドウ",
+      "chome": null,
+      "detail": "下野堂（下野堂○○番地、下野堂1･2･3丁目、万年寺1丁目の一部を含む）",
+      "en": "下野堂（下野堂○○番地、下野堂1･2･3丁目、万年寺1丁目の一部を含む）",
+      "jp": "下野堂（下野堂○○番地、下野堂1･2･3丁目、万年寺1丁目の一部を含む）",
+      "pattern": "1"
+    },
+    {
+      "town": "杉山",
+      "townEn": "Sugiyama",
+      "kana": "スギヤマ",
+      "chome": null,
+      "detail": null,
+      "en": "杉山",
+      "jp": "杉山",
+      "pattern": "1"
+    },
+    {
+      "town": "諏訪町",
+      "townEn": "Suwacho",
+      "kana": "スワチョウ",
+      "chome": null,
+      "detail": "諏訪町（東台2丁目、日の出2･3･4丁目、寿2･3丁目）",
+      "en": "諏訪町（東台2丁目、日の出2･3･4丁目、寿2･3丁目）",
+      "jp": "諏訪町（東台2丁目、日の出2･3･4丁目、寿2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "台町",
+      "townEn": "Daimachi",
+      "kana": "ダイマチ",
+      "chome": null,
+      "detail": "台町（本庄1･2･3･4丁目、東台2･3･4･5丁目、日の出3･4丁目）",
+      "en": "台町（本庄1･2･3･4丁目、東台2･3･4･5丁目、日の出3･4丁目）",
+      "jp": "台町（本庄1･2･3･4丁目、東台2･3･4･5丁目、日の出3･4丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "滝瀬",
+      "townEn": "Takise",
+      "kana": "タキセ",
+      "chome": null,
+      "detail": null,
+      "en": "滝瀬",
+      "jp": "滝瀬",
+      "pattern": "1"
+    },
+    {
+      "town": "田中",
+      "townEn": "Tanaka",
+      "kana": "タナカ",
+      "chome": null,
+      "detail": null,
+      "en": "田中",
+      "jp": "田中",
+      "pattern": "1"
+    },
+    {
+      "town": "照若町",
+      "townEn": "Terukawacho",
+      "kana": "テルカワチョウ",
+      "chome": null,
+      "detail": "照若町（中央1･2丁目、若泉1･2･3丁目）",
+      "en": "照若町（中央1･2丁目、若泉1･2･3丁目）",
+      "jp": "照若町（中央1･2丁目、若泉1･2･3丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "西五十子",
+      "townEn": "Nishiikatsuko",
+      "kana": "ニシイカッコ",
+      "chome": null,
+      "detail": "西五十子（西五十子○○番地、五十子1･2･3丁目）",
+      "en": "西五十子（西五十子○○番地、五十子1･2･3丁目）",
+      "jp": "西五十子（西五十子○○番地、五十子1･2･3丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "西富田",
+      "townEn": "Nishitomida",
+      "kana": "ニシトミダ",
+      "chome": null,
+      "detail": "西富田（栄1･2･3丁目、緑3丁目、西富田）",
+      "en": "西富田（栄1･2･3丁目、緑3丁目、西富田）",
+      "jp": "西富田（栄1･2･3丁目、緑3丁目、西富田）",
+      "pattern": "2"
+    },
+    {
+      "town": "仁手",
+      "townEn": "Nitte",
+      "kana": "ニッテ",
+      "chome": null,
+      "detail": null,
+      "en": "仁手",
+      "jp": "仁手",
+      "pattern": "1"
+    },
+    {
+      "town": "沼和田",
+      "townEn": "Numawada",
+      "kana": "ヌマワダ",
+      "chome": null,
+      "detail": null,
+      "en": "沼和田",
+      "jp": "沼和田",
+      "pattern": "1"
+    },
+    {
+      "town": "東五十子",
+      "townEn": "Higashiikatsuko",
+      "kana": "ヒガシイカッコ",
+      "chome": null,
+      "detail": null,
+      "en": "東五十子",
+      "jp": "東五十子",
+      "pattern": "2"
+    },
+    {
+      "town": "東富田",
+      "townEn": "Higashitomida",
+      "kana": "ヒガシトミダ",
+      "chome": null,
+      "detail": "東富田（東富田、早稲田の杜1丁目）",
+      "en": "東富田（東富田、早稲田の杜1丁目）",
+      "jp": "東富田（東富田、早稲田の杜1丁目）",
+      "pattern": "2"
+    },
+    {
+      "town": "傍示堂",
+      "townEn": "Hojido",
+      "kana": "ホウジドウ",
+      "chome": null,
+      "detail": null,
+      "en": "傍示堂",
+      "jp": "傍示堂",
+      "pattern": "1"
+    },
+    {
+      "town": "堀田",
+      "townEn": "Hotta",
+      "kana": "ホッタ",
+      "chome": null,
+      "detail": null,
+      "en": "堀田",
+      "jp": "堀田",
+      "pattern": "1"
+    },
+    {
+      "town": "万年寺",
+      "townEn": "Mannenji",
+      "kana": "マンネンジ",
+      "chome": null,
+      "detail": "万年寺（万年寺1･2･3丁目、小島○○番地、下野堂3丁目の一部を含む）",
+      "en": "万年寺（万年寺1･2･3丁目、小島○○番地、下野堂3丁目の一部を含む）",
+      "jp": "万年寺（万年寺1･2･3丁目、小島○○番地、下野堂3丁目の一部を含む）",
+      "pattern": "1"
+    },
+    {
+      "town": "南",
+      "townEn": "Minami",
+      "kana": "ミナミ",
+      "chome": null,
+      "detail": "南本町（駅南1･2丁目、けや木1丁目、見福2･3丁目）",
+      "en": "南本町（駅南1･2丁目、けや木1丁目、見福2･3丁目）",
+      "jp": "南本町（駅南1･2丁目、けや木1丁目、見福2･3丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "都島",
+      "townEn": "Miyakojima",
+      "kana": "ミヤコジマ",
+      "chome": null,
+      "detail": null,
+      "en": "都島",
+      "jp": "都島",
+      "pattern": "1"
+    },
+    {
+      "town": "宮戸",
+      "townEn": "Miyado",
+      "kana": "ミヤド",
+      "chome": null,
+      "detail": null,
+      "en": "宮戸",
+      "jp": "宮戸",
+      "pattern": "1"
+    },
+    {
+      "town": "牧西",
+      "townEn": "Mokusai",
+      "kana": "モクサイ",
+      "chome": null,
+      "detail": null,
+      "en": "牧西",
+      "jp": "牧西",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Motomachi",
+      "kana": "モトマチ",
+      "chome": null,
+      "detail": "本町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "en": "本町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "jp": "本町（児玉町児玉、児玉町児玉南1･2･3･4丁目）",
+      "pattern": "1"
+    },
+    {
+      "town": "本町",
+      "townEn": "Motomachi",
+      "kana": "モトマチ",
+      "chome": null,
+      "detail": "本町（若泉1丁目、中央1･2丁目、銀座1･2･3丁目、本庄1･2･3･4丁目）",
+      "en": "本町（若泉1丁目、中央1･2丁目、銀座1･2･3丁目、本庄1･2･3･4丁目）",
+      "jp": "本町（若泉1丁目、中央1･2丁目、銀座1･2･3丁目、本庄1･2･3･4丁目）",
+      "pattern": "1"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official municipal website (crawl + extract)",
+      "url": "https://www.city.honjo.lg.jp/",
+      "license": "Municipality website (collection facts via city CMS API)"
+    }
+  },
+  "updated": "2026-11-04"
+}

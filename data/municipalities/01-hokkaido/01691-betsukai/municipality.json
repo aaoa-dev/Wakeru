@@ -1,0 +1,383 @@
+{
+  "id": "betsukai-01691",
+  "code": "01691",
+  "pref": "01",
+  "jp": "別海町",
+  "en": "Betsukai",
+  "verified": "2026-11-04",
+  "sources": [
+    "https://www.harp.lg.jp/opendata/dataset/1330/resource/2331/016918_trash_out_calendar.csv"
+  ],
+  "contacts": [],
+  "bins": {
+    "burnable": {
+      "label": "燃やすごみ",
+      "en": "Burnable",
+      "kind": "burn"
+    },
+    "non_burnable": {
+      "label": "燃やさないごみ",
+      "en": "Non-burnable",
+      "kind": "non"
+    },
+    "plastic": {
+      "label": "プラスチック",
+      "en": "Plastic",
+      "kind": "pla"
+    },
+    "res": {
+      "label": "資源ごみ",
+      "en": "Recyclables",
+      "kind": "res"
+    },
+    "hazardous": {
+      "label": "有害ごみ",
+      "en": "Hazardous",
+      "kind": "haz"
+    },
+    "oversized": {
+      "label": "粗大ごみ",
+      "en": "Oversized",
+      "kind": "big"
+    },
+    "no": {
+      "label": "収集しないもの",
+      "en": "Not collected",
+      "kind": "no"
+    }
+  },
+  "plasticTest": null,
+  "sorting": {},
+  "calendar": {
+    "validFrom": "2026-04-01",
+    "validTo": "2027-03-31",
+    "noCollection": {
+      "weekdays": [
+        0
+      ],
+      "dates": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "12-29",
+        "12-30",
+        "12-31"
+      ]
+    },
+    "note": "Weekday rules from official open-data CSV (crawler discovery + parse probe). Confirm holidays on the city site.",
+    "patterns": {
+      "1": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        "non_burnable": [
+          5
+        ],
+        "oversized": [
+          5
+        ],
+        "res": [
+          1
+        ],
+        "hazardous": [
+          1
+        ],
+        "plastic": {
+          "any": [
+            [
+              3
+            ],
+            [
+              3
+            ]
+          ]
+        }
+      },
+      "2": {
+        "burnable": {
+          "any": [
+            [
+              2,
+              5
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        "non_burnable": [
+          5
+        ],
+        "oversized": [
+          5
+        ],
+        "res": [
+          3
+        ],
+        "hazardous": [
+          3
+        ],
+        "plastic": {
+          "any": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "areas": [
+    {
+      "town": "東部・北部市街（尾岱沼、床丹、本別海、走古丹、中春別、豊原、美原）",
+      "townEn": "東部・北部市街（尾岱沼、床丹、本別海、走古丹、中春別、豊原、美原）",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "東部・北部市街（尾岱沼、床丹、本別海、走古丹、中春別、豊原、美原）",
+      "jp": "東部・北部市街（尾岱沼、床丹、本別海、走古丹、中春別、豊原、美原）",
+      "pattern": "2"
+    },
+    {
+      "town": "西部市街（西春別駅前、西春別）",
+      "townEn": "西部市街（西春別駅前、西春別）",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "西部市街（西春別駅前、西春別）",
+      "jp": "西部市街（西春別駅前、西春別）",
+      "pattern": "1"
+    },
+    {
+      "town": "中部市街（中西別、上春別）",
+      "townEn": "中部市街（中西別、上春別）",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "中部市街（中西別、上春別）",
+      "jp": "中部市街（中西別、上春別）",
+      "pattern": "1"
+    },
+    {
+      "town": "南部市街（上風連）",
+      "townEn": "南部市街（上風連）",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "南部市街（上風連）",
+      "jp": "南部市街（上風連）",
+      "pattern": "2"
+    },
+    {
+      "town": "北鳴、北西別、平糸、昭和、桜ケ丘",
+      "townEn": "北鳴、北西別、平糸、昭和、桜ケ丘",
+      "kana": "",
+      "chome": null,
+      "detail": null,
+      "en": "北鳴、北西別、平糸、昭和、桜ケ丘",
+      "jp": "北鳴、北西別、平糸、昭和、桜ケ丘",
+      "pattern": "2"
+    },
+    {
+      "town": "泉川",
+      "townEn": "Izumikawa",
+      "kana": "イズミカワ",
+      "chome": null,
+      "detail": "泉川、光進",
+      "en": "泉川、光進",
+      "jp": "泉川、光進",
+      "pattern": "2"
+    },
+    {
+      "town": "奥行",
+      "townEn": "Okuyuki",
+      "kana": "オクユキ",
+      "chome": null,
+      "detail": "奥行、東矢、北矢臼別、新興",
+      "en": "奥行、東矢、北矢臼別、新興",
+      "jp": "奥行、東矢、北矢臼別、新興",
+      "pattern": "2"
+    },
+    {
+      "town": "上春別",
+      "townEn": "Kamishumbetsu",
+      "kana": "カミシュンベツ",
+      "chome": null,
+      "detail": "上春別（春日、福島）",
+      "en": "上春別（春日、福島）",
+      "jp": "上春別（春日、福島）",
+      "pattern": "2"
+    },
+    {
+      "town": "上春別",
+      "townEn": "Kamishumbetsu",
+      "kana": "カミシュンベツ",
+      "chome": null,
+      "detail": "上春別（福山、黄金、開進、上西別、恩根内、38区、朝日、八幡）",
+      "en": "上春別（福山、黄金、開進、上西別、恩根内、38区、朝日、八幡）",
+      "jp": "上春別（福山、黄金、開進、上西別、恩根内、38区、朝日、八幡）",
+      "pattern": "2"
+    },
+    {
+      "town": "上風連",
+      "townEn": "Kamifuren",
+      "kana": "カミフウレン",
+      "chome": null,
+      "detail": "上風連（南矢臼別、開南、上南、東部、中央）",
+      "en": "上風連（南矢臼別、開南、上南、東部、中央）",
+      "jp": "上風連（南矢臼別、開南、上南、東部、中央）",
+      "pattern": "2"
+    },
+    {
+      "town": "豊原",
+      "townEn": "Toyohara",
+      "kana": "トヨハラ",
+      "chome": null,
+      "detail": null,
+      "en": "豊原",
+      "jp": "豊原",
+      "pattern": "2"
+    },
+    {
+      "town": "中春別",
+      "townEn": "Nakashumbetsu",
+      "kana": "ナカシュンベツ",
+      "chome": null,
+      "detail": "中春別（富岡、平成）",
+      "en": "中春別（富岡、平成）",
+      "jp": "中春別（富岡、平成）",
+      "pattern": "2"
+    },
+    {
+      "town": "中春別",
+      "townEn": "Nakashumbetsu",
+      "kana": "ナカシュンベツ",
+      "chome": null,
+      "detail": "中春別（菊水、北平糸、平和、春別）",
+      "en": "中春別（菊水、北平糸、平和、春別）",
+      "jp": "中春別（菊水、北平糸、平和、春別）",
+      "pattern": "2"
+    },
+    {
+      "town": "中西別",
+      "townEn": "Nakanishibetsu",
+      "kana": "ナカニシベツ",
+      "chome": null,
+      "detail": "中西別（高丘）",
+      "en": "中西別（高丘）",
+      "jp": "中西別（高丘）",
+      "pattern": "1"
+    },
+    {
+      "town": "中西別",
+      "townEn": "Nakanishibetsu",
+      "kana": "ナカニシベツ",
+      "chome": null,
+      "detail": "中西別（福富、47地区、斎場）",
+      "en": "中西別（福富、47地区、斎場）",
+      "jp": "中西別（福富、47地区、斎場）",
+      "pattern": "1"
+    },
+    {
+      "town": "中西別",
+      "townEn": "Nakanishibetsu",
+      "kana": "ナカニシベツ",
+      "chome": null,
+      "detail": "中西別（栄進、広野）",
+      "en": "中西別（栄進、広野）",
+      "jp": "中西別（栄進、広野）",
+      "pattern": "1"
+    },
+    {
+      "town": "西春別",
+      "townEn": "Nishishumbetsu",
+      "kana": "ニシシュンベツ",
+      "chome": null,
+      "detail": "西春別（拓進、協和、さくら、東部新富、新富中央、西和、共春、33区、柏野、宮城）",
+      "en": "西春別（拓進、協和、さくら、東部新富、新富中央、西和、共春、33区、柏野、宮城）",
+      "jp": "西春別（拓進、協和、さくら、東部新富、新富中央、西和、共春、33区、柏野、宮城）",
+      "pattern": "2"
+    },
+    {
+      "town": "西春別",
+      "townEn": "Nishishumbetsu",
+      "kana": "ニシシュンベツ",
+      "chome": null,
+      "detail": "西春別（北栄、共栄）",
+      "en": "西春別（北栄、共栄）",
+      "jp": "西春別（北栄、共栄）",
+      "pattern": "2"
+    },
+    {
+      "town": "別海",
+      "townEn": "Betsukai",
+      "kana": "ベツカイ",
+      "chome": null,
+      "detail": "別海市街川の北側（宮舞町、常盤町、新栄町、旭町、西本町）",
+      "en": "別海市街川の北側（宮舞町、常盤町、新栄町、旭町、西本町）",
+      "jp": "別海市街川の北側（宮舞町、常盤町、新栄町、旭町、西本町）",
+      "pattern": "1"
+    },
+    {
+      "town": "別海",
+      "townEn": "Betsukai",
+      "kana": "ベツカイ",
+      "chome": null,
+      "detail": "別海市街川の南側（川上町、緑町、寿町、鶴舞町）",
+      "en": "別海市街川の南側（川上町、緑町、寿町、鶴舞町）",
+      "jp": "別海市街川の南側（川上町、緑町、寿町、鶴舞町）",
+      "pattern": "2"
+    },
+    {
+      "town": "本別",
+      "townEn": "Hombetsu",
+      "kana": "ホンベツ",
+      "chome": null,
+      "detail": "本別、大成",
+      "en": "本別、大成",
+      "jp": "本別、大成",
+      "pattern": "2"
+    },
+    {
+      "town": "美原",
+      "townEn": "Mihara",
+      "kana": "ミハラ",
+      "chome": null,
+      "detail": "美原（まきばの丘、よつ葉、新酪、みどりの里）",
+      "en": "美原（まきばの丘、よつ葉、新酪、みどりの里）",
+      "jp": "美原（まきばの丘、よつ葉、新酪、みどりの里）",
+      "pattern": "2"
+    },
+    {
+      "town": "美原",
+      "townEn": "Mihara",
+      "kana": "ミハラ",
+      "chome": null,
+      "detail": "美原（緑進）",
+      "en": "美原（緑進）",
+      "jp": "美原（緑進）",
+      "pattern": "2"
+    }
+  ],
+  "attribution": {
+    "schedule": {
+      "name": "Official schedule CSV (crawler probe, district weekly)",
+      "url": "https://www.harp.lg.jp/opendata/dataset/1330/resource/2331/016918_trash_out_calendar.csv",
+      "license": "Confirm on municipality site",
+      "commit": "open-data"
+    }
+  },
+  "extractedAt": "2026-11-04",
+  "skippedRows": 0
+}

@@ -3,6 +3,7 @@
    2. japan-gomi-data schedules for every other municipality its maintainers checked against official calendars,
    with sorting dictionaries from 粗大ごみナビ. A curated ward wins over japan-gomi-data for the same municipality code,
    and the two are cross-checked date by date.
+   Discovery for new official CSVs: npm run discover:official (see scripts/import/discover-official.mjs), then npm run import.
    Usage: node scripts/import/index.mjs [id ...] [--refresh]   (no id = all) */
 import fs from "node:fs";
 import path from "node:path";
@@ -38,6 +39,9 @@ import * as otaru from "./sources/otaru.mjs";
 import {SEEDS_CUSTOM, seed5374Entries} from "./seeds/prefecture-seeds.mjs";
 import {MAJOR_HUBS_CUSTOM, majorHub5374Entries} from "./seeds/major-hubs.mjs";
 import {catalog5374Entries} from "./seeds/5374-catalog.mjs";
+import {catalogOfficialCandidateEntries} from "./seeds/official-candidates.mjs";
+import {catalogProbedScheduleEntries} from "./seeds/crawler-probed-schedules.mjs";
+import {catalogProbedHtmlScheduleEntries} from "./seeds/crawler-probed-html.mjs";
 import { dayState, binsOn, iso } from "../../js/schedule.js";
 
 const WARDS_DIR = path.join(ROOT, "scripts/import/wards"), OUT = path.join(ROOT, "data/municipalities");
@@ -288,6 +292,9 @@ function prefsLit(){
   return out;
 }
 async function shipPrefectureSeed(entry){
+  /* Once a seed has shipped, keep it registered even after other municipalities light the prefecture.
+     Explicitly selected seeds must also be importable after that point. */
+  if(currentById.has(entry.id) || wanted(entry.id)) return shipCommunity(entry);
   if(prefsLit().has(entry.pref.padStart(2, "0"))) return;
   if([...shown.values()].includes(entry.code)) return;
   await shipCommunity(entry);
@@ -303,8 +310,13 @@ async function shipMajorHub(entry){
 for(const entry of majorHub5374Entries()) await shipMajorHub(entry);
 for(const entry of MAJOR_HUBS_CUSTOM) await shipMajorHub(entry);
 
-/* ---------- 7. full 5374 catalog (discovered + curated area_days.csv) ---------- */
+/* ---------- 7. full 5374 catalog (legacy subdomain probe + curated area_days.csv) ---------- */
 for(const entry of catalog5374Entries()) await shipMajorHub(entry);
+
+/* ---------- 7b. official-site crawler (strict URL match + probed CSV schedules) ---------- */
+for(const entry of catalogOfficialCandidateEntries()) await shipMajorHub(entry);
+for(const entry of catalogProbedScheduleEntries()) await shipMajorHub(entry);
+for(const entry of catalogProbedHtmlScheduleEntries()) await shipMajorHub(entry);
 
 /* ---------- 8. Fukui Prefecture open-data (17 municipalities, one pref) ---------- */
 for(const spec of fukuiPref.MUNICIPALITIES){
@@ -391,7 +403,7 @@ const municipalities = placed.map(({m, files}) => ({
   id:m.id, code:m.code, pref:m.pref, prefEn:PREF_EN[+m.pref], en:m.en, jp:m.jp, verified:m.verified,
   path:catalogPath(m), dictionary:fs.existsSync(files.dictionary), source:m.attribution?.schedule?.name ?? "curated",
 }));
-const keep = new Set(placed.flatMap(({files}) => [files.municipality, ...(fs.existsSync(files.dictionary) ? [files.dictionary] : [])].map(path.resolve)));
+const keep = new Set(placed.flatMap(({files}) => [files.municipality, ...(fs.existsSync(files.dictionary) ? [files.dictionary] : [])].map(file => path.resolve(file))));
 function generatedFiles(dir){
   if(!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir, {withFileTypes:true}).flatMap(entry => {
