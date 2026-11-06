@@ -306,6 +306,7 @@ const LONG = {off:"No collection (Sunday or New Year break)", unconfirmed:"Not c
 const dayRow = (r, rs = RS, nextI = -1, interactive = false) => `<div class="day${r.i === 0 ? " is-today" : ""}${r.i === nextI ? " is-next" : ""}"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
   <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>interactive ? scheduleChip(c, rs) : chip(c, rs)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
 const areaName = a => a.en === "All" ? a.townEn : `${a.townEn} ${a.en}`;
+const areaNameJP = a => a.jp === "全域" ? a.town : `${a.town}${a.jp}`;
 /* the next days for an area, as {d, ps, label} rows */
 function nextDays(rs, area, count){
   const now = new Date(); now.setHours(0,0,0,0);
@@ -325,7 +326,10 @@ function restoreArea(){
 }
 /* the card leads with the next pickup; today's own status is a line under it when today has none */
 function renderDays(){
-  $("#whereText").textContent = `${areaName(AREA)}, ${RS.en}`;
+  const whereEn = `${areaName(AREA)}, ${RS.en}`, whereJp = areaNameJP(AREA);
+  $("#whereText").textContent = whereEn;
+  $("#whereTextJp").textContent = whereJp;
+  $("#where").setAttribute("aria-label", `Change location from ${whereEn}`);
   const rows = nextDays(RS, AREA, 7), coming = upcoming(), [next, then] = coming, [today] = rows;
   NEXT_BY_BIN = {}; for(const u of coming) for(const [b] of u.ps) NEXT_BY_BIN[b] ??= u;
   RENDERED_DAY = iso(today.d);
