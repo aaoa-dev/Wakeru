@@ -63,6 +63,12 @@ function showError(err){
 const binOf = (bin, rs = RS) => rs.bins[bin] || {en:bin,label:"",kind:"no"};
 const chipHTML = (kind, en, label) => `<span class="chip" style="--cc:var(${BIN_COLOR[kind]||"--c-no"})"><i></i><span class="chip-text">${esc(en)}${label ? ` <small>${esc(label)}</small>` : ""}</span></span>`;
 const chip = (bin, rs = RS) => { const b = binOf(bin, rs); return chipHTML(b.kind, b.en, b.label) };
+/* Schedule chips open the matching sorting guide. Keep unsupported kinds as plain labels. */
+function scheduleChip(bin, rs = RS){
+  const b = binOf(bin, rs);
+  if(!GUIDE_KINDS.includes(b.kind)) return chip(bin, rs);
+  return `<button type="button" class="chip schedule-chip" data-sort-kind="${esc(b.kind)}" aria-label="View ${esc(b.en)} sorting details" style="--cc:var(${BIN_COLOR[b.kind]||"--c-no"})"><i></i><span class="chip-text">${esc(b.en)}${b.label ? ` <small>${esc(b.label)}</small>` : ""}</span></button>`;
+}
 /* turn an item's material types into this city's bins; null when the city's guide doesn't cover one of its types */
 function resolve(it){
   const outs = [];
@@ -283,8 +289,8 @@ function ruleText(r){
   return r.weeks.map(n=>ORD[n]).join(" & ") + " " + DOW[r.day];
 }
 /* one row per bin: chip + its regular days */
-const legendHTML = (rs, area) => Object.entries(rs.calendar.patterns[area.pattern]).filter(([, r]) => r)
-  .map(([bin, r]) => `<div class="legend-row">${chip(bin, rs)}<span>${esc(ruleText(r))}</span></div>`).join("");
+const legendHTML = (rs, area, interactive = false) => Object.entries(rs.calendar.patterns[area.pattern]).filter(([, r]) => r)
+  .map(([bin, r]) => `<div class="legend-row">${interactive ? scheduleChip(bin, rs) : chip(bin, rs)}<span>${esc(ruleText(r))}</span></div>`).join("");
 /* "Out by 8:30" when the bins share a time, otherwise one time per bin; "(see your sign)"-style asides stay unbolded */
 const timeHTML = t => esc(t.replace(/^by /, "")).replace(/^(.*?)(\s*\(.*\))?$/, (_, a, b = "") => `<b>${a}</b>${b}`);
 function byLine(ps, rs = RS){
@@ -297,8 +303,8 @@ function byLine(ps, rs = RS){
 const none = text => `<span class="none">${text}</span>`;
 const SHORT = {off:"No collection", unconfirmed:"Not confirmed yet", unpublished:"Not published yet"};
 const LONG = {off:"No collection (Sunday or New Year break)", unconfirmed:"Not confirmed yet: watch for the city's New Year notice", unpublished:"The city hasn't published this date yet"};
-const dayRow = (r, rs = RS, nextI = -1) => `<div class="day${r.i === 0 ? " is-today" : ""}${r.i === nextI ? " is-next" : ""}"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
-  <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>chip(c, rs)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
+const dayRow = (r, rs = RS, nextI = -1, interactive = false) => `<div class="day${r.i === 0 ? " is-today" : ""}${r.i === nextI ? " is-next" : ""}"><div class="d"><b>${r.label}</b>${shortDate(r.d)} ${DOWJ[r.d.getDay()]}</div>
+  <div class="cs">${Array.isArray(r.ps) && r.ps.length ? r.ps.map(([c])=>interactive ? scheduleChip(c, rs) : chip(c, rs)).join("") : none(SHORT[r.ps] ?? "Nothing")}</div></div>`;
 const areaName = a => a.en === "All" ? a.townEn : `${a.townEn} ${a.en}`;
 /* the next days for an area, as {d, ps, label} rows */
 function nextDays(rs, area, count){
@@ -324,7 +330,7 @@ function renderDays(){
   NEXT_BY_BIN = {}; for(const u of coming) for(const [b] of u.ps) NEXT_BY_BIN[b] ??= u;
   RENDERED_DAY = iso(today.d);
   $("#areaNote").hidden = !AREA.note; $("#areaNote").textContent = AREA.note || "";
-  const cs = ps => `<div class="cs">${ps.map(([c]) => chip(c)).join("")}</div>`;
+  const cs = ps => `<div class="cs">${ps.map(([c]) => scheduleChip(c)).join("")}</div>`;
   const status = text => `<p class="today-status">${text}</p>`;
   let html;
   if(!next) html = `<p class="eyebrow">Next pickup</p><div class="date">None published yet</div>
@@ -336,8 +342,8 @@ function renderDays(){
     else if(then) html += status(`Then ${esc(whenLabel(then))}: ${then.ps.map(([b]) => esc(binOf(b).en)).join(", ")}`);
   }
   $("#today").innerHTML = html;
-  $("#week").innerHTML = rows.map(r => dayRow(r, RS, next?.i ?? -1)).join("");
-  $("#legend").innerHTML = legendHTML(RS, AREA);
+  $("#week").innerHTML = rows.map(r => dayRow(r, RS, next?.i ?? -1, true)).join("");
+  $("#legend").innerHTML = legendHTML(RS, AREA, true);
   $("#icsBtn").closest(".cal-export").hidden = !next;
   renderSortGuides();
 }
@@ -440,6 +446,18 @@ async function init(){
 /* ---------- events ---------- */
 $("#where").addEventListener("click", () => chooseLocation().catch(showError));
 $("#q").addEventListener("input", e => { switchView("sort"); if(RS) search(e.target.value).catch(showError) });
+$("#v-days").addEventListener("click", e => {
+  const type = e.target.closest("[data-sort-kind]");
+  if(!type) return;
+  const selected = GUIDE_ORDER.indexOf(type.dataset.sortKind);
+  if(selected < 0) return;
+  $("#q").value = "";
+  showHome();
+  switchView("sort");
+  guideSlide = selected;
+  applyGuideSlide();
+  window.scrollTo({top:0});
+});
 /* presets get a history entry so the browser/phone back gesture returns to the sort home instead of leaving the site */
 function openPreset(list, title){
   showResults(list, title); window.scrollTo({top:0});
